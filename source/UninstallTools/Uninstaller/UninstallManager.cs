@@ -11,7 +11,6 @@ using System.Threading;
 using Klocman.Extensions;
 using Klocman.Tools;
 using UninstallTools.Factory;
-using UninstallTools.Properties;
 
 namespace UninstallTools.Uninstaller
 {
@@ -51,7 +50,7 @@ namespace UninstallTools.Uninstaller
         ///     Start the default uninstaller with normal UI
         /// </summary>
         /// <exception cref="IOException">Uninstaller returned error code.</exception>
-        /// <exception cref="InvalidOperationException">There are no usable ways of uninstalling this entry </exception>
+        /// <exception cref="NoWayToUninstallException">There are no usable ways of uninstalling this entry </exception>
         /// <exception cref="FormatException">Exception while decoding or attempting to run the uninstaller command. </exception>
         public static Process RunUninstaller(this ApplicationUninstallerEntry entry)
         {
@@ -66,7 +65,7 @@ namespace UninstallTools.Uninstaller
         /// <param name="simulate">If true, nothing will actually be uninstalled</param>
         /// <param name="safeMode">Don't modify the uninstall command to try avoid problems. Use when normal run fails.</param>
         /// <exception cref="IOException">Uninstaller returned error code.</exception>
-        /// <exception cref="InvalidOperationException">There are no usable ways of uninstalling this entry </exception>
+        /// <exception cref="NoWayToUninstallException">There are no usable ways of uninstalling this entry </exception>
         /// <exception cref="FormatException">Exception while decoding or attempting to run the uninstaller command. </exception>
         public static Process RunUninstaller(this ApplicationUninstallerEntry entry, bool silentIfAvailable, bool simulate, bool safeMode = false)
         {
@@ -113,7 +112,7 @@ namespace UninstallTools.Uninstaller
                 else
                 {
                     // Cant do shit, capt'n
-                    throw new InvalidOperationException(Localisation.UninstallError_Nowaytouninstall);
+                    throw new NoWayToUninstallException();
                 }
 
                 if (simulate)
@@ -134,13 +133,13 @@ namespace UninstallTools.Uninstaller
                 }
 
                 // Cant do shit, capt'n
-                throw new InvalidOperationException(Localisation.UninstallError_Nowaytouninstall);
+                throw new NoWayToUninstallException();
             }
             catch (IOException)
             {
                 throw;
             }
-            catch (InvalidOperationException)
+            catch (NoWayToUninstallException)
             {
                 throw;
             }
@@ -202,7 +201,7 @@ namespace UninstallTools.Uninstaller
         /// <param name="mode">Mode of the MsiExec run.</param>
         /// <param name="simulate">If true, nothing will be actually uninstalled</param>
         /// <exception cref="IOException">Uninstaller returned error code.</exception>
-        /// <exception cref="InvalidOperationException">There are no usable ways of uninstalling this entry </exception>
+        /// <exception cref="NoWayToUninstallException">There are no usable ways of uninstalling this entry </exception>
         /// <exception cref="FormatException">Exception while decoding or attempting to run the uninstaller command. </exception>
         public static int UninstallUsingMsi(this ApplicationUninstallerEntry entry, MsiUninstallModes mode,
             bool simulate)
@@ -226,7 +225,7 @@ namespace UninstallTools.Uninstaller
             {
                 throw;
             }
-            catch (InvalidOperationException)
+            catch (NoWayToUninstallException)
             {
                 throw;
             }
