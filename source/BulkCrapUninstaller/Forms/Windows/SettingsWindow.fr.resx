@@ -175,7 +175,7 @@ BCU attendra la fin de la commande courante avant d'exécuter la suivante.</valu
     <value>Divers</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Réglages de BCUninstaller</value>
+    <value>Réglages de Bulk Crap Uninstaller</value>
   </data>
   <data name="tabPageFolders.Text" xml:space="preserve">
     <value>Dossiers</value>
@@ -200,7 +200,7 @@ Utilisez des chemins complets de dossiers, un chemin par ligne. Les chemins inva
     <value>Toujours montrer les résidus avec faible confiance</value>
   </data>
   <data name="checkBoxNeverFeedback.Text" xml:space="preserve">
-    <value>Ne jamais demander les impressions ou  de l'aide</value>
+    <value>Ne jamais demander les retours ou de l'aide</value>
   </data>
   <data name="checkBoxScanSteam.Text" xml:space="preserve">
     <value>Steam</value>
@@ -251,7 +251,7 @@ Utilisez des chemins complets de dossiers, un chemin par ligne. Les chemins inva
     <value>Sauvegarder avant la suppression des résidus</value>
   </data>
   <data name="groupBoxLanguage.Text" xml:space="preserve">
-    <value>Langue</value>
+    <value>Langage</value>
   </data>
   <data name="tabPageInterface.Text" xml:space="preserve">
     <value>Interface</value>

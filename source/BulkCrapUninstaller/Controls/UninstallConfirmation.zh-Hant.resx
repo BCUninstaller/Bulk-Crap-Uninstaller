@@ -135,4 +135,7 @@
   <data name="olvColumnName.Text" xml:space="preserve">
     <value>移除程式名稱</value>
   </data>
+  <data name="labelInfo2.Text" xml:space="preserve">
+    <value>初始移除順序取決於你的解除安裝設定，但可以透過拖曳項目來變更。請注意：如果啟用同時解除安裝時，BCU 可以變更順序。</value>
+  </data>
 </root>

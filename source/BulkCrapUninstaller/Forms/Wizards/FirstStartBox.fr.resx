@@ -127,10 +127,10 @@
     <value>Continuer</value>
   </data>
   <data name="buttonFinish.Text" xml:space="preserve">
-    <value>Quitter l'assistant</value>
+    <value>Terminer l'installation</value>
   </data>
   <data name="p5finishContact.Text" xml:space="preserve">
-    <value>Vous pouvez maintenant utiliser BCUninstaller. Si vous avez toute question ou souhaiteriez suggérer une nouvelle fonction, visitez le lien ci-dessous.</value>
+    <value>Vous pouvez maintenant utiliser BCUninstaller. Si vous des questions ou souhaiteriez suggérer une nouvelle fonction, visitez le lien ci-dessous.</value>
   </data>
   <data name="p5LinkContact.Text" xml:space="preserve">
     <value>Ouvrir le formulaire de contact</value>
@@ -170,7 +170,7 @@ de l'application</value>
     <value>Vous pouvez chercher manuellement les mises à jour depuis la barre de menus.</value>
   </data>
   <data name="checkBoxSendStats.Text" xml:space="preserve">
-    <value>Envoyer automatiquement les statistiques d'utilisation</value>
+    <value>Envoyer automatiquement les statistiques anonymes d'utilisation</value>
   </data>
   <data name="p4netUsageAdd.Text" xml:space="preserve">
     <value>L'envoi de ces statistiques aidera à améliorer BCUninstaller.</value>
@@ -219,7 +219,7 @@ Si le désinstalleur d'origine est introuvable, vous devrez utiliser l'option "D
     <value>Les applications marquées comme "composants système" sont cachées de la plupart des gestionnaires basiques de désinstallation. Cette balise ne signifie PAS que l'application fait partie du système d'exploitation.</value>
   </data>
   <data name="checkBoxListSysComp.Text" xml:space="preserve">
-    <value>Montrer les désinstalleurs marqués comme 
+    <value>Afficher les désinstalleurs marqués comme 
 "composants système"</value>
   </data>
   <data name="p3advProtectTitle.Text" xml:space="preserve">
@@ -229,7 +229,7 @@ Si le désinstalleur d'origine est introuvable, vous devrez utiliser l'option "D
     <value>Les éléments protégés sont marqués avec la balise "NoRemove", qui signifie que l'éditeur ne veut pas que vous les supprimiez. Cette balise est souvent utilisée par des grands ensembles de logiciels pour vous empêcher de désinstaller leurs parties individuelles.</value>
   </data>
   <data name="checkBoxListProtected.Text" xml:space="preserve">
-    <value>Montrer les désinstalleurs marqués comme "protégés"</value>
+    <value>Afficher les désinstalleurs marqués comme "protégés"</value>
   </data>
   <data name="checkBoxDiisableProtection.Text" xml:space="preserve">
     <value>Désactiver la protection des désinstalleurs marqués 
@@ -254,7 +254,7 @@ comme "protégés"</value>
     <value>● Grouper les désinstalleurs similaires.</value>
   </data>
   <data name="checkBoxGroups.Text" xml:space="preserve">
-    <value>Montrer les désinstalleurs en groupes</value>
+    <value>Afficher les désinstalleurs en groupes</value>
   </data>
   <data name="checkBoxCheckboxes.Text" xml:space="preserve">
     <value>Sélectionnner par cases à cocher</value>
@@ -279,16 +279,16 @@ Attention : la vérification peut mettre longtemps.</value>
     <value>Cet assistant vous fera faire un tour rapide et aidera à configurer l'application.</value>
   </data>
   <data name="p1languageHeading.Text" xml:space="preserve">
-    <value>Langage sélectionné</value>
+    <value>Langue sélectionnée</value>
   </data>
   <data name="p1languageDesc.Text" xml:space="preserve">
-    <value>Vous pouvez forcer BCUninstaller à utiliser une localisation spécifique si le langage par défaut est incorrect. Un redémarrage sera réalisé pour appliquer le nouveau langage. </value>
+    <value>Vous pouvez forcer BCUninstaller à utiliser une localisation spécifique si la langue par défaut est incorrecte. Un redémarrage sera réalisé pour appliquer la nouvelle langue. </value>
   </data>
   <data name="buttonLanguageApply.Text" xml:space="preserve">
     <value>Appliquer</value>
   </data>
   <data name="p1languageExtradetails.Text" xml:space="preserve">
-    <value>Si vous souhaitez aider à traduire BCUninstaller dans votre langage, cliquez sur le lien ci-dessous pour me contacter. Toute aide est grandement appréciée !</value>
+    <value>Si vous souhaitez aider à traduire BCUninstaller dans votre langue, cliquez sur le lien ci-dessous pour me contacter. Toute aide est grandement appréciée !</value>
   </data>
   <data name="p1linkLabelContact.Text" xml:space="preserve">
     <value>Ouvrir le formulaire de contact</value>

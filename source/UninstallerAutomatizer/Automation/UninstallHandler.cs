@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using FlaUI.Core;
 using Klocman;
 using Klocman.Tools;
+using Microsoft.Win32.Interop;
 using UninstallerAutomatizer.Properties;
 using UninstallTools;
 using Debug = System.Diagnostics.Debug;
@@ -54,7 +55,7 @@ namespace UninstallerAutomatizer
 
             if (args.Length < 2)
             {
-                Program.ReturnValue = ReturnValue.InvalidArgumentCode;
+                Program.ReturnValue = ResultWin32.ERROR_BAD_ARGUMENTS;
                 OnStatusUpdate(new UninstallHandlerUpdateArgs(UninstallHandlerUpdateKind.Failed, Localization.Error_Invalid_number_of_arguments));
                 return;
             }
@@ -62,7 +63,7 @@ namespace UninstallerAutomatizer
             UninstallerType uType;
             if (!Enum.TryParse(args[0], out uType))
             {
-                Program.ReturnValue = ReturnValue.InvalidArgumentCode;
+                Program.ReturnValue = ResultWin32.ERROR_BAD_ARGUMENTS;
                 OnStatusUpdate(new UninstallHandlerUpdateArgs(UninstallHandlerUpdateKind.Failed, string.Format(Localization.Error_UnknownUninstallerType, args[0])));
                 return;
             }
@@ -80,14 +81,14 @@ namespace UninstallerAutomatizer
 
             if (!File.Exists(ProcessTools.SeparateArgsFromCommand(UninstallTarget).FileName))
             {
-                Program.ReturnValue = ReturnValue.InvalidArgumentCode;
+                Program.ReturnValue = ResultWin32.ERROR_BAD_ARGUMENTS;
                 OnStatusUpdate(new UninstallHandlerUpdateArgs(UninstallHandlerUpdateKind.Failed, string.Format(Localization.Error_InvalidPath, UninstallTarget)));
                 return;
             }
 
             if (uType != UninstallerType.Nsis)
             {
-                Program.ReturnValue = ReturnValue.InvalidArgumentCode;
+                Program.ReturnValue = ResultWin32.ERROR_BAD_ARGUMENTS;
                 OnStatusUpdate(new UninstallHandlerUpdateArgs(UninstallHandlerUpdateKind.Failed, string.Format(Localization.Error_NotSupported, uType)));
                 return;
             }
@@ -236,7 +237,7 @@ namespace UninstallerAutomatizer
                     }
                 }
 
-                Program.ReturnValue = ReturnValue.FunctionFailedCode;
+                Program.ReturnValue = ResultWin32.ERROR_FUNCTION_FAILED;
             }
         }
 

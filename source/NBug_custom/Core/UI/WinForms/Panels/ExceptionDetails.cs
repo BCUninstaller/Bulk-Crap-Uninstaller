@@ -6,6 +6,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using NBug.Core.Util.Serialization;
@@ -21,6 +22,7 @@ namespace NBug.Core.UI.WinForms.Panels
             InitializeComponent();
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int InformationColumnWidth
         {
             get { return exceptionDetailsListView.Columns[1].Width; }
@@ -28,6 +30,7 @@ namespace NBug.Core.UI.WinForms.Panels
             set { exceptionDetailsListView.Columns[1].Width = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int PropertyColumnWidth
         {
             get { return exceptionDetailsListView.Columns[0].Width; }

@@ -134,7 +134,7 @@
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Les désinstalleurs sélectionnés vont  maintenant être exécutés un à la fois.
-Si le processus semble bloqué, vous pouvez cliquer sur le bouton "Passer" pour éviter d'attendre qu'il se termine. Cela peut arriver si le désinstalleur plante ou démarre un nouveau processus et ne le ferme pas. </value>
+Si le processus semble bloqué, vous pouvez cliquer sur le bouton "Passer" pour éviter d'attendre qu'il se termine. Cela peut arriver si le désinstalleur plante ou démarre un nouveau processus et ne le ferme pas.</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Liste de désinstalleurs</value>
@@ -152,13 +152,13 @@ Si le processus semble bloqué, vous pouvez cliquer sur le bouton "Passer" pour 
     <value>Id</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>Lancer le désinstalleur maintenant</value>
+    <value>Lancer le désinstalleur</value>
   </data>
   <data name="toolStripButtonTerminate.Text" xml:space="preserve">
     <value>Interrompre</value>
   </data>
   <data name="toolStripButtonFolderOpen.Text" xml:space="preserve">
-    <value>Ouvrir le l'emplacement d'installation</value>
+    <value>Ouvrir l'emplacement d'installation</value>
   </data>
   <data name="toolStripButtonProperties.Text" xml:space="preserve">
     <value>Propriétés</value>

@@ -24,6 +24,7 @@ namespace Klocman.Controls
             _checkBoxes = tableLayoutPanel2.Controls.Cast<Control>().OfType<CheckBox>();
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public ContentAlignment SelectedContentAlignment
         {
             get

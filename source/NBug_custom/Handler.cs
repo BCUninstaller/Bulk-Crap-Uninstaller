@@ -5,8 +5,10 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
+using System.Diagnostics.Tracing;
 using System.Threading;
 using System.Windows.Forms;
+using Microsoft.Win32.Interop;
 using NBug.Core.Reporting;
 using NBug.Core.UI;
 using NBug.Core.Util;
@@ -59,7 +61,7 @@ namespace NBug
         /// <param name="e">Real exception is in: e.Exception</param>
         private static void ThreadExceptionHandler(object sender, ThreadExceptionEventArgs e)
         {
-            if (Settings.HandleExceptions)
+            if (HandleOutdatedWindowsCrash(e.Exception) && Settings.HandleExceptions)
             {
                 Logger.Trace("Starting to handle a System.Windows.Forms.Application.ThreadException.");
 
@@ -80,7 +82,7 @@ namespace NBug
         /// <param name="e">Real exception is in: ((Exception)e.ExceptionObject)</param>
         private static void UnhandledExceptionHandler(object sender, UnhandledExceptionEventArgs e)
         {
-            if (Settings.HandleExceptions)
+            if (HandleOutdatedWindowsCrash(e.ExceptionObject as Exception) && Settings.HandleExceptions)
             {
                 Logger.Trace("Starting to handle a System.AppDomain.UnhandledException.");
                 var executionFlow = new BugReport().Report((Exception) e.ExceptionObject, ExceptionThread.Main);
@@ -89,6 +91,25 @@ namespace NBug
                     Environment.Exit(0);
                 }
             }
+        }
+        
+        private static bool HandleOutdatedWindowsCrash(Exception dnfe)
+        {
+            // DllNotFoundException, EntryPointNotFoundException, possibly others
+            if (dnfe != null)
+            {
+                if (dnfe.Message.Contains(@"'api-ms-win-core-com-l1-1-0.dll'"))
+                {
+                    MessageBox.Show("It seems like you're running an unsupported version of Windows. Please make sure you have all of the latest Windows service packs and updates installed and try again.\n\n" +
+                                    "If updating didn't help you may need to use an older version of BCUninstaller. Check the README.md file for more information.",
+                                    "Unsupported Windows Version", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Do not let NBug handle this, it only clogs up the error reports
+                    Environment.Exit((int)ResultWin32.ERROR_DLL_NOT_FOUND);
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }

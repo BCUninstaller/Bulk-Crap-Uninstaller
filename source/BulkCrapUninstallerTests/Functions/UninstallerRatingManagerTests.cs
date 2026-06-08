@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using BulkCrapUninstaller;
 using BulkCrapUninstaller.Functions.Ratings;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -22,14 +21,16 @@ namespace BulkCrapUninstallerTests.Functions
         [TestCleanup]
         public void TestCleanup()
         {
-            _manager?.Dispose();
+            _manager?.ClearRatings();
         }
 
         [TestMethod]
         public void RefreshStatsTest()
         {
+            Assert.Inconclusive("Expensive, no need to always test");
+
             _manager.FetchRatings();
-            if (!_manager.Items.Any())
+            if (_manager.RemoteRatingCount == 0)
                 Assert.Fail();
         }
 
@@ -80,19 +81,21 @@ namespace BulkCrapUninstallerTests.Functions
         public void SerializeDeserializeCasheTest()
         {
             _manager.FetchRatings();
-            var count = _manager.Items.Count();
+            var count = _manager.RemoteRatingCount + _manager.UserRatingCount;
             if (count == 0)
                 Assert.Fail("No items received");
 
-            var filename = Path.Combine(Program.AssemblyLocation.FullName, "RatingCasheTest.xml");
+            var filename = Path.Combine(Program.AssemblyLocation.FullName, "TestTempDir");
 
-            _manager.SerializeCache(filename);
+            var dir = new DirectoryInfo(filename);
+            dir.Create();
+            _manager.SerializeCache(dir);
 
             TestCleanup();
             TestInitialize();
 
-            _manager.DeserializeCache(filename);
-            Assert.AreEqual(count, _manager.Items.Count());
+            _manager.DeserializeCache(dir);
+            Assert.AreEqual(count, _manager.RemoteRatingCount + _manager.UserRatingCount);
         }
     }
 }

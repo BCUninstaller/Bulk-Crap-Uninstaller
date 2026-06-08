@@ -100,7 +100,9 @@ namespace BrightIdeasSoftware
         /// </remarks>
         [Category("Data"),
         TypeConverter("System.Windows.Forms.Design.DataSourceConverter, System.Design")]
-        public virtual Object DataSource {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        public virtual Object DataSource
+        {
             get { return Adapter.DataSource; }
             set { Adapter.DataSource = value; }
         }

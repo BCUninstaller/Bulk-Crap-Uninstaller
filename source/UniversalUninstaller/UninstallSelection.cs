@@ -27,7 +27,7 @@ namespace UniversalUninstaller
                 Icon = Icon.FromHandle(handle);
 
                 Console.WriteLine(ex);
-                LogWriter.WriteMessageToLog(ex.ToString());
+                Klocman.LogWriter.WriteMessageToLog(ex.ToString());
             }
 
             Text = string.Format(Localisation.UninstallSelection_Title, target.Name);

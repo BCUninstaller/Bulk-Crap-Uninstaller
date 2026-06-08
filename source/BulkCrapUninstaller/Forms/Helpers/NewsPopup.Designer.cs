@@ -29,129 +29,129 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewsPopup));
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBoxNeverShow = new System.Windows.Forms.CheckBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            labelTitle = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            linkLabel1 = new System.Windows.Forms.LinkLabel();
+            linkLabel2 = new System.Windows.Forms.LinkLabel();
+            linkLabel3 = new System.Windows.Forms.LinkLabel();
+            linkLabel4 = new System.Windows.Forms.LinkLabel();
+            linkLabel5 = new System.Windows.Forms.LinkLabel();
+            linkLabel6 = new System.Windows.Forms.LinkLabel();
+            linkLabel7 = new System.Windows.Forms.LinkLabel();
+            label1 = new System.Windows.Forms.Label();
+            checkBoxNeverShow = new System.Windows.Forms.CheckBox();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            tableLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // labelTitle
             // 
-            resources.ApplyResources(this.labelTitle, "labelTitle");
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Click += new System.EventHandler(this.Close);
+            resources.ApplyResources(labelTitle, "labelTitle");
+            labelTitle.Name = "labelTitle";
+            labelTitle.Click += Close;
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.Close);
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            label3.Click += Close;
             // 
             // linkLabel1
             // 
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            resources.ApplyResources(linkLabel1, "linkLabel1");
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.TabStop = true;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // linkLabel2
             // 
-            resources.ApplyResources(this.linkLabel2, "linkLabel2");
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            resources.ApplyResources(linkLabel2, "linkLabel2");
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.TabStop = true;
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // linkLabel3
             // 
-            resources.ApplyResources(this.linkLabel3, "linkLabel3");
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            resources.ApplyResources(linkLabel3, "linkLabel3");
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.TabStop = true;
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
             // linkLabel4
             // 
-            resources.ApplyResources(this.linkLabel4, "linkLabel4");
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            resources.ApplyResources(linkLabel4, "linkLabel4");
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.TabStop = true;
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
             // 
             // linkLabel5
             // 
-            resources.ApplyResources(this.linkLabel5, "linkLabel5");
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            resources.ApplyResources(linkLabel5, "linkLabel5");
+            linkLabel5.Name = "linkLabel5";
+            linkLabel5.TabStop = true;
+            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
             // 
             // linkLabel6
             // 
-            resources.ApplyResources(this.linkLabel6, "linkLabel6");
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
+            resources.ApplyResources(linkLabel6, "linkLabel6");
+            linkLabel6.Name = "linkLabel6";
+            linkLabel6.TabStop = true;
+            linkLabel6.LinkClicked += linkLabel6_LinkClicked;
             // 
             // linkLabel7
             // 
-            resources.ApplyResources(this.linkLabel7, "linkLabel7");
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+            resources.ApplyResources(linkLabel7, "linkLabel7");
+            linkLabel7.Name = "linkLabel7";
+            linkLabel7.TabStop = true;
+            linkLabel7.LinkClicked += linkLabel7_LinkClicked;
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.Close);
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            label1.Click += Close;
             // 
             // checkBoxNeverShow
             // 
-            resources.ApplyResources(this.checkBoxNeverShow, "checkBoxNeverShow");
-            this.checkBoxNeverShow.Name = "checkBoxNeverShow";
-            this.checkBoxNeverShow.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxNeverShow, "checkBoxNeverShow");
+            checkBoxNeverShow.Name = "checkBoxNeverShow";
+            checkBoxNeverShow.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.checkBoxNeverShow, 1, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            resources.ApplyResources(tableLayoutPanel1, "tableLayoutPanel1");
+            tableLayoutPanel1.Controls.Add(label1, 0, 0);
+            tableLayoutPanel1.Controls.Add(checkBoxNeverShow, 1, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // NewsPopup
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.linkLabel7);
-            this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel6);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.labelTitle);
-            this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "NewsPopup";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Click += new System.EventHandler(this.Close);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.White;
+            Controls.Add(tableLayoutPanel1);
+            Controls.Add(label3);
+            Controls.Add(linkLabel7);
+            Controls.Add(linkLabel4);
+            Controls.Add(linkLabel3);
+            Controls.Add(linkLabel2);
+            Controls.Add(linkLabel6);
+            Controls.Add(linkLabel5);
+            Controls.Add(linkLabel1);
+            Controls.Add(labelTitle);
+            ForeColor = System.Drawing.Color.Black;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "NewsPopup";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            Click += Close;
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

@@ -6,6 +6,7 @@
 using System;
 using System.IO;
 using Klocman;
+using Microsoft.Win32.Interop;
 
 namespace OculusHelper
 {
@@ -14,7 +15,7 @@ namespace OculusHelper
         private static int Main(string[] args)
         {
             if (args.Length == 0)
-                return (int)ReturnValue.InvalidArgumentCode;
+                return (int)ResultWin32.ERROR_BAD_ARGUMENTS;
 
             HelperTools.SetupEncoding();
 
@@ -24,36 +25,36 @@ namespace OculusHelper
                     var result = OculusManager.QueryOculusApps();
                     foreach (var app in result)
                         Console.WriteLine(HelperTools.ObjectToConsoleOutput(app));
-                    return (int)ReturnValue.OkCode;
+                    return (int)ResultWin32.ERROR_SUCCESS;
                 }
                 catch (IOException ex)
                 {
                     LogWriter.WriteExceptionToLog(ex);
-                    return HelperTools.HandleHrefMessage(ex);
+                    return (int)HelperTools.ExtractHrefCode(ex);
                 }
                 catch (Exception ex)
                 {
                     LogWriter.WriteExceptionToLog(ex);
-                    return (int)ReturnValue.FunctionFailedCode;
+                    return (int)ResultWin32.ERROR_FUNCTION_FAILED;
                 }
 
             if (args.Length == 2 && string.Equals(args[0], @"/uninstall", StringComparison.OrdinalIgnoreCase))
                 try
                 {
                     OculusManager.RemoveApp(args[1]);
-                    return (int)ReturnValue.OkCode;
+                    return (int)ResultWin32.ERROR_SUCCESS;
                 }
                 catch (IOException ex)
                 {
-                    return HelperTools.HandleHrefMessage(ex);
+                    return (int)HelperTools.ExtractHrefCode(ex);
                 }
                 catch (Exception ex)
                 {
                     LogWriter.WriteExceptionToLog(ex);
-                    return (int)ReturnValue.FunctionFailedCode;
+                    return (int)ResultWin32.ERROR_SUCCESS;
                 }
 
-            return (int)ReturnValue.InvalidArgumentCode;
+            return (int)ResultWin32.ERROR_BAD_ARGUMENTS;
         }
     }
 }

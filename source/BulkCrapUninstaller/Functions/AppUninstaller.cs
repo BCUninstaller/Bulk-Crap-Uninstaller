@@ -554,7 +554,8 @@ namespace BulkCrapUninstaller.Functions
                         if (item.UninstallPossible && item.UninstallerKind != UninstallerType.SimpleDelete &&
                             MessageBoxes.UninstallFromDirectoryUninstallerFound(item.DisplayName, item.UninstallString))
                         {
-                            item.RunUninstaller(false, Settings.Default.AdvancedSimulate).WaitForExit(60000);
+                            try { item.RunUninstaller(false, Settings.Default.AdvancedSimulate).WaitForExit(60000); }
+                            catch (Exception ex) { PremadeDialogs.GenericError(ex); }
                             items.Remove(item);
                             listRefreshNeeded = true;
                         }

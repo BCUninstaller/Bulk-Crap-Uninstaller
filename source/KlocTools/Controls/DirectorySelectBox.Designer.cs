@@ -31,52 +31,50 @@ namespace Klocman.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DirectorySelectBox));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(DirectorySelectBox));
+            textBox1 = new TextBox();
+            button1 = new Button();
+            folderBrowserDialog = new FolderBrowserDialog();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.AllowDrop = true;
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.OnDragDrop);
-            this.textBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.OnDragEnter);
-            this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
+            textBox1.AllowDrop = true;
+            resources.ApplyResources(textBox1, "textBox1");
+            textBox1.Name = "textBox1";
+            textBox1.DragDrop += OnDragDrop;
+            textBox1.DragEnter += OnDragEnter;
+            textBox1.Validating += textBox1_Validating;
             // 
             // button1
             // 
-            this.button1.AllowDrop = true;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.DragDrop += new System.Windows.Forms.DragEventHandler(this.OnDragDrop);
-            this.button1.DragEnter += new System.Windows.Forms.DragEventHandler(this.OnDragEnter);
+            button1.AllowDrop = true;
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            button1.DragDrop += OnDragDrop;
+            button1.DragEnter += OnDragEnter;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(textBox1);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // DirectorySelectBox
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.MaximumSize = new System.Drawing.Size(100000, 22);
-            this.MinimumSize = new System.Drawing.Size(10, 22);
-            this.Name = "DirectorySelectBox";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Controls.Add(button1);
+            Name = "DirectorySelectBox";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

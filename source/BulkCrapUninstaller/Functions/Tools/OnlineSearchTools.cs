@@ -71,10 +71,10 @@ namespace BulkCrapUninstaller.Functions.Tools
                         switch (spaceReplacement)
                         {
                             case SearchSeparatorType.Plus:
-                                return HttpUtility.UrlEncodeUnicode(str);
+                                return HttpUtility.UrlEncode(str);
                                 //return str.Replace(' ', '+');
                             case SearchSeparatorType.Escaped:
-                                return HttpUtility.UrlEncodeUnicode(str).Replace("+", "%20");
+                                return HttpUtility.UrlEncode(str).Replace("+", "%20");
                             default:
                                 throw new ArgumentOutOfRangeException(nameof(spaceReplacement), spaceReplacement, null);
                         }

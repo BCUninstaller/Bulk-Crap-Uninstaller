@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeedbackWindow));
-            this.webBrowser = new System.Windows.Forms.WebBrowser();
-            this.loadingLabel = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            webBrowser = new System.Windows.Forms.WebBrowser();
+            loadingLabel = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // webBrowser
             // 
-            resources.ApplyResources(this.webBrowser, "webBrowser");
-            this.webBrowser.AllowWebBrowserDrop = false;
-            this.webBrowser.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser.Name = "webBrowser";
+            webBrowser.AllowWebBrowserDrop = false;
+            resources.ApplyResources(webBrowser, "webBrowser");
+            webBrowser.IsWebBrowserContextMenuEnabled = false;
+            webBrowser.Name = "webBrowser";
             // 
             // loadingLabel
             // 
-            resources.ApplyResources(this.loadingLabel, "loadingLabel");
-            this.loadingLabel.Name = "loadingLabel";
-            this.loadingLabel.UseWaitCursor = true;
+            resources.ApplyResources(loadingLabel, "loadingLabel");
+            loadingLabel.Name = "loadingLabel";
+            loadingLabel.UseWaitCursor = true;
             // 
             // FeedbackWindow
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.loadingLabel);
-            this.Controls.Add(this.webBrowser);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FeedbackWindow";
-            this.Shown += new System.EventHandler(this.FeedbackWindow_Shown);
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(loadingLabel);
+            Controls.Add(webBrowser);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FeedbackWindow";
+            Shown += FeedbackWindow_Shown;
+            ResumeLayout(false);
 
         }
 

@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -120,6 +121,7 @@ namespace Klocman.Forms
             treeView1.Nodes.AddRange(results.ToArray());
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool ShowIgnoreAndCancel
         {
             get

@@ -783,4 +783,10 @@ You can try disabling collision detection in the settings, but it is not recomme
     <value>Uninstalls</value>
     <comment>Option for "Double clicking in application list..."</comment>
   </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Title" xml:space="preserve">
+    <value>Cannot rename {0}</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
+    <value>This uninstaller kind does not support renaming ({0}).</value>
+  </data>
 </root>

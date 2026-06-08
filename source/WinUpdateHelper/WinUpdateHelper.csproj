@@ -1,54 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<OutputType>Exe</OutputType>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<Platforms>AnyCPU;x64;x86</Platforms>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\AnyCPU\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\AnyCPU\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup>
+
+		<AssemblyTitle>Utility for discovering and uninstalling Windows Updates</AssemblyTitle>
+
+		<ApplicationIcon>icon.ico</ApplicationIcon>
 		<StartupObject>WinUpdateHelper.Program</StartupObject>
 	</PropertyGroup>
-	<PropertyGroup>
-		<ApplicationIcon>icon.ico</ApplicationIcon>
-	</PropertyGroup>
-	<PropertyGroup>
-		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Include="..\GlobalAssemblyInfo.cs">
-			<Link>Properties\GlobalAssemblyInfo.cs</Link>
-		</Compile>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="..\Licence.licenseheader">
-			<Link>Licence.licenseheader</Link>
-		</None>
-	</ItemGroup>
+
 	<ItemGroup>
 		<COMReference Include="WUApiLib">
 			<Guid>{B596CC9F-56E5-419E-A622-E01BB457431E}</Guid>
@@ -60,11 +19,4 @@
 			<EmbedInteropTypes>False</EmbedInteropTypes>
 		</COMReference>
 	</ItemGroup>
-	<ItemGroup>
-		<Content Include="icon.ico" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-	</ItemGroup>
-	<Import Project="..\HelperTools\HelperTools.projitems" Label="Shared" />
 </Project>

@@ -142,10 +142,9 @@ namespace Klocman.Forms.Tools
             var entryAsy = Assembly.GetEntryAssembly();
             if (entryAsy != null)
             {
-                var asyName = entryAsy.GetName();
+                entryAsy.ManifestModule.GetPEKind(out var peKind, out var machine);
                 var bits = ProcessTools.Is64BitProcess ? "64bit" : "32bit";
-                additionalInfo =
-                    $"{asyName.FullName} | {asyName.ProcessorArchitecture} | {Environment.OSVersion} | {bits}\n{additionalInfo}";
+                additionalInfo = $"{entryAsy.FullName} | {peKind} | {machine} | {Environment.OSVersion} | {bits}\n{additionalInfo}";
             }
 
             if (DefaultOwner != null)

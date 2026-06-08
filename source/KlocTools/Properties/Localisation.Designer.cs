@@ -19,10 +19,10 @@ namespace Klocman.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Localisation {
+    public class Localisation {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Klocman.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Klocman.Properties.Localisation", typeof(Localisation).Assembly);
@@ -51,7 +51,7 @@ namespace Klocman.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Ask.
         /// </summary>
-        internal static string Enums_YesNoAsk_Ask {
+        public static string Enums_YesNoAsk_Ask {
             get {
                 return ResourceManager.GetString("Enums_YesNoAsk_Ask", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to File name can&apos;t be empty..
         /// </summary>
-        internal static string Error_SeparateArgsFromCommand_Empty {
+        public static string Error_SeparateArgsFromCommand_Empty {
             get {
                 return ResourceManager.GetString("Error_SeparateArgsFromCommand_Empty", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Ending quotation mark is missing..
         /// </summary>
-        internal static string Error_SeparateArgsFromCommand_MissingQuotationMark {
+        public static string Error_SeparateArgsFromCommand_MissingQuotationMark {
             get {
                 return ResourceManager.GetString("Error_SeparateArgsFromCommand_MissingQuotationMark", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to File name must contain an extension separated by a dot..
         /// </summary>
-        internal static string Error_SeparateArgsFromCommand_NoDot {
+        public static string Error_SeparateArgsFromCommand_NoDot {
             get {
                 return ResourceManager.GetString("Error_SeparateArgsFromCommand_NoDot", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Attributes.
         /// </summary>
-        internal static string FileInfo_Attributes {
+        public static string FileInfo_Attributes {
             get {
                 return ResourceManager.GetString("FileInfo_Attributes", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Comment.
         /// </summary>
-        internal static string FileInfo_Comments {
+        public static string FileInfo_Comments {
             get {
                 return ResourceManager.GetString("FileInfo_Comments", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Company Name.
         /// </summary>
-        internal static string FileInfo_CompanyName {
+        public static string FileInfo_CompanyName {
             get {
                 return ResourceManager.GetString("FileInfo_CompanyName", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Creation Time.
         /// </summary>
-        internal static string FileInfo_CreationTime {
+        public static string FileInfo_CreationTime {
             get {
                 return ResourceManager.GetString("FileInfo_CreationTime", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Directory.
         /// </summary>
-        internal static string FileInfo_Directory {
+        public static string FileInfo_Directory {
             get {
                 return ResourceManager.GetString("FileInfo_Directory", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Exists on drive.
         /// </summary>
-        internal static string FileInfo_Exists {
+        public static string FileInfo_Exists {
             get {
                 return ResourceManager.GetString("FileInfo_Exists", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
-        internal static string FileInfo_FileDescription {
+        public static string FileInfo_FileDescription {
             get {
                 return ResourceManager.GetString("FileInfo_FileDescription", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to File Name.
         /// </summary>
-        internal static string FileInfo_FileName {
+        public static string FileInfo_FileName {
             get {
                 return ResourceManager.GetString("FileInfo_FileName", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to File Version.
         /// </summary>
-        internal static string FileInfo_FileVersion {
+        public static string FileInfo_FileVersion {
             get {
                 return ResourceManager.GetString("FileInfo_FileVersion", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Full Name.
         /// </summary>
-        internal static string FileInfo_FullName {
+        public static string FileInfo_FullName {
             get {
                 return ResourceManager.GetString("FileInfo_FullName", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Internal Name.
         /// </summary>
-        internal static string FileInfo_InternalName {
+        public static string FileInfo_InternalName {
             get {
                 return ResourceManager.GetString("FileInfo_InternalName", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Is read only.
         /// </summary>
-        internal static string FileInfo_IsReadOnly {
+        public static string FileInfo_IsReadOnly {
             get {
                 return ResourceManager.GetString("FileInfo_IsReadOnly", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
-        internal static string FileInfo_Language {
+        public static string FileInfo_Language {
             get {
                 return ResourceManager.GetString("FileInfo_Language", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Last Access Time.
         /// </summary>
-        internal static string FileInfo_LastAccessTime {
+        public static string FileInfo_LastAccessTime {
             get {
                 return ResourceManager.GetString("FileInfo_LastAccessTime", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Last Write Time.
         /// </summary>
-        internal static string FileInfo_LastWriteTime {
+        public static string FileInfo_LastWriteTime {
             get {
                 return ResourceManager.GetString("FileInfo_LastWriteTime", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Copyright.
         /// </summary>
-        internal static string FileInfo_LegalCopyright {
+        public static string FileInfo_LegalCopyright {
             get {
                 return ResourceManager.GetString("FileInfo_LegalCopyright", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Trademarks.
         /// </summary>
-        internal static string FileInfo_LegalTrademarks {
+        public static string FileInfo_LegalTrademarks {
             get {
                 return ResourceManager.GetString("FileInfo_LegalTrademarks", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Original Filename.
         /// </summary>
-        internal static string FileInfo_OriginalFilename {
+        public static string FileInfo_OriginalFilename {
             get {
                 return ResourceManager.GetString("FileInfo_OriginalFilename", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Product Name.
         /// </summary>
-        internal static string FileInfo_ProductName {
+        public static string FileInfo_ProductName {
             get {
                 return ResourceManager.GetString("FileInfo_ProductName", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Product Version.
         /// </summary>
-        internal static string FileInfo_ProductVersion {
+        public static string FileInfo_ProductVersion {
             get {
                 return ResourceManager.GetString("FileInfo_ProductVersion", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Size.
         /// </summary>
-        internal static string FileInfo_Size {
+        public static string FileInfo_Size {
             get {
                 return ResourceManager.GetString("FileInfo_Size", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Gigabytes.
         /// </summary>
-        internal static string FileSize_GB_Long {
+        public static string FileSize_GB_Long {
             get {
                 return ResourceManager.GetString("FileSize_GB_Long", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to GB.
         /// </summary>
-        internal static string FileSize_GB_Short {
+        public static string FileSize_GB_Short {
             get {
                 return ResourceManager.GetString("FileSize_GB_Short", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Kilobytes.
         /// </summary>
-        internal static string FileSize_KB_Long {
+        public static string FileSize_KB_Long {
             get {
                 return ResourceManager.GetString("FileSize_KB_Long", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to KB.
         /// </summary>
-        internal static string FileSize_KB_Short {
+        public static string FileSize_KB_Short {
             get {
                 return ResourceManager.GetString("FileSize_KB_Short", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Megabytes.
         /// </summary>
-        internal static string FileSize_MB_Long {
+        public static string FileSize_MB_Long {
             get {
                 return ResourceManager.GetString("FileSize_MB_Long", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to MB.
         /// </summary>
-        internal static string FileSize_MB_Short {
+        public static string FileSize_MB_Short {
             get {
                 return ResourceManager.GetString("FileSize_MB_Short", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Terabytes.
         /// </summary>
-        internal static string FileSize_TB_Long {
+        public static string FileSize_TB_Long {
             get {
                 return ResourceManager.GetString("FileSize_TB_Long", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to TB.
         /// </summary>
-        internal static string FileSize_TB_Short {
+        public static string FileSize_TB_Short {
             get {
                 return ResourceManager.GetString("FileSize_TB_Short", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to No.
         /// </summary>
-        internal static string No {
+        public static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
             }
@@ -373,7 +373,7 @@ namespace Klocman.Properties {
         ///
         ///You can copy detailed information about this error to the clipboard by clicking the &quot;Copy&quot; button. Please consider sending this error information to the developer..
         /// </summary>
-        internal static string PremadeDialogs_GenericError_Details {
+        public static string PremadeDialogs_GenericError_Details {
             get {
                 return ResourceManager.GetString("PremadeDialogs_GenericError_Details", resourceCulture);
             }
@@ -382,7 +382,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to The application has encountered an unexpected error.
         /// </summary>
-        internal static string PremadeDialogs_GenericError_Heading {
+        public static string PremadeDialogs_GenericError_Heading {
             get {
                 return ResourceManager.GetString("PremadeDialogs_GenericError_Heading", resourceCulture);
             }
@@ -391,7 +391,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Inner: .
         /// </summary>
-        internal static string PremadeDialogs_GenericError_InnerExceptionTitle {
+        public static string PremadeDialogs_GenericError_InnerExceptionTitle {
             get {
                 return ResourceManager.GetString("PremadeDialogs_GenericError_InnerExceptionTitle", resourceCulture);
             }
@@ -400,7 +400,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Unexpected error.
         /// </summary>
-        internal static string PremadeDialogs_GenericError_Title {
+        public static string PremadeDialogs_GenericError_Title {
             get {
                 return ResourceManager.GetString("PremadeDialogs_GenericError_Title", resourceCulture);
             }
@@ -409,7 +409,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Error details:.
         /// </summary>
-        internal static string PremadeDialogs_GenericErrorExtendedSafe_Heading {
+        public static string PremadeDialogs_GenericErrorExtendedSafe_Heading {
             get {
                 return ResourceManager.GetString("PremadeDialogs_GenericErrorExtendedSafe_Heading", resourceCulture);
             }
@@ -418,7 +418,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to You might lose any unsaved data. To prevent data loss close the applications manually..
         /// </summary>
-        internal static string PremadeDialogs_KillRunningProcessesQuestion_Details {
+        public static string PremadeDialogs_KillRunningProcessesQuestion_Details {
             get {
                 return ResourceManager.GetString("PremadeDialogs_KillRunningProcessesQuestion_Details", resourceCulture);
             }
@@ -427,7 +427,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to terminate all of the processes? .
         /// </summary>
-        internal static string PremadeDialogs_KillRunningProcessesQuestion_Message {
+        public static string PremadeDialogs_KillRunningProcessesQuestion_Message {
             get {
                 return ResourceManager.GetString("PremadeDialogs_KillRunningProcessesQuestion_Message", resourceCulture);
             }
@@ -436,7 +436,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Terminate running processes.
         /// </summary>
-        internal static string PremadeDialogs_KillRunningProcessesQuestion_Title {
+        public static string PremadeDialogs_KillRunningProcessesQuestion_Title {
             get {
                 return ResourceManager.GetString("PremadeDialogs_KillRunningProcessesQuestion_Title", resourceCulture);
             }
@@ -445,7 +445,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Path does not point to a valid .reg file.
         /// </summary>
-        internal static string RegistryTools_AddRegToRegistry_FileNotExist {
+        public static string RegistryTools_AddRegToRegistry_FileNotExist {
             get {
                 return ResourceManager.GetString("RegistryTools_AddRegToRegistry_FileNotExist", resourceCulture);
             }
@@ -454,7 +454,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Path cannot be empty or null.
         /// </summary>
-        internal static string RegistryTools_RemoveRegistryKey_PathEmptyNull {
+        public static string RegistryTools_RemoveRegistryKey_PathEmptyNull {
             get {
                 return ResourceManager.GetString("RegistryTools_RemoveRegistryKey_PathEmptyNull", resourceCulture);
             }
@@ -463,7 +463,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Path cannot point to a root key.
         /// </summary>
-        internal static string RegistryTools_RemoveRegistryKey_PointsAtRoot {
+        public static string RegistryTools_RemoveRegistryKey_PointsAtRoot {
             get {
                 return ResourceManager.GetString("RegistryTools_RemoveRegistryKey_PointsAtRoot", resourceCulture);
             }
@@ -472,7 +472,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Cannot remove the default value.
         /// </summary>
-        internal static string RegistryTools_RemoveRegistryKey_RemoveDefault {
+        public static string RegistryTools_RemoveRegistryKey_RemoveDefault {
             get {
                 return ResourceManager.GetString("RegistryTools_RemoveRegistryKey_RemoveDefault", resourceCulture);
             }
@@ -481,7 +481,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to {0} days ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Days_Since {
+        public static string ToFuzzyTimeSinceString_Days_Since {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Days_Since", resourceCulture);
             }
@@ -490,7 +490,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Yesterday.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Days_Single {
+        public static string ToFuzzyTimeSinceString_Days_Single {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Days_Single", resourceCulture);
             }
@@ -499,7 +499,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to {0} hours ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Hours_Since {
+        public static string ToFuzzyTimeSinceString_Hours_Since {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Hours_Since", resourceCulture);
             }
@@ -508,7 +508,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to One hour ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Hours_Single {
+        public static string ToFuzzyTimeSinceString_Hours_Single {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Hours_Single", resourceCulture);
             }
@@ -517,7 +517,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Just now.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_JustNow {
+        public static string ToFuzzyTimeSinceString_JustNow {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_JustNow", resourceCulture);
             }
@@ -526,7 +526,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to {0} minutes ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Minutes_Since {
+        public static string ToFuzzyTimeSinceString_Minutes_Since {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Minutes_Since", resourceCulture);
             }
@@ -535,7 +535,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to One minute ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Minutes_Single {
+        public static string ToFuzzyTimeSinceString_Minutes_Single {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Minutes_Single", resourceCulture);
             }
@@ -544,7 +544,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to {0} months ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Months_Since {
+        public static string ToFuzzyTimeSinceString_Months_Since {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Months_Since", resourceCulture);
             }
@@ -553,7 +553,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to One month ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Months_Single {
+        public static string ToFuzzyTimeSinceString_Months_Single {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Months_Single", resourceCulture);
             }
@@ -562,7 +562,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to {0} years ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Years_Since {
+        public static string ToFuzzyTimeSinceString_Years_Since {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Years_Since", resourceCulture);
             }
@@ -571,7 +571,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to One year ago.
         /// </summary>
-        internal static string ToFuzzyTimeSinceString_Years_Single {
+        public static string ToFuzzyTimeSinceString_Years_Single {
             get {
                 return ResourceManager.GetString("ToFuzzyTimeSinceString_Years_Single", resourceCulture);
             }
@@ -580,7 +580,7 @@ namespace Klocman.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Yes.
         /// </summary>
-        internal static string Yes {
+        public static string Yes {
             get {
                 return ResourceManager.GetString("Yes", resourceCulture);
             }

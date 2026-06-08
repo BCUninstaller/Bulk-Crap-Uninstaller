@@ -1,0 +1,31 @@
+name: CI
+
+on: 
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: microsoft/setup-msbuild@v2
+
+    - name: Restore
+      run: msbuild source\BulkCrapUninstaller.sln /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+    
+    - name: Build
+      run: >
+           msbuild source\BulkCrapUninstaller.sln /t:Publish /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+           /p:filealignment=512 /p:DeployOnBuild=true /p:PublishSingleFile=False /p:SelfContained=False /p:PublishReadyToRun=false /p:PublishTrimmed=False
+           /p:PublishProtocol=FileSystem /p:PublishDir="${{ github.workspace }}\bin\publish"
+    
+    - uses: actions/upload-artifact@v4
+      with:
+        name: ${{ github.event.repository.name }}_${{ github.sha }}
+        path: bin\publish

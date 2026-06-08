@@ -585,4 +585,7 @@
   <data name="FilterComparisonMethod_Regex" xml:space="preserve">
     <value>Regex</value>
   </data>
+  <data name="Confidence_DirectlyInsideKnownFolder" xml:space="preserve">
+    <value>直接從已知的資料夾裡面尋找</value>
+  </data>
 </root>

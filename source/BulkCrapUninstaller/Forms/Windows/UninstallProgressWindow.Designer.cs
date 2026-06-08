@@ -33,361 +33,337 @@ namespace BulkCrapUninstaller.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UninstallProgressWindow));
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonClose = new System.Windows.Forms.Button();
-            this.olvColumnStatus = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnIsSilent = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnName = new BrightIdeasSoftware.OLVColumn();
-            this.objectListView1 = new BrightIdeasSoftware.ObjectListView();
-            this.olvColumnId = new BrightIdeasSoftware.OLVColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.skipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.terminateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.runNowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manualUninstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.openInstallDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.propertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonRun = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonSkip = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonTerminate = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonManualUninstall = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonFolderOpen = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonProperties = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.usageTracker1 = new BulkCrapUninstaller.Functions.Tracking.UsageTracker();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.forceUpdateTimer = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBoxFinishSleep = new System.Windows.Forms.CheckBox();
-            this.sleepTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.SuspendLayout();
+            components = new Container();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(UninstallProgressWindow));
+            progressBar1 = new ProgressBar();
+            label1 = new Label();
+            buttonClose = new Button();
+            olvColumnStatus = new OLVColumn();
+            olvColumnIsSilent = new OLVColumn();
+            olvColumnName = new OLVColumn();
+            objectListView1 = new ObjectListView();
+            olvColumnId = new OLVColumn();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            skipToolStripMenuItem = new ToolStripMenuItem();
+            terminateToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator3 = new ToolStripSeparator();
+            runNowToolStripMenuItem = new ToolStripMenuItem();
+            manualUninstallToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator4 = new ToolStripSeparator();
+            openInstallDirectoryToolStripMenuItem = new ToolStripMenuItem();
+            propertiesToolStripMenuItem = new ToolStripMenuItem();
+            label3 = new Label();
+            groupBox1 = new GroupBox();
+            toolStrip1 = new ToolStrip();
+            toolStripButtonRun = new ToolStripButton();
+            toolStripButtonSkip = new ToolStripButton();
+            toolStripButtonTerminate = new ToolStripButton();
+            toolStripButtonManualUninstall = new ToolStripButton();
+            toolStripSeparator2 = new ToolStripSeparator();
+            toolStripButtonFolderOpen = new ToolStripButton();
+            toolStripButtonProperties = new ToolStripButton();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripButtonSettings = new ToolStripButton();
+            toolStripButtonHelp = new ToolStripButton();
+            label2 = new Label();
+            usageTracker1 = new UsageTracker();
+            panel3 = new Panel();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            forceUpdateTimer = new Timer(components);
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            checkBoxFinishSleep = new CheckBox();
+            sleepTimer = new Timer(components);
+            ((ISupportInitialize)objectListView1).BeginInit();
+            contextMenuStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
+            ((ISupportInitialize)pictureBox1).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            SuspendLayout();
             // 
             // progressBar1
             // 
-            resources.ApplyResources(this.progressBar1, "progressBar1");
-            this.progressBar1.Name = "progressBar1";
+            resources.ApplyResources(progressBar1, "progressBar1");
+            progressBar1.Name = "progressBar1";
             // 
             // label1
             // 
-            this.label1.AutoEllipsis = true;
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            label1.AutoEllipsis = true;
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // buttonClose
             // 
-            resources.ApplyResources(this.buttonClose, "buttonClose");
-            this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            resources.ApplyResources(buttonClose, "buttonClose");
+            buttonClose.DialogResult = DialogResult.Cancel;
+            buttonClose.Name = "buttonClose";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
             // 
             // olvColumnStatus
             // 
-            resources.ApplyResources(this.olvColumnStatus, "olvColumnStatus");
+            resources.ApplyResources(olvColumnStatus, "olvColumnStatus");
             // 
             // olvColumnIsSilent
             // 
-            resources.ApplyResources(this.olvColumnIsSilent, "olvColumnIsSilent");
+            resources.ApplyResources(olvColumnIsSilent, "olvColumnIsSilent");
             // 
             // olvColumnName
             // 
-            this.olvColumnName.FillsFreeSpace = true;
-            resources.ApplyResources(this.olvColumnName, "olvColumnName");
+            olvColumnName.FillsFreeSpace = true;
+            resources.ApplyResources(olvColumnName, "olvColumnName");
             // 
             // objectListView1
             // 
-            this.objectListView1.AllColumns.Add(this.olvColumnId);
-            this.objectListView1.AllColumns.Add(this.olvColumnStatus);
-            this.objectListView1.AllColumns.Add(this.olvColumnIsSilent);
-            this.objectListView1.AllColumns.Add(this.olvColumnName);
-            this.objectListView1.CellEditUseWholeCell = false;
-            this.objectListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumnId,
-            this.olvColumnStatus,
-            this.olvColumnIsSilent,
-            this.olvColumnName});
-            this.objectListView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.objectListView1.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.objectListView1, "objectListView1");
-            this.objectListView1.FullRowSelect = true;
-            this.objectListView1.HideSelection = false;
-            this.objectListView1.MultiSelect = false;
-            this.objectListView1.Name = "objectListView1";
-            this.objectListView1.ShowItemToolTips = true;
-            this.objectListView1.UseCompatibleStateImageBehavior = false;
-            this.objectListView1.View = System.Windows.Forms.View.Details;
-            this.objectListView1.SelectedIndexChanged += new System.EventHandler(this.objectListView1_SelectedIndexChanged);
+            objectListView1.AllColumns.Add(olvColumnId);
+            objectListView1.AllColumns.Add(olvColumnStatus);
+            objectListView1.AllColumns.Add(olvColumnIsSilent);
+            objectListView1.AllColumns.Add(olvColumnName);
+            objectListView1.CellEditUseWholeCell = false;
+            objectListView1.Columns.AddRange(new ColumnHeader[] { olvColumnId, olvColumnStatus, olvColumnIsSilent, olvColumnName });
+            objectListView1.ContextMenuStrip = contextMenuStrip1;
+            resources.ApplyResources(objectListView1, "objectListView1");
+            objectListView1.FullRowSelect = true;
+            objectListView1.MultiSelect = false;
+            objectListView1.Name = "objectListView1";
+            objectListView1.ShowItemToolTips = true;
+            objectListView1.UseCompatibleStateImageBehavior = false;
+            objectListView1.View = View.Details;
+            objectListView1.SelectedIndexChanged += objectListView1_SelectedIndexChanged;
             // 
             // olvColumnId
             // 
-            resources.ApplyResources(this.olvColumnId, "olvColumnId");
+            resources.ApplyResources(olvColumnId, "olvColumnId");
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.skipToolStripMenuItem,
-            this.terminateToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.runNowToolStripMenuItem,
-            this.manualUninstallToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.openInstallDirectoryToolStripMenuItem,
-            this.propertiesToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { skipToolStripMenuItem, terminateToolStripMenuItem, toolStripSeparator3, runNowToolStripMenuItem, manualUninstallToolStripMenuItem, toolStripSeparator4, openInstallDirectoryToolStripMenuItem, propertiesToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(contextMenuStrip1, "contextMenuStrip1");
+            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
             // 
             // skipToolStripMenuItem
             // 
-            this.skipToolStripMenuItem.Name = "skipToolStripMenuItem";
-            resources.ApplyResources(this.skipToolStripMenuItem, "skipToolStripMenuItem");
-            this.skipToolStripMenuItem.Click += new System.EventHandler(this.toolStripButtonSkip_Click);
+            skipToolStripMenuItem.Name = "skipToolStripMenuItem";
+            resources.ApplyResources(skipToolStripMenuItem, "skipToolStripMenuItem");
+            skipToolStripMenuItem.Click += toolStripButtonSkip_Click;
             // 
             // terminateToolStripMenuItem
             // 
-            this.terminateToolStripMenuItem.Name = "terminateToolStripMenuItem";
-            resources.ApplyResources(this.terminateToolStripMenuItem, "terminateToolStripMenuItem");
-            this.terminateToolStripMenuItem.Click += new System.EventHandler(this.toolStripButtonTerminate_Click);
+            terminateToolStripMenuItem.Name = "terminateToolStripMenuItem";
+            resources.ApplyResources(terminateToolStripMenuItem, "terminateToolStripMenuItem");
+            terminateToolStripMenuItem.Click += toolStripButtonTerminate_Click;
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(toolStripSeparator3, "toolStripSeparator3");
             // 
             // runNowToolStripMenuItem
             // 
-            this.runNowToolStripMenuItem.Name = "runNowToolStripMenuItem";
-            resources.ApplyResources(this.runNowToolStripMenuItem, "runNowToolStripMenuItem");
-            this.runNowToolStripMenuItem.Click += new System.EventHandler(this.toolStripButtonRun_Click);
+            runNowToolStripMenuItem.Name = "runNowToolStripMenuItem";
+            resources.ApplyResources(runNowToolStripMenuItem, "runNowToolStripMenuItem");
+            runNowToolStripMenuItem.Click += toolStripButtonRun_Click;
             // 
             // manualUninstallToolStripMenuItem
             // 
-            this.manualUninstallToolStripMenuItem.Name = "manualUninstallToolStripMenuItem";
-            resources.ApplyResources(this.manualUninstallToolStripMenuItem, "manualUninstallToolStripMenuItem");
-            this.manualUninstallToolStripMenuItem.Click += new System.EventHandler(this.toolStripButtonManualUninstall_Click);
+            manualUninstallToolStripMenuItem.Name = "manualUninstallToolStripMenuItem";
+            resources.ApplyResources(manualUninstallToolStripMenuItem, "manualUninstallToolStripMenuItem");
+            manualUninstallToolStripMenuItem.Click += toolStripButtonManualUninstall_Click;
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            resources.ApplyResources(toolStripSeparator4, "toolStripSeparator4");
             // 
             // openInstallDirectoryToolStripMenuItem
             // 
-            this.openInstallDirectoryToolStripMenuItem.Name = "openInstallDirectoryToolStripMenuItem";
-            resources.ApplyResources(this.openInstallDirectoryToolStripMenuItem, "openInstallDirectoryToolStripMenuItem");
-            this.openInstallDirectoryToolStripMenuItem.Click += new System.EventHandler(this.toolStripButtonFolderOpen_Click);
+            openInstallDirectoryToolStripMenuItem.Name = "openInstallDirectoryToolStripMenuItem";
+            resources.ApplyResources(openInstallDirectoryToolStripMenuItem, "openInstallDirectoryToolStripMenuItem");
+            openInstallDirectoryToolStripMenuItem.Click += toolStripButtonFolderOpen_Click;
             // 
             // propertiesToolStripMenuItem
             // 
-            this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
-            resources.ApplyResources(this.propertiesToolStripMenuItem, "propertiesToolStripMenuItem");
-            this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.toolStripButtonProperties_Click);
+            propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
+            resources.ApplyResources(propertiesToolStripMenuItem, "propertiesToolStripMenuItem");
+            propertiesToolStripMenuItem.Click += toolStripButtonProperties_Click;
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.objectListView1);
-            this.groupBox1.Controls.Add(this.toolStrip1);
-            this.groupBox1.Controls.Add(this.label2);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(objectListView1);
+            groupBox1.Controls.Add(toolStrip1);
+            groupBox1.Controls.Add(label2);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // toolStrip1
             // 
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonRun,
-            this.toolStripButtonSkip,
-            this.toolStripButtonTerminate,
-            this.toolStripButtonManualUninstall,
-            this.toolStripSeparator2,
-            this.toolStripButtonFolderOpen,
-            this.toolStripButtonProperties,
-            this.toolStripSeparator1,
-            this.toolStripButtonSettings,
-            this.toolStripButtonHelp});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
+            toolStrip1.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButtonRun, toolStripButtonSkip, toolStripButtonTerminate, toolStripButtonManualUninstall, toolStripSeparator2, toolStripButtonFolderOpen, toolStripButtonProperties, toolStripSeparator1, toolStripButtonSettings, toolStripButtonHelp });
+            resources.ApplyResources(toolStrip1, "toolStrip1");
+            toolStrip1.Name = "toolStrip1";
             // 
             // toolStripButtonRun
             // 
-            resources.ApplyResources(this.toolStripButtonRun, "toolStripButtonRun");
-            this.toolStripButtonRun.Image = global::BulkCrapUninstaller.Properties.Resources.layerdown;
-            this.toolStripButtonRun.Name = "toolStripButtonRun";
-            this.toolStripButtonRun.Click += new System.EventHandler(this.toolStripButtonRun_Click);
+            resources.ApplyResources(toolStripButtonRun, "toolStripButtonRun");
+            toolStripButtonRun.Image = Properties.Resources.layerdown;
+            toolStripButtonRun.Name = "toolStripButtonRun";
+            toolStripButtonRun.Click += toolStripButtonRun_Click;
             // 
             // toolStripButtonSkip
             // 
-            resources.ApplyResources(this.toolStripButtonSkip, "toolStripButtonSkip");
-            this.toolStripButtonSkip.Image = global::BulkCrapUninstaller.Properties.Resources.control_fastforward_variant;
-            this.toolStripButtonSkip.Name = "toolStripButtonSkip";
-            this.toolStripButtonSkip.Click += new System.EventHandler(this.toolStripButtonSkip_Click);
+            resources.ApplyResources(toolStripButtonSkip, "toolStripButtonSkip");
+            toolStripButtonSkip.Image = Properties.Resources.control_fastforward_variant;
+            toolStripButtonSkip.Name = "toolStripButtonSkip";
+            toolStripButtonSkip.Click += toolStripButtonSkip_Click;
             // 
             // toolStripButtonTerminate
             // 
-            resources.ApplyResources(this.toolStripButtonTerminate, "toolStripButtonTerminate");
-            this.toolStripButtonTerminate.Image = global::BulkCrapUninstaller.Properties.Resources.stop;
-            this.toolStripButtonTerminate.Name = "toolStripButtonTerminate";
-            this.toolStripButtonTerminate.Click += new System.EventHandler(this.toolStripButtonTerminate_Click);
+            resources.ApplyResources(toolStripButtonTerminate, "toolStripButtonTerminate");
+            toolStripButtonTerminate.Image = Properties.Resources.stop;
+            toolStripButtonTerminate.Name = "toolStripButtonTerminate";
+            toolStripButtonTerminate.Click += toolStripButtonTerminate_Click;
             // 
             // toolStripButtonManualUninstall
             // 
-            this.toolStripButtonManualUninstall.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonManualUninstall.Image = global::BulkCrapUninstaller.Properties.Resources.list;
-            resources.ApplyResources(this.toolStripButtonManualUninstall, "toolStripButtonManualUninstall");
-            this.toolStripButtonManualUninstall.Name = "toolStripButtonManualUninstall";
-            this.toolStripButtonManualUninstall.Click += new System.EventHandler(this.toolStripButtonManualUninstall_Click);
+            toolStripButtonManualUninstall.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButtonManualUninstall.Image = Properties.Resources.list;
+            resources.ApplyResources(toolStripButtonManualUninstall, "toolStripButtonManualUninstall");
+            toolStripButtonManualUninstall.Name = "toolStripButtonManualUninstall";
+            toolStripButtonManualUninstall.Click += toolStripButtonManualUninstall_Click;
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
             // 
             // toolStripButtonFolderOpen
             // 
-            this.toolStripButtonFolderOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonFolderOpen, "toolStripButtonFolderOpen");
-            this.toolStripButtonFolderOpen.Image = global::BulkCrapUninstaller.Properties.Resources.fullscreen;
-            this.toolStripButtonFolderOpen.Name = "toolStripButtonFolderOpen";
-            this.toolStripButtonFolderOpen.Click += new System.EventHandler(this.toolStripButtonFolderOpen_Click);
+            toolStripButtonFolderOpen.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(toolStripButtonFolderOpen, "toolStripButtonFolderOpen");
+            toolStripButtonFolderOpen.Image = Properties.Resources.fullscreen;
+            toolStripButtonFolderOpen.Name = "toolStripButtonFolderOpen";
+            toolStripButtonFolderOpen.Click += toolStripButtonFolderOpen_Click;
             // 
             // toolStripButtonProperties
             // 
-            this.toolStripButtonProperties.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonProperties, "toolStripButtonProperties");
-            this.toolStripButtonProperties.Image = global::BulkCrapUninstaller.Properties.Resources.properties;
-            this.toolStripButtonProperties.Name = "toolStripButtonProperties";
-            this.toolStripButtonProperties.Click += new System.EventHandler(this.toolStripButtonProperties_Click);
+            toolStripButtonProperties.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(toolStripButtonProperties, "toolStripButtonProperties");
+            toolStripButtonProperties.Image = Properties.Resources.properties;
+            toolStripButtonProperties.Name = "toolStripButtonProperties";
+            toolStripButtonProperties.Click += toolStripButtonProperties_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripButtonSettings
             // 
-            this.toolStripButtonSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonSettings.Image = global::BulkCrapUninstaller.Properties.Resources.settings;
-            resources.ApplyResources(this.toolStripButtonSettings, "toolStripButtonSettings");
-            this.toolStripButtonSettings.Name = "toolStripButtonSettings";
-            this.toolStripButtonSettings.Click += new System.EventHandler(this.toolStripButtonSettings_Click);
+            toolStripButtonSettings.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButtonSettings.Image = Properties.Resources.settings;
+            resources.ApplyResources(toolStripButtonSettings, "toolStripButtonSettings");
+            toolStripButtonSettings.Name = "toolStripButtonSettings";
+            toolStripButtonSettings.Click += toolStripButtonSettings_Click;
             // 
             // toolStripButtonHelp
             // 
-            this.toolStripButtonHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonHelp.Image = global::BulkCrapUninstaller.Properties.Resources.information_circle;
-            resources.ApplyResources(this.toolStripButtonHelp, "toolStripButtonHelp");
-            this.toolStripButtonHelp.Name = "toolStripButtonHelp";
-            this.toolStripButtonHelp.Click += new System.EventHandler(this.toolStripButtonHelp_Click);
+            toolStripButtonHelp.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButtonHelp.Image = Properties.Resources.information_circle;
+            resources.ApplyResources(toolStripButtonHelp, "toolStripButtonHelp");
+            toolStripButtonHelp.Name = "toolStripButtonHelp";
+            toolStripButtonHelp.Click += toolStripButtonHelp_Click;
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // usageTracker1
             // 
-            this.usageTracker1.ContainerControl = this;
+            usageTracker1.ContainerControl = this;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.panel1);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(panel1);
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Name = "panel3";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.progressBar1);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(progressBar1);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::BulkCrapUninstaller.Properties.Resources.layerdelete;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Image = Properties.Resources.layerdelete;
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(label3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // forceUpdateTimer
             // 
-            this.forceUpdateTimer.Interval = 3500;
+            forceUpdateTimer.Interval = 3500;
             // 
             // flowLayoutPanel2
             // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Controls.Add(this.buttonClose);
-            this.flowLayoutPanel2.Controls.Add(this.checkBoxFinishSleep);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            resources.ApplyResources(flowLayoutPanel2, "flowLayoutPanel2");
+            flowLayoutPanel2.Controls.Add(buttonClose);
+            flowLayoutPanel2.Controls.Add(checkBoxFinishSleep);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // checkBoxFinishSleep
             // 
-            resources.ApplyResources(this.checkBoxFinishSleep, "checkBoxFinishSleep");
-            this.checkBoxFinishSleep.Name = "checkBoxFinishSleep";
-            this.checkBoxFinishSleep.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxFinishSleep, "checkBoxFinishSleep");
+            checkBoxFinishSleep.Name = "checkBoxFinishSleep";
+            checkBoxFinishSleep.UseVisualStyleBackColor = true;
             // 
             // UninstallProgressWindow
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonClose;
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "UninstallProgressWindow";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UninstallProgressWindow_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = buttonClose;
+            Controls.Add(groupBox1);
+            Controls.Add(flowLayoutPanel2);
+            Controls.Add(pictureBox1);
+            Controls.Add(panel3);
+            Controls.Add(flowLayoutPanel1);
+            Name = "UninstallProgressWindow";
+            FormClosing += UninstallProgressWindow_FormClosing;
+            ((ISupportInitialize)objectListView1).EndInit();
+            contextMenuStrip1.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            ((ISupportInitialize)pictureBox1).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

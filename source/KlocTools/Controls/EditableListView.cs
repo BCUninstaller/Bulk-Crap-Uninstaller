@@ -43,16 +43,19 @@ namespace Klocman.Controls
 
         [Description("Sorting of the list box enabled/disabled"),
          Category("Behavior")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool ListBoxSorted
         {
             get { return listBox.Sorted; }
             set { listBox.Sorted = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public GetStringDelegate StringGetter { get; set; }
 
         [Description("Text shown in the title of this control"),
          Category("Appearance")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string Title
         {
             get { return groupBox1.Text; }

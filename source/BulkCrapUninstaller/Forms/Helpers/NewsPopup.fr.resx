@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>(Cliquez n'importe où pour fermer ce message)</value>
+    <value>(Cliquez n'importe où pour fermer cette fenêtre)</value>
   </data>
   <data name="linkLabel7.Text" xml:space="preserve">
-    <value>Don (Paypal, Bitcoin, Steam gift)</value>
+    <value>Donner (Paypal, Bitcoin, cadeaux Steam)</value>
   </data>
   <data name="linkLabel6.Text" xml:space="preserve">
-    <value>Envoyez vos impressions</value>
+    <value>Envoyez un retour / Contacter le développeur</value>
   </data>
   <data name="linkLabel5.Text" xml:space="preserve">
-    <value>Aide</value>
+    <value>Lire le fichier d'aide</value>
   </data>
   <data name="linkLabel4.Text" xml:space="preserve">
-    <value>Politique de confidentialité</value>
+    <value>Lire la politique de confidentialité</value>
   </data>
   <data name="linkLabel3.Text" xml:space="preserve">
-    <value>Licence du programme</value>
+    <value>Lire la licence</value>
   </data>
   <data name="linkLabel2.Text" xml:space="preserve">
     <value>Voir le code source ou contribuer</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Voir les notes de mise à jour</value>
+    <value>Voir les notes de mise à jour et le journal de modifications</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Les donations m'aident à financer ce projet, dont les certificats de signature, l'hébergement et autres nécessités.</value>
+    <value>Les dons me permettent de rester intéressé par ce projet et de financer les certificats de signature de code, l'hébergement et autres dépenses nécessaires.</value>
   </data>
   <data name="checkBoxNeverShow.Text" xml:space="preserve">
-    <value>Ne plus jamais montrer cette fenêtre, jamais.</value>
+    <value>Ne plus jamais montrer cette fenêtre.</value>
   </data>
 </root>

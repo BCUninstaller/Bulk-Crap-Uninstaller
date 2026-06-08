@@ -73,7 +73,7 @@ namespace BulkCrapUninstaller.Controls
 
         private void OnMaxCountChanged(object sender, SettingChangedEventArgs<int> args)
         {
-            numericUpDownMaxConcurrent.Value = args.NewValue;
+            numericUpDownMaxConcurrent.Value = Math.Clamp(args.NewValue, numericUpDownMaxConcurrent.Minimum, numericUpDownMaxConcurrent.Maximum);
         }
     }
 }

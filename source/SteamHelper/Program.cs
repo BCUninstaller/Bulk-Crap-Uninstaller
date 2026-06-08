@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using Klocman;
+using Microsoft.Win32.Interop;
 
 namespace SteamHelper
 {
@@ -90,19 +91,19 @@ namespace SteamHelper
             }
             catch (OperationCanceledException)
             {
-                return (int)ReturnValue.CancelledByUserCode;
+                return (int)ResultWin32.ERROR_CANCELLED;
             }
             catch (FormatException ex)
             {
                 LogWriter.WriteExceptionToLog(ex);
-                return (int)ReturnValue.InvalidArgumentCode;
+                return (int)ResultWin32.ERROR_BAD_ARGUMENTS;
             }
             catch (Exception ex)
             {
                 LogWriter.WriteExceptionToLog(ex);
-                return (int)ReturnValue.UnexpectedNetworkErrorCode;
+                return (int)ResultWin32.ERROR_UNEXP_NET_ERR;
             }
-            return (int)ReturnValue.OkCode;
+            return (int)ResultWin32.ERROR_SUCCESS;
         }
 
         private static void ProcessCommandlineArguments(IEnumerable<string> args)

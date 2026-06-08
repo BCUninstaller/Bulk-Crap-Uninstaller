@@ -159,4 +159,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>傳送回饋</value>
   </data>
+  <data name="buttonSubmitGithub.Text" xml:space="preserve">
+    <value>在GitHub上提交(需要GitHub帳號)</value>
+  </data>
+  <data name="buttonSendFeedback.Text" xml:space="preserve">
+    <value>傳送回饋</value>
+  </data>
 </root>

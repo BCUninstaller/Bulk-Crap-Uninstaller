@@ -12,6 +12,7 @@ namespace Klocman.Controls
 {
     public partial class SearchBox : UserControl
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Color InactiveSearchColor
         {
             get { return _inactiveSearchColor; }
@@ -31,12 +32,14 @@ namespace Klocman.Controls
             filteringTextBox.BackColor = base.BackColor;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public BorderStyle SearchBoxBorderStyle
         {
             get { return filteringTextBox.BorderStyle; }
             set { filteringTextBox.BorderStyle = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Color NormalSearchColor
         {
             get { return _normalSearchColor; }
@@ -70,6 +73,7 @@ namespace Klocman.Controls
             _inactiveSearchText = filteringTextBox.Text;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public AutoCompleteStringCollection AutoCompleteCustomSource
         {
             get { return filteringTextBox.AutoCompleteCustomSource; }

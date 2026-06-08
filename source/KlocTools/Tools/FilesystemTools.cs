@@ -49,6 +49,10 @@ namespace Klocman.Tools
                             return MachineType.X86;
                         case 0x200:
                             return MachineType.Ia64;
+                        case 0xaa64:
+                        case 0xA641:
+                        case 0xA64E:
+                            return MachineType.ARM64;
                         default:
                             return MachineType.Unknown;
                     }

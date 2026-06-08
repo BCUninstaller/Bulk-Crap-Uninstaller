@@ -19,7 +19,7 @@ namespace BulkCrapUninstaller.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -161,7 +161,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://klocmansoftware.weebly.com/feedback--contact.html.
+        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions.
         /// </summary>
         internal static string ContactUrl {
             get {
@@ -532,16 +532,6 @@ namespace BulkCrapUninstaller.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap target {
-            get {
-                object obj = ResourceManager.GetObject("target", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap rating1 {
             get {
                 object obj = ResourceManager.GetObject("rating1", resourceCulture);
@@ -590,7 +580,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://www.fosshub.com/Bulk-Crap-Uninstaller.html.
+        ///   Looks up a localized string similar to https://dappcdn.com/download/utilities/bulk-crap-uninstaller.
         /// </summary>
         internal static string ReviewLink {
             get {
@@ -639,7 +629,7 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://klocmansoftware.weebly.com/feedback--contact.html.
+        ///   Looks up a localized string similar to https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions.
         /// </summary>
         internal static string SubmitFeedbackLink {
             get {
@@ -653,6 +643,16 @@ namespace BulkCrapUninstaller.Properties {
         internal static System.Drawing.Bitmap table_add {
             get {
                 object obj = ResourceManager.GetObject("table.add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap target {
+            get {
+                object obj = ResourceManager.GetObject("target", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

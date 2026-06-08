@@ -166,7 +166,7 @@
     <value>Automatisk avslutning vid väntan på användarindata</value>
   </data>
   <data name="checkBoxAutoDaemon.Text" xml:space="preserve">
-    <value>Bevaka "tysta" avinstallationsprogram för popup-fönster eller andra hinder och automatisera dem (kör automatizer daemon).</value>
+    <value>Automatisera tysta popup-fönster för avinstallation via daemon.</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Tyst avinstallation</value>

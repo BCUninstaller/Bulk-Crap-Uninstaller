@@ -1,50 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>BCU_console</RootNamespace>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<Platforms>AnyCPU;x64;x86</Platforms>
+
+		<Product>Command Line Interface for Bulk Crap Uninstaller</Product>
+		<AssemblyTitle>Command line utility that offers some of BCU's functionality for scripting</AssemblyTitle>
+		
+		<ApplicationIcon>..\BulkCrapUninstaller\Resources\logo.ico</ApplicationIcon>
+		<StartupObject>BCU_console.Program</StartupObject>
 	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\AnyCPU\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\AnyCPU\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup>
-		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Include="..\GlobalAssemblyInfo.cs">
-			<Link>Properties\GlobalAssemblyInfo.cs</Link>
-		</Compile>
-	</ItemGroup>
+
 	<ItemGroup>
 		<ProjectReference Include="..\UninstallTools\UninstallTools.csproj" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="..\Licence.licenseheader">
-			<Link>Licence.licenseheader</Link>
-		</None>
 	</ItemGroup>
 </Project>

@@ -30,11 +30,10 @@ namespace NBug.Core.Reporting.Info
             HostApplication = Settings.EntryAssembly.GetLoadedModules()[0].Name;
 
             // this.HostApplicationVersion = Settings.EntryAssembly.GetName().Version.ToString(); // Gets AssemblyVersion not AssemblyFileVersion
-            HostApplicationVersion =
-                NBugVersion = FileVersionInfo.GetVersionInfo(Settings.EntryAssembly.Location).ProductVersion;
+            HostApplicationVersion = NBugVersion = FileVersionInfo.GetVersionInfo(Settings.EntryAssembly.Location).FileVersion;
 
             // this.NBugVersion = System.Reflection.Assembly.GetCallingAssembly().GetName().Version.ToString(); // Gets AssemblyVersion not AssemblyFileVersion
-            NBugVersion = FileVersionInfo.GetVersionInfo(Assembly.GetCallingAssembly().Location).ProductVersion;
+            NBugVersion = FileVersionInfo.GetVersionInfo(Assembly.GetCallingAssembly().Location).FileVersion;
 
             CLRVersion = Environment.Version.ToString();
 

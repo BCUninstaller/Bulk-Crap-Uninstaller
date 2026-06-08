@@ -25,7 +25,17 @@ namespace BulkCrapUninstaller.Forms
             labelCopyright.Text = AssemblyCopyright;
             labelCompanyName.Text = AssemblyCompany;
             labelis64.Text += ProcessTools.Is64BitProcess.ToYesNo();
-            labelArchitecture.Text += Assembly.GetExecutingAssembly().GetName().ProcessorArchitecture;
+            Assembly.GetExecutingAssembly().Modules.First().GetPEKind(out var pekind, out var ifmachine);
+            string machine;
+            if (Enum.IsDefined<ImageFileMachine>(ifmachine))
+            {
+                machine = Enum.GetName<ImageFileMachine>(ifmachine);
+            } else // Work around .NET 6 not having WoA64 definitions in GetPEKind
+
+            {
+                machine = "ARM64";
+            }
+                labelArchitecture.Text += machine;
             labelPortable.Text += Program.IsInstalled.ToYesNo();
 
             var translationCredits = new[]

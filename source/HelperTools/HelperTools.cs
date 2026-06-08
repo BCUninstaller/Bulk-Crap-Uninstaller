@@ -6,12 +6,12 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using Microsoft.Win32.Interop;
 
 namespace Klocman
 {
-    public static class HelperTools
+    internal static partial class HelperTools
     {
-
         public static void SetupEncoding()
         {
             try
@@ -24,18 +24,37 @@ namespace Klocman
             }
         }
 
-        public static int HandleHrefMessage(Exception ex)
+        [GeneratedRegex(@"0x[\d\w]{8}")] private static partial Regex HrefRegex();
+
+        /// <summary>
+        /// Try to extract the error code from an exception. The message is expected to contain a code in the format 0xXXXXXXXX
+        /// otherwise HResult is returned as-is instead.
+        /// </summary>
+        public static ResultWin32 ExtractHrefCode(Exception error)
         {
-            if (ex == null) throw new ArgumentNullException(nameof(ex));
-            var errorCode = Regex.Match(ex.Message, @"0x[\d\w]{8}").Captures.FirstOrDefault()?.Value;
+            if (error == null) throw new ArgumentNullException(nameof(error));
+            var code = ExtractHrefCode(error.Message);
+            if (code == ResultWin32.INVALID_ERROR_CODE) return (ResultWin32)error.HResult;
+            return code;
+        }
+        /// <summary>
+        /// Try to extract the error code from an error message. The message is expected to contain a code in the format 0xXXXXXXXX
+        /// where X is a hexadecimal digit. If the code is not found or is invalid, ResultWin32.INVALID_ERROR_CODE is returned.
+        /// </summary>
+        public static ResultWin32 ExtractHrefCode(string errorMessage)
+        {
+            if (errorMessage == null) throw new ArgumentNullException(nameof(errorMessage));
+            var errorCode = HrefRegex().Match(errorMessage).Captures.FirstOrDefault()?.Value;
 
             if (string.IsNullOrEmpty(errorCode) || errorCode.Length < 8)
-                return (int) ReturnValue.FunctionFailedCode;
+                return ResultWin32.INVALID_ERROR_CODE;
 
-            int.TryParse(errorCode.Substring(2), NumberStyles.HexNumber, CultureInfo.InvariantCulture,
+            int.TryParse(errorCode[2..], NumberStyles.HexNumber, CultureInfo.InvariantCulture,
                 out var errorNumber);
 
-            return errorNumber > 0 ? errorNumber : (int)ReturnValue.FunctionFailedCode;
+            var code = (ResultWin32)errorNumber;
+            
+            return Enum.IsDefined(code) ? code : ResultWin32.INVALID_ERROR_CODE;
         }
 
         /// <summary>
@@ -48,7 +67,7 @@ namespace Klocman
         public static string ObjectToConsoleOutput(object obj, IFormatProvider provider = null)
         {
             if (obj == null) throw new ArgumentNullException(nameof(obj));
-            if (provider == null) provider = CultureInfo.InvariantCulture;
+            provider ??= CultureInfo.InvariantCulture;
 
             var propInfos = obj.GetType()
                 .GetProperties(BindingFlags.Instance | BindingFlags.Public)
@@ -61,7 +80,7 @@ namespace Klocman
             IFormatProvider provider = null)
         {
             if (propertyKeyValues == null) throw new ArgumentNullException(nameof(propertyKeyValues));
-            if (provider == null) provider = CultureInfo.InvariantCulture;
+            provider ??= CultureInfo.InvariantCulture;
 
             var maxLen = propertyKeyValues.Max(x => x.Key.Length) + 2;
 

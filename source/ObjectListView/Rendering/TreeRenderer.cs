@@ -15,6 +15,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Drawing.Drawing2D;
+using System.ComponentModel;
 
 namespace BrightIdeasSoftware {
 
@@ -37,6 +38,7 @@ namespace BrightIdeasSoftware {
             /// Should the renderer draw glyphs at the expansion points?
             /// </summary>
             /// <remarks>The expansion points will still function to expand/collapse even if this is false.</remarks>
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public bool IsShowGlyphs
             {
                 get { return isShowGlyphs; }
@@ -47,6 +49,7 @@ namespace BrightIdeasSoftware {
             /// <summary>
             /// Should the renderer draw lines connecting siblings?
             /// </summary>
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public bool IsShowLines
             {
                 get { return isShowLines; }
@@ -57,6 +60,7 @@ namespace BrightIdeasSoftware {
             /// <summary>
             /// Return the pen that will be used to draw the lines between branches
             /// </summary>
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public Pen LinePen
             {
                 get { return linePen; }
@@ -70,6 +74,7 @@ namespace BrightIdeasSoftware {
             /// <remarks>
             /// This looks best with ShowLines = false
             /// </remarks>
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public bool UseTriangles
             {
                 get { return useTriangles; }

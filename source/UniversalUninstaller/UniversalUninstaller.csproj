@@ -1,55 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<OutputType>WinExe</OutputType>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<UseWindowsForms>true</UseWindowsForms>
-		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-		<Platforms>AnyCPU;x64;x86</Platforms>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\AnyCPU\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\AnyCPU\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup>
+
+		<AssemblyTitle>Utility used by BCU in place of missing/broken uninstallers to remove applications</AssemblyTitle>
+
 		<ApplicationIcon>UniversalUninstaller.ico</ApplicationIcon>
+		<StartupObject>UniversalUninstaller.Program</StartupObject>
 	</PropertyGroup>
-	<PropertyGroup>
-		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Include="..\GlobalAssemblyInfo.cs">
-			<Link>Properties\GlobalAssemblyInfo.cs</Link>
-		</Compile>
-		<Compile Update="TargetList.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-	</ItemGroup>
+	
 	<ItemGroup>
 		<ProjectReference Include="..\KlocTools\KlocTools.csproj" />
 		<ProjectReference Include="..\ObjectListView\ObjectListView.csproj" />
 	</ItemGroup>
+
 	<ItemGroup>
 		<COMReference Include="Scripting">
 			<Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
@@ -61,10 +24,28 @@
 			<EmbedInteropTypes>false</EmbedInteropTypes>
 		</COMReference>
 	</ItemGroup>
+
 	<ItemGroup>
-		<Content Include="UniversalUninstaller.ico" />
+	  <Compile Update="Properties\Localisation.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Localisation.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
 	</ItemGroup>
+
 	<ItemGroup>
-		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+	  <EmbeddedResource Update="Properties\Localisation.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Localisation.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 </Project>

@@ -32,768 +32,760 @@ namespace BulkCrapUninstaller.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsWindow));
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.textBoxPreUninstall = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxPostUninstall = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBoxMisc = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBoxColorblind = new System.Windows.Forms.CheckBox();
-            this.checkBoxDpiaware = new System.Windows.Forms.CheckBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBoxDoubleClick = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.checkBoxAutoLoad = new System.Windows.Forms.CheckBox();
-            this.checkBoxRatings = new System.Windows.Forms.CheckBox();
-            this.checkBoxUpdateSearch = new System.Windows.Forms.CheckBox();
-            this.checkBoxSendStats = new System.Windows.Forms.CheckBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBoxMessages = new System.Windows.Forms.GroupBox();
-            this.groupBoxBackup = new System.Windows.Forms.GroupBox();
-            this.directorySelectBoxBackup = new Klocman.Controls.DirectorySelectBox();
-            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.radioButtonBackupAsk = new System.Windows.Forms.RadioButton();
-            this.radioButtonBackupNever = new System.Windows.Forms.RadioButton();
-            this.radioButtonBackupAuto = new System.Windows.Forms.RadioButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBoxShowAllBadJunk = new System.Windows.Forms.CheckBox();
-            this.checkBoxLoud = new System.Windows.Forms.CheckBox();
-            this.checkBoxNeverFeedback = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBoxJunk = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBoxRestore = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBoxExternal = new System.Windows.Forms.GroupBox();
-            this.checkBoxEnableExternal = new System.Windows.Forms.CheckBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPageGeneral = new System.Windows.Forms.TabPage();
-            this.propertiesSidebar1 = new BulkCrapUninstaller.Controls.PropertiesSidebar();
-            this.tabPageInterface = new System.Windows.Forms.TabPage();
-            this.groupBoxLanguage = new System.Windows.Forms.GroupBox();
-            this.tabPageUninstallation = new System.Windows.Forms.TabPage();
-            this.uninstallationSettings1 = new BulkCrapUninstaller.Controls.UninstallationSettings();
-            this.tabPageDetection = new System.Windows.Forms.TabPage();
-            this.groupBoxAppStores = new System.Windows.Forms.GroupBox();
-            this.labelWinUpdateInfo = new System.Windows.Forms.Label();
-            this.checkBoxScanWinUpdates = new System.Windows.Forms.CheckBox();
-            this.labelWinFeatureInfo = new System.Windows.Forms.Label();
-            this.checkBoxScanWinFeatures = new System.Windows.Forms.CheckBox();
-            this.checkBoxScanStoreApps = new System.Windows.Forms.CheckBox();
-            this.checkBoxScanSteam = new System.Windows.Forms.CheckBox();
-            this.checkBoxScoop = new System.Windows.Forms.CheckBox();
-            this.checkBoxOculus = new System.Windows.Forms.CheckBox();
-            this.checkBoxChoco = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBoxScanRegistry = new System.Windows.Forms.CheckBox();
-            this.checkBoxScanDrives = new System.Windows.Forms.CheckBox();
-            this.checkBoxPreDefined = new System.Windows.Forms.CheckBox();
-            this.tabPageExternal = new System.Windows.Forms.TabPage();
-            this.tabPageFolders = new System.Windows.Forms.TabPage();
-            this.groupBoxProgramFolders = new System.Windows.Forms.GroupBox();
-            this.textBoxProgramFolders = new System.Windows.Forms.TextBox();
-            this.checkBoxRemovable = new System.Windows.Forms.CheckBox();
-            this.checkBoxAutoInstallFolderDetect = new System.Windows.Forms.CheckBox();
-            this.labelProgramFolders = new System.Windows.Forms.Label();
-            this.tabPageMisc = new System.Windows.Forms.TabPage();
-            this.cacheSettings1 = new BulkCrapUninstaller.Controls.Settings.CacheSettings();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.usageTracker1 = new BulkCrapUninstaller.Functions.Tracking.UsageTracker();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.groupBoxMisc.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.groupBoxMessages.SuspendLayout();
-            this.groupBoxBackup.SuspendLayout();
-            this.flowLayoutPanel9.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBoxExternal.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.tabControl.SuspendLayout();
-            this.tabPageGeneral.SuspendLayout();
-            this.tabPageInterface.SuspendLayout();
-            this.groupBoxLanguage.SuspendLayout();
-            this.tabPageUninstallation.SuspendLayout();
-            this.tabPageDetection.SuspendLayout();
-            this.groupBoxAppStores.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.flowLayoutPanel7.SuspendLayout();
-            this.tabPageExternal.SuspendLayout();
-            this.tabPageFolders.SuspendLayout();
-            this.groupBoxProgramFolders.SuspendLayout();
-            this.tabPageMisc.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.flowLayoutPanel10.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.SuspendLayout();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(SettingsWindow));
+            splitContainer1 = new SplitContainer();
+            textBoxPreUninstall = new TextBox();
+            label5 = new Label();
+            textBoxPostUninstall = new TextBox();
+            label6 = new Label();
+            groupBoxMisc = new GroupBox();
+            flowLayoutPanel3 = new FlowLayoutPanel();
+            checkBoxColorblind = new CheckBox();
+            checkBoxDpiaware = new CheckBox();
+            panel5 = new Panel();
+            comboBoxDoubleClick = new ComboBox();
+            label3 = new Label();
+            checkBoxAutoLoad = new CheckBox();
+            checkBoxRatings = new CheckBox();
+            checkBoxUpdateSearch = new CheckBox();
+            checkBoxSendStats = new CheckBox();
+            panel3 = new Panel();
+            comboBoxLanguage = new ComboBox();
+            label9 = new Label();
+            label10 = new Label();
+            groupBoxMessages = new GroupBox();
+            groupBoxBackup = new GroupBox();
+            directorySelectBoxBackup = new Klocman.Controls.DirectorySelectBox();
+            flowLayoutPanel9 = new FlowLayoutPanel();
+            radioButtonBackupAsk = new RadioButton();
+            radioButtonBackupNever = new RadioButton();
+            radioButtonBackupAuto = new RadioButton();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            checkBoxShowAllBadJunk = new CheckBox();
+            checkBoxLoud = new CheckBox();
+            checkBoxNeverFeedback = new CheckBox();
+            panel1 = new Panel();
+            comboBoxJunk = new ComboBox();
+            label1 = new Label();
+            panel2 = new Panel();
+            comboBoxRestore = new ComboBox();
+            label2 = new Label();
+            groupBoxExternal = new GroupBox();
+            checkBoxEnableExternal = new CheckBox();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            label7 = new Label();
+            button2 = new Button();
+            tabControl = new TabControl();
+            tabPageGeneral = new TabPage();
+            propertiesSidebar1 = new BulkCrapUninstaller.Controls.PropertiesSidebar();
+            tabPageInterface = new TabPage();
+            groupBoxLanguage = new GroupBox();
+            tabPageUninstallation = new TabPage();
+            uninstallationSettings1 = new BulkCrapUninstaller.Controls.UninstallationSettings();
+            tabPageDetection = new TabPage();
+            groupBoxAppStores = new GroupBox();
+            labelWinUpdateInfo = new Label();
+            checkBoxScanWinUpdates = new CheckBox();
+            labelWinFeatureInfo = new Label();
+            checkBoxScanWinFeatures = new CheckBox();
+            checkBoxScanStoreApps = new CheckBox();
+            checkBoxScanSteam = new CheckBox();
+            checkBoxScoop = new CheckBox();
+            checkBoxOculus = new CheckBox();
+            checkBoxChoco = new CheckBox();
+            groupBox1 = new GroupBox();
+            flowLayoutPanel7 = new FlowLayoutPanel();
+            checkBoxScanRegistry = new CheckBox();
+            checkBoxScanDrives = new CheckBox();
+            checkBoxPreDefined = new CheckBox();
+            tabPageExternal = new TabPage();
+            tabPageFolders = new TabPage();
+            groupBoxProgramFolders = new GroupBox();
+            textBoxProgramFolders = new TextBox();
+            checkBoxRemovable = new CheckBox();
+            checkBoxAutoInstallFolderDetect = new CheckBox();
+            labelProgramFolders = new Label();
+            tabPageMisc = new TabPage();
+            cacheSettings1 = new BulkCrapUninstaller.Controls.Settings.CacheSettings();
+            groupBox2 = new GroupBox();
+            flowLayoutPanel4 = new FlowLayoutPanel();
+            groupBox3 = new GroupBox();
+            flowLayoutPanel10 = new FlowLayoutPanel();
+            panel4 = new Panel();
+            usageTracker1 = new UsageTracker();
+            ((ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            groupBoxMisc.SuspendLayout();
+            flowLayoutPanel3.SuspendLayout();
+            panel5.SuspendLayout();
+            panel3.SuspendLayout();
+            groupBoxMessages.SuspendLayout();
+            groupBoxBackup.SuspendLayout();
+            flowLayoutPanel9.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            groupBoxExternal.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            tabControl.SuspendLayout();
+            tabPageGeneral.SuspendLayout();
+            tabPageInterface.SuspendLayout();
+            groupBoxLanguage.SuspendLayout();
+            tabPageUninstallation.SuspendLayout();
+            tabPageDetection.SuspendLayout();
+            groupBoxAppStores.SuspendLayout();
+            groupBox1.SuspendLayout();
+            flowLayoutPanel7.SuspendLayout();
+            tabPageExternal.SuspendLayout();
+            tabPageFolders.SuspendLayout();
+            groupBoxProgramFolders.SuspendLayout();
+            tabPageMisc.SuspendLayout();
+            groupBox2.SuspendLayout();
+            flowLayoutPanel4.SuspendLayout();
+            groupBox3.SuspendLayout();
+            flowLayoutPanel10.SuspendLayout();
+            panel4.SuspendLayout();
+            SuspendLayout();
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.splitContainer1, "splitContainer1");
-            this.splitContainer1.Name = "splitContainer1";
+            splitContainer1.BorderStyle = BorderStyle.Fixed3D;
+            resources.ApplyResources(splitContainer1, "splitContainer1");
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxPreUninstall);
-            this.splitContainer1.Panel1.Controls.Add(this.label5);
+            splitContainer1.Panel1.Controls.Add(textBoxPreUninstall);
+            splitContainer1.Panel1.Controls.Add(label5);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.textBoxPostUninstall);
-            this.splitContainer1.Panel2.Controls.Add(this.label6);
+            splitContainer1.Panel2.Controls.Add(textBoxPostUninstall);
+            splitContainer1.Panel2.Controls.Add(label6);
             // 
             // textBoxPreUninstall
             // 
-            resources.ApplyResources(this.textBoxPreUninstall, "textBoxPreUninstall");
-            this.textBoxPreUninstall.Name = "textBoxPreUninstall";
+            resources.ApplyResources(textBoxPreUninstall, "textBoxPreUninstall");
+            textBoxPreUninstall.Name = "textBoxPreUninstall";
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
             // 
             // textBoxPostUninstall
             // 
-            resources.ApplyResources(this.textBoxPostUninstall, "textBoxPostUninstall");
-            this.textBoxPostUninstall.Name = "textBoxPostUninstall";
+            resources.ApplyResources(textBoxPostUninstall, "textBoxPostUninstall");
+            textBoxPostUninstall.Name = "textBoxPostUninstall";
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
             // 
             // groupBoxMisc
             // 
-            resources.ApplyResources(this.groupBoxMisc, "groupBoxMisc");
-            this.groupBoxMisc.Controls.Add(this.flowLayoutPanel3);
-            this.groupBoxMisc.Controls.Add(this.panel5);
-            this.groupBoxMisc.Name = "groupBoxMisc";
-            this.groupBoxMisc.TabStop = false;
+            resources.ApplyResources(groupBoxMisc, "groupBoxMisc");
+            groupBoxMisc.Controls.Add(flowLayoutPanel3);
+            groupBoxMisc.Controls.Add(panel5);
+            groupBoxMisc.Name = "groupBoxMisc";
+            groupBoxMisc.TabStop = false;
             // 
             // flowLayoutPanel3
             // 
-            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
-            this.flowLayoutPanel3.Controls.Add(this.checkBoxColorblind);
-            this.flowLayoutPanel3.Controls.Add(this.checkBoxDpiaware);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            resources.ApplyResources(flowLayoutPanel3, "flowLayoutPanel3");
+            flowLayoutPanel3.Controls.Add(checkBoxColorblind);
+            flowLayoutPanel3.Controls.Add(checkBoxDpiaware);
+            flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // checkBoxColorblind
             // 
-            resources.ApplyResources(this.checkBoxColorblind, "checkBoxColorblind");
-            this.checkBoxColorblind.Name = "checkBoxColorblind";
-            this.checkBoxColorblind.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxColorblind, "checkBoxColorblind");
+            checkBoxColorblind.Name = "checkBoxColorblind";
+            checkBoxColorblind.UseVisualStyleBackColor = true;
             // 
             // checkBoxDpiaware
             // 
-            resources.ApplyResources(this.checkBoxDpiaware, "checkBoxDpiaware");
-            this.checkBoxDpiaware.Name = "checkBoxDpiaware";
-            this.checkBoxDpiaware.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxDpiaware, "checkBoxDpiaware");
+            checkBoxDpiaware.Name = "checkBoxDpiaware";
+            checkBoxDpiaware.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Controls.Add(this.comboBoxDoubleClick);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Name = "panel5";
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Controls.Add(comboBoxDoubleClick);
+            panel5.Controls.Add(label3);
+            panel5.Name = "panel5";
             // 
             // comboBoxDoubleClick
             // 
-            resources.ApplyResources(this.comboBoxDoubleClick, "comboBoxDoubleClick");
-            this.comboBoxDoubleClick.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxDoubleClick.FormattingEnabled = true;
-            this.comboBoxDoubleClick.Name = "comboBoxDoubleClick";
-            this.comboBoxDoubleClick.SelectedIndexChanged += new System.EventHandler(this.comboBoxDoubleClick_SelectedIndexChanged);
+            resources.ApplyResources(comboBoxDoubleClick, "comboBoxDoubleClick");
+            comboBoxDoubleClick.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxDoubleClick.FormattingEnabled = true;
+            comboBoxDoubleClick.Name = "comboBoxDoubleClick";
+            comboBoxDoubleClick.SelectedIndexChanged += comboBoxDoubleClick_SelectedIndexChanged;
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
             // 
             // checkBoxAutoLoad
             // 
-            resources.ApplyResources(this.checkBoxAutoLoad, "checkBoxAutoLoad");
-            this.checkBoxAutoLoad.Name = "checkBoxAutoLoad";
-            this.checkBoxAutoLoad.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxAutoLoad, "checkBoxAutoLoad");
+            checkBoxAutoLoad.Name = "checkBoxAutoLoad";
+            checkBoxAutoLoad.UseVisualStyleBackColor = true;
             // 
             // checkBoxRatings
             // 
-            resources.ApplyResources(this.checkBoxRatings, "checkBoxRatings");
-            this.checkBoxRatings.Name = "checkBoxRatings";
-            this.checkBoxRatings.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxRatings, "checkBoxRatings");
+            checkBoxRatings.Name = "checkBoxRatings";
+            checkBoxRatings.UseVisualStyleBackColor = true;
             // 
             // checkBoxUpdateSearch
             // 
-            resources.ApplyResources(this.checkBoxUpdateSearch, "checkBoxUpdateSearch");
-            this.checkBoxUpdateSearch.Name = "checkBoxUpdateSearch";
-            this.checkBoxUpdateSearch.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxUpdateSearch, "checkBoxUpdateSearch");
+            checkBoxUpdateSearch.Name = "checkBoxUpdateSearch";
+            checkBoxUpdateSearch.UseVisualStyleBackColor = true;
             // 
             // checkBoxSendStats
             // 
-            resources.ApplyResources(this.checkBoxSendStats, "checkBoxSendStats");
-            this.checkBoxSendStats.Name = "checkBoxSendStats";
-            this.checkBoxSendStats.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxSendStats, "checkBoxSendStats");
+            checkBoxSendStats.Name = "checkBoxSendStats";
+            checkBoxSendStats.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.comboBoxLanguage);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Name = "panel3";
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Controls.Add(comboBoxLanguage);
+            panel3.Controls.Add(label9);
+            panel3.Name = "panel3";
             // 
             // comboBoxLanguage
             // 
-            resources.ApplyResources(this.comboBoxLanguage, "comboBoxLanguage");
-            this.comboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxLanguage.FormattingEnabled = true;
-            this.comboBoxLanguage.Name = "comboBoxLanguage";
-            this.comboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
+            resources.ApplyResources(comboBoxLanguage, "comboBoxLanguage");
+            comboBoxLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxLanguage.FormattingEnabled = true;
+            comboBoxLanguage.Name = "comboBoxLanguage";
+            comboBoxLanguage.SelectedIndexChanged += comboBoxLanguage_SelectedIndexChanged;
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(label9, "label9");
+            label9.Name = "label9";
             // 
             // label10
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
+            resources.ApplyResources(label10, "label10");
+            label10.Name = "label10";
             // 
             // groupBoxMessages
             // 
-            resources.ApplyResources(this.groupBoxMessages, "groupBoxMessages");
-            this.groupBoxMessages.Controls.Add(this.groupBoxBackup);
-            this.groupBoxMessages.Controls.Add(this.flowLayoutPanel1);
-            this.groupBoxMessages.Controls.Add(this.panel1);
-            this.groupBoxMessages.Controls.Add(this.panel2);
-            this.groupBoxMessages.Name = "groupBoxMessages";
-            this.groupBoxMessages.TabStop = false;
+            resources.ApplyResources(groupBoxMessages, "groupBoxMessages");
+            groupBoxMessages.Controls.Add(groupBoxBackup);
+            groupBoxMessages.Controls.Add(flowLayoutPanel1);
+            groupBoxMessages.Controls.Add(panel1);
+            groupBoxMessages.Controls.Add(panel2);
+            groupBoxMessages.Name = "groupBoxMessages";
+            groupBoxMessages.TabStop = false;
             // 
             // groupBoxBackup
             // 
-            resources.ApplyResources(this.groupBoxBackup, "groupBoxBackup");
-            this.groupBoxBackup.Controls.Add(this.directorySelectBoxBackup);
-            this.groupBoxBackup.Controls.Add(this.flowLayoutPanel9);
-            this.groupBoxBackup.Name = "groupBoxBackup";
-            this.groupBoxBackup.TabStop = false;
+            resources.ApplyResources(groupBoxBackup, "groupBoxBackup");
+            groupBoxBackup.Controls.Add(directorySelectBoxBackup);
+            groupBoxBackup.Controls.Add(flowLayoutPanel9);
+            groupBoxBackup.Name = "groupBoxBackup";
+            groupBoxBackup.TabStop = false;
             // 
             // directorySelectBoxBackup
             // 
-            this.directorySelectBoxBackup.DirectoryPath = "";
-            resources.ApplyResources(this.directorySelectBoxBackup, "directorySelectBoxBackup");
-            this.directorySelectBoxBackup.Name = "directorySelectBoxBackup";
+            directorySelectBoxBackup.DirectoryPath = "";
+            resources.ApplyResources(directorySelectBoxBackup, "directorySelectBoxBackup");
+            directorySelectBoxBackup.Name = "directorySelectBoxBackup";
             // 
             // flowLayoutPanel9
             // 
-            resources.ApplyResources(this.flowLayoutPanel9, "flowLayoutPanel9");
-            this.flowLayoutPanel9.Controls.Add(this.radioButtonBackupAsk);
-            this.flowLayoutPanel9.Controls.Add(this.radioButtonBackupNever);
-            this.flowLayoutPanel9.Controls.Add(this.radioButtonBackupAuto);
-            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            resources.ApplyResources(flowLayoutPanel9, "flowLayoutPanel9");
+            flowLayoutPanel9.Controls.Add(radioButtonBackupAsk);
+            flowLayoutPanel9.Controls.Add(radioButtonBackupNever);
+            flowLayoutPanel9.Controls.Add(radioButtonBackupAuto);
+            flowLayoutPanel9.Name = "flowLayoutPanel9";
             // 
             // radioButtonBackupAsk
             // 
-            resources.ApplyResources(this.radioButtonBackupAsk, "radioButtonBackupAsk");
-            this.flowLayoutPanel9.SetFlowBreak(this.radioButtonBackupAsk, true);
-            this.radioButtonBackupAsk.Name = "radioButtonBackupAsk";
-            this.radioButtonBackupAsk.TabStop = true;
-            this.radioButtonBackupAsk.UseVisualStyleBackColor = true;
-            this.radioButtonBackupAsk.CheckedChanged += new System.EventHandler(this.radioButtonBackup_CheckedChanged);
+            resources.ApplyResources(radioButtonBackupAsk, "radioButtonBackupAsk");
+            flowLayoutPanel9.SetFlowBreak(radioButtonBackupAsk, true);
+            radioButtonBackupAsk.Name = "radioButtonBackupAsk";
+            radioButtonBackupAsk.TabStop = true;
+            radioButtonBackupAsk.UseVisualStyleBackColor = true;
+            radioButtonBackupAsk.CheckedChanged += radioButtonBackup_CheckedChanged;
             // 
             // radioButtonBackupNever
             // 
-            resources.ApplyResources(this.radioButtonBackupNever, "radioButtonBackupNever");
-            this.flowLayoutPanel9.SetFlowBreak(this.radioButtonBackupNever, true);
-            this.radioButtonBackupNever.Name = "radioButtonBackupNever";
-            this.radioButtonBackupNever.TabStop = true;
-            this.radioButtonBackupNever.UseVisualStyleBackColor = true;
-            this.radioButtonBackupNever.CheckedChanged += new System.EventHandler(this.radioButtonBackup_CheckedChanged);
+            resources.ApplyResources(radioButtonBackupNever, "radioButtonBackupNever");
+            flowLayoutPanel9.SetFlowBreak(radioButtonBackupNever, true);
+            radioButtonBackupNever.Name = "radioButtonBackupNever";
+            radioButtonBackupNever.TabStop = true;
+            radioButtonBackupNever.UseVisualStyleBackColor = true;
+            radioButtonBackupNever.CheckedChanged += radioButtonBackup_CheckedChanged;
             // 
             // radioButtonBackupAuto
             // 
-            resources.ApplyResources(this.radioButtonBackupAuto, "radioButtonBackupAuto");
-            this.flowLayoutPanel9.SetFlowBreak(this.radioButtonBackupAuto, true);
-            this.radioButtonBackupAuto.Name = "radioButtonBackupAuto";
-            this.radioButtonBackupAuto.TabStop = true;
-            this.radioButtonBackupAuto.UseVisualStyleBackColor = true;
-            this.radioButtonBackupAuto.CheckedChanged += new System.EventHandler(this.radioButtonBackup_CheckedChanged);
+            resources.ApplyResources(radioButtonBackupAuto, "radioButtonBackupAuto");
+            flowLayoutPanel9.SetFlowBreak(radioButtonBackupAuto, true);
+            radioButtonBackupAuto.Name = "radioButtonBackupAuto";
+            radioButtonBackupAuto.TabStop = true;
+            radioButtonBackupAuto.UseVisualStyleBackColor = true;
+            radioButtonBackupAuto.CheckedChanged += radioButtonBackup_CheckedChanged;
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxShowAllBadJunk);
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxLoud);
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxNeverFeedback);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(checkBoxShowAllBadJunk);
+            flowLayoutPanel1.Controls.Add(checkBoxLoud);
+            flowLayoutPanel1.Controls.Add(checkBoxNeverFeedback);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // checkBoxShowAllBadJunk
             // 
-            resources.ApplyResources(this.checkBoxShowAllBadJunk, "checkBoxShowAllBadJunk");
-            this.checkBoxShowAllBadJunk.Name = "checkBoxShowAllBadJunk";
-            this.checkBoxShowAllBadJunk.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxShowAllBadJunk, "checkBoxShowAllBadJunk");
+            checkBoxShowAllBadJunk.Name = "checkBoxShowAllBadJunk";
+            checkBoxShowAllBadJunk.UseVisualStyleBackColor = true;
             // 
             // checkBoxLoud
             // 
-            resources.ApplyResources(this.checkBoxLoud, "checkBoxLoud");
-            this.checkBoxLoud.Name = "checkBoxLoud";
-            this.checkBoxLoud.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxLoud, "checkBoxLoud");
+            checkBoxLoud.Name = "checkBoxLoud";
+            checkBoxLoud.UseVisualStyleBackColor = true;
             // 
             // checkBoxNeverFeedback
             // 
-            resources.ApplyResources(this.checkBoxNeverFeedback, "checkBoxNeverFeedback");
-            this.checkBoxNeverFeedback.Name = "checkBoxNeverFeedback";
-            this.checkBoxNeverFeedback.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxNeverFeedback, "checkBoxNeverFeedback");
+            checkBoxNeverFeedback.Name = "checkBoxNeverFeedback";
+            checkBoxNeverFeedback.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.comboBoxJunk);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Controls.Add(comboBoxJunk);
+            panel1.Controls.Add(label1);
+            panel1.Name = "panel1";
             // 
             // comboBoxJunk
             // 
-            resources.ApplyResources(this.comboBoxJunk, "comboBoxJunk");
-            this.comboBoxJunk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxJunk.FormattingEnabled = true;
-            this.comboBoxJunk.Name = "comboBoxJunk";
-            this.comboBoxJunk.SelectedIndexChanged += new System.EventHandler(this.comboBoxJunk_SelectedIndexChanged);
+            resources.ApplyResources(comboBoxJunk, "comboBoxJunk");
+            comboBoxJunk.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxJunk.FormattingEnabled = true;
+            comboBoxJunk.Name = "comboBoxJunk";
+            comboBoxJunk.SelectedIndexChanged += comboBoxJunk_SelectedIndexChanged;
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Controls.Add(this.comboBoxRestore);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Name = "panel2";
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Controls.Add(comboBoxRestore);
+            panel2.Controls.Add(label2);
+            panel2.Name = "panel2";
             // 
             // comboBoxRestore
             // 
-            resources.ApplyResources(this.comboBoxRestore, "comboBoxRestore");
-            this.comboBoxRestore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRestore.FormattingEnabled = true;
-            this.comboBoxRestore.Name = "comboBoxRestore";
-            this.comboBoxRestore.SelectedIndexChanged += new System.EventHandler(this.comboBoxRestore_SelectedIndexChanged);
+            resources.ApplyResources(comboBoxRestore, "comboBoxRestore");
+            comboBoxRestore.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxRestore.FormattingEnabled = true;
+            comboBoxRestore.Name = "comboBoxRestore";
+            comboBoxRestore.SelectedIndexChanged += comboBoxRestore_SelectedIndexChanged;
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // groupBoxExternal
             // 
-            resources.ApplyResources(this.groupBoxExternal, "groupBoxExternal");
-            this.groupBoxExternal.Controls.Add(this.splitContainer1);
-            this.groupBoxExternal.Controls.Add(this.checkBoxEnableExternal);
-            this.groupBoxExternal.Controls.Add(this.flowLayoutPanel2);
-            this.groupBoxExternal.Name = "groupBoxExternal";
-            this.groupBoxExternal.TabStop = false;
+            resources.ApplyResources(groupBoxExternal, "groupBoxExternal");
+            groupBoxExternal.Controls.Add(splitContainer1);
+            groupBoxExternal.Controls.Add(checkBoxEnableExternal);
+            groupBoxExternal.Controls.Add(flowLayoutPanel2);
+            groupBoxExternal.Name = "groupBoxExternal";
+            groupBoxExternal.TabStop = false;
             // 
             // checkBoxEnableExternal
             // 
-            resources.ApplyResources(this.checkBoxEnableExternal, "checkBoxEnableExternal");
-            this.checkBoxEnableExternal.Checked = true;
-            this.checkBoxEnableExternal.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxEnableExternal.Name = "checkBoxEnableExternal";
-            this.checkBoxEnableExternal.UseVisualStyleBackColor = true;
-            this.checkBoxEnableExternal.CheckedChanged += new System.EventHandler(this.checkBoxEnableExternal_CheckedChanged);
+            resources.ApplyResources(checkBoxEnableExternal, "checkBoxEnableExternal");
+            checkBoxEnableExternal.Checked = true;
+            checkBoxEnableExternal.CheckState = CheckState.Checked;
+            checkBoxEnableExternal.Name = "checkBoxEnableExternal";
+            checkBoxEnableExternal.UseVisualStyleBackColor = true;
+            checkBoxEnableExternal.CheckedChanged += checkBoxEnableExternal_CheckedChanged;
             // 
             // flowLayoutPanel2
             // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Controls.Add(this.label7);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            resources.ApplyResources(flowLayoutPanel2, "flowLayoutPanel2");
+            flowLayoutPanel2.Controls.Add(label7);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
             // 
             // button2
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(button2, "button2");
+            button2.DialogResult = DialogResult.Cancel;
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // tabControl
             // 
-            this.tabControl.Controls.Add(this.tabPageGeneral);
-            this.tabControl.Controls.Add(this.tabPageInterface);
-            this.tabControl.Controls.Add(this.tabPageUninstallation);
-            this.tabControl.Controls.Add(this.tabPageDetection);
-            this.tabControl.Controls.Add(this.tabPageExternal);
-            this.tabControl.Controls.Add(this.tabPageFolders);
-            this.tabControl.Controls.Add(this.tabPageMisc);
-            resources.ApplyResources(this.tabControl, "tabControl");
-            this.tabControl.Multiline = true;
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
-            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
+            tabControl.Controls.Add(tabPageGeneral);
+            tabControl.Controls.Add(tabPageInterface);
+            tabControl.Controls.Add(tabPageUninstallation);
+            tabControl.Controls.Add(tabPageDetection);
+            tabControl.Controls.Add(tabPageExternal);
+            tabControl.Controls.Add(tabPageFolders);
+            tabControl.Controls.Add(tabPageMisc);
+            resources.ApplyResources(tabControl, "tabControl");
+            tabControl.Multiline = true;
+            tabControl.Name = "tabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.SizeMode = TabSizeMode.FillToRight;
+            tabControl.SelectedIndexChanged += tabControl_SelectedIndexChanged;
             // 
             // tabPageGeneral
             // 
-            this.tabPageGeneral.Controls.Add(this.propertiesSidebar1);
-            resources.ApplyResources(this.tabPageGeneral, "tabPageGeneral");
-            this.tabPageGeneral.Name = "tabPageGeneral";
-            this.tabPageGeneral.UseVisualStyleBackColor = true;
+            tabPageGeneral.Controls.Add(propertiesSidebar1);
+            resources.ApplyResources(tabPageGeneral, "tabPageGeneral");
+            tabPageGeneral.Name = "tabPageGeneral";
+            tabPageGeneral.UseVisualStyleBackColor = true;
             // 
             // propertiesSidebar1
             // 
-            resources.ApplyResources(this.propertiesSidebar1, "propertiesSidebar1");
-            this.propertiesSidebar1.InvalidEnabled = true;
-            this.propertiesSidebar1.Name = "propertiesSidebar1";
-            this.propertiesSidebar1.OrphansEnabled = true;
-            this.propertiesSidebar1.ProtectedEnabled = true;
-            this.propertiesSidebar1.ShowTweaksEnabled = true;
-            this.propertiesSidebar1.StoreAppsEnabled = true;
-            this.propertiesSidebar1.SysCompEnabled = true;
-            this.propertiesSidebar1.UpdatesEnabled = true;
-            this.propertiesSidebar1.WinFeaturesEnabled = true;
+            resources.ApplyResources(propertiesSidebar1, "propertiesSidebar1");
+            propertiesSidebar1.Name = "propertiesSidebar1";
             // 
             // tabPageInterface
             // 
-            resources.ApplyResources(this.tabPageInterface, "tabPageInterface");
-            this.tabPageInterface.Controls.Add(this.groupBoxMisc);
-            this.tabPageInterface.Controls.Add(this.groupBoxMessages);
-            this.tabPageInterface.Controls.Add(this.groupBoxLanguage);
-            this.tabPageInterface.Name = "tabPageInterface";
-            this.tabPageInterface.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageInterface, "tabPageInterface");
+            tabPageInterface.Controls.Add(groupBoxMisc);
+            tabPageInterface.Controls.Add(groupBoxMessages);
+            tabPageInterface.Controls.Add(groupBoxLanguage);
+            tabPageInterface.Name = "tabPageInterface";
+            tabPageInterface.UseVisualStyleBackColor = true;
             // 
             // groupBoxLanguage
             // 
-            resources.ApplyResources(this.groupBoxLanguage, "groupBoxLanguage");
-            this.groupBoxLanguage.Controls.Add(this.panel3);
-            this.groupBoxLanguage.Controls.Add(this.label10);
-            this.groupBoxLanguage.Name = "groupBoxLanguage";
-            this.groupBoxLanguage.TabStop = false;
+            resources.ApplyResources(groupBoxLanguage, "groupBoxLanguage");
+            groupBoxLanguage.Controls.Add(panel3);
+            groupBoxLanguage.Controls.Add(label10);
+            groupBoxLanguage.Name = "groupBoxLanguage";
+            groupBoxLanguage.TabStop = false;
             // 
             // tabPageUninstallation
             // 
-            resources.ApplyResources(this.tabPageUninstallation, "tabPageUninstallation");
-            this.tabPageUninstallation.Controls.Add(this.uninstallationSettings1);
-            this.tabPageUninstallation.Name = "tabPageUninstallation";
-            this.tabPageUninstallation.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageUninstallation, "tabPageUninstallation");
+            tabPageUninstallation.Controls.Add(uninstallationSettings1);
+            tabPageUninstallation.Name = "tabPageUninstallation";
+            tabPageUninstallation.UseVisualStyleBackColor = true;
             // 
             // uninstallationSettings1
             // 
-            resources.ApplyResources(this.uninstallationSettings1, "uninstallationSettings1");
-            this.uninstallationSettings1.Name = "uninstallationSettings1";
+            resources.ApplyResources(uninstallationSettings1, "uninstallationSettings1");
+            uninstallationSettings1.Name = "uninstallationSettings1";
             // 
             // tabPageDetection
             // 
-            resources.ApplyResources(this.tabPageDetection, "tabPageDetection");
-            this.tabPageDetection.Controls.Add(this.groupBoxAppStores);
-            this.tabPageDetection.Controls.Add(this.groupBox1);
-            this.tabPageDetection.Name = "tabPageDetection";
-            this.tabPageDetection.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageDetection, "tabPageDetection");
+            tabPageDetection.Controls.Add(groupBoxAppStores);
+            tabPageDetection.Controls.Add(groupBox1);
+            tabPageDetection.Name = "tabPageDetection";
+            tabPageDetection.UseVisualStyleBackColor = true;
             // 
             // groupBoxAppStores
             // 
-            resources.ApplyResources(this.groupBoxAppStores, "groupBoxAppStores");
-            this.groupBoxAppStores.Controls.Add(this.labelWinUpdateInfo);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxScanWinUpdates);
-            this.groupBoxAppStores.Controls.Add(this.labelWinFeatureInfo);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxScanWinFeatures);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxScanStoreApps);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxScanSteam);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxScoop);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxOculus);
-            this.groupBoxAppStores.Controls.Add(this.checkBoxChoco);
-            this.groupBoxAppStores.Name = "groupBoxAppStores";
-            this.groupBoxAppStores.TabStop = false;
+            resources.ApplyResources(groupBoxAppStores, "groupBoxAppStores");
+            groupBoxAppStores.Controls.Add(labelWinUpdateInfo);
+            groupBoxAppStores.Controls.Add(checkBoxScanWinUpdates);
+            groupBoxAppStores.Controls.Add(labelWinFeatureInfo);
+            groupBoxAppStores.Controls.Add(checkBoxScanWinFeatures);
+            groupBoxAppStores.Controls.Add(checkBoxScanStoreApps);
+            groupBoxAppStores.Controls.Add(checkBoxScanSteam);
+            groupBoxAppStores.Controls.Add(checkBoxScoop);
+            groupBoxAppStores.Controls.Add(checkBoxOculus);
+            groupBoxAppStores.Controls.Add(checkBoxChoco);
+            groupBoxAppStores.Name = "groupBoxAppStores";
+            groupBoxAppStores.TabStop = false;
             // 
             // labelWinUpdateInfo
             // 
-            resources.ApplyResources(this.labelWinUpdateInfo, "labelWinUpdateInfo");
-            this.labelWinUpdateInfo.Name = "labelWinUpdateInfo";
+            resources.ApplyResources(labelWinUpdateInfo, "labelWinUpdateInfo");
+            labelWinUpdateInfo.Name = "labelWinUpdateInfo";
             // 
             // checkBoxScanWinUpdates
             // 
-            resources.ApplyResources(this.checkBoxScanWinUpdates, "checkBoxScanWinUpdates");
-            this.checkBoxScanWinUpdates.Name = "checkBoxScanWinUpdates";
-            this.checkBoxScanWinUpdates.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScanWinUpdates, "checkBoxScanWinUpdates");
+            checkBoxScanWinUpdates.Name = "checkBoxScanWinUpdates";
+            checkBoxScanWinUpdates.UseVisualStyleBackColor = true;
             // 
             // labelWinFeatureInfo
             // 
-            resources.ApplyResources(this.labelWinFeatureInfo, "labelWinFeatureInfo");
-            this.labelWinFeatureInfo.Name = "labelWinFeatureInfo";
+            resources.ApplyResources(labelWinFeatureInfo, "labelWinFeatureInfo");
+            labelWinFeatureInfo.Name = "labelWinFeatureInfo";
             // 
             // checkBoxScanWinFeatures
             // 
-            resources.ApplyResources(this.checkBoxScanWinFeatures, "checkBoxScanWinFeatures");
-            this.checkBoxScanWinFeatures.Name = "checkBoxScanWinFeatures";
-            this.checkBoxScanWinFeatures.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScanWinFeatures, "checkBoxScanWinFeatures");
+            checkBoxScanWinFeatures.Name = "checkBoxScanWinFeatures";
+            checkBoxScanWinFeatures.UseVisualStyleBackColor = true;
             // 
             // checkBoxScanStoreApps
             // 
-            resources.ApplyResources(this.checkBoxScanStoreApps, "checkBoxScanStoreApps");
-            this.checkBoxScanStoreApps.Name = "checkBoxScanStoreApps";
-            this.checkBoxScanStoreApps.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScanStoreApps, "checkBoxScanStoreApps");
+            checkBoxScanStoreApps.Name = "checkBoxScanStoreApps";
+            checkBoxScanStoreApps.UseVisualStyleBackColor = true;
             // 
             // checkBoxScanSteam
             // 
-            resources.ApplyResources(this.checkBoxScanSteam, "checkBoxScanSteam");
-            this.checkBoxScanSteam.Name = "checkBoxScanSteam";
-            this.checkBoxScanSteam.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScanSteam, "checkBoxScanSteam");
+            checkBoxScanSteam.Name = "checkBoxScanSteam";
+            checkBoxScanSteam.UseVisualStyleBackColor = true;
             // 
             // checkBoxScoop
             // 
-            resources.ApplyResources(this.checkBoxScoop, "checkBoxScoop");
-            this.checkBoxScoop.Name = "checkBoxScoop";
-            this.checkBoxScoop.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScoop, "checkBoxScoop");
+            checkBoxScoop.Name = "checkBoxScoop";
+            checkBoxScoop.UseVisualStyleBackColor = true;
             // 
             // checkBoxOculus
             // 
-            resources.ApplyResources(this.checkBoxOculus, "checkBoxOculus");
-            this.checkBoxOculus.Name = "checkBoxOculus";
-            this.checkBoxOculus.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxOculus, "checkBoxOculus");
+            checkBoxOculus.Name = "checkBoxOculus";
+            checkBoxOculus.UseVisualStyleBackColor = true;
             // 
             // checkBoxChoco
             // 
-            resources.ApplyResources(this.checkBoxChoco, "checkBoxChoco");
-            this.checkBoxChoco.Name = "checkBoxChoco";
-            this.checkBoxChoco.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxChoco, "checkBoxChoco");
+            checkBoxChoco.Name = "checkBoxChoco";
+            checkBoxChoco.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.flowLayoutPanel7);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Controls.Add(flowLayoutPanel7);
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // flowLayoutPanel7
             // 
-            resources.ApplyResources(this.flowLayoutPanel7, "flowLayoutPanel7");
-            this.flowLayoutPanel7.Controls.Add(this.checkBoxScanRegistry);
-            this.flowLayoutPanel7.Controls.Add(this.checkBoxScanDrives);
-            this.flowLayoutPanel7.Controls.Add(this.checkBoxPreDefined);
-            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            resources.ApplyResources(flowLayoutPanel7, "flowLayoutPanel7");
+            flowLayoutPanel7.Controls.Add(checkBoxScanRegistry);
+            flowLayoutPanel7.Controls.Add(checkBoxScanDrives);
+            flowLayoutPanel7.Controls.Add(checkBoxPreDefined);
+            flowLayoutPanel7.Name = "flowLayoutPanel7";
             // 
             // checkBoxScanRegistry
             // 
-            resources.ApplyResources(this.checkBoxScanRegistry, "checkBoxScanRegistry");
-            this.flowLayoutPanel7.SetFlowBreak(this.checkBoxScanRegistry, true);
-            this.checkBoxScanRegistry.Name = "checkBoxScanRegistry";
-            this.checkBoxScanRegistry.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScanRegistry, "checkBoxScanRegistry");
+            flowLayoutPanel7.SetFlowBreak(checkBoxScanRegistry, true);
+            checkBoxScanRegistry.Name = "checkBoxScanRegistry";
+            checkBoxScanRegistry.UseVisualStyleBackColor = true;
             // 
             // checkBoxScanDrives
             // 
-            resources.ApplyResources(this.checkBoxScanDrives, "checkBoxScanDrives");
-            this.flowLayoutPanel7.SetFlowBreak(this.checkBoxScanDrives, true);
-            this.checkBoxScanDrives.Name = "checkBoxScanDrives";
-            this.checkBoxScanDrives.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxScanDrives, "checkBoxScanDrives");
+            flowLayoutPanel7.SetFlowBreak(checkBoxScanDrives, true);
+            checkBoxScanDrives.Name = "checkBoxScanDrives";
+            checkBoxScanDrives.UseVisualStyleBackColor = true;
             // 
             // checkBoxPreDefined
             // 
-            resources.ApplyResources(this.checkBoxPreDefined, "checkBoxPreDefined");
-            this.flowLayoutPanel7.SetFlowBreak(this.checkBoxPreDefined, true);
-            this.checkBoxPreDefined.Name = "checkBoxPreDefined";
-            this.checkBoxPreDefined.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxPreDefined, "checkBoxPreDefined");
+            flowLayoutPanel7.SetFlowBreak(checkBoxPreDefined, true);
+            checkBoxPreDefined.Name = "checkBoxPreDefined";
+            checkBoxPreDefined.UseVisualStyleBackColor = true;
             // 
             // tabPageExternal
             // 
-            this.tabPageExternal.Controls.Add(this.groupBoxExternal);
-            resources.ApplyResources(this.tabPageExternal, "tabPageExternal");
-            this.tabPageExternal.Name = "tabPageExternal";
-            this.tabPageExternal.UseVisualStyleBackColor = true;
+            tabPageExternal.Controls.Add(groupBoxExternal);
+            resources.ApplyResources(tabPageExternal, "tabPageExternal");
+            tabPageExternal.Name = "tabPageExternal";
+            tabPageExternal.UseVisualStyleBackColor = true;
             // 
             // tabPageFolders
             // 
-            this.tabPageFolders.Controls.Add(this.groupBoxProgramFolders);
-            resources.ApplyResources(this.tabPageFolders, "tabPageFolders");
-            this.tabPageFolders.Name = "tabPageFolders";
-            this.tabPageFolders.UseVisualStyleBackColor = true;
+            tabPageFolders.Controls.Add(groupBoxProgramFolders);
+            resources.ApplyResources(tabPageFolders, "tabPageFolders");
+            tabPageFolders.Name = "tabPageFolders";
+            tabPageFolders.UseVisualStyleBackColor = true;
             // 
             // groupBoxProgramFolders
             // 
-            resources.ApplyResources(this.groupBoxProgramFolders, "groupBoxProgramFolders");
-            this.groupBoxProgramFolders.Controls.Add(this.textBoxProgramFolders);
-            this.groupBoxProgramFolders.Controls.Add(this.checkBoxRemovable);
-            this.groupBoxProgramFolders.Controls.Add(this.checkBoxAutoInstallFolderDetect);
-            this.groupBoxProgramFolders.Controls.Add(this.labelProgramFolders);
-            this.groupBoxProgramFolders.Name = "groupBoxProgramFolders";
-            this.groupBoxProgramFolders.TabStop = false;
+            resources.ApplyResources(groupBoxProgramFolders, "groupBoxProgramFolders");
+            groupBoxProgramFolders.Controls.Add(textBoxProgramFolders);
+            groupBoxProgramFolders.Controls.Add(checkBoxRemovable);
+            groupBoxProgramFolders.Controls.Add(checkBoxAutoInstallFolderDetect);
+            groupBoxProgramFolders.Controls.Add(labelProgramFolders);
+            groupBoxProgramFolders.Name = "groupBoxProgramFolders";
+            groupBoxProgramFolders.TabStop = false;
             // 
             // textBoxProgramFolders
             // 
-            resources.ApplyResources(this.textBoxProgramFolders, "textBoxProgramFolders");
-            this.textBoxProgramFolders.Name = "textBoxProgramFolders";
+            resources.ApplyResources(textBoxProgramFolders, "textBoxProgramFolders");
+            textBoxProgramFolders.Name = "textBoxProgramFolders";
             // 
             // checkBoxRemovable
             // 
-            resources.ApplyResources(this.checkBoxRemovable, "checkBoxRemovable");
-            this.checkBoxRemovable.Name = "checkBoxRemovable";
-            this.checkBoxRemovable.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxRemovable, "checkBoxRemovable");
+            checkBoxRemovable.Name = "checkBoxRemovable";
+            checkBoxRemovable.UseVisualStyleBackColor = true;
             // 
             // checkBoxAutoInstallFolderDetect
             // 
-            resources.ApplyResources(this.checkBoxAutoInstallFolderDetect, "checkBoxAutoInstallFolderDetect");
-            this.checkBoxAutoInstallFolderDetect.Name = "checkBoxAutoInstallFolderDetect";
-            this.checkBoxAutoInstallFolderDetect.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxAutoInstallFolderDetect, "checkBoxAutoInstallFolderDetect");
+            checkBoxAutoInstallFolderDetect.Name = "checkBoxAutoInstallFolderDetect";
+            checkBoxAutoInstallFolderDetect.UseVisualStyleBackColor = true;
             // 
             // labelProgramFolders
             // 
-            resources.ApplyResources(this.labelProgramFolders, "labelProgramFolders");
-            this.labelProgramFolders.Name = "labelProgramFolders";
+            resources.ApplyResources(labelProgramFolders, "labelProgramFolders");
+            labelProgramFolders.Name = "labelProgramFolders";
             // 
             // tabPageMisc
             // 
-            this.tabPageMisc.Controls.Add(this.cacheSettings1);
-            this.tabPageMisc.Controls.Add(this.groupBox2);
-            this.tabPageMisc.Controls.Add(this.groupBox3);
-            resources.ApplyResources(this.tabPageMisc, "tabPageMisc");
-            this.tabPageMisc.Name = "tabPageMisc";
-            this.tabPageMisc.UseVisualStyleBackColor = true;
+            tabPageMisc.Controls.Add(cacheSettings1);
+            tabPageMisc.Controls.Add(groupBox2);
+            tabPageMisc.Controls.Add(groupBox3);
+            resources.ApplyResources(tabPageMisc, "tabPageMisc");
+            tabPageMisc.Name = "tabPageMisc";
+            tabPageMisc.UseVisualStyleBackColor = true;
             // 
             // cacheSettings1
             // 
-            resources.ApplyResources(this.cacheSettings1, "cacheSettings1");
-            this.cacheSettings1.Name = "cacheSettings1";
+            resources.ApplyResources(cacheSettings1, "cacheSettings1");
+            cacheSettings1.Name = "cacheSettings1";
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Controls.Add(this.flowLayoutPanel4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            resources.ApplyResources(groupBox2, "groupBox2");
+            groupBox2.Controls.Add(flowLayoutPanel4);
+            groupBox2.Name = "groupBox2";
+            groupBox2.TabStop = false;
             // 
             // flowLayoutPanel4
             // 
-            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
-            this.flowLayoutPanel4.Controls.Add(this.checkBoxAutoLoad);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            resources.ApplyResources(flowLayoutPanel4, "flowLayoutPanel4");
+            flowLayoutPanel4.Controls.Add(checkBoxAutoLoad);
+            flowLayoutPanel4.Name = "flowLayoutPanel4";
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Controls.Add(this.flowLayoutPanel10);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
+            resources.ApplyResources(groupBox3, "groupBox3");
+            groupBox3.Controls.Add(flowLayoutPanel10);
+            groupBox3.Name = "groupBox3";
+            groupBox3.TabStop = false;
             // 
             // flowLayoutPanel10
             // 
-            resources.ApplyResources(this.flowLayoutPanel10, "flowLayoutPanel10");
-            this.flowLayoutPanel10.Controls.Add(this.checkBoxUpdateSearch);
-            this.flowLayoutPanel10.Controls.Add(this.checkBoxSendStats);
-            this.flowLayoutPanel10.Controls.Add(this.checkBoxRatings);
-            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            resources.ApplyResources(flowLayoutPanel10, "flowLayoutPanel10");
+            flowLayoutPanel10.Controls.Add(checkBoxUpdateSearch);
+            flowLayoutPanel10.Controls.Add(checkBoxSendStats);
+            flowLayoutPanel10.Controls.Add(checkBoxRatings);
+            flowLayoutPanel10.Name = "flowLayoutPanel10";
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button2);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            panel4.Controls.Add(button2);
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Name = "panel4";
             // 
             // usageTracker1
             // 
-            this.usageTracker1.ContainerControl = this;
+            usageTracker1.ContainerControl = this;
             // 
             // SettingsWindow
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button2;
-            this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.panel4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "SettingsWindow";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SettingsWindow_FormClosing);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.groupBoxMisc.ResumeLayout(false);
-            this.groupBoxMisc.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.groupBoxMessages.ResumeLayout(false);
-            this.groupBoxMessages.PerformLayout();
-            this.groupBoxBackup.ResumeLayout(false);
-            this.groupBoxBackup.PerformLayout();
-            this.flowLayoutPanel9.ResumeLayout(false);
-            this.flowLayoutPanel9.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.groupBoxExternal.ResumeLayout(false);
-            this.groupBoxExternal.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.tabControl.ResumeLayout(false);
-            this.tabPageGeneral.ResumeLayout(false);
-            this.tabPageGeneral.PerformLayout();
-            this.tabPageInterface.ResumeLayout(false);
-            this.tabPageInterface.PerformLayout();
-            this.groupBoxLanguage.ResumeLayout(false);
-            this.groupBoxLanguage.PerformLayout();
-            this.tabPageUninstallation.ResumeLayout(false);
-            this.tabPageUninstallation.PerformLayout();
-            this.tabPageDetection.ResumeLayout(false);
-            this.tabPageDetection.PerformLayout();
-            this.groupBoxAppStores.ResumeLayout(false);
-            this.groupBoxAppStores.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.flowLayoutPanel7.ResumeLayout(false);
-            this.flowLayoutPanel7.PerformLayout();
-            this.tabPageExternal.ResumeLayout(false);
-            this.tabPageExternal.PerformLayout();
-            this.tabPageFolders.ResumeLayout(false);
-            this.tabPageFolders.PerformLayout();
-            this.groupBoxProgramFolders.ResumeLayout(false);
-            this.groupBoxProgramFolders.PerformLayout();
-            this.tabPageMisc.ResumeLayout(false);
-            this.tabPageMisc.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.flowLayoutPanel10.ResumeLayout(false);
-            this.flowLayoutPanel10.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = button2;
+            Controls.Add(tabControl);
+            Controls.Add(panel4);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "SettingsWindow";
+            FormClosing += SettingsWindow_FormClosing;
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel1.PerformLayout();
+            splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
+            ((ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            groupBoxMisc.ResumeLayout(false);
+            groupBoxMisc.PerformLayout();
+            flowLayoutPanel3.ResumeLayout(false);
+            flowLayoutPanel3.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            groupBoxMessages.ResumeLayout(false);
+            groupBoxMessages.PerformLayout();
+            groupBoxBackup.ResumeLayout(false);
+            groupBoxBackup.PerformLayout();
+            flowLayoutPanel9.ResumeLayout(false);
+            flowLayoutPanel9.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            groupBoxExternal.ResumeLayout(false);
+            groupBoxExternal.PerformLayout();
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
+            tabControl.ResumeLayout(false);
+            tabPageGeneral.ResumeLayout(false);
+            tabPageGeneral.PerformLayout();
+            tabPageInterface.ResumeLayout(false);
+            tabPageInterface.PerformLayout();
+            groupBoxLanguage.ResumeLayout(false);
+            groupBoxLanguage.PerformLayout();
+            tabPageUninstallation.ResumeLayout(false);
+            tabPageUninstallation.PerformLayout();
+            tabPageDetection.ResumeLayout(false);
+            tabPageDetection.PerformLayout();
+            groupBoxAppStores.ResumeLayout(false);
+            groupBoxAppStores.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            flowLayoutPanel7.ResumeLayout(false);
+            flowLayoutPanel7.PerformLayout();
+            tabPageExternal.ResumeLayout(false);
+            tabPageExternal.PerformLayout();
+            tabPageFolders.ResumeLayout(false);
+            tabPageFolders.PerformLayout();
+            groupBoxProgramFolders.ResumeLayout(false);
+            groupBoxProgramFolders.PerformLayout();
+            tabPageMisc.ResumeLayout(false);
+            tabPageMisc.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            flowLayoutPanel4.ResumeLayout(false);
+            flowLayoutPanel4.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            flowLayoutPanel10.ResumeLayout(false);
+            flowLayoutPanel10.PerformLayout();
+            panel4.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

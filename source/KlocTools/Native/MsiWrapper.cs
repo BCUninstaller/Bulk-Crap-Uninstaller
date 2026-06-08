@@ -196,6 +196,49 @@ namespace Klocman.Native
             USERINFOSTATE_PRESENT = 1 // user info and PID initialized
         }
 
+        /// <summary>
+        /// Flags that may be passed into the dwContext parameter of the <see cref="MsiEnumProducts"/> method.
+        /// https://github.com/dotnet/pinvoke/blob/d974353ca67c4b8e6009096bd3ab7e6f284ed11d/src/Msi/Msi%2BMSIINSTALLCONTEXT.cs
+        /// </summary>
+        [Flags]
+        public enum MSIINSTALLCONTEXT : uint
+        {
+            /// <summary>
+            /// Product visible to the current user.
+            /// </summary>
+            MSIINSTALLCONTEXT_FIRSTVISIBLE = 0,
+
+            /// <summary>
+            /// Invalid context for a product
+            /// </summary>
+            MSIINSTALLCONTEXT_NONE = 0,
+
+            /// <summary>
+            /// Enumeration extended to all per–user–managed installations for the users specified by szUserSid. An invalid SID returns no items.
+            /// </summary>
+            MSIINSTALLCONTEXT_USERMANAGED = 0x1,
+
+            /// <summary>
+            /// Enumeration extended to all per–user–unmanaged installations for the users specified by szUserSid. An invalid SID returns no items.
+            /// </summary>
+            MSIINSTALLCONTEXT_USERUNMANAGED = 0x2,
+
+            /// <summary>
+            /// Enumeration extended to all per-machine installations. When dwInstallContext is set to MSIINSTALLCONTEXT_MACHINE only, the szUserSID parameter must be NULL.
+            /// </summary>
+            MSIINSTALLCONTEXT_MACHINE = 0x4,
+
+            /// <summary>
+            /// All contexts. OR of all valid values
+            /// </summary>
+            MSIINSTALLCONTEXT_ALL = MSIINSTALLCONTEXT_USERMANAGED | MSIINSTALLCONTEXT_USERUNMANAGED | MSIINSTALLCONTEXT_MACHINE,
+
+            /// <summary>
+            /// All user-managed contexts.
+            /// </summary>
+            MSIINSTALLCONTEXT_ALLUSERMANAGED = 0x8,
+        }
+
         public const int MAX_FEATURE_CHARS = 38; // maximum chars in feature name (same as string GUID)
         // MsiOpenDatabase persist predefine values, otherwise output database path is used
         public const string MSIDBOPEN_READONLY = "0"; // database open read-only, no persistent changes
@@ -259,7 +302,7 @@ namespace Klocman.Native
         [DllImport("msi", CharSet = CharSet.Auto)]
         public static extern int MsiGetProductCode(
             string szComponent, // component Id registered for this product
-            string lpBuf39); // returned string GUID, sized for 39 characters
+            [Out] StringBuilder lpBuf39); // returned string GUID, sized for 39 characters
         // Return the registered user information for an installed product
         [DllImport("msi", CharSet = CharSet.Auto)]
         public static extern USERINFOSTATE MsiGetUserInfo(
@@ -496,6 +539,16 @@ namespace Klocman.Native
         [DllImport("msi")]
         public static extern int MsiGetFileSignatureInformation([In] string szSignedObjectPath, [In] uint dwFlags,
             out IntPtr ppcCertContext, [Out] byte[] pbHashData, ref uint pcbHashData);
+
+        [DllImport("msi.dll", CharSet = CharSet.Unicode)]
+        //http://msdn.microsoft.com/library/en-us/msi/setup/msienumcomponents.asp
+        public static extern int MsiEnumComponents(int iComponentIndex, StringBuilder lpComponentBuf);
+
+        [DllImport("msi.dll", CharSet = CharSet.Unicode)]
+        public static extern INSTALLSTATE MsiGetComponentPath(string szProduct, string szComponent, StringBuilder lpPathBuf, ref int pcchPathBuf);
+
+        [DllImport("msi.dll", CharSet = CharSet.Unicode)]
+        public static extern int MsiQueryComponentState(string szProductCode, string szUserSid, [MarshalAs(UnmanagedType.I4)] MSIINSTALLCONTEXT dwContext, string szComponent, out INSTALLSTATE pdwState);
 
         public sealed class INSTALLPROPERTY
         {

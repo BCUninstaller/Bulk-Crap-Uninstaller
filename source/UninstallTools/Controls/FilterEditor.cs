@@ -73,6 +73,7 @@ namespace UninstallTools.Controls
 
         [Browsable(false)]
         [ReadOnly(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public FilterCondition TargetFilterCondition
         {
             get

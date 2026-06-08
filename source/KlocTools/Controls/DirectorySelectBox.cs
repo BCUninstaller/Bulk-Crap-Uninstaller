@@ -38,6 +38,7 @@ namespace Klocman.Controls
 
         #region Properties
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string DirectoryPath
         {
             get { return textBox1.Text; }

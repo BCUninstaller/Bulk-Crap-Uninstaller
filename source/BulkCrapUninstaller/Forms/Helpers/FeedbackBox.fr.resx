@@ -121,10 +121,10 @@
     <value>Merci d'utiliser BCUninstaller !</value>
   </data>
   <data name="p1welcomeSubheading.Text" xml:space="preserve">
-    <value>Si vous aimez cet outil open-source gratuit, n'hésitez pas à en parler à vos amis, à le partager sur les réseaux sociaux, ou donnez vos impressions - tout compte !</value>
+    <value>Si vous trouvez cet outil open-source gratuit utile, merci de prendre une minute pour aider ! Parlez-en à vos amis, partagez-le sur les réseaux sociaux, donnez un retour - chaque petit geste compte !</value>
   </data>
   <data name="buttonSendFeedback2.Text" xml:space="preserve">
-    <value>Envoyer vos impressions</value>
+    <value>Envoyer un retour</value>
   </data>
   <data name="buttonRate.Text" xml:space="preserve">
     <value>Évaluer (en bas de la page)</value>
@@ -136,16 +136,16 @@
     <value>Des problèmes ou des fonctions manquantes ?</value>
   </data>
   <data name="p1FeedbackDesc.Text" xml:space="preserve">
-    <value>Si vous avez des problèmes avec BCU ou si vous souhaitez suggérer une nouvelle fonction, voyez ces liens :</value>
+    <value>Si vous avez des problèmes avec BCU ou si vous souhaitez suggérer une nouvelle fonction, merci de vérifier ces liens :</value>
   </data>
   <data name="buttonSubmitGithub.Text" xml:space="preserve">
     <value>Soumettre sur GitHub (Nécessite un compte)</value>
   </data>
   <data name="buttonSendFeedback.Text" xml:space="preserve">
-    <value>Envoyer vos impressions</value>
+    <value>Envoyer un retour</value>
   </data>
   <data name="p1HelpHeading.Text" xml:space="preserve">
-    <value>Vous souhaitez aider BCU ?</value>
+    <value>Voulez-vous aider ?</value>
   </data>
   <data name="p1HelpDesc.Text" xml:space="preserve">
     <value>Vous n'avez pas à être un programmeur pour aider ! Vous pouvez faire un don pour accélérer les mises à jour, ou traduire BCU dans votre langue maternelle. Toute aide est grandement appréciée, même petite !</value>
@@ -157,12 +157,12 @@
     <value>Problèmes sur GitHub</value>
   </data>
   <data name="checkBoxNeverShow.Text" xml:space="preserve">
-    <value>Ne plus jamais montrer cette fenêtre, jamais.</value>
+    <value>Ne plus jamais montrer cette fenêtre, jamais</value>
   </data>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>Fermer</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Envoyer vos impressions</value>
+    <value>Envoyer un retour</value>
   </data>
 </root>

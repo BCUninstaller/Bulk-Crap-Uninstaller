@@ -9,6 +9,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using Klocman;
+using Microsoft.Win32.Interop;
 
 namespace WinUpdateHelper
 {
@@ -49,21 +50,21 @@ namespace WinUpdateHelper
             }
             catch (OperationCanceledException)
             {
-                return (int)ReturnValue.CancelledByUserCode;
+                return (int)ResultWin32.ERROR_CANCELLED;
             }
             catch (COMException ex)
             {
                 LogWriter.WriteMessageToLog(ex.ToString());
                 Console.WriteLine("Error: {0}", Hresult.ConvertHresultToDetails(ex.ErrorCode));
-                return (int)ReturnValue.UnexpectedNetworkErrorCode;
+                return (int)ResultWin32.ERROR_UNEXP_NET_ERR;
             }
             catch (Exception ex)
             {
                 LogWriter.WriteMessageToLog(ex.ToString());
                 Console.WriteLine("Error: {0}", ex.Message);
-                return (int)ReturnValue.UnexpectedNetworkErrorCode;
+                return (int)ResultWin32.ERROR_UNEXP_NET_ERR;
             }
-            return (int)ReturnValue.OkCode;
+            return (int)ResultWin32.ERROR_SUCCESS;
         }
 
         private static void ProcessCommandlineArguments(IEnumerable<string> args)

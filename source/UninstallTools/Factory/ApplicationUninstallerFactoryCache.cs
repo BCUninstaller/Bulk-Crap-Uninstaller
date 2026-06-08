@@ -3,6 +3,7 @@
     Apache License Version 2.0
 */
 
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -63,21 +64,30 @@ namespace UninstallTools.Factory
 
         public void Read()
         {
-            var result = SerializationTools.DeserializeFromXml<List<CacheEntry>>(Filename);
-
-            Cache.Clear();
-
-            // Ignore entries if more than 1 have the same cache id
-            foreach (var group in result
-                .GroupBy(x => x.Entry.GetCacheId())
-                .Where(g => g.Key != null && g.CountEquals(1)))
+            try
             {
-                var cacheEntry = group.Single();
+                var result = SerializationTools.DeserializeFromXml<List<CacheEntry>>(Filename);
 
-                if (SerializeIcons && cacheEntry.Icon != null)
-                    cacheEntry.Entry.IconBitmap = DeserializeIcon(cacheEntry.Icon);
+                Cache.Clear();
 
-                Cache.Add(group.Key, cacheEntry.Entry);
+                // Ignore entries if more than 1 have the same cache id
+                foreach (var group in result
+                                      .GroupBy(x => x.Entry.GetCacheId())
+                                      .Where(g => g.Key != null && g.CountEquals(1)))
+                {
+                    var cacheEntry = group.Single();
+
+                    if (SerializeIcons && cacheEntry.Icon != null)
+                        cacheEntry.Entry.IconBitmap = DeserializeIcon(cacheEntry.Icon);
+
+                    Cache.Add(group.Key, cacheEntry.Entry);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($@"Failed to load cache from {Filename} - {e}");
+                Cache.Clear();
+                File.Delete(Filename);
             }
         }
 
@@ -107,8 +117,17 @@ namespace UninstallTools.Factory
 
         public void Delete()
         {
-            File.Delete(Filename);
             Cache.Clear();
+
+            try
+            {
+                File.Delete(Filename);
+            }
+            catch
+            {
+                System.Threading.Thread.Sleep(50);
+                File.Delete(Filename);
+            }
         }
     }
 }

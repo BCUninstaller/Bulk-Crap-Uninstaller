@@ -593,6 +593,24 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This uninstaller kind does not support renaming ({0})..
+        /// </summary>
+        internal static string MessageBoxes_CantRenameUninstallerKind_Details {
+            get {
+                return ResourceManager.GetString("MessageBoxes_CantRenameUninstallerKind_Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot rename {0}.
+        /// </summary>
+        internal static string MessageBoxes_CantRenameUninstallerKind_Title {
+            get {
+                return ResourceManager.GetString("MessageBoxes_CantRenameUninstallerKind_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remaining uninstallers should be able to complete without any user intervention. You should still check in from time to time in case one of the uninstallers crashes..
         /// </summary>
         internal static string MessageBoxes_CanWalkAwayInfo_Details {

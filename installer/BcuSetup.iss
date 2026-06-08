@@ -1,7 +1,7 @@
 ﻿; Tested with innosetup-6.4.3
 
 ; Normal: include self-contained binaries for both x86 and x64
-; Light: include only AnyCPU binaries and automatically download net6 if needed
+; Light: include only AnyCPU binaries and automatically download net8 if needed
 #define Light
 
 ; =============================================================================
@@ -15,13 +15,13 @@
 #define MyAppCopyright     "Copyright " + CurrentYear + " " + MyAppPublisher
 
 #ifdef Light
-#define InputDir           "..\bin\publish-AnyCPU-net6.0"
+#define InputDir           "..\bin\publish-AnyCPU-net8.0"
 #define MainExePath        InputDir+'\'+MyAppExeName
-; Downloading net6 is only necessary in light mode
+; Downloading net8 is only necessary in light mode
 #include "CodeDependencies.iss"
 #else
 #define InputDir           "..\bin\publish"
-#define MainExePath        InputDir+'\win-x86\'+MyAppExeName
+#define MainExePath        InputDir+'\win-x64\'+MyAppExeName
 ; Portable page only works in normal mode
 #include "PortablePage.iss"
 #endif
@@ -128,6 +128,12 @@ Source: "{#InputDir}\win-x86\CleanLogs.bat";    DestDir: "{app}\win-x86"; Compon
 
 #endif
 
+[InstallDelete]
+Name: {app}\BCU-launcher.exe; Type: files
+; Make sure there are no old stale versions. Settings file is kept in the root directory so it will survive.
+Name: {app}\win-x64; Type: filesandordirs
+Name: {app}\win-x86; Type: filesandordirs
+
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; Check: IsNotPortable
 
@@ -152,7 +158,7 @@ end;
 
 function InitializeSetup: Boolean;
 begin
-  Dependency_AddDotNet60Desktop;
+  Dependency_AddDotNet80Desktop;
   Result := True;
 end;
 #endif

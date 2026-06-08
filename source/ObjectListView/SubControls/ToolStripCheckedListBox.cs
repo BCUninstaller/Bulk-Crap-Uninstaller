@@ -27,6 +27,7 @@
 
 using System.Windows.Forms;
 using System.Drawing;
+using System.ComponentModel;
 
 namespace BrightIdeasSoftware {
 
@@ -67,7 +68,9 @@ namespace BrightIdeasSoftware {
         /// <summary>
         /// Gets or sets whether an item should be checked when it is clicked
         /// </summary>
-        public bool CheckedOnClick {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        public bool CheckedOnClick
+        {
             get {
                 return CheckedListBoxControl.CheckOnClick;
             }

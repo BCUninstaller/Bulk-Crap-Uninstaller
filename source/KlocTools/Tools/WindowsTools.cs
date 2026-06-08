@@ -342,10 +342,17 @@ namespace Klocman.Tools
 
                     foreach (var registryKey in key.GetSubKeyNames())
                     {
-                        using (var commandKey = key.OpenSubKey(registryKey + @"\shell\open\command"))
+                        var subkey = registryKey + @"\shell\open\command";
+                        try
                         {
+                            using var commandKey = key.OpenSubKey(subkey);
                             var path = commandKey?.GetStringSafe(null);
                             if (path != null) results.Add(path.Trim('\"'));
+                        }
+                        catch (SystemException e)
+                        {
+                            // Most likey access denied, safe to ignore since these are not critical
+                            Console.WriteLine($@"Failed to open {key.Name}\{subkey} - {e}");
                         }
                     }
                 }

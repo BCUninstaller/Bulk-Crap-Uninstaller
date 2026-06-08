@@ -270,7 +270,6 @@ namespace BulkCrapUninstaller.Forms
             // 
             resources.ApplyResources(advancedFilters1, "advancedFilters1");
             advancedFilters1.Name = "advancedFilters1";
-            advancedFilters1.SelectedEntryGetter = null;
             // 
             // splitContainerListAndMap
             // 
@@ -585,15 +584,7 @@ namespace BulkCrapUninstaller.Forms
             // propertiesSidebar
             // 
             resources.ApplyResources(propertiesSidebar, "propertiesSidebar");
-            propertiesSidebar.InvalidEnabled = true;
             propertiesSidebar.Name = "propertiesSidebar";
-            propertiesSidebar.OrphansEnabled = true;
-            propertiesSidebar.ProtectedEnabled = true;
-            propertiesSidebar.ShowTweaksEnabled = true;
-            propertiesSidebar.StoreAppsEnabled = true;
-            propertiesSidebar.SysCompEnabled = true;
-            propertiesSidebar.UpdatesEnabled = true;
-            propertiesSidebar.WinFeaturesEnabled = true;
             // 
             // label1
             // 

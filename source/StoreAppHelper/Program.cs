@@ -6,6 +6,7 @@
 using System;
 using System.IO;
 using Klocman;
+using Microsoft.Win32.Interop;
 
 namespace StoreAppHelper
 {
@@ -15,7 +16,7 @@ namespace StoreAppHelper
         private static int Main(string[] args)
         {
             if (args.Length == 0)
-                return (int)ReturnValue.InvalidArgumentCode;
+                return (int)ResultWin32.ERROR_BAD_ARGUMENTS;
 
             HelperTools.SetupEncoding();
 
@@ -26,17 +27,17 @@ namespace StoreAppHelper
                     var result = AppManager.QueryApps();
                     foreach (var app in result)
                         Console.WriteLine(HelperTools.ObjectToConsoleOutput(app));
-                    return (int)ReturnValue.OkCode;
+                    return (int)ResultWin32.ERROR_SUCCESS;
                 }
                 catch (IOException ex)
                 {
                     LogWriter.WriteExceptionToLog(ex);
-                    return HelperTools.HandleHrefMessage(ex);
+                    return (int)HelperTools.ExtractHrefCode(ex);
                 }
                 catch (Exception ex)
                 {
                     LogWriter.WriteExceptionToLog(ex);
-                    return (int)ReturnValue.FunctionFailedCode;
+                    return (int)ResultWin32.ERROR_FUNCTION_FAILED;
                 }
             }
 
@@ -45,20 +46,20 @@ namespace StoreAppHelper
                 try
                 {
                     AppManager.UninstallApp(args[1]);
-                    return (int)ReturnValue.OkCode;
+                    return (int)ResultWin32.ERROR_SUCCESS;
                 }
                 catch (IOException ex)
                 {
-                    return HelperTools.HandleHrefMessage(ex);
+                    return (int)HelperTools.ExtractHrefCode(ex);
                 }
                 catch (Exception ex)
                 {
                     LogWriter.WriteExceptionToLog(ex);
-                    return (int)ReturnValue.FunctionFailedCode;
+                    return (int)ResultWin32.ERROR_FUNCTION_FAILED;
                 }
             }
 
-            return (int)ReturnValue.InvalidArgumentCode;
+            return (int)ResultWin32.ERROR_BAD_ARGUMENTS;
         }
     }
 }

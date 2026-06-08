@@ -118,19 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="comboBoxFilter.Items" xml:space="preserve">
-    <value>Montrer tout</value>
+    <value>Afficher tout</value>
   </data>
   <data name="comboBoxFilter.Items1" xml:space="preserve">
-    <value>Montrer les entrées de démarrage</value>
+    <value>Afficher les entrées de démarrage</value>
   </data>
   <data name="comboBoxFilter.Items2" xml:space="preserve">
-    <value>Montrer les tâches</value>
+    <value>Afficher les tâches</value>
   </data>
   <data name="comboBoxFilter.Items3" xml:space="preserve">
-    <value>Montrer les extensions de navigateur</value>
+    <value>Afficher les extensions de navigateur</value>
   </data>
   <data name="buttonRefresh.Text" xml:space="preserve">
     <value>Rafraîchir</value>
+    <comment>更新</comment>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Fermer</value>
@@ -139,7 +140,7 @@
     <value>Exporter...</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Commandes se lançant pendant le démarrage du système ou la connection</value>
+    <value>Liste de commandes pouvant s'exécuter automatiquement sans intervention uyilisateur</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Nom du programme</value>
@@ -175,7 +176,7 @@
     <value>Déplacer vers le registre</value>
   </data>
   <data name="runForAllUsersToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tout utilisateur</value>
+    <value>Lancer pour tous utilisateurs</value>
   </data>
   <data name="enableToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Activé</value>

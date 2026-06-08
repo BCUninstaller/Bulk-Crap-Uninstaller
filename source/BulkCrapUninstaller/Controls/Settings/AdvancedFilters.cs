@@ -223,6 +223,7 @@ namespace BulkCrapUninstaller.Controls
             uninstallListEditor1.CurrentList = null;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Func<IEnumerable<ApplicationUninstallerEntry>> SelectedEntryGetter { get; set; }
 
         private void toolStripButtonAddSelectedAsFilters_Click(object sender, EventArgs e)

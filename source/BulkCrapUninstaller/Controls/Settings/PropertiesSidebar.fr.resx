@@ -136,7 +136,8 @@ Attention : vérifiez à deux fois avant de supprimer ces applications, elles po
     <value>Surligner les désinstalleurs certifiés</value>
   </data>
   <data name="checkBoxCertTest.ToolTip" xml:space="preserve">
-    <value>Utiliser des couleurs pour identifier les désinstalleurs certifiés. Si le certificat a été vérifié avec succès, il utilise la couleur grise, autrement il utilise la couleur bleue.
+    <value>Utiliser des couleurs pour identifier les désinstalleurs certifiés. 
+Si le certificat a été vérifié avec succès utiliser la couleur verte, autrement utiliser la couleur bleue.
 
 Attention : la vérification peut mettre longtemps à se terminer.</value>
   </data>
@@ -147,20 +148,21 @@ Attention : la vérification peut mettre longtemps à se terminer.</value>
     <value>Filtrer tout ce qui a été publié par Microsoft. C'est aussi simple que cela.</value>
   </data>
   <data name="checkBoxListSysComp.Text" xml:space="preserve">
-    <value>Montrer les composants système</value>
+    <value>Afficher les composants système</value>
   </data>
   <data name="checkBoxListSysComp.ToolTip" xml:space="preserve">
     <value>Quelques désinstalleurs peuvent être marqués comme "composants système" pour les masquer dans la
-liste Ajout/Suppression de programmes. Les pilotes sont souvent marqués avec cette balise.</value>
+liste Ajout/Suppression de programmes. 
+Les pilotes sont souvent marqués avec cette balise.</value>
   </data>
   <data name="checkBoxListProtected.Text" xml:space="preserve">
-    <value>Montrer les éléments protégés</value>
+    <value>Afficher les éléments protégés</value>
   </data>
   <data name="checkBoxListProtected.ToolTip" xml:space="preserve">
     <value>Les éléments protégés sont marqués avec la balise "NoRemove", signifiant que l'éditeur ne veut pas que vous les enleviez.</value>
   </data>
   <data name="checkBoxShowUpdates.Text" xml:space="preserve">
-    <value>Montrer les mises à jour</value>
+    <value>Afficher les mises à jour</value>
   </data>
   <data name="checkBoxShowUpdates.ToolTip" xml:space="preserve">
     <value>Mises à jour d'autres applications. En général elles sont désinstallées ensemble avec leur application parente, ainsi elles peuvent être ignorées.</value>
@@ -172,12 +174,12 @@ liste Ajout/Suppression de programmes. Les pilotes sont souvent marqués avec ce
     <value>Sélectionnner par cases à cocher</value>
   </data>
   <data name="checkBoxViewCheckboxes.ToolTip" xml:space="preserve">
-    <value>Changer le style de sélection de la liste en cases à cocher. Elles sont plus fiables car un simple clic ne peut désélectionner tout.
+    <value>Change le style de sélection de la liste en cases à cocher. Elles sont plus fiables car un simple clic ne peut désélectionner tout.
 
 Vous pouvez cocher de multiples éléments en les surlignant et en pressant la barre d'espace.</value>
   </data>
   <data name="checkBoxViewGroups.Text" xml:space="preserve">
-    <value>Montrer les éléments en groupes</value>
+    <value>Afficher les éléments en groupes</value>
   </data>
   <data name="checkBoxViewGroups.ToolTip" xml:space="preserve">
     <value>Grouper les éléments en fonction de la colonne 
@@ -188,18 +190,18 @@ Le groupage de la plupart des colonnes utilise un tri intelligent.</value>
     <value>Réglages de la vue liste</value>
   </data>
   <data name="checkBoxShowStoreApps.Text" xml:space="preserve">
-    <value>Montrer les applis du Windows Store</value>
+    <value>Afficher les applis du Windows Store</value>
   </data>
   <data name="checkBoxWinFeature.Text" xml:space="preserve">
-    <value>Montrer les fonctionalités Windows</value>
+    <value>Afficher les fonctionnalités Windows</value>
   </data>
   <data name="checkBoxHighlightSpecial.Text" xml:space="preserve">
     <value>Surligner les désinstalleurs spéciaux</value>
   </data>
   <data name="checkBoxHighlightSpecial.ToolTip" xml:space="preserve">
-    <value>Utiliser des couleurs pour différencier les applications spéciales, par exemple les applis du store et les Fonctionnalités Windows</value>
+    <value>Utiliser des couleurs pour différencier les applications spéciales, par exemple les applis du Store et les Fonctionnalités Windows.</value>
   </data>
   <data name="checkBoxTweaks.Text" xml:space="preserve">
-    <value>Montrer les perfectionnements</value>
+    <value>Afficher les perfectionnements</value>
   </data>
 </root>

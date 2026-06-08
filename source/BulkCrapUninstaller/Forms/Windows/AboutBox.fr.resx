@@ -136,14 +136,15 @@
     <value>Version du programme</value>
   </data>
   <data name="linkLabel5.Text" xml:space="preserve">
-    <value>NBug par Teoman Soygul</value>
+    <value>NBug</value>
+    <comment>I have translated it directly in Japanese, but it may not convey the meaning very well.</comment>
   </data>
   <data name="linkLabel3.Text" xml:space="preserve">
     <value>Icônes Modern UI</value>
     <comment>Si "Modern UI Icons" significa "Iconos de Interfaz de Usuario Moderno" la traducción será "Iconos Modernos de Interface de Usuario"</comment>
   </data>
   <data name="linkLabel2.Text" xml:space="preserve">
-    <value>PortableSettingsProvider par CodeChimp</value>
+    <value>PortableSettingsProvider</value>
     <comment>1</comment>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
@@ -169,6 +170,7 @@
   </data>
   <data name="linkLabel6.Text" xml:space="preserve">
     <value>DotNetZip</value>
+    <comment>jp translator: what's this?</comment>
   </data>
   <data name="labelName.Text" xml:space="preserve">
     <value>BCUninstaller (Bulk Crap Uninstaller)</value>
@@ -182,8 +184,10 @@
   </data>
   <data name="linkLabel8.Text" xml:space="preserve">
     <value>TestStack.White</value>
+    <comment>I have translated it directly in Japanese, but it may not convey the meaning very well.</comment>
   </data>
   <data name="linkLabel9.Text" xml:space="preserve">
     <value>es.exe (CLI pour Everything)</value>
+    <comment>Almost all the translations here were in English</comment>
   </data>
 </root>

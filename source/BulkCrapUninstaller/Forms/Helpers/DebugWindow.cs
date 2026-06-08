@@ -219,5 +219,10 @@ namespace BulkCrapUninstaller.Forms
         {
             SysRestore.CancelRestore(_currentRestoreId);
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            throw new DllNotFoundException(@"Unable to load DLL 'api-ms-win-core-com-l1-1-0.dll' or one of its dependencies: The specified module could not be found. (0x8007007E)");
+        }
     }
 }

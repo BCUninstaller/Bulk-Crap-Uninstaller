@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,21 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelProgress.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="labelProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 11</value>
+    <value>123, 13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 25</value>
+    <value>89, 28</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelProgress.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -145,7 +149,7 @@
     <value>labelProgress</value>
   </data>
   <data name="&gt;&gt;labelProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelProgress.Parent" xml:space="preserve">
     <value>panelNavigation</value>
@@ -160,10 +164,13 @@
     <value>Left</value>
   </data>
   <data name="buttonExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 11</value>
+    <value>13, 13</value>
+  </data>
+  <data name="buttonExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 25</value>
+    <value>110, 28</value>
   </data>
   <data name="buttonExit.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -175,7 +182,7 @@
     <value>buttonExit</value>
   </data>
   <data name="&gt;&gt;buttonExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonExit.Parent" xml:space="preserve">
     <value>panelNavigation</value>
@@ -193,10 +200,13 @@
     <value>False</value>
   </data>
   <data name="buttonPrev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 11</value>
+    <value>212, 13</value>
+  </data>
+  <data name="buttonPrev.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonPrev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
+    <value>88, 28</value>
   </data>
   <data name="buttonPrev.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -208,7 +218,7 @@
     <value>buttonPrev</value>
   </data>
   <data name="&gt;&gt;buttonPrev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonPrev.Parent" xml:space="preserve">
     <value>panelNavigation</value>
@@ -220,10 +230,13 @@
     <value>Right</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 11</value>
+    <value>300, 13</value>
+  </data>
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 25</value>
+    <value>12, 28</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -232,7 +245,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
     <value>panelNavigation</value>
@@ -247,10 +260,13 @@
     <value>Right</value>
   </data>
   <data name="buttonNext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 11</value>
+    <value>312, 13</value>
+  </data>
+  <data name="buttonNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonNext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
+    <value>88, 28</value>
   </data>
   <data name="buttonNext.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -262,7 +278,7 @@
     <value>buttonNext</value>
   </data>
   <data name="&gt;&gt;buttonNext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonNext.Parent" xml:space="preserve">
     <value>panelNavigation</value>
@@ -274,13 +290,16 @@
     <value>Bottom</value>
   </data>
   <data name="panelNavigation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 354</value>
+    <value>0, 409</value>
+  </data>
+  <data name="panelNavigation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panelNavigation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 11, 11, 11</value>
+    <value>13, 13, 13, 13</value>
   </data>
   <data name="panelNavigation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 47</value>
+    <value>413, 54</value>
   </data>
   <data name="panelNavigation.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -289,7 +308,7 @@
     <value>panelNavigation</value>
   </data>
   <data name="&gt;&gt;panelNavigation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelNavigation.Parent" xml:space="preserve">
     <value>$this</value>
@@ -304,10 +323,13 @@
     <value>Left</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2184, 6</value>
+    <value>2551, 7</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -316,7 +338,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -328,10 +350,13 @@
     <value>Left</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2162, 6</value>
+    <value>2525, 7</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -340,7 +365,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -355,10 +380,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonMore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 36</value>
+    <value>125, 42</value>
+  </data>
+  <data name="buttonMore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonMore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
+    <value>148, 27</value>
   </data>
   <data name="buttonMore.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -370,7 +398,7 @@
     <value>buttonMore</value>
   </data>
   <data name="&gt;&gt;buttonMore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonMore.Parent" xml:space="preserve">
     <value>panel12</value>
@@ -385,10 +413,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 65</value>
+    <value>125, 75</value>
+  </data>
+  <data name="buttonHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
+    <value>148, 27</value>
   </data>
   <data name="buttonHelp.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -400,7 +431,7 @@
     <value>buttonHelp</value>
   </data>
   <data name="&gt;&gt;buttonHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonHelp.Parent" xml:space="preserve">
     <value>panel12</value>
@@ -415,10 +446,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonFinish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 113</value>
+    <value>125, 130</value>
+  </data>
+  <data name="buttonFinish.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonFinish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
+    <value>148, 27</value>
   </data>
   <data name="buttonFinish.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -430,7 +464,7 @@
     <value>buttonFinish</value>
   </data>
   <data name="&gt;&gt;buttonFinish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonFinish.Parent" xml:space="preserve">
     <value>panel12</value>
@@ -442,10 +476,13 @@
     <value>Top</value>
   </data>
   <data name="panel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 166</value>
+    <value>0, 193</value>
+  </data>
+  <data name="panel12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 148</value>
+    <value>386, 171</value>
   </data>
   <data name="panel12.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -454,7 +491,7 @@
     <value>panel12</value>
   </data>
   <data name="&gt;&gt;panel12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel12.Parent" xml:space="preserve">
     <value>page5</value>
@@ -469,13 +506,16 @@
     <value>True</value>
   </data>
   <data name="p5finishContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>9, 5</value>
+  </data>
+  <data name="p5finishContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p5finishContact.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 4</value>
+    <value>0, 9, 0, 5</value>
   </data>
   <data name="p5finishContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 38</value>
+    <value>364, 44</value>
   </data>
   <data name="p5finishContact.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -487,7 +527,7 @@
     <value>p5finishContact</value>
   </data>
   <data name="&gt;&gt;p5finishContact.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p5finishContact.Parent" xml:space="preserve">
     <value>flowLayoutPanel6</value>
@@ -499,10 +539,13 @@
     <value>True</value>
   </data>
   <data name="p5LinkContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 42</value>
+    <value>9, 49</value>
+  </data>
+  <data name="p5LinkContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p5LinkContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 13</value>
+    <value>128, 15</value>
   </data>
   <data name="p5LinkContact.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -514,7 +557,7 @@
     <value>p5LinkContact</value>
   </data>
   <data name="&gt;&gt;p5LinkContact.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p5LinkContact.Parent" xml:space="preserve">
     <value>flowLayoutPanel6</value>
@@ -526,13 +569,16 @@
     <value>True</value>
   </data>
   <data name="p5finishHomepage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 55</value>
+    <value>9, 64</value>
+  </data>
+  <data name="p5finishHomepage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p5finishHomepage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 4</value>
+    <value>0, 9, 0, 5</value>
   </data>
   <data name="p5finishHomepage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 38</value>
+    <value>333, 44</value>
   </data>
   <data name="p5finishHomepage.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -544,7 +590,7 @@
     <value>p5finishHomepage</value>
   </data>
   <data name="&gt;&gt;p5finishHomepage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p5finishHomepage.Parent" xml:space="preserve">
     <value>flowLayoutPanel6</value>
@@ -556,10 +602,13 @@
     <value>True</value>
   </data>
   <data name="p5LinkHomepage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 93</value>
+    <value>9, 108</value>
+  </data>
+  <data name="p5LinkHomepage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p5LinkHomepage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>116, 15</value>
   </data>
   <data name="p5LinkHomepage.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -571,7 +620,7 @@
     <value>p5LinkHomepage</value>
   </data>
   <data name="&gt;&gt;p5LinkHomepage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p5LinkHomepage.Parent" xml:space="preserve">
     <value>flowLayoutPanel6</value>
@@ -583,13 +632,16 @@
     <value>Top</value>
   </data>
   <data name="flowLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 56</value>
+    <value>0, 65</value>
+  </data>
+  <data name="flowLayoutPanel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="flowLayoutPanel6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 110</value>
+    <value>386, 128</value>
   </data>
   <data name="flowLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -598,7 +650,7 @@
     <value>flowLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel6.Parent" xml:space="preserve">
     <value>page5</value>
@@ -615,11 +667,14 @@
   <data name="p5finishTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="p5finishTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="p5finishTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 6</value>
+    <value>0, 0, 0, 7</value>
   </data>
   <data name="p5finishTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 56</value>
+    <value>386, 65</value>
   </data>
   <data name="p5finishTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -634,7 +689,7 @@
     <value>p5finishTitle</value>
   </data>
   <data name="&gt;&gt;p5finishTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p5finishTitle.Parent" xml:space="preserve">
     <value>page5</value>
@@ -646,13 +701,16 @@
     <value>Left</value>
   </data>
   <data name="page5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1821, 6</value>
+    <value>2127, 7</value>
+  </data>
+  <data name="page5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="page5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
+    <value>0, 0, 12, 0</value>
   </data>
   <data name="page5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="page5.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -661,7 +719,7 @@
     <value>page5</value>
   </data>
   <data name="&gt;&gt;page5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;page5.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -673,10 +731,13 @@
     <value>Left</value>
   </data>
   <data name="spacer4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1799, 6</value>
+    <value>2101, 7</value>
+  </data>
+  <data name="spacer4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="spacer4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="spacer4.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -685,7 +746,7 @@
     <value>spacer4</value>
   </data>
   <data name="&gt;&gt;spacer4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;spacer4.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -700,7 +761,10 @@
     <value>Arial Black, 12pt, style=Bold</value>
   </data>
   <data name="p4netTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>9, 5</value>
+  </data>
+  <data name="p4netTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
@@ -718,7 +782,7 @@
     <value>p4netTitle</value>
   </data>
   <data name="&gt;&gt;p4netTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -730,13 +794,16 @@
     <value>True</value>
   </data>
   <data name="p4netDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 30</value>
+    <value>9, 31</value>
+  </data>
+  <data name="p4netDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netDesc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="p4netDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 29</value>
+    <value>377, 33</value>
   </data>
   <data name="p4netDesc.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -748,7 +815,7 @@
     <value>p4netDesc</value>
   </data>
   <data name="&gt;&gt;p4netDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netDesc.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -760,13 +827,16 @@
     <value>True</value>
   </data>
   <data name="p4netDesc1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 59</value>
+    <value>9, 64</value>
+  </data>
+  <data name="p4netDesc1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netDesc1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 2</value>
+    <value>5, 0, 0, 2</value>
   </data>
   <data name="p4netDesc1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 15</value>
+    <value>186, 17</value>
   </data>
   <data name="p4netDesc1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -778,7 +848,7 @@
     <value>p4netDesc1</value>
   </data>
   <data name="&gt;&gt;p4netDesc1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netDesc1.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -790,13 +860,16 @@
     <value>True</value>
   </data>
   <data name="p4netDesc2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 74</value>
+    <value>9, 81</value>
+  </data>
+  <data name="p4netDesc2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netDesc2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 2</value>
+    <value>5, 0, 0, 2</value>
   </data>
   <data name="p4netDesc2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 15</value>
+    <value>145, 17</value>
   </data>
   <data name="p4netDesc2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -808,7 +881,7 @@
     <value>p4netDesc2</value>
   </data>
   <data name="&gt;&gt;p4netDesc2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netDesc2.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -820,13 +893,16 @@
     <value>True</value>
   </data>
   <data name="p4netDesc3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 89</value>
+    <value>9, 98</value>
+  </data>
+  <data name="p4netDesc3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netDesc3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 2</value>
+    <value>5, 0, 0, 2</value>
   </data>
   <data name="p4netDesc3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 15</value>
+    <value>213, 17</value>
   </data>
   <data name="p4netDesc3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -838,7 +914,7 @@
     <value>p4netDesc3</value>
   </data>
   <data name="&gt;&gt;p4netDesc3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netDesc3.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -853,13 +929,16 @@
     <value>NoControl</value>
   </data>
   <data name="p4netDesc4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 104</value>
+    <value>9, 115</value>
+  </data>
+  <data name="p4netDesc4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netDesc4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 2</value>
+    <value>5, 0, 0, 2</value>
   </data>
   <data name="p4netDesc4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 15</value>
+    <value>228, 17</value>
   </data>
   <data name="p4netDesc4.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -871,7 +950,7 @@
     <value>p4netDesc4</value>
   </data>
   <data name="&gt;&gt;p4netDesc4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netDesc4.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -883,13 +962,16 @@
     <value>True</value>
   </data>
   <data name="p4netErrors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 119</value>
+    <value>9, 132</value>
+  </data>
+  <data name="p4netErrors.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netErrors.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 8</value>
+    <value>0, 9, 0, 9</value>
   </data>
   <data name="p4netErrors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 68</value>
+    <value>380, 78</value>
   </data>
   <data name="p4netErrors.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -901,7 +983,7 @@
     <value>p4netErrors</value>
   </data>
   <data name="&gt;&gt;p4netErrors.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netErrors.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -916,16 +998,16 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxUpdateSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 190</value>
+    <value>9, 213</value>
   </data>
   <data name="checkBoxUpdateSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxUpdateSearch.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxUpdateSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 17</value>
+    <value>299, 19</value>
   </data>
   <data name="checkBoxUpdateSearch.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -937,7 +1019,7 @@
     <value>checkBoxUpdateSearch</value>
   </data>
   <data name="&gt;&gt;checkBoxUpdateSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxUpdateSearch.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -952,13 +1034,16 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
   </data>
   <data name="p4netUpdateAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 209</value>
+    <value>9, 234</value>
+  </data>
+  <data name="p4netUpdateAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netUpdateAdd.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 0, 6</value>
+    <value>7, 0, 0, 7</value>
   </data>
   <data name="p4netUpdateAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 19</value>
+    <value>280, 20</value>
   </data>
   <data name="p4netUpdateAdd.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -970,7 +1055,7 @@
     <value>p4netUpdateAdd</value>
   </data>
   <data name="&gt;&gt;p4netUpdateAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netUpdateAdd.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -985,16 +1070,16 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxSendStats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 231</value>
+    <value>9, 257</value>
   </data>
   <data name="checkBoxSendStats.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxSendStats.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxSendStats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 17</value>
+    <value>281, 19</value>
   </data>
   <data name="checkBoxSendStats.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1006,7 +1091,7 @@
     <value>checkBoxSendStats</value>
   </data>
   <data name="&gt;&gt;checkBoxSendStats.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxSendStats.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -1021,13 +1106,16 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
   </data>
   <data name="p4netUsageAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 250</value>
+    <value>9, 278</value>
+  </data>
+  <data name="p4netUsageAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p4netUsageAdd.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 0, 6</value>
+    <value>7, 0, 0, 7</value>
   </data>
   <data name="p4netUsageAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 19</value>
+    <value>274, 20</value>
   </data>
   <data name="p4netUsageAdd.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1039,7 +1127,7 @@
     <value>p4netUsageAdd</value>
   </data>
   <data name="&gt;&gt;p4netUsageAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p4netUsageAdd.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -1054,16 +1142,16 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxRatings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 272</value>
+    <value>9, 301</value>
   </data>
   <data name="checkBoxRatings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxRatings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxRatings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 17</value>
+    <value>211, 19</value>
   </data>
   <data name="checkBoxRatings.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1075,7 +1163,7 @@
     <value>checkBoxRatings</value>
   </data>
   <data name="&gt;&gt;checkBoxRatings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxRatings.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -1092,11 +1180,14 @@
   <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="flowLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="flowLayoutPanel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1105,7 +1196,7 @@
     <value>flowLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
     <value>pageNetwork</value>
@@ -1117,10 +1208,13 @@
     <value>Left</value>
   </data>
   <data name="pageNetwork.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1458, 6</value>
+    <value>1703, 7</value>
+  </data>
+  <data name="pageNetwork.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="pageNetwork.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="pageNetwork.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1129,7 +1223,7 @@
     <value>pageNetwork</value>
   </data>
   <data name="&gt;&gt;pageNetwork.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pageNetwork.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -1141,10 +1235,13 @@
     <value>Left</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1436, 6</value>
+    <value>1677, 7</value>
+  </data>
+  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1153,7 +1250,7 @@
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -1171,7 +1268,10 @@
     <value>NoControl</value>
   </data>
   <data name="pCorTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>9, 5</value>
+  </data>
+  <data name="pCorTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
@@ -1189,7 +1289,7 @@
     <value>pCorTitle</value>
   </data>
   <data name="&gt;&gt;pCorTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1204,13 +1304,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 30</value>
+    <value>9, 31</value>
+  </data>
+  <data name="pCorDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorDesc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="pCorDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 29</value>
+    <value>379, 33</value>
   </data>
   <data name="pCorDesc.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1222,7 +1325,7 @@
     <value>pCorDesc</value>
   </data>
   <data name="&gt;&gt;pCorDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorDesc.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1240,13 +1343,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorViewInvalidTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 59</value>
+    <value>9, 64</value>
+  </data>
+  <data name="pCorViewInvalidTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorViewInvalidTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="pCorViewInvalidTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>216, 28</value>
   </data>
   <data name="pCorViewInvalidTitle.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1258,7 +1364,7 @@
     <value>pCorViewInvalidTitle</value>
   </data>
   <data name="&gt;&gt;pCorViewInvalidTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorViewInvalidTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1273,13 +1379,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorViewInvalid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 86</value>
+    <value>9, 92</value>
+  </data>
+  <data name="pCorViewInvalid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorViewInvalid.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="pCorViewInvalid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 42</value>
+    <value>380, 48</value>
   </data>
   <data name="pCorViewInvalid.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1291,7 +1400,7 @@
     <value>pCorViewInvalid</value>
   </data>
   <data name="&gt;&gt;pCorViewInvalid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorViewInvalid.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1306,16 +1415,16 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxInvalidTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 131</value>
+    <value>9, 143</value>
   </data>
   <data name="checkBoxInvalidTest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxInvalidTest.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxInvalidTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 17</value>
+    <value>182, 19</value>
   </data>
   <data name="checkBoxInvalidTest.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1327,7 +1436,7 @@
     <value>checkBoxInvalidTest</value>
   </data>
   <data name="&gt;&gt;checkBoxInvalidTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxInvalidTest.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1345,13 +1454,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorViewinvalidComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 150</value>
+    <value>9, 164</value>
+  </data>
+  <data name="pCorViewinvalidComment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorViewinvalidComment.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 0, 0</value>
+    <value>7, 0, 0, 0</value>
   </data>
   <data name="pCorViewinvalidComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 13</value>
+    <value>193, 13</value>
   </data>
   <data name="pCorViewinvalidComment.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1363,7 +1475,7 @@
     <value>pCorViewinvalidComment</value>
   </data>
   <data name="&gt;&gt;pCorViewinvalidComment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorViewinvalidComment.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1381,13 +1493,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorOrphansTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 163</value>
+    <value>9, 177</value>
+  </data>
+  <data name="pCorOrphansTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorOrphansTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="pCorOrphansTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 27</value>
+    <value>169, 28</value>
   </data>
   <data name="pCorOrphansTitle.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1399,7 +1514,7 @@
     <value>pCorOrphansTitle</value>
   </data>
   <data name="&gt;&gt;pCorOrphansTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorOrphansTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1414,13 +1529,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorOrphansMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 190</value>
+    <value>9, 205</value>
+  </data>
+  <data name="pCorOrphansMessage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorOrphansMessage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="pCorOrphansMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 42</value>
+    <value>357, 48</value>
   </data>
   <data name="pCorOrphansMessage.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1432,7 +1550,7 @@
     <value>pCorOrphansMessage</value>
   </data>
   <data name="&gt;&gt;pCorOrphansMessage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorOrphansMessage.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1447,16 +1565,16 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxOrphans.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 235</value>
+    <value>9, 256</value>
   </data>
   <data name="checkBoxOrphans.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxOrphans.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxOrphans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 17</value>
+    <value>247, 19</value>
   </data>
   <data name="checkBoxOrphans.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1468,7 +1586,7 @@
     <value>checkBoxOrphans</value>
   </data>
   <data name="&gt;&gt;checkBoxOrphans.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxOrphans.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1486,13 +1604,16 @@
     <value>NoControl</value>
   </data>
   <data name="pCorOrphansComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 254</value>
+    <value>9, 277</value>
+  </data>
+  <data name="pCorOrphansComment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pCorOrphansComment.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 0, 0</value>
+    <value>7, 0, 0, 0</value>
   </data>
   <data name="pCorOrphansComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 39</value>
+    <value>340, 39</value>
   </data>
   <data name="pCorOrphansComment.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1505,7 +1626,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>pCorOrphansComment</value>
   </data>
   <data name="&gt;&gt;pCorOrphansComment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pCorOrphansComment.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1522,11 +1643,14 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="flowLayoutPanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1535,7 +1659,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
     <value>pageCorrupted</value>
@@ -1547,10 +1671,13 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Left</value>
   </data>
   <data name="pageCorrupted.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1095, 6</value>
+    <value>1279, 7</value>
+  </data>
+  <data name="pageCorrupted.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="pageCorrupted.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="pageCorrupted.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1559,7 +1686,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>pageCorrupted</value>
   </data>
   <data name="&gt;&gt;pageCorrupted.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pageCorrupted.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -1571,10 +1698,13 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Left</value>
   </data>
   <data name="spacer3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1073, 6</value>
+    <value>1253, 7</value>
+  </data>
+  <data name="spacer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="spacer3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="spacer3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1583,7 +1713,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>spacer3</value>
   </data>
   <data name="&gt;&gt;spacer3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;spacer3.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -1598,7 +1728,10 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Arial Black, 12pt, style=Bold</value>
   </data>
   <data name="p3advTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>9, 5</value>
+  </data>
+  <data name="p3advTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
@@ -1616,7 +1749,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advTitle</value>
   </data>
   <data name="&gt;&gt;p3advTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1628,10 +1761,13 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p3advDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 30</value>
+    <value>9, 31</value>
+  </data>
+  <data name="p3advDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 26</value>
+    <value>353, 30</value>
   </data>
   <data name="p3advDesc.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1643,7 +1779,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advDesc</value>
   </data>
   <data name="&gt;&gt;p3advDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advDesc.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1658,13 +1794,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Arial, 9.75pt, style=Bold</value>
   </data>
   <data name="p3advSyscompTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 56</value>
+    <value>9, 61</value>
+  </data>
+  <data name="p3advSyscompTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advSyscompTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="p3advSyscompTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 27</value>
+    <value>134, 28</value>
   </data>
   <data name="p3advSyscompTitle.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1676,7 +1815,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advSyscompTitle</value>
   </data>
   <data name="&gt;&gt;p3advSyscompTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advSyscompTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1688,13 +1827,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p3advSyscomp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 83</value>
+    <value>9, 89</value>
+  </data>
+  <data name="p3advSyscomp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advSyscomp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="p3advSyscomp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 42</value>
+    <value>371, 48</value>
   </data>
   <data name="p3advSyscomp.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1706,7 +1848,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advSyscomp</value>
   </data>
   <data name="&gt;&gt;p3advSyscomp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advSyscomp.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1721,16 +1863,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>NoControl</value>
   </data>
   <data name="checkBoxListSysComp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 128</value>
+    <value>9, 140</value>
   </data>
   <data name="checkBoxListSysComp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxListSysComp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxListSysComp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 17</value>
+    <value>300, 19</value>
   </data>
   <data name="checkBoxListSysComp.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1742,7 +1884,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>checkBoxListSysComp</value>
   </data>
   <data name="&gt;&gt;checkBoxListSysComp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxListSysComp.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1757,13 +1899,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Arial, 9.75pt, style=Bold</value>
   </data>
   <data name="p3advProtectTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 147</value>
+    <value>9, 161</value>
+  </data>
+  <data name="p3advProtectTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advProtectTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 4, 0, 3</value>
+    <value>0, 5, 0, 3</value>
   </data>
   <data name="p3advProtectTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 23</value>
+    <value>145, 24</value>
   </data>
   <data name="p3advProtectTitle.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1775,7 +1920,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advProtectTitle</value>
   </data>
   <data name="&gt;&gt;p3advProtectTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advProtectTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1787,13 +1932,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p3advProtect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 170</value>
+    <value>9, 185</value>
+  </data>
+  <data name="p3advProtect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advProtect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="p3advProtect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 55</value>
+    <value>378, 63</value>
   </data>
   <data name="p3advProtect.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1805,7 +1953,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advProtect</value>
   </data>
   <data name="&gt;&gt;p3advProtect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advProtect.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1820,16 +1968,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>NoControl</value>
   </data>
   <data name="checkBoxListProtected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 228</value>
+    <value>9, 251</value>
   </data>
   <data name="checkBoxListProtected.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxListProtected.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxListProtected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 17</value>
+    <value>244, 19</value>
   </data>
   <data name="checkBoxListProtected.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1841,7 +1989,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>checkBoxListProtected</value>
   </data>
   <data name="&gt;&gt;checkBoxListProtected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxListProtected.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1856,16 +2004,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>NoControl</value>
   </data>
   <data name="checkBoxDiisableProtection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 250</value>
+    <value>9, 275</value>
   </data>
   <data name="checkBoxDiisableProtection.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxDiisableProtection.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxDiisableProtection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>292, 17</value>
+    <value>325, 19</value>
   </data>
   <data name="checkBoxDiisableProtection.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1877,7 +2025,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>checkBoxDiisableProtection</value>
   </data>
   <data name="&gt;&gt;checkBoxDiisableProtection.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxDiisableProtection.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1892,13 +2040,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
   </data>
   <data name="p3advProtectAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 269</value>
+    <value>9, 296</value>
+  </data>
+  <data name="p3advProtectAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p3advProtectAdd.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 0, 0</value>
+    <value>7, 0, 0, 0</value>
   </data>
   <data name="p3advProtectAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 13</value>
+    <value>204, 13</value>
   </data>
   <data name="p3advProtectAdd.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1910,7 +2061,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p3advProtectAdd</value>
   </data>
   <data name="&gt;&gt;p3advProtectAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p3advProtectAdd.Parent" xml:space="preserve">
     <value>flowLayoutPanel4</value>
@@ -1927,11 +2078,14 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
   <data name="flowLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="flowLayoutPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="flowLayoutPanel4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="flowLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="flowLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1940,7 +2094,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>flowLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel4.Parent" xml:space="preserve">
     <value>page3</value>
@@ -1952,10 +2106,13 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Left</value>
   </data>
   <data name="page3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 6</value>
+    <value>855, 7</value>
+  </data>
+  <data name="page3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="page3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="page3.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1964,7 +2121,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>page3</value>
   </data>
   <data name="&gt;&gt;page3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;page3.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -1976,10 +2133,13 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Left</value>
   </data>
   <data name="spacer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>710, 6</value>
+    <value>829, 7</value>
+  </data>
+  <data name="spacer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="spacer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="spacer2.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1988,7 +2148,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>spacer2</value>
   </data>
   <data name="&gt;&gt;spacer2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;spacer2.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -2003,7 +2163,10 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Arial Black, 12pt, style=Bold</value>
   </data>
   <data name="p2viewTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>9, 5</value>
+  </data>
+  <data name="p2viewTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
@@ -2021,7 +2184,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewTitle</value>
   </data>
   <data name="&gt;&gt;p2viewTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2033,13 +2196,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p2viewDetail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 30</value>
+    <value>9, 31</value>
+  </data>
+  <data name="p2viewDetail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewDetail.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="p2viewDetail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 29</value>
+    <value>366, 33</value>
   </data>
   <data name="p2viewDetail.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2051,7 +2217,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewDetail</value>
   </data>
   <data name="&gt;&gt;p2viewDetail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewDetail.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2063,13 +2229,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p2viewDetail1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 59</value>
+    <value>9, 64</value>
+  </data>
+  <data name="p2viewDetail1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewDetail1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 2</value>
+    <value>5, 0, 0, 2</value>
   </data>
   <data name="p2viewDetail1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 15</value>
+    <value>289, 17</value>
   </data>
   <data name="p2viewDetail1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2081,7 +2250,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewDetail1</value>
   </data>
   <data name="&gt;&gt;p2viewDetail1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewDetail1.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2093,13 +2262,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p2viewDetail2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 74</value>
+    <value>9, 81</value>
+  </data>
+  <data name="p2viewDetail2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewDetail2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 2</value>
+    <value>5, 0, 0, 2</value>
   </data>
   <data name="p2viewDetail2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 15</value>
+    <value>330, 17</value>
   </data>
   <data name="p2viewDetail2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2111,7 +2283,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewDetail2</value>
   </data>
   <data name="&gt;&gt;p2viewDetail2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewDetail2.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2123,13 +2295,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p2viewDetail3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 89</value>
+    <value>9, 98</value>
+  </data>
+  <data name="p2viewDetail3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewDetail3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 4</value>
+    <value>5, 0, 0, 5</value>
   </data>
   <data name="p2viewDetail3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 17</value>
+    <value>156, 20</value>
   </data>
   <data name="p2viewDetail3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2141,7 +2316,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewDetail3</value>
   </data>
   <data name="&gt;&gt;p2viewDetail3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewDetail3.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2156,16 +2331,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>NoControl</value>
   </data>
   <data name="checkBoxGroups.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 109</value>
+    <value>9, 121</value>
   </data>
   <data name="checkBoxGroups.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxGroups.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxGroups.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 17</value>
+    <value>176, 19</value>
   </data>
   <data name="checkBoxGroups.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2177,7 +2352,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>checkBoxGroups</value>
   </data>
   <data name="&gt;&gt;checkBoxGroups.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxGroups.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2192,16 +2367,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>NoControl</value>
   </data>
   <data name="checkBoxCheckboxes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 131</value>
+    <value>9, 145</value>
   </data>
   <data name="checkBoxCheckboxes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxCheckboxes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxCheckboxes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 17</value>
+    <value>159, 19</value>
   </data>
   <data name="checkBoxCheckboxes.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2213,7 +2388,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>checkBoxCheckboxes</value>
   </data>
   <data name="&gt;&gt;checkBoxCheckboxes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxCheckboxes.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2228,13 +2403,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Arial, 9.75pt, style=Bold</value>
   </data>
   <data name="p2viewCertsTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 150</value>
+    <value>9, 166</value>
+  </data>
+  <data name="p2viewCertsTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewCertsTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="p2viewCertsTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 27</value>
+    <value>138, 28</value>
   </data>
   <data name="p2viewCertsTitle.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2246,7 +2424,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewCertsTitle</value>
   </data>
   <data name="&gt;&gt;p2viewCertsTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewCertsTitle.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2258,13 +2436,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>True</value>
   </data>
   <data name="p2viewCerts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 177</value>
+    <value>9, 194</value>
+  </data>
+  <data name="p2viewCerts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewCerts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 3</value>
   </data>
   <data name="p2viewCerts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 42</value>
+    <value>379, 48</value>
   </data>
   <data name="p2viewCerts.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2276,7 +2457,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>p2viewCerts</value>
   </data>
   <data name="&gt;&gt;p2viewCerts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewCerts.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2291,16 +2472,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>NoControl</value>
   </data>
   <data name="checkBoxCertTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 222</value>
+    <value>9, 245</value>
   </data>
   <data name="checkBoxCertTest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 2</value>
+    <value>4, 3, 4, 2</value>
   </data>
   <data name="checkBoxCertTest.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="checkBoxCertTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 17</value>
+    <value>190, 19</value>
   </data>
   <data name="checkBoxCertTest.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2312,7 +2493,7 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>checkBoxCertTest</value>
   </data>
   <data name="&gt;&gt;checkBoxCertTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxCertTest.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2327,13 +2508,16 @@ If the original uninstaller isn't found you will have to use the "Uninstall manu
     <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
   </data>
   <data name="p2viewAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 241</value>
+    <value>9, 266</value>
+  </data>
+  <data name="p2viewAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p2viewAdd.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 0, 0</value>
+    <value>7, 0, 0, 0</value>
   </data>
   <data name="p2viewAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 26</value>
+    <value>308, 26</value>
   </data>
   <data name="p2viewAdd.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2346,7 +2530,7 @@ Warning: Verification can take a long time.</value>
     <value>p2viewAdd</value>
   </data>
   <data name="&gt;&gt;p2viewAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p2viewAdd.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -2363,11 +2547,14 @@ Warning: Verification can take a long time.</value>
   <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="flowLayoutPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="flowLayoutPanel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2376,7 +2563,7 @@ Warning: Verification can take a long time.</value>
     <value>flowLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
     <value>page2</value>
@@ -2388,10 +2575,13 @@ Warning: Verification can take a long time.</value>
     <value>Left</value>
   </data>
   <data name="page2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 6</value>
+    <value>431, 7</value>
+  </data>
+  <data name="page2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="page2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="page2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2400,7 +2590,7 @@ Warning: Verification can take a long time.</value>
     <value>page2</value>
   </data>
   <data name="&gt;&gt;page2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;page2.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -2412,10 +2602,13 @@ Warning: Verification can take a long time.</value>
     <value>Left</value>
   </data>
   <data name="spacer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 6</value>
+    <value>405, 7</value>
+  </data>
+  <data name="spacer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="spacer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 372</value>
+    <value>26, 432</value>
   </data>
   <data name="spacer1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2424,7 +2617,7 @@ Warning: Verification can take a long time.</value>
     <value>spacer1</value>
   </data>
   <data name="&gt;&gt;spacer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;spacer1.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -2439,13 +2632,16 @@ Warning: Verification can take a long time.</value>
     <value>Arial Black, 12pt, style=Bold</value>
   </data>
   <data name="p1welcomeHeading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>9, 5</value>
+  </data>
+  <data name="p1welcomeHeading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p1welcomeHeading.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="p1welcomeHeading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 34</value>
+    <value>244, 35</value>
   </data>
   <data name="p1welcomeHeading.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2457,7 +2653,7 @@ Warning: Verification can take a long time.</value>
     <value>p1welcomeHeading</value>
   </data>
   <data name="&gt;&gt;p1welcomeHeading.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p1welcomeHeading.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2469,10 +2665,13 @@ Warning: Verification can take a long time.</value>
     <value>True</value>
   </data>
   <data name="p1welcomeSubheading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 38</value>
+    <value>9, 40</value>
+  </data>
+  <data name="p1welcomeSubheading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p1welcomeSubheading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 26</value>
+    <value>326, 30</value>
   </data>
   <data name="p1welcomeSubheading.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2484,7 +2683,7 @@ Warning: Verification can take a long time.</value>
     <value>p1welcomeSubheading</value>
   </data>
   <data name="&gt;&gt;p1welcomeSubheading.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p1welcomeSubheading.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2499,13 +2698,16 @@ Warning: Verification can take a long time.</value>
     <value>Arial Black, 12pt, style=Bold</value>
   </data>
   <data name="p1languageHeading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 64</value>
+    <value>9, 70</value>
+  </data>
+  <data name="p1languageHeading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p1languageHeading.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 8, 0, 3</value>
+    <value>0, 9, 0, 3</value>
   </data>
   <data name="p1languageHeading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 34</value>
+    <value>176, 35</value>
   </data>
   <data name="p1languageHeading.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2517,7 +2719,7 @@ Warning: Verification can take a long time.</value>
     <value>p1languageHeading</value>
   </data>
   <data name="&gt;&gt;p1languageHeading.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p1languageHeading.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2529,13 +2731,16 @@ Warning: Verification can take a long time.</value>
     <value>True</value>
   </data>
   <data name="p1languageDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 98</value>
+    <value>9, 105</value>
+  </data>
+  <data name="p1languageDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p1languageDesc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 4</value>
+    <value>0, 0, 0, 5</value>
   </data>
   <data name="p1languageDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 43</value>
+    <value>376, 50</value>
   </data>
   <data name="p1languageDesc.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2547,7 +2752,7 @@ Warning: Verification can take a long time.</value>
     <value>p1languageDesc</value>
   </data>
   <data name="&gt;&gt;p1languageDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p1languageDesc.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2556,13 +2761,13 @@ Warning: Verification can take a long time.</value>
     <value>3</value>
   </data>
   <data name="comboBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 3</value>
+    <value>9, 3</value>
   </data>
   <data name="comboBoxLanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 3</value>
+    <value>4, 7, 4, 3</value>
   </data>
   <data name="comboBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 21</value>
+    <value>268, 23</value>
   </data>
   <data name="comboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2571,7 +2776,7 @@ Warning: Verification can take a long time.</value>
     <value>comboBoxLanguage</value>
   </data>
   <data name="&gt;&gt;comboBoxLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;comboBoxLanguage.Parent" xml:space="preserve">
     <value>panel9</value>
@@ -2583,10 +2788,13 @@ Warning: Verification can take a long time.</value>
     <value>Top, Right</value>
   </data>
   <data name="buttonLanguageApply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 2</value>
+    <value>284, 2</value>
+  </data>
+  <data name="buttonLanguageApply.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="buttonLanguageApply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>88, 27</value>
   </data>
   <data name="buttonLanguageApply.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2598,7 +2806,7 @@ Warning: Verification can take a long time.</value>
     <value>buttonLanguageApply</value>
   </data>
   <data name="&gt;&gt;buttonLanguageApply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonLanguageApply.Parent" xml:space="preserve">
     <value>panel9</value>
@@ -2610,10 +2818,13 @@ Warning: Verification can take a long time.</value>
     <value>Top</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 144</value>
+    <value>9, 158</value>
+  </data>
+  <data name="panel9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 27</value>
+    <value>379, 31</value>
   </data>
   <data name="panel9.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2622,7 +2833,7 @@ Warning: Verification can take a long time.</value>
     <value>panel9</value>
   </data>
   <data name="&gt;&gt;panel9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2634,13 +2845,16 @@ Warning: Verification can take a long time.</value>
     <value>True</value>
   </data>
   <data name="p1languageExtradetails.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 174</value>
+    <value>9, 192</value>
+  </data>
+  <data name="p1languageExtradetails.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p1languageExtradetails.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 2, 0, 4</value>
+    <value>0, 2, 0, 5</value>
   </data>
   <data name="p1languageExtradetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 32</value>
+    <value>379, 37</value>
   </data>
   <data name="p1languageExtradetails.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2652,7 +2866,7 @@ Warning: Verification can take a long time.</value>
     <value>p1languageExtradetails</value>
   </data>
   <data name="&gt;&gt;p1languageExtradetails.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p1languageExtradetails.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2664,10 +2878,13 @@ Warning: Verification can take a long time.</value>
     <value>True</value>
   </data>
   <data name="p1linkLabelContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 206</value>
+    <value>9, 229</value>
+  </data>
+  <data name="p1linkLabelContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="p1linkLabelContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 13</value>
+    <value>128, 15</value>
   </data>
   <data name="p1linkLabelContact.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2679,7 +2896,7 @@ Warning: Verification can take a long time.</value>
     <value>p1linkLabelContact</value>
   </data>
   <data name="&gt;&gt;p1linkLabelContact.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;p1linkLabelContact.Parent" xml:space="preserve">
     <value>flowLayoutPanel5</value>
@@ -2694,13 +2911,16 @@ Warning: Verification can take a long time.</value>
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 102</value>
+    <value>0, 118</value>
+  </data>
+  <data name="flowLayoutPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="flowLayoutPanel5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 270</value>
+    <value>398, 314</value>
   </data>
   <data name="flowLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2709,7 +2929,7 @@ Warning: Verification can take a long time.</value>
     <value>flowLayoutPanel5</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel5.Parent" xml:space="preserve">
     <value>page1</value>
@@ -2721,10 +2941,13 @@ Warning: Verification can take a long time.</value>
     <value>Right</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 0</value>
+    <value>40, 0</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 102</value>
+    <value>114, 118</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -2736,7 +2959,7 @@ Warning: Verification can take a long time.</value>
     <value>pictureBox1</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -2751,13 +2974,13 @@ Warning: Verification can take a long time.</value>
     <value>Calibri, 27.75pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 0</value>
+    <value>154, 0</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 102</value>
+    <value>244, 118</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2773,7 +2996,7 @@ uninstaller</value>
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -2787,8 +3010,11 @@ uninstaller</value>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 102</value>
+    <value>398, 118</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2797,7 +3023,7 @@ uninstaller</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>page1</value>
@@ -2809,10 +3035,13 @@ uninstaller</value>
     <value>Left</value>
   </data>
   <data name="page1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>7, 7</value>
+  </data>
+  <data name="page1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="page1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 372</value>
+    <value>398, 432</value>
   </data>
   <data name="page1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2821,7 +3050,7 @@ uninstaller</value>
     <value>page1</value>
   </data>
   <data name="&gt;&gt;page1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;page1.Parent" xml:space="preserve">
     <value>scrollPanel</value>
@@ -2835,11 +3064,14 @@ uninstaller</value>
   <data name="scrollPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="scrollPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="scrollPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="scrollPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 401</value>
+    <value>413, 463</value>
   </data>
   <data name="scrollPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2848,7 +3080,7 @@ uninstaller</value>
     <value>scrollPanel</value>
   </data>
   <data name="&gt;&gt;scrollPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;scrollPanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2856,17 +3088,20 @@ uninstaller</value>
   <data name="&gt;&gt;scrollPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>354, 401</value>
+    <value>413, 463</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -2878,12 +3113,12 @@ uninstaller</value>
     <value>timer1</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FirstStartBox</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

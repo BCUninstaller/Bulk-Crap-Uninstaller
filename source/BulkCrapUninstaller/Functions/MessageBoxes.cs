@@ -14,7 +14,9 @@ using BulkCrapUninstaller.Properties;
 using Klocman;
 using Klocman.Forms;
 using Klocman.Forms.Tools;
+using Klocman.Localising;
 using Klocman.Tools;
+using UninstallTools;
 
 namespace BulkCrapUninstaller.Functions
 {
@@ -709,6 +711,14 @@ namespace BulkCrapUninstaller.Functions
 
                 return dialog.ShowDialog() == DialogResult.OK ? dialog.SelectedPath : null;
             }
+        }
+
+        public static void CantRenameUninstallerKind(string displayName, UninstallerType uninstallerKind)
+        {
+            CustomMessageBox.ShowDialog(DefaultOwner, new CmbBasicSettings(Localisable.MessageBoxes_Title_Rename_uninstaller,
+                                                                           string.Format(Localisable.MessageBoxes_CantRenameUninstallerKind_Title, displayName),
+                                                                           string.Format(Localisable.MessageBoxes_CantRenameUninstallerKind_Details, uninstallerKind.GetLocalisedName()),
+                                                                           SystemIcons.Error, Buttons.ButtonOk));
         }
     }
 }

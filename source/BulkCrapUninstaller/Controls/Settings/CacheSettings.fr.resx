@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>La mise en cache peut beaucoup réduire le temps de recherche, mais si une application est modifiée, BCU pourrait ne pas noter le changement (ex. la taille). NOTE: pour être effectifs, ces paramètres peuvent requérir le redémarrage de BCU.</value>
+    <value>La mise en cache peut beaucoup réduire le temps de recherche, mais si une application est modifiée, BCU pourrait ne pas noter le changement (ex. la taille). NOTE : pour prendre effet, ces paramètres peuvent requérir le redémarrage de BCU.</value>
   </data>
   <data name="checkBoxCerts.Text" xml:space="preserve">
     <value>Mettre en cache les résultats de scan de certificat d'application</value>

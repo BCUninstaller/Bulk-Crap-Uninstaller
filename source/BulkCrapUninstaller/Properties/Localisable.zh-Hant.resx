@@ -769,4 +769,16 @@ The lists are separated by a single newline.</comment>
   <data name="UninstallProgressWindow_StatusPuttingToSleepInSeconds" xml:space="preserve">
     <value>PC{0}秒後進入睡眠狀態。取消選擇睡眠複選框來取消。</value>
   </data>
+  <data name="UninstallerListDoubleClickAction_DoNothing" xml:space="preserve">
+    <value>不進行任何動作</value>
+    <comment>Option for "Double clicking in application list..."</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_Properties" xml:space="preserve">
+    <value>開啟詳細內容</value>
+    <comment>Option for "Double clicking in application list..."</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_Uninstall" xml:space="preserve">
+    <value>解除安裝</value>
+    <comment>Option for "Double clicking in application list..."</comment>
+  </data>
 </root>

@@ -7,6 +7,7 @@ using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 using Klocman;
+using Microsoft.Win32.Interop;
 
 namespace UninstallerAutomatizer
 {
@@ -17,7 +18,7 @@ namespace UninstallerAutomatizer
     {
         public static readonly string AutomatizerProcessName = Process.GetCurrentProcess().ProcessName;
 
-        public static ReturnValue ReturnValue { get; set; } = ReturnValue.OkCode;
+        public static ResultWin32 ReturnValue { get; set; } = ResultWin32.ERROR_SUCCESS;
 
         [STAThread]
         private static int Main()

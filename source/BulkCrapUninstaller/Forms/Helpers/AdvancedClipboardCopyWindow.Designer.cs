@@ -29,54 +29,52 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdvancedClipboardCopyWindow));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonClose = new System.Windows.Forms.Button();
-            this.buttonCopyAll = new System.Windows.Forms.Button();
-            this.advancedClipboardCopy1 = new BulkCrapUninstaller.Controls.AdvancedClipboardCopy();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new System.Windows.Forms.Panel();
+            buttonClose = new System.Windows.Forms.Button();
+            buttonCopyAll = new System.Windows.Forms.Button();
+            advancedClipboardCopy1 = new BulkCrapUninstaller.Controls.AdvancedClipboardCopy();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.buttonClose);
-            this.panel1.Controls.Add(this.buttonCopyAll);
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(buttonClose);
+            panel1.Controls.Add(buttonCopyAll);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // buttonClose
             // 
-            resources.ApplyResources(this.buttonClose, "buttonClose");
-            this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(buttonClose, "buttonClose");
+            buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonClose.Name = "buttonClose";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += button2_Click;
             // 
             // buttonCopyAll
             // 
-            resources.ApplyResources(this.buttonCopyAll, "buttonCopyAll");
-            this.buttonCopyAll.Name = "buttonCopyAll";
-            this.buttonCopyAll.UseVisualStyleBackColor = true;
-            this.buttonCopyAll.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(buttonCopyAll, "buttonCopyAll");
+            buttonCopyAll.Name = "buttonCopyAll";
+            buttonCopyAll.UseVisualStyleBackColor = true;
+            buttonCopyAll.Click += button1_Click;
             // 
             // advancedClipboardCopy1
             // 
-            resources.ApplyResources(this.advancedClipboardCopy1, "advancedClipboardCopy1");
-            this.advancedClipboardCopy1.Name = "advancedClipboardCopy1";
-            this.advancedClipboardCopy1.PatternText = "";
-            this.advancedClipboardCopy1.Targets = null;
+            resources.ApplyResources(advancedClipboardCopy1, "advancedClipboardCopy1");
+            advancedClipboardCopy1.Name = "advancedClipboardCopy1";
             // 
             // AdvancedClipboardCopyWindow
             // 
-            this.AcceptButton = this.buttonCopyAll;
+            AcceptButton = buttonCopyAll;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonClose;
-            this.Controls.Add(this.advancedClipboardCopy1);
-            this.Controls.Add(this.panel1);
-            this.Name = "AdvancedClipboardCopyWindow";
-            this.Shown += new System.EventHandler(this.AdvancedClipboardCopyWindow_Shown);
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            CancelButton = buttonClose;
+            Controls.Add(advancedClipboardCopy1);
+            Controls.Add(panel1);
+            Name = "AdvancedClipboardCopyWindow";
+            Shown += AdvancedClipboardCopyWindow_Shown;
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

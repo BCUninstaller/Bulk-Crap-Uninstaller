@@ -11,6 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)HelperTools.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LogWriter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ReturnValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResultWin32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ResultWin32Extensions.cs" />
   </ItemGroup>
 </Project>

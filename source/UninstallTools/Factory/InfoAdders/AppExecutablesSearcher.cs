@@ -18,7 +18,7 @@ namespace UninstallTools.Factory.InfoAdders
 
         static AppExecutablesSearcher()
         {
-            var postfixes = new List<string> { "32", "64", "x32", "x64", "x86", "x86-64", "ia32", "ia64", "ia-32", "ia-64" };
+            var postfixes = new List<string> {"arm64", "aarch64", "32", "64", "x32", "x64", "x86", "x86-64", "ia32", "ia64", "ia-32", "ia-64" };
             var connectors = new[] { "-", "_", " ", "." };
             postfixes.AddRange(connectors.SelectMany(c => postfixes.Select(p => c + p)).ToList());
             var prefixes = new[] { "bin", "binaries", "program", "client", "app", "application", "win", "win7", "win8", "win81", "win10" };

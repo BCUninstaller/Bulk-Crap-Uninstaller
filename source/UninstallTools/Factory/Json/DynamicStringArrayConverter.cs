@@ -14,32 +14,71 @@ namespace UninstallTools.Factory.Json
         {
             // 0-dimension
             if (reader.TokenType == JsonTokenType.String)
-            {
                 return new[] { reader.GetString() };
-            }
-            else if (reader.TokenType == JsonTokenType.StartArray)
+
+            if (reader.TokenType == JsonTokenType.StartArray)
             {
-                List<string> results = new();
-                while (reader.Read() && reader.TokenType != JsonTokenType.EndArray)
-                {
-                    // nested
-                    if (reader.TokenType == JsonTokenType.StartArray)
-                    {
-                        var clone = reader;
-                        _ = clone.Read();
-                        results.Add(clone.GetString()); // take first value of nested array only               
-                        reader.Skip();
-                    }
-                    // normal
-                    else if (reader.TokenType == JsonTokenType.String)
-                    {
-                        results.Add(reader.GetString());
-                    }
-                }
+                var results = new List<string>();
+                ReadStrings(ref reader, results);
                 return results.ToArray();
             }
 
-            throw new JsonException();
+            throw new JsonException($"Expected string or array token but got {reader.TokenType}");
+        }
+
+        private static void ReadStrings(ref Utf8JsonReader reader, List<string> results)
+        {
+            while (reader.Read() && reader.TokenType != JsonTokenType.EndArray)
+            {
+                switch (reader.TokenType)
+                {
+                    // normal
+                    case JsonTokenType.String:
+                        results.Add(reader.GetString());
+                        break;
+
+                    // nested
+                    case JsonTokenType.StartArray:
+                        var first = ReadFirstString(ref reader);
+                        if (first != null)
+                            results.Add(first);
+                        break;
+
+                    case JsonTokenType.StartObject:
+                        reader.Skip();
+                        break;
+                }
+            }
+        }
+
+        private static string ReadFirstString(ref Utf8JsonReader reader)
+        {
+            string result = null;
+            while (reader.Read() && reader.TokenType != JsonTokenType.EndArray)
+            {
+                if (result != null)
+                {
+                    if (reader.TokenType == JsonTokenType.StartArray || reader.TokenType == JsonTokenType.StartObject)
+                        reader.Skip();
+                    continue;
+                }
+
+                switch (reader.TokenType)
+                {
+                    case JsonTokenType.String:
+                        result = reader.GetString();
+                        break;
+
+                    case JsonTokenType.StartArray:
+                        result = ReadFirstString(ref reader);
+                        break;
+
+                    case JsonTokenType.StartObject:
+                        reader.Skip();
+                        break;
+                }
+            }
+            return result;
         }
 
         public override void Write(Utf8JsonWriter writer, string[] value, JsonSerializerOptions options)

@@ -3,10 +3,11 @@
     Apache License Version 2.0
 */
 
+using Klocman.Forms.Tools;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Klocman.Forms.Tools;
 
 namespace Klocman.Controls
 {
@@ -27,6 +28,7 @@ namespace Klocman.Controls
         }
 
         public new FlatStyle FlatStyle => base.FlatStyle;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string TargetSite { get; set; }
 
         private void FacebookButton_Click(object sender, EventArgs e)

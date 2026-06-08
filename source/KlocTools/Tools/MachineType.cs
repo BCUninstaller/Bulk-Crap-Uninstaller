@@ -14,6 +14,7 @@ namespace Klocman.Tools
         Unknown,
         X86,
         X64,
-        Ia64
+        Ia64,
+        ARM64
     }
 }

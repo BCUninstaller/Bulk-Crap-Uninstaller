@@ -14,6 +14,7 @@ namespace Klocman.Forms.Tools
     {
         private ContainerControl _containerControl;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public ContainerControl ContainerControl
         {
             get { return _containerControl; }

@@ -33,224 +33,215 @@ namespace BulkCrapUninstaller.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JunkRemoveWindow));
-            this.exportDialog = new System.Windows.Forms.SaveFileDialog();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonAccept = new System.Windows.Forms.Button();
-            this.buttonExport = new System.Windows.Forms.Button();
-            this.comboBoxChecker = new System.Windows.Forms.ComboBox();
-            this.checkBoxHideLowConfidence = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.objectListViewMain = new BrightIdeasSoftware.ObjectListView();
-            this.olvColumnPath = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumnSafety = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumnUninstallerName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.headerIntro = new System.Windows.Forms.Label();
-            this.headerConfTitle = new System.Windows.Forms.Label();
-            this.headerConfInfo = new System.Windows.Forms.Label();
-            this.usageTracker1 = new BulkCrapUninstaller.Functions.Tracking.UsageTracker();
-            this.listViewContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.copyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.objectListViewMain)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.listViewContextMenuStrip.SuspendLayout();
-            this.SuspendLayout();
+            components = new Container();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(JunkRemoveWindow));
+            exportDialog = new SaveFileDialog();
+            buttonCancel = new Button();
+            buttonAccept = new Button();
+            buttonExport = new Button();
+            comboBoxChecker = new ComboBox();
+            checkBoxHideLowConfidence = new CheckBox();
+            panel1 = new Panel();
+            groupBox1 = new GroupBox();
+            objectListViewMain = new ObjectListView();
+            olvColumnPath = new OLVColumn();
+            olvColumnSafety = new OLVColumn();
+            olvColumnUninstallerName = new OLVColumn();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            headerIntro = new Label();
+            headerConfTitle = new Label();
+            headerConfInfo = new Label();
+            usageTracker1 = new UsageTracker();
+            listViewContextMenuStrip = new ContextMenuStrip(components);
+            openToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            copyToClipboardToolStripMenuItem = new ToolStripMenuItem();
+            detailsToolStripMenuItem = new ToolStripMenuItem();
+            panel1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            ((ISupportInitialize)objectListViewMain).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            listViewContextMenuStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // exportDialog
             // 
-            this.exportDialog.DefaultExt = "txt";
-            this.exportDialog.FileName = "New BCUninstaller Junk Export";
-            resources.ApplyResources(this.exportDialog, "exportDialog");
-            this.exportDialog.RestoreDirectory = true;
-            this.exportDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.exportDialog_FileOk);
+            exportDialog.DefaultExt = "txt";
+            exportDialog.FileName = "New BCUninstaller Junk Export";
+            resources.ApplyResources(exportDialog, "exportDialog");
+            exportDialog.RestoreDirectory = true;
+            exportDialog.FileOk += exportDialog_FileOk;
             // 
             // buttonCancel
             // 
-            resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
+            resources.ApplyResources(buttonCancel, "buttonCancel");
+            buttonCancel.DialogResult = DialogResult.Cancel;
+            buttonCancel.Name = "buttonCancel";
+            buttonCancel.UseVisualStyleBackColor = true;
             // 
             // buttonAccept
             // 
-            resources.ApplyResources(this.buttonAccept, "buttonAccept");
-            this.buttonAccept.Name = "buttonAccept";
-            this.buttonAccept.UseVisualStyleBackColor = true;
-            this.buttonAccept.Click += new System.EventHandler(this.buttonAccept_Click);
+            resources.ApplyResources(buttonAccept, "buttonAccept");
+            buttonAccept.Name = "buttonAccept";
+            buttonAccept.UseVisualStyleBackColor = true;
+            buttonAccept.Click += buttonAccept_Click;
             // 
             // buttonExport
             // 
-            resources.ApplyResources(this.buttonExport, "buttonExport");
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.UseVisualStyleBackColor = true;
-            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
+            resources.ApplyResources(buttonExport, "buttonExport");
+            buttonExport.Name = "buttonExport";
+            buttonExport.UseVisualStyleBackColor = true;
+            buttonExport.Click += buttonExport_Click;
             // 
             // comboBoxChecker
             // 
-            this.comboBoxChecker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxChecker.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxChecker, "comboBoxChecker");
-            this.comboBoxChecker.Name = "comboBoxChecker";
-            this.comboBoxChecker.DropDown += new System.EventHandler(this.comboBoxChecker_DropDown);
-            this.comboBoxChecker.SelectedIndexChanged += new System.EventHandler(this.comboBoxChecker_SelectedIndexChanged);
-            this.comboBoxChecker.DropDownClosed += new System.EventHandler(this.comboBoxChecker_DropDownClosed);
+            comboBoxChecker.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxChecker.FormattingEnabled = true;
+            resources.ApplyResources(comboBoxChecker, "comboBoxChecker");
+            comboBoxChecker.Name = "comboBoxChecker";
+            comboBoxChecker.DropDown += comboBoxChecker_DropDown;
+            comboBoxChecker.SelectedIndexChanged += comboBoxChecker_SelectedIndexChanged;
+            comboBoxChecker.DropDownClosed += comboBoxChecker_DropDownClosed;
             // 
             // checkBoxHideLowConfidence
             // 
-            resources.ApplyResources(this.checkBoxHideLowConfidence, "checkBoxHideLowConfidence");
-            this.checkBoxHideLowConfidence.Checked = true;
-            this.checkBoxHideLowConfidence.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxHideLowConfidence.Name = "checkBoxHideLowConfidence";
-            this.checkBoxHideLowConfidence.UseVisualStyleBackColor = true;
-            this.checkBoxHideLowConfidence.CheckedChanged += new System.EventHandler(this.checkBoxHideLowConfidence_CheckedChanged);
-            this.checkBoxHideLowConfidence.Click += new System.EventHandler(this.checkBoxHideLowConfidence_Click);
+            resources.ApplyResources(checkBoxHideLowConfidence, "checkBoxHideLowConfidence");
+            checkBoxHideLowConfidence.Checked = true;
+            checkBoxHideLowConfidence.CheckState = CheckState.Checked;
+            checkBoxHideLowConfidence.Name = "checkBoxHideLowConfidence";
+            checkBoxHideLowConfidence.UseVisualStyleBackColor = true;
+            checkBoxHideLowConfidence.CheckedChanged += checkBoxHideLowConfidence_CheckedChanged;
+            checkBoxHideLowConfidence.Click += checkBoxHideLowConfidence_Click;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.buttonAccept);
-            this.panel1.Controls.Add(this.buttonCancel);
-            this.panel1.Controls.Add(this.checkBoxHideLowConfidence);
-            this.panel1.Controls.Add(this.comboBoxChecker);
-            this.panel1.Controls.Add(this.buttonExport);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(buttonAccept);
+            panel1.Controls.Add(buttonCancel);
+            panel1.Controls.Add(checkBoxHideLowConfidence);
+            panel1.Controls.Add(comboBoxChecker);
+            panel1.Controls.Add(buttonExport);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.objectListViewMain);
-            this.groupBox1.Controls.Add(this.flowLayoutPanel1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(objectListViewMain);
+            groupBox1.Controls.Add(flowLayoutPanel1);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // objectListViewMain
             // 
-            this.objectListViewMain.AllColumns.Add(this.olvColumnPath);
-            this.objectListViewMain.AllColumns.Add(this.olvColumnSafety);
-            this.objectListViewMain.AllColumns.Add(this.olvColumnUninstallerName);
-            this.objectListViewMain.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.DoubleClick;
-            this.objectListViewMain.CellEditUseWholeCell = false;
-            this.objectListViewMain.CheckBoxes = true;
-            this.objectListViewMain.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumnPath,
-            this.olvColumnSafety,
-            this.olvColumnUninstallerName});
-            this.objectListViewMain.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.objectListViewMain, "objectListViewMain");
-            this.objectListViewMain.FullRowSelect = true;
-            this.objectListViewMain.GridLines = true;
-            this.objectListViewMain.HideSelection = false;
-            this.objectListViewMain.Name = "objectListViewMain";
-            this.objectListViewMain.ShowItemToolTips = true;
-            this.objectListViewMain.UseCompatibleStateImageBehavior = false;
-            this.objectListViewMain.View = System.Windows.Forms.View.Details;
-            this.objectListViewMain.CellEditStarting += new BrightIdeasSoftware.CellEditEventHandler(this.objectListViewMain_CellEditStarting);
-            this.objectListViewMain.CellRightClick += new System.EventHandler<BrightIdeasSoftware.CellRightClickEventArgs>(this.objectListViewMain_CellRightClick);
+            objectListViewMain.AllColumns.Add(olvColumnPath);
+            objectListViewMain.AllColumns.Add(olvColumnSafety);
+            objectListViewMain.AllColumns.Add(olvColumnUninstallerName);
+            objectListViewMain.CellEditActivation = ObjectListView.CellEditActivateMode.DoubleClick;
+            objectListViewMain.CellEditUseWholeCell = false;
+            objectListViewMain.CheckBoxes = true;
+            objectListViewMain.Columns.AddRange(new ColumnHeader[] { olvColumnPath, olvColumnSafety, olvColumnUninstallerName });
+            resources.ApplyResources(objectListViewMain, "objectListViewMain");
+            objectListViewMain.FullRowSelect = true;
+            objectListViewMain.GridLines = true;
+            objectListViewMain.Name = "objectListViewMain";
+            objectListViewMain.ShowItemToolTips = true;
+            objectListViewMain.UseCompatibleStateImageBehavior = false;
+            objectListViewMain.View = View.Details;
+            objectListViewMain.CellEditStarting += objectListViewMain_CellEditStarting;
+            objectListViewMain.CellRightClick += objectListViewMain_CellRightClick;
             // 
             // olvColumnPath
             // 
-            this.olvColumnPath.AspectName = "";
-            resources.ApplyResources(this.olvColumnPath, "olvColumnPath");
+            olvColumnPath.AspectName = "";
+            resources.ApplyResources(olvColumnPath, "olvColumnPath");
             // 
             // olvColumnSafety
             // 
-            this.olvColumnSafety.AspectName = "";
-            resources.ApplyResources(this.olvColumnSafety, "olvColumnSafety");
+            olvColumnSafety.AspectName = "";
+            resources.ApplyResources(olvColumnSafety, "olvColumnSafety");
             // 
             // olvColumnUninstallerName
             // 
-            this.olvColumnUninstallerName.AspectName = "";
-            resources.ApplyResources(this.olvColumnUninstallerName, "olvColumnUninstallerName");
+            olvColumnUninstallerName.AspectName = "";
+            resources.ApplyResources(olvColumnUninstallerName, "olvColumnUninstallerName");
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Controls.Add(this.headerIntro);
-            this.flowLayoutPanel1.Controls.Add(this.headerConfTitle);
-            this.flowLayoutPanel1.Controls.Add(this.headerConfInfo);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(headerIntro);
+            flowLayoutPanel1.Controls.Add(headerConfTitle);
+            flowLayoutPanel1.Controls.Add(headerConfInfo);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // headerIntro
             // 
-            resources.ApplyResources(this.headerIntro, "headerIntro");
-            this.headerIntro.Name = "headerIntro";
+            resources.ApplyResources(headerIntro, "headerIntro");
+            headerIntro.Name = "headerIntro";
             // 
             // headerConfTitle
             // 
-            resources.ApplyResources(this.headerConfTitle, "headerConfTitle");
-            this.headerConfTitle.Name = "headerConfTitle";
+            resources.ApplyResources(headerConfTitle, "headerConfTitle");
+            headerConfTitle.Name = "headerConfTitle";
             // 
             // headerConfInfo
             // 
-            resources.ApplyResources(this.headerConfInfo, "headerConfInfo");
-            this.headerConfInfo.Name = "headerConfInfo";
+            resources.ApplyResources(headerConfInfo, "headerConfInfo");
+            headerConfInfo.Name = "headerConfInfo";
             // 
             // usageTracker1
             // 
-            this.usageTracker1.ContainerControl = this;
+            usageTracker1.ContainerControl = this;
             // 
             // listViewContextMenuStrip
             // 
-            this.listViewContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.copyToClipboardToolStripMenuItem,
-            this.detailsToolStripMenuItem});
-            this.listViewContextMenuStrip.Name = "listViewContextMenuStrip";
-            resources.ApplyResources(this.listViewContextMenuStrip, "listViewContextMenuStrip");
+            listViewContextMenuStrip.Items.AddRange(new ToolStripItem[] { openToolStripMenuItem, toolStripSeparator1, copyToClipboardToolStripMenuItem, detailsToolStripMenuItem });
+            listViewContextMenuStrip.Name = "listViewContextMenuStrip";
+            resources.ApplyResources(listViewContextMenuStrip, "listViewContextMenuStrip");
             // 
             // openToolStripMenuItem
             // 
-            resources.ApplyResources(this.openToolStripMenuItem, "openToolStripMenuItem");
-            this.openToolStripMenuItem.Image = global::BulkCrapUninstaller.Properties.Resources.folderopen;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            resources.ApplyResources(openToolStripMenuItem, "openToolStripMenuItem");
+            openToolStripMenuItem.Image = Properties.Resources.folderopen;
+            openToolStripMenuItem.Name = "openToolStripMenuItem";
+            openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
             // 
             // copyToClipboardToolStripMenuItem
             // 
-            this.copyToClipboardToolStripMenuItem.Image = global::BulkCrapUninstaller.Properties.Resources.pagecopy;
-            this.copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
-            resources.ApplyResources(this.copyToClipboardToolStripMenuItem, "copyToClipboardToolStripMenuItem");
-            this.copyToClipboardToolStripMenuItem.Click += new System.EventHandler(this.copyToClipboardToolStripMenuItem_Click);
+            copyToClipboardToolStripMenuItem.Image = Properties.Resources.pagecopy;
+            copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
+            resources.ApplyResources(copyToClipboardToolStripMenuItem, "copyToClipboardToolStripMenuItem");
+            copyToClipboardToolStripMenuItem.Click += copyToClipboardToolStripMenuItem_Click;
             // 
             // detailsToolStripMenuItem
             // 
-            this.detailsToolStripMenuItem.Image = global::BulkCrapUninstaller.Properties.Resources.magnifybrowse;
-            this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
-            resources.ApplyResources(this.detailsToolStripMenuItem, "detailsToolStripMenuItem");
-            this.detailsToolStripMenuItem.Click += new System.EventHandler(this.detailsToolStripMenuItem_Click);
+            detailsToolStripMenuItem.Image = Properties.Resources.magnifybrowse;
+            detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
+            resources.ApplyResources(detailsToolStripMenuItem, "detailsToolStripMenuItem");
+            detailsToolStripMenuItem.Click += detailsToolStripMenuItem_Click;
             // 
             // JunkRemoveWindow
             // 
-            this.AcceptButton = this.buttonAccept;
+            AcceptButton = buttonAccept;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonCancel;
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
-            this.Name = "JunkRemoveWindow";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.objectListViewMain)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.listViewContextMenuStrip.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = buttonCancel;
+            Controls.Add(groupBox1);
+            Controls.Add(panel1);
+            Name = "JunkRemoveWindow";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((ISupportInitialize)objectListViewMain).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            listViewContextMenuStrip.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

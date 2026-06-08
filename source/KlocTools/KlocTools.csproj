@@ -1,110 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
 		<OutputType>Library</OutputType>
 		<RootNamespace>Klocman</RootNamespace>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<UseWindowsForms>true</UseWindowsForms>
-		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-		<Platforms>AnyCPU;x64;x86</Platforms>
+
+		<AssemblyTitle>Common utility methods</AssemblyTitle>
 	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
-		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
-		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
-		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	</PropertyGroup>
+	
 	<ItemGroup>
-		<Compile Include="..\GlobalAssemblyInfo.cs">
-			<Link>Properties\GlobalAssemblyInfo.cs</Link>
-		</Compile>
-		<Compile Update="Controls\ContentAlignmentBox.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\FixedFlowLayoutPanel.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Forms\SplashScreen.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\WindowTargeter.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\CommandLink.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\FacebookStatusButton.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\TwitterButton.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\FacebookButton.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\TwitterStatusButton.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Forms\ProcessWaiterControl.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Forms\Tools\ReferencedComponent.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\EditableCheckedListView.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\EditableListView.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\LineSeparator.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\PassThroughLabel.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\DirectorySelectBox.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\PathSelectBox.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\SearchBox.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\ToolStripNumberControl.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<None Include="Sorters\ColumnSorter.cs" />
-		<Compile Update="Subsystems\GlobalHotkeys.cs">
-			<SubType>Component</SubType>
-		</Compile>
+	  <Compile Remove="Sorters\ColumnSorter.cs" />
 	</ItemGroup>
+
 	<ItemGroup>
-		<PackageReference Include="System.Management" Version="8.0.0" />
+		<PackageReference Include="System.Management" Version="[8.*,9)" />
 	</ItemGroup>
+
 	<ItemGroup>
-		<Compile Remove="Sorters\ColumnSorter.cs" />
+	  <Compile Update="Properties\Localisation.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Localisation.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Localisation.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Localisation.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 </Project>

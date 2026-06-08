@@ -51,13 +51,14 @@ namespace UninstallTools.Factory
                 if (!data.ContainsKey("InstalledLocation") || !Directory.Exists(data["InstalledLocation"])) continue;
 
                 var fullName = data["FullName"];
+                var separatorIndex = fullName.IndexOf("_", StringComparison.Ordinal);
                 var uninstallStr = $"\"{HelperPath}\" /uninstall \"{fullName}\"";
                 var isProtected = data.ContainsKey("IsProtected") && Convert.ToBoolean(data["IsProtected"], CultureInfo.InvariantCulture);
                 var result = new ApplicationUninstallerEntry
                 {
                     Comment = fullName,
                     CacheIdOverride = fullName,
-                    RatingId = fullName.Substring(0, fullName.IndexOf("_", StringComparison.Ordinal)),
+                    RatingId = separatorIndex >= 0 ? fullName.Substring(0, separatorIndex) : fullName,
                     UninstallString = uninstallStr,
                     QuietUninstallString = uninstallStr,
                     RawDisplayName = string.IsNullOrEmpty(data["DisplayName"]) ? fullName : data["DisplayName"],

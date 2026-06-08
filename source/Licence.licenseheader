@@ -1,17 +1,17 @@
 ﻿extensions: designer.cs generated.cs
 extensions: .cs .cpp .h
 /*
-    Copyright (c) 2020 Marcin Szeniak (https://github.com/Klocman/)
+    Copyright (c) 2026 Marcin Szeniak (https://github.com/Klocman/)
     Apache License Version 2.0
 */
 
 extensions: .aspx .ascx
 <%-- 
-	Copyright (c) 2020 Marcin Szeniak (https://github.com/Klocman/)
+	Copyright (c) 2026 Marcin Szeniak (https://github.com/Klocman/)
 	Apache License Version 2.0
 --%>
 extensions:  .xml .config .xsd
 <!--
-	Copyright (c) 2020 Marcin Szeniak (https://github.com/Klocman/)
+	Copyright (c) 2026 Marcin Szeniak (https://github.com/Klocman/)
 	Apache License Version 2.0
 -->

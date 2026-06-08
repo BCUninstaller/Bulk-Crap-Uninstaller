@@ -70,6 +70,7 @@ namespace UninstallTools.Uninstaller
         /// <exception cref="FormatException">Exception while decoding or attempting to run the uninstaller command. </exception>
         public static Process RunUninstaller(this ApplicationUninstallerEntry entry, bool silentIfAvailable, bool simulate, bool safeMode = false)
         {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
             try
             {
                 ProcessStartInfo startInfo = null;

@@ -211,7 +211,7 @@
     <value>Arrêter les processus en cours</value>
   </data>
   <data name="RegistryTools_AddRegToRegistry_FileNotExist" xml:space="preserve">
-    <value>Le nom de fichier ne pointe pas sur un fichier .reg valide</value>
+    <value>Le chemin ne pointe pas sur un fichier .reg valide</value>
   </data>
   <data name="RegistryTools_RemoveRegistryKey_PathEmptyNull" xml:space="preserve">
     <value>Le chemin ne peut pas être vide ou nul</value>
@@ -233,13 +233,13 @@ Vous pouvez copier les informations détaillées concernant cette erreur dans le
     <value>Détails d'erreur: </value>
   </data>
   <data name="FileInfo_CreationTime" xml:space="preserve">
-    <value>Heure de création</value>
+    <value>Heure de Création</value>
   </data>
   <data name="FileInfo_LastAccessTime" xml:space="preserve">
-    <value>Heure de dernier accès</value>
+    <value>Heure de Dernier Accès</value>
   </data>
   <data name="FileInfo_LastWriteTime" xml:space="preserve">
-    <value>Heure de dernière écriture</value>
+    <value>Heure de Dernière Ecriture</value>
   </data>
   <data name="FileInfo_Attributes" xml:space="preserve">
     <value>Attributs</value>
@@ -248,10 +248,10 @@ Vous pouvez copier les informations détaillées concernant cette erreur dans le
     <value>Est lecture seule</value>
   </data>
   <data name="FileInfo_FullName" xml:space="preserve">
-    <value>Nom complet</value>
+    <value>Nom Complet</value>
   </data>
   <data name="FileInfo_FileName" xml:space="preserve">
-    <value>Nom de fichier</value>
+    <value>Nom de Fichier</value>
   </data>
   <data name="FileInfo_Size" xml:space="preserve">
     <value>Taille</value>
@@ -266,33 +266,33 @@ Vous pouvez copier les informations détaillées concernant cette erreur dans le
     <value>Commentaire</value>
   </data>
   <data name="FileInfo_CompanyName" xml:space="preserve">
-    <value>Nom de compagnie</value>
+    <value>Nom de Compagnie</value>
   </data>
   <data name="FileInfo_FileDescription" xml:space="preserve">
     <value>Description</value>
   </data>
   <data name="FileInfo_FileVersion" xml:space="preserve">
-    <value>Version de fichier</value>
+    <value>Version de Fichier</value>
   </data>
   <data name="FileInfo_InternalName" xml:space="preserve">
-    <value>Nom  interne</value>
+    <value>Nom  Interne</value>
   </data>
   <data name="FileInfo_Language" xml:space="preserve">
-    <value>Langage</value>
+    <value>Langue</value>
   </data>
   <data name="FileInfo_LegalCopyright" xml:space="preserve">
     <value>Copyright</value>
   </data>
   <data name="FileInfo_LegalTrademarks" xml:space="preserve">
-    <value>Marque déposée</value>
+    <value>Marques déposées</value>
   </data>
   <data name="FileInfo_OriginalFilename" xml:space="preserve">
-    <value>Nom de fichier d'origine</value>
+    <value>Nom de fichier Original</value>
   </data>
   <data name="FileInfo_ProductName" xml:space="preserve">
-    <value>Nom de produit</value>
+    <value>Nom de Produit</value>
   </data>
   <data name="FileInfo_ProductVersion" xml:space="preserve">
-    <value>Version de produit</value>
+    <value>Version de Produit</value>
   </data>
 </root>

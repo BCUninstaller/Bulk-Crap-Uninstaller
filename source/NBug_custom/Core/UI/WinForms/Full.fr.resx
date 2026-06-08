@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="warningLabel.Text" xml:space="preserve">
-    <value>L'application a planté et elle va maintenant être rejetée. Si vous cliquez sur Quitter, l'application se fermera immédiatement. Si vous cliquez sur Envoyer et Quitter, l'application se fermera et un rapport de bogue sera envoyé.</value>
+    <value>L'application a planté et elle va maintenant être arrêtée. Si vous cliquez sur Quitter, l'application se fermera immédiatement. Si vous cliquez sur Envoyer et Quitter, l'application se fermera et un rapport de bogue sera envoyé.</value>
   </data>
 </root>

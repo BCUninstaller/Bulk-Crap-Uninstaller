@@ -78,6 +78,7 @@ namespace Klocman.Forms
             set { label2.Text = value; }
         }*/
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         internal bool SubProgressVisible
         {
             get { return progressBar2.Visible; }

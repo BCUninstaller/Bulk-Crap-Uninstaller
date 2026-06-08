@@ -1,147 +1,52 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<OutputType>WinExe</OutputType>
 		<AssemblyName>BCUninstaller</AssemblyName>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<UseWindowsForms>true</UseWindowsForms>
-		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-		<Platforms>AnyCPU;x64;x86</Platforms>
-	</PropertyGroup>
-	<PropertyGroup>
-		<ApplicationIcon>logo.ico</ApplicationIcon>
-	</PropertyGroup>
-	<PropertyGroup>
+		
+		<Product>Bulk Crap Uninstaller</Product>
+		<AssemblyTitle>Remove large amounts of unwanted applications quickly</AssemblyTitle>
+
+		<ApplicationIcon>Resources\logo.ico</ApplicationIcon>
 		<StartupObject>BulkCrapUninstaller.EntryPoint</StartupObject>
 	</PropertyGroup>
-	<PropertyGroup>
-		<TargetZone>LocalIntranet</TargetZone>
-	</PropertyGroup>
-	<PropertyGroup>
-		<GenerateManifests>false</GenerateManifests>
-	</PropertyGroup>
-	<PropertyGroup>
-		<SignManifests>false</SignManifests>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\AnyCPU\</OutputPath>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Release\</OutputPath>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-		<RuntimeIdentifier></RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\AnyCPU\</OutputPath>
-		<CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
-		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-		<CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
-		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-		<OutputPath>..\..\bin\Debug\</OutputPath>
-		<CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
-		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	</PropertyGroup>
-	<PropertyGroup>
-		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-	</PropertyGroup>
+
 	<ItemGroup>
-		<Reference Update="System">
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="..\GlobalAssemblyInfo.cs">
-			<Link>Properties\GlobalAssemblyInfo.cs</Link>
-		</Compile>
-		<Compile Update="Controls\AdvancedClipboardCopy.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\Settings\AdvancedFilters.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\FileTargeter.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\ListLegend.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\Settings\CacheSettings.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\TabControlWithoutHeader.cs">
-			<SubType>Component</SubType>
-		</Compile>
-		<Compile Update="Controls\Settings\UninstallationSettings.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\RelatedUninstallerAdder.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Controls\UninstallConfirmation.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Functions\Ratings\RatingRenderer.cs" />
-		<Compile Update="Functions\Tracking\UsageTracker.cs" />
-		<Compile Update="Controls\Settings\PropertiesSidebar.cs">
-			<SubType>UserControl</SubType>
-		</Compile>
-		<Compile Update="Properties\Localisable.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Localisable.resx</DependentUpon>
-		</Compile>
-		<Compile Update="Properties\Resources.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Resources.resx</DependentUpon>
-		</Compile>
-		<Compile Update="Properties\Settings.Designer.cs">
-			<DesignTimeSharedInput>True</DesignTimeSharedInput>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Settings.settings</DependentUpon>
-		</Compile>
 		<Content Include="..\..\NOTICE">
 			<Link>NOTICE</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
-		<None Update="Properties\Settings.settings">
-			<Generator>SettingsSingleFileGenerator</Generator>
-			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-		</None>
-		<None Update="Resources\MicrosoftProgram_Install_and_Uninstall.meta.diagcab">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Include="..\Licence.licenseheader">
-			<Link>Licence.licenseheader</Link>
-		</None>
+			<Visible>False</Visible>
+		</Content>
 		<Content Include="..\..\PrivacyPolicy.txt">
 			<Link>PrivacyPolicy.txt</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
 		</Content>
+		<Content Include="..\..\Licence.txt">
+			<Link>Licence.txt</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
+		</Content>
+		<Content Include="..\..\doc\BCU_manual.html">
+			<Link>BCU_manual.html</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
+		</Content>
+
 		<Content Include="..\es.exe">
 			<Link>es.exe</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
 		</Content>
 		<Content Include="CleanLogs.bat">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
 		</Content>
+		<None Update="Resources\MicrosoftProgram_Install_and_Uninstall.meta.diagcab">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
+		</None>
 	</ItemGroup>
+
 	<ItemGroup>
 		<ProjectReference Include="..\KlocTools\KlocTools.csproj" />
 		<ProjectReference Include="..\NBug_custom\NBug.csproj" />
@@ -151,47 +56,32 @@
 		<ProjectReference Include="..\SimpleTreeMap\SimpleTreeMap.csproj" />
 		<ProjectReference Include="..\UninstallTools\UninstallTools.csproj" />
 	</ItemGroup>
-	<ItemGroup>
-		<Content Include="..\..\Licence.txt">
-			<Link>Licence.txt</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
-		<Content Include="..\..\doc\BCU_manual.html">
-			<Link>BCU_manual.html</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-		<Content Include="logo.ico" />
-	</ItemGroup>
-	<ItemGroup>
-		<BootstrapperPackage Include=".NETFramework,Version=v4.5">
-			<Visible>False</Visible>
-			<ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
-			<Install>true</Install>
-		</BootstrapperPackage>
-		<BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-			<Visible>False</Visible>
-			<ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-			<Install>false</Install>
-		</BootstrapperPackage>
-		<BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-			<Visible>False</Visible>
-			<ProductName>.NET Framework 3.5 SP1</ProductName>
-			<Install>false</Install>
-		</BootstrapperPackage>
-	</ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
 	</ItemGroup>
+
 	<ItemGroup>
-		<EmbeddedResource Update="Properties\Localisable.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Localisable.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-		<EmbeddedResource Update="Properties\Resources.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
+	  <Compile Update="Properties\Localisable.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Localisable.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
 	</ItemGroup>
-	<Import Project="..\HelperTools\HelperTools.projitems" Label="Shared" />
-	<PropertyGroup />
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Localisable.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Localisable.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
 </Project>

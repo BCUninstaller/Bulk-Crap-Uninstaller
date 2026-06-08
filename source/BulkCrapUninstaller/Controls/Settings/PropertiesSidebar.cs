@@ -60,6 +60,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool SysCompEnabled
         {
             get { return checkBoxListSysComp.Enabled; }
@@ -67,6 +68,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ProtectedEnabled
         {
             get { return checkBoxListProtected.Enabled; }
@@ -74,6 +76,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool UpdatesEnabled
         {
             get { return checkBoxShowUpdates.Enabled; }
@@ -81,6 +84,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool OrphansEnabled
         {
             get { return checkBoxOrphans.Enabled; }
@@ -88,6 +92,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool StoreAppsEnabled
         {
             get { return checkBoxShowStoreApps.Enabled; }
@@ -95,6 +100,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool InvalidEnabled
         {
             get { return checkBoxInvalidTest.Enabled; }
@@ -102,6 +108,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool WinFeaturesEnabled
         {
             get { return checkBoxWinFeature.Enabled; }
@@ -109,6 +116,7 @@ namespace BulkCrapUninstaller.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShowTweaksEnabled
         {
             get { return checkBoxTweaks.Enabled; }

@@ -1,0 +1,66 @@
+<Project>
+	<PropertyGroup>
+		<Version>6.1</Version>
+
+		<Authors>https://github.com/Klocman/Bulk-Crap-Uninstaller</Authors>
+		<Copyright>Copyright Apache-2.0 © 2026</Copyright>
+
+		<Platforms>AnyCPU;x64;x86;ARM64</Platforms>
+		<TargetFramework>net8.0-windows10.0.18362.0</TargetFramework>
+		<TargetPlatformVersion>8.0</TargetPlatformVersion>
+
+		<OutputPath>..\..\bin\$(Configuration)\$(Platform)\</OutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+		<Deterministic>true</Deterministic>
+
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+
+		<TargetZone>LocalIntranet</TargetZone>
+		<GenerateManifests>false</GenerateManifests>
+		<SignManifests>false</SignManifests>
+
+		<ApplicationManifest>..\app.manifest</ApplicationManifest>
+
+		<DebugSymbols>true</DebugSymbols>
+		<FileAlignment>512</FileAlignment>
+		
+		<UseAppHost>true</UseAppHost>
+		<SelfContained>false</SelfContained>
+	</PropertyGroup>
+	
+	<Import Project="HelperTools\HelperTools.projitems" Label="Shared" />
+
+	<PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+		<RuntimeIdentifier></RuntimeIdentifier>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)'=='x86'">
+		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)'=='x64'">
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)'=='ARM64'">
+		<RuntimeIdentifier>win-arm64</RuntimeIdentifier>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<!--<TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+		<DebugType>full</DebugType>
+		<CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Compile Include="..\GlobalAssemblyInfo.cs"/>
+		<None Include="..\Licence.licenseheader">
+			<Visible>False</Visible>
+		</None>
+	</ItemGroup>
+</Project>

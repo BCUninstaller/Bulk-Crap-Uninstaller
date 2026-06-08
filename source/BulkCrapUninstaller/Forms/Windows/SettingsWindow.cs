@@ -4,6 +4,7 @@
 */
 
 using System;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -21,6 +22,7 @@ namespace BulkCrapUninstaller.Forms
         private readonly SettingBinder<Settings> _settings = Settings.Default.SettingBinder;
         private bool _restartNeeded;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int OpenedTab { get { return tabControl.SelectedIndex; } set { tabControl.SelectedIndex = value; } }
 
         public SettingsWindow()

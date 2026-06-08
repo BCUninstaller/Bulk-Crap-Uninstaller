@@ -20,6 +20,7 @@ namespace Klocman.Subsystems
 
         [Browsable(false)]
         [ReadOnly(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Form ParentForm
         {
             get { return _parentForm; }
@@ -44,11 +45,13 @@ namespace Klocman.Subsystems
         /// <summary>
         ///     Stop responding to keystrokes when the parent form is disabled
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool StopWhenFormIsDisabled { get; set; }
 
         /// <summary>
         ///     Set SuppressKeyPress to true in the keypress eventargs if a hotkey was pressed.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool SuppressKeyPresses { get; set; } = true;
 
         [Browsable(false)]

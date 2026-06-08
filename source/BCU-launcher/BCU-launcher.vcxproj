@@ -77,12 +77,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)..\bin\launcher</OutDir>
+    <OutDir>$(SolutionDir)..\bin\launcher\</OutDir>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\bin\launcher</OutDir>
+    <OutDir>$(SolutionDir)..\bin\launcher\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -171,7 +171,7 @@
     <ResourceCompile Include="BCU-launcher.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\BulkCrapUninstaller\logo.ico" />
+    <Image Include="..\BulkCrapUninstaller\Resources\logo.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

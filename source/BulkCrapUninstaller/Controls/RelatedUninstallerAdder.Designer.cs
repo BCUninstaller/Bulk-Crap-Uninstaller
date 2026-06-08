@@ -29,93 +29,89 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatedUninstallerAdder));
-            this.objectListView1 = new BrightIdeasSoftware.ObjectListView();
-            this.olvColumnName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumnEnabled = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumnRelatedApps = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelInfo = new System.Windows.Forms.Label();
-            this.labelInfo2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            objectListView1 = new BrightIdeasSoftware.ObjectListView();
+            olvColumnName = new BrightIdeasSoftware.OLVColumn();
+            olvColumnEnabled = new BrightIdeasSoftware.OLVColumn();
+            olvColumnRelatedApps = new BrightIdeasSoftware.OLVColumn();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            labelInfo = new System.Windows.Forms.Label();
+            labelInfo2 = new System.Windows.Forms.Label();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)objectListView1).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // objectListView1
             // 
-            this.objectListView1.AllColumns.Add(this.olvColumnName);
-            this.objectListView1.AllColumns.Add(this.olvColumnEnabled);
-            this.objectListView1.AllColumns.Add(this.olvColumnRelatedApps);
-            this.objectListView1.CellEditUseWholeCell = false;
-            this.objectListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumnName,
-            this.olvColumnEnabled,
-            this.olvColumnRelatedApps});
-            this.objectListView1.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.objectListView1, "objectListView1");
-            this.objectListView1.FullRowSelect = true;
-            this.objectListView1.GridLines = true;
-            this.objectListView1.MultiSelect = false;
-            this.objectListView1.Name = "objectListView1";
-            this.objectListView1.ShowGroups = false;
-            this.objectListView1.ShowItemToolTips = true;
-            this.objectListView1.UseCompatibleStateImageBehavior = false;
-            this.objectListView1.View = System.Windows.Forms.View.Details;
+            objectListView1.AllColumns.Add(olvColumnName);
+            objectListView1.AllColumns.Add(olvColumnEnabled);
+            objectListView1.AllColumns.Add(olvColumnRelatedApps);
+            objectListView1.CellEditUseWholeCell = false;
+            objectListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { olvColumnName, olvColumnEnabled, olvColumnRelatedApps });
+            resources.ApplyResources(objectListView1, "objectListView1");
+            objectListView1.FullRowSelect = true;
+            objectListView1.GridLines = true;
+            objectListView1.MultiSelect = false;
+            objectListView1.Name = "objectListView1";
+            objectListView1.ShowGroups = false;
+            objectListView1.ShowItemToolTips = true;
+            objectListView1.UseCompatibleStateImageBehavior = false;
+            objectListView1.View = System.Windows.Forms.View.Details;
             // 
             // olvColumnName
             // 
-            resources.ApplyResources(this.olvColumnName, "olvColumnName");
+            resources.ApplyResources(olvColumnName, "olvColumnName");
             // 
             // olvColumnEnabled
             // 
-            this.olvColumnEnabled.CheckBoxes = true;
-            this.olvColumnEnabled.Hideable = false;
-            resources.ApplyResources(this.olvColumnEnabled, "olvColumnEnabled");
+            olvColumnEnabled.CheckBoxes = true;
+            olvColumnEnabled.Hideable = false;
+            resources.ApplyResources(olvColumnEnabled, "olvColumnEnabled");
             // 
             // olvColumnRelatedApps
             // 
-            this.olvColumnRelatedApps.FillsFreeSpace = true;
-            resources.ApplyResources(this.olvColumnRelatedApps, "olvColumnRelatedApps");
+            olvColumnRelatedApps.FillsFreeSpace = true;
+            resources.ApplyResources(olvColumnRelatedApps, "olvColumnRelatedApps");
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Controls.Add(this.labelInfo);
-            this.flowLayoutPanel1.Controls.Add(this.labelInfo2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(labelInfo);
+            flowLayoutPanel1.Controls.Add(labelInfo2);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // labelInfo
             // 
-            resources.ApplyResources(this.labelInfo, "labelInfo");
-            this.labelInfo.Name = "labelInfo";
+            resources.ApplyResources(labelInfo, "labelInfo");
+            labelInfo.Name = "labelInfo";
             // 
             // labelInfo2
             // 
-            resources.ApplyResources(this.labelInfo2, "labelInfo2");
-            this.labelInfo2.Name = "labelInfo2";
+            resources.ApplyResources(labelInfo2, "labelInfo2");
+            labelInfo2.Name = "labelInfo2";
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::BulkCrapUninstaller.Properties.Resources.warning;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Image = Properties.Resources.warning;
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // RelatedUninstallerAdder
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.objectListView1);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "RelatedUninstallerAdder";
-            ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(pictureBox1);
+            Controls.Add(objectListView1);
+            Controls.Add(flowLayoutPanel1);
+            Name = "RelatedUninstallerAdder";
+            ((System.ComponentModel.ISupportInitialize)objectListView1).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

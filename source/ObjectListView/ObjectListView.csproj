@@ -1,98 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <OutputType>Library</OutputType>
     <RootNamespace>BrightIdeasSoftware</RootNamespace>
     <AssemblyName>ObjectListView</AssemblyName>
     <SignAssembly>false</SignAssembly>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    <Platforms>AnyCPU;x64;x86</Platforms>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	  <RuntimeIdentifier></RuntimeIdentifier>
-	  <OutputPath>..\..\bin\Debug\AnyCPU\</OutputPath>
     <WarningLevel>1</WarningLevel>
     <DocumentationFile></DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-       <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-       <OutputPath>..\..\bin\Debug\</OutputPath>
-    <WarningLevel>1</WarningLevel>
-    <DocumentationFile />
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-       <OutputPath>..\..\bin\Debug\</OutputPath>
-    <WarningLevel>1</WarningLevel>
-    <DocumentationFile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	  <RuntimeIdentifier></RuntimeIdentifier>
-	  <OutputPath>..\..\bin\Release\AnyCPU\</OutputPath>
-    <WarningLevel>1</WarningLevel>
-    <DocumentationFile></DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-       <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-       <OutputPath>..\..\bin\Release\</OutputPath>
-    <WarningLevel>1</WarningLevel>
-    <DocumentationFile />
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-       <OutputPath>..\..\bin\Release\</OutputPath>
-    <WarningLevel>1</WarningLevel>
-    <DocumentationFile />
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Update="DataTreeListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="Implementation\Enums.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="OLVColumn.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="DataListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="Implementation\Events.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="FastDataListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="FastObjectListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="Rendering\TreeRenderer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="SubControls\ToolStripCheckedListBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="ObjectListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="Rendering\Renderers.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="Rendering\Styles.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="TreeListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="VirtualObjectListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-  </ItemGroup>
+
   <ItemGroup>
     <Compile Remove="Implementation\DragSource.cs" />
     <Compile Remove="Implementation\DropSink.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

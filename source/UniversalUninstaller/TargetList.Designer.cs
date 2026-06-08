@@ -28,101 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TargetList));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonSelAll = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonExpand = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonCollapse = new System.Windows.Forms.ToolStripButton();
-            this.treeListView1 = new BrightIdeasSoftware.TreeListView();
-            this.olvColumnName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumnSize = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.treeListView1)).BeginInit();
-            this.SuspendLayout();
+            toolStrip1 = new System.Windows.Forms.ToolStrip();
+            toolStripButtonSelAll = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            toolStripButtonExpand = new System.Windows.Forms.ToolStripButton();
+            toolStripButtonCollapse = new System.Windows.Forms.ToolStripButton();
+            treeListView1 = new BrightIdeasSoftware.TreeListView();
+            olvColumnName = new BrightIdeasSoftware.OLVColumn();
+            olvColumnSize = new BrightIdeasSoftware.OLVColumn();
+            toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)treeListView1).BeginInit();
+            SuspendLayout();
             // 
             // toolStrip1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(22, 22);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonSelAll,
-            this.toolStripSeparator1,
-            this.toolStripButtonExpand,
-            this.toolStripButtonCollapse});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
+            toolStrip1.ImageScalingSize = new System.Drawing.Size(22, 22);
+            toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripButtonSelAll, toolStripSeparator1, toolStripButtonExpand, toolStripButtonCollapse });
+            resources.ApplyResources(toolStrip1, "toolStrip1");
+            toolStrip1.Name = "toolStrip1";
             // 
             // toolStripButtonSelAll
             // 
-            resources.ApplyResources(this.toolStripButtonSelAll, "toolStripButtonSelAll");
-            this.toolStripButtonSelAll.Name = "toolStripButtonSelAll";
-            this.toolStripButtonSelAll.Click += new System.EventHandler(this.toolStripButtonSelAll_Click);
+            resources.ApplyResources(toolStripButtonSelAll, "toolStripButtonSelAll");
+            toolStripButtonSelAll.Name = "toolStripButtonSelAll";
+            toolStripButtonSelAll.Click += toolStripButtonSelAll_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripButtonExpand
             // 
-            this.toolStripButtonExpand.Image = global::UniversalUninstaller.Properties.Resources.section_expand_all;
-            resources.ApplyResources(this.toolStripButtonExpand, "toolStripButtonExpand");
-            this.toolStripButtonExpand.Name = "toolStripButtonExpand";
-            this.toolStripButtonExpand.Click += new System.EventHandler(this.expand_Click);
+            toolStripButtonExpand.Image = Properties.Resources.section_expand_all;
+            resources.ApplyResources(toolStripButtonExpand, "toolStripButtonExpand");
+            toolStripButtonExpand.Name = "toolStripButtonExpand";
+            toolStripButtonExpand.Click += expand_Click;
             // 
             // toolStripButtonCollapse
             // 
-            this.toolStripButtonCollapse.Image = global::UniversalUninstaller.Properties.Resources.section_collapse_all;
-            resources.ApplyResources(this.toolStripButtonCollapse, "toolStripButtonCollapse");
-            this.toolStripButtonCollapse.Name = "toolStripButtonCollapse";
-            this.toolStripButtonCollapse.Click += new System.EventHandler(this.collapse_Click);
+            toolStripButtonCollapse.Image = Properties.Resources.section_collapse_all;
+            resources.ApplyResources(toolStripButtonCollapse, "toolStripButtonCollapse");
+            toolStripButtonCollapse.Name = "toolStripButtonCollapse";
+            toolStripButtonCollapse.Click += collapse_Click;
             // 
             // treeListView1
             // 
-            this.treeListView1.AllColumns.Add(this.olvColumnName);
-            this.treeListView1.AllColumns.Add(this.olvColumnSize);
-            this.treeListView1.CellEditUseWholeCell = false;
-            this.treeListView1.CheckBoxes = true;
-            this.treeListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumnName,
-            this.olvColumnSize});
-            this.treeListView1.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.treeListView1, "treeListView1");
-            this.treeListView1.FullRowSelect = true;
-            this.treeListView1.GridLines = true;
-            this.treeListView1.Name = "treeListView1";
-            this.treeListView1.ShowGroups = false;
-            this.treeListView1.ShowImagesOnSubItems = true;
-            this.treeListView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.treeListView1.UseCompatibleStateImageBehavior = false;
-            this.treeListView1.View = System.Windows.Forms.View.Details;
-            this.treeListView1.VirtualMode = true;
-            this.treeListView1.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.treeListView1_ItemChecked);
-            this.treeListView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.treeListView1_MouseDoubleClick);
+            treeListView1.AllColumns.Add(olvColumnName);
+            treeListView1.AllColumns.Add(olvColumnSize);
+            treeListView1.CellEditUseWholeCell = false;
+            treeListView1.CheckBoxes = true;
+            treeListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { olvColumnName, olvColumnSize });
+            resources.ApplyResources(treeListView1, "treeListView1");
+            treeListView1.FullRowSelect = true;
+            treeListView1.GridLines = true;
+            treeListView1.Name = "treeListView1";
+            treeListView1.ShowGroups = false;
+            treeListView1.ShowImagesOnSubItems = true;
+            treeListView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            treeListView1.UseCompatibleStateImageBehavior = false;
+            treeListView1.View = System.Windows.Forms.View.Details;
+            treeListView1.VirtualMode = true;
+            treeListView1.ItemChecked += treeListView1_ItemChecked;
+            treeListView1.MouseDoubleClick += treeListView1_MouseDoubleClick;
             // 
             // olvColumnName
             // 
-            this.olvColumnName.AspectName = "";
-            this.olvColumnName.FillsFreeSpace = true;
-            resources.ApplyResources(this.olvColumnName, "olvColumnName");
+            olvColumnName.AspectName = "";
+            olvColumnName.FillsFreeSpace = true;
+            resources.ApplyResources(olvColumnName, "olvColumnName");
             // 
             // olvColumnSize
             // 
-            resources.ApplyResources(this.olvColumnSize, "olvColumnSize");
+            resources.ApplyResources(olvColumnSize, "olvColumnSize");
             // 
             // TargetList
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.treeListView1);
-            this.Controls.Add(this.toolStrip1);
-            this.Name = "TargetList";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.treeListView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(treeListView1);
+            Controls.Add(toolStrip1);
+            Name = "TargetList";
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)treeListView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

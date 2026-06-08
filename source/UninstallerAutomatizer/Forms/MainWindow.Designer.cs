@@ -28,118 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            this.textBoxStatus = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonResume = new System.Windows.Forms.Button();
-            this.buttonPause = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonAbort = new System.Windows.Forms.Button();
-            this.timerClose = new System.Windows.Forms.Timer(this.components);
-            this.checkBoxUninstallerVisible = new System.Windows.Forms.CheckBox();
-            this.timerOpacity = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            textBoxStatus = new System.Windows.Forms.TextBox();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            label1 = new System.Windows.Forms.Label();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            panel1 = new System.Windows.Forms.Panel();
+            checkBoxUninstallerVisible = new System.Windows.Forms.CheckBox();
+            buttonResume = new System.Windows.Forms.Button();
+            buttonPause = new System.Windows.Forms.Button();
+            panel2 = new System.Windows.Forms.Panel();
+            buttonAbort = new System.Windows.Forms.Button();
+            timerClose = new System.Windows.Forms.Timer(components);
+            timerOpacity = new System.Windows.Forms.Timer(components);
+            flowLayoutPanel1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // textBoxStatus
             // 
-            this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textBoxStatus, "textBoxStatus");
-            this.textBoxStatus.Name = "textBoxStatus";
-            this.textBoxStatus.ReadOnly = true;
+            textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(textBoxStatus, "textBoxStatus");
+            textBoxStatus.Name = "textBoxStatus";
+            textBoxStatus.ReadOnly = true;
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBoxStatus);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(textBoxStatus);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.checkBoxUninstallerVisible);
-            this.panel1.Controls.Add(this.buttonResume);
-            this.panel1.Controls.Add(this.buttonPause);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.buttonAbort);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // buttonResume
-            // 
-            resources.ApplyResources(this.buttonResume, "buttonResume");
-            this.buttonResume.Name = "buttonResume";
-            this.buttonResume.UseVisualStyleBackColor = true;
-            this.buttonResume.Click += new System.EventHandler(this.buttonResume_Click);
-            // 
-            // buttonPause
-            // 
-            resources.ApplyResources(this.buttonPause, "buttonPause");
-            this.buttonPause.Name = "buttonPause";
-            this.buttonPause.UseVisualStyleBackColor = true;
-            this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // buttonAbort
-            // 
-            resources.ApplyResources(this.buttonAbort, "buttonAbort");
-            this.buttonAbort.Name = "buttonAbort";
-            this.buttonAbort.UseVisualStyleBackColor = true;
-            this.buttonAbort.Click += new System.EventHandler(this.buttonAbort_Click);
-            // 
-            // timerClose
-            // 
-            this.timerClose.Tick += new System.EventHandler(this.timerClose_Tick);
+            panel1.Controls.Add(checkBoxUninstallerVisible);
+            panel1.Controls.Add(buttonResume);
+            panel1.Controls.Add(buttonPause);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(buttonAbort);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // checkBoxUninstallerVisible
             // 
-            resources.ApplyResources(this.checkBoxUninstallerVisible, "checkBoxUninstallerVisible");
-            this.checkBoxUninstallerVisible.Name = "checkBoxUninstallerVisible";
-            this.checkBoxUninstallerVisible.UseVisualStyleBackColor = true;
-            this.checkBoxUninstallerVisible.CheckedChanged += new System.EventHandler(this.checkBoxUninstallerVisible_CheckedChanged);
+            resources.ApplyResources(checkBoxUninstallerVisible, "checkBoxUninstallerVisible");
+            checkBoxUninstallerVisible.Name = "checkBoxUninstallerVisible";
+            checkBoxUninstallerVisible.UseVisualStyleBackColor = true;
+            checkBoxUninstallerVisible.CheckedChanged += checkBoxUninstallerVisible_CheckedChanged;
+            // 
+            // buttonResume
+            // 
+            resources.ApplyResources(buttonResume, "buttonResume");
+            buttonResume.Name = "buttonResume";
+            buttonResume.UseVisualStyleBackColor = true;
+            buttonResume.Click += buttonResume_Click;
+            // 
+            // buttonPause
+            // 
+            resources.ApplyResources(buttonPause, "buttonPause");
+            buttonPause.Name = "buttonPause";
+            buttonPause.UseVisualStyleBackColor = true;
+            buttonPause.Click += buttonPause_Click;
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Name = "panel2";
+            // 
+            // buttonAbort
+            // 
+            resources.ApplyResources(buttonAbort, "buttonAbort");
+            buttonAbort.Name = "buttonAbort";
+            buttonAbort.UseVisualStyleBackColor = true;
+            buttonAbort.Click += buttonAbort_Click;
+            // 
+            // timerClose
+            // 
+            timerClose.Tick += timerClose_Tick;
             // 
             // timerOpacity
             // 
-            this.timerOpacity.Interval = 30;
-            this.timerOpacity.Tick += new System.EventHandler(this.timerOpacity_Tick);
+            timerOpacity.Interval = 30;
+            timerOpacity.Tick += timerOpacity_Tick;
             // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "MainWindow";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(groupBox1);
+            Controls.Add(panel1);
+            Controls.Add(flowLayoutPanel1);
+            Name = "MainWindow";
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

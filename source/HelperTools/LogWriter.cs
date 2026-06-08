@@ -11,18 +11,44 @@ using System.Text;
 
 namespace Klocman
 {
-    public sealed class LogWriter : StreamWriter
+    internal sealed class LogWriter(string path) : StreamWriter(path, true, Encoding.UTF8)
     {
+        private static LogWriter _currentLogger;
+
         public static void WriteExceptionToLog(Exception ex)
         {
             if (ex == null) throw new ArgumentNullException(nameof(ex));
-            var location = CreateLogFilenameForAssembly(Assembly.GetCallingAssembly());
+            WriteMessageToLog(ex.ToString());
+        }
 
-            using (var writer = new StreamWriter(location, true))
+        /// <summary>
+        /// Writes a message to the log file with a UTC timestamp.
+        /// </summary>
+        public static void WriteMessageToLog(string message)
+        {
+            if (message == null) throw new ArgumentNullException(nameof(message));
+
+            StreamWriter writer = _currentLogger;
+            try
             {
+                var location = CreateLogFilenameForAssembly(Assembly.GetCallingAssembly());
+
+                if (writer == null || !writer.BaseStream.CanWrite)
+                    writer = new StreamWriter(location, true);
+
                 writer.Write(DateTime.UtcNow.ToLongTimeString());
                 writer.Write(" - ");
-                writer.WriteLine(ex.ToString());
+                writer.WriteLine(message);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(@"Failed to write to log file:\n" + ex);
+            }
+            finally
+            {
+                if (writer != null && writer != _currentLogger)
+                    writer.Dispose();
             }
         }
 
@@ -33,10 +59,6 @@ namespace Klocman
                 location = location.Remove(location.Length - 4);
             location += ".log";
             return location;
-        }
-
-        public LogWriter(string path) : base(path, true, Encoding.UTF8)
-        {
         }
 
         protected override void Dispose(bool disposing)
@@ -51,18 +73,21 @@ namespace Klocman
         /// <summary>
         /// Start logging to a file reflecting the calling assembly name.
         /// Hooks console out and error. Dispose before exiting.
+        /// If logging is already active, it will be restarted with the new calling assembly name.
         /// </summary>
         public static LogWriter StartLogging()
         {
+            _currentLogger?.Dispose();
+
             var location = CreateLogFilenameForAssembly(Assembly.GetCallingAssembly());
-            return StartLogging(location);
+            return _currentLogger = StartLogging(location);
         }
 
         /// <summary>
         /// Start logging to a file.
         /// Hooks console out and error. Dispose before exiting.
         /// </summary>
-        public static LogWriter StartLogging(string logPath)
+        private static LogWriter StartLogging(string logPath)
         {
             try
             {

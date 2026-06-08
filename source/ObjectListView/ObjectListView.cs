@@ -587,6 +587,7 @@ using System.Windows.Forms.VisualStyles;
 using System.Runtime.Serialization.Formatters;
 using System.Threading;
 using System.Xml.Serialization;
+using MethodInvoker = System.Windows.Forms.MethodInvoker;
 
 namespace BrightIdeasSoftware
 {
@@ -1227,6 +1228,7 @@ namespace BrightIdeasSoftware
         /// <summary>
         /// Should this list show checkboxes?
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public new bool CheckBoxes
         {
             get { return base.CheckBoxes; }
@@ -3352,6 +3354,7 @@ namespace BrightIdeasSoftware
         /// as this will work:
         /// <code>listView1.SmallImageList = listView1.SmallImageList;</code></para>
         /// </remarks>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public new ImageList SmallImageList
         {
             get { return shadowedImageList; }

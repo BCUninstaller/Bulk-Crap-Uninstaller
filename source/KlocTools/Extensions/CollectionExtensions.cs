@@ -144,7 +144,7 @@ namespace Klocman.Extensions
         {
             for (var i = 0; i < array.Length; i++)
             {
-                if (array[i].Equals(element))
+                if (EqualityComparer<T>.Default.Equals(array[i], element))
                     return i;
             }
             return -1;

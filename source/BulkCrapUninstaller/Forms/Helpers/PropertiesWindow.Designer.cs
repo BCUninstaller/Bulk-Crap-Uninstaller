@@ -31,143 +31,141 @@ namespace BulkCrapUninstaller.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropertiesWindow));
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPageOverview = new System.Windows.Forms.TabPage();
-            this.tabPageFileInfo = new System.Windows.Forms.TabPage();
-            this.tabPageRegistry = new System.Windows.Forms.TabPage();
-            this.tabPageCertificate = new System.Windows.Forms.TabPage();
-            this.contextMenuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.SuspendLayout();
+            components = new Container();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(PropertiesWindow));
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            copyToClipboardToolStripMenuItem = new ToolStripMenuItem();
+            saveToFileToolStripMenuItem = new ToolStripMenuItem();
+            saveFileDialog1 = new SaveFileDialog();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
+            dataGridView1 = new DataGridView();
+            tabControl2 = new TabControl();
+            tabPageOverview = new TabPage();
+            tabPageFileInfo = new TabPage();
+            tabPageRegistry = new TabPage();
+            tabPageCertificate = new TabPage();
+            contextMenuStrip1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            ((ISupportInitialize)dataGridView1).BeginInit();
+            tabControl2.SuspendLayout();
+            SuspendLayout();
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToClipboardToolStripMenuItem,
-            this.saveToFileToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { copyToClipboardToolStripMenuItem, saveToFileToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(contextMenuStrip1, "contextMenuStrip1");
+            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
             // 
             // copyToClipboardToolStripMenuItem
             // 
-            this.copyToClipboardToolStripMenuItem.Image = global::BulkCrapUninstaller.Properties.Resources.pagecopy;
-            this.copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
-            resources.ApplyResources(this.copyToClipboardToolStripMenuItem, "copyToClipboardToolStripMenuItem");
-            this.copyToClipboardToolStripMenuItem.Click += new System.EventHandler(this.copyToClipboardToolStripMenuItem_Click);
+            copyToClipboardToolStripMenuItem.Image = Properties.Resources.pagecopy;
+            copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
+            resources.ApplyResources(copyToClipboardToolStripMenuItem, "copyToClipboardToolStripMenuItem");
+            copyToClipboardToolStripMenuItem.Click += copyToClipboardToolStripMenuItem_Click;
             // 
             // saveToFileToolStripMenuItem
             // 
-            this.saveToFileToolStripMenuItem.Image = global::BulkCrapUninstaller.Properties.Resources.save;
-            this.saveToFileToolStripMenuItem.Name = "saveToFileToolStripMenuItem";
-            resources.ApplyResources(this.saveToFileToolStripMenuItem, "saveToFileToolStripMenuItem");
-            this.saveToFileToolStripMenuItem.Click += new System.EventHandler(this.saveToFileToolStripMenuItem_Click);
+            saveToFileToolStripMenuItem.Image = Properties.Resources.save;
+            saveToFileToolStripMenuItem.Name = "saveToFileToolStripMenuItem";
+            resources.ApplyResources(saveToFileToolStripMenuItem, "saveToFileToolStripMenuItem");
+            saveToFileToolStripMenuItem.Click += saveToFileToolStripMenuItem_Click;
             // 
             // saveFileDialog1
             // 
-            this.saveFileDialog1.DefaultExt = "txt";
-            resources.ApplyResources(this.saveFileDialog1, "saveFileDialog1");
-            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            saveFileDialog1.DefaultExt = "txt";
+            resources.ApplyResources(saveFileDialog1, "saveFileDialog1");
+            saveFileDialog1.FileOk += saveFileDialog1_FileOk;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.OnSelectedTabChanged);
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            resources.ApplyResources(tabControl1, "tabControl1");
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.SelectedIndexChanged += OnSelectedTabChanged;
             // 
             // tabPage1
             // 
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPage1, "tabPage1");
+            tabPage1.Name = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPage2, "tabPage2");
+            tabPage2.Name = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyUp);
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.ContextMenuStrip = contextMenuStrip1;
+            resources.ApplyResources(dataGridView1, "dataGridView1");
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.ShowEditingIcon = false;
+            dataGridView1.KeyUp += dataGridView1_KeyUp;
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tabPageOverview);
-            this.tabControl2.Controls.Add(this.tabPageFileInfo);
-            this.tabControl2.Controls.Add(this.tabPageRegistry);
-            this.tabControl2.Controls.Add(this.tabPageCertificate);
-            resources.ApplyResources(this.tabControl2, "tabControl2");
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.OnSelectedTabChanged);
+            tabControl2.Controls.Add(tabPageOverview);
+            tabControl2.Controls.Add(tabPageFileInfo);
+            tabControl2.Controls.Add(tabPageRegistry);
+            tabControl2.Controls.Add(tabPageCertificate);
+            resources.ApplyResources(tabControl2, "tabControl2");
+            tabControl2.Name = "tabControl2";
+            tabControl2.SelectedIndex = 0;
+            tabControl2.SelectedIndexChanged += OnSelectedTabChanged;
             // 
             // tabPageOverview
             // 
-            resources.ApplyResources(this.tabPageOverview, "tabPageOverview");
-            this.tabPageOverview.Name = "tabPageOverview";
-            this.tabPageOverview.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageOverview, "tabPageOverview");
+            tabPageOverview.Name = "tabPageOverview";
+            tabPageOverview.UseVisualStyleBackColor = true;
             // 
             // tabPageFileInfo
             // 
-            resources.ApplyResources(this.tabPageFileInfo, "tabPageFileInfo");
-            this.tabPageFileInfo.Name = "tabPageFileInfo";
-            this.tabPageFileInfo.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageFileInfo, "tabPageFileInfo");
+            tabPageFileInfo.Name = "tabPageFileInfo";
+            tabPageFileInfo.UseVisualStyleBackColor = true;
             // 
             // tabPageRegistry
             // 
-            resources.ApplyResources(this.tabPageRegistry, "tabPageRegistry");
-            this.tabPageRegistry.Name = "tabPageRegistry";
-            this.tabPageRegistry.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageRegistry, "tabPageRegistry");
+            tabPageRegistry.Name = "tabPageRegistry";
+            tabPageRegistry.UseVisualStyleBackColor = true;
             // 
             // tabPageCertificate
             // 
-            resources.ApplyResources(this.tabPageCertificate, "tabPageCertificate");
-            this.tabPageCertificate.Name = "tabPageCertificate";
-            this.tabPageCertificate.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageCertificate, "tabPageCertificate");
+            tabPageCertificate.Name = "tabPageCertificate";
+            tabPageCertificate.UseVisualStyleBackColor = true;
             // 
             // PropertiesWindow
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.tabControl2);
-            this.Controls.Add(this.tabControl1);
-            this.KeyPreview = true;
-            this.Name = "PropertiesWindow";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PropertiesWindow_KeyDown);
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabControl2.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGridView1);
+            Controls.Add(tabControl2);
+            Controls.Add(tabControl1);
+            KeyPreview = true;
+            Name = "PropertiesWindow";
+            KeyDown += PropertiesWindow_KeyDown;
+            contextMenuStrip1.ResumeLayout(false);
+            tabControl1.ResumeLayout(false);
+            ((ISupportInitialize)dataGridView1).EndInit();
+            tabControl2.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

@@ -33,6 +33,7 @@ namespace UninstallTools.Controls
 
         [ReadOnly(true)]
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public UninstallList CurrentList
         {
             get { return _currentList; }

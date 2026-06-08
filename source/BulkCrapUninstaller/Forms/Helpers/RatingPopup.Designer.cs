@@ -29,79 +29,79 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RatingPopup));
-            this.buttonGood = new System.Windows.Forms.Button();
-            this.buttonBad = new System.Windows.Forms.Button();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonNormal = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            buttonGood = new System.Windows.Forms.Button();
+            buttonBad = new System.Windows.Forms.Button();
+            buttonCancel = new System.Windows.Forms.Button();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            buttonNormal = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
+            groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // buttonGood
             // 
-            resources.ApplyResources(this.buttonGood, "buttonGood");
-            this.buttonGood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonGood.ForeColor = System.Drawing.Color.Black;
-            this.buttonGood.Name = "buttonGood";
-            this.buttonGood.UseVisualStyleBackColor = false;
-            this.buttonGood.Click += new System.EventHandler(this.buttonGood_Click);
+            buttonGood.BackColor = System.Drawing.Color.FromArgb(192, 255, 192);
+            resources.ApplyResources(buttonGood, "buttonGood");
+            buttonGood.ForeColor = System.Drawing.Color.Black;
+            buttonGood.Name = "buttonGood";
+            buttonGood.UseVisualStyleBackColor = false;
+            buttonGood.Click += buttonGood_Click;
             // 
             // buttonBad
             // 
-            resources.ApplyResources(this.buttonBad, "buttonBad");
-            this.buttonBad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonBad.ForeColor = System.Drawing.Color.Black;
-            this.buttonBad.Name = "buttonBad";
-            this.buttonBad.UseVisualStyleBackColor = false;
-            this.buttonBad.Click += new System.EventHandler(this.buttonBad_Click);
+            buttonBad.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+            resources.ApplyResources(buttonBad, "buttonBad");
+            buttonBad.ForeColor = System.Drawing.Color.Black;
+            buttonBad.Name = "buttonBad";
+            buttonBad.UseVisualStyleBackColor = false;
+            buttonBad.Click += buttonBad_Click;
             // 
             // buttonCancel
             // 
-            resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
+            resources.ApplyResources(buttonCancel, "buttonCancel");
+            buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonCancel.Name = "buttonCancel";
+            buttonCancel.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.buttonBad);
-            this.groupBox1.Controls.Add(this.buttonNormal);
-            this.groupBox1.Controls.Add(this.buttonGood);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(buttonBad);
+            groupBox1.Controls.Add(buttonNormal);
+            groupBox1.Controls.Add(buttonGood);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // buttonNormal
             // 
-            resources.ApplyResources(this.buttonNormal, "buttonNormal");
-            this.buttonNormal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonNormal.ForeColor = System.Drawing.Color.Black;
-            this.buttonNormal.Name = "buttonNormal";
-            this.buttonNormal.UseVisualStyleBackColor = false;
-            this.buttonNormal.Click += new System.EventHandler(this.buttonNormal_Click);
+            buttonNormal.BackColor = System.Drawing.Color.FromArgb(255, 255, 192);
+            resources.ApplyResources(buttonNormal, "buttonNormal");
+            buttonNormal.ForeColor = System.Drawing.Color.Black;
+            buttonNormal.Name = "buttonNormal";
+            buttonNormal.UseVisualStyleBackColor = false;
+            buttonNormal.Click += buttonNormal_Click;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.buttonCancel);
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(buttonCancel);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // RatingPopup
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonCancel;
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "RatingPopup";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            CancelButton = buttonCancel;
+            Controls.Add(groupBox1);
+            Controls.Add(panel1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            Name = "RatingPopup";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            groupBox1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

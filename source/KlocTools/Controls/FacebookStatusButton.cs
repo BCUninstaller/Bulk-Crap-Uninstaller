@@ -4,6 +4,7 @@
 */
 
 using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Klocman.Forms.Tools;
 
@@ -21,6 +22,7 @@ namespace Klocman.Controls
             Padding = new Padding(2, 0, 2, 0);
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string TargetSite { get; set; }
 
         private void FacebookStatusButton_Click(object sender, EventArgs e)

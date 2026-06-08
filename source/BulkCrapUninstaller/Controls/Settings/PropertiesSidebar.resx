@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,20 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="checkBoxOrphans.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="checkBoxOrphans.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="checkBoxOrphans.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 26</value>
+    <value>4, 28</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBoxOrphans.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxOrphans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 17</value>
+    <value>191, 19</value>
   </data>
   <data name="checkBoxOrphans.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -138,6 +142,9 @@
   <data name="checkBoxOrphans.Text" xml:space="preserve">
     <value>Show unregistered applications</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 17</value>
+  </metadata>
   <data name="checkBoxOrphans.ToolTip" xml:space="preserve">
     <value>Display applications that do not have any registered uninstallers. They are not visible in most uninstall managers but still take up space. Unregistered items are marked with a red color. 
 
@@ -147,7 +154,7 @@ Warning: Double check before removing these applications, they might still be ne
     <value>checkBoxOrphans</value>
   </data>
   <data name="&gt;&gt;checkBoxOrphans.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxOrphans.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -162,10 +169,13 @@ Warning: Double check before removing these applications, they might still be ne
     <value>NoControl</value>
   </data>
   <data name="checkBoxInvalidTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 72</value>
+    <value>4, 78</value>
+  </data>
+  <data name="checkBoxInvalidTest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxInvalidTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 17</value>
+    <value>183, 19</value>
   </data>
   <data name="checkBoxInvalidTest.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -180,7 +190,7 @@ Warning: Double check before removing these applications, they might still be ne
     <value>checkBoxInvalidTest</value>
   </data>
   <data name="&gt;&gt;checkBoxInvalidTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxInvalidTest.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -195,10 +205,13 @@ Warning: Double check before removing these applications, they might still be ne
     <value>NoControl</value>
   </data>
   <data name="checkBoxCertTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 49</value>
+    <value>4, 53</value>
+  </data>
+  <data name="checkBoxCertTest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxCertTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 17</value>
+    <value>185, 19</value>
   </data>
   <data name="checkBoxCertTest.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -216,7 +229,7 @@ Warning: Verification can take a long time to complete.</value>
     <value>checkBoxCertTest</value>
   </data>
   <data name="&gt;&gt;checkBoxCertTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxCertTest.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -243,10 +256,13 @@ Warning: Verification can take a long time to complete.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxListHideMicrosoft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 3</value>
+  </data>
+  <data name="checkBoxListHideMicrosoft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxListHideMicrosoft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 17</value>
+    <value>176, 19</value>
   </data>
   <data name="checkBoxListHideMicrosoft.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -261,7 +277,7 @@ Warning: Verification can take a long time to complete.</value>
     <value>checkBoxListHideMicrosoft</value>
   </data>
   <data name="&gt;&gt;checkBoxListHideMicrosoft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxListHideMicrosoft.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -276,10 +292,13 @@ Warning: Verification can take a long time to complete.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxListSysComp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 49</value>
+    <value>4, 53</value>
+  </data>
+  <data name="checkBoxListSysComp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxListSysComp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 17</value>
+    <value>165, 19</value>
   </data>
   <data name="checkBoxListSysComp.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -295,7 +314,7 @@ Drivers are often marked with this tag.</value>
     <value>checkBoxListSysComp</value>
   </data>
   <data name="&gt;&gt;checkBoxListSysComp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxListSysComp.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -310,10 +329,13 @@ Drivers are often marked with this tag.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxListProtected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 72</value>
+    <value>4, 78</value>
+  </data>
+  <data name="checkBoxListProtected.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxListProtected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 17</value>
+    <value>141, 19</value>
   </data>
   <data name="checkBoxListProtected.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -328,7 +350,7 @@ Drivers are often marked with this tag.</value>
     <value>checkBoxListProtected</value>
   </data>
   <data name="&gt;&gt;checkBoxListProtected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxListProtected.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -343,10 +365,13 @@ Drivers are often marked with this tag.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxTweaks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 95</value>
+    <value>4, 103</value>
+  </data>
+  <data name="checkBoxTweaks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxTweaks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 17</value>
+    <value>94, 19</value>
   </data>
   <data name="checkBoxTweaks.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -358,7 +383,7 @@ Drivers are often marked with this tag.</value>
     <value>checkBoxTweaks</value>
   </data>
   <data name="&gt;&gt;checkBoxTweaks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxTweaks.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -373,10 +398,13 @@ Drivers are often marked with this tag.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxShowUpdates.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 118</value>
+    <value>4, 128</value>
+  </data>
+  <data name="checkBoxShowUpdates.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxShowUpdates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 17</value>
+    <value>100, 19</value>
   </data>
   <data name="checkBoxShowUpdates.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -391,7 +419,7 @@ Drivers are often marked with this tag.</value>
     <value>checkBoxShowUpdates</value>
   </data>
   <data name="&gt;&gt;checkBoxShowUpdates.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxShowUpdates.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -406,10 +434,13 @@ Drivers are often marked with this tag.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxWinFeature.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 141</value>
+    <value>4, 153</value>
+  </data>
+  <data name="checkBoxWinFeature.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxWinFeature.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 17</value>
+    <value>152, 19</value>
   </data>
   <data name="checkBoxWinFeature.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -421,7 +452,7 @@ Drivers are often marked with this tag.</value>
     <value>checkBoxWinFeature</value>
   </data>
   <data name="&gt;&gt;checkBoxWinFeature.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxWinFeature.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -436,10 +467,13 @@ Drivers are often marked with this tag.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxShowStoreApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 164</value>
+    <value>4, 178</value>
+  </data>
+  <data name="checkBoxShowStoreApps.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxShowStoreApps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 17</value>
+    <value>165, 19</value>
   </data>
   <data name="checkBoxShowStoreApps.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -451,7 +485,7 @@ Drivers are often marked with this tag.</value>
     <value>checkBoxShowStoreApps</value>
   </data>
   <data name="&gt;&gt;checkBoxShowStoreApps.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxShowStoreApps.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
@@ -466,10 +500,13 @@ Drivers are often marked with this tag.</value>
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 16</value>
+    <value>6, 19</value>
+  </data>
+  <data name="flowLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 184</value>
+    <value>105, 200</value>
   </data>
   <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -478,7 +515,7 @@ Drivers are often marked with this tag.</value>
     <value>flowLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -492,11 +529,14 @@ Drivers are often marked with this tag.</value>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 3, 5, 3</value>
+    <value>6, 3, 6, 3</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 203</value>
+    <value>117, 222</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -508,7 +548,7 @@ Drivers are often marked with this tag.</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -535,10 +575,13 @@ Drivers are often marked with this tag.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxViewCheckboxes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 3</value>
+  </data>
+  <data name="checkBoxViewCheckboxes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxViewCheckboxes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 17</value>
+    <value>154, 19</value>
   </data>
   <data name="checkBoxViewCheckboxes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -556,7 +599,7 @@ You can check multiple items by highlighting them and pressing spacebar.</value>
     <value>checkBoxViewCheckboxes</value>
   </data>
   <data name="&gt;&gt;checkBoxViewCheckboxes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxViewCheckboxes.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -571,10 +614,13 @@ You can check multiple items by highlighting them and pressing spacebar.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxViewGroups.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 26</value>
+    <value>4, 28</value>
+  </data>
+  <data name="checkBoxViewGroups.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxViewGroups.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 17</value>
+    <value>140, 19</value>
   </data>
   <data name="checkBoxViewGroups.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -590,7 +636,7 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>checkBoxViewGroups</value>
   </data>
   <data name="&gt;&gt;checkBoxViewGroups.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxViewGroups.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -605,10 +651,13 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>NoControl</value>
   </data>
   <data name="checkBoxHighlightSpecial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 95</value>
+    <value>4, 103</value>
+  </data>
+  <data name="checkBoxHighlightSpecial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBoxHighlightSpecial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 17</value>
+    <value>178, 19</value>
   </data>
   <data name="checkBoxHighlightSpecial.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -623,7 +672,7 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>checkBoxHighlightSpecial</value>
   </data>
   <data name="&gt;&gt;checkBoxHighlightSpecial.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBoxHighlightSpecial.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -638,10 +687,13 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 16</value>
+    <value>6, 19</value>
+  </data>
+  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 115</value>
+    <value>105, 125</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -650,7 +702,7 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -662,16 +714,16 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>Top</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 203</value>
+    <value>0, 222</value>
   </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 10</value>
+    <value>4, 3, 4, 12</value>
   </data>
   <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 3, 5, 3</value>
+    <value>6, 3, 6, 3</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 134</value>
+    <value>117, 147</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -683,7 +735,7 @@ Grouping of most of the columns uses smart filtering.</value>
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -691,8 +743,14 @@ Grouping of most of the columns uses smart filtering.</value>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="usageTracker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>299, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -700,34 +758,31 @@ Grouping of most of the columns uses smart filtering.</value>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>117, 115</value>
+  </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 337</value>
+    <value>117, 369</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;usageTracker1.Name" xml:space="preserve">
     <value>usageTracker1</value>
   </data>
   <data name="&gt;&gt;usageTracker1.Type" xml:space="preserve">
-    <value>BulkCrapUninstaller.Functions.Tracking.UsageTracker, BCUninstaller, Version=4.9.0.2011, Culture=neutral, PublicKeyToken=null</value>
+    <value>BulkCrapUninstaller.Functions.Tracking.UsageTracker, BCUninstaller, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PropertiesSidebar</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>202, 17</value>
-  </metadata>
-  <metadata name="usageTracker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>299, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

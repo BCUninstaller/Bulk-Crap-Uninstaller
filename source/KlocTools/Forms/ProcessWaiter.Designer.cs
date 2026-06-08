@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            processWaiterControl1 = new ProcessWaiterControl();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcessWaiter));
-            this.SuspendLayout();
+            processWaiterControl1 = new ProcessWaiterControl();
+            SuspendLayout();
             // 
             // processWaiterControl1
             // 
-            resources.ApplyResources(this.processWaiterControl1, "processWaiterControl1");
-            this.processWaiterControl1.Name = "processWaiterControl1";
-            this.processWaiterControl1.ShowIgnoreAndCancel = true;
+            resources.ApplyResources(processWaiterControl1, "processWaiterControl1");
+            processWaiterControl1.Name = "processWaiterControl1";
+            processWaiterControl1.ShowIgnoreAndCancel = true;
             // 
             // ProcessWaiter
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ControlBox = false;
-            this.Controls.Add(this.processWaiterControl1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "ProcessWaiter";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Shown += new System.EventHandler(this.ProcessWaiter_Shown);
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ControlBox = false;
+            Controls.Add(processWaiterControl1);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "ProcessWaiter";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            Shown += ProcessWaiter_Shown;
+            ResumeLayout(false);
 
         }
 

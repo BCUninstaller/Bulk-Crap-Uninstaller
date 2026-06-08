@@ -88,7 +88,10 @@ namespace UninstallerAutomatizer
             timerClose.Interval = interval;
             timerClose.Start();
         }
-
+        
+        [Browsable(false)]
+        [ReadOnly(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool IsRunning
         {
             get { return buttonPause.Visible; }

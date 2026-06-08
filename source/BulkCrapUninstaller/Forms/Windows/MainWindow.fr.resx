@@ -232,7 +232,7 @@
     <value>Ouvrir dans l'&amp;explorateur...</value>
   </data>
   <data name="openWebPageContextMenuStripItem.Text" xml:space="preserve">
-    <value>Ouvrir la page &amp;web</value>
+    <value>Ouvrir la Page &amp;Web</value>
   </data>
   <data name="lookUpOnlineToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Rechercher en ligne</value>
@@ -247,10 +247,10 @@
     <value>&amp;Recharger les désinstalleurs</value>
   </data>
   <data name="loadUninstallerListToolStripMenuItem.Text" xml:space="preserve">
-    <value>Charger la/les &amp;listes de désinstallation...</value>
+    <value>&amp;Ouvrir la Liste de Désinstallation...</value>
   </data>
   <data name="exportSelectedToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Exporter la sélection...</value>
+    <value>&amp;Exporter les données des désinstalleurs sélectionnés...</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Quitter</value>
@@ -259,16 +259,16 @@
     <value>&amp;Fichier</value>
   </data>
   <data name="showColorLegendToolStripMenuItem.Text" xml:space="preserve">
-    <value>Montrer la légende des couleurs</value>
+    <value>Afficher la légende des couleurs</value>
   </data>
   <data name="displayToolbarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Montrer la barre d'ou&amp;tils</value>
+    <value>Afficher la barre d'ou&amp;tils</value>
   </data>
   <data name="displayStatusbarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Montrer la &amp;barre d'état</value>
+    <value>Afficher la &amp;barre d'état</value>
   </data>
   <data name="displaySettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Montrer la barre latérale des réglage&amp;s</value>
+    <value>Afficher la barre latérale des réglage&amp;s</value>
   </data>
   <data name="useSystemThemeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Utiliser le thème système</value>
@@ -316,13 +316,13 @@
     <value>Ouvrir dans l'&amp;explorateur...</value>
   </data>
   <data name="toolStripMenuItem14.Text" xml:space="preserve">
-    <value>Ouvrir la page &amp;web</value>
+    <value>Ouvrir la Page &amp;Web</value>
   </data>
   <data name="onlineSearchToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Rechercher en ligne</value>
   </data>
   <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Montrer les &amp;propriétés</value>
+    <value>Afficher les &amp;propriétés</value>
   </data>
   <data name="basicOperationsToolStripMenuItem.Text" xml:space="preserve">
     <value>Opérations &amp;basiques</value>
@@ -358,7 +358,7 @@
     <value>Opérations a&amp;vancées</value>
   </data>
   <data name="cleanUpProgramFilesToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Nettoyer Program Files</value>
+    <value>&amp;Nettoyer les dossiers "Program Files"...</value>
   </data>
   <data name="openProgramsAndFeaturesToolStripMenuItem.Text" xml:space="preserve">
     <value>Ouvrir "&amp;Programmes et Fonctionnalités"</value>
@@ -379,7 +379,7 @@
     <value>Vérifier les mises à jour</value>
   </data>
   <data name="submitFeedbackToolStripMenuItem.Text" xml:space="preserve">
-    <value>Soumettre une réaction...</value>
+    <value>Soumettre un retour...</value>
   </data>
   <data name="resetSettingsToolStripMenuItem.Text" xml:space="preserve">
     <value>Réinitialiser les réglages</value>
@@ -409,10 +409,10 @@
     <value>Réglages</value>
   </data>
   <data name="toolStripButtonSelAll.Text" xml:space="preserve">
-    <value>Sélectionner tous les éléments</value>
+    <value>Sélectionner tout</value>
   </data>
   <data name="toolStripButtonSelNone.Text" xml:space="preserve">
-    <value>Désélectionner tous les éléments</value>
+    <value>Désélectionner tout</value>
   </data>
   <data name="toolStripButtonSelInv.Text" xml:space="preserve">
     <value>Inverser la sélection</value>
@@ -439,7 +439,7 @@
     <value>Noter...</value>
   </data>
   <data name="rateToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Passez en revue...</value>
+    <value>Noter...</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Bulk Crap Uninstaller</value>
@@ -466,7 +466,7 @@
     <value>Google</value>
   </data>
   <data name="toolStripMenuItem16.Text" xml:space="preserve">
-    <value>AlternativeTo</value>
+    <value>AlternativeTo.net</value>
   </data>
   <data name="viewUpdatesToolStripMenuItem.Text" xml:space="preserve">
     <value>Voir les Mises à jour</value>
@@ -523,7 +523,7 @@
     <value>Inclure</value>
   </data>
   <data name="showTreemapToolStripMenuItem.Text" xml:space="preserve">
-    <value>Montrer la &amp;carte en arbre</value>
+    <value>Afficher la &amp;carte arborescente</value>
   </data>
   <data name="viewUnregisteredToolStripMenuItem.Text" xml:space="preserve">
     <value>Voir les Non Enregistrés</value>
@@ -562,7 +562,7 @@
     <value>Filtres &amp;Rapides</value>
   </data>
   <data name="troubleshootUninstallProblemsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Résolutions de problèmes de désinstallation...</value>
+    <value>Résoudre les problèmes de désinstallation...</value>
   </data>
   <data name="startDiskCleanupToolStripMenuItem.Text" xml:space="preserve">
     <value>Lancer le Nettoyage de disque</value>
@@ -587,5 +587,8 @@
   </data>
   <data name="takeOwnershipToolStripMenuItem.Text" xml:space="preserve">
     <value>Devenir propriétaire</value>
+  </data>
+  <data name="autosizeAllColumnsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Redimensionner auto toutes les colonnes</value>
   </data>
 </root>

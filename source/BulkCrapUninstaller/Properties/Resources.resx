@@ -244,7 +244,7 @@
     <value>..\Resources\centerline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SubmitFeedbackLink" xml:space="preserve">
-    <value>http://klocmansoftware.weebly.com/feedback--contact.html</value>
+    <value>https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions</value>
   </data>
   <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,7 +295,7 @@
     <value>..\Resources\donate_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ContactUrl" xml:space="preserve">
-    <value>http://klocmansoftware.weebly.com/feedback--contact.html</value>
+    <value>https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions</value>
   </data>
   <data name="clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clean.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,7 +304,7 @@
     <value>..\Resources\rating5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ReviewLink" xml:space="preserve">
-    <value>https://www.fosshub.com/Bulk-Crap-Uninstaller.html</value>
+    <value>https://dappcdn.com/download/utilities/bulk-crap-uninstaller</value>
   </data>
   <data name="folderopen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder.open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -272,7 +272,7 @@ namespace UninstallTools.Factory
                     }
 
                     var env = manifest.Architecture?[install.Architecture]?.EnvAddPath ?? manifest.EnvAddPath;
-                    if (env != null)
+                    if (env is { Length: > 0 })
                     {
                         currentDir = Path.Combine(currentDir, env[0]);
                     }

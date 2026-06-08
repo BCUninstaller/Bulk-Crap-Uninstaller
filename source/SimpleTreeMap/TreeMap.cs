@@ -68,8 +68,10 @@ namespace SimpleTreeMap
         [ReadOnly(true)]
         public Func<object, double> ObjectValueGetter { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool ShowToolTip { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool UseLogValueScaling { get; set; }
 
         public TreeMap()

@@ -3,16 +3,6 @@
     Apache License Version 2.0
 */
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Drawing;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Windows.Forms;
 using BrightIdeasSoftware;
 using BulkCrapUninstaller.Functions;
 using BulkCrapUninstaller.Functions.ApplicationList;
@@ -29,6 +19,17 @@ using Klocman.Native;
 using Klocman.Subsystems;
 using Klocman.Tools;
 using SimpleTreeMap;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Threading;
+using System.Windows.Forms;
 using UninstallTools;
 using UninstallTools.Dialogs;
 using UninstallTools.Factory;
@@ -146,9 +147,22 @@ namespace BulkCrapUninstaller.Forms
 
             // Setup the main window
             Icon = Resources.Icon_Logo;
+            // This is a duplicate of the about window logic-it doesn't have overhead but should probably be refactored.
+            Assembly.GetExecutingAssembly().Modules.First().GetPEKind(out var pekind, out var ifmachine);
+            bool isProbablyARM64;
+            if (Enum.IsDefined<ImageFileMachine>(ifmachine))
+            {
+                isProbablyARM64 = false;
+            }
+            else // Work around .NET 6 not having WoA64 definitions in GetPEKind
+
+            {
+                isProbablyARM64 = true;
+            }
             MainTitleBarText = Text.Append(" v", Program.AssemblyVersion.ToString(Program.AssemblyVersion.Build != 0 ? 3 : 2))
                 .AppendIf(!Program.IsInstalled, " ", Localisable.StrIsPortable)
                 .AppendIf(ProcessTools.Is64BitProcess, " ", Localisable.Str64Bit)
+                .AppendIf(isProbablyARM64, " ", "ARM")
                 .AppendIf(Program.EnableDebug, " ", Localisable.StrDebug);
             Text = MainTitleBarText;
 
@@ -1036,11 +1050,14 @@ namespace BulkCrapUninstaller.Forms
             }
 
             if (!selected.IsRegistered)
+            {
+                MessageBoxes.CantRenameUninstallerKind(selected.DisplayName, selected.UninstallerKind);
                 return;
+            }
 
             if (StringEditBox.ShowDialog(string.Format(CultureInfo.InvariantCulture, Localisable.MainWindow_Rename_Description, selected.DisplayName),
-                Localisable.MainWindow_Rename_Title, selected.DisplayName, Buttons.ButtonOk, Buttons.ButtonCancel,
-                out var output))
+                                         Localisable.MainWindow_Rename_Title, selected.DisplayName, Buttons.ButtonOk, Buttons.ButtonCancel,
+                                         out var output))
             {
                 try
                 {
@@ -1143,7 +1160,8 @@ namespace BulkCrapUninstaller.Forms
             globalHotkeys1.Add(new HotkeyEntry(Keys.F3, searchToolStripMenuItem));
 
             // Basic operations
-            globalHotkeys1.Add(new HotkeyEntry(Keys.Delete, uninstallToolStripMenuItem));
+            globalHotkeys1.Add(new HotkeyEntry(Keys.Delete, uninstallToolStripMenuItem,
+                () => !_listView.CheckIsAppDisposed() && uninstallerObjectListView.ContainsFocus));
             globalHotkeys1.Add(new HotkeyEntry(Keys.Delete, false, false, true, quietUninstallToolStripMenuItem,
                 () => !_listView.CheckIsAppDisposed() && uninstallerObjectListView.ContainsFocus));
             globalHotkeys1.Add(new HotkeyEntry(Keys.C, false, true, false, copyFullInformationToolStripMenuItem,

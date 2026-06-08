@@ -145,16 +145,7 @@
     <value>Certaines applications doivent peut-être être fermées avant désinstallation</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
-    <value>En cours</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Créer un point de restauration avant désinstallation</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Vous pouvez créer un point de restauration système pour sauvegarder le registre, certains paramètres et fichiers. Il est recommandé de créer un point de restauration avant de supprimer des pilotes et des applications système importantes.</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Attention: la restauration système doit être activée pour que cela fonctionne!</value>
+    <value>Applis en cours</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Changer les réglages de désinstallation</value>
@@ -208,7 +199,7 @@
     <value>COMMENCER LA DESINSTALLATION</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Assurez-vous que les informations suivantes sont correctes avant de commencer la désinstallation. C'est la dernière chance!</value>
+    <value>Assurez-vous que les informations suivantes sont correctes avant de commencer la désinstallation. C'est la dernière chance !</value>
   </data>
   <data name="tabPage5.Text" xml:space="preserve">
     <value>Final</value>

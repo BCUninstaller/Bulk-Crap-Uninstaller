@@ -28,750 +28,750 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FirstStartBox));
-            this.panelNavigation = new System.Windows.Forms.Panel();
-            this.labelProgress = new System.Windows.Forms.Label();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonPrev = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.buttonNext = new System.Windows.Forms.Button();
-            this.scrollPanel = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.page5 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.buttonMore = new System.Windows.Forms.Button();
-            this.buttonHelp = new System.Windows.Forms.Button();
-            this.buttonFinish = new System.Windows.Forms.Button();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.p5finishContact = new System.Windows.Forms.Label();
-            this.p5LinkContact = new System.Windows.Forms.LinkLabel();
-            this.p5finishHomepage = new System.Windows.Forms.Label();
-            this.p5LinkHomepage = new System.Windows.Forms.LinkLabel();
-            this.p5finishTitle = new System.Windows.Forms.Label();
-            this.spacer4 = new System.Windows.Forms.Panel();
-            this.pageNetwork = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.p4netTitle = new System.Windows.Forms.Label();
-            this.p4netDesc = new System.Windows.Forms.Label();
-            this.p4netDesc1 = new System.Windows.Forms.Label();
-            this.p4netDesc2 = new System.Windows.Forms.Label();
-            this.p4netDesc3 = new System.Windows.Forms.Label();
-            this.p4netDesc4 = new System.Windows.Forms.Label();
-            this.p4netErrors = new System.Windows.Forms.Label();
-            this.checkBoxUpdateSearch = new System.Windows.Forms.CheckBox();
-            this.p4netUpdateAdd = new System.Windows.Forms.Label();
-            this.checkBoxSendStats = new System.Windows.Forms.CheckBox();
-            this.p4netUsageAdd = new System.Windows.Forms.Label();
-            this.checkBoxRatings = new System.Windows.Forms.CheckBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pageCorrupted = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pCorTitle = new System.Windows.Forms.Label();
-            this.pCorDesc = new System.Windows.Forms.Label();
-            this.pCorViewInvalidTitle = new System.Windows.Forms.Label();
-            this.pCorViewInvalid = new System.Windows.Forms.Label();
-            this.checkBoxInvalidTest = new System.Windows.Forms.CheckBox();
-            this.pCorViewinvalidComment = new System.Windows.Forms.Label();
-            this.pCorOrphansTitle = new System.Windows.Forms.Label();
-            this.pCorOrphansMessage = new System.Windows.Forms.Label();
-            this.checkBoxOrphans = new System.Windows.Forms.CheckBox();
-            this.pCorOrphansComment = new System.Windows.Forms.Label();
-            this.spacer3 = new System.Windows.Forms.Panel();
-            this.page3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.p3advTitle = new System.Windows.Forms.Label();
-            this.p3advDesc = new System.Windows.Forms.Label();
-            this.p3advSyscompTitle = new System.Windows.Forms.Label();
-            this.p3advSyscomp = new System.Windows.Forms.Label();
-            this.checkBoxListSysComp = new System.Windows.Forms.CheckBox();
-            this.p3advProtectTitle = new System.Windows.Forms.Label();
-            this.p3advProtect = new System.Windows.Forms.Label();
-            this.checkBoxListProtected = new System.Windows.Forms.CheckBox();
-            this.checkBoxDiisableProtection = new System.Windows.Forms.CheckBox();
-            this.p3advProtectAdd = new System.Windows.Forms.Label();
-            this.spacer2 = new System.Windows.Forms.Panel();
-            this.page2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.p2viewTitle = new System.Windows.Forms.Label();
-            this.p2viewDetail = new System.Windows.Forms.Label();
-            this.p2viewDetail1 = new System.Windows.Forms.Label();
-            this.p2viewDetail2 = new System.Windows.Forms.Label();
-            this.p2viewDetail3 = new System.Windows.Forms.Label();
-            this.checkBoxGroups = new System.Windows.Forms.CheckBox();
-            this.checkBoxCheckboxes = new System.Windows.Forms.CheckBox();
-            this.p2viewCertsTitle = new System.Windows.Forms.Label();
-            this.p2viewCerts = new System.Windows.Forms.Label();
-            this.checkBoxCertTest = new System.Windows.Forms.CheckBox();
-            this.p2viewAdd = new System.Windows.Forms.Label();
-            this.spacer1 = new System.Windows.Forms.Panel();
-            this.page1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.p1welcomeHeading = new System.Windows.Forms.Label();
-            this.p1welcomeSubheading = new System.Windows.Forms.Label();
-            this.p1languageHeading = new System.Windows.Forms.Label();
-            this.p1languageDesc = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
-            this.buttonLanguageApply = new System.Windows.Forms.Button();
-            this.p1languageExtradetails = new System.Windows.Forms.Label();
-            this.p1linkLabelContact = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panelNavigation.SuspendLayout();
-            this.scrollPanel.SuspendLayout();
-            this.page5.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
-            this.pageNetwork.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.pageCorrupted.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.page3.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.page2.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.page1.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            panelNavigation = new System.Windows.Forms.Panel();
+            labelProgress = new System.Windows.Forms.Label();
+            buttonExit = new System.Windows.Forms.Button();
+            buttonPrev = new System.Windows.Forms.Button();
+            panel4 = new System.Windows.Forms.Panel();
+            buttonNext = new System.Windows.Forms.Button();
+            scrollPanel = new System.Windows.Forms.Panel();
+            panel3 = new System.Windows.Forms.Panel();
+            panel2 = new System.Windows.Forms.Panel();
+            page5 = new System.Windows.Forms.Panel();
+            panel12 = new System.Windows.Forms.Panel();
+            buttonMore = new System.Windows.Forms.Button();
+            buttonHelp = new System.Windows.Forms.Button();
+            buttonFinish = new System.Windows.Forms.Button();
+            flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            p5finishContact = new System.Windows.Forms.Label();
+            p5LinkContact = new System.Windows.Forms.LinkLabel();
+            p5finishHomepage = new System.Windows.Forms.Label();
+            p5LinkHomepage = new System.Windows.Forms.LinkLabel();
+            p5finishTitle = new System.Windows.Forms.Label();
+            spacer4 = new System.Windows.Forms.Panel();
+            pageNetwork = new System.Windows.Forms.Panel();
+            flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            p4netTitle = new System.Windows.Forms.Label();
+            p4netDesc = new System.Windows.Forms.Label();
+            p4netDesc1 = new System.Windows.Forms.Label();
+            p4netDesc2 = new System.Windows.Forms.Label();
+            p4netDesc3 = new System.Windows.Forms.Label();
+            p4netDesc4 = new System.Windows.Forms.Label();
+            p4netErrors = new System.Windows.Forms.Label();
+            checkBoxUpdateSearch = new System.Windows.Forms.CheckBox();
+            p4netUpdateAdd = new System.Windows.Forms.Label();
+            checkBoxSendStats = new System.Windows.Forms.CheckBox();
+            p4netUsageAdd = new System.Windows.Forms.Label();
+            checkBoxRatings = new System.Windows.Forms.CheckBox();
+            panel5 = new System.Windows.Forms.Panel();
+            pageCorrupted = new System.Windows.Forms.Panel();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            pCorTitle = new System.Windows.Forms.Label();
+            pCorDesc = new System.Windows.Forms.Label();
+            pCorViewInvalidTitle = new System.Windows.Forms.Label();
+            pCorViewInvalid = new System.Windows.Forms.Label();
+            checkBoxInvalidTest = new System.Windows.Forms.CheckBox();
+            pCorViewinvalidComment = new System.Windows.Forms.Label();
+            pCorOrphansTitle = new System.Windows.Forms.Label();
+            pCorOrphansMessage = new System.Windows.Forms.Label();
+            checkBoxOrphans = new System.Windows.Forms.CheckBox();
+            pCorOrphansComment = new System.Windows.Forms.Label();
+            spacer3 = new System.Windows.Forms.Panel();
+            page3 = new System.Windows.Forms.Panel();
+            flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            p3advTitle = new System.Windows.Forms.Label();
+            p3advDesc = new System.Windows.Forms.Label();
+            p3advSyscompTitle = new System.Windows.Forms.Label();
+            p3advSyscomp = new System.Windows.Forms.Label();
+            checkBoxListSysComp = new System.Windows.Forms.CheckBox();
+            p3advProtectTitle = new System.Windows.Forms.Label();
+            p3advProtect = new System.Windows.Forms.Label();
+            checkBoxListProtected = new System.Windows.Forms.CheckBox();
+            checkBoxDiisableProtection = new System.Windows.Forms.CheckBox();
+            p3advProtectAdd = new System.Windows.Forms.Label();
+            spacer2 = new System.Windows.Forms.Panel();
+            page2 = new System.Windows.Forms.Panel();
+            flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            p2viewTitle = new System.Windows.Forms.Label();
+            p2viewDetail = new System.Windows.Forms.Label();
+            p2viewDetail1 = new System.Windows.Forms.Label();
+            p2viewDetail2 = new System.Windows.Forms.Label();
+            p2viewDetail3 = new System.Windows.Forms.Label();
+            checkBoxGroups = new System.Windows.Forms.CheckBox();
+            checkBoxCheckboxes = new System.Windows.Forms.CheckBox();
+            p2viewCertsTitle = new System.Windows.Forms.Label();
+            p2viewCerts = new System.Windows.Forms.Label();
+            checkBoxCertTest = new System.Windows.Forms.CheckBox();
+            p2viewAdd = new System.Windows.Forms.Label();
+            spacer1 = new System.Windows.Forms.Panel();
+            page1 = new System.Windows.Forms.Panel();
+            flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            p1welcomeHeading = new System.Windows.Forms.Label();
+            p1welcomeSubheading = new System.Windows.Forms.Label();
+            p1languageHeading = new System.Windows.Forms.Label();
+            p1languageDesc = new System.Windows.Forms.Label();
+            panel9 = new System.Windows.Forms.Panel();
+            comboBoxLanguage = new System.Windows.Forms.ComboBox();
+            buttonLanguageApply = new System.Windows.Forms.Button();
+            p1languageExtradetails = new System.Windows.Forms.Label();
+            p1linkLabelContact = new System.Windows.Forms.LinkLabel();
+            panel1 = new System.Windows.Forms.Panel();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            label2 = new System.Windows.Forms.Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            panelNavigation.SuspendLayout();
+            scrollPanel.SuspendLayout();
+            page5.SuspendLayout();
+            panel12.SuspendLayout();
+            flowLayoutPanel6.SuspendLayout();
+            pageNetwork.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            pageCorrupted.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            page3.SuspendLayout();
+            flowLayoutPanel4.SuspendLayout();
+            page2.SuspendLayout();
+            flowLayoutPanel3.SuspendLayout();
+            page1.SuspendLayout();
+            flowLayoutPanel5.SuspendLayout();
+            panel9.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panelNavigation
             // 
-            this.panelNavigation.BackColor = System.Drawing.SystemColors.Control;
-            this.panelNavigation.Controls.Add(this.labelProgress);
-            this.panelNavigation.Controls.Add(this.buttonExit);
-            this.panelNavigation.Controls.Add(this.buttonPrev);
-            this.panelNavigation.Controls.Add(this.panel4);
-            this.panelNavigation.Controls.Add(this.buttonNext);
-            resources.ApplyResources(this.panelNavigation, "panelNavigation");
-            this.panelNavigation.Name = "panelNavigation";
+            panelNavigation.BackColor = System.Drawing.SystemColors.Control;
+            panelNavigation.Controls.Add(labelProgress);
+            panelNavigation.Controls.Add(buttonExit);
+            panelNavigation.Controls.Add(buttonPrev);
+            panelNavigation.Controls.Add(panel4);
+            panelNavigation.Controls.Add(buttonNext);
+            resources.ApplyResources(panelNavigation, "panelNavigation");
+            panelNavigation.Name = "panelNavigation";
             // 
             // labelProgress
             // 
-            resources.ApplyResources(this.labelProgress, "labelProgress");
-            this.labelProgress.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelProgress.Name = "labelProgress";
+            resources.ApplyResources(labelProgress, "labelProgress");
+            labelProgress.ForeColor = System.Drawing.SystemColors.GrayText;
+            labelProgress.Name = "labelProgress";
             // 
             // buttonExit
             // 
-            resources.ApplyResources(this.buttonExit, "buttonExit");
-            this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.CloseWizard);
+            resources.ApplyResources(buttonExit, "buttonExit");
+            buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonExit.Name = "buttonExit";
+            buttonExit.UseVisualStyleBackColor = true;
+            buttonExit.Click += CloseWizard;
             // 
             // buttonPrev
             // 
-            resources.ApplyResources(this.buttonPrev, "buttonPrev");
-            this.buttonPrev.Name = "buttonPrev";
-            this.buttonPrev.UseVisualStyleBackColor = true;
-            this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
+            resources.ApplyResources(buttonPrev, "buttonPrev");
+            buttonPrev.Name = "buttonPrev";
+            buttonPrev.UseVisualStyleBackColor = true;
+            buttonPrev.Click += buttonPrev_Click;
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Name = "panel4";
             // 
             // buttonNext
             // 
-            resources.ApplyResources(this.buttonNext, "buttonNext");
-            this.buttonNext.Name = "buttonNext";
-            this.buttonNext.UseVisualStyleBackColor = true;
-            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+            resources.ApplyResources(buttonNext, "buttonNext");
+            buttonNext.Name = "buttonNext";
+            buttonNext.UseVisualStyleBackColor = true;
+            buttonNext.Click += buttonNext_Click;
             // 
             // scrollPanel
             // 
-            resources.ApplyResources(this.scrollPanel, "scrollPanel");
-            this.scrollPanel.Controls.Add(this.panel3);
-            this.scrollPanel.Controls.Add(this.panel2);
-            this.scrollPanel.Controls.Add(this.page5);
-            this.scrollPanel.Controls.Add(this.spacer4);
-            this.scrollPanel.Controls.Add(this.pageNetwork);
-            this.scrollPanel.Controls.Add(this.panel5);
-            this.scrollPanel.Controls.Add(this.pageCorrupted);
-            this.scrollPanel.Controls.Add(this.spacer3);
-            this.scrollPanel.Controls.Add(this.page3);
-            this.scrollPanel.Controls.Add(this.spacer2);
-            this.scrollPanel.Controls.Add(this.page2);
-            this.scrollPanel.Controls.Add(this.spacer1);
-            this.scrollPanel.Controls.Add(this.page1);
-            this.scrollPanel.Name = "scrollPanel";
+            resources.ApplyResources(scrollPanel, "scrollPanel");
+            scrollPanel.Controls.Add(panel3);
+            scrollPanel.Controls.Add(panel2);
+            scrollPanel.Controls.Add(page5);
+            scrollPanel.Controls.Add(spacer4);
+            scrollPanel.Controls.Add(pageNetwork);
+            scrollPanel.Controls.Add(panel5);
+            scrollPanel.Controls.Add(pageCorrupted);
+            scrollPanel.Controls.Add(spacer3);
+            scrollPanel.Controls.Add(page3);
+            scrollPanel.Controls.Add(spacer2);
+            scrollPanel.Controls.Add(page2);
+            scrollPanel.Controls.Add(spacer1);
+            scrollPanel.Controls.Add(page1);
+            scrollPanel.Name = "scrollPanel";
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Name = "panel3";
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Name = "panel2";
             // 
             // page5
             // 
-            this.page5.Controls.Add(this.panel12);
-            this.page5.Controls.Add(this.flowLayoutPanel6);
-            this.page5.Controls.Add(this.p5finishTitle);
-            resources.ApplyResources(this.page5, "page5");
-            this.page5.Name = "page5";
+            page5.Controls.Add(panel12);
+            page5.Controls.Add(flowLayoutPanel6);
+            page5.Controls.Add(p5finishTitle);
+            resources.ApplyResources(page5, "page5");
+            page5.Name = "page5";
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.buttonMore);
-            this.panel12.Controls.Add(this.buttonHelp);
-            this.panel12.Controls.Add(this.buttonFinish);
-            resources.ApplyResources(this.panel12, "panel12");
-            this.panel12.Name = "panel12";
+            panel12.Controls.Add(buttonMore);
+            panel12.Controls.Add(buttonHelp);
+            panel12.Controls.Add(buttonFinish);
+            resources.ApplyResources(panel12, "panel12");
+            panel12.Name = "panel12";
             // 
             // buttonMore
             // 
-            resources.ApplyResources(this.buttonMore, "buttonMore");
-            this.buttonMore.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonMore.Name = "buttonMore";
-            this.buttonMore.UseVisualStyleBackColor = true;
-            this.buttonMore.Click += new System.EventHandler(this.buttonMore_Click);
+            resources.ApplyResources(buttonMore, "buttonMore");
+            buttonMore.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonMore.Name = "buttonMore";
+            buttonMore.UseVisualStyleBackColor = true;
+            buttonMore.Click += buttonMore_Click;
             // 
             // buttonHelp
             // 
-            resources.ApplyResources(this.buttonHelp, "buttonHelp");
-            this.buttonHelp.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.UseVisualStyleBackColor = true;
-            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            resources.ApplyResources(buttonHelp, "buttonHelp");
+            buttonHelp.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonHelp.Name = "buttonHelp";
+            buttonHelp.UseVisualStyleBackColor = true;
+            buttonHelp.Click += buttonHelp_Click;
             // 
             // buttonFinish
             // 
-            resources.ApplyResources(this.buttonFinish, "buttonFinish");
-            this.buttonFinish.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonFinish.Name = "buttonFinish";
-            this.buttonFinish.UseVisualStyleBackColor = true;
-            this.buttonFinish.Click += new System.EventHandler(this.CloseWizard);
+            resources.ApplyResources(buttonFinish, "buttonFinish");
+            buttonFinish.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonFinish.Name = "buttonFinish";
+            buttonFinish.UseVisualStyleBackColor = true;
+            buttonFinish.Click += CloseWizard;
             // 
             // flowLayoutPanel6
             // 
-            resources.ApplyResources(this.flowLayoutPanel6, "flowLayoutPanel6");
-            this.flowLayoutPanel6.Controls.Add(this.p5finishContact);
-            this.flowLayoutPanel6.Controls.Add(this.p5LinkContact);
-            this.flowLayoutPanel6.Controls.Add(this.p5finishHomepage);
-            this.flowLayoutPanel6.Controls.Add(this.p5LinkHomepage);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            resources.ApplyResources(flowLayoutPanel6, "flowLayoutPanel6");
+            flowLayoutPanel6.Controls.Add(p5finishContact);
+            flowLayoutPanel6.Controls.Add(p5LinkContact);
+            flowLayoutPanel6.Controls.Add(p5finishHomepage);
+            flowLayoutPanel6.Controls.Add(p5LinkHomepage);
+            flowLayoutPanel6.Name = "flowLayoutPanel6";
             // 
             // p5finishContact
             // 
-            resources.ApplyResources(this.p5finishContact, "p5finishContact");
-            this.p5finishContact.Name = "p5finishContact";
+            resources.ApplyResources(p5finishContact, "p5finishContact");
+            p5finishContact.Name = "p5finishContact";
             // 
             // p5LinkContact
             // 
-            resources.ApplyResources(this.p5LinkContact, "p5LinkContact");
-            this.p5LinkContact.Name = "p5LinkContact";
-            this.p5LinkContact.TabStop = true;
-            this.p5LinkContact.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenContactForm);
+            resources.ApplyResources(p5LinkContact, "p5LinkContact");
+            p5LinkContact.Name = "p5LinkContact";
+            p5LinkContact.TabStop = true;
+            p5LinkContact.LinkClicked += OpenContactForm;
             // 
             // p5finishHomepage
             // 
-            resources.ApplyResources(this.p5finishHomepage, "p5finishHomepage");
-            this.p5finishHomepage.Name = "p5finishHomepage";
+            resources.ApplyResources(p5finishHomepage, "p5finishHomepage");
+            p5finishHomepage.Name = "p5finishHomepage";
             // 
             // p5LinkHomepage
             // 
-            resources.ApplyResources(this.p5LinkHomepage, "p5LinkHomepage");
-            this.p5LinkHomepage.Name = "p5LinkHomepage";
-            this.p5LinkHomepage.TabStop = true;
-            this.p5LinkHomepage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenHomepage);
+            resources.ApplyResources(p5LinkHomepage, "p5LinkHomepage");
+            p5LinkHomepage.Name = "p5LinkHomepage";
+            p5LinkHomepage.TabStop = true;
+            p5LinkHomepage.LinkClicked += OpenHomepage;
             // 
             // p5finishTitle
             // 
-            resources.ApplyResources(this.p5finishTitle, "p5finishTitle");
-            this.p5finishTitle.Name = "p5finishTitle";
+            resources.ApplyResources(p5finishTitle, "p5finishTitle");
+            p5finishTitle.Name = "p5finishTitle";
             // 
             // spacer4
             // 
-            resources.ApplyResources(this.spacer4, "spacer4");
-            this.spacer4.Name = "spacer4";
+            resources.ApplyResources(spacer4, "spacer4");
+            spacer4.Name = "spacer4";
             // 
             // pageNetwork
             // 
-            this.pageNetwork.Controls.Add(this.flowLayoutPanel2);
-            resources.ApplyResources(this.pageNetwork, "pageNetwork");
-            this.pageNetwork.Name = "pageNetwork";
+            pageNetwork.Controls.Add(flowLayoutPanel2);
+            resources.ApplyResources(pageNetwork, "pageNetwork");
+            pageNetwork.Name = "pageNetwork";
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.p4netTitle);
-            this.flowLayoutPanel2.Controls.Add(this.p4netDesc);
-            this.flowLayoutPanel2.Controls.Add(this.p4netDesc1);
-            this.flowLayoutPanel2.Controls.Add(this.p4netDesc2);
-            this.flowLayoutPanel2.Controls.Add(this.p4netDesc3);
-            this.flowLayoutPanel2.Controls.Add(this.p4netDesc4);
-            this.flowLayoutPanel2.Controls.Add(this.p4netErrors);
-            this.flowLayoutPanel2.Controls.Add(this.checkBoxUpdateSearch);
-            this.flowLayoutPanel2.Controls.Add(this.p4netUpdateAdd);
-            this.flowLayoutPanel2.Controls.Add(this.checkBoxSendStats);
-            this.flowLayoutPanel2.Controls.Add(this.p4netUsageAdd);
-            this.flowLayoutPanel2.Controls.Add(this.checkBoxRatings);
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Controls.Add(p4netTitle);
+            flowLayoutPanel2.Controls.Add(p4netDesc);
+            flowLayoutPanel2.Controls.Add(p4netDesc1);
+            flowLayoutPanel2.Controls.Add(p4netDesc2);
+            flowLayoutPanel2.Controls.Add(p4netDesc3);
+            flowLayoutPanel2.Controls.Add(p4netDesc4);
+            flowLayoutPanel2.Controls.Add(p4netErrors);
+            flowLayoutPanel2.Controls.Add(checkBoxUpdateSearch);
+            flowLayoutPanel2.Controls.Add(p4netUpdateAdd);
+            flowLayoutPanel2.Controls.Add(checkBoxSendStats);
+            flowLayoutPanel2.Controls.Add(p4netUsageAdd);
+            flowLayoutPanel2.Controls.Add(checkBoxRatings);
+            resources.ApplyResources(flowLayoutPanel2, "flowLayoutPanel2");
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // p4netTitle
             // 
-            resources.ApplyResources(this.p4netTitle, "p4netTitle");
-            this.p4netTitle.Name = "p4netTitle";
+            resources.ApplyResources(p4netTitle, "p4netTitle");
+            p4netTitle.Name = "p4netTitle";
             // 
             // p4netDesc
             // 
-            resources.ApplyResources(this.p4netDesc, "p4netDesc");
-            this.p4netDesc.Name = "p4netDesc";
+            resources.ApplyResources(p4netDesc, "p4netDesc");
+            p4netDesc.Name = "p4netDesc";
             // 
             // p4netDesc1
             // 
-            resources.ApplyResources(this.p4netDesc1, "p4netDesc1");
-            this.p4netDesc1.Name = "p4netDesc1";
+            resources.ApplyResources(p4netDesc1, "p4netDesc1");
+            p4netDesc1.Name = "p4netDesc1";
             // 
             // p4netDesc2
             // 
-            resources.ApplyResources(this.p4netDesc2, "p4netDesc2");
-            this.p4netDesc2.Name = "p4netDesc2";
+            resources.ApplyResources(p4netDesc2, "p4netDesc2");
+            p4netDesc2.Name = "p4netDesc2";
             // 
             // p4netDesc3
             // 
-            resources.ApplyResources(this.p4netDesc3, "p4netDesc3");
-            this.p4netDesc3.Name = "p4netDesc3";
+            resources.ApplyResources(p4netDesc3, "p4netDesc3");
+            p4netDesc3.Name = "p4netDesc3";
             // 
             // p4netDesc4
             // 
-            resources.ApplyResources(this.p4netDesc4, "p4netDesc4");
-            this.p4netDesc4.Name = "p4netDesc4";
+            resources.ApplyResources(p4netDesc4, "p4netDesc4");
+            p4netDesc4.Name = "p4netDesc4";
             // 
             // p4netErrors
             // 
-            resources.ApplyResources(this.p4netErrors, "p4netErrors");
-            this.p4netErrors.Name = "p4netErrors";
+            resources.ApplyResources(p4netErrors, "p4netErrors");
+            p4netErrors.Name = "p4netErrors";
             // 
             // checkBoxUpdateSearch
             // 
-            resources.ApplyResources(this.checkBoxUpdateSearch, "checkBoxUpdateSearch");
-            this.checkBoxUpdateSearch.Name = "checkBoxUpdateSearch";
-            this.checkBoxUpdateSearch.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxUpdateSearch, "checkBoxUpdateSearch");
+            checkBoxUpdateSearch.Name = "checkBoxUpdateSearch";
+            checkBoxUpdateSearch.UseVisualStyleBackColor = true;
             // 
             // p4netUpdateAdd
             // 
-            resources.ApplyResources(this.p4netUpdateAdd, "p4netUpdateAdd");
-            this.p4netUpdateAdd.Name = "p4netUpdateAdd";
+            resources.ApplyResources(p4netUpdateAdd, "p4netUpdateAdd");
+            p4netUpdateAdd.Name = "p4netUpdateAdd";
             // 
             // checkBoxSendStats
             // 
-            resources.ApplyResources(this.checkBoxSendStats, "checkBoxSendStats");
-            this.checkBoxSendStats.Name = "checkBoxSendStats";
-            this.checkBoxSendStats.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxSendStats, "checkBoxSendStats");
+            checkBoxSendStats.Name = "checkBoxSendStats";
+            checkBoxSendStats.UseVisualStyleBackColor = true;
             // 
             // p4netUsageAdd
             // 
-            resources.ApplyResources(this.p4netUsageAdd, "p4netUsageAdd");
-            this.p4netUsageAdd.Name = "p4netUsageAdd";
+            resources.ApplyResources(p4netUsageAdd, "p4netUsageAdd");
+            p4netUsageAdd.Name = "p4netUsageAdd";
             // 
             // checkBoxRatings
             // 
-            resources.ApplyResources(this.checkBoxRatings, "checkBoxRatings");
-            this.checkBoxRatings.Name = "checkBoxRatings";
-            this.checkBoxRatings.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxRatings, "checkBoxRatings");
+            checkBoxRatings.Name = "checkBoxRatings";
+            checkBoxRatings.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Name = "panel5";
             // 
             // pageCorrupted
             // 
-            this.pageCorrupted.Controls.Add(this.flowLayoutPanel1);
-            resources.ApplyResources(this.pageCorrupted, "pageCorrupted");
-            this.pageCorrupted.Name = "pageCorrupted";
+            pageCorrupted.Controls.Add(flowLayoutPanel1);
+            resources.ApplyResources(pageCorrupted, "pageCorrupted");
+            pageCorrupted.Name = "pageCorrupted";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.pCorTitle);
-            this.flowLayoutPanel1.Controls.Add(this.pCorDesc);
-            this.flowLayoutPanel1.Controls.Add(this.pCorViewInvalidTitle);
-            this.flowLayoutPanel1.Controls.Add(this.pCorViewInvalid);
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxInvalidTest);
-            this.flowLayoutPanel1.Controls.Add(this.pCorViewinvalidComment);
-            this.flowLayoutPanel1.Controls.Add(this.pCorOrphansTitle);
-            this.flowLayoutPanel1.Controls.Add(this.pCorOrphansMessage);
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxOrphans);
-            this.flowLayoutPanel1.Controls.Add(this.pCorOrphansComment);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Controls.Add(pCorTitle);
+            flowLayoutPanel1.Controls.Add(pCorDesc);
+            flowLayoutPanel1.Controls.Add(pCorViewInvalidTitle);
+            flowLayoutPanel1.Controls.Add(pCorViewInvalid);
+            flowLayoutPanel1.Controls.Add(checkBoxInvalidTest);
+            flowLayoutPanel1.Controls.Add(pCorViewinvalidComment);
+            flowLayoutPanel1.Controls.Add(pCorOrphansTitle);
+            flowLayoutPanel1.Controls.Add(pCorOrphansMessage);
+            flowLayoutPanel1.Controls.Add(checkBoxOrphans);
+            flowLayoutPanel1.Controls.Add(pCorOrphansComment);
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // pCorTitle
             // 
-            resources.ApplyResources(this.pCorTitle, "pCorTitle");
-            this.pCorTitle.Name = "pCorTitle";
+            resources.ApplyResources(pCorTitle, "pCorTitle");
+            pCorTitle.Name = "pCorTitle";
             // 
             // pCorDesc
             // 
-            resources.ApplyResources(this.pCorDesc, "pCorDesc");
-            this.pCorDesc.Name = "pCorDesc";
+            resources.ApplyResources(pCorDesc, "pCorDesc");
+            pCorDesc.Name = "pCorDesc";
             // 
             // pCorViewInvalidTitle
             // 
-            resources.ApplyResources(this.pCorViewInvalidTitle, "pCorViewInvalidTitle");
-            this.pCorViewInvalidTitle.Name = "pCorViewInvalidTitle";
+            resources.ApplyResources(pCorViewInvalidTitle, "pCorViewInvalidTitle");
+            pCorViewInvalidTitle.Name = "pCorViewInvalidTitle";
             // 
             // pCorViewInvalid
             // 
-            resources.ApplyResources(this.pCorViewInvalid, "pCorViewInvalid");
-            this.pCorViewInvalid.Name = "pCorViewInvalid";
+            resources.ApplyResources(pCorViewInvalid, "pCorViewInvalid");
+            pCorViewInvalid.Name = "pCorViewInvalid";
             // 
             // checkBoxInvalidTest
             // 
-            resources.ApplyResources(this.checkBoxInvalidTest, "checkBoxInvalidTest");
-            this.checkBoxInvalidTest.Name = "checkBoxInvalidTest";
-            this.checkBoxInvalidTest.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxInvalidTest, "checkBoxInvalidTest");
+            checkBoxInvalidTest.Name = "checkBoxInvalidTest";
+            checkBoxInvalidTest.UseVisualStyleBackColor = true;
             // 
             // pCorViewinvalidComment
             // 
-            resources.ApplyResources(this.pCorViewinvalidComment, "pCorViewinvalidComment");
-            this.pCorViewinvalidComment.Name = "pCorViewinvalidComment";
+            resources.ApplyResources(pCorViewinvalidComment, "pCorViewinvalidComment");
+            pCorViewinvalidComment.Name = "pCorViewinvalidComment";
             // 
             // pCorOrphansTitle
             // 
-            resources.ApplyResources(this.pCorOrphansTitle, "pCorOrphansTitle");
-            this.pCorOrphansTitle.Name = "pCorOrphansTitle";
+            resources.ApplyResources(pCorOrphansTitle, "pCorOrphansTitle");
+            pCorOrphansTitle.Name = "pCorOrphansTitle";
             // 
             // pCorOrphansMessage
             // 
-            resources.ApplyResources(this.pCorOrphansMessage, "pCorOrphansMessage");
-            this.pCorOrphansMessage.Name = "pCorOrphansMessage";
+            resources.ApplyResources(pCorOrphansMessage, "pCorOrphansMessage");
+            pCorOrphansMessage.Name = "pCorOrphansMessage";
             // 
             // checkBoxOrphans
             // 
-            resources.ApplyResources(this.checkBoxOrphans, "checkBoxOrphans");
-            this.checkBoxOrphans.Name = "checkBoxOrphans";
-            this.checkBoxOrphans.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxOrphans, "checkBoxOrphans");
+            checkBoxOrphans.Name = "checkBoxOrphans";
+            checkBoxOrphans.UseVisualStyleBackColor = true;
             // 
             // pCorOrphansComment
             // 
-            resources.ApplyResources(this.pCorOrphansComment, "pCorOrphansComment");
-            this.pCorOrphansComment.Name = "pCorOrphansComment";
+            resources.ApplyResources(pCorOrphansComment, "pCorOrphansComment");
+            pCorOrphansComment.Name = "pCorOrphansComment";
             // 
             // spacer3
             // 
-            resources.ApplyResources(this.spacer3, "spacer3");
-            this.spacer3.Name = "spacer3";
+            resources.ApplyResources(spacer3, "spacer3");
+            spacer3.Name = "spacer3";
             // 
             // page3
             // 
-            this.page3.Controls.Add(this.flowLayoutPanel4);
-            resources.ApplyResources(this.page3, "page3");
-            this.page3.Name = "page3";
+            page3.Controls.Add(flowLayoutPanel4);
+            resources.ApplyResources(page3, "page3");
+            page3.Name = "page3";
             // 
             // flowLayoutPanel4
             // 
-            this.flowLayoutPanel4.Controls.Add(this.p3advTitle);
-            this.flowLayoutPanel4.Controls.Add(this.p3advDesc);
-            this.flowLayoutPanel4.Controls.Add(this.p3advSyscompTitle);
-            this.flowLayoutPanel4.Controls.Add(this.p3advSyscomp);
-            this.flowLayoutPanel4.Controls.Add(this.checkBoxListSysComp);
-            this.flowLayoutPanel4.Controls.Add(this.p3advProtectTitle);
-            this.flowLayoutPanel4.Controls.Add(this.p3advProtect);
-            this.flowLayoutPanel4.Controls.Add(this.checkBoxListProtected);
-            this.flowLayoutPanel4.Controls.Add(this.checkBoxDiisableProtection);
-            this.flowLayoutPanel4.Controls.Add(this.p3advProtectAdd);
-            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            flowLayoutPanel4.Controls.Add(p3advTitle);
+            flowLayoutPanel4.Controls.Add(p3advDesc);
+            flowLayoutPanel4.Controls.Add(p3advSyscompTitle);
+            flowLayoutPanel4.Controls.Add(p3advSyscomp);
+            flowLayoutPanel4.Controls.Add(checkBoxListSysComp);
+            flowLayoutPanel4.Controls.Add(p3advProtectTitle);
+            flowLayoutPanel4.Controls.Add(p3advProtect);
+            flowLayoutPanel4.Controls.Add(checkBoxListProtected);
+            flowLayoutPanel4.Controls.Add(checkBoxDiisableProtection);
+            flowLayoutPanel4.Controls.Add(p3advProtectAdd);
+            resources.ApplyResources(flowLayoutPanel4, "flowLayoutPanel4");
+            flowLayoutPanel4.Name = "flowLayoutPanel4";
             // 
             // p3advTitle
             // 
-            resources.ApplyResources(this.p3advTitle, "p3advTitle");
-            this.p3advTitle.Name = "p3advTitle";
+            resources.ApplyResources(p3advTitle, "p3advTitle");
+            p3advTitle.Name = "p3advTitle";
             // 
             // p3advDesc
             // 
-            resources.ApplyResources(this.p3advDesc, "p3advDesc");
-            this.p3advDesc.Name = "p3advDesc";
+            resources.ApplyResources(p3advDesc, "p3advDesc");
+            p3advDesc.Name = "p3advDesc";
             // 
             // p3advSyscompTitle
             // 
-            resources.ApplyResources(this.p3advSyscompTitle, "p3advSyscompTitle");
-            this.p3advSyscompTitle.Name = "p3advSyscompTitle";
+            resources.ApplyResources(p3advSyscompTitle, "p3advSyscompTitle");
+            p3advSyscompTitle.Name = "p3advSyscompTitle";
             // 
             // p3advSyscomp
             // 
-            resources.ApplyResources(this.p3advSyscomp, "p3advSyscomp");
-            this.p3advSyscomp.Name = "p3advSyscomp";
+            resources.ApplyResources(p3advSyscomp, "p3advSyscomp");
+            p3advSyscomp.Name = "p3advSyscomp";
             // 
             // checkBoxListSysComp
             // 
-            resources.ApplyResources(this.checkBoxListSysComp, "checkBoxListSysComp");
-            this.checkBoxListSysComp.Name = "checkBoxListSysComp";
-            this.checkBoxListSysComp.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxListSysComp, "checkBoxListSysComp");
+            checkBoxListSysComp.Name = "checkBoxListSysComp";
+            checkBoxListSysComp.UseVisualStyleBackColor = true;
             // 
             // p3advProtectTitle
             // 
-            resources.ApplyResources(this.p3advProtectTitle, "p3advProtectTitle");
-            this.p3advProtectTitle.Name = "p3advProtectTitle";
+            resources.ApplyResources(p3advProtectTitle, "p3advProtectTitle");
+            p3advProtectTitle.Name = "p3advProtectTitle";
             // 
             // p3advProtect
             // 
-            resources.ApplyResources(this.p3advProtect, "p3advProtect");
-            this.p3advProtect.Name = "p3advProtect";
+            resources.ApplyResources(p3advProtect, "p3advProtect");
+            p3advProtect.Name = "p3advProtect";
             // 
             // checkBoxListProtected
             // 
-            resources.ApplyResources(this.checkBoxListProtected, "checkBoxListProtected");
-            this.checkBoxListProtected.Name = "checkBoxListProtected";
-            this.checkBoxListProtected.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxListProtected, "checkBoxListProtected");
+            checkBoxListProtected.Name = "checkBoxListProtected";
+            checkBoxListProtected.UseVisualStyleBackColor = true;
             // 
             // checkBoxDiisableProtection
             // 
-            resources.ApplyResources(this.checkBoxDiisableProtection, "checkBoxDiisableProtection");
-            this.checkBoxDiisableProtection.Name = "checkBoxDiisableProtection";
-            this.checkBoxDiisableProtection.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxDiisableProtection, "checkBoxDiisableProtection");
+            checkBoxDiisableProtection.Name = "checkBoxDiisableProtection";
+            checkBoxDiisableProtection.UseVisualStyleBackColor = true;
             // 
             // p3advProtectAdd
             // 
-            resources.ApplyResources(this.p3advProtectAdd, "p3advProtectAdd");
-            this.p3advProtectAdd.Name = "p3advProtectAdd";
+            resources.ApplyResources(p3advProtectAdd, "p3advProtectAdd");
+            p3advProtectAdd.Name = "p3advProtectAdd";
             // 
             // spacer2
             // 
-            resources.ApplyResources(this.spacer2, "spacer2");
-            this.spacer2.Name = "spacer2";
+            resources.ApplyResources(spacer2, "spacer2");
+            spacer2.Name = "spacer2";
             // 
             // page2
             // 
-            this.page2.Controls.Add(this.flowLayoutPanel3);
-            resources.ApplyResources(this.page2, "page2");
-            this.page2.Name = "page2";
+            page2.Controls.Add(flowLayoutPanel3);
+            resources.ApplyResources(page2, "page2");
+            page2.Name = "page2";
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(this.p2viewTitle);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewDetail);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewDetail1);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewDetail2);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewDetail3);
-            this.flowLayoutPanel3.Controls.Add(this.checkBoxGroups);
-            this.flowLayoutPanel3.Controls.Add(this.checkBoxCheckboxes);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewCertsTitle);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewCerts);
-            this.flowLayoutPanel3.Controls.Add(this.checkBoxCertTest);
-            this.flowLayoutPanel3.Controls.Add(this.p2viewAdd);
-            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            flowLayoutPanel3.Controls.Add(p2viewTitle);
+            flowLayoutPanel3.Controls.Add(p2viewDetail);
+            flowLayoutPanel3.Controls.Add(p2viewDetail1);
+            flowLayoutPanel3.Controls.Add(p2viewDetail2);
+            flowLayoutPanel3.Controls.Add(p2viewDetail3);
+            flowLayoutPanel3.Controls.Add(checkBoxGroups);
+            flowLayoutPanel3.Controls.Add(checkBoxCheckboxes);
+            flowLayoutPanel3.Controls.Add(p2viewCertsTitle);
+            flowLayoutPanel3.Controls.Add(p2viewCerts);
+            flowLayoutPanel3.Controls.Add(checkBoxCertTest);
+            flowLayoutPanel3.Controls.Add(p2viewAdd);
+            resources.ApplyResources(flowLayoutPanel3, "flowLayoutPanel3");
+            flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // p2viewTitle
             // 
-            resources.ApplyResources(this.p2viewTitle, "p2viewTitle");
-            this.p2viewTitle.Name = "p2viewTitle";
+            resources.ApplyResources(p2viewTitle, "p2viewTitle");
+            p2viewTitle.Name = "p2viewTitle";
             // 
             // p2viewDetail
             // 
-            resources.ApplyResources(this.p2viewDetail, "p2viewDetail");
-            this.p2viewDetail.Name = "p2viewDetail";
+            resources.ApplyResources(p2viewDetail, "p2viewDetail");
+            p2viewDetail.Name = "p2viewDetail";
             // 
             // p2viewDetail1
             // 
-            resources.ApplyResources(this.p2viewDetail1, "p2viewDetail1");
-            this.p2viewDetail1.Name = "p2viewDetail1";
+            resources.ApplyResources(p2viewDetail1, "p2viewDetail1");
+            p2viewDetail1.Name = "p2viewDetail1";
             // 
             // p2viewDetail2
             // 
-            resources.ApplyResources(this.p2viewDetail2, "p2viewDetail2");
-            this.p2viewDetail2.Name = "p2viewDetail2";
+            resources.ApplyResources(p2viewDetail2, "p2viewDetail2");
+            p2viewDetail2.Name = "p2viewDetail2";
             // 
             // p2viewDetail3
             // 
-            resources.ApplyResources(this.p2viewDetail3, "p2viewDetail3");
-            this.p2viewDetail3.Name = "p2viewDetail3";
+            resources.ApplyResources(p2viewDetail3, "p2viewDetail3");
+            p2viewDetail3.Name = "p2viewDetail3";
             // 
             // checkBoxGroups
             // 
-            resources.ApplyResources(this.checkBoxGroups, "checkBoxGroups");
-            this.checkBoxGroups.Name = "checkBoxGroups";
-            this.checkBoxGroups.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxGroups, "checkBoxGroups");
+            checkBoxGroups.Name = "checkBoxGroups";
+            checkBoxGroups.UseVisualStyleBackColor = true;
             // 
             // checkBoxCheckboxes
             // 
-            resources.ApplyResources(this.checkBoxCheckboxes, "checkBoxCheckboxes");
-            this.checkBoxCheckboxes.Name = "checkBoxCheckboxes";
-            this.checkBoxCheckboxes.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxCheckboxes, "checkBoxCheckboxes");
+            checkBoxCheckboxes.Name = "checkBoxCheckboxes";
+            checkBoxCheckboxes.UseVisualStyleBackColor = true;
             // 
             // p2viewCertsTitle
             // 
-            resources.ApplyResources(this.p2viewCertsTitle, "p2viewCertsTitle");
-            this.p2viewCertsTitle.Name = "p2viewCertsTitle";
+            resources.ApplyResources(p2viewCertsTitle, "p2viewCertsTitle");
+            p2viewCertsTitle.Name = "p2viewCertsTitle";
             // 
             // p2viewCerts
             // 
-            resources.ApplyResources(this.p2viewCerts, "p2viewCerts");
-            this.p2viewCerts.Name = "p2viewCerts";
+            resources.ApplyResources(p2viewCerts, "p2viewCerts");
+            p2viewCerts.Name = "p2viewCerts";
             // 
             // checkBoxCertTest
             // 
-            resources.ApplyResources(this.checkBoxCertTest, "checkBoxCertTest");
-            this.checkBoxCertTest.Name = "checkBoxCertTest";
-            this.checkBoxCertTest.UseVisualStyleBackColor = true;
+            resources.ApplyResources(checkBoxCertTest, "checkBoxCertTest");
+            checkBoxCertTest.Name = "checkBoxCertTest";
+            checkBoxCertTest.UseVisualStyleBackColor = true;
             // 
             // p2viewAdd
             // 
-            resources.ApplyResources(this.p2viewAdd, "p2viewAdd");
-            this.p2viewAdd.Name = "p2viewAdd";
+            resources.ApplyResources(p2viewAdd, "p2viewAdd");
+            p2viewAdd.Name = "p2viewAdd";
             // 
             // spacer1
             // 
-            resources.ApplyResources(this.spacer1, "spacer1");
-            this.spacer1.Name = "spacer1";
+            resources.ApplyResources(spacer1, "spacer1");
+            spacer1.Name = "spacer1";
             // 
             // page1
             // 
-            this.page1.Controls.Add(this.flowLayoutPanel5);
-            this.page1.Controls.Add(this.panel1);
-            resources.ApplyResources(this.page1, "page1");
-            this.page1.Name = "page1";
+            page1.Controls.Add(flowLayoutPanel5);
+            page1.Controls.Add(panel1);
+            resources.ApplyResources(page1, "page1");
+            page1.Name = "page1";
             // 
             // flowLayoutPanel5
             // 
-            this.flowLayoutPanel5.Controls.Add(this.p1welcomeHeading);
-            this.flowLayoutPanel5.Controls.Add(this.p1welcomeSubheading);
-            this.flowLayoutPanel5.Controls.Add(this.p1languageHeading);
-            this.flowLayoutPanel5.Controls.Add(this.p1languageDesc);
-            this.flowLayoutPanel5.Controls.Add(this.panel9);
-            this.flowLayoutPanel5.Controls.Add(this.p1languageExtradetails);
-            this.flowLayoutPanel5.Controls.Add(this.p1linkLabelContact);
-            resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            flowLayoutPanel5.Controls.Add(p1welcomeHeading);
+            flowLayoutPanel5.Controls.Add(p1welcomeSubheading);
+            flowLayoutPanel5.Controls.Add(p1languageHeading);
+            flowLayoutPanel5.Controls.Add(p1languageDesc);
+            flowLayoutPanel5.Controls.Add(panel9);
+            flowLayoutPanel5.Controls.Add(p1languageExtradetails);
+            flowLayoutPanel5.Controls.Add(p1linkLabelContact);
+            resources.ApplyResources(flowLayoutPanel5, "flowLayoutPanel5");
+            flowLayoutPanel5.Name = "flowLayoutPanel5";
             // 
             // p1welcomeHeading
             // 
-            resources.ApplyResources(this.p1welcomeHeading, "p1welcomeHeading");
-            this.p1welcomeHeading.Name = "p1welcomeHeading";
+            resources.ApplyResources(p1welcomeHeading, "p1welcomeHeading");
+            p1welcomeHeading.Name = "p1welcomeHeading";
             // 
             // p1welcomeSubheading
             // 
-            resources.ApplyResources(this.p1welcomeSubheading, "p1welcomeSubheading");
-            this.p1welcomeSubheading.Name = "p1welcomeSubheading";
+            resources.ApplyResources(p1welcomeSubheading, "p1welcomeSubheading");
+            p1welcomeSubheading.Name = "p1welcomeSubheading";
             // 
             // p1languageHeading
             // 
-            resources.ApplyResources(this.p1languageHeading, "p1languageHeading");
-            this.p1languageHeading.Name = "p1languageHeading";
+            resources.ApplyResources(p1languageHeading, "p1languageHeading");
+            p1languageHeading.Name = "p1languageHeading";
             // 
             // p1languageDesc
             // 
-            resources.ApplyResources(this.p1languageDesc, "p1languageDesc");
-            this.p1languageDesc.Name = "p1languageDesc";
+            resources.ApplyResources(p1languageDesc, "p1languageDesc");
+            p1languageDesc.Name = "p1languageDesc";
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.comboBoxLanguage);
-            this.panel9.Controls.Add(this.buttonLanguageApply);
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
+            panel9.Controls.Add(comboBoxLanguage);
+            panel9.Controls.Add(buttonLanguageApply);
+            resources.ApplyResources(panel9, "panel9");
+            panel9.Name = "panel9";
             // 
             // comboBoxLanguage
             // 
-            this.comboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxLanguage.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxLanguage, "comboBoxLanguage");
-            this.comboBoxLanguage.Name = "comboBoxLanguage";
+            comboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBoxLanguage.FormattingEnabled = true;
+            resources.ApplyResources(comboBoxLanguage, "comboBoxLanguage");
+            comboBoxLanguage.Name = "comboBoxLanguage";
             // 
             // buttonLanguageApply
             // 
-            resources.ApplyResources(this.buttonLanguageApply, "buttonLanguageApply");
-            this.buttonLanguageApply.Name = "buttonLanguageApply";
-            this.buttonLanguageApply.UseVisualStyleBackColor = true;
-            this.buttonLanguageApply.Click += new System.EventHandler(this.buttonLanguageApply_Click);
+            resources.ApplyResources(buttonLanguageApply, "buttonLanguageApply");
+            buttonLanguageApply.Name = "buttonLanguageApply";
+            buttonLanguageApply.UseVisualStyleBackColor = true;
+            buttonLanguageApply.Click += buttonLanguageApply_Click;
             // 
             // p1languageExtradetails
             // 
-            resources.ApplyResources(this.p1languageExtradetails, "p1languageExtradetails");
-            this.p1languageExtradetails.Name = "p1languageExtradetails";
+            resources.ApplyResources(p1languageExtradetails, "p1languageExtradetails");
+            p1languageExtradetails.Name = "p1languageExtradetails";
             // 
             // p1linkLabelContact
             // 
-            resources.ApplyResources(this.p1linkLabelContact, "p1linkLabelContact");
-            this.p1linkLabelContact.Name = "p1linkLabelContact";
-            this.p1linkLabelContact.TabStop = true;
-            this.p1linkLabelContact.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenContactForm);
+            resources.ApplyResources(p1linkLabelContact, "p1linkLabelContact");
+            p1linkLabelContact.Name = "p1linkLabelContact";
+            p1linkLabelContact.TabStop = true;
+            p1linkLabelContact.LinkClicked += OpenContactForm;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label2);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::BulkCrapUninstaller.Properties.Resources._bcu_logo;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Image = Properties.Resources._bcu_logo;
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Name = "label2";
+            resources.ApplyResources(label2, "label2");
+            label2.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            label2.Name = "label2";
             // 
             // timer1
             // 
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            timer1.Interval = 15;
+            timer1.Tick += timer1_Tick;
             // 
             // FirstStartBox
             // 
-            this.AcceptButton = this.buttonNext;
+            AcceptButton = buttonNext;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CancelButton = this.buttonExit;
-            this.ControlBox = false;
-            this.Controls.Add(this.panelNavigation);
-            this.Controls.Add(this.scrollPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FirstStartBox";
-            this.ShowInTaskbar = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.TopMost = true;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FirstStartBox_FormClosed);
-            this.Load += new System.EventHandler(this.FirstStartBox_Load);
-            this.panelNavigation.ResumeLayout(false);
-            this.panelNavigation.PerformLayout();
-            this.scrollPanel.ResumeLayout(false);
-            this.page5.ResumeLayout(false);
-            this.page5.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
-            this.flowLayoutPanel6.PerformLayout();
-            this.pageNetwork.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.pageCorrupted.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.page3.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
-            this.page2.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
-            this.page1.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
-            this.flowLayoutPanel5.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.ControlLightLight;
+            CancelButton = buttonExit;
+            ControlBox = false;
+            Controls.Add(panelNavigation);
+            Controls.Add(scrollPanel);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FirstStartBox";
+            ShowInTaskbar = false;
+            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            TopMost = true;
+            FormClosed += FirstStartBox_FormClosed;
+            Load += FirstStartBox_Load;
+            panelNavigation.ResumeLayout(false);
+            panelNavigation.PerformLayout();
+            scrollPanel.ResumeLayout(false);
+            page5.ResumeLayout(false);
+            page5.PerformLayout();
+            panel12.ResumeLayout(false);
+            flowLayoutPanel6.ResumeLayout(false);
+            flowLayoutPanel6.PerformLayout();
+            pageNetwork.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
+            pageCorrupted.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            page3.ResumeLayout(false);
+            flowLayoutPanel4.ResumeLayout(false);
+            flowLayoutPanel4.PerformLayout();
+            page2.ResumeLayout(false);
+            flowLayoutPanel3.ResumeLayout(false);
+            flowLayoutPanel3.PerformLayout();
+            page1.ResumeLayout(false);
+            flowLayoutPanel5.ResumeLayout(false);
+            flowLayoutPanel5.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
 
         }
 

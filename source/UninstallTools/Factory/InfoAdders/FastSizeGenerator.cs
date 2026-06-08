@@ -7,6 +7,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 using Klocman.Extensions;
 using Klocman.IO;
 using Scripting;
@@ -81,7 +82,7 @@ namespace UninstallTools.Factory.InfoAdders
         private static FileSize EvGetSize(string path)
         {
             path = Path.GetFullPath(path);
-            var output = StartHelperAndReadOutput($"-size -a-d -size-leading-zero -no-digit-grouping -size-format 1 path:\"{path}\"");
+            var output = StartHelperAndReadOutput($"-size -a-d -size-leading-zero -no-digit-grouping -size-format 1 path:\"{path}\"").Result;
             var allResults = output.SplitNewlines(StringSplitOptions.RemoveEmptyEntries);
 
             long sum = 0;
@@ -93,10 +94,10 @@ namespace UninstallTools.Factory.InfoAdders
             return FileSize.FromBytes(sum);
         }
 
-        private static string StartHelperAndReadOutput(string args)
+        private static async Task<string> StartHelperAndReadOutput(string args)
         {
             var esPath = Path.Combine(UninstallToolsGlobalConfig.AssemblyLocation, "es.exe");
-            if(!File.Exists(esPath)) throw new FileNotFoundException();
+            if (!File.Exists(esPath)) throw new FileNotFoundException();
 
             using (var process = Process.Start(new ProcessStartInfo(esPath, args)
             {
@@ -108,8 +109,26 @@ namespace UninstallTools.Factory.InfoAdders
             }))
             {
                 if (process == null) throw new InvalidOperationException("Could not start a new process");
-                var output = process.StandardOutput.ReadToEnd();
-                if (process.ExitCode == 0) return output;
+
+                var timeoutTask = Task.Delay(TimeSpan.FromSeconds(40));
+                var readOutputTask = process.StandardOutput.ReadToEndAsync();
+
+                await Task.WhenAny(readOutputTask, timeoutTask);
+
+                if (!readOutputTask.IsCompleted)
+                {
+                    try
+                    {
+                        process.Kill();
+                    }
+                    catch
+                    {
+                        // Ignore exceptions from killing the process
+                    }
+                    throw new TimeoutException("es.exe appears to have hung");
+                }
+
+                if (process.ExitCode == 0) return await readOutputTask;
                 throw new IOException("es.exe failed to connect to Everything", process.ExitCode);
             }
         }

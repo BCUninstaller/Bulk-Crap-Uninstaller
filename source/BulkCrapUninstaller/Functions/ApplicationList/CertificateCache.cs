@@ -6,6 +6,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Serialization;
 using Klocman.Tools;
@@ -18,7 +19,7 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 
         [XmlIgnore]
         public X509Certificate2 Cert { get; set; }
-        public ReadOnlySpan<byte> CertData
+        public byte[] CertData // ReadOnlySpan<byte> crashes XML serializer in new versions of .NET
         {
             get => Cert?.RawData;
             set => Cert = value == null ? null : new X509Certificate2(value);
@@ -27,70 +28,101 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 
     internal class CertificateCache
     {
-        public string CacheFilename { get; set; }
+        public string CacheFilename { get; }
         private IDictionary<string, CertCacheEntry> _dictionaryCache;
+        private readonly object _cacheLock = new object();
 
         public CertificateCache(string cacheFilename)
         {
-            CacheFilename = cacheFilename;
+            CacheFilename = cacheFilename ?? throw new ArgumentNullException(nameof(cacheFilename));
         }
 
         public void LoadCertificateCache()
         {
-            _dictionaryCache = new Dictionary<string, CertCacheEntry>();
-
-            if (!File.Exists(CacheFilename)) return;
-
-            try
+            lock (_cacheLock)
             {
-                _dictionaryCache = SerializationTools.DeserializeDictionary<string, CertCacheEntry>(CacheFilename);
-            }
-            catch (SystemException e)
-            {
-                Console.WriteLine(e);
-                File.Delete(CacheFilename);
+                _dictionaryCache = null;
+                try
+                {
+                    if (File.Exists(CacheFilename))
+                    {
+                        _dictionaryCache = SerializationTools.DeserializeDictionary<string, CertCacheEntry>(CacheFilename);
+                        // Remove invalid entries in case the xml is corrupted
+                        _dictionaryCache?.Where(x => x.Value == null).ToList().ForEach(pair => _dictionaryCache.Remove(pair.Key));
+                    }
+                }
+                catch (SystemException e)
+                {
+                    Console.WriteLine(e);
+                    ClearChache();
+                }
             }
         }
 
         public void SaveCertificateCache()
         {
-            if (_dictionaryCache == null)
+            lock (_cacheLock)
             {
-                File.Delete(CacheFilename);
-                return;
-            }
+                if (_dictionaryCache == null || _dictionaryCache.Count == 0)
+                {
+                    ClearChache();
+                    return;
+                }
 
-            try
-            {
-                SerializationTools.SerializeDictionary(_dictionaryCache, CacheFilename);
-            }
-            catch (SystemException e)
-            {
-                File.Delete(CacheFilename);
-                Console.WriteLine(e);
+                try
+                {
+                    SerializationTools.SerializeDictionary(_dictionaryCache, CacheFilename);
+                }
+                catch (SystemException e)
+                {
+                    Console.WriteLine(e);
+                    ClearChache();
+                }
             }
         }
 
         public void ClearChache()
         {
-            _dictionaryCache = null;
-            File.Delete(CacheFilename);
+            lock (_cacheLock)
+            {
+                _dictionaryCache = null;
+                try
+                {
+                    File.Delete(CacheFilename);
+                }
+                catch
+                {
+                    System.Threading.Thread.Sleep(50);
+                    File.Delete(CacheFilename);
+                }
+            }
         }
 
-        public void AddItem(string id, X509Certificate2 cert, bool verified)
+        public void SetItem(string id, X509Certificate2 cert, bool verified)
         {
-            if (_dictionaryCache != null && id != null)
-                _dictionaryCache[id] = new CertCacheEntry { Cert = cert, Valid = verified };
+            lock (_cacheLock)
+            {
+                if (!string.IsNullOrEmpty(id))
+                {
+                    if (_dictionaryCache == null) _dictionaryCache = new Dictionary<string, CertCacheEntry>();
+
+                    _dictionaryCache[id] = new CertCacheEntry { Cert = cert, Valid = verified };
+                }
+            }
         }
 
-        public bool ContainsKey(string id)
+        public bool TryGetCachedItem(string id, out CertCacheEntry entry)
         {
-            return _dictionaryCache != null && !string.IsNullOrEmpty(id) && _dictionaryCache.ContainsKey(id);
-        }
+            lock (_cacheLock)
+            {
+                if (_dictionaryCache == null || string.IsNullOrEmpty(id))
+                {
+                    entry = null;
+                    return false;
+                }
 
-        public CertCacheEntry GetCachedItem(string id)
-        {
-            return _dictionaryCache[id];
+                return _dictionaryCache.TryGetValue(id, out entry);
+            }
         }
     }
 }

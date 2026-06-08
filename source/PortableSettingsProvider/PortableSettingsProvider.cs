@@ -19,20 +19,11 @@ namespace PortableSettingsProvider
     {
         //XML Root Node name
         private const string SettingsRootName = "Settings";
-
+        
+        public static string ApplicationNameOverride { get; set; }
         public override string ApplicationName
         {
-            get
-            {
-                if (Application.ProductName.Trim().Length > 0)
-                {
-                    return Application.ProductName;
-                }
-
-                var fi = new FileInfo(Application.ExecutablePath);
-                return fi.Name.Substring(0, fi.Name.Length - fi.Extension.Length);
-            }
-            //Do nothing
+            get => ApplicationNameOverride ?? Path.GetFileNameWithoutExtension(Application.ExecutablePath);
             set { }
         }
 

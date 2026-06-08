@@ -4,6 +4,7 @@
 */
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using Klocman.Forms.Tools;
@@ -31,8 +32,10 @@ namespace Klocman.Controls
         /// <summary>
         ///     Overwrite default message text. If set ignores TargetSite.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string MessageText { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string TargetSite { get; set; }
 
         private void TwitterButton_Click(object sender, EventArgs e)

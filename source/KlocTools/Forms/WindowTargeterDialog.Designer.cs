@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WindowTargeterDialog));
-            this.windowTargeter1 = new Klocman.Controls.WindowTargeter();
-            this.SuspendLayout();
+            windowTargeter1 = new Klocman.Controls.WindowTargeter();
+            SuspendLayout();
             // 
             // windowTargeter1
             // 
-            resources.ApplyResources(this.windowTargeter1, "windowTargeter1");
-            this.windowTargeter1.Name = "windowTargeter1";
+            resources.ApplyResources(windowTargeter1, "windowTargeter1");
+            windowTargeter1.Name = "windowTargeter1";
             // 
             // WindowTargeterDialog
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.windowTargeter1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "WindowTargeterDialog";
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(windowTargeter1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            Name = "WindowTargeterDialog";
+            ResumeLayout(false);
 
         }
 

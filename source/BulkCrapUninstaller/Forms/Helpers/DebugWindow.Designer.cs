@@ -65,6 +65,7 @@ namespace BulkCrapUninstaller.Forms
             button15 = new Button();
             button16 = new Button();
             button17 = new Button();
+            button18 = new Button();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             panel1.SuspendLayout();
@@ -83,7 +84,7 @@ namespace BulkCrapUninstaller.Forms
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(button5);
             groupBox1.Dock = DockStyle.Bottom;
-            groupBox1.Location = new System.Drawing.Point(8, 386);
+            groupBox1.Location = new System.Drawing.Point(8, 403);
             groupBox1.Margin = new Padding(4, 3, 4, 3);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(7);
@@ -148,11 +149,11 @@ namespace BulkCrapUninstaller.Forms
             groupBox3.Controls.Add(panel1);
             groupBox3.Controls.Add(comboBoxMessages);
             groupBox3.Dock = DockStyle.Fill;
-            groupBox3.Location = new System.Drawing.Point(8, 143);
+            groupBox3.Location = new System.Drawing.Point(8, 168);
             groupBox3.Margin = new Padding(4, 3, 4, 3);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(7);
-            groupBox3.Size = new System.Drawing.Size(571, 185);
+            groupBox3.Size = new System.Drawing.Size(571, 177);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "Test message boxes";
@@ -166,7 +167,7 @@ namespace BulkCrapUninstaller.Forms
             panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(0, 7, 0, 0);
-            panel1.Size = new System.Drawing.Size(557, 132);
+            panel1.Size = new System.Drawing.Size(557, 124);
             panel1.TabIndex = 1;
             // 
             // panel2
@@ -178,7 +179,7 @@ namespace BulkCrapUninstaller.Forms
             panel2.Margin = new Padding(4, 3, 4, 3);
             panel2.Name = "panel2";
             panel2.Padding = new Padding(7, 0, 0, 0);
-            panel2.Size = new System.Drawing.Size(95, 125);
+            panel2.Size = new System.Drawing.Size(95, 117);
             panel2.TabIndex = 3;
             // 
             // buttonGoMessages
@@ -187,7 +188,7 @@ namespace BulkCrapUninstaller.Forms
             buttonGoMessages.Location = new System.Drawing.Point(7, 23);
             buttonGoMessages.Margin = new Padding(4, 3, 4, 3);
             buttonGoMessages.Name = "buttonGoMessages";
-            buttonGoMessages.Size = new System.Drawing.Size(88, 102);
+            buttonGoMessages.Size = new System.Drawing.Size(88, 94);
             buttonGoMessages.TabIndex = 1;
             buttonGoMessages.Text = "Open messagebox";
             buttonGoMessages.UseVisualStyleBackColor = true;
@@ -209,7 +210,7 @@ namespace BulkCrapUninstaller.Forms
             textBoxMessages.Margin = new Padding(4, 3, 4, 3);
             textBoxMessages.Multiline = true;
             textBoxMessages.Name = "textBoxMessages";
-            textBoxMessages.Size = new System.Drawing.Size(462, 125);
+            textBoxMessages.Size = new System.Drawing.Size(462, 117);
             textBoxMessages.TabIndex = 2;
             textBoxMessages.Text = "Text to send to the messagebox\r\nSecond line if the box takes multiple lines\r\nIf messagebox needs a number it takes it from the number box on right";
             // 
@@ -231,7 +232,7 @@ namespace BulkCrapUninstaller.Forms
             groupBox4.Controls.Add(button3);
             groupBox4.Controls.Add(button4);
             groupBox4.Dock = DockStyle.Bottom;
-            groupBox4.Location = new System.Drawing.Point(8, 328);
+            groupBox4.Location = new System.Drawing.Point(8, 345);
             groupBox4.Margin = new Padding(4, 3, 4, 3);
             groupBox4.Name = "groupBox4";
             groupBox4.Padding = new Padding(7);
@@ -282,7 +283,7 @@ namespace BulkCrapUninstaller.Forms
             groupBox5.Controls.Add(checkBoxDebug);
             groupBox5.Controls.Add(checkBox2);
             groupBox5.Dock = DockStyle.Bottom;
-            groupBox5.Location = new System.Drawing.Point(8, 444);
+            groupBox5.Location = new System.Drawing.Point(8, 461);
             groupBox5.Margin = new Padding(4, 3, 4, 3);
             groupBox5.Name = "groupBox5";
             groupBox5.Padding = new Padding(7);
@@ -324,7 +325,7 @@ namespace BulkCrapUninstaller.Forms
             groupBox6.Margin = new Padding(4, 3, 4, 3);
             groupBox6.Name = "groupBox6";
             groupBox6.Padding = new Padding(7);
-            groupBox6.Size = new System.Drawing.Size(571, 135);
+            groupBox6.Size = new System.Drawing.Size(571, 160);
             groupBox6.TabIndex = 6;
             groupBox6.TabStop = false;
             groupBox6.Text = "Test methods";
@@ -345,11 +346,12 @@ namespace BulkCrapUninstaller.Forms
             flowLayoutPanel1.Controls.Add(button15);
             flowLayoutPanel1.Controls.Add(button16);
             flowLayoutPanel1.Controls.Add(button17);
+            flowLayoutPanel1.Controls.Add(button18);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new System.Drawing.Point(7, 23);
             flowLayoutPanel1.Margin = new Padding(4, 3, 4, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new System.Drawing.Size(557, 105);
+            flowLayoutPanel1.Size = new System.Drawing.Size(557, 130);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // button10
@@ -522,11 +524,24 @@ namespace BulkCrapUninstaller.Forms
             button17.UseVisualStyleBackColor = true;
             button17.Click += button17_Click;
             // 
+            // button18
+            // 
+            button18.AutoSize = true;
+            button18.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button18.Location = new System.Drawing.Point(4, 96);
+            button18.Margin = new Padding(4, 3, 4, 3);
+            button18.Name = "button18";
+            button18.Size = new System.Drawing.Size(134, 25);
+            button18.TabIndex = 17;
+            button18.Text = "Simulate outdated W7";
+            button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
+            // 
             // DebugWindow
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(587, 510);
+            ClientSize = new System.Drawing.Size(587, 527);
             Controls.Add(groupBox3);
             Controls.Add(groupBox4);
             Controls.Add(groupBox1);
@@ -590,5 +605,6 @@ namespace BulkCrapUninstaller.Forms
         private Button button16;
         private Button button17;
         private CheckBox checkBoxSysRestoreAvail;
+        private Button button18;
     }
 }

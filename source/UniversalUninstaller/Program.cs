@@ -77,7 +77,7 @@ namespace UniversalUninstaller
                 catch (Exception exception)
                 {
                     Console.WriteLine(exception);
-                    LogWriter.WriteMessageToLog(exception.ToString());
+                    Klocman.LogWriter.WriteMessageToLog(exception.ToString());
                     return 161;
                 }
             }

@@ -124,7 +124,7 @@
     <value>Recherche de vestiges...</value>
   </data>
   <data name="LoadingDialogTitlePopulatingList" xml:space="preserve">
-    <value>Création de la liste des programmes installés...</value>
+    <value>Remplissage de la liste de désinstalleurs...</value>
   </data>
   <data name="LoadingDialogTitleRemovingJunk" xml:space="preserve">
     <value>Suppression des vestiges...</value>
@@ -133,10 +133,10 @@
     <value>Recherche de mises à jour...</value>
   </data>
   <data name="SearchNothingFoundMessage" xml:space="preserve">
-    <value>Il n'y a pas d'entrée correspondant à votre chaîne de recherche.</value>
+    <value>Il n'y a pas d'entrée correspondant à votre critère de recherche.</value>
   </data>
   <data name="StrExportHeader" xml:space="preserve">
-    <value>Exportation BCUninstaller 
+    <value>Export BCUninstaller 
 Éditeur | Version | Date | Taille | Registre | Type de désinstalleur | Chaîne de désinstallation | Chaîne de désinstallation silencieuse | Commentaires</value>
   </data>
   <data name="StrIsPortable" xml:space="preserve">
@@ -147,10 +147,10 @@
     <value>Échec en appelant l'API</value>
   </data>
   <data name="MessageBoxes_BackupFailedQuestion_Message" xml:space="preserve">
-    <value>Échec en sauvegardant le registre, voulez-vous continuer tout de même ?</value>
+    <value>Échec en sauvegarde du registre, voulez-vous continuer tout de même ?</value>
   </data>
   <data name="MessageBoxes_BackupFailedQuestion_Details" xml:space="preserve">
-    <value>Détails de l'erreur : </value>
+    <value>Détails d'erreur : </value>
   </data>
   <data name="MessageBoxes_Title_Leftover_removal" xml:space="preserve">
     <value>Suppression des vestiges</value>
@@ -171,7 +171,7 @@ Détails de l'erreur :
 Fichiers et dossiers seront déplacés dans la corbeille, vous pouvez les restaurer à partir d'ici.</value>
   </data>
   <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Title" xml:space="preserve">
-    <value>Échec de l'action</value>
+    <value>Action échouée</value>
   </data>
   <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Message" xml:space="preserve">
     <value>Vous devez ne sélectionner qu'une entrée pour cette action</value>
@@ -186,21 +186,21 @@ Fichiers et dossiers seront déplacés dans la corbeille, vous pouvez les restau
     <value>Ouvrir du contenu en ligne</value>
   </data>
   <data name="MessageBoxes_NoNetworkConnected_Message" xml:space="preserve">
-    <value>Connection à internet impossible, il n'y a pas de réseau disponible.</value>
+    <value>Connexion à internet impossible, il n'y a pas de réseau disponible.</value>
   </data>
   <data name="MessageBoxes_NoNetworkConnected_Details" xml:space="preserve">
     <value>Vérifiez que le câble réseau est branché. Si vous utilisez le Wi-Fi vérifiez que vous avez une bonne force de signal.</value>
   </data>
   <data name="MessageBoxes_Title_Submit_feedback" xml:space="preserve">
-    <value>Soumettre une réaction</value>
+    <value>Soumettre un retour</value>
   </data>
   <data name="MessageBoxes_AskToSubmitFeedback_Message" xml:space="preserve">
-    <value>Voudriez-vous envoyer une réaction concernant BCU ?</value>
+    <value>Voudriez-vous envoyer un retour concernant BCU ?</value>
   </data>
   <data name="MessageBoxes_AskToSubmitFeedback_Details" xml:space="preserve">
-    <value>Cela prendra moins d'une minute mais aidera grandement le développement  ! Toute réaction est appréciée, que ce soit un rapport de bogue, une demande de fonction ou un simple merci !
+    <value>Cela prendra moins d'une minute mais aidera grandement le développement  ! Tout retour est apprécié, que ce soit un rapport de bogue, une demande de fonction ou un simple merci !
 
-Vous pouvez l'envoyer plus tard à partir de la barre de menu du haut (Aide-&gt;Soumettre une réaction).</value>
+Vous pouvez l'envoyer plus tard à partir de la barre de menu du haut (Aide-&gt;Soumettre un retour).</value>
   </data>
   <data name="MessageBoxes_UpdateUptodate_Message" xml:space="preserve">
     <value>La version courante est à jour</value>
@@ -208,18 +208,16 @@ Vous pouvez l'envoyer plus tard à partir de la barre de menu du haut (Aide-&gt;
   <data name="MessageBoxes_UpdateUptodate_Details" xml:space="preserve">
     <value>Aucune mise à jour n'a été trouvée pour l'heure, vous avez la dernière version.
 
-Vous voulez ajouter une fonctionnalité ou corriger une bogue ? Merci de m'envoyer votre réaction en utilisant le menu "Aide-&gt;Soumettre une réaction".</value>
+Vous voulez ajouter une fonctionnalité ou corriger une bogue ? Merci de m'envoyer votre retour en utilisant le menu "Aide-&gt;Soumettre un retour".</value>
   </data>
   <data name="MessageBoxes_UpdateFailed_Message" xml:space="preserve">
     <value>Erreur rencontrée en vérifiant les mises à jour</value>
   </data>
   <data name="MessageBoxes_UpdateFailed_Details" xml:space="preserve">
-    <value>Vérifiez que BCUninstaller n'est pas bloqué dans votre pare-feu et que vous avez une connection internet fonctionnelle.
-
-</value>
+    <value>Vérifiez que BCUninstaller n'est pas bloqué dans votre pare-feu et que vous avez une connection internet fonctionnelle.</value>
   </data>
   <data name="MessageBoxes_UpdateAskToDownload_Message" xml:space="preserve">
-    <value>Une nouvelle version {0} est disponible, voulez-vous mettre à jour maintenant ?</value>
+    <value>Nouvelle version {0} disponible, voulez-vous mettre à jour maintenant ?</value>
     <comment>0 is version number</comment>
   </data>
   <data name="MessageBoxes_UpdateAskToDownload_Details" xml:space="preserve">
@@ -260,14 +258,14 @@ Attention : pendant la mise à jour le dossier "Update" et le fichier "Update.zi
     <comment>keep space in front</comment>
   </data>
   <data name="StrDebug" xml:space="preserve">
-    <value> DEBUG</value>
+    <value>DEBUG</value>
     <comment>keep space in front</comment>
   </data>
   <data name="MessageBoxes_CanWalkAwayInfo_Title" xml:space="preserve">
     <value>Progression de la désinstallation</value>
   </data>
   <data name="MessageBoxes_CanWalkAwayInfo_Message" xml:space="preserve">
-    <value>Vous pouvez maintenant laisser l'ordinateur opérer</value>
+    <value>Vous pouvez maintenant laisser l'ordinateur</value>
   </data>
   <data name="MessageBoxes_CanWalkAwayInfo_Details" xml:space="preserve">
     <value>Les désinstalleurs restants devraient pouvoir terminer sans aucune intervention de l'utilisateur. Vous devriez quand même vérifier de temps en temps au cas où un des désinstalleurs plante.</value>
@@ -457,7 +455,7 @@ Voulez-vous utiliser les désinstalleurs "causants" pour ces éléments, ou doiv
     <value>Le point de restauration N'A PAS ETE CRÉÉ, vous ne pourrez pas restaurer les changements ! Voulez-vous continuer quand même la désinstallation ?</value>
   </data>
   <data name="MainWindow_Rename_Description" xml:space="preserve">
-    <value>Renommer "{0}"</value>
+    <value>Renommage de "{0}"</value>
   </data>
   <data name="MainWindow_Rename_Title" xml:space="preserve">
     <value>Renommer l'entrée sélectionnée</value>
@@ -534,10 +532,10 @@ Voulez-vous utiliser les désinstalleurs "causants" pour ces éléments, ou doiv
     <value>Échec d'exécution externe</value>
   </data>
   <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Details" xml:space="preserve">
-    <value>Certains paramètres ne prendront effet jusqu'à ce que l'application soit relancée.</value>
+    <value>Certains paramètres ne prendront pas effet jusqu'à ce que l'application soit relancée.</value>
   </data>
   <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Message" xml:space="preserve">
-    <value>Voulez-vous redémarrer BCU à appliquer les nouveaux réglages</value>
+    <value>Voulez-vous redémarrer BCU à appliquer les nouveaux réglages ?</value>
   </data>
   <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Title" xml:space="preserve">
     <value>Modifier les réglages de l'application</value>
@@ -546,7 +544,7 @@ Voulez-vous utiliser les désinstalleurs "causants" pour ces éléments, ou doiv
     <value>Certificat manquant</value>
   </data>
   <data name="MainWindow_Statusbar_ProcessingUninstallers" xml:space="preserve">
-    <value>Traitement des désinstalleurs ({0})</value>
+    <value>Traitement des applications détectées, ({0}) restantes...</value>
     <comment>{1} = how many application uninstallers still need to be processed</comment>
   </data>
   <data name="MessageBoxes_TaskSkip_Details" xml:space="preserve">
@@ -679,16 +677,16 @@ Vous pouver tenter de désactiver la prévention de collision dans les réglages
     <value>Extensions</value>
   </data>
   <data name="LocalizedX509Certificate2_FriendlyName" xml:space="preserve">
-    <value>Nom familier</value>
+    <value>Nom Familier</value>
   </data>
   <data name="LocalizedX509Certificate2_IssuerName" xml:space="preserve">
-    <value>Nom de l'émetteur</value>
+    <value>Nom de l'Emetteur</value>
   </data>
   <data name="LocalizedX509Certificate2_NotAfter" xml:space="preserve">
-    <value>Pas après</value>
+    <value>Pas Après</value>
   </data>
   <data name="LocalizedX509Certificate2_NotBefore" xml:space="preserve">
-    <value>Pas avant</value>
+    <value>Pas Avant</value>
   </data>
   <data name="LocalizedX509Certificate2_PrivateKey" xml:space="preserve">
     <value>Clé Privée</value>
@@ -700,10 +698,10 @@ Vous pouver tenter de désactiver la prévention de collision dans les réglages
     <value>Clé Publique</value>
   </data>
   <data name="LocalizedX509Certificate2_RawData" xml:space="preserve">
-    <value>Données brutes</value>
+    <value>Données Brutes</value>
   </data>
   <data name="LocalizedX509Certificate2_SerialNumber" xml:space="preserve">
-    <value>Numéro de série</value>
+    <value>Numéro de Série</value>
   </data>
   <data name="LocalizedX509Certificate2_SubjectName" xml:space="preserve">
     <value>Nom de sujet</value>
@@ -763,10 +761,10 @@ Vous pouver tenter de désactiver la prévention de collision dans les réglages
     <value>Sélectionner où enregistrer la sauvegarde. Un nouveau dossier sera créé.</value>
   </data>
   <data name="NewsPopup_UpdatedTitle" xml:space="preserve">
-    <value>BCU a été mis à jour en v{0}!</value>
+    <value>BCU a été mis à jour en v{0} !</value>
   </data>
   <data name="NewsPopup_FirstStartTitle" xml:space="preserve">
-    <value>Bienvenue à BCU version {0}!</value>
+    <value>Bienvenue à BCU version {0} !</value>
   </data>
   <data name="UninstallProgressWindow_StatusPuttingToSleepInSeconds" xml:space="preserve">
     <value>Mise en veille du PC dans {0}s. Décocher la case veille pour annuler.</value>
@@ -782,5 +780,11 @@ Vous pouver tenter de désactiver la prévention de collision dans les réglages
   <data name="UninstallerListDoubleClickAction_Uninstall" xml:space="preserve">
     <value>Désinstalle</value>
     <comment>Option for "Double clicking in application list..."</comment>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Title" xml:space="preserve">
+    <value>Ne peut renommer {0}</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
+    <value>Ce type de désinstalleur ne supporte pas de renommer ({0}).</value>
   </data>
 </root>

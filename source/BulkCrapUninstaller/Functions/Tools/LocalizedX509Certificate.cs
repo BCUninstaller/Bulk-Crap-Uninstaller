@@ -46,11 +46,15 @@ namespace BulkCrapUninstaller.Functions.Tools
         [LocalisedName(typeof(Localisable), nameof(Localisable.LocalizedX509Certificate2_NotBefore))]
         public DateTime NotBefore => BaseCert.NotBefore;
 
+#pragma warning disable SYSLIB0027
+#pragma warning disable SYSLIB0028
         [LocalisedName(typeof(Localisable), nameof(Localisable.LocalizedX509Certificate2_PrivateKey))]
         public string PrivateKey => BaseCert.PrivateKey?.ToString();
 
         [LocalisedName(typeof(Localisable), nameof(Localisable.LocalizedX509Certificate2_PublicKey))]
         public string PublicKey => BaseCert.PublicKey.Key.SignatureAlgorithm;
+#pragma warning restore SYSLIB0028
+#pragma warning restore SYSLIB0027
 
         [LocalisedName(typeof(Localisable), nameof(Localisable.LocalizedX509Certificate2_RawData))]
         public string RawData => BaseCert.RawData.ToHexString();

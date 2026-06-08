@@ -28,24 +28,9 @@ namespace BulkCrapUninstaller
     //TODO This is a leftover class, extract the self installed detection logic and get rid of it
     public static class Program
     {
-        private static string _applicationGuid;
         private static DirectoryInfo _assemblyLocation;
         private static string _installedRegistryKeyName;
         private static bool? _isInstalled;
-
-        public static string ApplicationGuid
-        {
-            get
-            {
-                if (String.IsNullOrEmpty(_applicationGuid))
-                {
-                    var assembly = typeof(Program).Assembly;
-                    var attribute = (GuidAttribute)assembly.GetCustomAttributes(typeof(GuidAttribute), true)[0];
-                    _applicationGuid = attribute.Value;
-                }
-                return _applicationGuid;
-            }
-        }
 
         public static DirectoryInfo AssemblyLocation
         {
@@ -55,7 +40,7 @@ namespace BulkCrapUninstaller
                 {
                     var location = Assembly.GetAssembly(typeof(Program))?.Location;
                     if (location == null) throw new InvalidOperationException("Failed to get entry assembly location");
-                    if (location.Substring(location.LastIndexOf('\\')).Contains('.'))
+                    if (Path.HasExtension(location))
                         location = PathTools.GetDirectory(location);
                     _assemblyLocation = new DirectoryInfo(location);
                 }
@@ -109,21 +94,28 @@ namespace BulkCrapUninstaller
         /// </summary>
         internal static void PrepareSettings()
         {
+            const string exeName = "BCUninstaller";
+
             IsAfterUpgrade = false;
             try
             {
                 var dir = AssemblyLocation;
-                if (dir.Name.StartsWith("win-x") && dir.Parent != null) dir = dir.Parent;
+                // Check if we are bundled with a launcher and place settings in the same folder as the launcher, so they are shared between different builds
+                if (dir.Name.StartsWith("win-") && dir.Parent != null &&
+                    File.Exists(Path.Combine(dir.Parent.FullName, exeName + ".exe"))) dir = dir.Parent;
+
                 var settingsDir = dir.FullName;
+                ConfigFileFullname = Path.Combine(settingsDir, exeName + ".settings");
+
                 PortableSettingsProvider.PortableSettingsProvider.AppSettingsPathOverride = settingsDir;
-                ConfigFileFullname = Path.Combine(settingsDir, "BCUninstaller.settings");
+                PortableSettingsProvider.PortableSettingsProvider.ApplicationNameOverride = exeName;
 
                 var settingsXmlDocument = XDocument.Parse(File.ReadAllText(ConfigFileFullname));
-                if (settingsXmlDocument.Root == null)
-                    throw new FormatException();
+                if (settingsXmlDocument.Root == null) throw new FormatException("Missing root element");
+                
                 var result = settingsXmlDocument.Root.Element("MiscVersion");
-                if (result == null || result.Value.Equals("Reset"))
-                    throw new FormatException();
+                if (result == null) throw new FormatException("Invalid version number");
+                if (result.Value.Equals("Reset")) throw new OperationCanceledException("Settings reset was requested");
 
                 if (!string.IsNullOrWhiteSpace(result.Value) && new Version(result.Value) < AssemblyVersion)
                     IsAfterUpgrade = true;
@@ -136,9 +128,9 @@ namespace BulkCrapUninstaller
             catch (Exception ex)
             {
                 if (ex is FileNotFoundException)
-                    Console.WriteLine("Settings file not found, creating new one.");
-                else
-                    Console.WriteLine("Failed to load settings from the config file: " + ex);
+                    Console.WriteLine(@"Settings file not found, creating new one.");
+                else if (ex is not OperationCanceledException)
+                    Console.WriteLine(@"Failed to load settings from the config file: " + ex);
 
                 File.Delete(ConfigFileFullname);
                 Settings.Default.Reload();
@@ -176,39 +168,38 @@ namespace BulkCrapUninstaller
         }
 
         /// <summary>
-        ///     TODO: A bit wonky, needs to be remade
+        /// Check if this application is installed by looking for the registry key created by the installer.
+        /// If the key is not found it means this is most likely a portable version.
         /// </summary>
         private static void GetInstalledRegKey()
         {
+            // This GUID is the AppID from the installer. It can end with an optional identifier if the installer had to create a new key because of a conflict.
+            const string appId = "f4fef76c-1aa9-441c-af7e-d27f58d898d1";
             const string regUninstallersKeyDirect = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
 
             try
             {
-                using (var regKey = Registry.LocalMachine.OpenSubKey(regUninstallersKeyDirect))
+                using var regKey = Registry.LocalMachine.OpenSubKey(regUninstallersKeyDirect);
+
+                if (regKey == null)
+                    throw new ArgumentException("Could not open Software registry key");
+
+                var keyNames = regKey.GetSubKeyNames().Where(x => x.Contains(appId, StringComparison.InvariantCultureIgnoreCase));
+
+                foreach (var keyName in keyNames)
                 {
-                    if (regKey == null)
-                        throw new ArgumentException("Could not open Software registry key");
+                    using var subKey = regKey.OpenSubKey(keyName, true);
 
-                    var keyNames = regKey.GetSubKeyNames()
-                        .Where(x => x.Contains(ApplicationGuid, StringComparison.InvariantCultureIgnoreCase));
+                    var installLocation = subKey?.GetStringSafe(RegistryFactory.RegistryNameInstallLocation);
+                    if (string.IsNullOrEmpty(installLocation)) continue;
 
-                    foreach (var keyName in keyNames)
+                    if (PathTools.SubPathIsInsideBasePath(installLocation, AssemblyLocation.FullName, true, true))
                     {
-                        using (var subKey = regKey.OpenSubKey(keyName, true))
-                        {
-                            var installLocation = subKey?.GetStringSafe(RegistryFactory.RegistryNameInstallLocation);
-                            if (string.IsNullOrEmpty(installLocation)) continue;
+                        // We are installed!
+                        _installedRegistryKeyName = keyName;
 
-                            if (PathTools.SubPathIsInsideBasePath(installLocation, AssemblyLocation.FullName, true, true))
-                            {
-                                // We are installed!
-                                _installedRegistryKeyName = keyName;
-
-                                // Update the version number
-                                subKey.SetValue("DisplayVersion", AssemblyVersion.ToString(),
-                                    RegistryValueKind.String);
-                            }
-                        }
+                        // Update the version number in case it changed, so the user can see it in the list of installed programs
+                        subKey.SetValue("DisplayVersion", AssemblyVersion.ToString(), RegistryValueKind.String);
                     }
                 }
             }

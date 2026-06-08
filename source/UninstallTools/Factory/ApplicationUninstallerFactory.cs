@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Klocman.Extensions;
 using Klocman.Forms.Tools;
 using Klocman.IO;
@@ -42,6 +43,8 @@ namespace UninstallTools.Factory
 
                 // Run some factories in a separate thread -----------------------------------------------------------------
                 concurrentFactory.Start();
+                // Start populating lookups now before they are needed since they can take a few seconds
+                Task.Run(MsiTools.InitLookups);
 
                 // Find stuff mentioned in registry ------------------------------------------------------------------------
                 IList<ApplicationUninstallerEntry> registryResults;

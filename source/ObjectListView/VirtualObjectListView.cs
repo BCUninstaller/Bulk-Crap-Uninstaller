@@ -79,6 +79,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MethodInvoker = System.Windows.Forms.MethodInvoker;
 
 namespace BrightIdeasSoftware
 {
@@ -242,7 +243,9 @@ namespace BrightIdeasSoftware
         /// <remarks>
         /// This property is an implementation detail and should not be altered.
         /// </remarks>
-        protected internal bool CheckedObjectsMustStillExistInList {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        protected internal bool CheckedObjectsMustStillExistInList
+        {
             get { return checkedObjectsMustStillExistInList; }
             set { checkedObjectsMustStillExistInList = value; }
         }
@@ -576,7 +579,7 @@ namespace BrightIdeasSoftware
         /// <remarks>This method does not resort the items.</remarks>
         public override void RefreshObjects(IList modelObjects) {
             if (InvokeRequired) {
-                Invoke((MethodInvoker)delegate { RefreshObjects(modelObjects); });
+                Invoke(new MethodInvoker(() => RefreshObjects(modelObjects)));
                 return;
             }
 

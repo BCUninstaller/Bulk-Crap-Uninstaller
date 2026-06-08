@@ -124,14 +124,14 @@
     <value>Sélectionner en utilisant une fenêtre</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Sélectionner en utilisant le dossier d'installation ou les fichiers programmes</value>
+    <value>Sélectionner en utilisant le dossier d'installation ou les fichiers de programmes</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Note: assurez-vous que tous les fichiers sélectionnés sont dans le dossier d'installation de l'application.
+    <value>Note : assurez-vous que tous les fichiers sélectionnés sont dans le dossier d'installation de l'application.
 
 Vous pouvez sélectionner un dossier qui contient de multiples applications pour les désinstaller toutes.</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Détruire une application</value>
+    <value>Cibler une application</value>
   </data>
 </root>

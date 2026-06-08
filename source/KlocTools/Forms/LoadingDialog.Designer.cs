@@ -31,99 +31,104 @@ namespace Klocman.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            progressBar = new ProgressBar();
+            label1 = new Label();
+            panel1 = new Panel();
+            progressBar2 = new ProgressBar();
+            label2 = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // progressBar
             // 
-            this.progressBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.progressBar.Location = new System.Drawing.Point(6, 24);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(336, 21);
-            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar.TabIndex = 0;
-            this.progressBar.Value = 100;
+            progressBar.Dock = DockStyle.Top;
+            progressBar.Location = new System.Drawing.Point(7, 28);
+            progressBar.Margin = new Padding(4, 3, 4, 3);
+            progressBar.Name = "progressBar";
+            progressBar.Size = new System.Drawing.Size(392, 24);
+            progressBar.Style = ProgressBarStyle.Marquee;
+            progressBar.TabIndex = 0;
+            progressBar.Value = 100;
             // 
             // label1
             // 
-            this.label1.AutoEllipsis = true;
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(6, 6);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.label1.Size = new System.Drawing.Size(54, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Loading...";
+            label1.AutoEllipsis = true;
+            label1.AutoSize = true;
+            label1.Dock = DockStyle.Top;
+            label1.Location = new System.Drawing.Point(7, 7);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Padding = new Padding(0, 0, 0, 6);
+            label1.Size = new System.Drawing.Size(59, 21);
+            label1.TabIndex = 1;
+            label1.Text = "Loading...";
             // 
             // panel1
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.progressBar2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.progressBar);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.MinimumSize = new System.Drawing.Size(350, 11);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(6);
-            this.panel1.Size = new System.Drawing.Size(350, 98);
-            this.panel1.TabIndex = 2;
-            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
+            panel1.AutoSize = true;
+            panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(progressBar2);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(progressBar);
+            panel1.Controls.Add(label1);
+            panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Margin = new Padding(0);
+            panel1.MinimumSize = new System.Drawing.Size(408, 12);
+            panel1.Name = "panel1";
+            panel1.Padding = new Padding(7, 7, 7, 7);
+            panel1.Size = new System.Drawing.Size(408, 113);
+            panel1.TabIndex = 2;
+            panel1.Resize += panel1_Resize;
             // 
             // progressBar2
             // 
-            this.progressBar2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.progressBar2.Location = new System.Drawing.Point(6, 69);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(336, 21);
-            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar2.TabIndex = 2;
-            this.progressBar2.Value = 100;
-            this.progressBar2.Visible = false;
+            progressBar2.Dock = DockStyle.Top;
+            progressBar2.Location = new System.Drawing.Point(7, 80);
+            progressBar2.Margin = new Padding(4, 3, 4, 3);
+            progressBar2.Name = "progressBar2";
+            progressBar2.Size = new System.Drawing.Size(392, 24);
+            progressBar2.Style = ProgressBarStyle.Marquee;
+            progressBar2.TabIndex = 2;
+            progressBar2.Value = 100;
+            progressBar2.Visible = false;
             // 
             // label2
             // 
-            this.label2.AutoEllipsis = true;
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Location = new System.Drawing.Point(6, 45);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(0, 6, 0, 5);
-            this.label2.Size = new System.Drawing.Size(54, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Loading...";
-            this.label2.Visible = false;
+            label2.AutoEllipsis = true;
+            label2.AutoSize = true;
+            label2.Dock = DockStyle.Top;
+            label2.Location = new System.Drawing.Point(7, 52);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Padding = new Padding(0, 7, 0, 6);
+            label2.Size = new System.Drawing.Size(59, 28);
+            label2.TabIndex = 3;
+            label2.Text = "Loading...";
+            label2.Visible = false;
             // 
             // LoadingDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(398, 251);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "LoadingDialog";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = System.Drawing.SystemColors.Control;
+            ClientSize = new System.Drawing.Size(464, 290);
+            ControlBox = false;
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "LoadingDialog";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterParent;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

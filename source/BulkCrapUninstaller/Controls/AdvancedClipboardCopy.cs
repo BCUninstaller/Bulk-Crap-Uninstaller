@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace BulkCrapUninstaller.Controls
 {
     public partial class AdvancedClipboardCopy : UserControl
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public IEnumerable<ApplicationUninstallerEntry> Targets { get; set; }
 
         public AdvancedClipboardCopy()
@@ -25,6 +27,7 @@ namespace BulkCrapUninstaller.Controls
             comboBoxInsert.SelectedIndex = 0;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string PatternText
         {
             get { return textBoxPatternInput.Text; }

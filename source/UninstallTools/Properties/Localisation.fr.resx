@@ -157,7 +157,7 @@
     <value>Emplacement du désinstalleur</value>
   </data>
   <data name="ManagerError_Skipped" xml:space="preserve">
-    <value>Erreur passée par l'utilisateur</value>
+    <value>Passé par l'utilisateur</value>
   </data>
   <data name="IsProtected" xml:space="preserve">
     <value>Est protégé</value>
@@ -272,7 +272,7 @@
     <value>Terminé</value>
   </data>
   <data name="UninstallStatus_Failed" xml:space="preserve">
-    <value>Échec</value>
+    <value>Échoué</value>
   </data>
   <data name="UninstallStatus_Invalid" xml:space="preserve">
     <value>Invalide</value>
@@ -281,7 +281,7 @@
     <value>Protégé</value>
   </data>
   <data name="UninstallStatus_Skipped" xml:space="preserve">
-    <value>Ignoré</value>
+    <value>Passé</value>
   </data>
   <data name="UninstallStatus_Uninstalling" xml:space="preserve">
     <value>Désinstallation</value>
@@ -373,7 +373,7 @@
     <value>Le nom du programme est reconnu</value>
   </data>
   <data name="Confidence_PF_NoSubdirs" xml:space="preserve">
-    <value>Pas de sous-dossiers</value>
+    <value>Pas de sous-dossier</value>
   </data>
   <data name="Confidence_PF_PublisherIsUsed" xml:space="preserve">
     <value>L'éditeur est reconnu</value>
@@ -460,7 +460,7 @@
     <value>Traitement de {0}</value>
   </data>
   <data name="Progress_GatherUninstallerInfo" xml:space="preserve">
-    <value>Génération de l'information de désinstalleur manquant</value>
+    <value>Génération de l'information de désinstalleur manquante</value>
   </data>
   <data name="Progress_DriveScan" xml:space="preserve">
     <value>Balayage des lecteurs pour les applications...</value>
@@ -469,7 +469,7 @@
     <value>Regroupement des dossiers</value>
   </data>
   <data name="Progress_AppStores" xml:space="preserve">
-    <value>Balayage des magasins d'applications</value>
+    <value>Balayage des magasins d'applications...</value>
   </data>
   <data name="Progress_AppStores_Templates" xml:space="preserve">
     <value>Recherche des modèles d'applications</value>
@@ -493,7 +493,7 @@
     <value>Fusion des applications depuis les lecteurs</value>
   </data>
   <data name="Progress_GeneratingInfo" xml:space="preserve">
-    <value>Génération de l'information manquante</value>
+    <value>Génération de l'information manquante...</value>
   </data>
   <data name="UninstallerType_WindowsUpdate" xml:space="preserve">
     <value>Windows Update</value>
@@ -556,7 +556,7 @@
     <value>Oculus</value>
   </data>
   <data name="Progress_AppStores_Chocolatey" xml:space="preserve">
-    <value>Chercher les paquets Chocolatey</value>
+    <value>Recherche de paquets Chocolatey</value>
   </data>
   <data name="ChocolateyFactory_UninstallInChocolateyJunkName" xml:space="preserve">
     <value>Désinstaller dans Chocolatey</value>
@@ -583,5 +583,8 @@
   <data name="Confidence_UsedBySimilarNamedApp" xml:space="preserve">
     <value>Peut appartenir à une autre appli avec un nom similaire</value>
     <comment>For example `AppX Extended` matching `AppX` when it belongs to the AppX application</comment>
+  </data>
+  <data name="Confidence_DirectlyInsideKnownFolder" xml:space="preserve">
+    <value>Situé directement à l'intérieur d'un Dossier Connu</value>
   </data>
 </root>

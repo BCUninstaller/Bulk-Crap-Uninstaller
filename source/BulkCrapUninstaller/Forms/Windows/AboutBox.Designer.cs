@@ -31,284 +31,284 @@ namespace BulkCrapUninstaller.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
-            this.labelName = new System.Windows.Forms.Label();
-            this.labelVersion = new System.Windows.Forms.Label();
-            this.labelCopyright = new System.Windows.Forms.Label();
-            this.labelCompanyName = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelis64 = new System.Windows.Forms.Label();
-            this.labelPortable = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.labelArchitecture = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.imageBox = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.usageTracker1 = new BulkCrapUninstaller.Functions.Tracking.UsageTracker();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.SuspendLayout();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(AboutBox));
+            labelName = new Label();
+            labelVersion = new Label();
+            labelCopyright = new Label();
+            labelCompanyName = new Label();
+            groupBox1 = new GroupBox();
+            panel1 = new Panel();
+            labelis64 = new Label();
+            labelPortable = new Label();
+            panel4 = new Panel();
+            labelArchitecture = new Label();
+            groupBox2 = new GroupBox();
+            panel5 = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            linkLabel6 = new LinkLabel();
+            linkLabel9 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            linkLabel1 = new LinkLabel();
+            linkLabel5 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            linkLabel7 = new LinkLabel();
+            linkLabel8 = new LinkLabel();
+            button1 = new Button();
+            linkLabel4 = new LinkLabel();
+            groupBox3 = new GroupBox();
+            panel3 = new Panel();
+            imageBox = new Label();
+            panel2 = new Panel();
+            groupBox4 = new GroupBox();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            usageTracker1 = new UsageTracker();
+            groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
+            panel4.SuspendLayout();
+            groupBox2.SuspendLayout();
+            panel5.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            groupBox3.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            groupBox4.SuspendLayout();
+            SuspendLayout();
             // 
             // labelName
             // 
-            resources.ApplyResources(this.labelName, "labelName");
-            this.labelName.Name = "labelName";
+            resources.ApplyResources(labelName, "labelName");
+            labelName.Name = "labelName";
             // 
             // labelVersion
             // 
-            resources.ApplyResources(this.labelVersion, "labelVersion");
-            this.labelVersion.Name = "labelVersion";
+            resources.ApplyResources(labelVersion, "labelVersion");
+            labelVersion.Name = "labelVersion";
             // 
             // labelCopyright
             // 
-            resources.ApplyResources(this.labelCopyright, "labelCopyright");
-            this.labelCopyright.Name = "labelCopyright";
+            resources.ApplyResources(labelCopyright, "labelCopyright");
+            labelCopyright.Name = "labelCopyright";
             // 
             // labelCompanyName
             // 
-            resources.ApplyResources(this.labelCompanyName, "labelCompanyName");
-            this.labelCompanyName.Name = "labelCompanyName";
+            resources.ApplyResources(labelCompanyName, "labelCompanyName");
+            labelCompanyName.Name = "labelCompanyName";
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.panel4);
-            this.groupBox1.Controls.Add(this.labelName);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Controls.Add(panel1);
+            groupBox1.Controls.Add(panel4);
+            groupBox1.Controls.Add(labelName);
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.labelis64);
-            this.panel1.Controls.Add(this.labelPortable);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Controls.Add(labelis64);
+            panel1.Controls.Add(labelPortable);
+            panel1.Name = "panel1";
             // 
             // labelis64
             // 
-            resources.ApplyResources(this.labelis64, "labelis64");
-            this.labelis64.Name = "labelis64";
+            resources.ApplyResources(labelis64, "labelis64");
+            labelis64.Name = "labelis64";
             // 
             // labelPortable
             // 
-            resources.ApplyResources(this.labelPortable, "labelPortable");
-            this.labelPortable.Name = "labelPortable";
+            resources.ApplyResources(labelPortable, "labelPortable");
+            labelPortable.Name = "labelPortable";
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Controls.Add(this.labelVersion);
-            this.panel4.Controls.Add(this.labelArchitecture);
-            this.panel4.Name = "panel4";
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Controls.Add(labelVersion);
+            panel4.Controls.Add(labelArchitecture);
+            panel4.Name = "panel4";
             // 
             // labelArchitecture
             // 
-            resources.ApplyResources(this.labelArchitecture, "labelArchitecture");
-            this.labelArchitecture.Name = "labelArchitecture";
+            resources.ApplyResources(labelArchitecture, "labelArchitecture");
+            labelArchitecture.Name = "labelArchitecture";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.panel5);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            groupBox2.Controls.Add(panel5);
+            resources.ApplyResources(groupBox2, "groupBox2");
+            groupBox2.Name = "groupBox2";
+            groupBox2.TabStop = false;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.flowLayoutPanel1);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
+            panel5.Controls.Add(flowLayoutPanel1);
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Name = "panel5";
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel6);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel9);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel3);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel1);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel5);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel2);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel7);
-            this.flowLayoutPanel1.Controls.Add(this.linkLabel8);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(linkLabel6);
+            flowLayoutPanel1.Controls.Add(linkLabel9);
+            flowLayoutPanel1.Controls.Add(linkLabel3);
+            flowLayoutPanel1.Controls.Add(linkLabel1);
+            flowLayoutPanel1.Controls.Add(linkLabel5);
+            flowLayoutPanel1.Controls.Add(linkLabel2);
+            flowLayoutPanel1.Controls.Add(linkLabel7);
+            flowLayoutPanel1.Controls.Add(linkLabel8);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // linkLabel6
             // 
-            resources.ApplyResources(this.linkLabel6, "linkLabel6");
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
-            // 
-            // linkLabel3
-            // 
-            resources.ApplyResources(this.linkLabel3, "linkLabel3");
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel5
-            // 
-            resources.ApplyResources(this.linkLabel5, "linkLabel5");
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            resources.ApplyResources(this.linkLabel2, "linkLabel2");
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // linkLabel7
-            // 
-            resources.ApplyResources(this.linkLabel7, "linkLabel7");
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
-            // 
-            // linkLabel8
-            // 
-            resources.ApplyResources(this.linkLabel8, "linkLabel8");
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // linkLabel4
-            // 
-            resources.ApplyResources(this.linkLabel4, "linkLabel4");
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
-            // 
-            // groupBox3
-            // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Controls.Add(this.linkLabel4);
-            this.groupBox3.Controls.Add(this.panel3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // panel3
-            // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.labelCopyright);
-            this.panel3.Controls.Add(this.labelCompanyName);
-            this.panel3.Name = "panel3";
-            // 
-            // imageBox
-            // 
-            this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.imageBox, "imageBox");
-            this.imageBox.Image = global::BulkCrapUninstaller.Properties.Resources.bigImage;
-            this.imageBox.Name = "imageBox";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.groupBox4);
-            this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.groupBox3);
-            this.panel2.Controls.Add(this.groupBox1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.flowLayoutPanel2);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
-            // flowLayoutPanel2
-            // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            // 
-            // usageTracker1
-            // 
-            this.usageTracker1.ContainerControl = this;
+            resources.ApplyResources(linkLabel6, "linkLabel6");
+            linkLabel6.Name = "linkLabel6";
+            linkLabel6.TabStop = true;
+            linkLabel6.LinkClicked += linkLabel6_LinkClicked;
             // 
             // linkLabel9
             // 
-            resources.ApplyResources(this.linkLabel9, "linkLabel9");
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
+            resources.ApplyResources(linkLabel9, "linkLabel9");
+            linkLabel9.Name = "linkLabel9";
+            linkLabel9.TabStop = true;
+            linkLabel9.LinkClicked += linkLabel9_LinkClicked;
+            // 
+            // linkLabel3
+            // 
+            resources.ApplyResources(linkLabel3, "linkLabel3");
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.TabStop = true;
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            // 
+            // linkLabel1
+            // 
+            resources.ApplyResources(linkLabel1, "linkLabel1");
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.TabStop = true;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // linkLabel5
+            // 
+            resources.ApplyResources(linkLabel5, "linkLabel5");
+            linkLabel5.Name = "linkLabel5";
+            linkLabel5.TabStop = true;
+            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
+            // 
+            // linkLabel2
+            // 
+            resources.ApplyResources(linkLabel2, "linkLabel2");
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.TabStop = true;
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
+            // linkLabel7
+            // 
+            resources.ApplyResources(linkLabel7, "linkLabel7");
+            linkLabel7.Name = "linkLabel7";
+            linkLabel7.TabStop = true;
+            linkLabel7.LinkClicked += linkLabel7_LinkClicked;
+            // 
+            // linkLabel8
+            // 
+            resources.ApplyResources(linkLabel8, "linkLabel8");
+            linkLabel8.Name = "linkLabel8";
+            linkLabel8.TabStop = true;
+            linkLabel8.LinkClicked += linkLabel8_LinkClicked;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.DialogResult = DialogResult.Cancel;
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // linkLabel4
+            // 
+            resources.ApplyResources(linkLabel4, "linkLabel4");
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.TabStop = true;
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+            // 
+            // groupBox3
+            // 
+            resources.ApplyResources(groupBox3, "groupBox3");
+            groupBox3.Controls.Add(linkLabel4);
+            groupBox3.Controls.Add(panel3);
+            groupBox3.Name = "groupBox3";
+            groupBox3.TabStop = false;
+            // 
+            // panel3
+            // 
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Controls.Add(labelCopyright);
+            panel3.Controls.Add(labelCompanyName);
+            panel3.Name = "panel3";
+            // 
+            // imageBox
+            // 
+            imageBox.BorderStyle = BorderStyle.Fixed3D;
+            resources.ApplyResources(imageBox, "imageBox");
+            imageBox.Image = Properties.Resources.bigImage;
+            imageBox.Name = "imageBox";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(groupBox4);
+            panel2.Controls.Add(groupBox2);
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(groupBox3);
+            panel2.Controls.Add(groupBox1);
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Name = "panel2";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(flowLayoutPanel2);
+            resources.ApplyResources(groupBox4, "groupBox4");
+            groupBox4.Name = "groupBox4";
+            groupBox4.TabStop = false;
+            // 
+            // flowLayoutPanel2
+            // 
+            resources.ApplyResources(flowLayoutPanel2, "flowLayoutPanel2");
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // usageTracker1
+            // 
+            usageTracker1.ContainerControl = this;
             // 
             // AboutBox
             // 
-            this.AcceptButton = this.button1;
+            AcceptButton = button1;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button1;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.imageBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "AboutBox";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = button1;
+            Controls.Add(panel2);
+            Controls.Add(imageBox);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "AboutBox";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 
