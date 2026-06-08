@@ -17,6 +17,7 @@ using Klocman;
 using Klocman.Extensions;
 using Klocman.Forms;
 using Klocman.Forms.Tools;
+using Klocman.Tools;
 using UninstallTools.Dialogs;
 
 namespace BulkCrapUninstaller
