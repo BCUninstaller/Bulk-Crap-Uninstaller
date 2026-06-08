@@ -53,36 +53,23 @@ namespace UninstallTools.Factory
 
             foreach (var data in FactoryTools.ExtractAppDataSetsFromHelperOutput(output))
             {
-                try
+                if (!int.TryParse(data["AppId"], out var appId)) continue;
+
+                var entry = new ApplicationUninstallerEntry
                 {
-                    if (!data.TryGetValue("AppId", out var appIdString) || !int.TryParse(appIdString, out var appId))
-                        continue;
-                    if (!data.TryGetValue("UninstallString", out var uninstallString) || string.IsNullOrWhiteSpace(uninstallString))
-                        continue;
+                    DisplayName = data["Name"],
+                    UninstallString = data["UninstallString"],
+                    InstallLocation = data["InstallDirectory"],
+                    UninstallerKind = UninstallerType.Steam,
+                    IsValid = true,
+                    IsOrphaned = true,
+                    RatingId = "Steam App " + appId.ToString("G")
+                };
 
-                    data.TryGetValue("Name", out var name);
-                    data.TryGetValue("InstallDirectory", out var installDirectory);
+                if (long.TryParse(data["SizeOnDisk"], out var bytes))
+                    entry.EstimatedSize = FileSize.FromBytes(bytes);
 
-                    var entry = new ApplicationUninstallerEntry
-                    {
-                        DisplayName = name,
-                        UninstallString = uninstallString,
-                        InstallLocation = installDirectory,
-                        UninstallerKind = UninstallerType.Steam,
-                        IsValid = true,
-                        IsOrphaned = true,
-                        RatingId = "Steam App " + appId.ToString("G")
-                    };
-
-                    if (data.TryGetValue("SizeOnDisk", out var sizeOnDisk) && long.TryParse(sizeOnDisk, out var bytes))
-                        entry.EstimatedSize = FileSize.FromBytes(bytes);
-
-                    results.Add(entry);
-                }
-                catch (Exception ex)
-                {
-                    Trace.WriteLine($"[Factory] Failed to parse a Steam entry from helper output: {ex}");
-                }
+                results.Add(entry);
             }
 
             results.Add(new ApplicationUninstallerEntry

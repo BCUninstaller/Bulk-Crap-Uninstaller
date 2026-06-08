@@ -5,7 +5,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -49,64 +48,50 @@ namespace UninstallTools.Factory
 
             foreach (var data in FactoryTools.ExtractAppDataSetsFromHelperOutput(output))
             {
-                try
+                if (!data.ContainsKey("InstalledLocation") || !Directory.Exists(data["InstalledLocation"])) continue;
+
+                var fullName = data["FullName"];
+                var separatorIndex = fullName.IndexOf("_", StringComparison.Ordinal);
+                var uninstallStr = $"\"{HelperPath}\" /uninstall \"{fullName}\"";
+                var isProtected = data.ContainsKey("IsProtected") && Convert.ToBoolean(data["IsProtected"], CultureInfo.InvariantCulture);
+                var result = new ApplicationUninstallerEntry
                 {
-                    if (!data.TryGetValue("InstalledLocation", out var installLocation) || !Directory.Exists(installLocation))
-                        continue;
-                    if (!data.TryGetValue("FullName", out var fullName) || string.IsNullOrWhiteSpace(fullName))
-                        continue;
+                    Comment = fullName,
+                    CacheIdOverride = fullName,
+                    RatingId = separatorIndex >= 0 ? fullName.Substring(0, separatorIndex) : fullName,
+                    UninstallString = uninstallStr,
+                    QuietUninstallString = uninstallStr,
+                    RawDisplayName = string.IsNullOrEmpty(data["DisplayName"]) ? fullName : data["DisplayName"],
+                    Publisher = data["PublisherDisplayName"],
+                    IsValid = true,
+                    UninstallerKind = UninstallerType.StoreApp,
+                    InstallLocation = data["InstalledLocation"],
+                    InstallDate = Directory.GetCreationTime(data["InstalledLocation"]),
+                    IsProtected = isProtected,
+                    SystemComponent = isProtected
+                };
 
-                    var separatorIndex = fullName.IndexOf("_", StringComparison.Ordinal);
-                    var uninstallStr = $"\"{HelperPath}\" /uninstall \"{fullName}\"";
-                    var isProtected = data.TryGetValue("IsProtected", out var isProtectedValue) &&
-                                      Convert.ToBoolean(isProtectedValue, CultureInfo.InvariantCulture);
-
-                    data.TryGetValue("DisplayName", out var displayName);
-                    data.TryGetValue("PublisherDisplayName", out var publisher);
-
-                    var result = new ApplicationUninstallerEntry
-                    {
-                        Comment = fullName,
-                        CacheIdOverride = fullName,
-                        RatingId = separatorIndex >= 0 ? fullName.Substring(0, separatorIndex) : fullName,
-                        UninstallString = uninstallStr,
-                        QuietUninstallString = uninstallStr,
-                        RawDisplayName = string.IsNullOrEmpty(displayName) ? fullName : displayName,
-                        Publisher = publisher,
-                        IsValid = true,
-                        UninstallerKind = UninstallerType.StoreApp,
-                        InstallLocation = installLocation,
-                        InstallDate = Directory.GetCreationTime(installLocation),
-                        IsProtected = isProtected,
-                        SystemComponent = isProtected
-                    };
-
-                    if (data.TryGetValue("Logo", out var logoPath) && File.Exists(logoPath))
-                    {
-                        try
-                        {
-                            result.DisplayIcon = logoPath;
-                            result.IconBitmap = DrawingTools.IconFromImage(new Bitmap(logoPath));
-                        }
-                        catch
-                        {
-                            result.DisplayIcon = null;
-                            result.IconBitmap = null;
-                        }
-                    }
-
-                    if (result.InstallLocation.StartsWith(windowsPath, StringComparison.InvariantCultureIgnoreCase))
-                    {
-                        result.SystemComponent = true;
-                        //result.IsProtected = true;
-                    }
-
-                    results.Add(result);
-                }
-                catch (Exception ex)
+                if (File.Exists(data["Logo"]))
                 {
-                    Trace.WriteLine($"[Factory] Failed to parse a Store app entry from helper output: {ex}");
+                    try
+                    {
+                        result.DisplayIcon = data["Logo"];
+                        result.IconBitmap = DrawingTools.IconFromImage(new Bitmap(data["Logo"]));
+                    }
+                    catch
+                    {
+                        result.DisplayIcon = null;
+                        result.IconBitmap = null;
+                    }
                 }
+
+                if (result.InstallLocation.StartsWith(windowsPath, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    result.SystemComponent = true;
+                    //result.IsProtected = true;
+                }
+
+                results.Add(result);
             }
 
             return results;
