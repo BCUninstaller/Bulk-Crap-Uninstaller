@@ -68,6 +68,7 @@ if errorlevel 1 (pause & exit /b 1)
 
 IF %config%==Release (del /f /s /q "%target%\*.pdb")
 
+echo ====== Publishing finished! ======
 pause
 exit /b 0
 
