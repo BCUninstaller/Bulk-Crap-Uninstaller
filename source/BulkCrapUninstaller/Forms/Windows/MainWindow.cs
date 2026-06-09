@@ -1435,8 +1435,7 @@ namespace BulkCrapUninstaller.Forms
             {
                 _setMan.LoadSorting();
 
-                var args = Environment.GetCommandLineArgs();
-                var dir = args.Skip(1).FirstOrDefault();
+                var dir = StartupArgumentTools.GetStartupUninstallListPath(Environment.GetCommandLineArgs());
                 if (!string.IsNullOrEmpty(dir))
                 {
                     try
