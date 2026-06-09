@@ -9,7 +9,6 @@ using System.Drawing;
 using BulkCrapUninstaller.Controls;
 using BulkCrapUninstaller.Properties;
 using UninstallTools;
-using UninstallToolsLocalisation = UninstallTools.Properties.Localisation;
 
 namespace BulkCrapUninstaller.Functions.ApplicationList
 {
@@ -51,7 +50,7 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             if (missingUninstaller)
                 return GetListLegendText("labelInvalid.Text", "Missing uninstaller");
 
-            return UninstallToolsLocalisation.Confidence_Good;
+            return "Good";
         }
 
         public static Color GetApplicationBackColor(ApplicationUninstallerEntry entry)
