@@ -3,10 +3,7 @@
     Apache License Version 2.0
 */
 
-using System;
-using System.ComponentModel;
 using System.Drawing;
-using BulkCrapUninstaller.Controls;
 using BulkCrapUninstaller.Properties;
 using UninstallTools;
 
@@ -14,8 +11,6 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 {
     internal static class ApplicationListConstants
     {
-        private static readonly ComponentResourceManager ListLegendResources = new(typeof(ListLegend));
-
         public static ApplicationListColors Colors => Settings.Default.MiscColorblind ? ApplicationListColors.ColorBlind : ApplicationListColors.Normal;
 
         public static string GetApplicationCertificateText(ApplicationUninstallerEntry entry)
@@ -23,18 +18,16 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             if (entry == null) return Localisable.Empty;
 
             if (!Settings.Default.AdvancedTestCertificates)
-                return Localisable.Empty;
+                return "Disabled";
 
             var result = entry.IsCertificateValid(true);
             if (!result.HasValue)
                 return "None";
 
-            return result.Value
-                ? GetListLegendText("labelVerified.Text", "Verified certificate")
-                : GetListLegendText("labelUnverified.Text", "Unverified certificate");
+            return result.Value ? "Verified" : "Unverified";
         }
 
-        public static string GetApplicationIntegrityText(ApplicationUninstallerEntry entry)
+        public static object GetApplicationIntegrityText(ApplicationUninstallerEntry entry)
         {
             if (entry == null) return Localisable.Empty;
 
@@ -42,13 +35,13 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             var missingUninstaller = !entry.IsValid;
 
             if (missingRegistry && missingUninstaller)
-                return "Missing uninstaller and registry";
+                return new[] { "No uninstaller", "No registry" };
 
             if (missingRegistry)
-                return "Missing registry";
+                return "No registry";
 
             if (missingUninstaller)
-                return GetListLegendText("labelInvalid.Text", "Missing uninstaller");
+                return "No uninstaller";
 
             return "Good";
         }
@@ -106,11 +99,6 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             }
 
             return Color.White;
-        }
-
-        private static string GetListLegendText(string resourceName, string fallback)
-        {
-            return ListLegendResources.GetString(resourceName) ?? fallback;
         }
     }
 }
