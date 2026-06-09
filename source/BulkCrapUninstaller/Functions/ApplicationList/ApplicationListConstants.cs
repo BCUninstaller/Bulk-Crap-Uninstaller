@@ -5,6 +5,7 @@
 
 using System.Drawing;
 using BulkCrapUninstaller.Properties;
+using Klocman.Resources;
 using UninstallTools;
 
 namespace BulkCrapUninstaller.Functions.ApplicationList
@@ -18,13 +19,13 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             if (entry == null) return Localisable.Empty;
 
             if (!Settings.Default.AdvancedTestCertificates)
-                return "Disabled";
+                return CommonStrings.Unknown;
 
             var result = entry.IsCertificateValid(true);
             if (!result.HasValue)
-                return "None";
-
-            return result.Value ? "Verified" : "Unverified";
+                return Localisable.CertificateColumn_NotFound;
+            
+            return result.Value ? Localisable.CertificateColumn_Verified : Localisable.CertificateColumn_Unverified;
         }
 
         public static object GetApplicationIntegrityText(ApplicationUninstallerEntry entry)
@@ -35,15 +36,15 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             var missingUninstaller = !entry.IsValid;
 
             if (missingRegistry && missingUninstaller)
-                return new[] { "No uninstaller", "No registry" };
+                return new[] { Localisable.IntegrityColumn_Invalid, Localisable.IntegrityColumn_Unregistered };
 
             if (missingRegistry)
-                return "No registry";
+                return Localisable.IntegrityColumn_Unregistered;
 
             if (missingUninstaller)
-                return "No uninstaller";
+                return Localisable.IntegrityColumn_Invalid;
 
-            return "Good";
+            return Localisable.IntegrityColumn_Good;
         }
 
         public static Color GetApplicationBackColor(ApplicationUninstallerEntry entry)
