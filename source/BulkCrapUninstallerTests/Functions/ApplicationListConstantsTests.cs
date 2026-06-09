@@ -1,5 +1,6 @@
 using BulkCrapUninstaller.Functions.ApplicationList;
 using BulkCrapUninstaller.Properties;
+using Klocman.Resources;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UninstallTools;
 
@@ -33,7 +34,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationCertificateText(entry);
 
-            Assert.AreEqual("None", result);
+            Assert.AreEqual(Localisable.CertificateColumn_NotFound, result);
         }
 
         [TestMethod]
@@ -47,7 +48,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationCertificateText(entry);
 
-            Assert.AreEqual("Verified certificate", result);
+            Assert.AreEqual(Localisable.CertificateColumn_Verified, result);
         }
 
         [TestMethod]
@@ -61,7 +62,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationCertificateText(entry);
 
-            Assert.AreEqual("Unverified certificate", result);
+            Assert.AreEqual(Localisable.CertificateColumn_Unverified, result);
         }
 
         [TestMethod]
@@ -75,7 +76,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationCertificateText(entry);
 
-            Assert.AreEqual(Localisable.Empty, result);
+            Assert.AreEqual(CommonStrings.Unknown, result);
         }
 
         [TestMethod]
@@ -103,7 +104,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationIntegrityText(entry);
 
-            Assert.AreEqual("Missing uninstaller", result);
+            Assert.AreEqual(Localisable.IntegrityColumn_Invalid, result);
         }
 
         [TestMethod]
@@ -117,7 +118,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationIntegrityText(entry);
 
-            Assert.AreEqual("Missing registry", result);
+            Assert.AreEqual(Localisable.IntegrityColumn_Unregistered, result);
         }
 
         [TestMethod]
@@ -132,7 +133,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationIntegrityText(entry);
 
-            Assert.AreEqual("Missing registry", result);
+            Assert.AreEqual(Localisable.IntegrityColumn_Unregistered, result);
         }
 
         [TestMethod]
@@ -146,7 +147,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationIntegrityText(entry);
 
-            Assert.AreEqual("Missing uninstaller and registry", result);
+            CollectionAssert.AreEqual(new[] { Localisable.IntegrityColumn_Invalid, Localisable.IntegrityColumn_Unregistered }, (object[])result);
         }
     }
 }
