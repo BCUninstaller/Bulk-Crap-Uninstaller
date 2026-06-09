@@ -354,8 +354,21 @@ namespace BulkCrapUninstaller.Forms
             _uninstallerListPostProcesser.Dispose();
         }
 
+        private static bool _certificateColumnWasEnabled = true;
         private void OnTestCertificatesChanged(object x, SettingChangedEventArgs<bool> y)
         {
+            if (!y.NewValue)
+            {
+                _certificateColumnWasEnabled = olvColumnCertificate.IsVisible;
+                olvColumnCertificate.IsVisible = false;
+                uninstallerObjectListView.RebuildColumns();
+            }
+            else
+            {
+                olvColumnCertificate.IsVisible = _certificateColumnWasEnabled;
+                uninstallerObjectListView.RebuildColumns();
+            }
+
             if (!_listView.FirstRefreshCompleted)
                 return;
             if (y.NewValue) _uninstallerListPostProcesser.StartProcessingThread(_listView.FilteredUninstallers);
@@ -1435,8 +1448,7 @@ namespace BulkCrapUninstaller.Forms
             {
                 _setMan.LoadSorting();
 
-                var args = Environment.GetCommandLineArgs();
-                var dir = args.Skip(1).FirstOrDefault();
+                var dir = StartupArgumentTools.GetStartupUninstallListPath(Environment.GetCommandLineArgs());
                 if (!string.IsNullOrEmpty(dir))
                 {
                     try

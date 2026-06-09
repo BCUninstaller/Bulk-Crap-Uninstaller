@@ -191,6 +191,50 @@ begin
 end;
 #endif
 
+// The same as CleanLogs.bat except ran at the end of uninstallation
+// TODO: Test, fix issues and enable
+//procedure DeinitializeUninstall();
+//var
+//  AppDataSafe: string;
+//  MicrosoftPath: string;
+//  SettingsDir: string;
+//  ResultCode: Integer;
+//  Cmd: string;
+//begin
+//  // Choose LOCALAPPDATA if available, otherwise fall back to APPDATA
+//  if DirExists(ExpandConstant('{localappdata}')) then
+//    AppDataSafe := ExpandConstant('{localappdata}')
+//  else
+//    AppDataSafe := ExpandConstant('{userappdata}');
+//
+//  // Delete .NET Assembly Usage Logs under %LOCALAPPDATA%\Microsoft (recursively)
+//  MicrosoftPath := AppDataSafe + '\\Microsoft';
+//  if DirExists(MicrosoftPath) then
+//  begin
+//    Cmd := '/C del /f /s BCUninstaller.exe.log SteamHelper.exe.log StoreAppHelper.exe.log UninstallerAutomatizer.exe.log UpdateHelper.exe.log';
+//    Exec(ExpandConstant('{cmd}'), Cmd, MicrosoftPath, SW_HIDE, ewWaitUntilTerminated, ResultCode);
+//  end;
+//
+//  // Remove settings directories created by .NET under %LOCALAPPDATA%\\Marcin_Szeniak\\BCUninstaller*
+//  SettingsDir := AppDataSafe + '\\Marcin_Szeniak';
+//  if DirExists(SettingsDir) then
+//  begin
+//    // Remove matching directories
+//    Cmd := '/C for /d %G in ("' + SettingsDir + '\\BCUninstaller*") do rd /s /q "%G"';
+//    Exec(ExpandConstant('{cmd}'), Cmd, '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+//
+//    // If the settings dir is now empty, remove it
+//    try
+//      if RemoveDir(SettingsDir) then
+//      begin
+//        // removed
+//      end;
+//    except
+//      // ignore
+//    end;
+//  end;
+//end;
+
 [CustomMessages] 
 en.MainFiles=Main Files
 pl.MainFiles=Główne pliki

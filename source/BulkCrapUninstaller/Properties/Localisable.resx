@@ -789,4 +789,22 @@ You can try disabling collision detection in the settings, but it is not recomme
   <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
     <value>This uninstaller kind does not support renaming ({0}).</value>
   </data>
+  <data name="CertificateColumn_NotFound" xml:space="preserve">
+    <value>Not found</value>
+  </data>
+  <data name="CertificateColumn_Verified" xml:space="preserve">
+    <value>Verified</value>
+  </data>
+  <data name="CertificateColumn_Unverified" xml:space="preserve">
+    <value>Unverified</value>
+  </data>
+  <data name="IntegrityColumn_Invalid" xml:space="preserve">
+    <value>No uninstaller</value>
+  </data>
+  <data name="IntegrityColumn_Unregistered" xml:space="preserve">
+    <value>No registry</value>
+  </data>
+  <data name="IntegrityColumn_Good" xml:space="preserve">
+    <value>Good</value>
+  </data>
 </root>

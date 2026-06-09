@@ -59,13 +59,22 @@ namespace UninstallTools.Factory
 
             foreach (var kvp in GetParentRegistryKeys())
             {
-                uninstallerRegistryKeys.AddRange(
-                    kvp.Key.GetSubKeyNames()
-                        .Select(subkeyName => OpenSubKeySafe(kvp.Key, subkeyName))
-                        .Where(subkey => subkey != null)
-                        .Select(subkey => new KeyValuePair<RegistryKey, bool>(subkey, kvp.Value)));
-
-                kvp.Key.Close();
+                try
+                {
+                    uninstallerRegistryKeys.AddRange(
+                        kvp.Key.GetSubKeyNames()
+                            .Select(subkeyName => OpenSubKeySafe(kvp.Key, subkeyName))
+                            .Where(subkey => subkey != null)
+                            .Select(subkey => new KeyValuePair<RegistryKey, bool>(subkey, kvp.Value)));
+                }
+                catch (Exception ex) when (ex is SecurityException or UnauthorizedAccessException or IOException)
+                {
+                    Trace.WriteLine($@"Failed to enumerate registry key {kvp.Key.Name} - {ex}");
+                }
+                finally
+                {
+                    kvp.Key.Close();
+                }
             }
 
             void WorkLogic(KeyValuePair<RegistryKey, bool> data, List<ApplicationUninstallerEntry> state)
@@ -259,6 +268,14 @@ namespace UninstallTools.Factory
                 return baseKey.OpenSubKey(name, writable);
             }
             catch (SecurityException)
+            {
+                return null;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return null;
+            }
+            catch (IOException)
             {
                 return null;
             }

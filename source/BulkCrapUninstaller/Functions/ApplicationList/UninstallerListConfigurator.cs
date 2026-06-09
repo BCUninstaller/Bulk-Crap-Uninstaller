@@ -201,6 +201,11 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             _reference.olvColumnSystemComponent.AspectToStringConverter = ListViewDelegates.BoolToYesNoAspectConverter;
             _reference.olvColumnSystemComponent.GroupKeyToTitleConverter = ListViewDelegates.BoolToYesNoAspectConverter;
 
+            _reference.olvColumnCertificate.AspectGetter = y => ApplicationListConstants.GetApplicationCertificateText(y as ApplicationUninstallerEntry);
+
+            _reference.olvColumnIntegrity.AspectGetter = y => ApplicationListConstants.GetApplicationIntegrityText(y as ApplicationUninstallerEntry);
+            _reference.olvColumnIntegrity.AspectToStringConverter = x => x is string[] arr ? string.Join(", ", arr) : x?.ToString();
+
             _reference.olvColumnIs64.AspectGetter =
                 y => (y as ApplicationUninstallerEntry)?.Is64Bit.GetLocalisedName();
 

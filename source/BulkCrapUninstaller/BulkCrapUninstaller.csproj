@@ -58,6 +58,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<InternalsVisibleTo Include="BulkCrapUninstallerTests" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
 	</ItemGroup>
 

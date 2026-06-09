@@ -199,6 +199,12 @@
   <data name="olvColumnPublisher.Width" type="System.Int32, mscorlib">
     <value>160</value>
   </data>
+  <data name="olvColumnCertificate.Text" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="olvColumnCertificate.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
   <data name="olvColumnRating.Text" xml:space="preserve">
     <value>User rating</value>
   </data>
@@ -265,6 +271,12 @@
   <data name="olvColumnSystemComponent.Width" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
+  <data name="olvColumnIntegrity.Text" xml:space="preserve">
+    <value>Integrity</value>
+  </data>
+  <data name="olvColumnIntegrity.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
   <data name="olvColumnProtected.Text" xml:space="preserve">
     <value>Protected</value>
   </data>
@@ -299,7 +311,7 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="uninstallerObjectListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 485</value>
+    <value>377, 482</value>
   </data>
   <data name="uninstallerObjectListView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -326,7 +338,7 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="listViewPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 487</value>
+    <value>379, 484</value>
   </data>
   <data name="listViewPanel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -365,7 +377,7 @@
     <value>5, 3, 5, 3</value>
   </data>
   <data name="treeMap1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 56</value>
+    <value>379, 59</value>
   </data>
   <data name="treeMap1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -398,7 +410,7 @@
     <value>379, 548</value>
   </data>
   <data name="splitContainerListAndMap.SplitterDistance" type="System.Int32, mscorlib">
-    <value>487</value>
+    <value>484</value>
   </data>
   <data name="splitContainerListAndMap.SplitterWidth" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2198,6 +2210,12 @@
   <data name="&gt;&gt;olvColumnPublisher.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;olvColumnCertificate.Name" xml:space="preserve">
+    <value>olvColumnCertificate</value>
+  </data>
+  <data name="&gt;&gt;olvColumnCertificate.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;olvColumnRating.Name" xml:space="preserve">
     <value>olvColumnRating</value>
   </data>
@@ -2268,6 +2286,12 @@
     <value>olvColumnSystemComponent</value>
   </data>
   <data name="&gt;&gt;olvColumnSystemComponent.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;olvColumnIntegrity.Name" xml:space="preserve">
+    <value>olvColumnIntegrity</value>
+  </data>
+  <data name="&gt;&gt;olvColumnIntegrity.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;olvColumnProtected.Name" xml:space="preserve">

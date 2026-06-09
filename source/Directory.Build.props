@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup>
-		<Version>6.1</Version>
+		<Version>6.2</Version>
 
 		<Authors>https://github.com/Klocman/Bulk-Crap-Uninstaller</Authors>
 		<Copyright>Copyright Apache-2.0 © 2026</Copyright>

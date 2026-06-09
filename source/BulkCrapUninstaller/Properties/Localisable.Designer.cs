@@ -61,6 +61,33 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Not found.
+        /// </summary>
+        internal static string CertificateColumn_NotFound {
+            get {
+                return ResourceManager.GetString("CertificateColumn_NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unverified.
+        /// </summary>
+        internal static string CertificateColumn_Unverified {
+            get {
+                return ResourceManager.GetString("CertificateColumn_Unverified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verified.
+        /// </summary>
+        internal static string CertificateColumn_Verified {
+            get {
+                return ResourceManager.GetString("CertificateColumn_Verified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Default.
         /// </summary>
         internal static string DefaultLanguage {
@@ -120,6 +147,33 @@ namespace BulkCrapUninstaller.Properties {
         internal static string GuidMissing {
             get {
                 return ResourceManager.GetString("GuidMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Good.
+        /// </summary>
+        internal static string IntegrityColumn_Good {
+            get {
+                return ResourceManager.GetString("IntegrityColumn_Good", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No uninstaller.
+        /// </summary>
+        internal static string IntegrityColumn_Invalid {
+            get {
+                return ResourceManager.GetString("IntegrityColumn_Invalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No registry.
+        /// </summary>
+        internal static string IntegrityColumn_Unregistered {
+            get {
+                return ResourceManager.GetString("IntegrityColumn_Unregistered", resourceCulture);
             }
         }
         
