@@ -1945,6 +1945,15 @@ namespace BulkCrapUninstaller.Properties {
                 return ResourceManager.GetString("UninstallProgressWindow_TaskDone", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Task finished. Close this window to continue; BCU may ask to scan for leftovers..
+        /// </summary>
+        internal static string UninstallProgressWindow_TaskDoneNextStep {
+            get {
+                return ResourceManager.GetString("UninstallProgressWindow_TaskDoneNextStep", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to Uninstalling.

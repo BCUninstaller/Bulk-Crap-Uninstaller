@@ -466,6 +466,10 @@ Vuoi utilizzare i disinstallatori guidati per questi elementi? O preferisci sian
     <value>Attività completata</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Attività completata. Chiudi questa finestra per continuare; BCU potrebbe chiedere di cercare residui.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>Disinstallazione</value>
     <comment>Shown on the status bar</comment>

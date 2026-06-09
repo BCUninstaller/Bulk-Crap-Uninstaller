@@ -464,6 +464,10 @@ Voulez-vous utiliser les désinstalleurs "causants" pour ces éléments, ou doiv
     <value>Tâche terminée</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Tâche terminée. Fermez cette fenêtre pour continuer ; BCU peut vous proposer de rechercher les résidus.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>Désinstallation</value>
     <comment>Shown on the status bar</comment>

@@ -466,6 +466,10 @@ Do you want to use "loud" uninstallers for those items, or should they be remove
     <value>Task finished</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Task finished. Close this window to continue; BCU may ask to scan for leftovers.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>Uninstalling</value>
     <comment>Shown on the status bar</comment>

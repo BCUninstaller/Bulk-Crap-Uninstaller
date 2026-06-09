@@ -466,6 +466,10 @@ Möchten Sie für diese Elemente die Standard Uninstaller verwenden oder sollen 
     <value>Task abgeschlossen</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Task abgeschlossen. Schließen Sie dieses Fenster, um fortzufahren; BCU fragt möglicherweise, ob nach Überresten gesucht werden soll.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>Deinstallation</value>
     <comment>Shown on the status bar</comment>

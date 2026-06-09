@@ -622,6 +622,10 @@ Van tijd tot tijd zou u moeten controleren of een van de de-installers niet is g
     <value>Taak voltooid</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Taak voltooid. Sluit dit venster om door te gaan; BCU kan vragen om naar restanten te zoeken.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>De-installatie</value>
     <comment>Shown on the status bar</comment>

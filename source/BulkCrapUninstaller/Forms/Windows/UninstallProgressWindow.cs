@@ -146,7 +146,7 @@ namespace BulkCrapUninstaller.Forms
                 {
                     _sleepTimePassed = 0;
                     if (_currentTargetStatus.Finished)
-                        label1.Text = Localisable.UninstallProgressWindow_TaskDone;
+                        label1.Text = Localisable.UninstallProgressWindow_TaskDoneNextStep;
                 }
             };
         }
@@ -217,7 +217,7 @@ namespace BulkCrapUninstaller.Forms
                 }
             }
 
-            label1.Text = Localisable.UninstallProgressWindow_TaskDone;
+            label1.Text = Localisable.UninstallProgressWindow_TaskDoneNextStep;
             progressBar1.Value = progressBar1.Maximum;
             buttonClose.Text = Buttons.ButtonClose;
             pictureBox1.Image = Resources.check;

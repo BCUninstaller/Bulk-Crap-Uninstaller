@@ -313,6 +313,10 @@ The lists are separated by a single newline.</comment>
     <value>Tarea finalizada</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Tarea finalizada. Cierre esta ventana para continuar; BCU puede preguntar si desea buscar restos.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>Desinstalando</value>
     <comment>Shown on the status bar</comment>
