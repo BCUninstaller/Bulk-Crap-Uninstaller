@@ -19,33 +19,39 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 
         public static ApplicationListColors Colors => Settings.Default.MiscColorblind ? ApplicationListColors.ColorBlind : ApplicationListColors.Normal;
 
-        public static string GetApplicationStatusText(ApplicationUninstallerEntry entry)
+        public static string GetApplicationCertificateText(ApplicationUninstallerEntry entry)
         {
             if (entry == null) return Localisable.Empty;
 
-            if (Settings.Default.AdvancedHighlightSpecial)
-            {
-                if (entry.UninstallerKind == UninstallerType.WindowsFeature)
-                    return entry.UninstallerKind.GetLocalisedName();
+            if (!Settings.Default.AdvancedTestCertificates)
+                return Localisable.Empty;
 
-                if (entry.UninstallerKind == UninstallerType.StoreApp)
-                    return entry.UninstallerKind.GetLocalisedName();
+            var result = entry.IsCertificateValid(true);
+            if (!result.HasValue)
+                return "None";
 
-                if (entry.IsOrphaned)
-                    return UninstallToolsLocalisation.IsOrphaned;
-            }
+            return result.Value
+                ? GetListLegendText("labelVerified.Text", "Verified certificate")
+                : GetListLegendText("labelUnverified.Text", "Unverified certificate");
+        }
 
-            if (!entry.IsValid && Settings.Default.AdvancedTestInvalid)
-                return UninstallToolsLocalisation.UninstallStatus_Invalid;
+        public static string GetApplicationIntegrityText(ApplicationUninstallerEntry entry)
+        {
+            if (entry == null) return Localisable.Empty;
 
-            if (Settings.Default.AdvancedTestCertificates)
-            {
-                var result = entry.IsCertificateValid(true);
-                if (result.HasValue)
-                    return result.Value ? GetListLegendText("labelVerified.Text", "Verified certificate") : GetListLegendText("labelUnverified.Text", "Unverified certificate");
-            }
+            var missingRegistry = entry.IsOrphaned || !entry.IsRegistered;
+            var missingUninstaller = !entry.IsValid;
 
-            return Localisable.Empty;
+            if (missingRegistry && missingUninstaller)
+                return "Missing uninstaller and registry";
+
+            if (missingRegistry)
+                return "Missing registry";
+
+            if (missingUninstaller)
+                return GetListLegendText("labelInvalid.Text", "Missing uninstaller");
+
+            return UninstallToolsLocalisation.Confidence_Good;
         }
 
         public static Color GetApplicationBackColor(ApplicationUninstallerEntry entry)

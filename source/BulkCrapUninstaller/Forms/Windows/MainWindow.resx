@@ -265,10 +265,16 @@
   <data name="olvColumnSystemComponent.Width" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="olvColumnStatus.Text" xml:space="preserve">
-    <value>Status</value>
+  <data name="olvColumnCertificate.Text" xml:space="preserve">
+    <value>Certificate</value>
   </data>
-  <data name="olvColumnStatus.Width" type="System.Int32, mscorlib">
+  <data name="olvColumnCertificate.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="olvColumnIntegrity.Text" xml:space="preserve">
+    <value>Integrity</value>
+  </data>
+  <data name="olvColumnIntegrity.Width" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
   <data name="olvColumnProtected.Text" xml:space="preserve">
@@ -2270,10 +2276,16 @@
   <data name="&gt;&gt;olvColumnSystemComponent.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;olvColumnStatus.Name" xml:space="preserve">
-    <value>olvColumnStatus</value>
+  <data name="&gt;&gt;olvColumnCertificate.Name" xml:space="preserve">
+    <value>olvColumnCertificate</value>
   </data>
-  <data name="&gt;&gt;olvColumnStatus.Type" xml:space="preserve">
+  <data name="&gt;&gt;olvColumnCertificate.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;olvColumnIntegrity.Name" xml:space="preserve">
+    <value>olvColumnIntegrity</value>
+  </data>
+  <data name="&gt;&gt;olvColumnIntegrity.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;olvColumnProtected.Name" xml:space="preserve">
