@@ -1904,5 +1904,42 @@ namespace BulkCrapUninstaller.Forms
         {
             uninstallerObjectListView.AutoResizeColumns();
         }
+
+        private void editCustomNoteMenuItem_Click(object sender, EventArgs e)
+        {
+            var selectedUninstallers = _listView.SelectedUninstallers.ToList();
+            if (selectedUninstallers.Count == 0) return;
+
+            string title;
+            string existingNote = string.Empty;
+
+            if (selectedUninstallers.Count == 1)
+            {
+                var entry = selectedUninstallers[0];
+                title = entry.DisplayName;
+                existingNote = entry.CustomNote;
+            }
+            else
+            {
+                title = $"{selectedUninstallers.Count} items";
+                var firstNote = selectedUninstallers[0].CustomNote ?? string.Empty;
+                if (selectedUninstallers.All(x => (x.CustomNote ?? string.Empty) == firstNote))
+                {
+                    existingNote = firstNote;
+                }
+            }
+
+            using (var dialog = new BulkCrapUninstaller.Forms.CustomNoteDialog(title, existingNote))
+            {
+                if (dialog.ShowDialog(this) == DialogResult.OK)
+                {
+                    foreach (var entry in selectedUninstallers)
+                    {
+                        entry.CustomNote = dialog.NoteText;
+                    }
+                    this.uninstallerObjectListView.RefreshObjects(selectedUninstallers);
+                }
+            }
+        }
     }
 }

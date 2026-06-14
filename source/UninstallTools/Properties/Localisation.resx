@@ -587,4 +587,7 @@
   <data name="Confidence_DirectlyInsideKnownFolder" xml:space="preserve">
     <value>Located directly inside a Known Folder</value>
   </data>
+  <data name="CustomNote" xml:space="preserve">
+    <value>Custom Note</value>
+  </data>
 </root>

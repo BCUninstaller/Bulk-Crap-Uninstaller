@@ -1445,5 +1445,14 @@ namespace UninstallTools.Properties {
                 return ResourceManager.GetString("UninstallString", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Note.
+        /// </summary>
+        internal static string CustomNote {
+            get {
+                return ResourceManager.GetString("CustomNote", resourceCulture);
+            }
+        }
     }
 }

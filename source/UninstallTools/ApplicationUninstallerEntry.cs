@@ -117,6 +117,14 @@ namespace UninstallTools
         [LocalisedName(typeof(Localisation), nameof(Localisation.Comment))]
         public string Comment { get; set; }
 
+        [XmlIgnore]
+        [LocalisedName(typeof(Localisation), nameof(Localisation.CustomNote))]
+        public string CustomNote
+        {
+            get => CustomNotesManager.GetNote(GetCacheId());
+            set => CustomNotesManager.SetNote(GetCacheId(), value);
+        }
+
         [LocalisedName(typeof(Localisation), nameof(Localisation.DisplayIcon))]
         public string DisplayIcon
         {
