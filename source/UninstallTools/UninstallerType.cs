@@ -37,6 +37,8 @@ namespace UninstallTools
         [LocalisedName(typeof(Localisation), "UninstallerType_Oculus")]
         Oculus,
         [LocalisedName(typeof(Localisation), nameof(Localisation.UninstallerType_PowerShell))]
-        PowerShell
+        PowerShell,
+        [LocalisedName(typeof(Localisation), nameof(Localisation.UninstallerType_Squirrel))]
+        Squirrel
     }
 }

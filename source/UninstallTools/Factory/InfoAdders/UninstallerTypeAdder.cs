@@ -72,6 +72,14 @@ namespace UninstallTools.Factory.InfoAdders
                 uninstallString.Contains(".ps1", StringComparison.OrdinalIgnoreCase))
                 return UninstallerType.PowerShell;
 
+            // Detect Squirrel / Electron auto-updater installs
+            // e.g. "C:\Users\<u>\AppData\Local\<Vendor>\<App>\Update.exe --uninstall -s"
+            // Discord, GitHub Desktop, Slack (classic), Teams (classic), many Electron apps
+            if (uninstallString.Contains("Update.exe", StringComparison.OrdinalIgnoreCase)
+                && uninstallString.Contains("--uninstall", StringComparison.OrdinalIgnoreCase)
+                && uninstallString.Contains(@"\AppData\Local\", StringComparison.OrdinalIgnoreCase))
+                return UninstallerType.Squirrel;
+
             if (ProcessStartCommand.TryParse(uninstallString, out var ps) 
                 && Path.IsPathRooted(ps.FileName) 
                 && File.Exists(ps.FileName))

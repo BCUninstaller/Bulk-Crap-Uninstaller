@@ -574,6 +574,9 @@
   <data name="UninstallerType_PowerShell" xml:space="preserve">
     <value>PowerShell script</value>
   </data>
+  <data name="UninstallerType_Squirrel" xml:space="preserve">
+    <value>Squirrel (Electron)</value>
+  </data>
   <data name="Junk_DebugTracing_GroupName" xml:space="preserve">
     <value>Debug Tracing/Logging Configuration</value>
   </data>
