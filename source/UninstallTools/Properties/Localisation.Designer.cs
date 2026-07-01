@@ -1238,6 +1238,15 @@ namespace UninstallTools.Properties {
                 return ResourceManager.GetString("UninstallerType_PowerShell", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Squirrel (Electron).
+        /// </summary>
+        internal static string UninstallerType_Squirrel {
+            get {
+                return ResourceManager.GetString("UninstallerType_Squirrel", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to SDBInst.
