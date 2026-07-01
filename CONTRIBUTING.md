@@ -18,12 +18,12 @@ Translations are stored in .resx files (almost all except for Resources.resx). I
 3. Run the ResxTranslator and click "File > Open directory". Point it to the extracted translation pack or clone of your branch.
 4. Click on any of the items in the left tree, it will open on the right. You will need to translate all of those items, most are quite small.
 5. Put the translation into the column marked with your language's code. For example, if you are translating to German use the "de" column.
-5. - For a list of all language codes click "Languages > Add > More Languages". If possible, use only neutral languages.
+6. - For a list of all language codes click "Languages > Add > More Languages". If possible, use only neutral languages.
    - If possible, use a more general locale. For example try using "en" or "ru" instead of "en-GB" or "ru-RU".
    - If the column doesn't exist, click "Languages > Add > Your Code". If your code is not available, click "More Languages". 
    - You can hide columns for different languages using the checkboxes below the list.
-6. Once in a while click "File > Save all modified" (or ctrl+s) to save your work in case something crashes.
-7. Create a pull request or compress the folder you just modified to a .zip and send it back to me. If you don't have my e-mailaddress you can use the [feedback form](http://klocmansoftware.weebly.com/feedback--contact.html).
+7. Once in a while click "File > Save all modified" (or ctrl+s) to save your work in case something crashes.
+8. Create a pull request or compress the folder you just modified to a .zip and send it back to me. If you don't have my e-mail address you can use the [feedback form](http://klocmansoftware.weebly.com/feedback--contact.html).
 
 ## How to contribute code
 The best way is to push any changes you wish to make to your fork of this repository and then start a Pull Request.
