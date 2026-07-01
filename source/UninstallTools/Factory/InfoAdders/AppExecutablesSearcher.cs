@@ -77,7 +77,8 @@ namespace UninstallTools.Factory.InfoAdders
 
         internal static ScanDirectoryResult ScanDirectory(DirectoryInfo directory)
         {
-            var results = new List<FileInfo>(directory.GetFiles("*.exe", SearchOption.TopDirectoryOnly));
+            var results = new List<FileInfo>(directory.GetFiles("*.exe", SearchOption.TopDirectoryOnly)
+                .Where(f => (f.Attributes & FileAttributes.ReparsePoint) == 0));
             var binSubdirs = new List<DirectoryInfo>();
             var otherSubdirs = new List<DirectoryInfo>();
             var maybeSubdirs = new List<DirectoryInfo>();
@@ -85,11 +86,18 @@ namespace UninstallTools.Factory.InfoAdders
             {
                 try
                 {
+                    // Skip symlinks / junctions / other reparse points to prevent
+                    // duplicate entries and infinite recursion when a link points
+                    // back inside the scan tree (issue #690).
+                    if ((subdir.Attributes & FileAttributes.ReparsePoint) != 0)
+                        continue;
+
                     var subName = subdir.Name;
                     if (subName.StartsWithAny(BinaryDirectoryNames, StringComparison.OrdinalIgnoreCase))
                     {
                         binSubdirs.Add(subdir);
-                        results.AddRange(subdir.GetFiles("*.exe", SearchOption.TopDirectoryOnly));
+                        results.AddRange(subdir.GetFiles("*.exe", SearchOption.TopDirectoryOnly)
+                            .Where(f => (f.Attributes & FileAttributes.ReparsePoint) == 0));
                     }
                     else
                     {
