@@ -19,7 +19,7 @@ param(
 $ErrorActionPreference = "Stop"
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RepoRoot = Split-Path -Parent $ScriptDir
-$SolutionPath = if (Test-Path (Join-Path $RepoRoot "source\EBUninstaller.sln")) { Join-Path $RepoRoot "source\EBUninstaller.sln" } else { Join-Path $RepoRoot "source\BulkCrapUninstaller.sln" }
+$SolutionPath = if (Test-Path (Join-Path $RepoRoot "source\EBUninstaller.sln")) { Join-Path $RepoRoot "source\EBUninstaller.sln" } else { Join-Path $RepoRoot "source\EBUninstaller.sln" }
 $OutputDir = Join-Path $RepoRoot "bin\$Configuration\AnyCPU"
 $BuildDir = Join-Path $RepoRoot "build"
 

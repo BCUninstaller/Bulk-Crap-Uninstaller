@@ -8,7 +8,7 @@ echo =================================================================
 set "CONFIG=Release"
 set "REPO_ROOT=%~dp0"
 set "SOLUTION=%REPO_ROOT%source\EBUninstaller.sln"
-if not exist "%SOLUTION%" set "SOLUTION=%REPO_ROOT%source\BulkCrapUninstaller.sln"
+if not exist "%SOLUTION%" set "SOLUTION=%REPO_ROOT%source\EBUninstaller.sln"
 set "BUILD_DIR=%REPO_ROOT%build"
 set "BIN_DIR=%REPO_ROOT%bin\Release\AnyCPU"
 

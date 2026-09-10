@@ -48,10 +48,10 @@ cd Bulk-Crap-Uninstaller
 ### 2. Build via .NET CLI
 ```powershell
 # Restore NuGet dependencies
-dotnet restore source\BulkCrapUninstaller.sln
+dotnet restore source\EBUninstaller.sln
 
 # Build Release binaries for AnyCPU
-dotnet build source\BulkCrapUninstaller.sln -c Release /p:Platform="AnyCPU"
+dotnet build source\EBUninstaller.sln -c Release /p:Platform="AnyCPU"
 ```
 
 ### 3. Build via Automated Scripts

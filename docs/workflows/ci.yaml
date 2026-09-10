@@ -29,10 +29,10 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Restore NuGet Packages
-        run: dotnet restore source\BulkCrapUninstaller.sln
+        run: dotnet restore source\EBUninstaller.sln
 
       - name: Build Solution (Release)
-        run: dotnet build source\BulkCrapUninstaller.sln --configuration Release -p:Platform="Any CPU" -p:Version="7.0.0"
+        run: dotnet build source\EBUninstaller.sln --configuration Release -p:Platform="Any CPU" -p:Version="7.0.0"
 
       - name: Run Test Suite
         run: dotnet test source\BulkCrapUninstallerTests\BulkCrapUninstallerTests.csproj --configuration Release --no-build --logger "console;verbosity=normal"

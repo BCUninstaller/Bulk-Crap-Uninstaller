@@ -80,7 +80,7 @@ if command -v dotnet &> /dev/null; then
     echo "[1/4] Compiling EBUninstaller Pro solution with dotnet CLI..."
     SLN_FILE="$REPO_ROOT/source/EBUninstaller.sln"
     if [ ! -f "$SLN_FILE" ]; then
-        SLN_FILE="$REPO_ROOT/source/BulkCrapUninstaller.sln"
+        SLN_FILE="$REPO_ROOT/source/EBUninstaller.sln"
     fi
     dotnet build "$SLN_FILE" \
         --configuration "$CONFIG" \

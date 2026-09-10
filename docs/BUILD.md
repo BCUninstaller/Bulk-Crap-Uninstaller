@@ -17,21 +17,21 @@ This document describes how to build EBUninstaller Pro from source.
 
 ### Build Debug Configuration
 ```bash
-dotnet build source/BulkCrapUninstaller.sln -c Debug
+dotnet build source/EBUninstaller.sln -c Debug
 ```
 
 ### Build Release Configuration
 ```bash
-dotnet build source/BulkCrapUninstaller.sln -c Release /p:Platform=AnyCPU
+dotnet build source/EBUninstaller.sln -c Release /p:Platform=AnyCPU
 ```
 
 ### Build for Specific Architectures
 ```bash
 # x64 Release Build
-dotnet build source/BulkCrapUninstaller.sln -c Release /p:Platform=x64
+dotnet build source/EBUninstaller.sln -c Release /p:Platform=x64
 
 # ARM64 Release Build
-dotnet build source/BulkCrapUninstaller.sln -c Release /p:Platform=ARM64
+dotnet build source/EBUninstaller.sln -c Release /p:Platform=ARM64
 ```
 
 ---
