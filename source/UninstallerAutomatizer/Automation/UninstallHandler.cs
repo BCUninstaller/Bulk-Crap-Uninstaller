@@ -104,7 +104,7 @@ namespace UninstallerAutomatizer
             IsDaemon = true;
             OnStatusUpdate(new UninstallHandlerUpdateArgs(UninstallHandlerUpdateKind.Normal, Localization.UninstallHandler_StartDaemon));
 
-            _automationThread = new Thread(DaemonThread) { Name = "AutomationThread", IsBackground = false, Priority = ThreadPriority.AboveNormal };
+            _automationThread = new Thread(DaemonThread) { Name = "AutomationThread", IsBackground = true, Priority = ThreadPriority.AboveNormal };
             _automationThread.Start();
         }
 
@@ -117,27 +117,28 @@ namespace UninstallerAutomatizer
         {
             try
             {
-                using (var server = new NamedPipeServerStream("UninstallAutomatizerDaemon", PipeDirection.In))
-                using (var reader = new StreamReader(server))
+                while (true)
                 {
-                    while (true)
+                    using (var server = new NamedPipeServerStream("UninstallAutomatizerDaemon", PipeDirection.In))
                     {
                         server.WaitForConnection();
-                        Debug.WriteLine("Client connected through pipe");
-                        while (true)
+                        using (var reader = new StreamReader(server))
                         {
-                            var line = reader.ReadLine()?.ToLowerInvariant();
-
-                            Debug.WriteLine("Received through pipe: " + (line ?? "NULL"));
-
-                            if (line == null)
+                            Debug.WriteLine("Client connected through pipe");
+                            while (true)
                             {
-                                Thread.Sleep(500);
-                                continue;
-                            }
+                                var line = reader.ReadLine()?.ToLowerInvariant();
 
-                            if (line == "stop")
-                                return;
+                                Debug.WriteLine("Received through pipe: " + (line ?? "NULL"));
+
+                                if (line == null)
+                                {
+                                    Debug.WriteLine("Client disconnected from pipe");
+                                    break;
+                                }
+
+                                if (line == "stop")
+                                    return;
 
                             int pid;
                             if (!int.TryParse(line, out pid))

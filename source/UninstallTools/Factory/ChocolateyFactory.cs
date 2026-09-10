@@ -1,4 +1,4 @@
-﻿using Klocman.Tools;
+using Klocman.Tools;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -66,17 +66,17 @@ namespace UninstallTools.Factory
             if (string.IsNullOrEmpty(result)) return results;
 
             var re = new System.Text.RegularExpressions.Regex(@"\n\w.+\r\n Title:");
-            var match = re.Match(result);
-            if (!match.Success) return results;
-            var begin = match.Index + 1;
+            var matches = re.Matches(result);
+            if (matches.Count == 0) return results;
 
-            while (true)
+            for (var idx = 0; idx < matches.Count; idx++)
             {
-                match = match.NextMatch();
-                if (!match.Success) break;
-                var end = match.Index + 1;
+                var begin = matches[idx].Index + 1;
+                var end = idx + 1 < matches.Count ? matches[idx + 1].Index + 1 : result.Length;
                 var info = result.Substring(begin, end - begin);
                 int i = info.IndexOf(' '), j = info.IndexOf("\r\n", StringComparison.Ordinal);
+                if (i <= 0 || j <= i) continue;
+
                 var appName = new { name = info.Substring(0, i), version = info.Substring(i + 1, j - i - 1) };
 
                 var kvps = ExtractPackageInformation(info);
@@ -121,7 +121,6 @@ namespace UninstallTools.Factory
                 entry.AdditionalJunk.Add(junk);
 
                 results.Add(entry);
-                begin = end;
             }
 
             return results;
@@ -160,7 +159,7 @@ namespace UninstallTools.Factory
                 .Select(x => x.TrimStart())
                 .SelectMany(x => x.Split(new[] { " | " }, StringSplitOptions.None));
 
-            var kvps = new Dictionary<string, string>();
+            var kvps = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             foreach (var line in lines)
             {
                 var i = line.IndexOf(": ", StringComparison.Ordinal);
@@ -170,7 +169,7 @@ namespace UninstallTools.Factory
                 var val = line.Substring(i + 2);
                 if (string.IsNullOrEmpty(key) || string.IsNullOrEmpty(val)) continue;
 
-                kvps.Add(key, val);
+                kvps[key] = val;
             }
 
             return kvps;
