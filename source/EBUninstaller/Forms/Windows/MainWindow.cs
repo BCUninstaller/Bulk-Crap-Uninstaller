@@ -2050,6 +2050,7 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Software Environment Variables Residuals Cleaner...", null, (s, e) => OpenEnvVarResidualsCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Kernel LiveDumps & Crash Dump Residuals Cleaner...", null, (s, e) => OpenKernelLiveDumpCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Delivery Optimization & Package Cache Cleaner...", null, (s, e) => OpenDeliveryOptimizationCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Font Cache & Stale Font Registrations...", null, (s, e) => OpenFontCacheCleaner()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2077,6 +2078,8 @@ namespace BulkCrapUninstaller.Forms
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Startup Staggering & Delayed Execution Manager...", null, (s, e) => OpenStartupStagger()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Exploit Guard & Process Mitigation Auditor...", null, (s, e) => OpenExploitGuardAuditor()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Scheduled Tasks Orphan & Residuals Cleaner...", null, (s, e) => OpenScheduledTaskOrphanCleaner()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Virtual Network Adapters & VPN TAP/TUN Auditor...", null, (s, e) => OpenVirtualAdapterAuditor()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Background Intelligent Transfer (BITS) Queue Cleaner...", null, (s, e) => OpenBitsQueueCleaner()));
 
                 // Group 5: Backup, Security & Audit
                 var menuBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
@@ -2088,6 +2091,7 @@ namespace BulkCrapUninstaller.Forms
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Operation History & Audit Log...", null, (s, e) => OpenOperationHistory()));
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Administrative Tools Hub...", null, (s, e) => OpenWindowsTools()));
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Defender & Security Exclusions Auditor...", null, (s, e) => OpenSecurityExclusionsAuditor()));
+                menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Certificate Store Residuals & Expired Certs...", null, (s, e) => OpenCertStoreCleaner()));
 
                 proDropDown.DropDownItems.AddRange(new ToolStripItem[]
                 {
@@ -2146,6 +2150,7 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Software Environment Variables Residuals Cleaner...", null, (s, e) => OpenEnvVarResidualsCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Kernel LiveDumps & Crash Dump Residuals Cleaner...", null, (s, e) => OpenKernelLiveDumpCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Delivery Optimization & Package Cache Cleaner...", null, (s, e) => OpenDeliveryOptimizationCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Font Cache & Stale Font Registrations...", null, (s, e) => OpenFontCacheCleaner()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2171,6 +2176,8 @@ namespace BulkCrapUninstaller.Forms
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Startup Staggering & Delayed Execution Manager...", null, (s, e) => OpenStartupStagger()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Exploit Guard & Process Mitigation Auditor...", null, (s, e) => OpenExploitGuardAuditor()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Scheduled Tasks Orphan & Residuals Cleaner...", null, (s, e) => OpenScheduledTaskOrphanCleaner()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Virtual Network Adapters & VPN TAP/TUN Auditor...", null, (s, e) => OpenVirtualAdapterAuditor()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Background Intelligent Transfer (BITS) Queue Cleaner...", null, (s, e) => OpenBitsQueueCleaner()));
 
                     var tmBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Backup & Recovery Center...", null, (s, e) => OpenBackupManager()));
@@ -2181,6 +2188,7 @@ namespace BulkCrapUninstaller.Forms
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Operation History & Audit Log...", null, (s, e) => OpenOperationHistory()));
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Administrative Tools Hub...", null, (s, e) => OpenWindowsTools()));
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Defender & Security Exclusions Auditor...", null, (s, e) => OpenSecurityExclusionsAuditor()));
+                    tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Certificate Store Residuals & Expired Certs...", null, (s, e) => OpenCertStoreCleaner()));
 
                     toolsToolStripMenuItem.DropDownItems.Insert(0, new ToolStripMenuItem("Quick System Optimization Wizard...", null, (s, e) => OpenOptimizationWizard()));
                     toolsToolStripMenuItem.DropDownItems.Insert(1, tmHealth);
@@ -2736,6 +2744,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenScheduledTaskOrphanCleaner()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.ScheduledTaskOrphanCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenFontCacheCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.FontCacheCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenVirtualAdapterAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.VirtualAdapterAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenBitsQueueCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.BitsQueueCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenCertStoreCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.CertStoreOrphanCleanerWindow();
             dlg.ShowDialog(this);
         }
         #endregion
