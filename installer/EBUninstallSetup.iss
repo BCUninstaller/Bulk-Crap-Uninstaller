@@ -54,6 +54,9 @@ Name: "polish"; MessagesFile: "compiler:Languages\Polish.isl"
 Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Name: "arabic"; MessagesFile: "lang\Arabic.isl"
 Name: "chinesesimplified"; MessagesFile: "lang\ChineseSimplified.isl"
+Name: "ukrainian"; MessagesFile: "lang\Ukrainian.isl"
+Name: "vietnamese"; MessagesFile: "lang\Vietnamese.isl"
+Name: "hindi"; MessagesFile: "lang\Hindi.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
