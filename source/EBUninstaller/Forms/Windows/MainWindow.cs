@@ -2023,6 +2023,7 @@ namespace BulkCrapUninstaller.Forms
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Code Signing & Certificate Revocation Auditor...", null, (s, e) => OpenCertificateRevocationAuditor()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("BSOD BugCheck & Kernel Crash Dump Analyzer...", null, (s, e) => OpenBsodCrashAnalyzer()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Power, Wake Lock & Battery Impact Profiler...", null, (s, e) => OpenSoftwarePowerImpact()));
+                menuHealth.DropDownItems.Add(new ToolStripMenuItem("Active Network Sockets & Port Security Auditor...", null, (s, e) => OpenSocketHealthAuditor()));
 
                 // Group 2: Deep System Cleaning & Residuals
                 var menuCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
@@ -2043,6 +2044,9 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Diagnostic Data & Telemetry Logs Cleaner...", null, (s, e) => OpenDiagnosticDataCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Firewall Orphaned Rules Cleaner...", null, (s, e) => OpenFirewallOrphanCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell Icon & Thumbnail Database Rebuilder...", null, (s, e) => OpenIconThumbnailRebuilder()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("DCOM & Component Services Orphan Cleaner...", null, (s, e) => OpenDcomOrphanCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Print Spooler Residuals Cleaner...", null, (s, e) => OpenPrintSpoolerCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Software Environment Variables Residuals Cleaner...", null, (s, e) => OpenEnvVarResidualsCleaner()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2112,6 +2116,7 @@ namespace BulkCrapUninstaller.Forms
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Code Signing & Certificate Revocation Auditor...", null, (s, e) => OpenCertificateRevocationAuditor()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("BSOD BugCheck & Kernel Crash Dump Analyzer...", null, (s, e) => OpenBsodCrashAnalyzer()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Power, Wake Lock & Battery Impact Profiler...", null, (s, e) => OpenSoftwarePowerImpact()));
+                    tmHealth.DropDownItems.Add(new ToolStripMenuItem("Active Network Sockets & Port Security Auditor...", null, (s, e) => OpenSocketHealthAuditor()));
 
                     var tmCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("System Junk Cleaner...", null, (s, e) => OpenJunkCleaner()));
@@ -2131,6 +2136,9 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Diagnostic Data & Telemetry Logs Cleaner...", null, (s, e) => OpenDiagnosticDataCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Firewall Orphaned Rules Cleaner...", null, (s, e) => OpenFirewallOrphanCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell Icon & Thumbnail Database Rebuilder...", null, (s, e) => OpenIconThumbnailRebuilder()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("DCOM & Component Services Orphan Cleaner...", null, (s, e) => OpenDcomOrphanCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Print Spooler Residuals Cleaner...", null, (s, e) => OpenPrintSpoolerCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Software Environment Variables Residuals Cleaner...", null, (s, e) => OpenEnvVarResidualsCleaner()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2672,6 +2680,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenIconThumbnailRebuilder()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.IconThumbnailRebuilderWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenDcomOrphanCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.DcomOrphanCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenPrintSpoolerCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.PrintSpoolerCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenSocketHealthAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.SocketHealthAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenEnvVarResidualsCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.EnvVarResidualsCleanerWindow();
             dlg.ShowDialog(this);
         }
         #endregion
