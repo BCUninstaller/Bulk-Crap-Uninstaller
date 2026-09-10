@@ -2061,6 +2061,9 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("DirectX & GPU Shader Cache Cleaner...", null, (s, e) => OpenDirectXShaderCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Virtual Memory Pagefile Diagnostics & Security...", null, (s, e) => OpenPagingFileDiagnostics()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("DirectShow & Media Foundation Codec Residuals...", null, (s, e) => OpenMediaCodecAuditor()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Action Center Toast Notification Cache...", null, (s, e) => OpenToastNotificationCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Customer Experience (CEIP) & SQM Telemetry...", null, (s, e) => OpenCeipTelemetryCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("BranchCache & Peer Distribution Cache...", null, (s, e) => OpenBranchCacheCleaner()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2094,6 +2097,7 @@ namespace BulkCrapUninstaller.Forms
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Winsock NameSpace & LSP Providers Auditor...", null, (s, e) => OpenWinsockNamespaceCleaner()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Bluetooth & Wireless Device Pairing Residuals...", null, (s, e) => OpenBluetoothPairingCleaner()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Firewall Port Matrix & Public Exposure Auditor...", null, (s, e) => OpenFirewallPortMatrix()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("COM+ Applications & Component Services...", null, (s, e) => OpenComPlusCatalogAuditor()));
 
                 // Group 5: Backup, Security & Audit
                 var menuBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
@@ -2177,6 +2181,9 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("DirectX & GPU Shader Cache Cleaner...", null, (s, e) => OpenDirectXShaderCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Virtual Memory Pagefile Diagnostics & Security...", null, (s, e) => OpenPagingFileDiagnostics()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("DirectShow & Media Foundation Codec Residuals...", null, (s, e) => OpenMediaCodecAuditor()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Action Center Toast Notification Cache...", null, (s, e) => OpenToastNotificationCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Customer Experience (CEIP) & SQM Telemetry...", null, (s, e) => OpenCeipTelemetryCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("BranchCache & Peer Distribution Cache...", null, (s, e) => OpenBranchCacheCleaner()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2208,6 +2215,7 @@ namespace BulkCrapUninstaller.Forms
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Winsock NameSpace & LSP Providers Auditor...", null, (s, e) => OpenWinsockNamespaceCleaner()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Bluetooth & Wireless Device Pairing Residuals...", null, (s, e) => OpenBluetoothPairingCleaner()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Firewall Port Matrix & Public Exposure Auditor...", null, (s, e) => OpenFirewallPortMatrix()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("COM+ Applications & Component Services...", null, (s, e) => OpenComPlusCatalogAuditor()));
 
                     var tmBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Backup & Recovery Center...", null, (s, e) => OpenBackupManager()));
@@ -2896,6 +2904,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenRestorePointQuota()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.RestorePointQuotaWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenToastNotificationCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.ToastNotificationCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenCeipTelemetryCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.CeipTelemetryCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenComPlusCatalogAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.ComPlusCatalogAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenBranchCacheCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.BranchCacheCleanerWindow();
             dlg.ShowDialog(this);
         }
         #endregion
