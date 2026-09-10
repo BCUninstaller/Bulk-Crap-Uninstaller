@@ -2020,6 +2020,7 @@ namespace BulkCrapUninstaller.Forms
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Real-Time Software Network & Port Monitor...", null, (s, e) => OpenSoftwareNetworkMonitor()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("System Health Scorecard & Metrics...", null, (s, e) => OpenSystemHealthScorecard()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Stability & Crash History Monitor...", null, (s, e) => OpenSoftwareCrashHistory()));
+                menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Code Signing & Certificate Revocation Auditor...", null, (s, e) => OpenCertificateRevocationAuditor()));
 
                 // Group 2: Deep System Cleaning & Residuals
                 var menuCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
@@ -2036,6 +2037,7 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shortcut Residuals & Broken Links...", null, (s, e) => OpenShortcutResiduals()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shared DLL Reference Auditor...", null, (s, e) => OpenSharedDllAuditor()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Environment PATH Health Auditor & Optimizer...", null, (s, e) => OpenPathEnvironmentAuditor()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Storage Drive TRIM & Media Optimizer...", null, (s, e) => OpenDriveOptimization()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2058,6 +2060,7 @@ namespace BulkCrapUninstaller.Forms
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Telemetry & Privacy Hardening...", null, (s, e) => OpenWindowsTelemetry()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("WSL Distribution Manager...", null, (s, e) => OpenWslManager()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Services Conflict & Port Collision Detector...", null, (s, e) => OpenServiceConflictDetector()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Startup Staggering & Delayed Execution Manager...", null, (s, e) => OpenStartupStagger()));
 
                 // Group 5: Backup, Security & Audit
                 var menuBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
@@ -2068,6 +2071,7 @@ namespace BulkCrapUninstaller.Forms
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Secure File & Folder Shredder...", null, (s, e) => OpenSecureDelete()));
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Operation History & Audit Log...", null, (s, e) => OpenOperationHistory()));
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Administrative Tools Hub...", null, (s, e) => OpenWindowsTools()));
+                menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Defender & Security Exclusions Auditor...", null, (s, e) => OpenSecurityExclusionsAuditor()));
 
                 proDropDown.DropDownItems.AddRange(new ToolStripItem[]
                 {
@@ -2097,6 +2101,7 @@ namespace BulkCrapUninstaller.Forms
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Real-Time Software Network & Port Monitor...", null, (s, e) => OpenSoftwareNetworkMonitor()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("System Health Scorecard & Metrics...", null, (s, e) => OpenSystemHealthScorecard()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Stability & Crash History Monitor...", null, (s, e) => OpenSoftwareCrashHistory()));
+                    tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Code Signing & Certificate Revocation Auditor...", null, (s, e) => OpenCertificateRevocationAuditor()));
 
                     var tmCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("System Junk Cleaner...", null, (s, e) => OpenJunkCleaner()));
@@ -2112,6 +2117,7 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shortcut Residuals & Broken Links...", null, (s, e) => OpenShortcutResiduals()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shared DLL Reference Auditor...", null, (s, e) => OpenSharedDllAuditor()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Environment PATH Health Auditor & Optimizer...", null, (s, e) => OpenPathEnvironmentAuditor()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Storage Drive TRIM & Media Optimizer...", null, (s, e) => OpenDriveOptimization()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2132,6 +2138,7 @@ namespace BulkCrapUninstaller.Forms
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Telemetry & Privacy Hardening...", null, (s, e) => OpenWindowsTelemetry()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("WSL Distribution Manager...", null, (s, e) => OpenWslManager()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Services Conflict & Port Collision Detector...", null, (s, e) => OpenServiceConflictDetector()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Startup Staggering & Delayed Execution Manager...", null, (s, e) => OpenStartupStagger()));
 
                     var tmBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Backup & Recovery Center...", null, (s, e) => OpenBackupManager()));
@@ -2141,6 +2148,7 @@ namespace BulkCrapUninstaller.Forms
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Secure File & Folder Shredder...", null, (s, e) => OpenSecureDelete()));
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Operation History & Audit Log...", null, (s, e) => OpenOperationHistory()));
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Administrative Tools Hub...", null, (s, e) => OpenWindowsTools()));
+                    tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Defender & Security Exclusions Auditor...", null, (s, e) => OpenSecurityExclusionsAuditor()));
 
                     toolsToolStripMenuItem.DropDownItems.Insert(0, new ToolStripMenuItem("Quick System Optimization Wizard...", null, (s, e) => OpenOptimizationWizard()));
                     toolsToolStripMenuItem.DropDownItems.Insert(1, tmHealth);
@@ -2576,6 +2584,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenSoftwareUpdateDiffer()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.SoftwareUpdateDifferWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenSecurityExclusionsAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.SecurityExclusionsAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenDriveOptimization()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.DriveOptimizationWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenStartupStagger()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.StartupStaggerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenCertificateRevocationAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.CertificateRevocationAuditorWindow(_listView.AllUninstallers);
             dlg.ShowDialog(this);
         }
         #endregion
