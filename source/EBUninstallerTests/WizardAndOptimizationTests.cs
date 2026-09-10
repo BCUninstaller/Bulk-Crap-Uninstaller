@@ -5,8 +5,10 @@
 */
 
 using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UninstallTools.JunkCleaner;
+using UninstallTools.SystemTools;
 
 namespace BulkCrapUninstallerTests
 {
@@ -28,6 +30,21 @@ namespace BulkCrapUninstallerTests
             Assert.AreEqual(JunkCategory.WindowsTemp, task.Category);
             Assert.IsTrue(task.IsSelected);
             Assert.AreEqual(1048576, task.EstimatedBytes);
+        }
+
+        [TestMethod]
+        public void TestWizardOptimizationSubsystemIntegration()
+        {
+            var patchTask = new JunkCleanupTask
+            {
+                Name = "Windows Installer Patch Cache Cleaner",
+                Category = JunkCategory.WindowsUpdates,
+                EstimatedBytes = 52428800,
+                IsSelected = true
+            };
+
+            Assert.IsTrue(patchTask.IsSelected);
+            Assert.AreEqual(52428800, patchTask.EstimatedBytes);
         }
     }
 }

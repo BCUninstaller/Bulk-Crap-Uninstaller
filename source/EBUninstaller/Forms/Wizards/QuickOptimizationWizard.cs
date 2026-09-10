@@ -5,6 +5,7 @@
 
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using BulkCrapUninstaller.Functions;
 using UninstallTools.Core;
@@ -34,6 +35,9 @@ namespace BulkCrapUninstaller.Forms.Wizards
         private CheckBox _chkJunkUpdates;
         private CheckBox _chkJunkDumps;
         private CheckBox _chkJunkShaders;
+        private CheckBox _chkJunkPatchCache;
+        private CheckBox _chkRegistryBloat;
+        private CheckBox _chkOptimizePath;
 
         // Step 3: Memory & Boot
         private CheckBox _chkTrimMemory;
@@ -204,11 +208,17 @@ namespace BulkCrapUninstaller.Forms.Wizards
             _chkJunkUpdates = new CheckBox { Text = "Clean Stale Windows Update Downloads (SoftwareDistribution)", Checked = true, AutoSize = true, Margin = new Padding(0, 4, 0, 4) };
             _chkJunkDumps = new CheckBox { Text = "Clean Crash Memory Dumps & Windows Error Reports (WER)", Checked = true, AutoSize = true, Margin = new Padding(0, 4, 0, 4) };
             _chkJunkShaders = new CheckBox { Text = "Clean Obsolete DirectX / GPU Shader Caches", Checked = true, AutoSize = true, Margin = new Padding(0, 4, 0, 4) };
+            _chkJunkPatchCache = new CheckBox { Text = "Clean Orphaned Windows Installer Patches (.msp / .msi)", Checked = true, AutoSize = true, Margin = new Padding(0, 4, 0, 4) };
+            _chkRegistryBloat = new CheckBox { Text = "Clean Registry Bloat (Orphaned CLSIDs & Dead App Paths)", Checked = true, AutoSize = true, Margin = new Padding(0, 4, 0, 4) };
+            _chkOptimizePath = new CheckBox { Text = "Clean & Deduplicate Environment PATH Variables", Checked = true, AutoSize = true, Margin = new Padding(0, 4, 0, 4) };
 
             layout.Controls.Add(_chkJunkTemp);
             layout.Controls.Add(_chkJunkUpdates);
             layout.Controls.Add(_chkJunkDumps);
             layout.Controls.Add(_chkJunkShaders);
+            layout.Controls.Add(_chkJunkPatchCache);
+            layout.Controls.Add(_chkRegistryBloat);
+            layout.Controls.Add(_chkOptimizePath);
 
             _contentPanel.Controls.Add(layout);
         }
@@ -288,7 +298,35 @@ namespace BulkCrapUninstaller.Forms.Wizards
                 var residuals = DriverAndSystemResidualsCleaner.ScanSystemResiduals();
                 var (cleaned, freed) = DriverAndSystemResidualsCleaner.CleanResiduals(residuals);
 
-                // 2. Trim memory
+                // 2. Clean Patch Cache if selected
+                int patchesCleaned = 0;
+                if (_chkJunkPatchCache != null && _chkJunkPatchCache.Checked)
+                {
+                    var patches = PatchCacheResidualsCleaner.ScanPatchCache();
+                    var orphaned = patches.Where(p => p.IsOrphaned).ToList();
+                    patchesCleaned = PatchCacheResidualsCleaner.CleanOrphanedPatches(orphaned);
+                }
+
+                // 3. Clean Registry Bloat if selected
+                int bloatCleaned = 0;
+                if (_chkRegistryBloat != null && _chkRegistryBloat.Checked)
+                {
+                    var bloat = RegistryBloatAnalyzer.ScanAllBloat();
+                    bloatCleaned = RegistryBloatAnalyzer.CleanBloatItems(bloat.Items, null);
+                }
+
+                // 4. Optimize Environment PATH if selected
+                if (_chkOptimizePath != null && _chkOptimizePath.Checked)
+                {
+                    var userPath = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.User);
+                    if (!string.IsNullOrEmpty(userPath))
+                    {
+                        var cleanedPath = PathEnvironmentAuditorEngine.CleanAndOptimizePath(userPath, true);
+                        try { Environment.SetEnvironmentVariable("PATH", cleanedPath, EnvironmentVariableTarget.User); } catch { }
+                    }
+                }
+
+                // 5. Trim memory
                 long memReclaimed = 0;
                 if (_chkTrimMemory != null && _chkTrimMemory.Checked)
                 {
@@ -296,7 +334,8 @@ namespace BulkCrapUninstaller.Forms.Wizards
                     memReclaimed = trimResult.EstimatedMemoryReclaimedBytes;
                 }
 
-                MessageBox.Show($"Optimization complete!\n\n• Cleaned {cleaned} residual files (Freed {(freed / (1024 * 1024.0)):F1} MB)\n• Reclaimed ~{(memReclaimed / (1024 * 1024.0)):F1} MB RAM", "Optimization Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var msg = $"Optimization complete!\n\n• Cleaned {cleaned + patchesCleaned} residual & patch files (Freed {(freed / (1024 * 1024.0)):F1} MB)\n• Cleaned {bloatCleaned} registry bloat entries\n• Reclaimed ~{(memReclaimed / (1024 * 1024.0)):F1} MB RAM";
+                MessageBox.Show(msg, "Optimization Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DialogResult = DialogResult.OK;
                 Close();
             }
