@@ -2019,6 +2019,7 @@ namespace BulkCrapUninstaller.Forms
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Usage Heatmap...", null, (s, e) => OpenSoftwareUsageHeatmap()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Real-Time Software Network & Port Monitor...", null, (s, e) => OpenSoftwareNetworkMonitor()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("System Health Scorecard & Metrics...", null, (s, e) => OpenSystemHealthScorecard()));
+                menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Stability & Crash History Monitor...", null, (s, e) => OpenSoftwareCrashHistory()));
 
                 // Group 2: Deep System Cleaning & Residuals
                 var menuCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
@@ -2034,6 +2035,7 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell Context Menu Handlers Audit...", null, (s, e) => OpenShellHandlerAudit()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shortcut Residuals & Broken Links...", null, (s, e) => OpenShortcutResiduals()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shared DLL Reference Auditor...", null, (s, e) => OpenSharedDllAuditor()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Environment PATH Health Auditor & Optimizer...", null, (s, e) => OpenPathEnvironmentAuditor()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2043,6 +2045,7 @@ namespace BulkCrapUninstaller.Forms
                 menuUninstall.DropDownItems.Add(new ToolStripMenuItem("Store App Deprovisioner (All Users)...", null, (s, e) => OpenStoreAppDeprovisioner()));
                 menuUninstall.DropDownItems.Add(new ToolStripMenuItem("Package Manager Sync (Winget, Chocolatey, Scoop)...", null, (s, e) => OpenPackageManagerSync()));
                 menuUninstall.DropDownItems.Add(new ToolStripMenuItem("Runtimes & Redistributables Manager...", null, (s, e) => OpenRuntimesManager()));
+                menuUninstall.DropDownItems.Add(new ToolStripMenuItem("Software Version & Package Update Differ...", null, (s, e) => OpenSoftwareUpdateDiffer()));
 
                 // Group 4: Windows Services & Platform Tools
                 var menuWinManagement = new ToolStripMenuItem("Windows Services & Platform Configuration");
@@ -2054,6 +2057,7 @@ namespace BulkCrapUninstaller.Forms
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Sandbox Isolated Testing...", null, (s, e) => OpenWindowsSandbox()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Telemetry & Privacy Hardening...", null, (s, e) => OpenWindowsTelemetry()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("WSL Distribution Manager...", null, (s, e) => OpenWslManager()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Services Conflict & Port Collision Detector...", null, (s, e) => OpenServiceConflictDetector()));
 
                 // Group 5: Backup, Security & Audit
                 var menuBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
@@ -2092,6 +2096,7 @@ namespace BulkCrapUninstaller.Forms
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Usage Heatmap...", null, (s, e) => OpenSoftwareUsageHeatmap()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Real-Time Software Network & Port Monitor...", null, (s, e) => OpenSoftwareNetworkMonitor()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("System Health Scorecard & Metrics...", null, (s, e) => OpenSystemHealthScorecard()));
+                    tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Stability & Crash History Monitor...", null, (s, e) => OpenSoftwareCrashHistory()));
 
                     var tmCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("System Junk Cleaner...", null, (s, e) => OpenJunkCleaner()));
@@ -2106,6 +2111,7 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell Context Menu Handlers Audit...", null, (s, e) => OpenShellHandlerAudit()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shortcut Residuals & Broken Links...", null, (s, e) => OpenShortcutResiduals()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shared DLL Reference Auditor...", null, (s, e) => OpenSharedDllAuditor()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Environment PATH Health Auditor & Optimizer...", null, (s, e) => OpenPathEnvironmentAuditor()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2114,6 +2120,7 @@ namespace BulkCrapUninstaller.Forms
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Store App Deprovisioner (All Users)...", null, (s, e) => OpenStoreAppDeprovisioner()));
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Package Manager Sync (Winget, Chocolatey, Scoop)...", null, (s, e) => OpenPackageManagerSync()));
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Runtimes & Redistributables Manager...", null, (s, e) => OpenRuntimesManager()));
+                    tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Software Version & Package Update Differ...", null, (s, e) => OpenSoftwareUpdateDiffer()));
 
                     var tmWinManagement = new ToolStripMenuItem("Windows Services & Platform Configuration");
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Services Startup Optimizer...", null, (s, e) => OpenServicesOptimizer()));
@@ -2124,6 +2131,7 @@ namespace BulkCrapUninstaller.Forms
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Sandbox Isolated Testing...", null, (s, e) => OpenWindowsSandbox()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Telemetry & Privacy Hardening...", null, (s, e) => OpenWindowsTelemetry()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("WSL Distribution Manager...", null, (s, e) => OpenWslManager()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Windows Services Conflict & Port Collision Detector...", null, (s, e) => OpenServiceConflictDetector()));
 
                     var tmBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Backup & Recovery Center...", null, (s, e) => OpenBackupManager()));
@@ -2544,6 +2552,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenSecureDelete(string target = null)
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.SecureDeleteWindow(target);
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenSoftwareCrashHistory()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.SoftwareCrashHistoryWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenServiceConflictDetector()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.ServiceConflictDetectorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenPathEnvironmentAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.PathEnvironmentAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenSoftwareUpdateDiffer()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.SoftwareUpdateDifferWindow();
             dlg.ShowDialog(this);
         }
         #endregion
