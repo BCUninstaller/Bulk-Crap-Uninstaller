@@ -2025,6 +2025,7 @@ namespace BulkCrapUninstaller.Forms
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Software Power, Wake Lock & Battery Impact Profiler...", null, (s, e) => OpenSoftwarePowerImpact()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Active Network Sockets & Port Security Auditor...", null, (s, e) => OpenSocketHealthAuditor()));
                 menuHealth.DropDownItems.Add(new ToolStripMenuItem("Authenticode Binary Signatures & Integrity Auditor...", null, (s, e) => OpenAuthenticodeAuditor()));
+                menuHealth.DropDownItems.Add(new ToolStripMenuItem("Windows Security Center (WSC) Providers Auditor...", null, (s, e) => OpenWscProviderAuditor()));
 
                 // Group 2: Deep System Cleaning & Residuals
                 var menuCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
@@ -2051,6 +2052,9 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Kernel LiveDumps & Crash Dump Residuals Cleaner...", null, (s, e) => OpenKernelLiveDumpCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Delivery Optimization & Package Cache Cleaner...", null, (s, e) => OpenDeliveryOptimizationCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Font Cache & Stale Font Registrations...", null, (s, e) => OpenFontCacheCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Search Indexer Residuals & Rebuilder...", null, (s, e) => OpenSearchIndexerCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell OpenWith & File Association Orphan Cleaner...", null, (s, e) => OpenOpenWithCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Taskbar System Tray (TrayNotify) Cache Cleaner...", null, (s, e) => OpenTrayNotifyCleaner()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2126,6 +2130,7 @@ namespace BulkCrapUninstaller.Forms
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Software Power, Wake Lock & Battery Impact Profiler...", null, (s, e) => OpenSoftwarePowerImpact()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Active Network Sockets & Port Security Auditor...", null, (s, e) => OpenSocketHealthAuditor()));
                     tmHealth.DropDownItems.Add(new ToolStripMenuItem("Authenticode Binary Signatures & Integrity Auditor...", null, (s, e) => OpenAuthenticodeAuditor()));
+                    tmHealth.DropDownItems.Add(new ToolStripMenuItem("Windows Security Center (WSC) Providers Auditor...", null, (s, e) => OpenWscProviderAuditor()));
 
                     var tmCleaners = new ToolStripMenuItem("Deep System Cleaning & Residuals");
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("System Junk Cleaner...", null, (s, e) => OpenJunkCleaner()));
@@ -2151,6 +2156,9 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Kernel LiveDumps & Crash Dump Residuals Cleaner...", null, (s, e) => OpenKernelLiveDumpCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Delivery Optimization & Package Cache Cleaner...", null, (s, e) => OpenDeliveryOptimizationCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Font Cache & Stale Font Registrations...", null, (s, e) => OpenFontCacheCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Search Indexer Residuals & Rebuilder...", null, (s, e) => OpenSearchIndexerCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell OpenWith & File Association Orphan Cleaner...", null, (s, e) => OpenOpenWithCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Taskbar System Tray (TrayNotify) Cache Cleaner...", null, (s, e) => OpenTrayNotifyCleaner()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2768,6 +2776,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenCertStoreCleaner()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.CertStoreOrphanCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenWscProviderAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.WscProviderAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenSearchIndexerCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.SearchIndexerCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenOpenWithCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.OpenWithCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenTrayNotifyCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.TrayNotifyCleanerWindow();
             dlg.ShowDialog(this);
         }
         #endregion
