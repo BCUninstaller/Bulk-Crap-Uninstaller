@@ -2056,6 +2056,9 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell OpenWith & File Association Orphan Cleaner...", null, (s, e) => OpenOpenWithCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Taskbar System Tray (TrayNotify) Cache Cleaner...", null, (s, e) => OpenTrayNotifyCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Error Reporting (WER) Crash Dump Policy...", null, (s, e) => OpenWerCrashPolicy()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Event Tracing (ETW) AutoLogger Sessions Cleaner...", null, (s, e) => OpenEtwSessionCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Stale Temp Lockfiles & Abandoned IPC Sockets...", null, (s, e) => OpenUserTempLockfileCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("DirectX & GPU Shader Cache Cleaner...", null, (s, e) => OpenDirectXShaderCleaner()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2087,6 +2090,7 @@ namespace BulkCrapUninstaller.Forms
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Background Intelligent Transfer (BITS) Queue Cleaner...", null, (s, e) => OpenBitsQueueCleaner()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("USB & Peripheral Device Driver Residuals...", null, (s, e) => OpenUsbDriverCleaner()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Winsock NameSpace & LSP Providers Auditor...", null, (s, e) => OpenWinsockNamespaceCleaner()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Bluetooth & Wireless Device Pairing Residuals...", null, (s, e) => OpenBluetoothPairingCleaner()));
 
                 // Group 5: Backup, Security & Audit
                 var menuBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
@@ -2164,6 +2168,9 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell OpenWith & File Association Orphan Cleaner...", null, (s, e) => OpenOpenWithCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Taskbar System Tray (TrayNotify) Cache Cleaner...", null, (s, e) => OpenTrayNotifyCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Error Reporting (WER) Crash Dump Policy...", null, (s, e) => OpenWerCrashPolicy()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Event Tracing (ETW) AutoLogger Sessions Cleaner...", null, (s, e) => OpenEtwSessionCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Stale Temp Lockfiles & Abandoned IPC Sockets...", null, (s, e) => OpenUserTempLockfileCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("DirectX & GPU Shader Cache Cleaner...", null, (s, e) => OpenDirectXShaderCleaner()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2193,6 +2200,7 @@ namespace BulkCrapUninstaller.Forms
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Background Intelligent Transfer (BITS) Queue Cleaner...", null, (s, e) => OpenBitsQueueCleaner()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("USB & Peripheral Device Driver Residuals...", null, (s, e) => OpenUsbDriverCleaner()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Winsock NameSpace & LSP Providers Auditor...", null, (s, e) => OpenWinsockNamespaceCleaner()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Bluetooth & Wireless Device Pairing Residuals...", null, (s, e) => OpenBluetoothPairingCleaner()));
 
                     var tmBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Backup & Recovery Center...", null, (s, e) => OpenBackupManager()));
@@ -2832,6 +2840,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenWerCrashPolicy()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.WerCrashPolicyOptimizerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenBluetoothPairingCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.BluetoothPairingCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenEtwSessionCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.EtwSessionCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenUserTempLockfileCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.UserTempLockfileCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenDirectXShaderCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.DirectXShaderCleanerWindow();
             dlg.ShowDialog(this);
         }
         #endregion
