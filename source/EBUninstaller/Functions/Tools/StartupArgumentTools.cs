@@ -25,7 +25,7 @@ namespace BulkCrapUninstaller.Functions.Tools
 
                 return File.Exists(candidate) ? candidate : null;
             }
-            catch (Exception ex) when (ex is ArgumentException or NotSupportedException or PathTooLongException)
+            catch (Exception ex) when (ex is ArgumentException || ex is NotSupportedException || ex is PathTooLongException)
             {
                 return null;
             }

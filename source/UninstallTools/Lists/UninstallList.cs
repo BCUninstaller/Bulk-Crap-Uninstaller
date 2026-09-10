@@ -96,7 +96,7 @@ namespace UninstallTools.Lists
                 {
                     return Deserialize(serializer, XmlReader.Create(stream, ReaderSettings));
                 }
-                catch (Exception ex) when (ex is InvalidOperationException or XmlException)
+                catch (Exception ex) when (ex is InvalidOperationException || ex is XmlException)
                 {
                     if (!stream.CanSeek)
                         throw CreateInvalidDataException(ex);
@@ -112,7 +112,7 @@ namespace UninstallTools.Lists
                     {
                         return Deserialize(serializer, XmlReader.Create(stringReader, ReaderSettings));
                     }
-                    catch (Exception retryEx) when (retryEx is InvalidOperationException or XmlException)
+                    catch (Exception retryEx) when (retryEx is InvalidOperationException || retryEx is XmlException)
                     {
                         throw CreateInvalidDataException(retryEx);
                     }

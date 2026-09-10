@@ -124,7 +124,7 @@ namespace UninstallTools.Factory
                     Trace.WriteLine($"[Factory] Loaded Scoop config overrides from {configPath}");
                     return;
                 }
-                catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or JsonException or NotSupportedException)
+                catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException || ex is JsonException || ex is NotSupportedException)
                 {
                     Trace.WriteLine($"[Factory] Failed to parse Scoop config {configPath}: {ex.Message}");
                 }

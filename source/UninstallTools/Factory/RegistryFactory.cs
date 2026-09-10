@@ -67,7 +67,7 @@ namespace UninstallTools.Factory
                             .Where(subkey => subkey != null)
                             .Select(subkey => new KeyValuePair<RegistryKey, bool>(subkey, kvp.Value)));
                 }
-                catch (Exception ex) when (ex is SecurityException or UnauthorizedAccessException or IOException)
+                catch (Exception ex) when (ex is SecurityException || ex is UnauthorizedAccessException || ex is IOException)
                 {
                     Trace.WriteLine($@"Failed to enumerate registry key {kvp.Key.Name} - {ex}");
                 }
@@ -154,7 +154,7 @@ namespace UninstallTools.Factory
                 var tempSize = Convert.ToInt64(uninstallerKey.GetValue(RegistryNameEstimatedSize, 0));
                 return FileSize.FromKilobytes(tempSize);
             }
-            catch (SystemException e) when (e is FormatException or InvalidCastException)
+            catch (SystemException e) when (e is FormatException || e is InvalidCastException)
             {
                 return FileSize.Empty;
             }

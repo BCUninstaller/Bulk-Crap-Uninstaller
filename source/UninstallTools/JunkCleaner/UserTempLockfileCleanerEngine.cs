@@ -120,7 +120,8 @@ namespace UninstallTools.JunkCleaner
         {
             return ext switch
             {
-                ".lock" or ".lck" => "Application Lockfile",
+                ".lock" => "Application Lockfile",
+                ".lck" => "Application Lockfile",
                 ".pid" => "Process PID Artifact",
                 ".sock" => "Abandoned IPC Socket",
                 ".semaphore" => "Abandoned Semaphore File",

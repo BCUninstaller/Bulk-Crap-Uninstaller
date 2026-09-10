@@ -92,7 +92,10 @@ namespace UninstallTools.Detection
                 {
                     ".exe" => "Binary (Executable)",
                     ".dll" => "Dynamic Library (DLL)",
-                    ".json" or ".xml" or ".config" or ".ini" => "Configuration",
+                    ".json" => "Configuration",
+                    ".xml" => "Configuration",
+                    ".config" => "Configuration",
+                    ".ini" => "Configuration",
                     _ => "Asset / Data"
                 };
 
@@ -130,7 +133,10 @@ namespace UninstallTools.Detection
                     {
                         ".exe" => "Binary (Executable)",
                         ".dll" => "Dynamic Library (DLL)",
-                        ".json" or ".xml" or ".config" or ".ini" => "Configuration",
+                        ".json" => "Configuration",
+                    ".xml" => "Configuration",
+                    ".config" => "Configuration",
+                    ".ini" => "Configuration",
                         _ => "Asset / Data"
                     };
 

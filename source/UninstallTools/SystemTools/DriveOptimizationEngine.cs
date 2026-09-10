@@ -35,7 +35,8 @@ namespace UninstallTools.SystemTools
         public bool IsTrimSupported { get; set; } = true;
         public string RecommendedAction => MediaType switch
         {
-            DriveMediaType.SSD or DriveMediaType.NVMe => "Execute SSD TRIM Optimization (Retrim)",
+            DriveMediaType.SSD => "Execute SSD TRIM Optimization (Retrim)",
+            DriveMediaType.NVMe => "Execute SSD TRIM Optimization (Retrim)",
             DriveMediaType.HDD => "Execute Defragmentation & Space Consolidation",
             _ => "Standard File System Maintenance"
         };
@@ -64,7 +65,7 @@ namespace UninstallTools.SystemTools
                         MediaType = mediaType,
                         TotalSizeBytes = d.TotalSize,
                         FreeSizeBytes = d.AvailableFreeSpace,
-                        IsTrimSupported = mediaType is DriveMediaType.SSD or DriveMediaType.NVMe
+                        IsTrimSupported = mediaType == DriveMediaType.SSD || mediaType == DriveMediaType.NVMe
                     });
                 }
             }

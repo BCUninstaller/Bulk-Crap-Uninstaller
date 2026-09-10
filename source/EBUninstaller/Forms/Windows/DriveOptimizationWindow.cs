@@ -130,7 +130,7 @@ namespace BulkCrapUninstaller.Forms.Windows
             _folvDrives.SetObjects(_drives);
 
             var totalDrives = _drives.Count;
-            var ssdCount = _drives.Count(d => d.MediaType is DriveMediaType.SSD or DriveMediaType.NVMe);
+            var ssdCount = _drives.Count(d => d.MediaType == DriveMediaType.SSD || d.MediaType == DriveMediaType.NVMe);
             var totalFree = _drives.Sum(d => d.FreeSizeBytes);
 
             _lblSummary.Text = $"Detected {totalDrives} active volume(s) ({ssdCount} SSD/NVMe). Total available free storage: {FormatBytes(totalFree)}.";
