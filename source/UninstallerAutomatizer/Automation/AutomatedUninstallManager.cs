@@ -1,4 +1,4 @@
-/*
+﻿/*
     Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
     Apache License Version 2.0
 */
@@ -123,43 +123,10 @@ namespace UninstallerAutomatizer
                 {
                     // Get all processes with name in format [A-Z]u_ (standard NSIS naming scheme, e.g. "Au_.exe") 
                     // and select the last one to launch. (Most likely to be ours)
-                    Process uninstallProcess = null;
-                    DateTime latestStartTime = DateTime.MinValue;
-
-                    foreach (var p in Process.GetProcesses())
-                    {
-                        try
-                        {
-                            if (p.ProcessName.Length == 3 && p.ProcessName.EndsWith("u_", StringComparison.Ordinal))
-                            {
-                                var startTime = p.StartTime;
-                                if (uninstallProcess == null || startTime > latestStartTime)
-                                {
-                                    uninstallProcess?.Dispose();
-                                    uninstallProcess = p;
-                                    latestStartTime = startTime;
-                                    continue;
-                                }
-                            }
-                        }
-                        catch (Exception)
-                        {
-                            // Ignore processes where StartTime / access fails or process exited
-                        }
-                        p.Dispose();
-                    }
-
-                    if (uninstallProcess != null)
-                    {
-                        try
-                        {
-                            app = Application.Attach(uninstallProcess);
-                        }
-                        finally
-                        {
-                            uninstallProcess.Dispose();
-                        }
-                    }
+                    var uninstallProcess = Process.GetProcesses()
+                        .Where(x => x.ProcessName.Length == 3 && x.ProcessName.EndsWith("u_", StringComparison.Ordinal))
+                        .OrderByDescending(x => x.StartTime).First();
+                    app = Application.Attach(uninstallProcess);
                 }
             }
             catch (Exception e)

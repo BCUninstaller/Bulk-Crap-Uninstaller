@@ -1,4 +1,4 @@
-/*
+﻿/*
     Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
     Apache License Version 2.0
 */
@@ -112,7 +112,7 @@ namespace Klocman.IO
         public static string GetInstalledComponentPathRaw(string component)
         {
             if (ComponentPathLookup.TryGetValue(component, out var value))
-                return string.IsNullOrEmpty(value) ? null : value;
+                return value;
 
             InitLookups();
 
@@ -130,7 +130,7 @@ namespace Klocman.IO
                 }
             }
 
-            ComponentPathLookup[component] = string.Empty;
+            ComponentPathLookup[component] = null;
             return null;
         }
 
@@ -213,9 +213,8 @@ namespace Klocman.IO
 
                 _reverseComponentLookup = _componentLookup
                                           .Where(x => !string.IsNullOrEmpty(x.Key))
-                                          .SelectMany(x => x.Select(y => new { product = x.Key, component = y }))
-                                          .GroupBy(x => x.component, StringComparer.OrdinalIgnoreCase)
-                                          .ToDictionary(g => g.Key, g => g.First().product, StringComparer.OrdinalIgnoreCase);
+                                          .SelectMany(x => x.Select(y => new { product = x.Key, component = y, }))
+                                          .ToDictionary(x => x.component, x => x.product);
 
                 Trace.WriteLine($"[Performance] Built MSI component lookup in {sw.Elapsed.TotalSeconds:F2} seconds");
             }
