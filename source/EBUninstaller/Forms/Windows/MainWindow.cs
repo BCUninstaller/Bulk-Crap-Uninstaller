@@ -2055,6 +2055,7 @@ namespace BulkCrapUninstaller.Forms
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Search Indexer Residuals & Rebuilder...", null, (s, e) => OpenSearchIndexerCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell OpenWith & File Association Orphan Cleaner...", null, (s, e) => OpenOpenWithCleaner()));
                 menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Taskbar System Tray (TrayNotify) Cache Cleaner...", null, (s, e) => OpenTrayNotifyCleaner()));
+                menuCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Error Reporting (WER) Crash Dump Policy...", null, (s, e) => OpenWerCrashPolicy()));
 
                 // Group 3: Advanced Removal & Multi-User
                 var menuUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
@@ -2084,6 +2085,8 @@ namespace BulkCrapUninstaller.Forms
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Scheduled Tasks Orphan & Residuals Cleaner...", null, (s, e) => OpenScheduledTaskOrphanCleaner()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Virtual Network Adapters & VPN TAP/TUN Auditor...", null, (s, e) => OpenVirtualAdapterAuditor()));
                 menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Background Intelligent Transfer (BITS) Queue Cleaner...", null, (s, e) => OpenBitsQueueCleaner()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("USB & Peripheral Device Driver Residuals...", null, (s, e) => OpenUsbDriverCleaner()));
+                menuWinManagement.DropDownItems.Add(new ToolStripMenuItem("Winsock NameSpace & LSP Providers Auditor...", null, (s, e) => OpenWinsockNamespaceCleaner()));
 
                 // Group 5: Backup, Security & Audit
                 var menuBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
@@ -2096,6 +2099,7 @@ namespace BulkCrapUninstaller.Forms
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Administrative Tools Hub...", null, (s, e) => OpenWindowsTools()));
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Defender & Security Exclusions Auditor...", null, (s, e) => OpenSecurityExclusionsAuditor()));
                 menuBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Certificate Store Residuals & Expired Certs...", null, (s, e) => OpenCertStoreCleaner()));
+                menuBackup.DropDownItems.Add(new ToolStripMenuItem("CNG & CryptoAPI Cryptographic Providers Auditor...", null, (s, e) => OpenCngProviderAuditor()));
 
                 proDropDown.DropDownItems.AddRange(new ToolStripItem[]
                 {
@@ -2159,6 +2163,7 @@ namespace BulkCrapUninstaller.Forms
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Search Indexer Residuals & Rebuilder...", null, (s, e) => OpenSearchIndexerCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Shell OpenWith & File Association Orphan Cleaner...", null, (s, e) => OpenOpenWithCleaner()));
                     tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Taskbar System Tray (TrayNotify) Cache Cleaner...", null, (s, e) => OpenTrayNotifyCleaner()));
+                    tmCleaners.DropDownItems.Add(new ToolStripMenuItem("Windows Error Reporting (WER) Crash Dump Policy...", null, (s, e) => OpenWerCrashPolicy()));
 
                     var tmUninstall = new ToolStripMenuItem("Advanced Removal & Package Management");
                     tmUninstall.DropDownItems.Add(new ToolStripMenuItem("Forced Application Removal...", null, (s, e) => OpenForcedRemoval()));
@@ -2186,6 +2191,8 @@ namespace BulkCrapUninstaller.Forms
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Scheduled Tasks Orphan & Residuals Cleaner...", null, (s, e) => OpenScheduledTaskOrphanCleaner()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Virtual Network Adapters & VPN TAP/TUN Auditor...", null, (s, e) => OpenVirtualAdapterAuditor()));
                     tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Background Intelligent Transfer (BITS) Queue Cleaner...", null, (s, e) => OpenBitsQueueCleaner()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("USB & Peripheral Device Driver Residuals...", null, (s, e) => OpenUsbDriverCleaner()));
+                    tmWinManagement.DropDownItems.Add(new ToolStripMenuItem("Winsock NameSpace & LSP Providers Auditor...", null, (s, e) => OpenWinsockNamespaceCleaner()));
 
                     var tmBackup = new ToolStripMenuItem("Backup, Data Security & Audit Logs");
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Backup & Recovery Center...", null, (s, e) => OpenBackupManager()));
@@ -2197,6 +2204,7 @@ namespace BulkCrapUninstaller.Forms
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Administrative Tools Hub...", null, (s, e) => OpenWindowsTools()));
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Defender & Security Exclusions Auditor...", null, (s, e) => OpenSecurityExclusionsAuditor()));
                     tmBackup.DropDownItems.Add(new ToolStripMenuItem("Windows Certificate Store Residuals & Expired Certs...", null, (s, e) => OpenCertStoreCleaner()));
+                    tmBackup.DropDownItems.Add(new ToolStripMenuItem("CNG & CryptoAPI Cryptographic Providers Auditor...", null, (s, e) => OpenCngProviderAuditor()));
 
                     toolsToolStripMenuItem.DropDownItems.Insert(0, new ToolStripMenuItem("Quick System Optimization Wizard...", null, (s, e) => OpenOptimizationWizard()));
                     toolsToolStripMenuItem.DropDownItems.Insert(1, tmHealth);
@@ -2800,6 +2808,30 @@ namespace BulkCrapUninstaller.Forms
         private void OpenTrayNotifyCleaner()
         {
             using var dlg = new BulkCrapUninstaller.Forms.Windows.TrayNotifyCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenUsbDriverCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.UsbDriverCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenCngProviderAuditor()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.CngProviderAuditorWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenWinsockNamespaceCleaner()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.WinsockNamespaceCleanerWindow();
+            dlg.ShowDialog(this);
+        }
+
+        private void OpenWerCrashPolicy()
+        {
+            using var dlg = new BulkCrapUninstaller.Forms.Windows.WerCrashPolicyOptimizerWindow();
             dlg.ShowDialog(this);
         }
         #endregion
