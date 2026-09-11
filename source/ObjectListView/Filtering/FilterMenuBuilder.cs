@@ -173,7 +173,7 @@ namespace BrightIdeasSoftware {
             object clusterKey = strategy.GetClusterKey(model);
 
             // If the returned value is an IEnumerable, that means the given model can belong to more than one cluster
-            if (clusterKey is string || clusterKey is not IEnumerable keyEnumerable)
+            if (clusterKey is string || !(clusterKey is IEnumerable keyEnumerable))
                 keyEnumerable = new object[] {clusterKey};
 
             // Deal with nulls and DBNulls
@@ -262,9 +262,9 @@ namespace BrightIdeasSoftware {
         /// <param name="sender"></param>
         /// <param name="e"></param>
         virtual protected void HandleItemChecked(object sender, ItemCheckEventArgs e) {
-            if (sender is not ToolStripCheckedListBox checkedList) return;
-            if (checkedList.Tag is not OLVColumn column) return;
-            if (column.ListView is not ObjectListView listView) return;
+            if (!(sender is ToolStripCheckedListBox checkedList)) return;
+            if (!(checkedList.Tag is OLVColumn column)) return;
+            if (!(column.ListView is ObjectListView listView)) return;
 
             // Deal with the "Select All" item if there is one
             int selectAllIndex = checkedList.Items.IndexOf(SELECT_ALL_LABEL);
@@ -328,7 +328,7 @@ namespace BrightIdeasSoftware {
         /// </summary>
         /// <param name="column">The column from which filters are to be removed</param>
         virtual protected void ClearAllFilters(OLVColumn column) {
-            if (column.ListView is not ObjectListView olv || olv.IsDisposed)
+            if (!(column.ListView is ObjectListView olv) || olv.IsDisposed)
                 return;
 
             olv.ResetColumnFiltering();
@@ -340,7 +340,7 @@ namespace BrightIdeasSoftware {
         /// <param name="checkedList">A list in which the checked items should be used as filters</param>
         /// <param name="column">The column for which a filter should be generated</param>
         virtual protected void EnactFilter(ToolStripCheckedListBox checkedList, OLVColumn column) {
-            if (column.ListView is not ObjectListView olv || olv.IsDisposed)
+            if (!(column.ListView is ObjectListView olv) || olv.IsDisposed)
                 return;
 
             // Collect all the checked values

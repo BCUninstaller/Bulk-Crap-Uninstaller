@@ -173,7 +173,7 @@ namespace Klocman.Forms
             {
                 try
                 {
-                    if (node.Tag is not Process pr || pr.HasExited)
+                    if (!(node.Tag is Process pr) || pr.HasExited)
                     {
                         treeView1.Nodes.Remove(node);
                     }
@@ -183,7 +183,7 @@ namespace Klocman.Forms
                         {
                             try
                             {
-                                if (subNode.Tag is not Process spr || spr.HasExited)
+                                if (!(subNode.Tag is Process spr) || spr.HasExited)
                                     node.Nodes.Remove(subNode);
                             }
                             catch (Exception ex)
@@ -209,7 +209,7 @@ namespace Klocman.Forms
 
         private void buttonKill_Click(object sender, EventArgs e)
         {
-            if (treeView1.SelectedNode?.Tag is not Process process) return;
+            if (!(treeView1.SelectedNode?.Tag is Process process)) return;
             try { process.Kill(); }
             catch (Exception ex) { Console.WriteLine(ex); }
         }

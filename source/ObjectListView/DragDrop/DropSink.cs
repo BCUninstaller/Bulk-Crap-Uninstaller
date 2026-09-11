@@ -1436,12 +1436,12 @@ namespace BrightIdeasSoftware
         public void RefreshObjects() {
 
             toBeRefreshed.AddRange(SourceModels);
-            if (SourceListView is not TreeListView tlv)
+            if (!(SourceListView is TreeListView tlv))
                 SourceListView.RefreshObjects(toBeRefreshed);
             else
                 tlv.RebuildAll(true);
 
-            if (ListView is not TreeListView tlv2)
+            if (!(ListView is TreeListView tlv2))
                 ListView.RefreshObject(TargetModel);
             else
                 tlv2.RebuildAll(true);

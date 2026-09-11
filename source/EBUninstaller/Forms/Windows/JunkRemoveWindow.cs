@@ -242,7 +242,7 @@ namespace BulkCrapUninstaller.Forms
 
         private void detailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (objectListViewMain.SelectedObject is not IJunkResult item) return;
+            if (!(objectListViewMain.SelectedObject is IJunkResult item)) return;
             DisplayDetails(item);
         }
 
@@ -297,7 +297,7 @@ namespace BulkCrapUninstaller.Forms
 
         private bool JunkListFilter(object obj)
         {
-            if (obj is not IJunkResult item)
+            if (!(obj is IJunkResult item))
                 return false;
 
             if (checkBoxHideLowConfidence.Checked && item.Confidence.GetRawConfidence() < 0)
@@ -309,7 +309,7 @@ namespace BulkCrapUninstaller.Forms
         private void objectListViewMain_CellEditStarting(object sender, CellEditEventArgs e)
         {
             e.Cancel = true;
-            if (e.RowObject is not IJunkResult item) return;
+            if (!(e.RowObject is IJunkResult item)) return;
 
             EnsureSingleSelection(e.ListViewItem);
             OpenJunkNodePreview(item);
@@ -348,7 +348,7 @@ namespace BulkCrapUninstaller.Forms
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (objectListViewMain.SelectedObject is not IJunkResult item) return;
+            if (!(objectListViewMain.SelectedObject is IJunkResult item)) return;
             OpenJunkNodePreview(item);
         }
 
@@ -408,7 +408,7 @@ namespace BulkCrapUninstaller.Forms
             olvColumnPath.AspectGetter = rowObject => (rowObject as IJunkResult)?.GetDisplayName();
             olvColumnUninstallerName.AspectGetter = rowObject =>
             {
-                if (rowObject is not IJunkResult junkResult)
+                if (!(rowObject is IJunkResult junkResult))
                     return null;
 
                 var displayName = junkResult.Application?.DisplayName;

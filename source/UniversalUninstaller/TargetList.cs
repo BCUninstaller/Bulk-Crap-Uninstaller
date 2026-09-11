@@ -46,13 +46,13 @@ namespace UniversalUninstaller
 
         private object SizeGetter(object rowObject)
         {
-            if (rowObject is not TreeEntry treeEntry)
+            if (!(rowObject is TreeEntry treeEntry))
                 return FileSize.Empty;
 
             if (treeEntry.IsDirectory == false)
                 return FileSize.FromBytes(((FileInfo)treeEntry.FileSystemInfo).Length);
 
-            if (treeEntry.FileSystemInfo is not DirectoryInfo dirInfo || !dirInfo.Exists)
+            if (!(treeEntry.FileSystemInfo is DirectoryInfo dirInfo) || !dirInfo.Exists)
                 return FileSize.Empty;
 
             try
@@ -139,7 +139,7 @@ namespace UniversalUninstaller
 
         public IEnumerable<FileSystemInfo> GetSelectedItems(object modelItem)
         {
-            if (modelItem is not TreeEntry treeEntry)
+            if (!(modelItem is TreeEntry treeEntry))
                 return Enumerable.Empty<FileSystemInfo>();
 
             if (treeEntry.Checked)
@@ -171,7 +171,7 @@ namespace UniversalUninstaller
         private void treeListView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             var x = treeListView1.GetItemAt(e.X, e.Y) as OLVListItem;
-            if (x?.RowObject is not TreeEntry en) return;
+            if (!(x?.RowObject is TreeEntry en)) return;
             try
             {
                 if (en.IsDirectory)

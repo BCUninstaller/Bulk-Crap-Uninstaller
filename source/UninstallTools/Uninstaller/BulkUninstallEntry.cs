@@ -440,7 +440,7 @@ namespace UninstallTools.Uninstaller
                                     case 5:
                                         throw new Exception("Access is denied. Indicates that user has no access right to specified resource.");
                                     case 9009:
-                                        throw new Exception("Program is not recognized as an internal or external command, operable program or batch file.");
+                                        throw new Exception("!(Program is recognized as) an internal or external command, operable program or batch file.");
                                     case -2147024846:
                                         throw new Exception("0x80070032 - This app is part of Windows and cannot be uninstalled on a per-user basis.");
 

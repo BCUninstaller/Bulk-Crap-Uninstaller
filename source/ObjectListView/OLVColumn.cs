@@ -716,7 +716,7 @@ namespace BrightIdeasSoftware {
         /// Gets or sets how the text of the header will be drawn?
         /// </summary>
         [Category("ObjectListView"),
-         Description("How will the header text be aligned? If this is not set, the alignment of the header will follow the alignment of the column"),
+         Description("How will the header text be aligned? If !(this is set), the alignment of the header will follow the alignment of the column"),
          DefaultValue(null)]
         public HorizontalAlignment? HeaderTextAlign {
             get { return headerTextAlign; }
@@ -934,7 +934,7 @@ namespace BrightIdeasSoftware {
             set {
                 isButton = value;
                 if (value) {
-                    if (Renderer is not ColumnButtonRenderer buttonRenderer) {
+                    if (!(Renderer is ColumnButtonRenderer buttonRenderer)) {
                         Renderer = CreateColumnButtonRenderer();
                         FillInColumnButtonRenderer();
                     }
@@ -958,7 +958,7 @@ namespace BrightIdeasSoftware {
         /// Fill in details to our ColumnButtonRenderer based on the properties set on the column
         /// </summary>
         protected virtual void FillInColumnButtonRenderer() {
-            if (Renderer is not ColumnButtonRenderer buttonRenderer)
+            if (!(Renderer is ColumnButtonRenderer buttonRenderer))
                 return;
 
             buttonRenderer.SizingMode = ButtonSizing;
@@ -1431,7 +1431,7 @@ namespace BrightIdeasSoftware {
 
                 // If there is a custom renderer (not descended from BaseRenderer), 
                 // we leave it up to them to implement wrapping
-                if (Renderer is not BaseRenderer baseRenderer)
+                if (!(Renderer is BaseRenderer baseRenderer))
                     return;
 
                 baseRenderer.CanWrap = wordWrap;

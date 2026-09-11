@@ -202,7 +202,7 @@ namespace UninstallTools.Controls
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxConditions.SelectedItem is not FilterCondition item)
+            if (!(listBoxConditions.SelectedItem is FilterCondition item))
             {
                 filterEditor.TargetFilterCondition = null;
             }
@@ -224,7 +224,7 @@ namespace UninstallTools.Controls
 
         private void toolStripButtonRemoveCondition_Click(object sender, EventArgs e)
         {
-            if (listBoxConditions.SelectedItem is not FilterCondition item) return;
+            if (!(listBoxConditions.SelectedItem is FilterCondition item)) return;
             filterEditor.TargetFilterCondition = null;
 
             CurrentlySelected.ComparisonEntries.Remove(item);

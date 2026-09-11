@@ -129,7 +129,7 @@ namespace BulkCrapUninstaller
             {
                 if (ex is FileNotFoundException)
                     Console.WriteLine(@"Settings file not found, creating new one.");
-                else if (ex is not OperationCanceledException)
+                else if (!(ex is OperationCanceledException))
                     Console.WriteLine(@"Failed to load settings from the config file: " + ex);
 
                 File.Delete(ConfigFileFullname);

@@ -72,7 +72,7 @@ namespace UninstallTools.Junk
 
         private static bool JunkDoesNotPointToDirectories(IJunkResult arg, HashSet<string> prohibitedDirs)
         {
-            if (arg is not FileSystemJunk fileSystemJunk)
+            if (!(arg is FileSystemJunk fileSystemJunk))
                 return true;
 
             return !prohibitedDirs.Contains(fileSystemJunk.Path.FullName.ToLowerInvariant());

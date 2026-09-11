@@ -88,7 +88,7 @@ namespace UninstallTools
 
         private void WorkerThread(object obj)
         {
-            if (obj is not WorkerData workerInterface) throw new ArgumentException(@"obj is not WorkerData", nameof(obj));
+            if (!(obj is WorkerData workerInterface)) throw new ArgumentException(@"obj is not WorkerData", nameof(obj));
 
             foreach (var data in workerInterface.Input)
             {

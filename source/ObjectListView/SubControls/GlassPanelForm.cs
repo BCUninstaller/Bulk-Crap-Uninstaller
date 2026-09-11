@@ -411,7 +411,7 @@ namespace BrightIdeasSoftware
         }
 
         internal void UpdateTransparency() {
-            if (Overlay is not ITransparentOverlay transparentOverlay)
+            if (!(Overlay is ITransparentOverlay transparentOverlay))
                 Opacity = objectListView.OverlayTransparency / 255.0f;
             else
                 Opacity = transparentOverlay.Transparency / 255.0f;

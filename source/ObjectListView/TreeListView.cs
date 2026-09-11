@@ -1209,7 +1209,7 @@ namespace BrightIdeasSoftware
         /// <param name="e"></param>
         /// <returns>Was the key press handled?</returns>
         protected override void OnKeyDown(KeyEventArgs e) {
-            if (FocusedItem is not OLVListItem focused) {
+            if (!(FocusedItem is OLVListItem focused)) {
                 base.OnKeyDown(e);
                 return;
             }

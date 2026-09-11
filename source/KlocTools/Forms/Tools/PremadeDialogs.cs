@@ -84,7 +84,7 @@ namespace Klocman.Forms.Tools
 
             Console.WriteLine(@"Showing error message: " + ex);
 
-            if (SendErrorAction != null && ex is not NotSendableException)
+            if (SendErrorAction != null && !(ex is NotSendableException))
                 SendErrorQuestion(ex);
             else
                 GenericError(ex.Message, GetExceptionDetailString(ex));

@@ -515,7 +515,7 @@ namespace BrightIdeasSoftware.Design
         /// <param name="value"></param>
         /// <returns></returns>
         protected override string GetDisplayText(object value) {
-            if (value is not OLVColumn col || String.IsNullOrEmpty(col.AspectName))
+            if (!(value is OLVColumn col) || String.IsNullOrEmpty(col.AspectName))
                 return base.GetDisplayText(value);
 
             return String.Format("{0} ({1})", base.GetDisplayText(value), col.AspectName);

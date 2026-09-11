@@ -45,11 +45,11 @@ namespace UninstallTools.Startup.Service
                 foreach (var queryObj in searcher.Get())
                 {
                     // Skip drivers and adapters
-                    if (queryObj["ServiceType"] is not string serviceType || !serviceType.Contains("Process"))
+                    if (!(queryObj["ServiceType"] is string serviceType) || !serviceType.Contains("Process"))
                         continue;
 
                     // Don't show system services
-                    if (queryObj["PathName"] is not string filename || filename.Contains(
+                    if (!(queryObj["PathName"] is string filename) || filename.Contains(
                         WindowsTools.GetEnvironmentPath(CSIDL.CSIDL_WINDOWS),
                         StringComparison.InvariantCultureIgnoreCase))
                         continue;

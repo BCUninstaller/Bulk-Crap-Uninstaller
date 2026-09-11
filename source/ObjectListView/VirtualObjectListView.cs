@@ -1127,7 +1127,7 @@ namespace BrightIdeasSoftware
         /// Change the state of the control to reflect changes in filtering
         /// </summary>
         protected override void UpdateFiltering() {
-            if (VirtualListDataSource is not IFilterableDataSource filterable)
+            if (!(VirtualListDataSource is IFilterableDataSource filterable))
                 return;
 
             BeginUpdate();

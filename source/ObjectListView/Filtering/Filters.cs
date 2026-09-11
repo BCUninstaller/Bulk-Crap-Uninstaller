@@ -294,7 +294,7 @@ namespace BrightIdeasSoftware
                 return false;
 
             object result = ValueGetter(modelObject);
-            if (result is string || result is not IEnumerable enumerable)
+            if (result is string || !(result is IEnumerable enumerable))
                 return DoesValueMatch(result);
 
             foreach (object x in enumerable) {

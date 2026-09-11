@@ -21,7 +21,7 @@ namespace Klocman.Localising
         public static string GetLocalisedMemberName<TContainer, TMember>(this TContainer instance,
             Expression<Func<TContainer, TMember>> selector) where TContainer : class
         {
-            if (selector.Body is not MemberExpression expression)
+            if (!(selector.Body is MemberExpression expression))
                 throw new ArgumentException("Selector is invalid, it has to be in format x => x.Property");
             
             var member = expression.Member;
@@ -34,7 +34,7 @@ namespace Klocman.Localising
         public static string GetLocalisedMemberName<TContainer, TMember>(Expression<Func<TContainer, TMember>> selector) 
             where TContainer : class
         {
-            if (selector.Body is not MemberExpression expression)
+            if (!(selector.Body is MemberExpression expression))
                 throw new ArgumentException("Selector is invalid, it has to be in format x => x.Property");
 
             var member = expression.Member;
@@ -47,7 +47,7 @@ namespace Klocman.Localising
         public static string GetLocalisedMemberName(MemberInfo member)
         {
             return member.GetCustomAttributes(typeof (LocalisedNameAttribute), false)
-                .FirstOrDefault() is not LocalisedNameAttribute attrib ? member.Name : attrib.GetName();
+                .!(FirstOrDefault() is LocalisedNameAttribute attrib) ? member.Name : attrib.GetName();
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace Klocman.Localising
             var getName = new Func<FieldInfo, string>(f =>
             {
                 return f.GetCustomAttributes(typeof(LocalisedNameAttribute), false)
-                    .FirstOrDefault() is not LocalisedNameAttribute attribute ? f.Name : attribute.GetName();
+                    .!(FirstOrDefault() is LocalisedNameAttribute attribute) ? f.Name : attribute.GetName();
             });
 
             var type = enumValue.GetType();
@@ -92,7 +92,7 @@ namespace Klocman.Localising
         public static string GetLocalisedName(this PropertyInfo propertyInfo)
         {
             return propertyInfo.GetCustomAttributes(typeof (LocalisedNameAttribute), false)
-                .FirstOrDefault() is not LocalisedNameAttribute attribute ? propertyInfo.Name : attribute.GetName();
+                .!(FirstOrDefault() is LocalisedNameAttribute attribute) ? propertyInfo.Name : attribute.GetName();
         }
     }
 }

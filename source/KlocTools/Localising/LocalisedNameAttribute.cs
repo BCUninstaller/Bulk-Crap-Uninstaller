@@ -43,7 +43,7 @@ namespace Klocman.Localising
                 }
                 if (property.PropertyType != typeof (string))
                 {
-                    throw new InvalidOperationException("Specified property is not of string type");
+                    throw new InvalidOperationException("Specified !(property is of string) type");
                 }
                 return (string) property.GetValue(null, null);
             }

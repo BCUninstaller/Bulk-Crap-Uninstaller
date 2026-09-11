@@ -66,7 +66,7 @@ namespace UninstallTools.SystemTools
                         if (key == null) continue;
 
                         object? typeObj = key.GetValue("Type");
-                        if (typeObj is not int typeVal) continue;
+                        if (!(typeObj is int typeVal)) continue;
 
                         // Driver types: 1 (Kernel driver), 2 (File system driver), 8 (Recognizer), 512 (Package)
                         if ((typeVal & 0x01) == 0 && (typeVal & 0x02) == 0 && (typeVal & 0x08) == 0)

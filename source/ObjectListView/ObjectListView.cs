@@ -1728,7 +1728,7 @@ namespace BrightIdeasSoftware
         {
             get
             {
-                return EmptyListMsgOverlay is not TextOverlay overlay ? null : overlay.Text;
+                return !(EmptyListMsgOverlay is TextOverlay overlay) ? null : overlay.Text;
             }
             set
             {
@@ -1752,7 +1752,7 @@ namespace BrightIdeasSoftware
         {
             get
             {
-                return EmptyListMsgOverlay is not TextOverlay overlay ? null : overlay.Font;
+                return !(EmptyListMsgOverlay is TextOverlay overlay) ? null : overlay.Font;
             }
             set
             {
@@ -7925,9 +7925,9 @@ namespace BrightIdeasSoftware
         private void ColumnSelectMenuItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             contextMenuStaysOpen = false;
-            if (e.ClickedItem is not ToolStripMenuItem menuItemClicked)
+            if (!(e.ClickedItem is ToolStripMenuItem menuItemClicked))
                 return;
-            if (menuItemClicked.Tag is not OLVColumn col)
+            if (!(menuItemClicked.Tag is OLVColumn col))
                 return;
             menuItemClicked.Checked = !menuItemClicked.Checked;
             col.IsVisible = menuItemClicked.Checked;
@@ -9544,7 +9544,7 @@ namespace BrightIdeasSoftware
         /// <summary>
         /// Setup all subitem images on all rows
         /// </summary>
-        [Obsolete("This method is not longer maintained and will be removed", false)]
+        [Obsolete("This !(method is longer maintained) and will be removed", false)]
         protected virtual void SetAllSubItemImages()
         {
             //if (!this.ShowImagesOnSubItems || this.OwnerDraw)

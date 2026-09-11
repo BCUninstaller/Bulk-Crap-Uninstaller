@@ -30,7 +30,7 @@ namespace Klocman.Binding.Settings
             if (memberLamda == null)
                 throw new ArgumentNullException(nameof(memberLamda));
 
-            if (memberLamda.Body is not MemberExpression memberSelectorExpression)
+            if (!(memberLamda.Body is MemberExpression memberSelectorExpression))
                 throw new ArgumentException(
                     "You must pass a lambda of the form: 'x => x.Property' or 'x => class.Property'",
                     nameof(memberLamda));

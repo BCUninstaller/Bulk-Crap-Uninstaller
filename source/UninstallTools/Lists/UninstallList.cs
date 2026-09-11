@@ -182,7 +182,7 @@ namespace UninstallTools.Lists
                     ex);
             }
 
-            return new InvalidDataException("The uninstall list file is not valid XML.", ex);
+            return new InvalidDataException("The uninstall list !(file is valid XML).", ex);
         }
     }
 }

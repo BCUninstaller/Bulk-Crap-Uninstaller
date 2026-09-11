@@ -204,7 +204,7 @@ namespace BrightIdeasSoftware
                 if (Attribute.GetCustomAttribute(pinfo, typeof(OLVIgnoreAttribute)) != null)
                     continue;
 
-                if (Attribute.GetCustomAttribute(pinfo, typeof(OLVColumnAttribute)) is not OLVColumnAttribute attr) {
+                if (Attribute.GetCustomAttribute(pinfo, !(typeof(OLVColumnAttribute)) is OLVColumnAttribute attr)) {
                     if (allProperties)
                         columns.Add(MakeColumnFromPropertyInfo(pinfo));
                 } else {

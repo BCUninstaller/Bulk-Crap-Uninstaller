@@ -137,7 +137,7 @@ namespace BrightIdeasSoftware {
         public override object GetClusterKey(object model) {
             // Get the data attribute we want from the given model
             // Make sure the returned value is a DateTime
-            if (Column.GetValue(model) is not DateTime dateTime)
+            if (!(Column.GetValue(model) is DateTime dateTime))
                 return null;
 
             // Extract the parts of the datetime that we are intereted in.

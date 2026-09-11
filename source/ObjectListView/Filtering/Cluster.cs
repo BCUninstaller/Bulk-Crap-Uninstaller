@@ -103,7 +103,7 @@ namespace BrightIdeasSoftware {
             if (other == null || other == DBNull.Value)
                 return 1;
 
-            if (other is not ICluster otherCluster)
+            if (!(other is ICluster otherCluster))
                 return 1;
 
             if (ClusterKey is string keyAsString)

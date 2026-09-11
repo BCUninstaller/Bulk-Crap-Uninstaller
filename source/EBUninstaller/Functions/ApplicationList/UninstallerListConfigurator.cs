@@ -120,7 +120,7 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 
         private bool ListViewFilter(object obj)
         {
-            if (obj is not ApplicationUninstallerEntry entry) return false;
+            if (!(obj is ApplicationUninstallerEntry entry)) return false;
 
             if (FilteringOverride != null) return FilteringOverride.TestEntry(entry) == true;
 
@@ -183,7 +183,7 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             //_reference.olvColumnInstallDate.AspectName = ApplicationUninstallerEntry.RegistryNameInstallDate;
             _reference.olvColumnInstallDate.AspectToStringConverter = x =>
             {
-                if (x is not DateTime time) return Localisable.Empty;
+                if (!(x is DateTime time)) return Localisable.Empty;
                 try
                 {
                     return time.IsDefault() ? Localisable.Empty : time.ToShortDateString();
@@ -251,7 +251,7 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 
         private void UninstallerObjectListView_FormatRow(object sender, FormatRowEventArgs e)
         {
-            if (e.Model is not ApplicationUninstallerEntry entry) return;
+            if (!(e.Model is ApplicationUninstallerEntry entry)) return;
 
             var color = ApplicationListConstants.GetApplicationBackColor(entry);
             if (!color.IsEmpty)

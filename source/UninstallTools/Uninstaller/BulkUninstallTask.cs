@@ -94,7 +94,7 @@ namespace UninstallTools.Uninstaller
 
         public static object StatusAspectGetter(object rowObj)
         {
-            if (rowObj is not BulkUninstallEntry temp) return null;
+            if (!(rowObj is BulkUninstallEntry temp)) return null;
 
             var name = temp.CurrentStatus.GetLocalisedName();
             if (temp.CurrentError != null)

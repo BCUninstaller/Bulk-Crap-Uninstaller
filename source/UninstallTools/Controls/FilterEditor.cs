@@ -175,7 +175,7 @@ namespace UninstallTools.Controls
 
         private void comboBoxCompareMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxCompareMethod.SelectedItem is not LocalisedEnumWrapper localisedEnumWrapper || _targetFilterCondition == null
+            if (!(comboBoxCompareMethod.SelectedItem is LocalisedEnumWrapper localisedEnumWrapper) || _targetFilterCondition == null
                                                                                                    || _targetFilterCondition.ComparisonMethod == (ComparisonMethod)localisedEnumWrapper.TargetEnum)
                 return;
 

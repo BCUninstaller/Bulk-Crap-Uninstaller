@@ -349,7 +349,7 @@ namespace BrightIdeasSoftware
                 if (column.AspectGetter == null && !String.IsNullOrEmpty(column.AspectName)) {
                     column.AspectGetter = delegate(object row) {
                         // In most cases, rows will be DataRowView objects
-                        if (row is not DataRowView drv) 
+                        if (!(row is DataRowView drv)) 
                             return column.GetAspectByName(row);
                         return (drv.Row.RowState == DataRowState.Detached) ? null : drv[column.AspectName];
                     };
@@ -357,7 +357,7 @@ namespace BrightIdeasSoftware
                 if (column.IsEditable && column.AspectPutter == null && !String.IsNullOrEmpty(column.AspectName)) {
                     column.AspectPutter = delegate(object row, object newValue) {
                         // In most cases, rows will be DataRowView objects
-                        if (row is not DataRowView drv)
+                        if (!(row is DataRowView drv))
                             column.PutAspectByName(row, newValue);
                         else {
                             if (drv.Row.RowState != DataRowState.Detached)
@@ -466,7 +466,7 @@ namespace BrightIdeasSoftware
             // DataTable, and if it is, testing to see if it's a new row under creation.
 
             Object newRow = CurrencyManager.List[e.NewIndex];
-            if (newRow is not DataRowView drv || !drv.IsNew) {
+            if (!(newRow is DataRowView drv) || !drv.IsNew) {
                 // Either we're not dealing with a view on a data table, or this is the commit
                 // notification. Either way, this is the final notification, so we want to
                 // handle the new row now!

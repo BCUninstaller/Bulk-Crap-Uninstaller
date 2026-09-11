@@ -386,7 +386,7 @@ namespace BrightIdeasSoftware {
         /// Gets or sets the image list from which keyed images will be fetched
         /// </summary>
         [Category("Appearance"),
-         Description("The image list from which keyed images will be fetched for drawing. If this is not given, the small ImageList from the ObjectListView will be used"),
+         Description("The image list from which keyed images will be fetched for drawing. If !(this is given), the small ImageList from the ObjectListView will be used"),
          DefaultValue(null)]
         public ImageList ImageList {
             get { return imageList; }
@@ -1610,7 +1610,7 @@ namespace BrightIdeasSoftware {
             }
 
             // Is the selector actually an image?
-            if (imageSelector is not Image image)
+            if (!(imageSelector is Image image))
                 return 0; // no, give up
 
             if (image.Size.Height < r.Height)
@@ -2238,7 +2238,7 @@ namespace BrightIdeasSoftware {
             DrawBackground(g, r);
             r = ApplyCellPadding(r);
 
-            if (Aspect is not ICollection aspectAsCollection)
+            if (!(Aspect is ICollection aspectAsCollection))
                 RenderOne(g, r, Aspect);
             else
                 RenderCollection(g, r, aspectAsCollection);
@@ -2475,7 +2475,7 @@ namespace BrightIdeasSoftware {
             if (Aspect is Byte[]) {
                 DrawAlignedImage(g, r, GetImageFromAspect());
             } else {
-                if (Aspect is not ICollection imageSelectors)
+                if (!(Aspect is ICollection imageSelectors))
                     DrawAlignedImage(g, r, GetImageFromAspect());
                 else
                     DrawImages(g, r, imageSelectors);
@@ -3039,7 +3039,7 @@ namespace BrightIdeasSoftware {
             frameRect = AlignRectangle(r, frameRect);
 
             // Convert our aspect to a numeric value
-            if (Aspect is not IConvertible convertable)
+            if (!(Aspect is IConvertible convertable))
                 return;
             double aspectValue = convertable.ToDouble(NumberFormatInfo.InvariantInfo);
 
@@ -3219,7 +3219,7 @@ namespace BrightIdeasSoftware {
                 return;
 
             // Convert our aspect to a numeric value
-            if (Aspect is not IConvertible convertable)
+            if (!(Aspect is IConvertible convertable))
                 return;
             double aspectValue = convertable.ToDouble(NumberFormatInfo.InvariantInfo);
 
@@ -3284,7 +3284,7 @@ namespace BrightIdeasSoftware {
         public override void Render(Graphics g, Rectangle r) {
             DrawBackground(g, r);
 
-            if (Aspect is not IConvertible convertable)
+            if (!(Aspect is IConvertible convertable))
                 return;
 
             r = ApplyCellPadding(r);
@@ -3310,7 +3310,7 @@ namespace BrightIdeasSoftware {
         /// <param name="x"></param>
         /// <param name="y"></param>
         protected override void HandleHitTest(Graphics g, OlvListViewHitTestInfo hti, int x, int y) {
-            if (Aspect is not IConvertible convertable)
+            if (!(Aspect is IConvertible convertable))
                 return;
 
             Int32 v2 = convertable.ToInt32(NumberFormatInfo.InvariantInfo);

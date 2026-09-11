@@ -31,7 +31,7 @@ namespace UninstallTools.Controls
 
         public object ColumnImageGetter(object rowObj)
         {
-            if (rowObj is not ApplicationUninstallerEntry entry || IconList == null)
+            if (!(rowObj is ApplicationUninstallerEntry entry) || IconList == null)
                 return null;
 
             if (IconListContainsKey(entry.DisplayName))

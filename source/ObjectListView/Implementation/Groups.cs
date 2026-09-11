@@ -620,7 +620,7 @@ namespace BrightIdeasSoftware
         /// using a ListViewGroup
         /// </summary>
         public void SetItemsOldStyle() {
-            if (Items is not List<OLVListItem> list) {
+            if (!(Items is List<OLVListItem> list)) {
                 foreach (OLVListItem item in Items) {
                     ListViewGroup.Items.Add(item);
                 }
