@@ -47,7 +47,7 @@ namespace BulkCrapUninstaller.Forms
             if (junkNodes.All(x => x.Confidence.GetRawConfidence() < 0))
             {
                 _confirmLowConfidenceMessageShown = true;
-                checkBoxHideLowConfidence.Checked = true;
+                checkBoxHideLowConfidence.Checked = false;
                 checkBoxHideLowConfidence.Enabled = false;
             }
             else if (junkNodes.All(x => x.Confidence.GetRawConfidence() >= 0))
