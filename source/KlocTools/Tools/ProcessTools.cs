@@ -143,6 +143,7 @@ namespace Klocman.Tools
             if (string.IsNullOrEmpty(fullCommand))
                 throw new ArgumentException(Localisation.Error_SeparateArgsFromCommand_Empty, nameof(fullCommand));
 
+            var firstArgumentSpace = fullCommand.IndexOf(' ');
             var firstDot = fullCommand.IndexOf('.');
             if (firstDot < 0)
                 return SeparateNonDottedCommand(fullCommand);
@@ -229,7 +230,20 @@ namespace Klocman.Tools
                 //pathEnd = fullCommand.IndexOfAny(" ,:;?-=", fullCommand.LastIndexOf('.'));
             }
 
-            return SeparateCommand(fullCommand, pathEnd);
+            return SeparateBareExecutableIfNeeded(fullCommand, SeparateCommand(fullCommand, pathEnd), firstArgumentSpace);
+        }
+
+        private static ProcessStartCommand SeparateBareExecutableIfNeeded(string fullCommand, ProcessStartCommand parsedCommand, int firstArgumentSpace)
+        {
+            if (firstArgumentSpace <= 0 || fullCommand[0] == '"' || !string.IsNullOrEmpty(parsedCommand.Arguments) ||
+                WindowsTools.IsExectuable(parsedCommand.FileName, false))
+                return parsedCommand;
+
+            var executableName = fullCommand.Substring(0, firstArgumentSpace);
+            if (executableName.Contains('\\') || executableName.Contains('/') || executableName.Contains(':'))
+                return parsedCommand;
+
+            return new ProcessStartCommand(executableName, fullCommand.Substring(firstArgumentSpace + 1));
         }
 
         private static ProcessStartCommand SeparateCommand(string fullCommand, int splitIndex)
