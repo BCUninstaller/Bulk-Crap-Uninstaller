@@ -97,8 +97,24 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             : _listView.SelectedObjects.Count;
 
         public IEnumerable<ApplicationUninstallerEntry> SelectedUninstallers => _listView.ListView.CheckBoxes
-            ? _listView.ListView.GetAllObjectsWithMappedCheckState(CheckState.Checked).Cast<ApplicationUninstallerEntry>().Where(e => e != null && AllUninstallers.Contains(e))
+            ? ReconcileCheckedObjects(
+                _listView.ListView.GetAllObjectsWithMappedCheckState(CheckState.Checked).Cast<ApplicationUninstallerEntry>(),
+                FilteredUninstallers,
+                _listView.CheckedObjects).Where(e => AllUninstallers.Contains(e))
             : _listView.SelectedObjects.Where(e => e != null);
+
+        internal static IEnumerable<ApplicationUninstallerEntry> ReconcileCheckedObjects(
+            IEnumerable<ApplicationUninstallerEntry> mappedChecked,
+            IEnumerable<ApplicationUninstallerEntry> visibleObjects,
+            IEnumerable<ApplicationUninstallerEntry> visuallyChecked)
+        {
+            // Visible rows are authoritative; the persistent map is only needed for checks hidden by filtering (#155).
+            var visible = visibleObjects.Where(x => x != null).ToHashSet();
+
+            return mappedChecked.Where(x => x != null && !visible.Contains(x))
+                .Concat(visuallyChecked.Where(x => x != null))
+                .Distinct();
+        }
 
         public void Dispose()
         {
