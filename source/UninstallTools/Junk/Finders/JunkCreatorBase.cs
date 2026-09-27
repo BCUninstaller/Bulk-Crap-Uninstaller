@@ -53,7 +53,8 @@ namespace UninstallTools.Junk.Finders
             {
                 var dirInfo = new DirectoryInfo(directory);
 
-                if (dirInfo.FullName.Contains(FullWindowsDirectoryName) || !dirInfo.Exists || dirInfo.Parent == null)
+                if (PathTools.SubPathIsInsideBasePath(FullWindowsDirectoryName, dirInfo.FullName, false, true)
+                    || !dirInfo.Exists || dirInfo.Parent == null)
                     return null;
 
                 var newNode = new FileSystemJunk(dirInfo, app, this);
