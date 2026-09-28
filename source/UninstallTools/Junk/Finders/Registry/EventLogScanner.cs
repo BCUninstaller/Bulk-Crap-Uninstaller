@@ -28,7 +28,7 @@ namespace UninstallTools.Junk.Finders.Registry
                 if (key == null) yield break;
 
                 var query = from name in key.GetSubKeyNames()
-                    let m = ConfidenceGenerators.MatchStringToProductName(target, name)
+                    let m = ConfidenceGenerators.MatchStringToProductName(target, name, allowGenericName: true)
                     where m >= 0 && m < 3
                     //orderby m ascending
                     select name;

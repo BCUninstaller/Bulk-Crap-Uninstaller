@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Klocman.Tools;
 using Microsoft.Win32.TaskScheduler;
+using UninstallTools.Factory;
 using UninstallTools.Properties;
 using UninstallTools.Startup.Browser;
 using UninstallTools.Startup.Normal;
@@ -46,9 +47,11 @@ namespace UninstallTools.Startup
 
             foreach (var uninstaller in uninstallers)
             {
+                var uninstallerName = uninstaller.DisplayNameTrimmed;
+                var matchByName = !ApplicationEntryTools.IsGenericApplicationName(uninstallerName);
                 var positives = startups.Where(startup =>
                 {
-                    if (startup.ProgramNameTrimmed?.Equals(uninstaller.DisplayNameTrimmed, StringComparison.OrdinalIgnoreCase) == true)
+                    if (matchByName && startup.ProgramNameTrimmed?.Equals(uninstallerName, StringComparison.OrdinalIgnoreCase) == true)
                         return true;
 
                     if (startup.CommandFilePath == null)

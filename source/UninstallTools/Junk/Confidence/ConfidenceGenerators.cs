@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Klocman.Tools;
+using UninstallTools.Factory;
 using UninstallTools.Junk.Containers;
 
 namespace UninstallTools.Junk.Confidence
@@ -55,9 +56,12 @@ namespace UninstallTools.Junk.Confidence
         /// <summary>
         /// -1 if match failed, 0 if string matched perfectly, higher if match was worse
         /// </summary>
-        internal static int MatchStringToProductName(ApplicationUninstallerEntry applicationUninstallerEntry, string str)
+        internal static int MatchStringToProductName(ApplicationUninstallerEntry applicationUninstallerEntry, string str, bool allowGenericName = false)
         {
             var productName = applicationUninstallerEntry.DisplayNameTrimmed.ToLowerInvariant();
+            if (!allowGenericName && ApplicationEntryTools.IsGenericApplicationName(productName))
+                return -1;
+
             str = str.Replace('_', ' ').ToLowerInvariant().Trim();
             var lowestLength = Math.Min(productName.Length, str.Length);
 

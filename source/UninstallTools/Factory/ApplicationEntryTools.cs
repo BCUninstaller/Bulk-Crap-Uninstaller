@@ -13,6 +13,14 @@ namespace UninstallTools.Factory
 {
     public static class ApplicationEntryTools
     {
+        internal static bool IsGenericApplicationName(string name)
+        {
+            name = name?.Trim();
+            return string.Equals(name, "Update", StringComparison.OrdinalIgnoreCase)
+                   || string.Equals(name, "Updates", StringComparison.OrdinalIgnoreCase)
+                   || string.Equals(name, "Updater", StringComparison.OrdinalIgnoreCase);
+        }
+
         /// <summary>
         /// Try to figure out if base uninstaller entry and other entry are pointing to the same application.
         /// Minimum score changes how similar the applications have to be (best use small values, higher is harder)
