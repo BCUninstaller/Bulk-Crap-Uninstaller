@@ -3,25 +3,40 @@ on:
   release:
     types: [released]
 
-permissions:
-  contents: read
-
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - name: Get version
+      - name: Get Version
         id: get-version
         run: |
-          # Find the version from tag name and pad to 4 components
-          version=$(echo "${{ github.event.release.tag_name }}" | awk -F. '{printf "%d.%d.%d.%d\n", substr($1, 2), $2, $3, $4}')
-          if [[ ! "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "Invalid release tag: ${{ github.event.release.tag_name }}" >&2
-            exit 1
-          fi
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-      - uses: vedantmgoyal9/winget-releaser@b3a5dae0047c6180023acba3f548c55fdf6b7193 # immutable pin; review updates through a dependency PR
-        with:
-          identifier: Klocman.BulkCrapUninstaller
-          version: ${{ steps.get-version.outputs.version }}
-          token: ${{ secrets.WINGET_TOKEN }}
+          $tag = "${{ github.event.release.tag_name }}"
+          $cleanTag =$tag -replace '^v', ''
+          $parts =$cleanTag.Split('.')
+          
+          $version = "{0}.{1}.{2}.{3}" -f [int]$parts[0], [int]$parts[1], [int]$parts[2], [int]$parts[3]
+          
+          if ($version -notmatch '^\d+\.\d+\.\d+\.\d+$') {
+              Write-Error "Invalid release tag: ${{ github.event.release.tag_name }}"
+              exit 1
+          }
+          
+          Write-Output "VERSION=$version" \vert{} Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Submit Package
+        id: submit-package
+        run: |
+          $assets = '${{ toJSON(github.event.release.assets) }}' | ConvertFrom-Json
+          $installerUrl =$assets | Where-Object -Property name -like '*.exe' | Select-Object -ExpandProperty browser_download_url
+
+          if (-not $installerUrl) {
+              Write-Error "Could not find a .exe asset in the release."
+              exit 1
+          }
+          
+          curl.exe -JLO https://aka.ms/wingetcreate/latest
+          .\wingetcreate.exe update Klocman.BulkCrapUninstaller `
+            --version $env:VERSION `
+            --urls $installerUrl `
+            --submit `
+            --token ${{ secrets.WINGET_TOKEN }}
