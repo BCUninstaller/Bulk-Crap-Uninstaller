@@ -294,9 +294,9 @@ Return codes:
                 Console.WriteLine(@"DRY RUN: Nothing will be uninstalled and no files or registry entries will be deleted.");
 
             Console.WriteLine(@"Starting bulk uninstall...");
-            var apps = QueryApps(isQuiet, isUnattended, isVerbose);
+            var allApps = QueryApps(isQuiet, isUnattended, isVerbose);
 
-            apps = apps.Where(a => list.TestEntry(a) == true).OrderBy(x => x.DisplayName).ToList();
+            var apps = allApps.Where(a => list.TestEntry(a) == true).OrderBy(x => x.DisplayName).ToList();
 
             if (apps.Count == 0)
             {
@@ -355,7 +355,9 @@ Return codes:
                 Console.WriteLine($"Starting junk cleanup with a minimum confidence level of {junkConfidenceLevel}");
                 if (isDryRun)
                     Console.WriteLine(@"Note: The applications are still installed, so results may differ from the actual cleanup performed after they are uninstalled.");
-                List<IJunkResult> remainingJunk = JunkManager.FindJunk(apps, apps, _ => { })
+                var remainingApps = isDryRun ? allApps : QueryApps(isQuiet, isUnattended, isVerbose);
+
+                List<IJunkResult> remainingJunk = JunkManager.FindJunk(apps, remainingApps, _ => { })
                     .Where(j => j.Confidence.GetConfidence() >= junkConfidenceLevel)
                     .ToList();
 

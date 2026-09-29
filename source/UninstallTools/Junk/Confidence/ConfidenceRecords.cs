@@ -50,6 +50,8 @@ namespace UninstallTools.Junk.Confidence
 
         public static readonly ConfidenceRecord UsedBySimilarNamedApp = new(-2, Localisation.Confidence_UsedBySimilarNamedApp);
 
+        public static readonly ConfidenceRecord SameProductNameStillInstalled = new(-7, Localisation.Confidence_UsedBySimilarNamedApp);
+
         public static readonly ConfidenceRecord DirectlyInsideKnownFolder = new(-1, Localisation.Confidence_DirectlyInsideKnownFolder);
     }
 }

@@ -116,9 +116,28 @@ namespace UninstallTools.Junk.Confidence
             if (createdJunk.Count == 0) return;
 
             var thisDisplayName = thisUninstaller.DisplayNameTrimmed;
+            var otherEntries = otherUninstallers.Where(x => x != thisUninstaller).ToList();
+            var sameProductEntries = otherEntries
+                .Where(x => string.Equals(x.DisplayNameTrimmed, thisDisplayName, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            // Same-name versions can share product- or publisher-named settings and registry keys.
+            // Keep those heuristic matches below the default Good-or-better selection threshold.
+            if (sameProductEntries.Count > 0)
+            {
+                foreach (var sharedJunk in createdJunk.Where(x => sameProductEntries.Any(y =>
+                             string.Equals(x.Value, y.DisplayNameTrimmed, StringComparison.OrdinalIgnoreCase) ||
+                             string.Equals(x.Value, y.PublisherTrimmed, StringComparison.OrdinalIgnoreCase))))
+                {
+                    var adjustment = Math.Min(ConfidenceRecords.SameProductNameStillInstalled.Change,
+                        1 - sharedJunk.Key.Confidence.GetRawConfidence());
+                    sharedJunk.Key.Confidence.Add(new ConfidenceRecord(adjustment,
+                        ConfidenceRecords.SameProductNameStillInstalled.Reason));
+                }
+            }
 
             // Check if any of the other apps match any of the entries, as long as the app names don't contain this app's name
-            var otherFiltered = otherUninstallers.Where(x => x != thisUninstaller && !x.DisplayNameTrimmed.Contains(thisDisplayName)).ToList();
+            var otherFiltered = otherEntries.Where(x => !x.DisplayNameTrimmed.Contains(thisDisplayName)).ToList();
             var matchingWithOther = createdJunk.Where(x => otherFiltered.Any(y => y.DisplayNameTrimmed.Contains(x.Value)));
 
             if (createdJunk.Count >= 2)
