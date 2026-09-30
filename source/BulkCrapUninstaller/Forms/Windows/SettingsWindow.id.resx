@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Pengaturan Penghapus Instalasi Sampah Massal</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>&amp;Menutup</value>
+  </data>
+  <data name="checkBoxAutoInstallFolderDetect.Text" xml:space="preserve">
+    <value>Cobalah untuk mendeteksi folder instalasi khusus secara otomatis</value>
+  </data>
+  <data name="checkBoxAutoLoad.Text" xml:space="preserve">
+    <value>Secara otomatis memuat Daftar Uninstall bernama "Default.bcul" saat mulai</value>
+  </data>
+  <data name="checkBoxChoco.Text" xml:space="preserve">
+    <value>Chocolatey</value>
+  </data>
+  <data name="checkBoxColorblind.Text" xml:space="preserve">
+    <value>Modus buta warna</value>
+  </data>
+  <data name="checkBoxDpiaware.Text" xml:space="preserve">
+    <value>Aktifkan penskalaan antarmuka yang sadar DPI</value>
+  </data>
+  <data name="checkBoxEnableExternal.Text" xml:space="preserve">
+    <value>Aktifkan eksekusi aplikasi eksternal</value>
+  </data>
+  <data name="checkBoxLoud.Text" xml:space="preserve">
+    <value>Minta untuk menghapus uninstaller tidak senyap dari tugas senyap</value>
+  </data>
+  <data name="checkBoxNeverFeedback.Text" xml:space="preserve">
+    <value>Jangan pernah meminta umpan balik atau bantuan</value>
+  </data>
+  <data name="checkBoxOculus.Text" xml:space="preserve">
+    <value>Oculus Store</value>
+  </data>
+  <data name="checkBoxPreDefined.Text" xml:space="preserve">
+    <value>Berdasarkan aturan yang telah ditentukan sebelumnya</value>
+  </data>
+  <data name="checkBoxRatings.Text" xml:space="preserve">
+    <value>Aktifkan peringkat pengguna aplikasi</value>
+  </data>
+  <data name="checkBoxRemovable.Text" xml:space="preserve">
+    <value>Pindai drive yang dapat dilepas</value>
+  </data>
+  <data name="checkBoxScanDrives.Text" xml:space="preserve">
+    <value>Drive (mendeteksi aplikasi yang tidak terdaftar)</value>
+  </data>
+  <data name="checkBoxScanRegistry.Text" xml:space="preserve">
+    <value>Registri (disarankan untuk membiarkan diaktifkan)</value>
+  </data>
+  <data name="checkBoxScanSteam.Text" xml:space="preserve">
+    <value>Steam</value>
+  </data>
+  <data name="checkBoxScanStoreApps.Text" xml:space="preserve">
+    <value>Aplikasi Toko Windows</value>
+  </data>
+  <data name="checkBoxScanWinFeatures.Text" xml:space="preserve">
+    <value>Fitur Windows</value>
+  </data>
+  <data name="checkBoxScanWinUpdates.Text" xml:space="preserve">
+    <value>Pembaruan Windows</value>
+  </data>
+  <data name="checkBoxScoop.Text" xml:space="preserve">
+    <value>Scoop</value>
+  </data>
+  <data name="checkBoxSendStats.Text" xml:space="preserve">
+    <value>Kirim statistik penggunaan anonim</value>
+  </data>
+  <data name="checkBoxShowAllBadJunk.Text" xml:space="preserve">
+    <value>Selalu tampilkan sisa file dengan keyakinan rendah</value>
+  </data>
+  <data name="checkBoxUpdateSearch.Text" xml:space="preserve">
+    <value>Cari pembaruan saat startup</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Cari aplikasi di...</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Rintisan</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Jaringan</value>
+  </data>
+  <data name="groupBoxAppStores.Text" xml:space="preserve">
+    <value>Toko aplikasi untuk memindai</value>
+  </data>
+  <data name="groupBoxBackup.Text" xml:space="preserve">
+    <value>Cadangkan sebelum menghapus sisa</value>
+  </data>
+  <data name="groupBoxExternal.Text" xml:space="preserve">
+    <value>Aplikasi eksternal</value>
+  </data>
+  <data name="groupBoxLanguage.Text" xml:space="preserve">
+    <value>Bahasa</value>
+  </data>
+  <data name="groupBoxMessages.Text" xml:space="preserve">
+    <value>Kotak pesan</value>
+  </data>
+  <data name="groupBoxMisc.Text" xml:space="preserve">
+    <value>Lain-lain</value>
+  </data>
+  <data name="groupBoxProgramFolders.Text" xml:space="preserve">
+    <value>Folder instalasi program</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Cari sisa file setelah pencopotan pemasangan</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Aplikasi harus dimulai ulang agar perubahan bahasa dapat diterapkan.</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Buat titik pemulihan sebelum mencopot pemasangan</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Klik dua kali pada daftar aplikasi</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Baris perintah sebelum penghapusan instalasi dimulai</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Baris perintah setelah penghapusan instalasi berakhir</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Anda dapat menentukan perintah yang akan dijalankan sebelum dan sesudah penghapusan instalasi. Satu baris sama dengan satu perintah dan akan dijalankan seolah-olah Anda menggunakan dialog "Jalankan...".
+
+BCU akan menunggu hingga perintah yang sedang berjalan selesai sebelum menjalankan perintah berikutnya.</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Bahasa aplikasi:</value>
+  </data>
+  <data name="labelProgramFolders.Text" xml:space="preserve">
+    <value>Anda dapat menentukan folder khusus tempat Anda menginstal aplikasi (misalnya D:\Applications). Folder-folder tersebut akan digunakan oleh BCU untuk mencari sisa uninstall, aplikasi yang tidak terdaftar dan beberapa hal lainnya. Meskipun tidak diperlukan, daftar folder ini akan membuat BCU bekerja lebih baik.
+
+Folder default Windows selalu dipindai, Anda tidak perlu memasukkannya ke dalam daftar ini.
+
+Gunakan jalur direktori lengkap, satu jalur per baris. Jalur yang tidak valid dan direktori yang tidak ada akan diabaikan.</value>
+  </data>
+  <data name="labelWinFeatureInfo.Text" xml:space="preserve">
+    <value>Deteksi Fitur Windows menggunakan WMI, dan bisa lambat atau bahkan gagal pada beberapa sistem (biasanya menunjukkan kerusakan sistem).</value>
+  </data>
+  <data name="labelWinUpdateInfo.Text" xml:space="preserve">
+    <value>Deteksi Pembaruan Windows menggunakan WUA yang lambat. Diperlukan waktu beberapa menit untuk menyelesaikannya.</value>
+  </data>
+  <data name="radioButtonBackupAsk.Text" xml:space="preserve">
+    <value>Selalu minta untuk membuat</value>
+  </data>
+  <data name="radioButtonBackupAuto.Text" xml:space="preserve">
+    <value>Buat secara otomatis di direktori:</value>
+  </data>
+  <data name="radioButtonBackupNever.Text" xml:space="preserve">
+    <value>Jangan pernah meminta untuk membuat</value>
+  </data>
+  <data name="tabPageDetection.Text" xml:space="preserve">
+    <value>Deteksi</value>
+  </data>
+  <data name="tabPageExternal.Text" xml:space="preserve">
+    <value>Alat eksternal</value>
+  </data>
+  <data name="tabPageFolders.Text" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="tabPageGeneral.Text" xml:space="preserve">
+    <value>Umum</value>
+  </data>
+  <data name="tabPageInterface.Text" xml:space="preserve">
+    <value>Antarmuka</value>
+  </data>
+  <data name="tabPageMisc.Text" xml:space="preserve">
+    <value>Lain-lain</value>
+  </data>
+  <data name="tabPageUninstallation.Text" xml:space="preserve">
+    <value>Penghapusan instalasi</value>
+  </data>
+</root>

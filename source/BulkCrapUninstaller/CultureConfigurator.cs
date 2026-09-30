@@ -120,6 +120,9 @@ namespace BulkCrapUninstaller
                 // Hungarian
                 "hu-HU",
 
+                // id - Indonesian
+                "id-ID",
+
                 // it - Italian
                 "it-IT",
                 "it-CH",

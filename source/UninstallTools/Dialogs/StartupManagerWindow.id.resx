@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Manajer Permulaan</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Menutup</value>
+  </data>
+  <data name="buttonExport.Text" xml:space="preserve">
+    <value>Ekspor...</value>
+  </data>
+  <data name="buttonRefresh.Text" xml:space="preserve">
+    <value>Menyegarkan</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Nama program</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Penerbit</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Lokasi</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Memerintah</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Diaktifkan</value>
+  </data>
+  <data name="comboBoxFilter.Items" xml:space="preserve">
+    <value>Tunjukkan semuanya</value>
+  </data>
+  <data name="comboBoxFilter.Items1" xml:space="preserve">
+    <value>Tampilkan entri permulaan</value>
+  </data>
+  <data name="comboBoxFilter.Items2" xml:space="preserve">
+    <value>Tampilkan tugas</value>
+  </data>
+  <data name="comboBoxFilter.Items3" xml:space="preserve">
+    <value>Tampilkan ekstensi browser</value>
+  </data>
+  <data name="comboBoxFilter.Items4" xml:space="preserve">
+    <value>Tampilkan layanan</value>
+  </data>
+  <data name="copyToClipboardToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Salin ke papan klip</value>
+  </data>
+  <data name="createBackupToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buat &amp; cadangan...</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Menghapus</value>
+  </data>
+  <data name="enableToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Diaktifkan</value>
+  </data>
+  <data name="exportDialog.Filter" xml:space="preserve">
+    <value>File teks|*.txt</value>
+  </data>
+  <data name="exportDialog.Title" xml:space="preserve">
+    <value>Ekspor entri permulaan...</value>
+  </data>
+  <data name="folderBrowserDialog.Description" xml:space="preserve">
+    <value>Pilih direktori kosong untuk cadangan.</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Daftar perintah yang dapat dijalankan secara otomatis tanpa campur tangan pengguna</value>
+  </data>
+  <data name="moveToRegistryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pindah ke registri</value>
+  </data>
+  <data name="openFileLocationToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Buka lokasi yang dapat dieksekusi</value>
+  </data>
+  <data name="openLinkLocationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buka lokasi tautan</value>
+  </data>
+  <data name="runCommandToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Jalankan perintah</value>
+  </data>
+  <data name="runForAllUsersToolStripMenuItem.Text" xml:space="preserve">
+    <value>Jalankan untuk semua pengguna</value>
+  </data>
+</root>

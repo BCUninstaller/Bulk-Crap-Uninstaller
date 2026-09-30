@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Bulk Crap Uninstaller</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Tentang</value>
+  </data>
+  <data name="advancedApplicationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Filter bawaan</value>
+  </data>
+  <data name="advancedClipCopyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Canggih...</value>
+  </data>
+  <data name="advancedOperationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Operasi tingkat lanjut</value>
+  </data>
+  <data name="alternativeToToolStripMenuItem.Text" xml:space="preserve">
+    <value>AlternativeTo.net</value>
+  </data>
+  <data name="automaticallyStartedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hanya dimulai secara otomatis</value>
+  </data>
+  <data name="autosizeAllColumnsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ubah ukuran semua kolom secara otomatis</value>
+  </data>
+  <data name="basicApplicationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hanya &amp;aplikasi dasar</value>
+  </data>
+  <data name="basicOperationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Operasi dasar</value>
+  </data>
+  <data name="buttonAdvFiltering.Text" xml:space="preserve">
+    <value>Pemfilteran tingkat lanjut</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Periksa pembaruan</value>
+  </data>
+  <data name="cleanUpProgramFilesToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Bersihkan folder "Program Files"...</value>
+  </data>
+  <data name="copyFullInformationToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Informasi lengkap</value>
+  </data>
+  <data name="copyToClipboardContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Salin ke Papan Klip...</value>
+  </data>
+  <data name="createBackupFileDialog.Filter" xml:space="preserve">
+    <value>File registri|*.reg</value>
+  </data>
+  <data name="createBackupFileDialog.Title" xml:space="preserve">
+    <value>Buat cadangan registri</value>
+  </data>
+  <data name="createBackupToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buat &amp;Cadangan...</value>
+  </data>
+  <data name="createRestorePointToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buat titik pemulihan baru</value>
+  </data>
+  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buka jendela &amp;debug</value>
+  </data>
+  <data name="deleteRegistryEntryContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Hapus entri registri</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Hapus kunci registri</value>
+  </data>
+  <data name="disableAutostartToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nonaktifkan mulai otomatis</value>
+  </data>
+  <data name="displaySettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampilkan bilah sisi &amp;setelan</value>
+  </data>
+  <data name="displayStatusbarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampilkan status &amp;bilah</value>
+  </data>
+  <data name="displayToolbarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampilkan &amp;bilah alat</value>
+  </data>
+  <data name="everythingToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Semuanya</value>
+  </data>
+  <data name="excludeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kecualikan</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Keluar</value>
+  </data>
+  <data name="exportDialog.Filter" xml:space="preserve">
+    <value>File XML|*.xml</value>
+  </data>
+  <data name="exportDialog.Title" xml:space="preserve">
+    <value>Ekspor properti uninstaller yang dipilih</value>
+  </data>
+  <data name="exportSelectedToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ekspor data uninstaller yang dipilih...</value>
+  </data>
+  <data name="exportStoreAppsToPowerShellRemoveScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buat Skrip PowerShell Hapus Aplikasi Store...</value>
+  </data>
+  <data name="exportToABatchUninstallScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ekspor ke skrip uninstall batch...</value>
+  </data>
+  <data name="fileHippocomToolStripMenuItem.Text" xml:space="preserve">
+    <value>FileHippo.com</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Berkas</value>
+  </data>
+  <data name="filteringToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Filter cepat</value>
+  </data>
+  <data name="fossHubcomToolStripMenuItem.Text" xml:space="preserve">
+    <value>FossHub.com</value>
+  </data>
+  <data name="fullInformationCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Informasi lengkap</value>
+  </data>
+  <data name="fullRegistryPathCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>Jalur registri lengkap</value>
+  </data>
+  <data name="gUIDProductCodeCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>Kode produk / GUID</value>
+  </data>
+  <data name="gitHubcomToolStripMenuItem.Text" xml:space="preserve">
+    <value>GitHub.com</value>
+  </data>
+  <data name="googleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Cari</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Bant&amp;uan</value>
+  </data>
+  <data name="includeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Termasuk</value>
+  </data>
+  <data name="installLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Lokasi pemasangan</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>BCUninstaller</value>
+  </data>
+  <data name="loadUninstallerListToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Buka Daftar Copot Pemasangan...</value>
+  </data>
+  <data name="lookUpOnlineToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Cari daring</value>
+  </data>
+  <data name="manualUninstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copot pemasangan secara &amp;manual</value>
+  </data>
+  <data name="manualUninstallToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Copot pemasangan secara &amp;manual</value>
+  </data>
+  <data name="modifyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Memodifikasi</value>
+  </data>
+  <data name="msiInstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Instal atau konfigurasikan (/I)</value>
+  </data>
+  <data name="msiQuietUninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Copot pemasangan secara diam-diam (/X /qb)</value>
+  </data>
+  <data name="msiUninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Copot pemasangan (/X)</value>
+  </data>
+  <data name="msiUninstalltoolStripMenuItem.Text" xml:space="preserve">
+    <value>Copot Pemasangan menggunakan &amp;MsiExec</value>
+  </data>
+  <data name="olvColumnAbout.Text" xml:space="preserve">
+    <value>Tentang URL</value>
+  </data>
+  <data name="olvColumnCertificate.Text" xml:space="preserve">
+    <value>Sertifikat</value>
+  </data>
+  <data name="olvColumnDisplayName.Text" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="olvColumnDisplayVersion.Text" xml:space="preserve">
+    <value>Versi</value>
+  </data>
+  <data name="olvColumnGuid.Text" xml:space="preserve">
+    <value>Kode produk</value>
+  </data>
+  <data name="olvColumnInstallDate.Text" xml:space="preserve">
+    <value>Tanggal Pemasangan</value>
+  </data>
+  <data name="olvColumnInstallLocation.Text" xml:space="preserve">
+    <value>Lokasi Pemasangan</value>
+  </data>
+  <data name="olvColumnInstallSource.Text" xml:space="preserve">
+    <value>Sumber Pemasangan</value>
+  </data>
+  <data name="olvColumnIntegrity.Text" xml:space="preserve">
+    <value>Integritas</value>
+  </data>
+  <data name="olvColumnIs64.Text" xml:space="preserve">
+    <value>64bit</value>
+  </data>
+  <data name="olvColumnProtected.Text" xml:space="preserve">
+    <value>Terlindung</value>
+  </data>
+  <data name="olvColumnPublisher.Text" xml:space="preserve">
+    <value>Penerbit</value>
+  </data>
+  <data name="olvColumnQuietUninstallString.Text" xml:space="preserve">
+    <value>Perintah Uninstall Senyap</value>
+  </data>
+  <data name="olvColumnRating.Text" xml:space="preserve">
+    <value>Peringkat pengguna</value>
+  </data>
+  <data name="olvColumnRegistryKeyName.Text" xml:space="preserve">
+    <value>Kunci registri</value>
+  </data>
+  <data name="olvColumnSize.Text" xml:space="preserve">
+    <value>Ukuran</value>
+  </data>
+  <data name="olvColumnStartup.Text" xml:space="preserve">
+    <value>Startup</value>
+  </data>
+  <data name="olvColumnSystemComponent.Text" xml:space="preserve">
+    <value>Komponen Sistem</value>
+  </data>
+  <data name="olvColumnUninstallString.Text" xml:space="preserve">
+    <value>Perintah uninstall</value>
+  </data>
+  <data name="olvColumnUninstallerKind.Text" xml:space="preserve">
+    <value>Jenis Uninstaller</value>
+  </data>
+  <data name="onlineSearchToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Cari daring</value>
+  </data>
+  <data name="onlyWebBrowsersToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hanya browser web</value>
+  </data>
+  <data name="openHelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buka Bant&amp;uan</value>
+  </data>
+  <data name="openInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>Buka di &amp;penjelajah...</value>
+  </data>
+  <data name="openKeyInRegeditToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Buka kunci di Regedit</value>
+  </data>
+  <data name="openProgramsAndFeaturesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buka "&amp;Program dan Fitur"</value>
+  </data>
+  <data name="openStartupManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buka Manajer Startup</value>
+  </data>
+  <data name="openSystemRestoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Buka "Pemulihan Sistem"</value>
+  </data>
+  <data name="openWebPageContextMenuStripItem.Text" xml:space="preserve">
+    <value>Buka &amp;Halaman Web</value>
+  </data>
+  <data name="programNameCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>Nama program</value>
+  </data>
+  <data name="propertiesContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Properti</value>
+  </data>
+  <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampilkan &amp;properti</value>
+  </data>
+  <data name="quietUninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>Copot Pemasangan &amp;Senyap</value>
+  </data>
+  <data name="quietUninstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copot Pemasangan &amp;Senyap</value>
+  </data>
+  <data name="rateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Beri Nilai...</value>
+  </data>
+  <data name="rateToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Beri Nilai...</value>
+  </data>
+  <data name="reloadUninstallersToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Muat Ulang Daftar Program</value>
+  </data>
+  <data name="renameContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Ganti nama...</value>
+  </data>
+  <data name="renameToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ganti nama...</value>
+  </data>
+  <data name="resetSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Atur ulang pengaturan</value>
+  </data>
+  <data name="runToolStripMenuItem.Text" xml:space="preserve">
+    <value>Jalankan...</value>
+  </data>
+  <data name="searchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cari...</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Pengaturan</value>
+  </data>
+  <data name="showColorLegendToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampilkan legenda warna</value>
+  </data>
+  <data name="showTreemapToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampilkan pohon &amp; peta</value>
+  </data>
+  <data name="slantcoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Slant.co</value>
+  </data>
+  <data name="slantcoToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Slant.co</value>
+  </data>
+  <data name="sourceForgecomToolStripMenuItem.Text" xml:space="preserve">
+    <value>SourceForge.net</value>
+  </data>
+  <data name="sourceLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Lokasi sumber</value>
+  </data>
+  <data name="startDiskCleanupToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mulai Pembersihan Disk</value>
+  </data>
+  <data name="startSetupWizardToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mulai panduan pengaturan</value>
+  </data>
+  <data name="submitFeedbackToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kirim masukan...</value>
+  </data>
+  <data name="systemComponentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hanya komponen sistem</value>
+  </data>
+  <data name="takeOwnershipToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ambil kepemilikan</value>
+  </data>
+  <data name="targetMenuItem.Text" xml:space="preserve">
+    <value>Copot pemasangan berdasarkan jendela, direktori, atau file...</value>
+  </data>
+  <data name="toolStripButton1.Text" xml:space="preserve">
+    <value>Muat Ulang Daftar Program</value>
+  </data>
+  <data name="toolStripButton2.Text" xml:space="preserve">
+    <value>Copot pemasangan secara diam-diam</value>
+  </data>
+  <data name="toolStripButton7.Text" xml:space="preserve">
+    <value>Pengaturan</value>
+  </data>
+  <data name="toolStripButton8.Text" xml:space="preserve">
+    <value>Bantuan</value>
+  </data>
+  <data name="toolStripButtonModify.Text" xml:space="preserve">
+    <value>Ubah</value>
+  </data>
+  <data name="toolStripButtonProperties.Text" xml:space="preserve">
+    <value>Properti</value>
+  </data>
+  <data name="toolStripButtonSelAll.Text" xml:space="preserve">
+    <value>Pilih semua</value>
+  </data>
+  <data name="toolStripButtonSelInv.Text" xml:space="preserve">
+    <value>Balikkan pilihan</value>
+  </data>
+  <data name="toolStripButtonSelNone.Text" xml:space="preserve">
+    <value>Batalkan pilihan semua</value>
+  </data>
+  <data name="toolStripButtonTarget.Text" xml:space="preserve">
+    <value>Copot pemasangan berdasarkan jendela, direktori, atau file...</value>
+  </data>
+  <data name="toolStripButtonUninstall.Text" xml:space="preserve">
+    <value>Copot pemasangan</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Buka di &amp;penjelajah...</value>
+  </data>
+  <data name="toolStripMenuItem10.Text" xml:space="preserve">
+    <value>Nama program</value>
+  </data>
+  <data name="toolStripMenuItem11.Text" xml:space="preserve">
+    <value>Kode produk / GUID</value>
+  </data>
+  <data name="toolStripMenuItem12.Text" xml:space="preserve">
+    <value>Jalur registri lengkap</value>
+  </data>
+  <data name="toolStripMenuItem13.Text" xml:space="preserve">
+    <value>String uninstall</value>
+  </data>
+  <data name="toolStripMenuItem14.Text" xml:space="preserve">
+    <value>Buka &amp;Halaman Web</value>
+  </data>
+  <data name="toolStripMenuItem15.Text" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="toolStripMenuItem16.Text" xml:space="preserve">
+    <value>AlternatifTo.net</value>
+  </data>
+  <data name="toolStripMenuItem17.Text" xml:space="preserve">
+    <value>FossHub.com</value>
+  </data>
+  <data name="toolStripMenuItem18.Text" xml:space="preserve">
+    <value>SourceForge.net</value>
+  </data>
+  <data name="toolStripMenuItem19.Text" xml:space="preserve">
+    <value>FileHippo.com</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>&amp;Instal atau konfigurasikan (/I)</value>
+  </data>
+  <data name="toolStripMenuItem20.Text" xml:space="preserve">
+    <value>GitHub.com</value>
+  </data>
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>&amp;Copot pemasangan (/X)</value>
+  </data>
+  <data name="toolStripMenuItem4.Text" xml:space="preserve">
+    <value>&amp;Copot pemasangan secara diam-diam (/X /qb)</value>
+  </data>
+  <data name="toolStripMenuItem5.Text" xml:space="preserve">
+    <value>&amp;Lokasi pemasangan</value>
+  </data>
+  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+    <value>&amp;Lokasi Uninstaller</value>
+  </data>
+  <data name="toolStripMenuItem7.Text" xml:space="preserve">
+    <value>&amp;Lokasi sumber</value>
+  </data>
+  <data name="toolStripMenuItem8.Text" xml:space="preserve">
+    <value>&amp;Salin ke Papan Klip...</value>
+  </data>
+  <data name="toolStripMenuItem9.Text" xml:space="preserve">
+    <value>Canggih...</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Peralatan</value>
+  </data>
+  <data name="troubleshootUninstallProblemsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Memecahkan masalah pencopotan pemasangan...</value>
+  </data>
+  <data name="tryToInstallNETV35ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instal .NET v3.5 (tambahkan fitur)</value>
+  </data>
+  <data name="uninstallBCUninstallToolstripMenuItem.Text" xml:space="preserve">
+    <value>Copot pemasangan BCUninstaller</value>
+  </data>
+  <data name="uninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Copot Pemasangan</value>
+  </data>
+  <data name="uninstallFromDirectoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copot pemasangan dari direktori...</value>
+  </data>
+  <data name="uninstallStringCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>String uninstall</value>
+  </data>
+  <data name="uninstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Copot Pemasangan</value>
+  </data>
+  <data name="uninstallUsingMsiExecContextMenuStripItem.Text" xml:space="preserve">
+    <value>Copot pemasangan menggunakan &amp;MsiExec...</value>
+  </data>
+  <data name="uninstallerLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;Lokasi Uninstaller</value>
+  </data>
+  <data name="useSystemThemeToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Gunakan tema sistem</value>
+  </data>
+  <data name="viewToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tampil&amp;kan</value>
+  </data>
+  <data name="viewInvalidToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Tidak Valid</value>
+  </data>
+  <data name="viewTweaksToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Tweaks</value>
+  </data>
+  <data name="viewUnregisteredToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Tidak Terdaftar</value>
+  </data>
+  <data name="viewUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Pembaruan</value>
+  </data>
+  <data name="viewWindowsFeaturesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Fitur Windows</value>
+  </data>
+  <data name="viewWindowsStoreAppsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Aplikasi Windows Store</value>
+  </data>
+</root>

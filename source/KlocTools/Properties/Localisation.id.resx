@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Enums_YesNoAsk_Ask" xml:space="preserve">
+    <value>Bertanya</value>
+  </data>
+  <data name="Error_SeparateArgsFromCommand_Empty" xml:space="preserve">
+    <value>Nama file wajib diisi.</value>
+  </data>
+  <data name="Error_SeparateArgsFromCommand_MissingQuotationMark" xml:space="preserve">
+    <value>Tanda kutip akhir tidak ada.</value>
+  </data>
+  <data name="Error_SeparateArgsFromCommand_NoDot" xml:space="preserve">
+    <value>Nama file harus mengandung ekstensi yang dipisahkan oleh titik.</value>
+  </data>
+  <data name="FileInfo_Attributes" xml:space="preserve">
+    <value>Atribut</value>
+  </data>
+  <data name="FileInfo_Comments" xml:space="preserve">
+    <value>Komentar</value>
+  </data>
+  <data name="FileInfo_CompanyName" xml:space="preserve">
+    <value>Nama perusahaan</value>
+  </data>
+  <data name="FileInfo_CreationTime" xml:space="preserve">
+    <value>Waktu Penciptaan</value>
+  </data>
+  <data name="FileInfo_Directory" xml:space="preserve">
+    <value>Direktori</value>
+  </data>
+  <data name="FileInfo_Exists" xml:space="preserve">
+    <value>Ada di drive</value>
+  </data>
+  <data name="FileInfo_FileDescription" xml:space="preserve">
+    <value>Keterangan</value>
+  </data>
+  <data name="FileInfo_FileName" xml:space="preserve">
+    <value>Nama File</value>
+  </data>
+  <data name="FileInfo_FileVersion" xml:space="preserve">
+    <value>Versi Berkas</value>
+  </data>
+  <data name="FileInfo_FullName" xml:space="preserve">
+    <value>Nama Lengkap</value>
+  </data>
+  <data name="FileInfo_InternalName" xml:space="preserve">
+    <value>Nama Dalaman</value>
+  </data>
+  <data name="FileInfo_IsReadOnly" xml:space="preserve">
+    <value>Hanya bisa dibaca</value>
+  </data>
+  <data name="FileInfo_Language" xml:space="preserve">
+    <value>Bahasa</value>
+  </data>
+  <data name="FileInfo_LastAccessTime" xml:space="preserve">
+    <value>Waktu Akses Terakhir</value>
+  </data>
+  <data name="FileInfo_LastWriteTime" xml:space="preserve">
+    <value>Waktu Penulisan Terakhir</value>
+  </data>
+  <data name="FileInfo_LegalCopyright" xml:space="preserve">
+    <value>Hak cipta</value>
+  </data>
+  <data name="FileInfo_LegalTrademarks" xml:space="preserve">
+    <value>Merek Dagang</value>
+  </data>
+  <data name="FileInfo_OriginalFilename" xml:space="preserve">
+    <value>Nama File Asli</value>
+  </data>
+  <data name="FileInfo_ProductName" xml:space="preserve">
+    <value>Nama Produk</value>
+  </data>
+  <data name="FileInfo_ProductVersion" xml:space="preserve">
+    <value>Versi Produk</value>
+  </data>
+  <data name="FileInfo_Size" xml:space="preserve">
+    <value>Ukuran</value>
+  </data>
+  <data name="FileSize_GB_Long" xml:space="preserve">
+    <value>gigabyte</value>
+  </data>
+  <data name="FileSize_GB_Short" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="FileSize_KB_Long" xml:space="preserve">
+    <value>Kilobyte</value>
+  </data>
+  <data name="FileSize_KB_Short" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="FileSize_MB_Long" xml:space="preserve">
+    <value>Megabita</value>
+  </data>
+  <data name="FileSize_MB_Short" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="FileSize_TB_Long" xml:space="preserve">
+    <value>Terabyte</value>
+  </data>
+  <data name="FileSize_TB_Short" xml:space="preserve">
+    <value>TBC</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>TIDAK</value>
+  </data>
+  <data name="PremadeDialogs_GenericErrorExtendedSafe_Heading" xml:space="preserve">
+    <value>Detail kesalahan:</value>
+  </data>
+  <data name="PremadeDialogs_GenericError_Details" xml:space="preserve">
+    <value>Meskipun kesalahan ini tidak mengharuskan aplikasi dimatikan, beberapa fungsi mungkin berhenti berfungsi. Sebagian besar kesalahan yang terkait dengan sistem file dapat diabaikan dengan aman.
+
+Pesan kesalahan: {0}
+
+Anda dapat menyalin informasi rinci tentang kesalahan ini ke clipboard dengan mengklik tombol "Salin". Harap pertimbangkan untuk mengirimkan informasi kesalahan ini ke pengembang.</value>
+  </data>
+  <data name="PremadeDialogs_GenericError_Heading" xml:space="preserve">
+    <value>Aplikasi mengalami kesalahan yang tidak terduga</value>
+  </data>
+  <data name="PremadeDialogs_GenericError_InnerExceptionTitle" xml:space="preserve">
+    <value>Batin:</value>
+  </data>
+  <data name="PremadeDialogs_GenericError_Title" xml:space="preserve">
+    <value>Kesalahan yang tidak terduga</value>
+  </data>
+  <data name="PremadeDialogs_KillRunningProcessesQuestion_Details" xml:space="preserve">
+    <value>Anda mungkin kehilangan data yang belum disimpan. Untuk mencegah kehilangan data, tutup aplikasi secara manual.</value>
+  </data>
+  <data name="PremadeDialogs_KillRunningProcessesQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghentikan semua proses?</value>
+  </data>
+  <data name="PremadeDialogs_KillRunningProcessesQuestion_Title" xml:space="preserve">
+    <value>Hentikan proses yang sedang berjalan</value>
+  </data>
+  <data name="RegistryTools_AddRegToRegistry_FileNotExist" xml:space="preserve">
+    <value>Jalur tidak menunjuk ke file .reg yang valid</value>
+  </data>
+  <data name="RegistryTools_RemoveRegistryKey_PathEmptyNull" xml:space="preserve">
+    <value>Jalur tidak boleh kosong atau nol</value>
+  </data>
+  <data name="RegistryTools_RemoveRegistryKey_PointsAtRoot" xml:space="preserve">
+    <value>Jalur tidak dapat menunjuk ke kunci root</value>
+  </data>
+  <data name="RegistryTools_RemoveRegistryKey_RemoveDefault" xml:space="preserve">
+    <value>Tidak dapat menghapus nilai default</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Days_Since" xml:space="preserve">
+    <value>{0} hari yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Days_Single" xml:space="preserve">
+    <value>Kemarin</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Hours_Since" xml:space="preserve">
+    <value>{0} jam yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Hours_Single" xml:space="preserve">
+    <value>Satu jam yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_JustNow" xml:space="preserve">
+    <value>Baru saja</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Minutes_Since" xml:space="preserve">
+    <value>{0} menit yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Minutes_Single" xml:space="preserve">
+    <value>Satu menit yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Months_Since" xml:space="preserve">
+    <value>{0} bulan yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Months_Single" xml:space="preserve">
+    <value>Satu bulan yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Years_Since" xml:space="preserve">
+    <value>{0} tahun yang lalu</value>
+  </data>
+  <data name="ToFuzzyTimeSinceString_Years_Single" xml:space="preserve">
+    <value>satu tahun yang lalu</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+</root>

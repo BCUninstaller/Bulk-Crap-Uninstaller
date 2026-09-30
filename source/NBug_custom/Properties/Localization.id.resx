@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="UI_Console_Full_Message" xml:space="preserve">
+    <value>Terjadi pengecualian yang tidak tertangani. Menutup aplikasi.</value>
+    <comment>Unhandled exception occurred. Closing application.</comment>
+  </data>
+  <data name="UI_Console_Minimal_Message" xml:space="preserve">
+    <value>Terjadi pengecualian yang tidak tertangani. Menutup aplikasi.</value>
+    <comment>Unhandled exception occurred. Closing application.</comment>
+  </data>
+  <data name="UI_Console_Normal_Message" xml:space="preserve">
+    <value>Terjadi pengecualian yang tidak tertangani. Menutup aplikasi.</value>
+    <comment>Unhandled exception occurred. Closing application.</comment>
+  </data>
+  <data name="UI_Dialog_Full_Exception_Tab" xml:space="preserve">
+    <value>Pengecualian</value>
+    <comment>Exception</comment>
+  </data>
+  <data name="UI_Dialog_Full_General_Tab" xml:space="preserve">
+    <value>Umum</value>
+    <comment>General</comment>
+  </data>
+  <data name="UI_Dialog_Full_How_to_Reproduce_the_Error_Notification" xml:space="preserve">
+    <value>Harap tambahkan deskripsi singkat tentang bagaimana kami dapat mereproduksi kesalahan tersebut:</value>
+    <comment>Please add a brief description of how we can reproduce the error:</comment>
+  </data>
+  <data name="UI_Dialog_Full_Message" xml:space="preserve">
+    <value>Aplikasi telah mogok dan sekarang akan ditutup. Jika Anda mengklik Keluar, aplikasi akan segera ditutup. Jika Anda mengklik Kirim dan Keluar, aplikasi akan ditutup dan laporan bug akan dikirim.</value>
+    <comment>The application has crashed and it will now be dismissed. If you click Quit, the application will close immediately. If you click Send and Quit, the application will close and a bug report will be send.</comment>
+  </data>
+  <data name="UI_Dialog_Full_Quit_Button" xml:space="preserve">
+    <value>&amp;Berhenti</value>
+    <comment>&amp;Quit</comment>
+  </data>
+  <data name="UI_Dialog_Full_Report_Contents_Tab" xml:space="preserve">
+    <value>Isi Laporan</value>
+    <comment>Report Contents</comment>
+  </data>
+  <data name="UI_Dialog_Full_Send_and_Quit_Button" xml:space="preserve">
+    <value>&amp;Kirim dan Keluar</value>
+    <comment>&amp;Send and Quit</comment>
+  </data>
+  <data name="UI_Dialog_Full_Title" xml:space="preserve">
+    <value>Kesalahan</value>
+    <comment>Error</comment>
+  </data>
+  <data name="UI_Dialog_Minimal_Message" xml:space="preserve">
+    <value>Aplikasi telah mogok dan sekarang akan ditutup.
+Laporan bug telah dikirim ke pengembang. Kami mohon maaf atas ketidaknyamanan ini.</value>
+    <comment>The application has crashed and it will now be dismissed.
+A bug report has been sent to the developers. We apologize for the inconvenience.</comment>
+  </data>
+  <data name="UI_Dialog_Minimal_Title" xml:space="preserve">
+    <value>Kesalahan</value>
+    <comment>Error</comment>
+  </data>
+  <data name="UI_Dialog_Normal_Continue_Button" xml:space="preserve">
+    <value>&amp;Melanjutkan</value>
+    <comment>&amp;Continue</comment>
+  </data>
+  <data name="UI_Dialog_Normal_Message" xml:space="preserve">
+    <value>Pengecualian yang tidak tertangani telah terjadi di aplikasi Anda. Jika Anda mengklik Lanjutkan, aplikasi akan mengabaikan kesalahan ini dan mencoba melanjutkan. Jika Anda mengklik keluar, aplikasi akan segera ditutup.</value>
+    <comment>.</comment>
+  </data>
+  <data name="UI_Dialog_Normal_Quit_Button" xml:space="preserve">
+    <value>&amp;Berhenti</value>
+    <comment>&amp;Quit</comment>
+  </data>
+  <data name="UI_Dialog_Normal_Title" xml:space="preserve">
+    <value>Kesalahan</value>
+    <comment>Error</comment>
+  </data>
+</root>

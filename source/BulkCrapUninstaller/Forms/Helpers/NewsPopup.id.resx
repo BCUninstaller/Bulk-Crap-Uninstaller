@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="checkBoxNeverShow.Text" xml:space="preserve">
+    <value>Jangan pernah tampilkan jendela ini lagi</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>(Klik di mana saja untuk menutup dialog ini)</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Donasi membantu saya tetap tertarik dengan proyek ini, serta membayar sertifikat penandatanganan kode, hosting, dan kebutuhan lainnya.</value>
+  </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>Lihat catatan rilis dan log perubahan</value>
+  </data>
+  <data name="linkLabel2.Text" xml:space="preserve">
+    <value>Lihat kode sumber atau berkontribusi</value>
+  </data>
+  <data name="linkLabel3.Text" xml:space="preserve">
+    <value>Baca lisensinya</value>
+  </data>
+  <data name="linkLabel4.Text" xml:space="preserve">
+    <value>Baca kebijakan privasi</value>
+  </data>
+  <data name="linkLabel5.Text" xml:space="preserve">
+    <value>Baca file bantuan</value>
+  </data>
+  <data name="linkLabel6.Text" xml:space="preserve">
+    <value>Kirim masukan / Hubungi pengembang</value>
+  </data>
+  <data name="linkLabel7.Text" xml:space="preserve">
+    <value>Donasi (PayPal, Bitcoin, hadiah Steam)</value>
+  </data>
+</root>

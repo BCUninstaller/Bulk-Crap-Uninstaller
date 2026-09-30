@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CertificateColumn_NotFound" xml:space="preserve">
+    <value>Tidak ditemukan</value>
+  </data>
+  <data name="CertificateColumn_Unverified" xml:space="preserve">
+    <value>Tidak terverifikasi</value>
+  </data>
+  <data name="CertificateColumn_Verified" xml:space="preserve">
+    <value>Terverifikasi</value>
+  </data>
+  <data name="DefaultLanguage" xml:space="preserve">
+    <value>Bawaan</value>
+    <comment>Used in language select box when you want to use the system language</comment>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Kosong</value>
+  </data>
+  <data name="Error_FileNotFound" xml:space="preserve">
+    <value>Berkas tidak ditemukan.</value>
+  </data>
+  <data name="Error_SaveSettingsFailed" xml:space="preserve">
+    <value>Gagal menyimpan pengaturan</value>
+  </data>
+  <data name="FileTargeter_SelectDirectoryWithAppsToRemove" xml:space="preserve">
+    <value>Pilih direktori dengan aplikasi yang akan dihapus instalasinya.</value>
+  </data>
+  <data name="GuidFound" xml:space="preserve">
+    <value>GUID ditemukan</value>
+  </data>
+  <data name="GuidMissing" xml:space="preserve">
+    <value>GUID tidak ditemukan</value>
+  </data>
+  <data name="IntegrityColumn_Good" xml:space="preserve">
+    <value>Baik</value>
+  </data>
+  <data name="IntegrityColumn_Invalid" xml:space="preserve">
+    <value>Tanpa uninstaller</value>
+  </data>
+  <data name="IntegrityColumn_Unregistered" xml:space="preserve">
+    <value>Tanpa registri</value>
+  </data>
+  <data name="JunkRemoveWindow_SelectBackupDirectoryTitle" xml:space="preserve">
+    <value>Pilih tempat untuk menyimpan cadangan. Direktori baru akan dibuat.</value>
+  </data>
+  <data name="JunkRemove_Details_Message" xml:space="preserve">
+    <value>Peringkat: {0}
+
+Positif:
+{1}
+
+Negatif:
+{2}</value>
+    <comment>{0} - Rating as a string
+{1} - List of strings of positive parts of the rating
+{2} - List of strings of negative parts of the rating
+The lists are separated by a single newline.</comment>
+  </data>
+  <data name="JunkRemove_Details_Title" xml:space="preserve">
+    <value>Detail peringkat</value>
+  </data>
+  <data name="JunkRemove_SelectionBoxText" xml:space="preserve">
+    <value>Pilih hingga...</value>
+  </data>
+  <data name="LoadingDialogTitleCreatingRestorePoint" xml:space="preserve">
+    <value>Membuat titik pemulihan...</value>
+  </data>
+  <data name="LoadingDialogTitleLoadingWindowsFeatures" xml:space="preserve">
+    <value>Memuat Fitur Windows...</value>
+  </data>
+  <data name="LoadingDialogTitleLookingForJunk" xml:space="preserve">
+    <value>Mencari sisa file...</value>
+  </data>
+  <data name="LoadingDialogTitlePopulatingList" xml:space="preserve">
+    <value>Memuat daftar program...</value>
+  </data>
+  <data name="LoadingDialogTitlePostUninstallCommands" xml:space="preserve">
+    <value>Menjalankan perintah pasca-uninstall...</value>
+  </data>
+  <data name="LoadingDialogTitlePreUninstallCommands" xml:space="preserve">
+    <value>Menjalankan perintah pra-uninstall...</value>
+  </data>
+  <data name="LoadingDialogTitleRemovingJunk" xml:space="preserve">
+    <value>Menghapus sisa file...</value>
+  </data>
+  <data name="LoadingDialogTitleSearchingForUpdates" xml:space="preserve">
+    <value>Mencari pembaruan...</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Archived" xml:space="preserve">
+    <value>Diarsipkan</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Extensions" xml:space="preserve">
+    <value>Ekstensi</value>
+  </data>
+  <data name="LocalizedX509Certificate2_FriendlyName" xml:space="preserve">
+    <value>Nama Tampilan</value>
+  </data>
+  <data name="LocalizedX509Certificate2_HasPrivateKey" xml:space="preserve">
+    <value>Memiliki Kunci Pribadi</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Issuer" xml:space="preserve">
+    <value>Penerbit</value>
+  </data>
+  <data name="LocalizedX509Certificate2_IssuerName" xml:space="preserve">
+    <value>Nama Penerbit</value>
+  </data>
+  <data name="LocalizedX509Certificate2_NotAfter" xml:space="preserve">
+    <value>Berlaku Hingga</value>
+  </data>
+  <data name="LocalizedX509Certificate2_NotBefore" xml:space="preserve">
+    <value>Berlaku Dari</value>
+  </data>
+  <data name="LocalizedX509Certificate2_PrivateKey" xml:space="preserve">
+    <value>Kunci Pribadi</value>
+  </data>
+  <data name="LocalizedX509Certificate2_PublicKey" xml:space="preserve">
+    <value>Kunci Publik</value>
+  </data>
+  <data name="LocalizedX509Certificate2_RawData" xml:space="preserve">
+    <value>Data Mentah</value>
+  </data>
+  <data name="LocalizedX509Certificate2_SerialNumber" xml:space="preserve">
+    <value>Nomor seri</value>
+  </data>
+  <data name="LocalizedX509Certificate2_SignatureAlgorithm" xml:space="preserve">
+    <value>Algoritma Tanda Tangan</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Subject" xml:space="preserve">
+    <value>Subjek</value>
+  </data>
+  <data name="LocalizedX509Certificate2_SubjectName" xml:space="preserve">
+    <value>Nama Subjek</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Thumbprint" xml:space="preserve">
+    <value>Sidik jari</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Version" xml:space="preserve">
+    <value>Versi</value>
+  </data>
+  <data name="MainWindow_Rename_Description" xml:space="preserve">
+    <value>Mengganti nama "{0}"</value>
+  </data>
+  <data name="MainWindow_Rename_Title" xml:space="preserve">
+    <value>Ganti nama entri yang dipilih</value>
+  </data>
+  <data name="MainWindow_Statusbar_ProcessingUninstallers" xml:space="preserve">
+    <value>Memproses aplikasi yang terdeteksi, {0} tersisa...</value>
+    <comment>{1} = how many application uninstallers still need to be processed</comment>
+  </data>
+  <data name="MainWindow_Statusbar_RefreshingStartup" xml:space="preserve">
+    <value>Menyegarkan informasi permulaan...</value>
+    <comment>Shown when refreshing autostart information of the uninstallers</comment>
+  </data>
+  <data name="MainWindow_Statusbar_StatusReady" xml:space="preserve">
+    <value>Siap</value>
+    <comment>Shows up when nothing else is displayed on the status bar.</comment>
+  </data>
+  <data name="MainWindow_Statusbar_StatusSelection" xml:space="preserve">
+    <value>{0} uninstaller dipilih</value>
+    <comment>{0} is a number of selected uninstallers</comment>
+  </data>
+  <data name="MainWindow_Statusbar_Total" xml:space="preserve">
+    <value>Totalnya ada {0} uninstaller, {1}</value>
+    <comment>{0} is a number of all uninstallers, {1} is a long file size (123 Megabytes)</comment>
+  </data>
+  <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Details" xml:space="preserve">
+    <value>Uninstaller berikut akan dimulai ulang dengan mode tidak senyap:</value>
+  </data>
+  <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Header" xml:space="preserve">
+    <value>Apakah Anda ingin mencoba menjalankan ulang uninstaller senyap yang gagal dengan mode tidak senyap?</value>
+  </data>
+  <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Title" xml:space="preserve">
+    <value>Beberapa uninstaller gagal</value>
+  </data>
+  <data name="MessageBoxes_AskToSaveUninstallList_Details" xml:space="preserve">
+    <value>Ada perubahan yang belum disimpan dalam daftar uninstall yang dibuka dan akan hilang jika ditutup.</value>
+  </data>
+  <data name="MessageBoxes_AskToSaveUninstallList_Message" xml:space="preserve">
+    <value>Simpan perubahan pada daftar pencopotan pemasangan yang dibuka?</value>
+  </data>
+  <data name="MessageBoxes_AskToSaveUninstallList_Title" xml:space="preserve">
+    <value>Simpan daftar pencopotan pemasangan</value>
+  </data>
+  <data name="MessageBoxes_AskToSubmitFeedback_Details" xml:space="preserve">
+    <value>Ini akan memakan waktu kurang dari satu menit tetapi sangat membantu perkembangan! Semua umpan balik dihargai, baik itu laporan bug, permintaan fitur, atau ucapan terima kasih sederhana!
+
+Anda dapat mengirimkannya nanti dari bilah menu atas (Bantuan-&gt;Kirim masukan).</value>
+  </data>
+  <data name="MessageBoxes_AskToSubmitFeedback_Message" xml:space="preserve">
+    <value>Apakah Anda ingin mengirimkan masukan mengenai BCU?</value>
+  </data>
+  <data name="MessageBoxes_BackupFailedQuestion_Details" xml:space="preserve">
+    <value>Detail kesalahan:</value>
+  </data>
+  <data name="MessageBoxes_BackupFailedQuestion_Message" xml:space="preserve">
+    <value>Pencadangan registri gagal, apakah Anda tetap ingin melanjutkan?</value>
+  </data>
+  <data name="MessageBoxes_BackupRegistryQuestion_Details" xml:space="preserve">
+    <value>Anda akan dapat mengembalikan semua perubahan dengan mengklik dua kali setelahnya.
+
+File dan direktori akan dipindahkan ke recycle bin, Anda dapat memulihkannya dari sana.</value>
+  </data>
+  <data name="MessageBoxes_BackupRegistryQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda ingin membuat cadangan registri sebelum melanjutkan?</value>
+  </data>
+  <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Details" xml:space="preserve">
+    <value>Pilih tepat satu uninstaller dari daftar. Jika Anda menggunakan kotak centang, pastikan untuk mencentangnya.</value>
+  </data>
+  <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Message" xml:space="preserve">
+    <value>Anda hanya perlu memilih satu entri untuk tindakan ini</value>
+  </data>
+  <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Title" xml:space="preserve">
+    <value>Tindakan gagal</value>
+  </data>
+  <data name="MessageBoxes_CanWalkAwayInfo_Details" xml:space="preserve">
+    <value>Pencopotan pemasangan yang tersisa seharusnya dapat diselesaikan tanpa campur tangan pengguna apa pun. Anda tetap harus memeriksa dari waktu ke waktu jika salah satu uninstaller mogok.</value>
+  </data>
+  <data name="MessageBoxes_CanWalkAwayInfo_Message" xml:space="preserve">
+    <value>Anda sekarang dapat meninggalkan komputer</value>
+  </data>
+  <data name="MessageBoxes_CanWalkAwayInfo_Title" xml:space="preserve">
+    <value>Kemajuan Pencopotan</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
+    <value>Jenis uninstaller ini tidak mendukung penggantian nama ({0}).</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Title" xml:space="preserve">
+    <value>Tidak dapat mengganti nama {0}</value>
+  </data>
+  <data name="MessageBoxes_ConfirmLowConfidenceQuestion_Details" xml:space="preserve">
+    <value>Menghapus item yang ditandai dengan keyakinan lebih rendah dari Baik bisa sangat berbahaya! Anda disarankan untuk memverifikasi bahwa setiap item aman untuk dihapus.</value>
+  </data>
+  <data name="MessageBoxes_ConfirmLowConfidenceQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda benar-benar ingin memodifikasi item dengan tingkat kepercayaan rendah?</value>
+  </data>
+  <data name="MessageBoxes_DeleteRegKeysConfirmation_Details" xml:space="preserve">
+    <value>Item berikut akan dihapus dari registri dan akan hilang dari daftar uninstaller, namun tidak akan dihapus.
+
+{0}</value>
+  </data>
+  <data name="MessageBoxes_DeleteRegKeysConfirmation_Message" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghapus entri uninstaller yang dipilih?</value>
+  </data>
+  <data name="MessageBoxes_DeleteRegKeysConfirmation_Title" xml:space="preserve">
+    <value>Hapus kunci dari registri</value>
+  </data>
+  <data name="MessageBoxes_Error_details" xml:space="preserve">
+    <value>
+
+Detail kesalahan:
+</value>
+    <comment>Add space or newline afterwards and two newlines before</comment>
+  </data>
+  <data name="MessageBoxes_ExportFailed_Details" xml:space="preserve">
+    <value>Jika error masih berlanjut coba simpan ke direktori lain, misalnya ke desktop.</value>
+  </data>
+  <data name="MessageBoxes_ExportFailed_Message" xml:space="preserve">
+    <value>Terjadi kesalahan saat menyimpan data yang diekspor</value>
+  </data>
+  <data name="MessageBoxes_ExportFailed_Title" xml:space="preserve">
+    <value>Ekspor gagal</value>
+  </data>
+  <data name="MessageBoxes_ExternalCommandFailed_Message" xml:space="preserve">
+    <value>Perintah berikut gagal dijalankan:
+{0}</value>
+    <comment>{0} is a command line (c:\example.exe /help)</comment>
+  </data>
+  <data name="MessageBoxes_ExternalCommandFailed_Title" xml:space="preserve">
+    <value>Eksekusi eksternal gagal</value>
+  </data>
+  <data name="MessageBoxes_ForceRunUninstallFailedError_Header" xml:space="preserve">
+    <value>Gagal menjalankan beberapa uninstaller</value>
+  </data>
+  <data name="MessageBoxes_ForceRunUninstallFailedError_Message" xml:space="preserve">
+    <value>Uninstaller berikut gagal dijalankan, kemungkinan karena konflik. Harap tunggu sampai uninstaller lain selesai lalu coba lagi.
+{0}
+
+Anda dapat mencoba menonaktifkan deteksi konflik di pengaturan, tetapi cara ini tidak disarankan.</value>
+  </data>
+  <data name="MessageBoxes_ForceRunUninstallFailedError_Title" xml:space="preserve">
+    <value>Penghapusan paksa</value>
+  </data>
+  <data name="MessageBoxes_GetSystemRestoreDescription" xml:space="preserve">
+    <value>BCUninstaller sedang mencopot pemasangan {0} aplikasi</value>
+    <comment>0 is the uninstaller count</comment>
+  </data>
+  <data name="MessageBoxes_InvalidNewEntryName_Details" xml:space="preserve">
+    <value>Pastikan Anda belum menyertakan salah satu karakter berikut:
+{0}</value>
+    <comment>0 is list of characters separated by spaces</comment>
+  </data>
+  <data name="MessageBoxes_InvalidNewEntryName_Message" xml:space="preserve">
+    <value>Nama yang diberikan kosong atau berisi karakter yang tidak valid</value>
+  </data>
+  <data name="MessageBoxes_LookForJunkQuestion_Details" xml:space="preserve">
+    <value>Harap dicatat bahwa fitur ini ditujukan hanya untuk pengguna tingkat lanjut yang memahami cara kerjanya. File-file ini tidak perlu dihapus dan tidak akan mempengaruhi kinerja sistem secara berarti.</value>
+  </data>
+  <data name="MessageBoxes_LookForJunkQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda ingin mencari sisa dari penghapusan instalasi yang dilakukan?</value>
+  </data>
+  <data name="MessageBoxes_ModifyCommandMissing_Details" xml:space="preserve">
+    <value>Aplikasi yang dipilih tidak memiliki perintah modifikasi yang ditentukan. Mungkin perlu untuk menghapus instalasi, lalu menginstalnya lagi untuk mengubah pengaturan instalasi.</value>
+  </data>
+  <data name="MessageBoxes_ModifyCommandMissing_Message" xml:space="preserve">
+    <value>Aplikasi yang dipilih tidak dapat diubah</value>
+  </data>
+  <data name="MessageBoxes_ModifyCommandMissing_Title" xml:space="preserve">
+    <value>Ubah aplikasi</value>
+  </data>
+  <data name="MessageBoxes_Net4Missing_Details" xml:space="preserve">
+    <value>Kerangka kerja v4.0 bersifat opsional, tetapi disarankan. Fitur-fitur yang bergantung pada kerangka kerja akan dinonaktifkan sampai Anda menginstalnya.</value>
+  </data>
+  <data name="MessageBoxes_Net4Missing_Message" xml:space="preserve">
+    <value>.NET Framework v4.0 tidak ditemukan, beberapa fitur akan dinonaktifkan</value>
+  </data>
+  <data name="MessageBoxes_Net4Missing_Title" xml:space="preserve">
+    <value>.NET Framework v4.0 tidak ditemukan</value>
+  </data>
+  <data name="MessageBoxes_NoJunkFoundInfo_Details" xml:space="preserve">
+    <value>Tidak ada sisa file yang ditemukan. Mungkin masih ada sisa sehingga Anda dapat menjalankan pembersih file sementara seperti BleachBit.</value>
+  </data>
+  <data name="MessageBoxes_NoJunkFoundInfo_Message" xml:space="preserve">
+    <value>Tidak ada sisa file yang ditemukan</value>
+  </data>
+  <data name="MessageBoxes_NoNetworkConnected_Details" xml:space="preserve">
+    <value>Pastikan kabel jaringan Anda tersambung. Jika Anda menggunakan Wi-Fi, pastikan Anda memiliki kekuatan sinyal yang baik.</value>
+  </data>
+  <data name="MessageBoxes_NoNetworkConnected_Message" xml:space="preserve">
+    <value>Tidak dapat terhubung ke internet, tidak ada jaringan yang tersedia.</value>
+  </data>
+  <data name="MessageBoxes_NoNetworkConnected_Open_online_content" xml:space="preserve">
+    <value>Buka konten online</value>
+  </data>
+  <data name="MessageBoxes_NoUninstallersSelectedInfo_Details" xml:space="preserve">
+    <value>Untuk menghapus instalasi aplikasi, Anda harus memilihnya terlebih dahulu dari tampilan daftar. Jika Anda menggunakan kotak centang, pastikan kotak tersebut dicentang.</value>
+  </data>
+  <data name="MessageBoxes_NoUninstallersSelectedInfo_Message" xml:space="preserve">
+    <value>Tidak ada uninstaller yang dipilih, tidak ada yang perlu di-uninstall</value>
+  </data>
+  <data name="MessageBoxes_NoUninstallersSelectedInfo_Title" xml:space="preserve">
+    <value>Jalankan uninstaller</value>
+  </data>
+  <data name="MessageBoxes_NothingToCopy_Message" xml:space="preserve">
+    <value>Tidak ada apa pun untuk disalin ke clipboard. Entah tidak ada uninstaller terpilih yang memiliki sedikit informasi ini atau Anda tidak memilih apa pun.</value>
+  </data>
+  <data name="MessageBoxes_OpenDirectoriesMessageBox_OpenMultiple" xml:space="preserve">
+    <value>Tindakan ini akan membuka {0} direktori sekaligus, apakah Anda yakin ingin melanjutkan?</value>
+    <comment>0 is number of directories to open
+</comment>
+  </data>
+  <data name="MessageBoxes_OpenDirectories_NoDirsToOpen" xml:space="preserve">
+    <value>Tidak ada direktori untuk dibuka</value>
+  </data>
+  <data name="MessageBoxes_OpenDirectoryError_Message" xml:space="preserve">
+    <value>Terjadi kesalahan saat membuka direktori</value>
+  </data>
+  <data name="MessageBoxes_OpenUninstallListError_Message" xml:space="preserve">
+    <value>Gagal memuat file yang dipilih</value>
+  </data>
+  <data name="MessageBoxes_OpenUninstallListQuestion_Details" xml:space="preserve">
+    <value>Jika Anda memilih untuk mempertahankan pilihan saat ini, maka itu akan digabungkan dengan daftar yang dibuka</value>
+  </data>
+  <data name="MessageBoxes_OpenUninstallListQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda ingin mempertahankan pilihan saat ini?</value>
+  </data>
+  <data name="MessageBoxes_OpenUrlError_Message" xml:space="preserve">
+    <value>Terjadi kesalahan saat membuka URL</value>
+  </data>
+  <data name="MessageBoxes_OpenUrlsMessageBox_No_URLs_to_open_Title" xml:space="preserve">
+    <value>Tidak ada URL untuk dibuka</value>
+  </data>
+  <data name="MessageBoxes_OpenUrlsMessageBox_OpenMultiple_Message" xml:space="preserve">
+    <value>Tindakan ini akan membuka {0} URL sekaligus, apakah Anda yakin ingin melanjutkan?</value>
+  </data>
+  <data name="MessageBoxes_ProtectedItemError_Details" xml:space="preserve">
+    <value>Entri yang dilindungi: {0}
+
+Untuk mengubah entri ini, Anda perlu menonaktifkan perlindungan uninstaller dari panel pengaturan.</value>
+    <comment>0 name of protected uninstaller</comment>
+  </data>
+  <data name="MessageBoxes_ProtectedItemError_Message" xml:space="preserve">
+    <value>Entri yang dipilih dilindungi dan tidak dapat diubah</value>
+  </data>
+  <data name="MessageBoxes_ProtectedItemsWarningQuestion_Details" xml:space="preserve">
+    <value>Entri yang terpengaruh:
+{0}
+
+Untuk mengubah entri ini, Anda perlu menonaktifkan perlindungan uninstaller dari sidebar pengaturan. Anda dapat menghapusnya dari tugas dan melanjutkan dengan item lainnya jika Anda mau.</value>
+    <comment>0 names of protected uninstallers</comment>
+  </data>
+  <data name="MessageBoxes_ProtectedItemsWarningQuestion_Message" xml:space="preserve">
+    <value>Beberapa entri dilindungi dan tidak dapat diubah</value>
+  </data>
+  <data name="MessageBoxes_QuietUninstallersNotAvailableQuestion_Details" xml:space="preserve">
+    <value>Item berikut tidak ada pada silent uninstaller:
+{0}
+
+Apakah Anda ingin menggunakan uninstaller "keras" untuk item tersebut, atau haruskah mereka menghapusnya dari tugas?</value>
+    <comment>0 is names of non-quiet uninstallers</comment>
+  </data>
+  <data name="MessageBoxes_QuietUninstallersNotAvailableQuestion_Message" xml:space="preserve">
+    <value>Beberapa aplikasi tidak dapat di-uninstall secara senyap</value>
+  </data>
+  <data name="MessageBoxes_RatingErrorTitle" xml:space="preserve">
+    <value>Peringkat tidak tersedia</value>
+  </data>
+  <data name="MessageBoxes_RatingUnavailable_Message" xml:space="preserve">
+    <value>Anda tidak dapat menilai aplikasi yang tidak diinstal dengan benar.</value>
+  </data>
+  <data name="MessageBoxes_RatingsDisabled_Message" xml:space="preserve">
+    <value>Anda harus mengaktifkan peringkat dari pengaturan terlebih dahulu.</value>
+  </data>
+  <data name="MessageBoxes_RememberChoiceCheckbox" xml:space="preserve">
+    <value>Ingat pilihan</value>
+  </data>
+  <data name="MessageBoxes_ResetSettingsConfirmation_Details" xml:space="preserve">
+    <value>Semua pengaturan Anda akan hilang secara permanen. BCUninstaller harus memulai ulang untuk menyelesaikan tindakan ini.</value>
+  </data>
+  <data name="MessageBoxes_ResetSettingsConfirmation_Message" xml:space="preserve">
+    <value>Apakah Anda yakin ingin mengatur ulang semua pengaturan aplikasi?</value>
+  </data>
+  <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Details" xml:space="preserve">
+    <value>Beberapa pengaturan tidak akan berlaku sampai aplikasi dimulai ulang.</value>
+  </data>
+  <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda ingin memulai ulang BCU untuk menerapkan pengaturan baru?</value>
+  </data>
+  <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Title" xml:space="preserve">
+    <value>Ubah pengaturan aplikasi</value>
+  </data>
+  <data name="MessageBoxes_SaveUninstallListError_Message" xml:space="preserve">
+    <value>Gagal menyimpan daftar ke file</value>
+  </data>
+  <data name="MessageBoxes_SearchOnlineError_Message" xml:space="preserve">
+    <value>Terjadi kesalahan saat membuka halaman pencarian</value>
+  </data>
+  <data name="MessageBoxes_SearchOnlineMessageBox_NothingToSearchFor_Message" xml:space="preserve">
+    <value>Tidak ada yang perlu dicari</value>
+  </data>
+  <data name="MessageBoxes_SelfUninstallQuestion_Details" xml:space="preserve">
+    <value>Saya turut prihatin melihat Anda pergi! Jika Anda punya waktu satu atau dua menit, silakan sampaikan alasan Anda menghapus instalasi BCU di situs web saya (http://klocmansoftware.weebly.com/). Saya akan melakukan yang terbaik untuk memperbaiki masalah yang sah.</value>
+  </data>
+  <data name="MessageBoxes_SelfUninstallQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghapus instalasi BCUninstaller?</value>
+  </data>
+  <data name="MessageBoxes_SelfUninstallQuestion_Title" xml:space="preserve">
+    <value>Copot Pemasangan BCUninstaller</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreBeginQuestion_Details" xml:space="preserve">
+    <value>Jika Anda tidak yakin apakah aplikasi yang akan dicopot pemasangannya penting atau dibutuhkan untuk stabilitas sistem, sebaiknya buat titik pemulihan.
+ Jika ada yang rusak setelah proses ini, Anda dapat menggunakan Pemulihan Sistem untuk mengembalikan perubahan.</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreBeginQuestion_Message" xml:space="preserve">
+    <value>Apakah Anda ingin membuat titik pemulihan sebelum melanjutkan?</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreContinueAfterError_Details" xml:space="preserve">
+    <value>Titik pemulihan TIDAK DIBUAT, Anda tidak akan dapat memulihkan perubahan! Apakah Anda tetap ingin melanjutkan pencopotan pemasangan?</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreContinueAfterError_Message" xml:space="preserve">
+    <value>Gagal membuat titik pemulihan baru</value>
+  </data>
+  <data name="MessageBoxes_TaskSkip_Details" xml:space="preserve">
+    <value>Memilih "Hentikan" akan segera menutup uninstaller yang sedang berjalan dan mungkin menyebabkan penghapusan instalasi tidak selesai. Biasanya uninstaller dapat dijalankan kembali untuk menyelesaikan uninstall.
+
+Alternatifnya, Anda dapat melewatkan menunggu proses ini. Melewati akan membiarkan uninstaller terus bekerja sementara tugas berpindah ke item berikutnya. Ingatlah bahwa beberapa uninstaller mungkin gagal dijalankan hingga proses yang dilewati selesai.</value>
+  </data>
+  <data name="MessageBoxes_TaskSkip_Message" xml:space="preserve">
+    <value>Apakah Anda ingin melewatkan menunggu uninstaller yang sedang berjalan?</value>
+  </data>
+  <data name="MessageBoxes_TaskSkip_Title" xml:space="preserve">
+    <value>Lewati tugas yang sedang berjalan</value>
+  </data>
+  <data name="MessageBoxes_TaskStopConfirmation_Details" xml:space="preserve">
+    <value>Menghentikan tugas sebelum waktunya tidak akan mengembalikan perubahan apa pun. Uninstaller yang sedang berjalan tidak akan dihentikan, tugas akan menunggu hingga selesai.</value>
+  </data>
+  <data name="MessageBoxes_TaskStopConfirmation_Message" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghentikan tugas yang sedang berjalan?</value>
+  </data>
+  <data name="MessageBoxes_TaskStopConfirmation_Title" xml:space="preserve">
+    <value>Hentikan tugas pencopotan pemasangan saat ini</value>
+  </data>
+  <data name="MessageBoxes_Title_Copy_to_clipboard" xml:space="preserve">
+    <value>Salin ke papan klip</value>
+  </data>
+  <data name="MessageBoxes_Title_Create_restore_point" xml:space="preserve">
+    <value>Buat titik pemulihan</value>
+  </data>
+  <data name="MessageBoxes_Title_Junk_Leftover_removal" xml:space="preserve">
+    <value>Penghapusan Sisa File</value>
+  </data>
+  <data name="MessageBoxes_Title_Leftover_removal" xml:space="preserve">
+    <value>Penghapusan Sisa File</value>
+  </data>
+  <data name="MessageBoxes_Title_Modify_protected_items" xml:space="preserve">
+    <value>Ubah item yang dilindungi</value>
+  </data>
+  <data name="MessageBoxes_Title_Open_Uninstall_List" xml:space="preserve">
+    <value>Buka Daftar Pencopotan</value>
+  </data>
+  <data name="MessageBoxes_Title_Open_directories" xml:space="preserve">
+    <value>Buka direktori</value>
+  </data>
+  <data name="MessageBoxes_Title_Open_urls" xml:space="preserve">
+    <value>Buka URL</value>
+  </data>
+  <data name="MessageBoxes_Title_Quiet_uninstall" xml:space="preserve">
+    <value>Copot pemasangan secara diam-diam</value>
+  </data>
+  <data name="MessageBoxes_Title_Rename_uninstaller" xml:space="preserve">
+    <value>Ganti nama uninstaller</value>
+  </data>
+  <data name="MessageBoxes_Title_Restore_default_settings" xml:space="preserve">
+    <value>Kembalikan pengaturan default</value>
+  </data>
+  <data name="MessageBoxes_Title_Save_Uninstall_List" xml:space="preserve">
+    <value>Simpan Daftar Pencopotan</value>
+  </data>
+  <data name="MessageBoxes_Title_Search_for_updates" xml:space="preserve">
+    <value>Cari pembaruan</value>
+  </data>
+  <data name="MessageBoxes_Title_Search_online" xml:space="preserve">
+    <value>Cari online</value>
+  </data>
+  <data name="MessageBoxes_Title_Submit_feedback" xml:space="preserve">
+    <value>Kirim masukan</value>
+  </data>
+  <data name="MessageBoxes_UninstallAlreadyRunning_Message" xml:space="preserve">
+    <value>Tugas uninstall lainnya sudah berjalan. Harap tunggu hingga selesai lalu coba lagi.</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryNothingFound_Details" xml:space="preserve">
+    <value>Pastikan Anda memilih direktori yang benar dan aplikasi yang dapat dijalankan masih ada.</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryNothingFound_Message" xml:space="preserve">
+    <value>Tidak ada aplikasi yang ditemukan di direktori yang ditentukan</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryUninstallerFound_Details" xml:space="preserve">
+    <value>Apakah Anda ingin menjalankan uninstaller ini?</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryUninstallerFound_Message" xml:space="preserve">
+    <value>Menemukan uninstaller untuk {0}</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectory_Title" xml:space="preserve">
+    <value>Copot pemasangan dari direktori</value>
+  </data>
+  <data name="MessageBoxes_UninstallMsiGuidMissing_Details" xml:space="preserve">
+    <value>Uninstaller yang dipilih tidak memiliki GUID yang valid untuk digunakan dengan MsiExec.</value>
+  </data>
+  <data name="MessageBoxes_UninstallMsiGuidMissing_Message" xml:space="preserve">
+    <value>Entri yang dipilih tidak dapat dihapus instalasinya menggunakan penginstal MsiExec</value>
+  </data>
+  <data name="MessageBoxes_UninstallMsiGuidMissing_Title" xml:space="preserve">
+    <value>Copot pemasangan menggunakan Msi</value>
+  </data>
+  <data name="MessageBoxes_UpdateAskToDownload_Details" xml:space="preserve">
+    <value>BCUninstaller akan mengunduh pembaruan secara otomatis dan menerapkannya setelah restart. Perlu diperhatikan bahwa Anda mungkin kehilangan pengaturan selama proses ini.
+
+Catatan Perubahan:
+- {0}
+
+Peringatan: Selama pembaruan, folder "Update" dan file "Update.zip" di dalam direktori BCU akan dihapus.</value>
+    <comment>0 is a list of changes separated by "- "</comment>
+  </data>
+  <data name="MessageBoxes_UpdateAskToDownload_Message" xml:space="preserve">
+    <value>Versi baru {0} telah tersedia, apakah Anda ingin meningkatkannya sekarang?</value>
+    <comment>0 is version number</comment>
+  </data>
+  <data name="MessageBoxes_UpdateFailed_Details" xml:space="preserve">
+    <value>Pastikan BCUninstaller tidak diblokir di firewall Anda dan Anda memiliki koneksi internet yang berfungsi.
+
+</value>
+  </data>
+  <data name="MessageBoxes_UpdateFailed_Message" xml:space="preserve">
+    <value>Mengalami kesalahan saat memeriksa pembaruan</value>
+  </data>
+  <data name="MessageBoxes_UpdateUptodate_Details" xml:space="preserve">
+    <value>Tidak ada pembaruan yang ditemukan saat ini, Anda memiliki versi terbaru.
+
+Ingin beberapa fungsi ditambahkan atau bug diperbaiki? Kirimkan masukan Anda kepada saya menggunakan menu "Bantuan-&gt;Kirim masukan".</value>
+  </data>
+  <data name="MessageBoxes_UpdateUptodate_Message" xml:space="preserve">
+    <value>Versi saat ini adalah yang terbaru</value>
+  </data>
+  <data name="NewsPopup_FirstStartTitle" xml:space="preserve">
+    <value>Selamat datang di BCU versi {0}!</value>
+  </data>
+  <data name="NewsPopup_UpdatedTitle" xml:space="preserve">
+    <value>BCU telah diperbarui ke v{0}!</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>Tidak tersedia</value>
+    <comment>Used on application list when value is not available</comment>
+  </data>
+  <data name="Progress_Finishing" xml:space="preserve">
+    <value>Menyelesaikan...</value>
+  </data>
+  <data name="Progress_Finishing_Icons" xml:space="preserve">
+    <value>Memuat ikon</value>
+  </data>
+  <data name="PropertiesWindow_Table_Error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorDoesntExist" xml:space="preserve">
+    <value>Berkas tidak ada.</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorMissingRegistry" xml:space="preserve">
+    <value>Aplikasi ini tidak memiliki entri registri yang valid</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorMissingUninstaller" xml:space="preserve">
+    <value>Aplikasi ini tidak memiliki uninstaller yang valid</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorMsi" xml:space="preserve">
+    <value>Tidak ada yang perlu ditampilkan. Aplikasi ini di-uninstall menggunakan Windows Installer (MsiExec).</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorNoCertificate" xml:space="preserve">
+    <value>Sertifikat hilang</value>
+  </data>
+  <data name="PropertiesWindow_Table_Name" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="PropertiesWindow_Table_Value" xml:space="preserve">
+    <value>Nilai</value>
+  </data>
+  <data name="RateTitle_Counted" xml:space="preserve">
+    <value>{0} aplikasi</value>
+    <comment>{0} is number of apps to rate, "Rate " will be automatically put in front of this string</comment>
+  </data>
+  <data name="RatingEntry_ToString" xml:space="preserve">
+    <value>Nilai rata-rata: {0}; Peringkat saya: {1}</value>
+  </data>
+  <data name="SearchNothingFoundMessage" xml:space="preserve">
+    <value>Tidak ada entri yang cocok dengan kriteria pencarian Anda.</value>
+  </data>
+  <data name="Str64Bit" xml:space="preserve">
+    <value>x64</value>
+    <comment>keep space in front</comment>
+  </data>
+  <data name="StrDebug" xml:space="preserve">
+    <value>DEBUG</value>
+    <comment>keep space in front</comment>
+  </data>
+  <data name="StrExportHeader" xml:space="preserve">
+    <value>Ekspor BCUninstaller
+Penerbit | Versi | Tanggal | Ukuran | Registri | Jenis uninstaller | String uninstall | String uninstall senyap | Komentar</value>
+  </data>
+  <data name="StrIsPortable" xml:space="preserve">
+    <value>Portabel</value>
+    <comment>keep space in front</comment>
+  </data>
+  <data name="SysRestoreGenericError" xml:space="preserve">
+    <value>Gagal memanggil API</value>
+  </data>
+  <data name="TargetWindow_NoFilesSelected_Message" xml:space="preserve">
+    <value>Tidak ada file atau direktori valid yang dipilih. Pastikan Anda memiliki akses ke file tersebut, dan file tersebut tidak ditandai sebagai file sistem.</value>
+  </data>
+  <data name="TargetWindow_NoFilesSelected_Title" xml:space="preserve">
+    <value>Cari aplikasi</value>
+  </data>
+  <data name="UninstallFromDirectory_FolderBrowse" xml:space="preserve">
+    <value>Pilih direktori dengan aplikasi yang ingin Anda hapus.</value>
+  </data>
+  <data name="UninstallFromDirectory_ScanningTitle" xml:space="preserve">
+    <value>Memindai direktori tertentu...</value>
+  </data>
+  <data name="UninstallProgressWindow_StatusPuttingToSleepInSeconds" xml:space="preserve">
+    <value>Mengalihkan PC ke mode tidur dalam {0} detik. Hapus centang pada kotak tidur untuk membatalkan.</value>
+  </data>
+  <data name="UninstallProgressWindow_TaskDone" xml:space="preserve">
+    <value>Tugas selesai</value>
+    <comment>Shown on the status bar</comment>
+  </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Tugas selesai. Tutup jendela ini untuk melanjutkan; BCU mungkin akan meminta untuk memindai sisa file.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
+  <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
+    <value>Menghapus instalasi</value>
+    <comment>Shown on the status bar</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_DoNothing" xml:space="preserve">
+    <value>Tidak melakukan apa pun</value>
+    <comment>Option for "Double clicking in application list..."</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_Properties" xml:space="preserve">
+    <value>Membuka properti</value>
+    <comment>Option for "Double clicking in application list..."</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_Uninstall" xml:space="preserve">
+    <value>Mencopot pemasangan</value>
+    <comment>Option for "Double clicking in application list..."</comment>
+  </data>
+  <data name="Uninstaller_GetApplicationsFromDirectories_NothingFound_Message" xml:space="preserve">
+    <value>Gagal menemukan aplikasi apa pun di dalam {0}</value>
+  </data>
+  <data name="Uninstaller_GetApplicationsFromDirectories_NothingFound_Title" xml:space="preserve">
+    <value>Cari aplikasi</value>
+  </data>
+</root>

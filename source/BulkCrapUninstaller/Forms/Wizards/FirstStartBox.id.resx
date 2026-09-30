@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Selamat datang di BCUninstaller</value>
+  </data>
+  <data name="buttonExit.Text" xml:space="preserve">
+    <value>Keluar dari Wizard</value>
+  </data>
+  <data name="buttonFinish.Text" xml:space="preserve">
+    <value>Selesaikan penyiapan</value>
+  </data>
+  <data name="buttonHelp.Text" xml:space="preserve">
+    <value>Lihat bantuan</value>
+  </data>
+  <data name="buttonLanguageApply.Text" xml:space="preserve">
+    <value>Menerapkan</value>
+  </data>
+  <data name="buttonMore.Text" xml:space="preserve">
+    <value>Pengaturan lainnya</value>
+  </data>
+  <data name="buttonNext.Text" xml:space="preserve">
+    <value>Melanjutkan</value>
+  </data>
+  <data name="buttonPrev.Text" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="checkBoxCertTest.Text" xml:space="preserve">
+    <value>Sorot uninstaller bersertifikat</value>
+  </data>
+  <data name="checkBoxCheckboxes.Text" xml:space="preserve">
+    <value>Pilih menggunakan kotak centang</value>
+  </data>
+  <data name="checkBoxDiisableProtection.Text" xml:space="preserve">
+    <value>Nonaktifkan perlindungan uninstaller yang ditandai sebagai "dilindungi"</value>
+  </data>
+  <data name="checkBoxGroups.Text" xml:space="preserve">
+    <value>Tampilkan uninstaller dalam grup</value>
+  </data>
+  <data name="checkBoxInvalidTest.Text" xml:space="preserve">
+    <value>Sorot uninstaller yang tidak valid</value>
+  </data>
+  <data name="checkBoxListProtected.Text" xml:space="preserve">
+    <value>Tampilkan uninstaller yang ditandai sebagai "dilindungi"</value>
+  </data>
+  <data name="checkBoxListSysComp.Text" xml:space="preserve">
+    <value>Tampilkan uninstaller yang ditandai sebagai "komponen sistem"</value>
+  </data>
+  <data name="checkBoxOrphans.Text" xml:space="preserve">
+    <value>Tampilkan aplikasi yang tidak terdaftar dalam daftar</value>
+  </data>
+  <data name="checkBoxRatings.Text" xml:space="preserve">
+    <value>Aktifkan peringkat pengguna aplikasi</value>
+  </data>
+  <data name="checkBoxSendStats.Text" xml:space="preserve">
+    <value>Secara otomatis mengirim statistik penggunaan anonim</value>
+  </data>
+  <data name="checkBoxUpdateSearch.Text" xml:space="preserve">
+    <value>Secara otomatis mencari pembaruan saat aplikasi dimulai</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>ulk crap
+uninstaller</value>
+  </data>
+  <data name="labelProgress.Text" xml:space="preserve">
+    <value>1 / 6</value>
+  </data>
+  <data name="p1languageDesc.Text" xml:space="preserve">
+    <value>Anda dapat memaksa BCUninstaller untuk menggunakan lokalisasi tertentu jika bahasa default salah. Restart akan dilakukan untuk menerapkan bahasa baru.</value>
+  </data>
+  <data name="p1languageExtradetails.Text" xml:space="preserve">
+    <value>Jika Anda bersedia membantu menerjemahkan BCUninstaller ke bahasa Anda, klik tautan di bawah untuk menghubungi saya. Semua bantuan sangat dihargai!</value>
+  </data>
+  <data name="p1languageHeading.Text" xml:space="preserve">
+    <value>Bahasa yang dipilih</value>
+  </data>
+  <data name="p1linkLabelContact.Text" xml:space="preserve">
+    <value>Buka formulir kontak</value>
+  </data>
+  <data name="p1welcomeHeading.Text" xml:space="preserve">
+    <value>Selamat datang di BCUninstaller!</value>
+  </data>
+  <data name="p1welcomeSubheading.Text" xml:space="preserve">
+    <value>Wizard ini akan memberi Anda tur singkat dan membantu mengkonfigurasi aplikasi.</value>
+  </data>
+  <data name="p2viewAdd.Text" xml:space="preserve">
+    <value>Uninstaller terverifikasi ditandai dengan warna hijau, unverified ditandai dengan warna biru.
+Peringatan: Verifikasi dapat memakan waktu lama.</value>
+  </data>
+  <data name="p2viewCerts.Text" xml:space="preserve">
+    <value>Uninstaller dapat ditandatangani dengan sertifikat yang dikeluarkan oleh otoritas terkait. Jika sertifikat lolos validasi, paket perangkat lunak belum diubah dan memiliki reputasi baik.</value>
+  </data>
+  <data name="p2viewCertsTitle.Text" xml:space="preserve">
+    <value>Uninstaller bersertifikat</value>
+  </data>
+  <data name="p2viewDetail.Text" xml:space="preserve">
+    <value>Semua uninstaller yang ditemukan di sistem Anda ada dalam tampilan daftar utama. Berikut beberapa cara untuk menelusuri data ini:</value>
+  </data>
+  <data name="p2viewDetail1.Text" xml:space="preserve">
+    <value>● Gunakan filter dan cari kata kunci (di semua kolom)</value>
+  </data>
+  <data name="p2viewDetail2.Text" xml:space="preserve">
+    <value>● Urutkan uninstaller berdasarkan kolom mana pun. Atur ulang kolom dengan bebas.</value>
+  </data>
+  <data name="p2viewDetail3.Text" xml:space="preserve">
+    <value>● Kelompokkan uninstaller serupa</value>
+  </data>
+  <data name="p2viewTitle.Text" xml:space="preserve">
+    <value>Tampilan daftar uninstaller</value>
+  </data>
+  <data name="p3advDesc.Text" xml:space="preserve">
+    <value>Meskipun BCUninstaller dapat digunakan sebagai uninstaller dasar, sebagian besar fungsinya ditujukan untuk pengguna tingkat lanjut. Lanjutkan dengan hati-hati!</value>
+  </data>
+  <data name="p3advProtect.Text" xml:space="preserve">
+    <value>Item yang dilindungi ditandai dengan tag "NoRemove", yang berarti penerbit tidak ingin Anda menghapusnya. Tag ini sering digunakan oleh paket perangkat lunak besar untuk mencegah Anda menghapus instalasi masing-masing bagiannya.</value>
+  </data>
+  <data name="p3advProtectAdd.Text" xml:space="preserve">
+    <value>Ini akan memungkinkan Anda menghapus item yang dilindungi.</value>
+  </data>
+  <data name="p3advProtectTitle.Text" xml:space="preserve">
+    <value>Pencopot pemasangan yang dilindungi</value>
+  </data>
+  <data name="p3advSyscomp.Text" xml:space="preserve">
+    <value>Aplikasi yang ditandai sebagai "komponen sistem" disembunyikan dari sebagian besar pengelola uninstall dasar. Tag ini TIDAK berarti bahwa aplikasi tersebut merupakan bagian dari sistem operasi.</value>
+  </data>
+  <data name="p3advSyscompTitle.Text" xml:space="preserve">
+    <value>Komponen sistem</value>
+  </data>
+  <data name="p3advTitle.Text" xml:space="preserve">
+    <value>Pengguna tingkat lanjut</value>
+  </data>
+  <data name="p4netDesc.Text" xml:space="preserve">
+    <value>BCUninstaller dapat mencoba menyambung ke internet karena alasan berikut:</value>
+  </data>
+  <data name="p4netDesc1.Text" xml:space="preserve">
+    <value>● Untuk mencari pembaruan program.</value>
+  </data>
+  <data name="p4netDesc2.Text" xml:space="preserve">
+    <value>● Untuk mengunggah laporan kesalahan.</value>
+  </data>
+  <data name="p4netDesc3.Text" xml:space="preserve">
+    <value>● Untuk mengirim statistik penggunaan anonim.</value>
+  </data>
+  <data name="p4netDesc4.Text" xml:space="preserve">
+    <value>● Untuk mengambil dan mengunggah peringkat aplikasi</value>
+  </data>
+  <data name="p4netErrors.Text" xml:space="preserve">
+    <value>Setiap kali terjadi kesalahan Anda akan ditanya apakah Anda ingin mengirimkannya. Anda dapat memeriksa data apa yang dikirim dalam laporan kesalahan dan penggunaan dengan memeriksa file XML masing-masing di direktori BCUninstaller. Data yang dikirim tidak dibagikan kepada pihak ketiga mana pun.</value>
+  </data>
+  <data name="p4netTitle.Text" xml:space="preserve">
+    <value>Akses jaringan</value>
+  </data>
+  <data name="p4netUpdateAdd.Text" xml:space="preserve">
+    <value>Anda dapat mencari pembaruan secara manual dari bilah menu.</value>
+  </data>
+  <data name="p4netUsageAdd.Text" xml:space="preserve">
+    <value>Mengirimkan statistik ini akan membantu meningkatkan BCUninstaller.</value>
+  </data>
+  <data name="p5LinkContact.Text" xml:space="preserve">
+    <value>Buka formulir kontak</value>
+  </data>
+  <data name="p5LinkHomepage.Text" xml:space="preserve">
+    <value>Buka beranda</value>
+  </data>
+  <data name="p5finishContact.Text" xml:space="preserve">
+    <value>Anda sekarang dapat mulai menggunakan BCUninstaller. Jika Anda memiliki pertanyaan atau ingin menyarankan fitur baru, kunjungi tautan di bawah.</value>
+  </data>
+  <data name="p5finishHomepage.Text" xml:space="preserve">
+    <value>Anda dapat membaca log perubahan terperinci dan melihat lebih banyak perangkat lunak saya di beranda.</value>
+  </data>
+  <data name="p5finishTitle.Text" xml:space="preserve">
+    <value>Pengaturan telah selesai</value>
+  </data>
+  <data name="pCorDesc.Text" xml:space="preserve">
+    <value>Seiring waktu, Anda mungkin menemukan bahwa beberapa aplikasi menolak untuk dicopot pemasangannya, atau akan hilang begitu saja dari sebagian besar pengelola pencopotan pemasangan.</value>
+  </data>
+  <data name="pCorOrphansComment.Text" xml:space="preserve">
+    <value>Aplikasi yang tidak terdaftar ditandai dengan warna merah.
+Jika uninstaller asli tidak ditemukan, Anda harus menggunakan opsi "Copot pemasangan secara manual" untuk menghapusnya.</value>
+  </data>
+  <data name="pCorOrphansMessage.Text" xml:space="preserve">
+    <value>Terkadang seluruh aplikasi tetap tertinggal di drive Anda bahkan setelah dihapus instalasinya. Hal ini juga dapat terjadi jika hanya uninstaller saja yang dihapus.</value>
+  </data>
+  <data name="pCorOrphansTitle.Text" xml:space="preserve">
+    <value>Aplikasi yang tidak terdaftar</value>
+  </data>
+  <data name="pCorTitle.Text" xml:space="preserve">
+    <value>Uninstaller yang rusak</value>
+  </data>
+  <data name="pCorViewInvalid.Text" xml:space="preserve">
+    <value>Dalam beberapa kasus, uninstaller bisa rusak, sehingga tidak mungkin untuk di-uninstall. BCUninstaller dapat menghapus entri ini dengan mudah menggunakan opsi "Copot pemasangan secara manual".</value>
+  </data>
+  <data name="pCorViewInvalidTitle.Text" xml:space="preserve">
+    <value>Uninstaller rusak atau hilang</value>
+  </data>
+  <data name="pCorViewinvalidComment.Text" xml:space="preserve">
+    <value>Uninstaller yang tidak valid ditandai dengan warna abu-abu.</value>
+  </data>
+</root>

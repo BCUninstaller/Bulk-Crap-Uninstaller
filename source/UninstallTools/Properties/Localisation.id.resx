@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUrl" xml:space="preserve">
+    <value>Halaman web</value>
+  </data>
+  <data name="BundleProviderKey" xml:space="preserve">
+    <value>Kode produk</value>
+  </data>
+  <data name="ChocolateyFactory_UninstallInChocolateyJunkName" xml:space="preserve">
+    <value>Copot pemasangan di Chocolatey</value>
+    <comment>Shown in junk results window</comment>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Komentar</value>
+  </data>
+  <data name="ComparisonTargetInfo_AllProperties" xml:space="preserve">
+    <value>Semua properti</value>
+    <comment>Used in the search box to specify what's being compared</comment>
+  </data>
+  <data name="ConfidencePart_AllSubdirsMatched" xml:space="preserve">
+    <value>Direktori sedang atau akan kosong setelah menghapus sisa file.</value>
+  </data>
+  <data name="ConfidencePart_CompanyNameDidNotMatch" xml:space="preserve">
+    <value>Nama perusahaan tidak cocok</value>
+  </data>
+  <data name="ConfidencePart_CompanyNameMatch" xml:space="preserve">
+    <value>Nama perusahaan cocok</value>
+  </data>
+  <data name="ConfidencePart_DirectoryStillUsed" xml:space="preserve">
+    <value>Direktori digunakan oleh aplikasi terinstal lainnya</value>
+  </data>
+  <data name="ConfidencePart_ExplicitConnection" xml:space="preserve">
+    <value>Item disebutkan secara eksplisit di uninstaller</value>
+  </data>
+  <data name="ConfidencePart_IsStoreApp" xml:space="preserve">
+    <value>Penghapusan data Aplikasi Toko bermasalah</value>
+  </data>
+  <data name="ConfidencePart_IsUninstallerRegistryKey" xml:space="preserve">
+    <value>Entri registri dari uninstaller</value>
+  </data>
+  <data name="ConfidencePart_ItemNameEqualsCompanyName" xml:space="preserve">
+    <value>Item tampaknya merupakan keseluruhan kategori penerbit</value>
+  </data>
+  <data name="ConfidencePart_ProductNameDodgyMatch" xml:space="preserve">
+    <value>Nama produk tidak terlalu cocok</value>
+  </data>
+  <data name="ConfidencePart_ProductNamePerfectMatch" xml:space="preserve">
+    <value>Nama produk sangat cocok</value>
+  </data>
+  <data name="ConfidencePart_QuestionableDirectoryName" xml:space="preserve">
+    <value>Nama direktori dipertanyakan</value>
+  </data>
+  <data name="Confidence_Bad" xml:space="preserve">
+    <value>Buruk</value>
+  </data>
+  <data name="Confidence_DirectlyInsideKnownFolder" xml:space="preserve">
+    <value>Terletak tepat di dalam Folder yang Dikenal</value>
+  </data>
+  <data name="Confidence_Good" xml:space="preserve">
+    <value>Bagus</value>
+  </data>
+  <data name="Confidence_PF_EmptyFolder" xml:space="preserve">
+    <value>Folder kosong</value>
+  </data>
+  <data name="Confidence_PF_ExecsPresent" xml:space="preserve">
+    <value>Executable ditemukan</value>
+  </data>
+  <data name="Confidence_PF_FilesPresent" xml:space="preserve">
+    <value>File ada</value>
+  </data>
+  <data name="Confidence_PF_ManyFilesPresent" xml:space="preserve">
+    <value>Banyak file yang ada</value>
+  </data>
+  <data name="Confidence_PF_NameIsUsed" xml:space="preserve">
+    <value>Nama program dikenali</value>
+  </data>
+  <data name="Confidence_PF_NoSubdirs" xml:space="preserve">
+    <value>Tidak ada sub direktori</value>
+  </data>
+  <data name="Confidence_PF_PublisherIsUsed" xml:space="preserve">
+    <value>Penerbit dikenali</value>
+  </data>
+  <data name="Confidence_Questionable" xml:space="preserve">
+    <value>Dipertanyakan</value>
+  </data>
+  <data name="Confidence_Startup_IsRunOnce" xml:space="preserve">
+    <value>Entri hanya akan dijalankan satu kali</value>
+  </data>
+  <data name="Confidence_Startup_StartupMatched" xml:space="preserve">
+    <value>Entri disesuaikan dengan aplikasi</value>
+  </data>
+  <data name="Confidence_Unknown" xml:space="preserve">
+    <value>Tidak dikenal</value>
+  </data>
+  <data name="Confidence_UsedBySimilarNamedApp" xml:space="preserve">
+    <value>Mungkin milik aplikasi lain dengan nama serupa</value>
+    <comment>For example `AppX Extended` matching `AppX` when it belongs to the AppX application</comment>
+  </data>
+  <data name="Confidence_VeryGood" xml:space="preserve">
+    <value>Sangat bagus</value>
+  </data>
+  <data name="CustomNote" xml:space="preserve">
+    <value>Catatan Kustom</value>
+  </data>
+  <data name="DisplayIcon" xml:space="preserve">
+    <value>Ikon yang ditampilkan</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Nama tampilan</value>
+  </data>
+  <data name="DisplayNameTrimmed" xml:space="preserve">
+    <value>Nama tampilan yang dipangkas</value>
+  </data>
+  <data name="DisplayVersion" xml:space="preserve">
+    <value>Versi</value>
+  </data>
+  <data name="Error_InvalidPath" xml:space="preserve">
+    <value>Jalur tidak valid</value>
+  </data>
+  <data name="Error_InvalidRegKeys" xml:space="preserve">
+    <value>Kunci registri startup tidak valid atau tidak dikenal:</value>
+  </data>
+  <data name="EstimatedSize" xml:space="preserve">
+    <value>Perkiraan ukuran</value>
+  </data>
+  <data name="FilterComparisonMethod_Any" xml:space="preserve">
+    <value>Berisi apa saja</value>
+    <comment>As in "matches any word from this string"</comment>
+  </data>
+  <data name="FilterComparisonMethod_Contains" xml:space="preserve">
+    <value>Berisi</value>
+  </data>
+  <data name="FilterComparisonMethod_EndsWith" xml:space="preserve">
+    <value>Berakhir dengan</value>
+  </data>
+  <data name="FilterComparisonMethod_Equals" xml:space="preserve">
+    <value>Sama Dengan</value>
+  </data>
+  <data name="FilterComparisonMethod_Regex" xml:space="preserve">
+    <value>Regex</value>
+  </data>
+  <data name="FilterComparisonMethod_StartsWith" xml:space="preserve">
+    <value>Dimulai dengan</value>
+  </data>
+  <data name="HasStartupEntries" xml:space="preserve">
+    <value>Dapat memulai secara otomatis</value>
+  </data>
+  <data name="InstallDate" xml:space="preserve">
+    <value>Tanggal pemasangan</value>
+  </data>
+  <data name="InstallLocation" xml:space="preserve">
+    <value>Lokasi instalasi</value>
+  </data>
+  <data name="InstallSource" xml:space="preserve">
+    <value>Sumber instalasi</value>
+  </data>
+  <data name="Is64Bit" xml:space="preserve">
+    <value>Merupakan aplikasi 64bit</value>
+  </data>
+  <data name="IsOrphaned" xml:space="preserve">
+    <value>Tidak terdaftar</value>
+    <comment>Present on the HDD but is not properly reported anywhere</comment>
+  </data>
+  <data name="IsProtected" xml:space="preserve">
+    <value>Dilindungi</value>
+  </data>
+  <data name="IsRegistered" xml:space="preserve">
+    <value>Aplikasi sudah terdaftar</value>
+  </data>
+  <data name="IsUpdate" xml:space="preserve">
+    <value>Apakah pembaruan</value>
+  </data>
+  <data name="IsValid" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="IsWebBrowser" xml:space="preserve">
+    <value>Adalah peramban web</value>
+  </data>
+  <data name="JunkRemover_Confidence" xml:space="preserve">
+    <value>Tingkat Kepercayaan</value>
+  </data>
+  <data name="Junk_AppCompat_GroupName" xml:space="preserve">
+    <value>Kompatibilitas aplikasi</value>
+  </data>
+  <data name="Junk_AudioPolicy_GroupName" xml:space="preserve">
+    <value>Konfigurasi kebijakan audio</value>
+  </data>
+  <data name="Junk_Clsid_GroupName" xml:space="preserve">
+    <value>kelas CLSID</value>
+  </data>
+  <data name="Junk_DebugTracing_GroupName" xml:space="preserve">
+    <value>Konfigurasi Pelacakan/Logging Debug</value>
+  </data>
+  <data name="Junk_Drive_GroupName" xml:space="preserve">
+    <value>File dan direktori</value>
+  </data>
+  <data name="Junk_EventLog_GroupName" xml:space="preserve">
+    <value>Log Log Peristiwa</value>
+  </data>
+  <data name="Junk_FirewallRule_GroupName" xml:space="preserve">
+    <value>Aturan firewall</value>
+  </data>
+  <data name="Junk_InstalledFolders_GroupName" xml:space="preserve">
+    <value>Daftar folder yang diinstal</value>
+  </data>
+  <data name="Junk_ProgramFilesOrphans_GroupName" xml:space="preserve">
+    <value>File Program yatim piatu</value>
+  </data>
+  <data name="Junk_Progress_Finishing" xml:space="preserve">
+    <value>Menyelesaikan...</value>
+  </data>
+  <data name="Junk_Progress_Startup" xml:space="preserve">
+    <value>Menyiapkan pemindai sisa file...</value>
+  </data>
+  <data name="Junk_Registry_GroupName" xml:space="preserve">
+    <value>Registri</value>
+  </data>
+  <data name="Junk_Shortcut_GroupName" xml:space="preserve">
+    <value>Jalan pintas</value>
+  </data>
+  <data name="Junk_Startup_GroupName" xml:space="preserve">
+    <value>Rintisan</value>
+  </data>
+  <data name="Junk_Tracing_GroupName" xml:space="preserve">
+    <value>Menelusuri informasi</value>
+  </data>
+  <data name="Junk_UninstallerKey_GroupName" xml:space="preserve">
+    <value>Referensi uninstaller</value>
+  </data>
+  <data name="Junk_UninstallerLocation_GroupName" xml:space="preserve">
+    <value>Lokasi pencopotan pemasangan</value>
+  </data>
+  <data name="Junk_UserAssist_GroupName" xml:space="preserve">
+    <value>UserAssist</value>
+  </data>
+  <data name="Junk_WerReports_GroupName" xml:space="preserve">
+    <value>Laporan Pelaporan Kesalahan Windows</value>
+  </data>
+  <data name="ManagerError_PrematureWorkerStop" xml:space="preserve">
+    <value>Proses pencopotan pemasangan dihentikan sebelum waktunya</value>
+  </data>
+  <data name="ManagerError_Skipped" xml:space="preserve">
+    <value>Dilewati oleh pengguna</value>
+  </data>
+  <data name="ModifyPath" xml:space="preserve">
+    <value>Ubah jalur</value>
+  </data>
+  <data name="ParentKeyName" xml:space="preserve">
+    <value>Penghapus instalasi induk</value>
+    <comment>Most of the time used to show parent application of an update</comment>
+  </data>
+  <data name="Progress_AppStores" xml:space="preserve">
+    <value>Memindai toko aplikasi...</value>
+  </data>
+  <data name="Progress_AppStores_Chocolatey" xml:space="preserve">
+    <value>Mencari paket Chocolatey</value>
+  </data>
+  <data name="Progress_AppStores_Oculus" xml:space="preserve">
+    <value>Mencari Aplikasi Oculus</value>
+  </data>
+  <data name="Progress_AppStores_Scoop" xml:space="preserve">
+    <value>Mencari paket Scoop</value>
+  </data>
+  <data name="Progress_AppStores_Steam" xml:space="preserve">
+    <value>Mencari Aplikasi Steam</value>
+  </data>
+  <data name="Progress_AppStores_Templates" xml:space="preserve">
+    <value>Mencari template aplikasi</value>
+  </data>
+  <data name="Progress_AppStores_WinFeatures" xml:space="preserve">
+    <value>Mencari Fitur Windows</value>
+  </data>
+  <data name="Progress_AppStores_WinStore" xml:space="preserve">
+    <value>Mencari Aplikasi Windows Store</value>
+  </data>
+  <data name="Progress_AppStores_WinUpdates" xml:space="preserve">
+    <value>Mencari Pembaruan Windows</value>
+  </data>
+  <data name="Progress_DriveScan" xml:space="preserve">
+    <value>Memindai drive untuk mencari aplikasi...</value>
+  </data>
+  <data name="Progress_DriveScan_Gathering" xml:space="preserve">
+    <value>Mengumpulkan direktori</value>
+  </data>
+  <data name="Progress_GatherUninstallerInfo" xml:space="preserve">
+    <value>Menghasilkan informasi uninstaller yang hilang...</value>
+  </data>
+  <data name="Progress_GeneratingInfo" xml:space="preserve">
+    <value>Menghasilkan informasi yang hilang...</value>
+  </data>
+  <data name="Progress_MSI" xml:space="preserve">
+    <value>Memindai produk MSI yang diinstal...</value>
+  </data>
+  <data name="Progress_MSI_sub" xml:space="preserve">
+    <value>Ditemukan {0} GUID aplikasi</value>
+  </data>
+  <data name="Progress_Merging" xml:space="preserve">
+    <value>Menggabungkan aplikasi yang ditemukan...</value>
+  </data>
+  <data name="Progress_Merging_Drives" xml:space="preserve">
+    <value>Menggabungkan aplikasi dari drive</value>
+  </data>
+  <data name="Progress_Merging_Stores" xml:space="preserve">
+    <value>Menggabungkan aplikasi dari toko</value>
+  </data>
+  <data name="Progress_Registry" xml:space="preserve">
+    <value>Memindai registri untuk uninstaller...</value>
+  </data>
+  <data name="Progress_Registry_Gathering" xml:space="preserve">
+    <value>Mengumpulkan kunci registri</value>
+  </data>
+  <data name="Progress_Registry_Processing" xml:space="preserve">
+    <value>Memproses {0}</value>
+  </data>
+  <data name="Progress_Startup" xml:space="preserve">
+    <value>Mencari entri start-up</value>
+  </data>
+  <data name="Publisher" xml:space="preserve">
+    <value>Nama penerbit</value>
+  </data>
+  <data name="PublisherTrimmed" xml:space="preserve">
+    <value>Nama penerbit dipangkas</value>
+  </data>
+  <data name="QuietUninstallPossible" xml:space="preserve">
+    <value>Pencopotan pemasangan secara diam-diam dapat dilakukan</value>
+  </data>
+  <data name="QuietUninstallString" xml:space="preserve">
+    <value>String pencopotan yang senyap</value>
+  </data>
+  <data name="RegistryKeyName" xml:space="preserve">
+    <value>Nama kunci registri</value>
+  </data>
+  <data name="RegistryPath" xml:space="preserve">
+    <value>Jalur registri</value>
+  </data>
+  <data name="StartupEntries" xml:space="preserve">
+    <value>Perintah permulaan</value>
+  </data>
+  <data name="StartupManager_FailedEnable_FileNotFound" xml:space="preserve">
+    <value>Gagal mengaktifkan entri ini, file berikut tidak ditemukan:</value>
+  </data>
+  <data name="StartupManager_Loading" xml:space="preserve">
+    <value>Memuat...</value>
+  </data>
+  <data name="StartupManager_Message_Delete_Details" xml:space="preserve">
+    <value>Item tersebut tidak akan dibuka lagi saat boot. Pastikan item yang dipilih tidak diperlukan sebelum menghapusnya.</value>
+  </data>
+  <data name="StartupManager_Message_Delete_Header" xml:space="preserve">
+    <value>Hapus program yang dipilih dari startup?</value>
+  </data>
+  <data name="StartupManager_Message_Delete_Title" xml:space="preserve">
+    <value>Manajer Permulaan</value>
+  </data>
+  <data name="Startup_ShortName_Service" xml:space="preserve">
+    <value>Melayani</value>
+  </data>
+  <data name="Startup_ShortName_Task" xml:space="preserve">
+    <value>Tugas</value>
+    <comment>Fom Task Scheduler</comment>
+  </data>
+  <data name="Startup_Shortname_BrowserHelper" xml:space="preserve">
+    <value>Objek Pembantu Browser</value>
+  </data>
+  <data name="SystemComponent" xml:space="preserve">
+    <value>Merupakan komponen sistem</value>
+  </data>
+  <data name="UninstallError_Nowaytouninstall" xml:space="preserve">
+    <value>Tidak ada cara yang sah untuk mencopot pemasangan entri ini</value>
+  </data>
+  <data name="UninstallError_UninstallerReturnedCode" xml:space="preserve">
+    <value>Uninstaller mengembalikan kode kesalahan:</value>
+  </data>
+  <data name="UninstallError_UninstallerTimedOut" xml:space="preserve">
+    <value>Waktu uninstaller habis</value>
+  </data>
+  <data name="UninstallListEditor_InvalidFilter" xml:space="preserve">
+    <value>Filter tidak valid</value>
+  </data>
+  <data name="UninstallListEditor_NewCondition" xml:space="preserve">
+    <value>Kondisi baru</value>
+  </data>
+  <data name="UninstallListEditor_NewFilter" xml:space="preserve">
+    <value>penyaring baru</value>
+  </data>
+  <data name="UninstallListEditor_NothingMatched" xml:space="preserve">
+    <value>Tidak ada kecocokan</value>
+  </data>
+  <data name="UninstallListItem_NewLineInValue" xml:space="preserve">
+    <value>Nilai tidak boleh berisi baris baru</value>
+  </data>
+  <data name="UninstallListItem_ValueEmpty" xml:space="preserve">
+    <value>Nilai tidak boleh nol atau kosong</value>
+  </data>
+  <data name="UninstallPossible" xml:space="preserve">
+    <value>Penghapusan instalasi dimungkinkan</value>
+  </data>
+  <data name="UninstallStatus_Completed" xml:space="preserve">
+    <value>Selesai</value>
+  </data>
+  <data name="UninstallStatus_Failed" xml:space="preserve">
+    <value>Gagal</value>
+  </data>
+  <data name="UninstallStatus_Invalid" xml:space="preserve">
+    <value>Tidak sah</value>
+  </data>
+  <data name="UninstallStatus_Paused" xml:space="preserve">
+    <value>Dijeda</value>
+  </data>
+  <data name="UninstallStatus_Protected" xml:space="preserve">
+    <value>Terlindung</value>
+  </data>
+  <data name="UninstallStatus_Skipped" xml:space="preserve">
+    <value>Dilewati</value>
+  </data>
+  <data name="UninstallStatus_Uninstalling" xml:space="preserve">
+    <value>Menghapus instalasi</value>
+  </data>
+  <data name="UninstallStatus_Waiting" xml:space="preserve">
+    <value>Menunggu</value>
+  </data>
+  <data name="UninstallString" xml:space="preserve">
+    <value>Copot pemasangan string</value>
+  </data>
+  <data name="UninstallerFullFilename" xml:space="preserve">
+    <value>Nama file penghapus instalasi</value>
+  </data>
+  <data name="UninstallerKind" xml:space="preserve">
+    <value>Jenis penghapus instalasi</value>
+  </data>
+  <data name="UninstallerLocation" xml:space="preserve">
+    <value>Lokasi pencopotan pemasangan</value>
+  </data>
+  <data name="UninstallerType_Chocolatey" xml:space="preserve">
+    <value>Chocolatey</value>
+  </data>
+  <data name="UninstallerType_InnoSetup" xml:space="preserve">
+    <value>Pengaturan Inno</value>
+  </data>
+  <data name="UninstallerType_InstallShield" xml:space="preserve">
+    <value>InstallShield</value>
+  </data>
+  <data name="UninstallerType_Msiexec" xml:space="preserve">
+    <value>Penginstal Windows</value>
+  </data>
+  <data name="UninstallerType_NSIS" xml:space="preserve">
+    <value>Sistem Instalasi Nullsoft Scriptable</value>
+  </data>
+  <data name="UninstallerType_Oculus" xml:space="preserve">
+    <value>Oculus</value>
+  </data>
+  <data name="UninstallerType_PowerShell" xml:space="preserve">
+    <value>Skrip PowerShell</value>
+  </data>
+  <data name="UninstallerType_SdbInst" xml:space="preserve">
+    <value>SDBInst</value>
+  </data>
+  <data name="UninstallerType_SimpleDelete" xml:space="preserve">
+    <value>Hapus Sederhana</value>
+  </data>
+  <data name="UninstallerType_Steam" xml:space="preserve">
+    <value>Steam</value>
+  </data>
+  <data name="UninstallerType_StoreApp" xml:space="preserve">
+    <value>Aplikasi Toko Windows</value>
+  </data>
+  <data name="UninstallerType_Unknown" xml:space="preserve">
+    <value>Tidak dikenal</value>
+  </data>
+  <data name="UninstallerType_WindowsFeature" xml:space="preserve">
+    <value>Fitur Windows</value>
+    <comment>Used to mark windows features on the uninstaller list</comment>
+  </data>
+  <data name="UninstallerType_WindowsUpdate" xml:space="preserve">
+    <value>Pembaruan Windows</value>
+  </data>
+</root>

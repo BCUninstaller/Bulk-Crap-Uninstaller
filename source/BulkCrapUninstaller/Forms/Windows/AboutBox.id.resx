@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tentang BCUninstaller (Penghapus Instalasi Sampah Massal)</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Menutup</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Versi program</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Aset yang digunakan</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Informasi pengembang</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Penerjemah</value>
+  </data>
+  <data name="labelArchitecture.Text" xml:space="preserve">
+    <value>Arsitektur:</value>
+  </data>
+  <data name="labelCompanyName.Text" xml:space="preserve">
+    <value>Pencipta</value>
+  </data>
+  <data name="labelCopyright.Text" xml:space="preserve">
+    <value>Hak cipta</value>
+  </data>
+  <data name="labelName.Text" xml:space="preserve">
+    <value>BCUninstaller (Penghapus Instalasi Sampah Massal)</value>
+  </data>
+  <data name="labelPortable.Text" xml:space="preserve">
+    <value>Dipasang:</value>
+  </data>
+  <data name="labelVersion.Text" xml:space="preserve">
+    <value>Versi:</value>
+  </data>
+  <data name="labelis64.Text" xml:space="preserve">
+    <value>Apakah 64bit:</value>
+  </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>Tampilan Daftar Objek</value>
+  </data>
+  <data name="linkLabel2.Text" xml:space="preserve">
+    <value>Penyedia Pengaturan Portabel</value>
+  </data>
+  <data name="linkLabel3.Text" xml:space="preserve">
+    <value>Ikon UI Modern</value>
+  </data>
+  <data name="linkLabel4.Text" xml:space="preserve">
+    <value>Halaman web resmi</value>
+  </data>
+  <data name="linkLabel5.Text" xml:space="preserve">
+    <value>Bug</value>
+  </data>
+  <data name="linkLabel6.Text" xml:space="preserve">
+    <value>DotNetZip</value>
+  </data>
+  <data name="linkLabel7.Text" xml:space="preserve">
+    <value>Pembungkus Terkelola Penjadwal Tugas</value>
+  </data>
+  <data name="linkLabel8.Text" xml:space="preserve">
+    <value>TestStack.White</value>
+  </data>
+  <data name="linkLabel9.Text" xml:space="preserve">
+    <value>es.exe (CLI untuk Semuanya)</value>
+  </data>
+</root>

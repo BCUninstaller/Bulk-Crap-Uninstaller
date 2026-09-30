@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="checkBoxCertTest.Text" xml:space="preserve">
+    <value>Sorot uninstaller bersertifikat</value>
+  </data>
+  <data name="checkBoxCertTest.ToolTip" xml:space="preserve">
+    <value>Gunakan warna untuk mengidentifikasi uninstaller bersertifikat.
+Jika sertifikat berhasil diverifikasi gunakan warna hijau, jika tidak gunakan warna biru.
+
+Peringatan: Verifikasi memerlukan waktu lama untuk diselesaikan.</value>
+  </data>
+  <data name="checkBoxHighlightSpecial.Text" xml:space="preserve">
+    <value>Sorot uninstaller khusus</value>
+  </data>
+  <data name="checkBoxHighlightSpecial.ToolTip" xml:space="preserve">
+    <value>Gunakan warna untuk membedakan aplikasi khusus, misalnya Aplikasi Toko dan Fitur Windows.</value>
+  </data>
+  <data name="checkBoxInvalidTest.Text" xml:space="preserve">
+    <value>Sorot uninstaller yang hilang</value>
+  </data>
+  <data name="checkBoxInvalidTest.ToolTip" xml:space="preserve">
+    <value>Gunakan warna abu-abu untuk mengidentifikasi uninstaller yang rusak atau hilang.</value>
+  </data>
+  <data name="checkBoxListHideMicrosoft.Text" xml:space="preserve">
+    <value>Sembunyikan diterbitkan oleh Microsoft</value>
+  </data>
+  <data name="checkBoxListHideMicrosoft.ToolTip" xml:space="preserve">
+    <value>Saring semua yang diterbitkan oleh Microsoft. Sesederhana itu.</value>
+  </data>
+  <data name="checkBoxListProtected.Text" xml:space="preserve">
+    <value>Tampilkan item yang dilindungi</value>
+  </data>
+  <data name="checkBoxListProtected.ToolTip" xml:space="preserve">
+    <value>Item yang dilindungi ditandai dengan tag "NoRemove", yang berarti penerbit tidak ingin Anda menghapusnya.</value>
+  </data>
+  <data name="checkBoxListSysComp.Text" xml:space="preserve">
+    <value>Tampilkan komponen sistem</value>
+  </data>
+  <data name="checkBoxListSysComp.ToolTip" xml:space="preserve">
+    <value>Beberapa uninstaller dapat ditandai sebagai "komponen sistem" untuk menyembunyikannya dari daftar Tambah/Hapus perangkat lunak.
+Pengemudi sering kali ditandai dengan tag ini.</value>
+  </data>
+  <data name="checkBoxOrphans.Text" xml:space="preserve">
+    <value>Tampilkan aplikasi yang tidak terdaftar</value>
+  </data>
+  <data name="checkBoxOrphans.ToolTip" xml:space="preserve">
+    <value>Menampilkan aplikasi yang tidak memiliki uninstaller terdaftar. Aplikasi tersebut tidak terlihat di sebagian besar pengelola pencopotan pemasangan, tetapi masih memakan ruang. Item yang tidak terdaftar ditandai dengan warna merah.
+
+Peringatan: Periksa kembali sebelum menghapus aplikasi ini; mungkin masih diperlukan!</value>
+  </data>
+  <data name="checkBoxShowStoreApps.Text" xml:space="preserve">
+    <value>Tampilkan aplikasi Windows Store</value>
+  </data>
+  <data name="checkBoxShowUpdates.Text" xml:space="preserve">
+    <value>Tampilkan pembaruan</value>
+  </data>
+  <data name="checkBoxShowUpdates.ToolTip" xml:space="preserve">
+    <value>Pembaruan aplikasi lain. Biasanya item ini di-uninstall bersama aplikasi induknya, sehingga dapat diabaikan.</value>
+  </data>
+  <data name="checkBoxTweaks.Text" xml:space="preserve">
+    <value>Tampilkan penyesuaian</value>
+  </data>
+  <data name="checkBoxViewCheckboxes.Text" xml:space="preserve">
+    <value>Pilih menggunakan kotak centang</value>
+  </data>
+  <data name="checkBoxViewCheckboxes.ToolTip" xml:space="preserve">
+    <value>Mengubah gaya pemilihan daftar menjadi kotak centang. Cara ini lebih aman karena satu
+klik tidak dapat membatalkan pilihan semua item.
+
+Anda dapat memeriksa beberapa item dengan menyorotnya lalu menekan spasi.</value>
+  </data>
+  <data name="checkBoxViewGroups.Text" xml:space="preserve">
+    <value>Tampilkan item dalam grup</value>
+  </data>
+  <data name="checkBoxViewGroups.ToolTip" xml:space="preserve">
+    <value>Kelompokkan item menurut kolom tempat daftar diurutkan.
+Pengelompokan sebagian besar kolom menggunakan pemfilteran cerdas.</value>
+  </data>
+  <data name="checkBoxWinFeature.Text" xml:space="preserve">
+    <value>Tampilkan fitur Windows</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Pengaturan tampilan daftar</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Penyaringan</value>
+  </data>
+</root>

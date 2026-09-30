@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Auto_BadButtons" xml:space="preserve">
+    <value>Tidak | Tolak</value>
+    <comment>Used to select buttons to automatically press when silently uninstallng some programs.
+These are texts displayed on buttons that you most likely do not you want to press. Separated by |</comment>
+  </data>
+  <data name="Auto_CancelButtons" xml:space="preserve">
+    <value>Batalkan | Batalkan | Kembali</value>
+    <comment>Used to select buttons to automatically press when silently uninstallng some programs.
+These are texts displayed on buttons that you never want to press.
+Separated by |</comment>
+  </data>
+  <data name="Auto_GoodButtons" xml:space="preserve">
+    <value>Copot pemasangan | oke | Terima | Terapkan | Tutup | Ya | Hapus | Hapus | Membersihkan</value>
+    <comment>Used to select buttons to automatically press when silently uninstallng some programs.
+These are texts displayed on buttons that you most likely  want to press to progress the uninstallation.
+Separated by |</comment>
+  </data>
+  <data name="Error_InvalidPath" xml:space="preserve">
+    <value>Jalur tidak valid, atau file tidak ada: {0}</value>
+  </data>
+  <data name="Error_Invalid_number_of_arguments" xml:space="preserve">
+    <value>Jumlah argumen tidak valid.</value>
+  </data>
+  <data name="Error_NotSupported" xml:space="preserve">
+    <value>Otomatisasi {0} uninstaller tidak didukung.</value>
+  </data>
+  <data name="Error_UnknownUninstallerType" xml:space="preserve">
+    <value>Jenis pencopotan pemasangan tidak diketahui: {0}</value>
+  </data>
+  <data name="Message_Automation_AppAttached" xml:space="preserve">
+    <value>Terlampir pada "{0}"</value>
+    <comment>0 is application name</comment>
+  </data>
+  <data name="Message_Automation_ClickingButton" xml:space="preserve">
+    <value>Mengklik tombol "{0}".</value>
+    <comment>{0} is button name</comment>
+  </data>
+  <data name="Message_Automation_Failed" xml:space="preserve">
+    <value>Pencopotan pemasangan otomatis gagal.</value>
+  </data>
+  <data name="Message_Automation_FoundButtons" xml:space="preserve">
+    <value>Ditemukan {0} tombol radio.</value>
+    <comment>{0} is number of buttons</comment>
+  </data>
+  <data name="Message_Automation_PopupClosed" xml:space="preserve">
+    <value>Jendela pop-up ditutup.</value>
+  </data>
+  <data name="Message_Automation_PopupFound" xml:space="preserve">
+    <value>Menemukan jendela pop-up - "{0}".</value>
+  </data>
+  <data name="Message_Automation_PopupRecurringFound" xml:space="preserve">
+    <value>Jendela popup berulang terdeteksi!</value>
+  </data>
+  <data name="Message_Automation_ProcessFailedToStart" xml:space="preserve">
+    <value>Proses gagal dimulai.</value>
+  </data>
+  <data name="Message_Automation_SelectingGoodButton" xml:space="preserve">
+    <value>Memilih tombol radio yang dikenal bagus: {0}</value>
+  </data>
+  <data name="Message_Automation_SelectingNotBadButton" xml:space="preserve">
+    <value>Memilih tombol radio yang tidak masuk daftar hitam: {0}</value>
+  </data>
+  <data name="Message_Automation_WaitingForNsisExtraction" xml:space="preserve">
+    <value>Menunggu uninstaller NSIS mengekstrak...</value>
+  </data>
+  <data name="Message_Automation_WindowClosed" xml:space="preserve">
+    <value>Jendela tertutup.</value>
+  </data>
+  <data name="Message_Automation_WindowFound" xml:space="preserve">
+    <value>Ditemukan jendela "{0}".</value>
+    <comment>"{0}" is window name</comment>
+  </data>
+  <data name="Message_Automation_WindowSearching" xml:space="preserve">
+    <value>Mencari jendela...</value>
+  </data>
+  <data name="Message_Starting" xml:space="preserve">
+    <value>Menghapus instalan "{0}" secara otomatis</value>
+  </data>
+  <data name="Message_Success" xml:space="preserve">
+    <value>Otomatisasi berhasil!</value>
+  </data>
+  <data name="Message_UninstallFailed" xml:space="preserve">
+    <value>Pencopotan pemasangan otomatis gagal. Alasan: {0}</value>
+  </data>
+  <data name="Message_UserCancelled" xml:space="preserve">
+    <value>Pengguna membatalkan operasi</value>
+  </data>
+  <data name="UninstallHandler_DaemonStoppedReason" xml:space="preserve">
+    <value>Daemon berhenti karena:</value>
+    <comment>This is followed by error/info message</comment>
+  </data>
+  <data name="UninstallHandler_InvalidProcessNumber" xml:space="preserve">
+    <value>{0} bukan angka yang valid</value>
+  </data>
+  <data name="UninstallHandler_StartDaemon" xml:space="preserve">
+    <value>Memulai automatizer sebagai daemon/layanan.</value>
+  </data>
+</root>

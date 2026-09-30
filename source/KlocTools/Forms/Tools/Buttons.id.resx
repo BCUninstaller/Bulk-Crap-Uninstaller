@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>Menambahkan</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>Bersihkan</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>Menutup</value>
+  </data>
+  <data name="ButtonContinue" xml:space="preserve">
+    <value>Melanjutkan</value>
+  </data>
+  <data name="ButtonCopy" xml:space="preserve">
+    <value>Menyalin</value>
+  </data>
+  <data name="ButtonCreate" xml:space="preserve">
+    <value>Membuat</value>
+  </data>
+  <data name="ButtonDetails" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="ButtonDontCreate" xml:space="preserve">
+    <value>Jangan membuat</value>
+  </data>
+  <data name="ButtonKeep" xml:space="preserve">
+    <value>Menyimpan</value>
+  </data>
+  <data name="ButtonNo" xml:space="preserve">
+    <value>TIDAK</value>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>OKE</value>
+  </data>
+  <data name="ButtonOverwrite" xml:space="preserve">
+    <value>Timpa</value>
+  </data>
+  <data name="ButtonRate" xml:space="preserve">
+    <value>Beri Nilai</value>
+  </data>
+  <data name="ButtonRemove" xml:space="preserve">
+    <value>Menghapus</value>
+  </data>
+  <data name="ButtonReset" xml:space="preserve">
+    <value>Mengatur ulang</value>
+  </data>
+  <data name="ButtonSkip" xml:space="preserve">
+    <value>Melewati</value>
+    <comment>Used as "Skip waiting for process"</comment>
+  </data>
+  <data name="ButtonStop" xml:space="preserve">
+    <value>Berhenti</value>
+  </data>
+  <data name="ButtonSubmit" xml:space="preserve">
+    <value>Kirim</value>
+  </data>
+  <data name="ButtonTerminate" xml:space="preserve">
+    <value>Mengakhiri</value>
+    <comment>Used as "Terminate process"</comment>
+  </data>
+  <data name="ButtonUninstall" xml:space="preserve">
+    <value>Copot pemasangan</value>
+  </data>
+  <data name="ButtonUseLoud" xml:space="preserve">
+    <value>Gunakan tidak senyap</value>
+  </data>
+  <data name="ButtonYes" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+</root>

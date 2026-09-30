@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:schema id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="checkBoxAutoDaemon.Text" xml:space="preserve">
+    <value>Pantau uninstaller "diam" untuk melihat popup atau kios lainnya
+dan mengotomatiskannya (jalankan daemon automatizer)</value>
+  </data>
+  <data name="checkBoxAutoKillQuiet.Text" xml:space="preserve">
+    <value>Secara otomatis mematikan uninstaller diam yang macet</value>
+  </data>
+  <data name="checkBoxBatchSortQuiet.Text" xml:space="preserve">
+    <value>Penyortiran uninstaller yang cerdas</value>
+  </data>
+  <data name="checkBoxConcurrent.Text" xml:space="preserve">
+    <value>Jalankan uninstaller secara otomatis secara bersamaan (jika memungkinkan)</value>
+  </data>
+  <data name="checkBoxConcurrentOneLoud.Text" xml:space="preserve">
+    <value>Hanya satu uninstaller tidak senyap dalam satu waktu</value>
+  </data>
+  <data name="checkBoxDiisableProtection.Text" xml:space="preserve">
+    <value>Nonaktifkan perlindungan</value>
+  </data>
+  <data name="checkBoxGenerate.Text" xml:space="preserve">
+    <value>Hasilkan uninstaller senyap yang hilang jika memungkinkan</value>
+  </data>
+  <data name="checkBoxGenerateStuck.Text" xml:space="preserve">
+    <value>Mati secara otomatis jika macet menunggu masukan pengguna</value>
+  </data>
+  <data name="checkBoxManualNoCollisionProtection.Text" xml:space="preserve">
+    <value>Nonaktifkan pencegahan konflik saat menjalankan
+uninstaller secara manual</value>
+  </data>
+  <data name="checkBoxRestorePoint.Text" xml:space="preserve">
+    <value>Buat titik pemulihan sebelum mencopot pemasangan</value>
+  </data>
+  <data name="checkBoxRestorePoint.ToolTip" xml:space="preserve">
+    <value>Anda dapat membuat titik pemulihan sistem untuk membuat cadangan registri, beberapa pengaturan, dan file.
+Disarankan untuk membuat titik pemulihan sebelum menghapus driver dan aplikasi sistem penting.
+
+Jika pengaturan ini berwarna abu-abu, Restore Points dinonaktifkan atau tidak tersedia. Dalam hal ini tidak ada titik pemulihan yang akan dibuat!</value>
+  </data>
+  <data name="checkBoxRetryQuiet.Text" xml:space="preserve">
+    <value>Coba lagi pencopotan pemasangan senyap yang gagal satu kali</value>
+  </data>
+  <data name="checkBoxShutdown.Text" xml:space="preserve">
+    <value>Mencegah sistem mati/restart</value>
+  </data>
+  <data name="checkBoxSimulate.Text" xml:space="preserve">
+    <value>Simulasikan penghapusan instalasi</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Penghapusan instalasi secara diam-diam</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Pengaturan umum</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Penghapusan instalasi secara bersamaan</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Jumlah maksimum uninstaller yang berjalan:</value>
+  </data>
+</root>
