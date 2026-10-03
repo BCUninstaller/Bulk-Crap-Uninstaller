@@ -109,6 +109,9 @@ namespace BulkCrapUninstaller
                 "es-UY",
                 "es-VE",
 
+                // fa - Persian
+                "fa-IR",
+
                 // fr - French
                 "fr-BE",
                 "fr-CA",

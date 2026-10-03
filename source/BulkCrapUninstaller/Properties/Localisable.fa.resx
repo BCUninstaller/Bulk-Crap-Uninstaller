@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoadingDialogTitleCreatingRestorePoint" xml:space="preserve">
+    <value>در حال ساخت نقطهٔ بازیابی...</value>
+  </data>
+  <data name="LoadingDialogTitleLookingForJunk" xml:space="preserve">
+    <value>در حال جست‌وجوی باقی‌مانده‌ها...</value>
+  </data>
+  <data name="LoadingDialogTitlePopulatingList" xml:space="preserve">
+    <value>در حال پر کردن فهرست برنامه‌ها...</value>
+  </data>
+  <data name="LoadingDialogTitleRemovingJunk" xml:space="preserve">
+    <value>در حال حذف باقی‌مانده‌ها...</value>
+  </data>
+  <data name="LoadingDialogTitleSearchingForUpdates" xml:space="preserve">
+    <value>در حال جست‌وجوی به‌روزرسانی...</value>
+  </data>
+  <data name="SearchNothingFoundMessage" xml:space="preserve">
+    <value>هیچ مدخلی با معیارهای جست‌وجوی شما مطابقت ندارد.</value>
+  </data>
+  <data name="StrExportHeader" xml:space="preserve">
+    <value>خروجی BCUninstaller
+ناشر | نسخه | تاریخ | حجم | رجیستری | نوع حذف‌کننده | دستور حذف | دستور حذف بی‌صدا | توضیحات</value>
+  </data>
+  <data name="StrIsPortable" xml:space="preserve">
+    <value>قابل حمل</value>
+    <comment>keep space in front</comment>
+  </data>
+  <data name="SysRestoreGenericError" xml:space="preserve">
+    <value>فراخوانی API ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_BackupFailedQuestion_Message" xml:space="preserve">
+    <value>تهیهٔ پشتیبان رجیستری ناموفق بود؛ آیا ادامه می‌دهید؟</value>
+  </data>
+  <data name="MessageBoxes_BackupFailedQuestion_Details" xml:space="preserve">
+    <value>جزئیات خطا: </value>
+  </data>
+  <data name="MessageBoxes_Title_Leftover_removal" xml:space="preserve">
+    <value>حذف باقی‌مانده‌ها</value>
+  </data>
+  <data name="MessageBoxes_Error_details" xml:space="preserve">
+    <value>
+
+جزئیات خطا:
+</value>
+    <comment>Add space or newline afterwards and two newlines before</comment>
+  </data>
+  <data name="MessageBoxes_BackupRegistryQuestion_Message" xml:space="preserve">
+    <value>آیا قبل از ادامه می‌خواهید از رجیستری پشتیبان گرفته شود؟</value>
+  </data>
+  <data name="MessageBoxes_BackupRegistryQuestion_Details" xml:space="preserve">
+    <value>بعداً می‌توانید با دوبار کلیک روی فایل پشتیبان، همهٔ تغییرات را برگردانید.
+
+فایل‌ها و پوشه‌ها به سطل بازیافت منتقل می‌شوند و از همان‌جا قابل بازیابی هستند.</value>
+  </data>
+  <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Title" xml:space="preserve">
+    <value>انجام کار ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Message" xml:space="preserve">
+    <value>برای این کار باید فقط یک مورد انتخاب کنید</value>
+  </data>
+  <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Details" xml:space="preserve">
+    <value>فقط یک حذف‌کننده را از فهرست انتخاب کنید. اگر از چک‌باکس استفاده می‌کنید، مطمئن شوید تیک آن خورده باشد.</value>
+  </data>
+  <data name="MessageBoxes_Title_Search_for_updates" xml:space="preserve">
+    <value>جست‌وجوی به‌روزرسانی</value>
+  </data>
+  <data name="MessageBoxes_NoNetworkConnected_Open_online_content" xml:space="preserve">
+    <value>باز کردن محتوای آنلاین</value>
+  </data>
+  <data name="MessageBoxes_NoNetworkConnected_Message" xml:space="preserve">
+    <value>اتصال به اینترنت ممکن نیست؛ هیچ شبکه‌ای در دسترس نیست.</value>
+  </data>
+  <data name="MessageBoxes_NoNetworkConnected_Details" xml:space="preserve">
+    <value>مطمئن شوید کابل شبکه متصل است. اگر از وای‌فای استفاده می‌کنید، قدرت سیگنال خوب باشد.</value>
+  </data>
+  <data name="MessageBoxes_Title_Submit_feedback" xml:space="preserve">
+    <value>ارسال بازخورد</value>
+  </data>
+  <data name="MessageBoxes_AskToSubmitFeedback_Message" xml:space="preserve">
+    <value>آیا مایلید دربارهٔ BCU بازخورد ارسال کنید؟</value>
+  </data>
+  <data name="MessageBoxes_AskToSubmitFeedback_Details" xml:space="preserve">
+    <value>کمتر از یک دقیقه وقت شما را می‌گیرد اما به پیشرفت پروژه کمک زیادی می‌کند! هر بازخوردی خوشایند است؛ گزارش اشکال، پیشنهاد قابلیت یا حتی یک تشکر ساده!
+
+می‌توانید بعداً از نوار منوی بالا آن را ارسال کنید (Help-&gt;Submit feedback).</value>
+  </data>
+  <data name="MessageBoxes_UpdateUptodate_Message" xml:space="preserve">
+    <value>نسخهٔ فعلی به‌روز است</value>
+  </data>
+  <data name="MessageBoxes_UpdateUptodate_Details" xml:space="preserve">
+    <value>در حال حاضر به‌روزرسانی‌ای پیدا نشد؛ آخرین نسخه را دارید.
+
+قابلیتی می‌خواهید اضافه شود یا اشکالی برطرف شود؟ لطفاً بازخوردتان را با منوی «Help-&gt;Submit feedback» بفرستید.</value>
+  </data>
+  <data name="MessageBoxes_UpdateFailed_Message" xml:space="preserve">
+    <value>هنگام بررسی به‌روزرسانی خطایی رخ داد</value>
+  </data>
+  <data name="MessageBoxes_UpdateFailed_Details" xml:space="preserve">
+    <value>مطمئن شوید BCUninstaller در فایروال مسدود نیست و اتصال اینترنت شما برقرار است.
+
+</value>
+  </data>
+  <data name="MessageBoxes_UpdateAskToDownload_Message" xml:space="preserve">
+    <value>نسخهٔ جدید {0} در دسترس است؛ همین حالا ارتقا می‌دهید؟</value>
+    <comment>0 is version number</comment>
+  </data>
+  <data name="MessageBoxes_UpdateAskToDownload_Details" xml:space="preserve">
+    <value>BCUninstaller به‌روزرسانی را خودکار دانلود می‌کند و پس از راه‌اندازی دوباره اعمال می‌کند. توجه: ممکن است در این فرایند تنظیمات شما از بین برود.
+
+تغییرات:
+- {0}
+
+هشدار: در طول به‌روزرسانی، پوشهٔ «Update» و فایل «Update.zip» داخل پوشهٔ BCU حذف می‌شوند.</value>
+    <comment>0 is a list of changes separated by &quot;- &quot;</comment>
+  </data>
+  <data name="MessageBoxes_UninstallMsiGuidMissing_Title" xml:space="preserve">
+    <value>حذف با Msi</value>
+  </data>
+  <data name="MessageBoxes_UninstallMsiGuidMissing_Message" xml:space="preserve">
+    <value>مدخل انتخاب‌شده با نصب‌کنندهٔ MsiExec قابل حذف نیست</value>
+  </data>
+  <data name="MessageBoxes_UninstallMsiGuidMissing_Details" xml:space="preserve">
+    <value>حذف‌کنندهٔ انتخاب‌شده برای استفاده از MsiExec هیچ GUID معتبری ندارد.</value>
+  </data>
+  <data name="MessageBoxes_TaskStopConfirmation_Title" xml:space="preserve">
+    <value>توقف کار حذف فعلی</value>
+  </data>
+  <data name="MessageBoxes_TaskStopConfirmation_Message" xml:space="preserve">
+    <value>از توقف کارِ در حال اجرا مطمئن هستید؟</value>
+  </data>
+  <data name="MessageBoxes_TaskStopConfirmation_Details" xml:space="preserve">
+    <value>توقف زودهنگام کار هیچ تغییری را برنمی‌گرداند. حذف‌کنندهٔ در حال اجرا متوقف نمی‌شود و کار منتظر تمام شدن آن می‌ماند.</value>
+  </data>
+  <data name="MessageBoxes_Title_Create_restore_point" xml:space="preserve">
+    <value>ساخت نقطهٔ بازیابی</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreContinueAfterError_Message" xml:space="preserve">
+    <value>ساخت نقطهٔ بازیابی جدید ناموفق بود</value>
+  </data>
+  <data name="Str64Bit" xml:space="preserve">
+    <value>x64</value>
+    <comment>keep space in front</comment>
+  </data>
+  <data name="StrDebug" xml:space="preserve">
+    <value>DEBUG</value>
+    <comment>keep space in front</comment>
+  </data>
+  <data name="MessageBoxes_CanWalkAwayInfo_Title" xml:space="preserve">
+    <value>پیشرفت حذف</value>
+  </data>
+  <data name="MessageBoxes_CanWalkAwayInfo_Message" xml:space="preserve">
+    <value>اکنون می‌توانید رایانه را ترک کنید</value>
+  </data>
+  <data name="MessageBoxes_CanWalkAwayInfo_Details" xml:space="preserve">
+    <value>حذف‌کننده‌های باقی‌مانده باید بدون دخالت کاربر به کار خود ادامه دهند. با این حال بهتر است هر از گاهی سر بزنید تا اگر یکی از آن‌ها کرش کرد، متوجه شوید.</value>
+  </data>
+  <data name="MessageBoxes_Title_Junk_Leftover_removal" xml:space="preserve">
+    <value>حذف فایل‌های زائد و باقی‌مانده‌ها</value>
+  </data>
+  <data name="MessageBoxes_ConfirmLowConfidenceQuestion_Message" xml:space="preserve">
+    <value>واقعاً می‌خواهید موارد کم‌اطمینان را تغییر دهید؟</value>
+  </data>
+  <data name="MessageBoxes_ConfirmLowConfidenceQuestion_Details" xml:space="preserve">
+    <value>حذف مواردی که میزان اطمینان آن‌ها کمتر از «سالم» است می‌تواند بسیار خطرناک باشد! توصیه می‌شود حتماً بررسی کنید که تک‌تک موارد برای حذف ایمن هستند.</value>
+  </data>
+  <data name="MessageBoxes_DeleteRegKeysConfirmation_Title" xml:space="preserve">
+    <value>حذف کلیدها از رجیستری</value>
+  </data>
+  <data name="MessageBoxes_DeleteRegKeysConfirmation_Message" xml:space="preserve">
+    <value>از حذف مدخل‌های انتخاب‌شدهٔ حذف‌کننده مطمئن هستید؟</value>
+  </data>
+  <data name="MessageBoxes_DeleteRegKeysConfirmation_Details" xml:space="preserve">
+    <value>موارد زیر از رجیستری حذف می‌شوند و از فهرست حذف خارج می‌شوند، اما خود برنامه‌ها حذف نصب نمی‌شوند.
+
+{0}</value>
+  </data>
+  <data name="MessageBoxes_ExportFailed_Title" xml:space="preserve">
+    <value>خروجی گرفتن ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_ExportFailed_Message" xml:space="preserve">
+    <value>هنگام ذخیرهٔ داده‌های خروجی خطایی رخ داد</value>
+  </data>
+  <data name="MessageBoxes_ExportFailed_Details" xml:space="preserve">
+    <value>اگر خطا تکرار شد، ذخیره‌سازی در پوشهٔ دیگری را امتحان کنید؛ مثلاً دسکتاپ.</value>
+  </data>
+  <data name="MessageBoxes_GetSystemRestoreDescription" xml:space="preserve">
+    <value>BCUninstaller در حال حذف {0} برنامه است</value>
+    <comment>0 is the uninstaller count</comment>
+  </data>
+  <data name="MessageBoxes_Title_Rename_uninstaller" xml:space="preserve">
+    <value>تغییر نام حذف‌کننده</value>
+  </data>
+  <data name="MessageBoxes_InvalidNewEntryName_Message" xml:space="preserve">
+    <value>نام واردشده خالی است یا کاراکتر نامعتبر دارد</value>
+  </data>
+  <data name="MessageBoxes_InvalidNewEntryName_Details" xml:space="preserve">
+    <value>مطمئن شوید هیچ‌یک از کاراکترهای زیر در نام به کار نرفته باشد:
+{0}</value>
+    <comment>0 is list of characters separated by spaces</comment>
+  </data>
+  <data name="MessageBoxes_LookForJunkQuestion_Message" xml:space="preserve">
+    <value>آیا می‌خواهید دنبال باقی‌مانده‌های حذف‌های انجام‌شده بگردید؟</value>
+  </data>
+  <data name="MessageBoxes_LookForJunkQuestion_Details" xml:space="preserve">
+    <value>توجه داشته باشید که این قابلیت فقط برای کاربران حرفه‌ای‌ای طراحی شده که نحوهٔ کار آن را می‌دانند. حذف این فایل‌ها ضروری نیست و تأثیر محسوسی هم روی کارایی سیستم ندارند.</value>
+  </data>
+  <data name="MessageBoxes_NoJunkFoundInfo_Message" xml:space="preserve">
+    <value>هیچ باقی‌مانده‌ای پیدا نشد</value>
+  </data>
+  <data name="MessageBoxes_NoJunkFoundInfo_Details" xml:space="preserve">
+    <value>هیچ باقی‌مانده‌ای پیدا نشد. ممکن است هنوز مقداری residue باقی باشد؛ می‌توانید از یک پاک‌کنندهٔ فایل موقت مثل BleachBit استفاده کنید.</value>
+  </data>
+  <data name="MessageBoxes_NothingToCopy_Message" xml:space="preserve">
+    <value>چیزی برای کپی کردن در کلیپ‌بورد نبود. یا هیچ‌یک از حذف‌کننده‌های انتخاب‌شده این اطلاعات را ندارند، یا چیزی انتخاب نکرده‌اید.</value>
+  </data>
+  <data name="MessageBoxes_Title_Copy_to_clipboard" xml:space="preserve">
+    <value>کپی به کلیپ‌بورد</value>
+  </data>
+  <data name="MessageBoxes_Title_Open_directories" xml:space="preserve">
+    <value>باز کردن پوشه‌ها</value>
+  </data>
+  <data name="MessageBoxes_OpenDirectoriesMessageBox_OpenMultiple" xml:space="preserve">
+    <value>این کار {0} پوشه را هم‌زمان باز می‌کند؛ مطمئنید که ادامه می‌دهید؟</value>
+    <comment>0 is number of directories to open
+</comment>
+  </data>
+  <data name="MessageBoxes_Title_Search_online" xml:space="preserve">
+    <value>جست‌وجوی آنلاین</value>
+  </data>
+  <data name="MessageBoxes_SearchOnlineMessageBox_NothingToSearchFor_Message" xml:space="preserve">
+    <value>چیزی برای جست‌وجو نیست</value>
+  </data>
+  <data name="MessageBoxes_SelfUninstallQuestion_Title" xml:space="preserve">
+    <value>حذف BCUninstaller</value>
+  </data>
+  <data name="MessageBoxes_SelfUninstallQuestion_Message" xml:space="preserve">
+    <value>از حذف BCUninstaller مطمئن هستید؟</value>
+  </data>
+  <data name="MessageBoxes_SelfUninstallQuestion_Details" xml:space="preserve">
+    <value>از رفتنتان متأسفم! اگر یک یا دو دقیقه وقت دارید، لطفاً در سایت من (http://klocmansoftware.weebly.com/) بنویسید چرا BCU را حذف کردید. تلاش می‌کنم مشکلات واقعی را برطرف کنم.</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreBeginQuestion_Message" xml:space="preserve">
+    <value>آیا قبل از ادامه می‌خواهید یک نقطهٔ بازیابی ساخته شود؟</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreBeginQuestion_Details" xml:space="preserve">
+    <value>اگر مطمئن نیستید برنامه‌هایی که حذف می‌کنید مهم هستند یا برای پایداری سیستم ضروری‌اند، ساختن یک نقطهٔ بازیابی توصیه می‌شود.
+ اگر بعد از این فرایند مشکلی پیش آمد، می‌توانید با System Restore تغییرات را برگردانید.</value>
+  </data>
+  <data name="MessageBoxes_SearchOnlineError_Message" xml:space="preserve">
+    <value>هنگام باز کردن صفحهٔ جست‌وجو خطایی رخ داد</value>
+  </data>
+  <data name="MessageBoxes_Title_Save_Uninstall_List" xml:space="preserve">
+    <value>ذخیرهٔ فهرست حذف</value>
+  </data>
+  <data name="MessageBoxes_SaveUninstallListError_Message" xml:space="preserve">
+    <value>ذخیرهٔ فهرست در فایل ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_ResetSettingsConfirmation_Message" xml:space="preserve">
+    <value>از بازنشانی همهٔ تنظیمات برنامه مطمئن هستید؟</value>
+  </data>
+  <data name="MessageBoxes_QuietUninstallersNotAvailableQuestion_Message" xml:space="preserve">
+    <value>بعضی از برنامه‌ها به‌صورت بی‌صدا قابل حذف نیستند</value>
+  </data>
+  <data name="MessageBoxes_ProtectedItemsWarningQuestion_Message" xml:space="preserve">
+    <value>بعضی از مدخل‌ها محافظت می‌شوند و قابل تغییر نیستند</value>
+  </data>
+  <data name="MessageBoxes_ProtectedItemError_Message" xml:space="preserve">
+    <value>مدخل انتخاب‌شده محافظت می‌شود و قابل تغییر نیست</value>
+  </data>
+  <data name="MessageBoxes_OpenUrlError_Message" xml:space="preserve">
+    <value>هنگام باز کردن URL خطایی رخ داد</value>
+  </data>
+  <data name="MessageBoxes_OpenUninstallListQuestion_Message" xml:space="preserve">
+    <value>می‌خواهید انتخاب فعلی حفظ شود؟</value>
+  </data>
+  <data name="MessageBoxes_OpenDirectoryError_Message" xml:space="preserve">
+    <value>هنگام باز کردن پوشه خطایی رخ داد</value>
+  </data>
+  <data name="MessageBoxes_OpenUninstallListError_Message" xml:space="preserve">
+    <value>بارگذاری فایل‌های انتخاب‌شده ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_NoUninstallersSelectedInfo_Message" xml:space="preserve">
+    <value>هیچ حذف‌کننده‌ای انتخاب نشده؛ چیزی برای حذف نیست</value>
+  </data>
+  <data name="MessageBoxes_NoUninstallersSelectedInfo_Title" xml:space="preserve">
+    <value>اجرای حذف‌کننده‌ها</value>
+  </data>
+  <data name="MessageBoxes_NoUninstallersSelectedInfo_Details" xml:space="preserve">
+    <value>برای حذف برنامه‌ها ابتدا باید آن‌ها را از فهرست انتخاب کنید. اگر از چک‌باکس استفاده می‌کنید، مطمئن شوید تیک آن‌ها خورده باشد.</value>
+  </data>
+  <data name="MessageBoxes_OpenUninstallListQuestion_Details" xml:space="preserve">
+    <value>اگر انتخاب فعلی را نگه دارید، با فهرست(های) باز شده ادغام می‌شود</value>
+  </data>
+  <data name="MessageBoxes_OpenUrlsMessageBox_OpenMultiple_Message" xml:space="preserve">
+    <value>این کار {0} URL را هم‌زمان باز می‌کند؛ مطمئنید که ادامه می‌دهید؟</value>
+  </data>
+  <data name="MessageBoxes_Title_Open_urls" xml:space="preserve">
+    <value>باز کردن URLها</value>
+  </data>
+  <data name="MessageBoxes_OpenUrlsMessageBox_No_URLs_to_open_Title" xml:space="preserve">
+    <value>URL‌ای برای باز کردن نیست</value>
+  </data>
+  <data name="MessageBoxes_Title_Modify_protected_items" xml:space="preserve">
+    <value>تغییر مورد محافظت‌شده</value>
+  </data>
+  <data name="MessageBoxes_ProtectedItemsWarningQuestion_Details" xml:space="preserve">
+    <value>مدخل‌های تحت تأثیر:
+{0}
+
+برای تغییر این مدخل‌ها باید از نوار کناری تنظیمات، محافظت حذف‌کننده‌ها را غیرفعال کنید. در صورت تمایل می‌توانید آن‌ها را از کار حذف کنید و بقیه را ادامه دهید.</value>
+    <comment>0 names of protected uninstallers</comment>
+  </data>
+  <data name="MessageBoxes_ProtectedItemError_Details" xml:space="preserve">
+    <value>مدخل محافظت‌شده: {0}
+
+برای تغییر این مدخل باید از پنل تنظیمات، محافظت حذف‌کننده‌ها را غیرفعال کنید.</value>
+    <comment>0 name of protected uninstaller</comment>
+  </data>
+  <data name="MessageBoxes_QuietUninstallersNotAvailableQuestion_Details" xml:space="preserve">
+    <value>برای موارد زیر حذف‌کنندهٔ بی‌صدا وجود ندارد:
+{0}
+
+آیا می‌خواهید برای آن‌ها از حذف‌کننده‌های «عادی» استفاده شود، یا از کار حذفشان کنیم؟</value>
+    <comment>0 is names of non-quiet uninstallers</comment>
+  </data>
+  <data name="MessageBoxes_Title_Quiet_uninstall" xml:space="preserve">
+    <value>حذف بی‌صدا</value>
+  </data>
+  <data name="MessageBoxes_Title_Restore_default_settings" xml:space="preserve">
+    <value>بازگردانی تنظیمات پیش‌فرض</value>
+  </data>
+  <data name="MessageBoxes_ResetSettingsConfirmation_Details" xml:space="preserve">
+    <value>همهٔ تنظیمات شما برای همیشه از بین می‌روند. BCUninstaller برای انجام این کار باید دوباره راه‌اندازی شود.</value>
+  </data>
+  <data name="MessageBoxes_Title_Open_Uninstall_List" xml:space="preserve">
+    <value>باز کردن فهرست حذف</value>
+  </data>
+  <data name="MessageBoxes_SysRestoreContinueAfterError_Details" xml:space="preserve">
+    <value>نقطهٔ بازیابی ساخته نشد؛ امکان برگرداندن تغییرات را نخواهید داشت! با این حال ادامه می‌دهید؟</value>
+  </data>
+  <data name="MainWindow_Rename_Description" xml:space="preserve">
+    <value>در حال تغییر نام «{0}»</value>
+  </data>
+  <data name="MainWindow_Rename_Title" xml:space="preserve">
+    <value>تغییر نام مورد انتخاب‌شده</value>
+  </data>
+  <data name="UninstallProgressWindow_TaskDone" xml:space="preserve">
+    <value>کار تمام شد</value>
+    <comment>Shown on the status bar</comment>
+  </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>کار تمام شد. برای ادامه این پنجره را ببندید؛ ممکن است BCU برای جست‌وجوی باقی‌مانده‌ها سؤال کند.</value>
+    <comment>Shown on the status bar after uninstallers finish</comment>
+  </data>
+  <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
+    <value>در حال حذف</value>
+    <comment>Shown on the status bar</comment>
+  </data>
+  <data name="MessageBoxes_RememberChoiceCheckbox" xml:space="preserve">
+    <value>این انتخاب به خاطر سپرده شود</value>
+  </data>
+  <data name="PropertiesWindow_Table_Error" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorDoesntExist" xml:space="preserve">
+    <value>فایل وجود ندارد.</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorMsi" xml:space="preserve">
+    <value>چیزی برای نمایش نیست. این برنامه با Windows Installer (MsiExec) حذف می‌شود.</value>
+  </data>
+  <data name="PropertiesWindow_Table_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="PropertiesWindow_Table_Value" xml:space="preserve">
+    <value>مقدار</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>خالی</value>
+  </data>
+  <data name="GuidFound" xml:space="preserve">
+    <value>GUID یافت شد</value>
+  </data>
+  <data name="GuidMissing" xml:space="preserve">
+    <value>GUID وجود ندارد</value>
+  </data>
+  <data name="JunkRemove_SelectionBoxText" xml:space="preserve">
+    <value>انتخاب تا سطح...</value>
+  </data>
+  <data name="Error_FileNotFound" xml:space="preserve">
+    <value>فایل یافت نشد.</value>
+  </data>
+  <data name="LoadingDialogTitlePostUninstallCommands" xml:space="preserve">
+    <value>در حال اجرای دستورات پس از حذف...</value>
+  </data>
+  <data name="LoadingDialogTitlePreUninstallCommands" xml:space="preserve">
+    <value>در حال اجرای دستورات پیش از حذف...</value>
+  </data>
+  <data name="MainWindow_Statusbar_StatusReady" xml:space="preserve">
+    <value>آماده</value>
+    <comment>Shows up when nothing else is displayed on the status bar.</comment>
+  </data>
+  <data name="MainWindow_Statusbar_StatusSelection" xml:space="preserve">
+    <value>{0} حذف‌کننده انتخاب شده است</value>
+    <comment>{0} is a number of selected uninstallers</comment>
+  </data>
+  <data name="MainWindow_Statusbar_Total" xml:space="preserve">
+    <value>مجموعاً {0} حذف‌کننده، {1}</value>
+    <comment>{0} is a number of all uninstallers, {1} is a long file size (123 Megabytes)</comment>
+  </data>
+  <data name="MessageBoxes_ExternalCommandFailed_Message" xml:space="preserve">
+    <value>اجرای دستور زیر ناموفق بود:
+{0}</value>
+    <comment>{0} is a command line (c:\example.exe /help)</comment>
+  </data>
+  <data name="MessageBoxes_ExternalCommandFailed_Title" xml:space="preserve">
+    <value>اجرای دستور خارجی ناموفق بود</value>
+  </data>
+  <data name="DefaultLanguage" xml:space="preserve">
+    <value>پیش‌فرض</value>
+    <comment>Used in language select box when you want to use the system language</comment>
+  </data>
+  <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Details" xml:space="preserve">
+    <value>بعضی از تنظیمات تا راه‌اندازی دوبارهٔ برنامه اعمال نمی‌شوند.</value>
+  </data>
+  <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Message" xml:space="preserve">
+    <value>آیا می‌خواهید برای اعمال تنظیمات جدید، BCU دوباره راه‌اندازی شود؟</value>
+  </data>
+  <data name="MessageBoxes_RestartNeededForSettingChangeQuestion_Title" xml:space="preserve">
+    <value>تغییر تنظیمات برنامه</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorNoCertificate" xml:space="preserve">
+    <value>گواهی وجود ندارد</value>
+  </data>
+  <data name="MainWindow_Statusbar_ProcessingUninstallers" xml:space="preserve">
+    <value>در حال پردازش برنامه‌های شناسایی‌شده، {0} مورد باقی مانده...</value>
+    <comment>{1} = how many application uninstallers still need to be processed</comment>
+  </data>
+  <data name="MessageBoxes_TaskSkip_Details" xml:space="preserve">
+    <value>انتخاب «خاتمه» بلافاصله حذف‌کنندهٔ در حال اجرا را می‌بندد و ممکن است حذف نصب ناقص بماند. معمولاً می‌توان بعداً حذف‌کننده را دوباره اجرا کرد تا کار تمام شود.
+
+به‌جای آن می‌توانید از منتظر ماندن برای این فرایند صرف‌نظر کنید. با رد شدن، حذف‌کننده به کار خود ادامه می‌دهد و کار به مورد بعدی می‌رود. توجه داشته باشید بعضی از حذف‌کننده‌ها تا تمام شدن فرایند ردشده ممکن است اجرا نشوند.</value>
+  </data>
+  <data name="MessageBoxes_TaskSkip_Message" xml:space="preserve">
+    <value>آیا می‌خواهید از منتظر ماندن برای حذف‌کنندهٔ در حال اجرا صرف‌نظر شود؟</value>
+  </data>
+  <data name="MessageBoxes_TaskSkip_Title" xml:space="preserve">
+    <value>رد کردن کار فعلی</value>
+  </data>
+  <data name="MessageBoxes_UninstallAlreadyRunning_Message" xml:space="preserve">
+    <value>یک کار حذف دیگر در حال اجراست. لطفاً منتظر بمانید تمام شود و دوباره تلاش کنید.</value>
+  </data>
+  <data name="JunkRemove_Details_Message" xml:space="preserve">
+    <value>امتیاز: {0}
+
+نقاط قوت:
+{1}
+
+نقاط ضعف:
+{2}</value>
+    <comment>{0} - Rating as a string
+{1} - List of strings of positive parts of the rating
+{2} - List of strings of negative parts of the rating
+The lists are separated by a single newline.</comment>
+  </data>
+  <data name="JunkRemove_Details_Title" xml:space="preserve">
+    <value>جزئیات امتیاز</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorMissingRegistry" xml:space="preserve">
+    <value>این برنامه مدخل رجیستری معتبری ندارد</value>
+  </data>
+  <data name="PropertiesWindow_Table_ErrorMissingUninstaller" xml:space="preserve">
+    <value>این برنامه حذف‌کنندهٔ معتبری ندارد</value>
+  </data>
+  <data name="LoadingDialogTitleLoadingWindowsFeatures" xml:space="preserve">
+    <value>در حال بارگذاری قابلیت‌های ویندوز...</value>
+  </data>
+  <data name="MainWindow_Statusbar_RefreshingStartup" xml:space="preserve">
+    <value>در حال تازه‌سازی اطلاعات برنامه‌های شروع خودکار...</value>
+    <comment>Shown when refreshing autostart information of the uninstallers</comment>
+  </data>
+  <data name="MessageBoxes_OpenDirectories_NoDirsToOpen" xml:space="preserve">
+    <value>پوشه‌ای برای باز کردن نیست</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>در دسترس نیست</value>
+    <comment>Used on application list when value is not available</comment>
+  </data>
+  <data name="MessageBoxes_RatingErrorTitle" xml:space="preserve">
+    <value>امتیازها در دسترس نیستند</value>
+  </data>
+  <data name="MessageBoxes_RatingsDisabled_Message" xml:space="preserve">
+    <value>ابتدا باید امتیازدهی را از تنظیمات فعال کنید.</value>
+  </data>
+  <data name="MessageBoxes_RatingUnavailable_Message" xml:space="preserve">
+    <value>نمی‌توان به برنامه‌هایی که به‌درستی نصب نشده‌اند امتیاز داد.</value>
+  </data>
+  <data name="RateTitle_Counted" xml:space="preserve">
+    <value>{0} برنامه</value>
+    <comment>{0} is number of apps to rate, &quot;Rate &quot; will be automatically put in front of this string</comment>
+  </data>
+  <data name="RatingEntry_ToString" xml:space="preserve">
+    <value>میانگین امتیاز: {0}؛ امتیاز من: {1}</value>
+  </data>
+  <data name="MessageBoxes_ForceRunUninstallFailedError_Message" xml:space="preserve">
+    <value>اجرای حذف‌کننده‌های زیر ناموفق بود؛ احتمالاً به‌خاطر تداخل. لطفاً صبر کنید بقیهٔ حذف‌کننده‌ها تمام شوند و دوباره تلاش کنید.
+{0}
+
+می‌توانید تشخیص تداخل را در تنظیمات غیرفعال کنید، اما این کار توصیه نمی‌شود.</value>
+  </data>
+  <data name="MessageBoxes_ForceRunUninstallFailedError_Title" xml:space="preserve">
+    <value>حذف اجباری</value>
+  </data>
+  <data name="MessageBoxes_ForceRunUninstallFailedError_Header" xml:space="preserve">
+    <value>اجراى بعضى از حذف‌کننده‌ها ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_Net4Missing_Title" xml:space="preserve">
+    <value>NET Framework نسخهٔ 4.0 یافت نشد</value>
+  </data>
+  <data name="MessageBoxes_Net4Missing_Message" xml:space="preserve">
+    <value>NET Framework نسخهٔ 4.0 پیدا نشد؛ بعضی از قابلیت‌ها غیرفعال خواهند بود</value>
+  </data>
+  <data name="MessageBoxes_Net4Missing_Details" xml:space="preserve">
+    <value>NET Framework نسخهٔ 4.0 اختیاری است اما توصیه می‌شود. قابلیت‌هایی که به آن وابسته‌اند تا زمان نصب، غیرفعال خواهند بود.</value>
+  </data>
+  <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Title" xml:space="preserve">
+    <value>بعضی از حذف‌کننده‌ها شکست خوردند</value>
+  </data>
+  <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Header" xml:space="preserve">
+    <value>آیا می‌خواهید حذف‌کننده‌های بی‌صدایی که شکست خوردند، به‌صورت عادی اجرا شوند؟</value>
+  </data>
+  <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Details" xml:space="preserve">
+    <value>حذف‌کننده‌های زیر به‌صورت عادی اجرا خواهند شد:</value>
+  </data>
+  <data name="UninstallFromDirectory_ScanningTitle" xml:space="preserve">
+    <value>در حال اسکن پوشهٔ مشخص‌شده...</value>
+  </data>
+  <data name="UninstallFromDirectory_FolderBrowse" xml:space="preserve">
+    <value>پوشهٔ شامل برنامه‌هایی را که می‌خواهید حذف کنید انتخاب کنید.</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectory_Title" xml:space="preserve">
+    <value>حذف از پوشه</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryNothingFound_Message" xml:space="preserve">
+    <value>در پوشهٔ مشخص‌شده هیچ برنامه‌ای پیدا نشد</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryNothingFound_Details" xml:space="preserve">
+    <value>مطمئن شوید پوشهٔ درست را انتخاب کرده‌اید و فایل‌های اجرایی برنامه هنوز موجودند.</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryUninstallerFound_Message" xml:space="preserve">
+    <value>حذف‌کننده‌ای برای {0} پیدا شد</value>
+  </data>
+  <data name="MessageBoxes_UninstallFromDirectoryUninstallerFound_Details" xml:space="preserve">
+    <value>آیا این حذف‌کننده اجرا شود؟</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Issuer" xml:space="preserve">
+    <value>صادرکننده</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Subject" xml:space="preserve">
+    <value>موضوع</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Archived" xml:space="preserve">
+    <value>بایگانی‌شده</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Extensions" xml:space="preserve">
+    <value>افزونه‌ها</value>
+  </data>
+  <data name="LocalizedX509Certificate2_FriendlyName" xml:space="preserve">
+    <value>نام دوستانه</value>
+  </data>
+  <data name="LocalizedX509Certificate2_IssuerName" xml:space="preserve">
+    <value>نام صادرکننده</value>
+  </data>
+  <data name="LocalizedX509Certificate2_NotAfter" xml:space="preserve">
+    <value>معتبر تا</value>
+  </data>
+  <data name="LocalizedX509Certificate2_NotBefore" xml:space="preserve">
+    <value>معتبر از</value>
+  </data>
+  <data name="LocalizedX509Certificate2_PrivateKey" xml:space="preserve">
+    <value>کلید خصوصی</value>
+  </data>
+  <data name="LocalizedX509Certificate2_HasPrivateKey" xml:space="preserve">
+    <value>دارای کلید خصوصی</value>
+  </data>
+  <data name="LocalizedX509Certificate2_PublicKey" xml:space="preserve">
+    <value>کلید عمومی</value>
+  </data>
+  <data name="LocalizedX509Certificate2_RawData" xml:space="preserve">
+    <value>دادهٔ خام</value>
+  </data>
+  <data name="LocalizedX509Certificate2_SerialNumber" xml:space="preserve">
+    <value>شمارهٔ سریال</value>
+  </data>
+  <data name="LocalizedX509Certificate2_SubjectName" xml:space="preserve">
+    <value>نام موضوع</value>
+  </data>
+  <data name="LocalizedX509Certificate2_SignatureAlgorithm" xml:space="preserve">
+    <value>الگوریتم امضا</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Version" xml:space="preserve">
+    <value>نسخه</value>
+  </data>
+  <data name="LocalizedX509Certificate2_Thumbprint" xml:space="preserve">
+    <value>اثر انگشت</value>
+  </data>
+  <data name="Error_SaveSettingsFailed" xml:space="preserve">
+    <value>ذخیرهٔ تنظیمات ناموفق بود</value>
+  </data>
+  <data name="Progress_Finishing" xml:space="preserve">
+    <value>در حال جمع‌بندی...</value>
+  </data>
+  <data name="Progress_Finishing_Icons" xml:space="preserve">
+    <value>بارگذاری آیکون‌ها</value>
+  </data>
+  <data name="TargetWindow_NoFilesSelected_Title" xml:space="preserve">
+    <value>جست‌وجوی برنامه</value>
+  </data>
+  <data name="TargetWindow_NoFilesSelected_Message" xml:space="preserve">
+    <value>هیچ فایل یا پوشهٔ معتبری انتخاب نشده است. مطمئن شوید به آن‌ها دسترسی دارید و به‌عنوان فایل سیستمی علامت نخورده باشند.</value>
+  </data>
+  <data name="Uninstaller_GetApplicationsFromDirectories_NothingFound_Title" xml:space="preserve">
+    <value>جست‌وجوی برنامه‌ها</value>
+  </data>
+  <data name="Uninstaller_GetApplicationsFromDirectories_NothingFound_Message" xml:space="preserve">
+    <value>پیدا کردن هیچ برنامه‌ای داخل {0} ناموفق بود</value>
+  </data>
+  <data name="MessageBoxes_ModifyCommandMissing_Title" xml:space="preserve">
+    <value>تغییر برنامه</value>
+  </data>
+  <data name="MessageBoxes_ModifyCommandMissing_Message" xml:space="preserve">
+    <value>برنامهٔ انتخاب‌شده قابل تغییر نیست</value>
+  </data>
+  <data name="MessageBoxes_ModifyCommandMissing_Details" xml:space="preserve">
+    <value>برنامهٔ انتخاب‌شده دستور تغییر (Modify) ندارد. برای تغییر تنظیمات نصب، احتمالاً لازم است ابتدا آن را حذف و دوباره نصب کنید.</value>
+  </data>
+  <data name="MessageBoxes_AskToSaveUninstallList_Title" xml:space="preserve">
+    <value>ذخیرهٔ فهرست حذف</value>
+  </data>
+  <data name="MessageBoxes_AskToSaveUninstallList_Message" xml:space="preserve">
+    <value>تغییرات فهرست حذفِ باز شده ذخیره شود؟</value>
+  </data>
+  <data name="MessageBoxes_AskToSaveUninstallList_Details" xml:space="preserve">
+    <value>در فهرست حذفِ باز شده تغییرات ذخیره‌نشده‌ای وجود دارد که با بستن آن از بین می‌رود.</value>
+  </data>
+  <data name="FileTargeter_SelectDirectoryWithAppsToRemove" xml:space="preserve">
+    <value>پوشهٔ شامل برنامه‌هایی را که می‌خواهید حذف شوند انتخاب کنید.</value>
+  </data>
+  <data name="JunkRemoveWindow_SelectBackupDirectoryTitle" xml:space="preserve">
+    <value>محل ذخیرهٔ پشتیبان را انتخاب کنید. یک پوشهٔ جدید ساخته خواهد شد.</value>
+  </data>
+  <data name="NewsPopup_UpdatedTitle" xml:space="preserve">
+    <value>BCU به نسخهٔ {0} به‌روزرسانی شد!</value>
+  </data>
+  <data name="NewsPopup_FirstStartTitle" xml:space="preserve">
+    <value>به BCU نسخهٔ {0} خوش آمدید!</value>
+  </data>
+  <data name="UninstallProgressWindow_StatusPuttingToSleepInSeconds" xml:space="preserve">
+    <value>رایانه تا {0} ثانیه دیگر به خواب می‌رود. برای لغو، تیک گزینهٔ خواب را بردارید.</value>
+  </data>
+  <data name="UninstallerListDoubleClickAction_DoNothing" xml:space="preserve">
+    <value>هیچ کاری نمی‌کند</value>
+    <comment>Option for &quot;Double clicking in application list...&quot;</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_Properties" xml:space="preserve">
+    <value>مشخصات را باز می‌کند</value>
+    <comment>Option for &quot;Double clicking in application list...&quot;</comment>
+  </data>
+  <data name="UninstallerListDoubleClickAction_Uninstall" xml:space="preserve">
+    <value>حذف نصب می‌کند</value>
+    <comment>Option for &quot;Double clicking in application list...&quot;</comment>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Title" xml:space="preserve">
+    <value>تغییر نام {0} ممکن نیست</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
+    <value>این نوع حذف‌کننده از تغییر نام پشتیبانی نمی‌کند ({0}).</value>
+  </data>
+  <data name="CertificateColumn_NotFound" xml:space="preserve">
+    <value>یافت نشد</value>
+  </data>
+  <data name="CertificateColumn_Verified" xml:space="preserve">
+    <value>تأییدشده</value>
+  </data>
+  <data name="CertificateColumn_Unverified" xml:space="preserve">
+    <value>تأییدنشده</value>
+  </data>
+  <data name="IntegrityColumn_Invalid" xml:space="preserve">
+    <value>بدون حذف‌کننده</value>
+  </data>
+  <data name="IntegrityColumn_Unregistered" xml:space="preserve">
+    <value>بدون رجیستری</value>
+  </data>
+  <data name="IntegrityColumn_Good" xml:space="preserve">
+    <value>سالم</value>
+  </data>
+</root>
