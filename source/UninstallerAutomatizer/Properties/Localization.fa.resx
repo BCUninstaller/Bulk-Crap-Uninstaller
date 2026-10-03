@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_Invalid_number_of_arguments" xml:space="preserve">
+    <value>تعداد آرگومان‌ها نامعتبر است.</value>
+  </data>
+  <data name="Error_UnknownUninstallerType" xml:space="preserve">
+    <value>نوع حذف‌کننده ناشناخته است: {0}</value>
+  </data>
+  <data name="Error_InvalidPath" xml:space="preserve">
+    <value>مسیر نامعتبر است یا فایل وجود ندارد: {0}</value>
+  </data>
+  <data name="Error_NotSupported" xml:space="preserve">
+    <value>اتوماسیون حذف‌کننده‌های {0} پشتیبانی نمی‌شود.</value>
+  </data>
+  <data name="Message_Starting" xml:space="preserve">
+    <value>در حال حذف خودکار «{0}»</value>
+  </data>
+  <data name="Message_UserCancelled" xml:space="preserve">
+    <value>کاربر عملیات را لغو کرد</value>
+  </data>
+  <data name="Message_Success" xml:space="preserve">
+    <value>اتوماسیون با موفقیت انجام شد!</value>
+  </data>
+  <data name="Message_UninstallFailed" xml:space="preserve">
+    <value>حذف خودکار ناموفق بود. علت: {0}</value>
+  </data>
+  <data name="Message_Automation_SelectingNotBadButton" xml:space="preserve">
+    <value>در حال انتخاب دکمهٔ رادیویی غیرمسدودشده: {0}</value>
+  </data>
+  <data name="Message_Automation_SelectingGoodButton" xml:space="preserve">
+    <value>در حال انتخاب دکمهٔ رادیویی مطمئن: {0}</value>
+  </data>
+  <data name="Message_Automation_FoundButtons" xml:space="preserve">
+    <value>{0} دکمهٔ رادیویی پیدا شد.</value>
+    <comment>{0} is number of buttons</comment>
+  </data>
+  <data name="Message_Automation_ClickingButton" xml:space="preserve">
+    <value>در حال کلیک روی دکمهٔ «{0}».</value>
+    <comment>{0} is button name</comment>
+  </data>
+  <data name="Message_Automation_PopupClosed" xml:space="preserve">
+    <value>پنجرهٔ بازشو بسته شد.</value>
+  </data>
+  <data name="Message_Automation_PopupFound" xml:space="preserve">
+    <value>پنجرهٔ بازشویی پیدا شد - «{0}».</value>
+  </data>
+  <data name="Message_Automation_PopupRecurringFound" xml:space="preserve">
+    <value>پنجرهٔ بازشوی تکرارشونده شناسایی شد!</value>
+  </data>
+  <data name="Message_Automation_Failed" xml:space="preserve">
+    <value>حذف خودکار ناموفق بود.</value>
+  </data>
+  <data name="Message_Automation_WindowClosed" xml:space="preserve">
+    <value>پنجره بسته شد.</value>
+  </data>
+  <data name="Message_Automation_WindowFound" xml:space="preserve">
+    <value>پنجرهٔ «{0}» پیدا شد.</value>
+    <comment>&quot;{0}&quot; is window name</comment>
+  </data>
+  <data name="Message_Automation_WindowSearching" xml:space="preserve">
+    <value>در حال جست‌وجوی پنجره‌ها...</value>
+  </data>
+  <data name="Message_Automation_AppAttached" xml:space="preserve">
+    <value>به «{0}» متصل شد</value>
+    <comment>0 is application name</comment>
+  </data>
+  <data name="Message_Automation_WaitingForNsisExtraction" xml:space="preserve">
+    <value>در حال انتظار برای استخراج حذف‌کنندهٔ NSIS...</value>
+  </data>
+  <data name="Message_Automation_ProcessFailedToStart" xml:space="preserve">
+    <value>شروع فرایند ناموفق بود.</value>
+  </data>
+  <data name="UninstallHandler_StartDaemon" xml:space="preserve">
+    <value>در حال اجرای اتوماتیزر به‌صورت دیمون/سرویس.</value>
+  </data>
+  <data name="UninstallHandler_DaemonStoppedReason" xml:space="preserve">
+    <value>دیمون به این علت متوقف شد: </value>
+    <comment>This is followed by error/info message</comment>
+  </data>
+  <data name="UninstallHandler_InvalidProcessNumber" xml:space="preserve">
+    <value>{0} عدد معتبری نیست</value>
+  </data>
+  <data name="Auto_BadButtons" xml:space="preserve">
+    <value>No | Decline</value>
+    <comment>Used to select buttons to automatically press when silently uninstallng some programs.
+These are texts displayed on buttons that you most likely do not you want to press. Separated by |</comment>
+  </data>
+  <data name="Auto_CancelButtons" xml:space="preserve">
+    <value>Cancel | Abort | Back</value>
+    <comment>Used to select buttons to automatically press when silently uninstallng some programs.
+These are texts displayed on buttons that you never want to press.
+Separated by |</comment>
+  </data>
+  <data name="Auto_GoodButtons" xml:space="preserve">
+    <value>Uninstall | OK | Accept | Apply | Close | Yes | Delete | Remove | Clean</value>
+    <comment>Used to select buttons to automatically press when silently uninstallng some programs.
+These are texts displayed on buttons that you most likely  want to press to progress the uninstallation.
+Separated by |</comment>
+  </data>
+</root>

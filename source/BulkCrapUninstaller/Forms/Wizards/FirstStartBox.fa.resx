@@ -1,0 +1,1258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="labelProgress.Text" xml:space="preserve">
+    <value>1 / 6</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonExit.Text" xml:space="preserve">
+    <value>خروج از راهنمای راه‌اندازی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonPrev.Text" xml:space="preserve">
+    <value>عقب</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonNext.Text" xml:space="preserve">
+    <value>ادامه</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonMore.Text" xml:space="preserve">
+    <value>تنظیمات بیشتر</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonHelp.Text" xml:space="preserve">
+    <value>مشاهدهٔ راهنما</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonFinish.Text" xml:space="preserve">
+    <value>پایان راه‌اندازی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p5finishContact.Text" xml:space="preserve">
+    <value>اکنون می‌توانید از BCUninstaller استفاده کنید. اگر سوالی دارید یا می‌خواهید قابلیت جدیدی پیشنهاد دهید، به لینک زیر سر بزنید.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p5LinkContact.Text" xml:space="preserve">
+    <value>باز کردن فرم تماس</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p5finishHomepage.Text" xml:space="preserve">
+    <value>می‌توانید تغییرات نسخه‌ها را با جزئیات بخوانید و نرم‌افزارهای بیشتری از من را در صفحهٔ اصلی ببینید.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p5LinkHomepage.Text" xml:space="preserve">
+    <value>باز کردن صفحهٔ اصلی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p5finishTitle.Text" xml:space="preserve">
+    <value>راه‌اندازی تمام شد</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netTitle.Text" xml:space="preserve">
+    <value>دسترسی شبکه</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netDesc.Text" xml:space="preserve">
+    <value>BCUninstaller می‌تواند به دلایل زیر به اینترنت وصل شود:</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netDesc1.Text" xml:space="preserve">
+    <value>● جست‌وجوی به‌روزرسانی برنامه.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netDesc2.Text" xml:space="preserve">
+    <value>● بارگذاری گزارش‌های خطا.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netDesc3.Text" xml:space="preserve">
+    <value>● ارسال آمار استفادهٔ ناشناس.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netDesc4.Text" xml:space="preserve">
+    <value>● دریافت و بارگذاری امتیازهای برنامه‌ها</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netErrors.Text" xml:space="preserve">
+    <value>هر بار خطایی رخ دهد، از شما پرسیده می‌شود که آیا می‌خواهید ارسال شود. می‌توانید داده‌های ارسالی در گزارش‌های خطا و استفاده را با بررسی فایل‌های XML مربوطه در پوشهٔ BCUninstaller ببینید. داده‌های ارسالی با هیچ شخص ثالثی به هم‌رسانی گذاشته نمی‌شوند.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxUpdateSearch.Text" xml:space="preserve">
+    <value>جست‌وجوی خودکار به‌روزرسانی هنگام شروع برنامه</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netUpdateAdd.Text" xml:space="preserve">
+    <value>می‌توانید از نوار منو، دستی به‌روزرسانی‌ها را جست‌وجو کنید.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxSendStats.Text" xml:space="preserve">
+    <value>ارسال خودکار آمار استفادهٔ ناشناس</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p4netUsageAdd.Text" xml:space="preserve">
+    <value>ارسال این آمار به بهبود BCUninstaller کمک می‌کند.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxRatings.Text" xml:space="preserve">
+    <value>فعال کردن امتیازدهی کاربران به برنامه‌ها</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorTitle.Text" xml:space="preserve">
+    <value>حذف‌کننده‌های خراب</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorDesc.Text" xml:space="preserve">
+    <value>به مرور ممکن است ببینید بعضی از برنامه‌ها حاضر به حذف شدن نیستند، یا از بیشتر مدیرهای حذف ناپدید می‌شوند.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorViewInvalidTitle.Text" xml:space="preserve">
+    <value>حذف‌کننده‌های خراب یا ناقص</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorViewInvalid.Text" xml:space="preserve">
+    <value>در بعضی موارد حذف‌کننده‌ها خراب می‌شوند و حذف برنامه را ناممکن می‌کنند. BCUninstaller می‌تواند این مدخل‌ها را به‌راحتی با گزینهٔ «حذف دستی» پاک کند.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxInvalidTest.Text" xml:space="preserve">
+    <value>برجسته‌سازی حذف‌کننده‌های نامعتبر</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorViewinvalidComment.Text" xml:space="preserve">
+    <value>حذف‌کننده‌های نامعتبر با رنگ خاکستری علامت می‌خورند.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorOrphansTitle.Text" xml:space="preserve">
+    <value>برنامه‌های ثبت‌نشده</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorOrphansMessage.Text" xml:space="preserve">
+    <value>گاهی یک برنامهٔ کامل حتی بعد از حذف شدن روی دیسک باقی می‌ماند. این اتفاق ممکن است وقتی هم بیفتد که فقط حذف‌کننده پاک شده باشد.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxOrphans.Text" xml:space="preserve">
+    <value>نمایش برنامه‌های ثبت‌نشده در فهرست</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="pCorOrphansComment.Text" xml:space="preserve">
+    <value>برنامه‌های ثبت‌نشده با رنگ قرمز علامت می‌خورند.
+اگر حذف‌کنندهٔ اصلی پیدا نشود، باید از گزینهٔ «حذف دستی» برای حذف آن‌ها استفاده کنید.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advTitle.Text" xml:space="preserve">
+    <value>کاربران حرفه‌ای</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advDesc.Text" xml:space="preserve">
+    <value>اگرچه می‌توان از BCUninstaller به‌عنوان یک حذف‌کنندهٔ ساده استفاده کرد، بیشتر قابلیت‌های آن برای کاربران حرفه‌ای طراحی شده است. با احتیاط ادامه دهید!</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advSyscompTitle.Text" xml:space="preserve">
+    <value>اجزای سیستم</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advSyscomp.Text" xml:space="preserve">
+    <value>برنامه‌های علامت‌خورده به «جزء سیستم» از بیشتر مدیرهای حذف ساده پنهان می‌شوند. این برچسب به این معنا نیست که برنامه بخشی از سیستم‌عامل است.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxListSysComp.Text" xml:space="preserve">
+    <value>نمایش حذف‌کننده‌های علامت‌خورده به «جزء سیستم»</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advProtectTitle.Text" xml:space="preserve">
+    <value>حذف‌کننده‌های محافظت‌شده</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advProtect.Text" xml:space="preserve">
+    <value>موارد محافظت‌شده با برچسب «NoRemove» علامت می‌خورند؛ یعنی ناشر نمی‌خواهد آن‌ها را حذف کنید. بسته‌های نرم‌افزاری بزرگ اغلب از این برچسب استفاده می‌کنند تا نتوانید بخش‌های جداگانه‌شان را حذف کنید.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxListProtected.Text" xml:space="preserve">
+    <value>نمایش حذف‌کننده‌های علامت‌خورده به «محافظت‌شده»</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxDiisableProtection.Text" xml:space="preserve">
+    <value>غیرفعال کردن محافظت حذف‌کننده‌های علامت‌خورده به «محافظت‌شده»</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p3advProtectAdd.Text" xml:space="preserve">
+    <value>این کار اجازهٔ حذف موارد محافظت‌شده را می‌دهد.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewTitle.Text" xml:space="preserve">
+    <value>نمای فهرست حذف‌کننده‌ها</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewDetail.Text" xml:space="preserve">
+    <value>همهٔ حذف‌کننده‌های پیدا شده در سیستم شما در نمای فهرست اصلی هستند. چند روش برای مرور این داده‌ها:</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewDetail1.Text" xml:space="preserve">
+    <value>● استفاده از فیلترها و جست‌وجوی کلیدواژه‌ها (در همهٔ ستون‌ها)</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewDetail2.Text" xml:space="preserve">
+    <value>● مرتب‌سازی حذف‌کننده‌ها بر اساس هر ستون. جابه‌جایی آزاد ستون‌ها.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewDetail3.Text" xml:space="preserve">
+    <value>● گروه‌بندی حذف‌کننده‌های مشابه</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxGroups.Text" xml:space="preserve">
+    <value>نمایش حذف‌کننده‌ها به‌صورت گروهی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxCheckboxes.Text" xml:space="preserve">
+    <value>انتخاب با چک‌باکس</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewCertsTitle.Text" xml:space="preserve">
+    <value>حذف‌کننده‌های دارای گواهی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewCerts.Text" xml:space="preserve">
+    <value>حذف‌کننده‌ها می‌توانند با گواهی‌هایی صادرشده از مراجع مربوطه امضا شوند. اگر گواهی اعتبارسنجی را پاس کند، بستهٔ نرم‌افزاری دست‌کاری نشده و معتبر است.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="checkBoxCertTest.Text" xml:space="preserve">
+    <value>برجسته‌سازی حذف‌کننده‌های دارای گواهی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p2viewAdd.Text" xml:space="preserve">
+    <value>حذف‌کننده‌های دارای گواهی با رنگ سبز و بدون گواهی با رنگ آبی علامت می‌خورند.
+هشدار: تأیید ممکن است زمان زیادی بگیرد.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p1welcomeHeading.Text" xml:space="preserve">
+    <value>به BCUninstaller خوش آمدید!</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p1welcomeSubheading.Text" xml:space="preserve">
+    <value>این راهنما یک مرور سریع انجام می‌دهد و به پیکربندی برنامه کمک می‌کند.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p1languageHeading.Text" xml:space="preserve">
+    <value>زبان انتخاب‌شده</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p1languageDesc.Text" xml:space="preserve">
+    <value>اگر زبان پیش‌فرض اشتباه است، می‌توانید BCU را مجبور به استفاده از زبان مشخصی کنید. برای اعمال زبان جدید، برنامه دوباره راه‌اندازی می‌شود.</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonLanguageApply.Text" xml:space="preserve">
+    <value>اعمال</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p1languageExtradetails.Text" xml:space="preserve">
+    <value>اگر مایلید در ترجمهٔ BCU به زبان خودتان کمک کنید، برای تماس با من روی لینک زیر کلیک کنید. هر کمکی بسیار ارزشمند است!</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="p1linkLabelContact.Text" xml:space="preserve">
+    <value>باز کردن فرم تماس</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="label2.Text" xml:space="preserve">
+    <value>ulk crap
+uninstaller</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  
+  
+  
+  
+  <data name="$this.Text" xml:space="preserve">
+    <value>به BCUninstaller خوش آمدید</value>
+  </data>
+  
+  
+  
+  
+</root>

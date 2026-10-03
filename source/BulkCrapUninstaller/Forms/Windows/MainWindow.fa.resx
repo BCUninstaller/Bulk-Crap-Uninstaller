@@ -1,0 +1,1444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="olvColumnDisplayName.Text" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  
+  <data name="olvColumnPublisher.Text" xml:space="preserve">
+    <value>ناشر</value>
+  </data>
+  
+  <data name="olvColumnCertificate.Text" xml:space="preserve">
+    <value>گواهی</value>
+  </data>
+  
+  <data name="olvColumnRating.Text" xml:space="preserve">
+    <value>امتیاز کاربران</value>
+  </data>
+  
+  <data name="olvColumnDisplayVersion.Text" xml:space="preserve">
+    <value>نسخه</value>
+  </data>
+  <data name="olvColumnInstallDate.Text" xml:space="preserve">
+    <value>تاریخ نصب</value>
+  </data>
+  
+  <data name="olvColumnSize.Text" xml:space="preserve">
+    <value>حجم</value>
+  </data>
+  
+  <data name="olvColumnStartup.Text" xml:space="preserve">
+    <value>شروع خودکار</value>
+  </data>
+  
+  <data name="olvColumnIs64.Text" xml:space="preserve">
+    <value>۶۴بیتی</value>
+  </data>
+  
+  <data name="olvColumnUninstallString.Text" xml:space="preserve">
+    <value>دستور حذف نصب</value>
+  </data>
+  
+  <data name="olvColumnAbout.Text" xml:space="preserve">
+    <value>آدرس درباره</value>
+  </data>
+  
+  <data name="olvColumnInstallSource.Text" xml:space="preserve">
+    <value>منبع نصب</value>
+  </data>
+  
+  <data name="olvColumnInstallLocation.Text" xml:space="preserve">
+    <value>محل نصب</value>
+  </data>
+  
+  <data name="olvColumnUninstallerKind.Text" xml:space="preserve">
+    <value>نوع حذف‌کننده</value>
+  </data>
+  <data name="olvColumnSystemComponent.Text" xml:space="preserve">
+    <value>جزء سیستم</value>
+  </data>
+  
+  <data name="olvColumnIntegrity.Text" xml:space="preserve">
+    <value>درستی</value>
+  </data>
+  
+  <data name="olvColumnProtected.Text" xml:space="preserve">
+    <value>محافظت‌شده</value>
+  </data>
+  
+  <data name="olvColumnRegistryKeyName.Text" xml:space="preserve">
+    <value>کلید رجیستری</value>
+  </data>
+  
+  <data name="olvColumnGuid.Text" xml:space="preserve">
+    <value>کد محصول</value>
+  </data>
+  
+  <data name="olvColumnQuietUninstallString.Text" xml:space="preserve">
+    <value>دستور حذف بی‌صدا</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  
+  
+  
+  
+  <data name="toolStripButton1.Text" xml:space="preserve">
+    <value>بازخوانی حذف‌کننده‌ها</value>
+  </data>
+  
+  
+  
+  
+  <data name="toolStripButtonSelAll.Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  
+  
+  
+  <data name="toolStripButtonSelNone.Text" xml:space="preserve">
+    <value>لغو انتخاب همه</value>
+  </data>
+  
+  
+  
+  <data name="toolStripButtonSelInv.Text" xml:space="preserve">
+    <value>معکوس کردن انتخاب</value>
+  </data>
+  
+  
+  
+  <data name="toolStripButtonTarget.Text" xml:space="preserve">
+    <value>حذف با پنجره، پوشه یا فایل...</value>
+  </data>
+  
+  
+  
+  
+  <data name="toolStripButtonUninstall.Text" xml:space="preserve">
+    <value>حذف نصب</value>
+  </data>
+  
+  
+  
+  <data name="toolStripButton2.Text" xml:space="preserve">
+    <value>حذف نصب بی‌صدا</value>
+  </data>
+  
+  
+  <data name="toolStripButtonModify.Text" xml:space="preserve">
+    <value>تغییر (Modify)</value>
+  </data>
+  
+  
+  
+  <data name="toolStripButtonProperties.Text" xml:space="preserve">
+    <value>مشخصات</value>
+  </data>
+  
+  
+  
+  <data name="toolStripButton7.Text" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  
+  
+  <data name="toolStripButton8.Text" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="label1.Text" xml:space="preserve">
+    <value>BCUninstaller</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="buttonAdvFiltering.Text" xml:space="preserve">
+    <value>فیلتر پیشرفته</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>جست‌وجو</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <metadata name="uninstallListContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>269, 17</value>
+  </metadata>
+  
+  
+  <data name="uninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;حذف نصب</value>
+  </data>
+  
+  
+  <data name="quietUninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>حذف نصب &amp;بی‌صدا</value>
+  </data>
+  
+  <data name="manualUninstallToolStripMenuItem1.Text" xml:space="preserve">
+    <value>حذف &amp;دستی</value>
+  </data>
+  
+  <data name="msiInstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;نصب یا پیکربندی (/I)</value>
+  </data>
+  
+  <data name="msiUninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;حذف نصب (/X)</value>
+  </data>
+  
+  <data name="msiQuietUninstallContextMenuStripItem.Text" xml:space="preserve">
+    <value>حذف &amp;بی‌صدا (/X /qb)</value>
+  </data>
+  
+  <data name="uninstallUsingMsiExecContextMenuStripItem.Text" xml:space="preserve">
+    <value>حذف نصب با &amp;MsiExec...</value>
+  </data>
+  
+  
+  <data name="excludeToolStripMenuItem.Text" xml:space="preserve">
+    <value>مستثنا کردن</value>
+  </data>
+  
+  <data name="includeToolStripMenuItem.Text" xml:space="preserve">
+    <value>شامل کردن</value>
+  </data>
+  
+  
+  <data name="runToolStripMenuItem.Text" xml:space="preserve">
+    <value>اجرا...</value>
+  </data>
+  
+  
+  <data name="toolStripMenuItem9.Text" xml:space="preserve">
+    <value>پیشرفته...</value>
+  </data>
+  
+  
+  <data name="fullInformationCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>اطلاعات &amp;کامل</value>
+  </data>
+  
+  <data name="programNameCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>نام برنامه</value>
+  </data>
+  
+  <data name="gUIDProductCodeCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>کد محصول / GUID</value>
+  </data>
+  
+  <data name="fullRegistryPathCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>مسیر کامل رجیستری</value>
+  </data>
+  
+  <data name="uninstallStringCopyContextMenuStripItem.Text" xml:space="preserve">
+    <value>دستور حذف نصب</value>
+  </data>
+  
+  
+  <data name="copyToClipboardContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;کپی به کلیپ‌بورد...</value>
+  </data>
+  
+  <data name="deleteRegistryEntryContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;حذف مدخل رجیستری</value>
+  </data>
+  
+  <data name="renameContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;تغییر نام...</value>
+  </data>
+  
+  
+  <data name="installLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;محل نصب</value>
+  </data>
+  
+  <data name="uninstallerLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;محل حذف‌کننده</value>
+  </data>
+  
+  <data name="sourceLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;محل منبع</value>
+  </data>
+  
+  
+  <data name="openInExplorerContextMenuStripItem.Text" xml:space="preserve">
+    <value>باز کردن در &amp;Explorer...</value>
+  </data>
+  
+  <data name="openWebPageContextMenuStripItem.Text" xml:space="preserve">
+    <value>باز کردن &amp;صفحهٔ وب</value>
+  </data>
+  
+  <data name="toolStripMenuItem15.Text" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  
+  <data name="toolStripMenuItem16.Text" xml:space="preserve">
+    <value>AlternativeTo.net</value>
+  </data>
+  
+  <data name="slantcoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Slant.co</value>
+  </data>
+  
+  
+  <data name="fossHubcomToolStripMenuItem.Text" xml:space="preserve">
+    <value>FossHub.com</value>
+  </data>
+  
+  <data name="sourceForgecomToolStripMenuItem.Text" xml:space="preserve">
+    <value>SourceForge.net</value>
+  </data>
+  
+  <data name="gitHubcomToolStripMenuItem.Text" xml:space="preserve">
+    <value>GitHub.com</value>
+  </data>
+  
+  <data name="fileHippocomToolStripMenuItem.Text" xml:space="preserve">
+    <value>FileHippo.com</value>
+  </data>
+  
+  
+  <data name="lookUpOnlineToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;جست‌وجوی آنلاین</value>
+  </data>
+  
+  <data name="rateToolStripMenuItem.Text" xml:space="preserve">
+    <value>امتیاز دادن...</value>
+  </data>
+  
+  
+  
+  <data name="propertiesContextMenuStripItem.Text" xml:space="preserve">
+    <value>&amp;مشخصات</value>
+  </data>
+  
+  
+  
+  <metadata name="exportDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>530, 17</value>
+  </metadata>
+  <data name="exportDialog.Filter" xml:space="preserve">
+    <value>فایل‌های XML|*.xml</value>
+  </data>
+  <data name="exportDialog.Title" xml:space="preserve">
+    <value>خروجی گرفتن از مشخصات حذف‌کننده‌های انتخاب‌شده</value>
+  </data>
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>675, 17</value>
+  </metadata>
+  
+  
+  <data name="reloadUninstallersToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;بازخوانی حذف‌کننده‌ها</value>
+  </data>
+  
+  
+  
+  <data name="loadUninstallerListToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;باز کردن فهرست حذف...</value>
+  </data>
+  
+  
+  <data name="exportSelectedToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;خروجی گرفتن از دادهٔ حذف‌کننده‌های انتخاب‌شده...</value>
+  </data>
+  
+  <data name="exportToABatchUninstallScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>خروجی گرفتن به‌صورت اسکریپت دسته‌ای حذف...</value>
+  </data>
+  
+  <data name="exportStoreAppsToPowerShellRemoveScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>ساخت اسکریپت PowerShell برای حذف برنامه‌های Store...</value>
+  </data>
+  
+  
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;خروج</value>
+  </data>
+  
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;فایل</value>
+  </data>
+  
+  <data name="showColorLegendToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش راهنمای رنگ‌ها</value>
+  </data>
+  
+  <data name="displayToolbarToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش &amp;نوار ابزار</value>
+  </data>
+  
+  <data name="showTreemapToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش &amp;نقشهٔ درختی</value>
+  </data>
+  
+  <data name="displaySettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش نوار کناری &amp;تنظیمات</value>
+  </data>
+  
+  <data name="displayStatusbarToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش &amp;نوار وضعیت</value>
+  </data>
+  
+  
+  <data name="useSystemThemeToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;استفاده از پوستهٔ سیستم</value>
+  </data>
+  
+  
+  <data name="autosizeAllColumnsToolStripMenuItem.Text" xml:space="preserve">
+    <value>تنظیم خودکار اندازهٔ همهٔ ستون‌ها</value>
+  </data>
+  
+  <data name="viewToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;نمایش</value>
+  </data>
+  
+  <data name="advancedApplicationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>فیلترهای &amp;پیش‌فرض</value>
+  </data>
+  
+  <data name="basicApplicationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>فقط برنامه‌های &amp;ساده</value>
+  </data>
+  
+  <data name="systemComponentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>فقط اجزای سیستم</value>
+  </data>
+  
+  <data name="everythingToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;همه‌چیز</value>
+  </data>
+  
+  
+  <data name="automaticallyStartedToolStripMenuItem.Text" xml:space="preserve">
+    <value>فقط شروع خودکار</value>
+  </data>
+  
+  <data name="onlyWebBrowsersToolStripMenuItem.Text" xml:space="preserve">
+    <value>فقط مرورگرهای وب</value>
+  </data>
+  
+  
+  <data name="viewTweaksToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش ترفندها</value>
+  </data>
+  
+  <data name="viewUnregisteredToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش ثبت‌نشده‌ها</value>
+  </data>
+  
+  <data name="viewUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش به‌روزرسانی‌ها</value>
+  </data>
+  
+  <data name="viewInvalidToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش نامعتبرها</value>
+  </data>
+  
+  <data name="viewWindowsFeaturesToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش قابلیت‌های ویندوز</value>
+  </data>
+  
+  <data name="viewWindowsStoreAppsToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش برنامه‌های Windows Store</value>
+  </data>
+  
+  
+  
+  <data name="searchToolStripMenuItem.Text" xml:space="preserve">
+    <value>جست‌وجو...</value>
+  </data>
+  
+  <data name="filteringToolStripMenuItem.Text" xml:space="preserve">
+    <value>فیلترهای &amp;سریع</value>
+  </data>
+  
+  
+  <data name="uninstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;حذف نصب</value>
+  </data>
+  
+  
+  <data name="quietUninstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>حذف نصب &amp;بی‌صدا</value>
+  </data>
+  
+  <data name="modifyToolStripMenuItem.Text" xml:space="preserve">
+    <value>تغییر (Modify)</value>
+  </data>
+  
+  
+  <data name="advancedClipCopyToolStripMenuItem.Text" xml:space="preserve">
+    <value>پیشرفته...</value>
+  </data>
+  
+  
+  <data name="copyFullInformationToolStripMenuItem.Text" xml:space="preserve">
+    <value>اطلاعات &amp;کامل</value>
+  </data>
+  
+  <data name="toolStripMenuItem10.Text" xml:space="preserve">
+    <value>نام برنامه</value>
+  </data>
+  
+  <data name="toolStripMenuItem11.Text" xml:space="preserve">
+    <value>کد محصول / GUID</value>
+  </data>
+  
+  <data name="toolStripMenuItem12.Text" xml:space="preserve">
+    <value>مسیر کامل رجیستری</value>
+  </data>
+  
+  <data name="toolStripMenuItem13.Text" xml:space="preserve">
+    <value>دستور حذف نصب</value>
+  </data>
+  
+  
+  <data name="toolStripMenuItem8.Text" xml:space="preserve">
+    <value>&amp;کپی به کلیپ‌بورد...</value>
+  </data>
+  
+  <data name="toolStripMenuItem5.Text" xml:space="preserve">
+    <value>&amp;محل نصب</value>
+  </data>
+  
+  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+    <value>&amp;محل حذف‌کننده</value>
+  </data>
+  
+  <data name="toolStripMenuItem7.Text" xml:space="preserve">
+    <value>&amp;محل منبع</value>
+  </data>
+  
+  
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>باز کردن در &amp;Explorer...</value>
+  </data>
+  
+  <data name="toolStripMenuItem14.Text" xml:space="preserve">
+    <value>باز کردن &amp;صفحهٔ وب</value>
+  </data>
+  
+  <data name="googleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  
+  <data name="alternativeToToolStripMenuItem.Text" xml:space="preserve">
+    <value>AlternativeTo</value>
+  </data>
+  
+  <data name="slantcoToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Slant.co</value>
+  </data>
+  
+  
+  <data name="toolStripMenuItem17.Text" xml:space="preserve">
+    <value>FossHub.com</value>
+  </data>
+  
+  <data name="toolStripMenuItem18.Text" xml:space="preserve">
+    <value>SourceForge.net</value>
+  </data>
+  
+  <data name="toolStripMenuItem20.Text" xml:space="preserve">
+    <value>GitHub.com</value>
+  </data>
+  
+  <data name="toolStripMenuItem19.Text" xml:space="preserve">
+    <value>FileHippo.com</value>
+  </data>
+  
+  
+  <data name="onlineSearchToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;جست‌وجوی آنلاین</value>
+  </data>
+  
+  <data name="rateToolStripMenuItem1.Text" xml:space="preserve">
+    <value>امتیاز دادن...</value>
+  </data>
+  
+  
+  <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
+    <value>نمایش &amp;مشخصات</value>
+  </data>
+  
+  
+  <data name="basicOperationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>عملیات &amp;ساده</value>
+  </data>
+  
+  <data name="manualUninstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>حذف &amp;دستی</value>
+  </data>
+  
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>&amp;نصب یا پیکربندی (/I)</value>
+  </data>
+  
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>&amp;حذف نصب (/X)</value>
+  </data>
+  
+  <data name="toolStripMenuItem4.Text" xml:space="preserve">
+    <value>حذف &amp;بی‌صدا (/X /qb)</value>
+  </data>
+  
+  <data name="msiUninstalltoolStripMenuItem.Text" xml:space="preserve">
+    <value>حذف نصب با &amp;MsiExec</value>
+  </data>
+  
+  
+  <data name="renameToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;تغییر نام...</value>
+  </data>
+  
+  <data name="disableAutostartToolStripMenuItem.Text" xml:space="preserve">
+    <value>غیرفعال کردن شروع خودکار</value>
+  </data>
+  
+  
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;حذف کلید رجیستری</value>
+  </data>
+  
+  
+  <data name="createBackupToolStripMenuItem.Text" xml:space="preserve">
+    <value>ساخت &amp;پشتیبان...</value>
+  </data>
+  
+  <data name="openKeyInRegeditToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;باز کردن کلید در Regedit</value>
+  </data>
+  
+  
+  <data name="takeOwnershipToolStripMenuItem.Text" xml:space="preserve">
+    <value>گرفتن مالکیت</value>
+  </data>
+  
+  
+  <data name="advancedOperationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>عملیات &amp;پیشرفته</value>
+  </data>
+  
+  
+  <data name="openStartupManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>باز کردن مدیریت شروع خودکار</value>
+  </data>
+  
+  
+  
+  <data name="cleanUpProgramFilesToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;پاک‌سازی پوشه‌های Program Files...</value>
+  </data>
+  
+  
+  <data name="targetMenuItem.Text" xml:space="preserve">
+    <value>حذف با پنجره، پوشه یا فایل...</value>
+  </data>
+  
+  <data name="uninstallFromDirectoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>حذف از پوشه...</value>
+  </data>
+  
+  
+  <data name="troubleshootUninstallProblemsToolStripMenuItem.Text" xml:space="preserve">
+    <value>عیب‌یابی مشکلات حذف نصب...</value>
+  </data>
+  
+  <data name="startDiskCleanupToolStripMenuItem.Text" xml:space="preserve">
+    <value>اجرای Disk Cleanup</value>
+  </data>
+  
+  <data name="tryToInstallNETV35ToolStripMenuItem.Text" xml:space="preserve">
+    <value>نصب NET v3.5. (افزودن قابلیت)</value>
+  </data>
+  
+  <data name="createRestorePointToolStripMenuItem.Text" xml:space="preserve">
+    <value>ساخت نقطهٔ بازیابی جدید</value>
+  </data>
+  
+  
+  <data name="openProgramsAndFeaturesToolStripMenuItem.Text" xml:space="preserve">
+    <value>باز کردن «برنامه‌ها و قابلیت‌ها»</value>
+  </data>
+  
+  <data name="openSystemRestoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>باز کردن «بازیابی سیستم»</value>
+  </data>
+  
+  
+  
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;تنظیمات</value>
+  </data>
+  
+  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;ابزارها</value>
+  </data>
+  
+  <data name="openHelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>باز کردن &amp;راهنما</value>
+  </data>
+  
+  <data name="startSetupWizardToolStripMenuItem.Text" xml:space="preserve">
+    <value>اجرای راهنمای راه‌اندازی</value>
+  </data>
+  
+  
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>بررسی به‌روزرسانی‌ها</value>
+  </data>
+  
+  
+  <data name="submitFeedbackToolStripMenuItem.Text" xml:space="preserve">
+    <value>ارسال بازخورد...</value>
+  </data>
+  
+  
+  <data name="resetSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>بازنشانی تنظیمات</value>
+  </data>
+  
+  <data name="uninstallBCUninstallToolstripMenuItem.Text" xml:space="preserve">
+    <value>حذف BCUninstaller</value>
+  </data>
+  
+  
+  
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;درباره</value>
+  </data>
+  
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;راهنما</value>
+  </data>
+  
+  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
+    <value>باز کردن پنجرهٔ &amp;اشکال‌زدایی</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  <metadata name="createBackupFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>802, 17</value>
+  </metadata>
+  <data name="createBackupFileDialog.Filter" xml:space="preserve">
+    <value>فایل‌های رجیستری|*.reg</value>
+  </data>
+  <data name="createBackupFileDialog.Title" xml:space="preserve">
+    <value>ساخت پشتیبان رجیستری</value>
+  </data>
+  <metadata name="globalHotkeys1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1017, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  
+  
+  
+  
+  
+  <data name="$this.Text" xml:space="preserve">
+    <value>Bulk Crap Uninstaller</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <metadata name="splashScreen1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1175, 17</value>
+  </metadata>
+  <metadata name="usageTracker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 60</value>
+  </metadata>
+</root>
