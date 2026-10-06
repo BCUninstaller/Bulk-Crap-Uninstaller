@@ -39,6 +39,8 @@ namespace BulkCrapUninstaller.Forms
             InitializeComponent();
 
             Icon = Resources.Icon_Logo;
+            Theming.ThemeManager.ApplyList(objectListViewMain);
+            Theming.ThemeManager.ApplyControls(this, listViewContextMenuStrip);
 
             var junkNodes = junk as IList<IJunkResult> ?? junk.ToList();
 
@@ -245,7 +247,7 @@ namespace BulkCrapUninstaller.Forms
             DisplayDetails(item);
         }
 
-        private static void DisplayDetails(IJunkResult item)
+        private void DisplayDetails(IJunkResult item)
         {
             var groups = item.Confidence.ConfidenceParts.GroupBy(part => part.Change > 0).ToList();
 
@@ -271,9 +273,8 @@ namespace BulkCrapUninstaller.Forms
                     negatives = string.Join("\n", items);
             }
 
-            MessageBox.Show(string.Format(CultureInfo.CurrentCulture, Localisable.JunkRemove_Details_Message,
-                item.Confidence.GetRawConfidence(), positives, negatives), Localisable.JunkRemove_Details_Title,
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Theming.ThemeManager.ShowJunkDetails(this, string.Format(CultureInfo.CurrentCulture, Localisable.JunkRemove_Details_Message,
+                item.Confidence.GetRawConfidence(), positives, negatives), Localisable.JunkRemove_Details_Title);
         }
 
         private void exportDialog_FileOk(object sender, CancelEventArgs e)

@@ -17,6 +17,7 @@ namespace BulkCrapUninstaller.Controls
         public UninstallationSettings()
         {
             InitializeComponent();
+            Theming.ThemeManager.ApplyToolTip(toolTip1);
         }
 
         protected override void OnLoad(EventArgs e)

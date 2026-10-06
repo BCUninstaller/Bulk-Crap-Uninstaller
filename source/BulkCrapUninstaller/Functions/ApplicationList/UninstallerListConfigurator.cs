@@ -244,18 +244,10 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             _reference.uninstallerObjectListView.AdditionalFilter = new ModelFilter(ListViewFilter);
             _reference.uninstallerObjectListView.UseFiltering = true;
 
-            _reference.uninstallerObjectListView.FormatRow += UninstallerObjectListView_FormatRow;
+            Theming.ApplicationRowColors.Attach(_reference.uninstallerObjectListView);
 
-            _listView.ListView.AfterSorting += (x, y) => { AfterFiltering?.Invoke(x, y); };
-        }
-
-        private void UninstallerObjectListView_FormatRow(object sender, FormatRowEventArgs e)
-        {
-            if (e.Model is not ApplicationUninstallerEntry entry) return;
-
-            var color = ApplicationListConstants.GetApplicationBackColor(entry);
-            if (!color.IsEmpty)
-                e.Item.BackColor = color;
+            ((Theming.NativeObjectListView)_reference.uninstallerObjectListView).ListRebuilt +=
+                (x, y) => { AfterFiltering?.Invoke(x, y); };
         }
 
         public void UpdateColumnFiltering(bool anyUninstallers)

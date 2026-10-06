@@ -212,6 +212,19 @@ namespace BulkCrapUninstaller.Forms
             _setMan.Selected.Subscribe((x, y) => splitContainerListAndMap.Panel2Collapsed = !y.NewValue, settings => settings.ShowTreeMap, this);
 
             uninstallerObjectListView.ContextMenuStrip = uninstallListContextMenuStrip;
+            Theming.ThemeManager.ApplyList(uninstallerObjectListView);
+            Theming.ThemeManager.ApplyControls(this);
+            if (Theming.ThemeManager.IsEnabled)
+            {
+                // Preserve the ordinary dark surface when filtering/reloading in
+                // high contrast. TreeMap applies live contrast colors at paint time.
+                var neutralTreemapColor = Color.FromArgb(SystemColors.Window.ToArgb());
+                treeMap1.ObjectColorGetter = o =>
+                {
+                    var color = ApplicationListConstants.GetApplicationTreemapColor((UninstallTools.ApplicationUninstallerEntry)o);
+                    return color == Color.White ? neutralTreemapColor : color;
+                };
+            }
         }
 
         protected override void OnDpiChanged(DpiChangedEventArgs e)
@@ -406,6 +419,7 @@ namespace BulkCrapUninstaller.Forms
         private void UpdateTreeMap(object sender, EventArgs args)
         {
             treeMap1.Populate(_listView.FilteredUninstallers);
+            treeMap1.SetSelectedObjects(uninstallerObjectListView.SelectedObjects.Cast<object>());
         }
 
         private void OnApplicationListVisibleItemsChanged(object sender, EventArgs e)
@@ -866,6 +880,8 @@ namespace BulkCrapUninstaller.Forms
 
             _listLegendWindow.UpdatePosition(uninstallerObjectListView);
             listViewPanel.Resize += (o, args) => _listLegendWindow.UpdatePosition(uninstallerObjectListView);
+            uninstallerObjectListView.ClientSizeChanged += (o, args) => _listLegendWindow.UpdatePosition(uninstallerObjectListView);
+            _listLegendWindow.SizeChanged += (o, args) => _listLegendWindow.UpdatePosition(uninstallerObjectListView);
             Move += (o, args) => _listLegendWindow.UpdatePosition(uninstallerObjectListView);
             Controls[0].EnabledChanged += (o, args) => _listLegendWindow.Enabled = Controls[0].Enabled;
 

@@ -18,6 +18,7 @@ namespace BulkCrapUninstaller.Controls
         public PropertiesSidebar()
         {
             InitializeComponent();
+            Theming.ThemeManager.ApplyToolTip(toolTip1);
         }
 
         protected override void OnLoad(System.EventArgs e)

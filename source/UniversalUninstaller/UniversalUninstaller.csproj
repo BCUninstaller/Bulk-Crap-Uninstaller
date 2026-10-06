@@ -14,6 +14,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<!-- Reuse the same owned-image and contrast adapters as BCU. -->
+		<Compile Include="..\BulkCrapUninstaller\Theming\MonochromeIcons.cs" Link="Theming\MonochromeIcons.cs" />
+		<Compile Include="..\BulkCrapUninstaller\Theming\ThemeImageBinding.cs" Link="Theming\ThemeImageBinding.cs" />
+		<Compile Include="..\BulkCrapUninstaller\Theming\MenuImageRefresh.cs" Link="Theming\MenuImageRefresh.cs" />
+		<Compile Include="..\BulkCrapUninstaller\Theming\ButtonContrastAdapter.cs" Link="Theming\ButtonContrastAdapter.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<COMReference Include="Scripting">
 			<Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
 			<VersionMajor>1</VersionMajor>

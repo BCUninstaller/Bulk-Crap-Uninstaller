@@ -14,6 +14,9 @@ namespace BulkCrapUninstaller.Forms
         {
             InitializeComponent();
 
+            olvColumnEnabled.Renderer = new Theming.ContrastCheckStateRenderer();
+            olvColumnQuiet.Renderer = new Theming.ContrastCheckStateRenderer();
+
             olvColumnEnabled.AspectGetter = rowObject => ((ConfirmationEntry) rowObject).Enabled;
             olvColumnEnabled.AspectPutter = (rowObject, value) => ((ConfirmationEntry) rowObject).Enabled = (bool) value;
 

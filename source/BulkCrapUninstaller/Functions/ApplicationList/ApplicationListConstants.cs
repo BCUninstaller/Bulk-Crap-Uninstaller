@@ -4,6 +4,7 @@
 */
 
 using System.Drawing;
+using System.Windows.Forms;
 using BulkCrapUninstaller.Properties;
 using Klocman.Resources;
 using UninstallTools;
@@ -49,6 +50,10 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
 
         public static Color GetApplicationBackColor(ApplicationUninstallerEntry entry)
         {
+            // Status remains available in the integrity/certificate/type columns.
+            // Honor the user's contrast surface instead of overlaying an RGB tint.
+            if (SystemInformation.HighContrast) return SystemColors.Window;
+
             if (Settings.Default.AdvancedHighlightSpecial)
             {
                 if (entry.UninstallerKind == UninstallerType.WindowsFeature)

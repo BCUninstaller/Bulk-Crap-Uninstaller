@@ -72,6 +72,10 @@ namespace BulkCrapUninstaller.Forms
 
             toolStrip1.Renderer = new ToolStripProfessionalRenderer(new StandardSystemColorTable());
 
+            Theming.ThemeManager.ApplyList(objectListView1);
+            Theming.ThemeManager.ApplyControls(this);
+            Theming.ThemeManager.ApplyProgress(progressBar1);
+            Theming.ThemeManager.ApplyPicture(pictureBox1);
             var windowHandle = Handle;
             // Shutdown blocking not available below Windows Vista
             if (Environment.OSVersion.Version >= new Version(6, 0))
@@ -221,6 +225,7 @@ namespace BulkCrapUninstaller.Forms
             progressBar1.Value = progressBar1.Maximum;
             buttonClose.Text = Buttons.ButtonClose;
             pictureBox1.Image = Resources.check;
+            Theming.ThemeManager.ApplyPicture(pictureBox1);
             buttonClose.Enabled = true;
 
             WindowsTools.FlashWindowEx(this);

@@ -171,6 +171,7 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             var dialog = LoadingDialog.Show(_reference, Localisable.LoadingDialogTitlePopulatingList,
                 ListRefreshThread, new Point(-35, -35), ContentAlignment.BottomRight);
 
+            Theming.ThemeManager.ApplyLoadingDialog(dialog);
             dialog.FormClosed += OnRefreshFinished;
 
             void OnRefreshFinished(object sender, FormClosedEventArgs args)

@@ -43,7 +43,7 @@ namespace BulkCrapUninstaller.Forms
             checkBoxHideLowConfidence = new CheckBox();
             panel1 = new Panel();
             groupBox1 = new GroupBox();
-            objectListViewMain = new ObjectListView();
+            objectListViewMain = new Theming.NativeObjectListView();
             olvColumnPath = new OLVColumn();
             olvColumnSafety = new OLVColumn();
             olvColumnUninstallerName = new OLVColumn();

@@ -658,8 +658,9 @@ namespace BulkCrapUninstaller.Functions
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(string.Format(Localisable.MessageBoxes_ExternalCommandFailed_Message, line)
-                                    + Localisable.MessageBoxes_Error_details + ex.Message,
+                    MessageBoxes.ShowMessageBox(MessageBoxes.DefaultOwner,
+                        string.Format(Localisable.MessageBoxes_ExternalCommandFailed_Message, line)
+                        + Localisable.MessageBoxes_Error_details + ex.Message,
                         Localisable.MessageBoxes_ExternalCommandFailed_Title,
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -713,7 +714,7 @@ namespace BulkCrapUninstaller.Functions
                 var res = DirectoryFactory.TryCreateFromDirectory(dir, exceptions).ToList();
                 if (res.Count == 0)
                 {
-                    MessageBox.Show(
+                    MessageBoxes.ShowMessageBox(MessageBoxes.DefaultOwner,
                         string.Format(Localisable.Uninstaller_GetApplicationsFromDirectories_NothingFound_Message,
                             dir.FullName), Localisable.Uninstaller_GetApplicationsFromDirectories_NothingFound_Title,
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);

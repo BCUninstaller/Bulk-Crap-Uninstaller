@@ -12,10 +12,14 @@ permissions:
 jobs:
 
   build:
-    runs-on: windows-2022
+    runs-on: windows-2025-vs2026
 
     steps:
     - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+    - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4
+      with:
+        dotnet-version: 10.0.x
     
     - uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce # v2
 
@@ -28,10 +32,6 @@ jobs:
            /p:filealignment=512 /p:DeployOnBuild=true /p:PublishSingleFile=False /p:SelfContained=False /p:PublishReadyToRun=false /p:PublishTrimmed=False
            /p:PublishProtocol=FileSystem /p:PublishDir="${{ github.workspace }}\bin\publish"
 
-    - name: Build launcher
-      run: >
-           msbuild "source\BCU-launcher\BCU-launcher.vcxproj" /t:Build /p:Configuration=Release /p:Platform=Win32 /m /verbosity:minimal
-
     - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
       with:
         name: ${{ github.event.repository.name }}_${{ github.sha }}
@@ -41,6 +41,7 @@ jobs:
       run: >
            dotnet test source\BulkCrapUninstallerTests\BulkCrapUninstallerTests.csproj
            --configuration Release
+           --no-build
            --no-restore
            --logger "trx;LogFileName=BulkCrapUninstallerTests.trx"
            --results-directory "${{ github.workspace }}\TestResults"
@@ -52,3 +53,15 @@ jobs:
         name: windows-test-results_${{ github.sha }}
         path: TestResults\*.trx
         if-no-files-found: warn
+
+  launcher:
+    runs-on: windows-2022
+
+    steps:
+    - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+    - uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce # v2
+
+    - name: Build launcher
+      run: >
+           msbuild "source\BCU-launcher\BCU-launcher.vcxproj" /t:Build /p:Configuration=Release /p:Platform=Win32 /m /verbosity:minimal

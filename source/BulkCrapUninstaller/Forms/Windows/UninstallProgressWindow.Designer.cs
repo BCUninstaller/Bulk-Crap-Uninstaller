@@ -41,7 +41,7 @@ namespace BulkCrapUninstaller.Forms
             olvColumnStatus = new OLVColumn();
             olvColumnIsSilent = new OLVColumn();
             olvColumnName = new OLVColumn();
-            objectListView1 = new ObjectListView();
+            objectListView1 = new Theming.NativeObjectListView();
             olvColumnId = new OLVColumn();
             contextMenuStrip1 = new ContextMenuStrip(components);
             skipToolStripMenuItem = new ToolStripMenuItem();

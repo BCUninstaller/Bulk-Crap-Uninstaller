@@ -12,6 +12,7 @@ using System.Linq;
 using System.Windows.Forms;
 using BulkCrapUninstaller.Properties;
 using Klocman;
+using Klocman.Extensions;
 using Klocman.Forms;
 using Klocman.Forms.Tools;
 using Klocman.Localising;
@@ -33,16 +34,22 @@ namespace BulkCrapUninstaller.Functions
 
         public static void RatingsDisabled()
         {
-            MessageBox.Show(DefaultOwner,
+            ShowMessageBox(
+                DefaultOwner,
                 Localisable.MessageBoxes_RatingsDisabled_Message,
-                Localisable.MessageBoxes_RatingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Localisable.MessageBoxes_RatingErrorTitle,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
         }
 
         public static void RatingUnavailable()
         {
-            MessageBox.Show(DefaultOwner,
+            ShowMessageBox(
+                DefaultOwner,
                 Localisable.MessageBoxes_RatingUnavailable_Message,
-                Localisable.MessageBoxes_RatingErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Localisable.MessageBoxes_RatingErrorTitle,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
         }
 
         internal static CustomMessageBox.PressedButton AskToSubmitFeedback()
@@ -216,9 +223,12 @@ namespace BulkCrapUninstaller.Functions
 
         internal static void NothingToCopy()
         {
-            MessageBox.Show(
+            ShowMessageBox(
+                DefaultOwner,
                 Localisable.MessageBoxes_NothingToCopy_Message,
-                Localisable.MessageBoxes_Title_Copy_to_clipboard, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Localisable.MessageBoxes_Title_Copy_to_clipboard,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
         }
 
         internal static void NoUninstallersSelectedInfo()
@@ -234,16 +244,21 @@ namespace BulkCrapUninstaller.Functions
         {
             if (sourceDirCount <= 0)
             {
-                MessageBox.Show(Localisable.MessageBoxes_OpenDirectories_NoDirsToOpen,
+                ShowMessageBox(
+                    DefaultOwner,
+                    Localisable.MessageBoxes_OpenDirectories_NoDirsToOpen,
                     Localisable.MessageBoxes_Title_Open_directories,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 return false;
             }
 
-            return (sourceDirCount == 1) || (MessageBox.Show(
+            return (sourceDirCount == 1) || (ShowMessageBox(
+                DefaultOwner,
                 string.Format(CultureInfo.CurrentCulture, Localisable.MessageBoxes_OpenDirectoriesMessageBox_OpenMultiple, sourceDirCount),
-                Localisable.MessageBoxes_Title_Open_directories, MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) != DialogResult.Cancel);
+                Localisable.MessageBoxes_Title_Open_directories,
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning) != DialogResult.Cancel);
         }
 
         internal static void OpenDirectoryError(Exception e)
@@ -291,15 +306,21 @@ namespace BulkCrapUninstaller.Functions
         {
             if (sourceDirCount <= 0)
             {
-                MessageBox.Show(Localisable.MessageBoxes_OpenUrlsMessageBox_No_URLs_to_open_Title,
-                    Localisable.MessageBoxes_Title_Open_urls, MessageBoxButtons.OK,
+                ShowMessageBox(
+                    DefaultOwner,
+                    Localisable.MessageBoxes_OpenUrlsMessageBox_No_URLs_to_open_Title,
+                    Localisable.MessageBoxes_Title_Open_urls,
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 return false;
             }
 
-            return (sourceDirCount == 1) || (MessageBox.Show(
+            return (sourceDirCount == 1) || (ShowMessageBox(
+                DefaultOwner,
                 string.Format(CultureInfo.CurrentCulture, Localisable.MessageBoxes_OpenUrlsMessageBox_OpenMultiple_Message, sourceDirCount),
-                Localisable.MessageBoxes_Title_Open_urls, MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) != DialogResult.Cancel);
+                Localisable.MessageBoxes_Title_Open_urls,
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning) != DialogResult.Cancel);
         }
 
         /// <summary>
@@ -415,8 +436,11 @@ namespace BulkCrapUninstaller.Functions
         {
             if (sourceDirCount <= 0)
             {
-                MessageBox.Show(Localisable.MessageBoxes_SearchOnlineMessageBox_NothingToSearchFor_Message,
-                    Localisable.MessageBoxes_Title_Search_online, MessageBoxButtons.OK,
+                ShowMessageBox(
+                    DefaultOwner,
+                    Localisable.MessageBoxes_SearchOnlineMessageBox_NothingToSearchFor_Message,
+                    Localisable.MessageBoxes_Title_Search_online,
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 return PressedButton.Cancel;
             }
@@ -424,10 +448,13 @@ namespace BulkCrapUninstaller.Functions
             if (sourceDirCount == 1)
                 return PressedButton.Yes;
 
-            switch (MessageBox.Show(
+            switch (ShowMessageBox(
+                DefaultOwner,
                 string.Format(CultureInfo.CurrentCulture, Localisable.MessageBoxes_OpenDirectoriesMessageBox_OpenMultiple,
                     sourceDirCount),
-                Localisable.MessageBoxes_Title_Open_directories, MessageBoxButtons.OKCancel, MessageBoxIcon.Warning))
+                Localisable.MessageBoxes_Title_Open_directories,
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning))
             {
                 case DialogResult.OK:
                     return PressedButton.Yes;
@@ -630,7 +657,8 @@ namespace BulkCrapUninstaller.Functions
                 path = Path.Combine(Program.AssemblyLocation.FullName, "..", filename);
                 if (!File.Exists(path))
                 {
-                    MessageBox.Show("Could not find file " + filename);
+                    ShowMessageBox(DefaultOwner, "Could not find file " + filename,
+                        Localisable.Error_FileNotFound, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     path = null;
                 }
             }
@@ -719,6 +747,79 @@ namespace BulkCrapUninstaller.Functions
                                                                            string.Format(Localisable.MessageBoxes_CantRenameUninstallerKind_Title, displayName),
                                                                            string.Format(Localisable.MessageBoxes_CantRenameUninstallerKind_Details, uninstallerKind.GetLocalisedName()),
                                                                            SystemIcons.Error, Buttons.ButtonOk));
+        }
+
+        internal static DialogResult ShowMessageBox(Form owner, string text, string caption, MessageBoxButtons buttons,
+            MessageBoxIcon icon)
+        {
+            if (owner != null && (owner.IsDisposed || owner.Disposing))
+                owner = null;
+
+            if (owner != null && owner.InvokeRequired)
+            {
+                var marshalledResult = DialogResult.None;
+                owner.SafeInvoke(() => marshalledResult = ShowMessageBox(owner, text, caption, buttons, icon));
+                return marshalledResult;
+            }
+
+            // Do not create an unowned custom WinForms dialog on a worker thread.
+            var canUseCustomDialog = owner != null || Application.MessageLoop;
+            if (!Theming.ThemeManager.IsEnabled || !canUseCustomDialog
+                || !TryGetCustomButtonLabels(buttons, out var leftButton, out var middleButton, out var rightButton))
+            {
+                return owner == null
+                    ? MessageBox.Show(text, caption, buttons, icon)
+                    : MessageBox.Show(owner, text, caption, buttons, icon);
+            }
+
+            var result = CustomMessageBox.ShowDialog(owner,
+                new CmbBasicSettings(caption, text, string.Empty, MessageIcon(icon), leftButton, middleButton, rightButton));
+            return ConvertToDialogResult(result, buttons);
+        }
+
+        private static bool TryGetCustomButtonLabels(MessageBoxButtons buttons, out string leftButton, out string middleButton,
+            out string rightButton)
+        {
+            leftButton = null;
+            middleButton = null;
+            rightButton = null;
+
+            switch (buttons)
+            {
+                case MessageBoxButtons.OK:
+                    rightButton = Buttons.ButtonOk;
+                    return true;
+                case MessageBoxButtons.OKCancel:
+                    middleButton = Buttons.ButtonOk;
+                    rightButton = Buttons.ButtonCancel;
+                    return true;
+            }
+
+            return false;
+        }
+
+        private static DialogResult ConvertToDialogResult(CustomMessageBox.PressedButton result, MessageBoxButtons buttons)
+        {
+            return buttons switch
+            {
+                MessageBoxButtons.OK => DialogResult.OK,
+                MessageBoxButtons.OKCancel => result == CustomMessageBox.PressedButton.Middle
+                    ? DialogResult.OK
+                    : DialogResult.Cancel,
+                _ => DialogResult.None
+            };
+        }
+
+        private static System.Drawing.Icon MessageIcon(MessageBoxIcon icon)
+        {
+            return icon switch
+            {
+                MessageBoxIcon.Error => SystemIcons.Error,
+                MessageBoxIcon.Question => SystemIcons.Question,
+                MessageBoxIcon.Warning => SystemIcons.Warning,
+                MessageBoxIcon.Information => SystemIcons.Information,
+                _ => null
+            };
         }
     }
 }

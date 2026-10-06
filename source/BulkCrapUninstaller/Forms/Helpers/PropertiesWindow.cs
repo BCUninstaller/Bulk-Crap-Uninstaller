@@ -29,6 +29,7 @@ namespace BulkCrapUninstaller.Forms
             Icon = Resources.Icon_Logo;
 
             _titleBeginning = Text;
+            Theming.ThemeManager.ApplyProperties(this, dataGridView1);
         }
 
         private InfoType CurrentlyVisiblePage

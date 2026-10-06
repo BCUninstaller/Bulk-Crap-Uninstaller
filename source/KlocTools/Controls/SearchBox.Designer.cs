@@ -32,7 +32,7 @@ namespace Klocman.Controls
         private void InitializeComponent()
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(SearchBox));
-            filteringTextBox = new TextBox();
+            filteringTextBox = new SystemColorTextBox();
             SuspendLayout();
             // 
             // filteringTextBox

@@ -149,7 +149,7 @@ namespace BulkCrapUninstaller.Forms
             }
             catch (Exception exception)
             {
-                MessageBox.Show(exception.Message);
+                MessageBoxes.ShowMessageBox(this, exception.Message, Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -183,8 +183,9 @@ namespace BulkCrapUninstaller.Forms
 
         private void button8_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(string.Join(Environment.NewLine,
-                _reference.globalHotkeys1.GetHotkeyList().Select(x => x.ToString()).ToArray()));
+            MessageBoxes.ShowMessageBox(this, string.Join(Environment.NewLine,
+                _reference.globalHotkeys1.GetHotkeyList().Select(x => x.ToString()).ToArray()),
+                Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void SoftCrash(object sender, EventArgs e)

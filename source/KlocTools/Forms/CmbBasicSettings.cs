@@ -70,6 +70,10 @@ namespace Klocman.Forms
         }
 
         public bool AlwaysOnTop { get; set; }
+        /// <summary>
+        ///     Optional heading foreground. Null preserves the dialog's default styling.
+        /// </summary>
+        public Color? HeadingColor { get; set; }
         //public Image IconSet { get; private set; }
         public Icon IconSet { get; }
         public string LargeHeading { get; }

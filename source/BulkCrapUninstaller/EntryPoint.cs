@@ -59,6 +59,7 @@ namespace BulkCrapUninstaller
                     }
 
                     SetupDependancies();
+                    Theming.ThemeManager.Initialize(Properties.Settings.Default.WindowUseDarkMode);
 
                     if(Properties.Settings.Default.WindowDpiAware)
                         Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
@@ -92,10 +93,24 @@ namespace BulkCrapUninstaller
         {
             try
             {
+                var assemblyPath = Assembly.GetAssembly(typeof(EntryPoint))!.Location;
+                var executablePath = Path.ChangeExtension(assemblyPath, ".exe");
+                var restartInfo = new ProcessStartInfo
+                {
+                    FileName = executablePath,
+                    WorkingDirectory = Program.AssemblyLocation.FullName,
+                    UseShellExecute = false
+                };
+
+                foreach (var argument in Environment.GetCommandLineArgs().Skip(1))
+                    restartInfo.ArgumentList.Add(argument);
+
                 IsRestarting = true;
 
                 _mutex.ReleaseMutex();
-                Application.Restart();
+                _mutex.Dispose();
+                Application.Exit();
+                Process.Start(restartInfo);
             }
             catch (Exception ex)
             {

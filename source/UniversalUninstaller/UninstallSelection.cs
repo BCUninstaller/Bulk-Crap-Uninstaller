@@ -14,6 +14,7 @@ namespace UniversalUninstaller
         public UninstallSelection(DirectoryInfo target)
         {
             InitializeComponent();
+            HelperTheme.Apply(this);
             targetList1.Populate(target);
 
             try

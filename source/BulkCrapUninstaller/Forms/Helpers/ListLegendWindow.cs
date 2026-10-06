@@ -38,7 +38,9 @@ namespace BulkCrapUninstaller.Forms
             if (owner == null) throw new ArgumentNullException(nameof(owner));
             if (!owner.Visible || owner.IsDisposed || owner.Disposing) return;
 
-            var local = new Point(owner.Width - Width - 30, owner.Height - Height - 30);
+            // Exclude borders and scrollbars, including their scaled DPI sizes.
+            var local = new Point(Math.Max(0, owner.ClientSize.Width - Width - 30),
+                Math.Max(0, owner.ClientSize.Height - Height - 30));
             var global = owner.PointToScreen(local);
             Location = global;
         }
@@ -59,6 +61,12 @@ namespace BulkCrapUninstaller.Forms
 
         private void opacityResetTimer_Tick(object sender, EventArgs e)
         {
+            if (SystemInformation.HighContrast)
+            {
+                opacityResetTimer.Stop();
+                Opacity = 1;
+                return;
+            }
             if (CheckMouseHover())
             {
                 if (Math.Abs(Opacity - .3) < .03)
@@ -73,6 +81,18 @@ namespace BulkCrapUninstaller.Forms
                 else
                     try { Opacity = OpacityLerp(1); } catch (Win32Exception) { }
             }
+        }
+
+        protected override void OnSystemColorsChanged(EventArgs e)
+        {
+            base.OnSystemColorsChanged(e);
+            if (opacityResetTimer == null) return;
+            if (SystemInformation.HighContrast)
+            {
+                opacityResetTimer.Stop();
+                Opacity = 1;
+            }
+            else opacityResetTimer.Start();
         }
 
         private double OpacityLerp(double target)

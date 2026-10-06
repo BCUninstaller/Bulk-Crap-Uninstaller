@@ -15,7 +15,7 @@ namespace UniversalUninstaller
         /// <summary>
         /// The main entry point for the application.
         /// args:
-        /// Exe.exe [/q] DirPath
+        /// Exe.exe [/q] [/dark] DirPath
         /// /q - quiet
         /// return codes:
         /// 0 - ok
@@ -30,6 +30,12 @@ namespace UniversalUninstaller
             Application.SetCompatibleTextRenderingDefault(false);
 
             var args = Environment.GetCommandLineArgs().Skip(1).ToList();
+
+#if NET10_0_OR_GREATER
+            var useDarkMode = args.RemoveAll(x => x.Equals("/dark", StringComparison.OrdinalIgnoreCase)) > 0;
+            Application.SetColorMode(useDarkMode && !SystemInformation.HighContrast
+                ? SystemColorMode.Dark : SystemColorMode.Classic);
+#endif
 
             if (args.Any(x => x.Equals("/q", StringComparison.OrdinalIgnoreCase)))
                 _quietMode = true;

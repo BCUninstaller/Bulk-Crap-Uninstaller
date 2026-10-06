@@ -15,8 +15,8 @@ if not exist %msbuild% (
 set solutionDir=%CD%\source
 set publish=%CD%\bin\publish
 
-set netVer=net8.0
-set netVerFull=net8.0-windows10.0.18362.0
+set netVer=net10.0
+set netVerFull=net10.0-windows10.0.18362.0
 
 if exist "%publish%" (
 	rmdir /q /s "%publish%"
@@ -36,7 +36,7 @@ set platform=ARM64
 call :publish
 if errorlevel 1 (pause & exit /b 1)
 
-rem Since BCU is now on .NET8, realistically only Arm64 and x64 Windows systems are supported now, so there's no point in building x86
+rem Since BCU is on .NET 10, realistically only Arm64 and x64 Windows systems are supported now, so there's no point in building x86
 rem set platform=x86
 rem call :publish
 

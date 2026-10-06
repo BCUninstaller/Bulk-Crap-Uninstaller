@@ -12,6 +12,18 @@ namespace Klocman.Controls
 {
     public partial class SearchBox : UserControl
     {
+        private sealed class SystemColorTextBox : TextBox
+        {
+            protected override void OnSystemColorsChanged(EventArgs e)
+            {
+                base.OnSystemColorsChanged(e);
+                // A known color keeps its identity when its RGB value changes.
+                // WinForms otherwise retains the native background brush cached
+                // before the palette change (also used when the edit is disabled).
+                if (BackColor.IsSystemColor) base.OnBackColorChanged(EventArgs.Empty);
+            }
+        }
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Color InactiveSearchColor
         {

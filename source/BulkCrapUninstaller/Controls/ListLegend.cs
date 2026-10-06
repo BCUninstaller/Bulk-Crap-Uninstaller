@@ -15,9 +15,17 @@ namespace BulkCrapUninstaller.Controls
     [WindowStyleController.ControlStyle(false)]
     public partial class ListLegend : UserControl
     {
+        private readonly Label _contrastNotice = new() { Dock = DockStyle.Top, Padding = new Padding(4), Visible = false };
+        private readonly string _colorLegendTitle;
+
         public ListLegend()
         {
             InitializeComponent();
+            _colorLegendTitle = labelLegend.Text;
+            _contrastNotice.Text = new ComponentResourceManager(typeof(ListLegend)).GetString("ContrastNotice");
+            _contrastNotice.MouseDown += OnMouseDown;
+            Controls.Add(_contrastNotice);
+            Controls.SetChildIndex(labelLegend, Controls.Count - 1);
         }
 
         protected override void OnLoad(EventArgs e)
@@ -30,12 +38,33 @@ namespace BulkCrapUninstaller.Controls
 
         private void UpdateColors()
         {
-            flowLayoutPanellabelInvalid.BackColor = ApplicationListConstants.Colors.InvalidColor;
-            flowLayoutPanellabelOrphaned.BackColor = ApplicationListConstants.Colors.UnregisteredColor;
-            flowLayoutPanellabelUnverified.BackColor = ApplicationListConstants.Colors.UnverifiedColor;
-            flowLayoutPanellabelVerified.BackColor = ApplicationListConstants.Colors.VerifiedColor;
-            flowLayoutPanellabelWinFeature.BackColor = ApplicationListConstants.Colors.WindowsFeatureColor;
-            flowLayoutPanellabelStoreApp.BackColor = ApplicationListConstants.Colors.WindowsStoreAppColor;
+            if (flowLayoutPanellabelInvalid == null || _colorLegendTitle == null) return;
+            var contrast = SystemInformation.HighContrast;
+            Color Surface(Color color) => contrast ? SystemColors.Window : color;
+            flowLayoutPanellabelInvalid.BackColor = Surface(ApplicationListConstants.Colors.InvalidColor);
+            flowLayoutPanellabelOrphaned.BackColor = Surface(ApplicationListConstants.Colors.UnregisteredColor);
+            flowLayoutPanellabelUnverified.BackColor = Surface(ApplicationListConstants.Colors.UnverifiedColor);
+            flowLayoutPanellabelVerified.BackColor = Surface(ApplicationListConstants.Colors.VerifiedColor);
+            flowLayoutPanellabelWinFeature.BackColor = Surface(ApplicationListConstants.Colors.WindowsFeatureColor);
+            flowLayoutPanellabelStoreApp.BackColor = Surface(ApplicationListConstants.Colors.WindowsStoreAppColor);
+            ForeColor = SystemColors.WindowText;
+            labelLegend.ForeColor = SystemColors.ControlText;
+            labelLegend.Text = contrast ? new ComponentResourceManager(typeof(ListLegend)).GetString("ContrastTitle") : _colorLegendTitle;
+            _contrastNotice.BackColor = SystemColors.Window;
+            _contrastNotice.Visible = contrast;
+        }
+
+        protected override void OnSystemColorsChanged(EventArgs e)
+        {
+            base.OnSystemColorsChanged(e);
+            UpdateColors();
+        }
+
+        protected override void OnLayout(LayoutEventArgs e)
+        {
+            if (_contrastNotice?.Parent == this && _contrastNotice.Visible)
+                _contrastNotice.Height = _contrastNotice.GetPreferredSize(new Size(ClientSize.Width, 0)).Height;
+            base.OnLayout(e);
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]

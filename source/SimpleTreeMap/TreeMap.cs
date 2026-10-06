@@ -53,7 +53,6 @@ namespace SimpleTreeMap
         private List<SliceRectangle<object>> _rectangles;
         private HashSet<object> _selectedObjects;
         private SliceRectangle<object> _currentHoveredRectangle;
-        private static readonly SolidBrush SelectedRectBrush = new(Color.DodgerBlue);
         readonly Dictionary<Color, Brush> _brushCache = new();
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -169,7 +168,8 @@ namespace SimpleTreeMap
             //var font = new Font("Arial", 8);
             var gfx = e.Graphics;
 
-            gfx.FillRectangle(new SolidBrush(Color.Black), ClientRectangle);
+            var contrast = SystemInformation.HighContrast;
+            gfx.FillRectangle(contrast ? SystemBrushes.WindowText : Brushes.Black, ClientRectangle);
 
             if (_rectangles == null)
             {
@@ -184,13 +184,37 @@ namespace SimpleTreeMap
                     continue;
 
                 if (_selectedObjects != null && r.Slice.Elements.Any(x => _selectedObjects.Contains(x.Object)))
-                    gfx.FillRectangle(SelectedRectBrush, r.PaintRect);
+                {
+                    gfx.FillRectangle(contrast ? SystemBrushes.Highlight : Brushes.DodgerBlue, r.PaintRect);
+                    if (contrast)
+                        gfx.DrawRectangle(SystemPens.HighlightText, r.PaintRect.X, r.PaintRect.Y,
+                            r.PaintRect.Width - 1, r.PaintRect.Height - 1);
+                }
                 else
-                    gfx.FillRectangle(_brushCache[r.Slice.Elements.First().Color], r.PaintRect);
+                {
+                    gfx.FillRectangle(contrast ? SystemBrushes.Window : _brushCache[r.Slice.Elements.First().Color], r.PaintRect);
+                    if (contrast)
+                        gfx.DrawRectangle(SystemPens.WindowText, r.PaintRect.X, r.PaintRect.Y,
+                            r.PaintRect.Width - 1, r.PaintRect.Height - 1);
+                }
 
                 //gfx.DrawString(r.Slice.Elements.First().Object.ToString(), font,
                 //    new SolidBrush(Control.DefaultForeColor), r.X, r.Y);
             }
+        }
+
+        protected override void OnSystemColorsChanged(EventArgs e)
+        {
+            base.OnSystemColorsChanged(e);
+            // Paint with the current palette without regrouping tiles or losing
+            // selection/hover state. Cached category colors remain for recovery.
+            Invalidate();
+        }
+
+        private void ClearBrushCache()
+        {
+            foreach (var brush in _brushCache.Values) brush.Dispose();
+            _brushCache.Clear();
         }
 
         protected override void OnResize(EventArgs e)
@@ -268,6 +292,7 @@ namespace SimpleTreeMap
 
             _currentSlice = SliceMaker.GetSlice(elements, 1, MinSliceRatio);
 
+            ClearBrushCache();
             foreach (var c in elements.Select(x => x.Color).Distinct())
                 _brushCache[c] = new SolidBrush(c);
 

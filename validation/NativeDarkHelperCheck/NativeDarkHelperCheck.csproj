@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UniversalUninstaller"><HintPath>$(BcuOutputPath)/UniversalUninstaller.dll</HintPath></Reference>
+    <Reference Include="ObjectListView"><HintPath>$(BcuOutputPath)/ObjectListView.dll</HintPath></Reference>
+    <Reference Include="KlocTools"><HintPath>$(BcuOutputPath)/KlocTools.dll</HintPath></Reference>
+    <Reference Include="UninstallTools"><HintPath>$(BcuOutputPath)/UninstallTools.dll</HintPath></Reference>
+    <Reference Include="Interop.Scripting"><HintPath>$(BcuOutputPath)/Interop.Scripting.dll</HintPath></Reference>
+  </ItemGroup>
+  <Target Name="RequireOutput" BeforeTargets="ResolveReferences" Condition="'$(BcuOutputPath)' == ''">
+    <Error Text="Pass BcuOutputPath pointing at a built BCU package." />
+  </Target>
+</Project>

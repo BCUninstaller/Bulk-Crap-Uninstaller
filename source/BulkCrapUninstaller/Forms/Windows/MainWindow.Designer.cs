@@ -27,7 +27,7 @@ namespace BulkCrapUninstaller.Forms
             advancedFilters1 = new AdvancedFilters();
             splitContainerListAndMap = new SplitContainer();
             listViewPanel = new Panel();
-            uninstallerObjectListView = new ObjectListView();
+            uninstallerObjectListView = new Theming.NativeObjectListView();
             olvColumnDisplayName = new OLVColumn();
             olvColumnPublisher = new OLVColumn();
             olvColumnCertificate = new OLVColumn();

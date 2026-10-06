@@ -41,6 +41,7 @@ namespace BulkCrapUninstaller.Forms
             groupBoxMisc = new GroupBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
             checkBoxColorblind = new CheckBox();
+            checkBoxDarkMode = new CheckBox();
             checkBoxDpiaware = new CheckBox();
             panel5 = new Panel();
             comboBoxDoubleClick = new ComboBox();
@@ -197,6 +198,7 @@ namespace BulkCrapUninstaller.Forms
             // 
             resources.ApplyResources(flowLayoutPanel3, "flowLayoutPanel3");
             flowLayoutPanel3.Controls.Add(checkBoxColorblind);
+            flowLayoutPanel3.Controls.Add(checkBoxDarkMode);
             flowLayoutPanel3.Controls.Add(checkBoxDpiaware);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
@@ -205,7 +207,14 @@ namespace BulkCrapUninstaller.Forms
             resources.ApplyResources(checkBoxColorblind, "checkBoxColorblind");
             checkBoxColorblind.Name = "checkBoxColorblind";
             checkBoxColorblind.UseVisualStyleBackColor = true;
-            // 
+            //
+            // checkBoxDarkMode
+            //
+            resources.ApplyResources(checkBoxDarkMode, "checkBoxDarkMode");
+            checkBoxDarkMode.Name = "checkBoxDarkMode";
+            checkBoxDarkMode.UseVisualStyleBackColor = true;
+            checkBoxDarkMode.CheckedChanged += checkBoxDarkMode_CheckedChanged;
+            //
             // checkBoxDpiaware
             // 
             resources.ApplyResources(checkBoxDpiaware, "checkBoxDpiaware");
@@ -864,6 +873,7 @@ namespace BulkCrapUninstaller.Forms
         private CheckBox checkBoxOculus;
         private CheckBox checkBoxRemovable;
         private CheckBox checkBoxColorblind;
+        private CheckBox checkBoxDarkMode;
         private CheckBox checkBoxScoop;
         private CheckBox checkBoxDpiaware;
         private GroupBox groupBox2;

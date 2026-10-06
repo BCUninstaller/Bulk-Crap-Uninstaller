@@ -6,7 +6,7 @@
 		<Copyright>Copyright Apache-2.0 © 2026</Copyright>
 
 		<Platforms>AnyCPU;x64;x86;ARM64</Platforms>
-		<TargetFramework>net8.0-windows10.0.18362.0</TargetFramework>
+		<TargetFramework>net10.0-windows10.0.18362.0</TargetFramework>
 		<TargetPlatformVersion>8.0</TargetPlatformVersion>
 
 		<OutputPath>..\..\bin\$(Configuration)\$(Platform)\</OutputPath>

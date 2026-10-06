@@ -9,6 +9,11 @@ namespace Klocman.Forms
 {
     public sealed partial class CustomMessageBox : Form
     {
+        /// <summary>
+        /// Optional application default, set before showing dialogs. Per-dialog settings take precedence.
+        /// </summary>
+        public static Color? DefaultHeadingColor { get; set; }
+
         public enum PressedButton
         {
             None,
@@ -65,6 +70,10 @@ namespace Klocman.Forms
                         FontStyle.Bold, GraphicsUnit.Point);
                 }
             }
+
+            var headingColor = settings.HeadingColor ?? DefaultHeadingColor;
+            if (headingColor.HasValue)
+                label1.ForeColor = headingColor.Value;
 
             Text = settings.Title;
             label1.Text = settings.LargeHeading;
@@ -195,7 +204,25 @@ namespace Klocman.Forms
             if (StartPosition == FormStartPosition.CenterParent && Owner != null && Owner.Visible)
                 this.CenterToForm(Owner);
 
+            FocusDefaultAction();
+
             Opacity = 1;
+        }
+
+        private void FocusDefaultAction()
+        {
+            if (buttonLeft.Visible && buttonLeft.Enabled)
+                buttonLeft.Focus();
+            else if (buttonMiddle.Visible && buttonMiddle.Enabled)
+                buttonMiddle.Focus();
+            else if (buttonRight.Visible && buttonRight.Enabled)
+                buttonRight.Focus();
+            else if (buttonLeft.Visible)
+                buttonLeft.Focus();
+            else if (buttonMiddle.Visible)
+                buttonMiddle.Focus();
+            else
+                buttonRight.Focus();
         }
 
         private void SetHeight()

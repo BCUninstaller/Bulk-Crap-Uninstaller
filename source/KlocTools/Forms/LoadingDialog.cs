@@ -23,6 +23,10 @@ namespace Klocman.Forms
         internal LoadingDialog(string title, Action<LoadingDialogInterface> action)
         {
             InitializeComponent();
+            // Modal scans also change between marquee and determinate styles.
+            // Keep the dark native theme across those handle recreations.
+            Klocman.Controls.ProgressBarLifecycleAdapter.Attach(progressBar);
+            Klocman.Controls.ProgressBarLifecycleAdapter.Attach(progressBar2);
 
             Text = title;
             label1.Text = title;

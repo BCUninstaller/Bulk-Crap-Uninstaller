@@ -1,7 +1,7 @@
 ﻿; Tested with innosetup-6.4.3
 
 ; Normal: include self-contained binaries for both x86 and x64
-; Light: include only AnyCPU binaries and automatically download net8 if needed
+; Light: include only AnyCPU binaries and automatically download .NET 10 if needed
 #define Light
 
 ; =============================================================================
@@ -15,9 +15,9 @@
 #define MyAppCopyright     "Copyright " + CurrentYear + " " + MyAppPublisher
 
 #ifdef Light
-#define InputDir           "..\bin\publish-AnyCPU-net8.0"
+#define InputDir           "..\bin\publish-AnyCPU-net10.0"
 #define MainExePath        InputDir+'\'+MyAppExeName
-; Downloading net8 is only necessary in light mode
+; Downloading .NET 10 is only necessary in light mode
 #include "CodeDependencies.iss"
 #else
 #define InputDir           "..\bin\publish"
@@ -233,7 +233,7 @@ end;
 
 function InitializeSetup: Boolean;
 begin
-  Dependency_AddDotNet80Desktop;
+  Dependency_AddDotNet100Desktop;
   Result := True;
 end;
 #endif

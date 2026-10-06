@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatedUninstallerAdder));
-            objectListView1 = new BrightIdeasSoftware.ObjectListView();
+            objectListView1 = new Theming.NativeObjectListView();
             olvColumnName = new BrightIdeasSoftware.OLVColumn();
             olvColumnEnabled = new BrightIdeasSoftware.OLVColumn();
             olvColumnRelatedApps = new BrightIdeasSoftware.OLVColumn();

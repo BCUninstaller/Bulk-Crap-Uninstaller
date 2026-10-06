@@ -28,6 +28,12 @@ namespace BulkCrapUninstaller.Forms
         public SettingsWindow()
         {
             InitializeComponent();
+            Theming.ButtonContrastAdapter.Attach(this);
+            if (Theming.ThemeManager.IsEnabled)
+            {
+                foreach (TabPage page in tabControl.TabPages) Theming.ThemeManager.ApplyTabPage(page);
+                cacheSettings1.ConstrainExplanationWidth();
+            }
         }
 
         protected override void OnLoad(EventArgs e)
@@ -46,6 +52,7 @@ namespace BulkCrapUninstaller.Forms
             _settings.BindControl(checkBoxAutoLoad, x => x.MiscAutoLoadDefaultList, this);
             _settings.BindControl(checkBoxRatings, x => x.MiscUserRatings, this);
             _settings.BindControl(checkBoxColorblind, x => x.MiscColorblind, this);
+            _settings.BindControl(checkBoxDarkMode, x => x.WindowUseDarkMode, this);
             _settings.BindControl(checkBoxDpiaware, x => x.WindowDpiAware, this);
 
             _settings.BindControl(checkBoxEnableExternal, x => x.ExternalEnable, this);
@@ -117,6 +124,11 @@ namespace BulkCrapUninstaller.Forms
             splitContainer1.Enabled = checkBoxEnableExternal.Checked;
             //textBoxPreUninstall.Enabled = checkBoxEnableExternal.Checked;
             //textBoxPostUninstall.Enabled = checkBoxEnableExternal.Checked;
+        }
+
+        private void checkBoxDarkMode_CheckedChanged(object sender, EventArgs e)
+        {
+            _restartNeeded = true;
         }
 
         private void comboBoxJunk_SelectedIndexChanged(object sender, EventArgs e)

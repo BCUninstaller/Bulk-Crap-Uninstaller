@@ -361,17 +361,44 @@
   <data name="&gt;&gt;checkBoxColorblind.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="checkBoxDarkMode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxDarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 28</value>
+  </data>
+  <data name="checkBoxDarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 19</value>
+  </data>
+  <data name="checkBoxDarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="checkBoxDarkMode.Text" xml:space="preserve">
+    <value>Use dark mode (restart required)</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDarkMode.Name" xml:space="preserve">
+    <value>checkBoxDarkMode</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDarkMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDarkMode.Parent" xml:space="preserve">
+    <value>flowLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;checkBoxDarkMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="checkBoxDpiaware.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="checkBoxDpiaware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 28</value>
+    <value>5, 53</value>
   </data>
   <data name="checkBoxDpiaware.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 19</value>
   </data>
   <data name="checkBoxDpiaware.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="checkBoxDpiaware.Text" xml:space="preserve">
     <value>Enable DPI-aware interface scaling</value>
@@ -386,7 +413,7 @@
     <value>flowLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;checkBoxDpiaware.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="flowLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -404,7 +431,7 @@
     <value>2, 0, 2, 2</value>
   </data>
   <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 52</value>
+    <value>405, 77</value>
   </data>
   <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -536,7 +563,7 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="groupBoxMisc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 101</value>
+    <value>413, 126</value>
   </data>
   <data name="groupBoxMisc.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

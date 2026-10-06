@@ -128,6 +128,17 @@ namespace UninstallTools.Uninstaller
 
                 if (startInfo != null)
                 {
+#if NET10_0_OR_GREATER
+                    // Theme only our bundled helper, at launch time. Do not store
+                    // a theme switch in uninstall commands or pass it to other apps.
+                    if (entry.UninstallerKind == UninstallerType.SimpleDelete
+                        && Factory.InfoAdders.SimpleDeleteUninstallStringGenerator.UniversalUninstallerFilename != null
+                        && PathTools.PathsEqual(startInfo.FileName,
+                            Factory.InfoAdders.SimpleDeleteUninstallStringGenerator.UniversalUninstallerFilename.FullName)
+                        && System.Windows.Forms.Application.IsDarkModeEnabled
+                        && !System.Windows.Forms.SystemInformation.HighContrast)
+                        startInfo.Arguments += " /dark";
+#endif
                     startInfo.UseShellExecute = true;
                     return Process.Start(startInfo);
                 }

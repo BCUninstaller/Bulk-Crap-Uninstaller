@@ -4,6 +4,7 @@
 */
 
 using BulkCrapUninstaller.Controls;
+using BulkCrapUninstaller.Functions;
 using BulkCrapUninstaller.Properties;
 using Klocman.Extensions;
 using Klocman.Forms.Tools;
@@ -36,9 +37,11 @@ namespace BulkCrapUninstaller.Forms
         {
             if (e.SelectedFiles.Count == 0)
             {
-                MessageBox.Show(
+                MessageBoxes.ShowMessageBox(this,
                     Localisable.TargetWindow_NoFilesSelected_Message,
-                    Localisable.TargetWindow_NoFilesSelected_Title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Localisable.TargetWindow_NoFilesSelected_Title,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 return;
             }
 

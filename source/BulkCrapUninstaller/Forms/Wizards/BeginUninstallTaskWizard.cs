@@ -31,6 +31,7 @@ namespace BulkCrapUninstaller.Forms
             DialogResult = DialogResult.Cancel;
 
             tabControl1.TabIndex = 0;
+            Theming.ThemeManager.ApplyWizard(this);
         }
 
         private int PageNumber
