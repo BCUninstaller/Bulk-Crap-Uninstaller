@@ -1,6 +1,6 @@
 [![Donate](https://img.shields.io/badge/donate-paypal-brightgreen.svg)](http://klocmansoftware.weebly.com/donate.html)
-[![GitHub release](https://img.shields.io/github/release/klocman/Bulk-Crap-Uninstaller.svg)](https://github.com/Klocman/Bulk-Crap-Uninstaller/releases)
-[![license](https://img.shields.io/github/license/klocman/Bulk-Crap-Uninstaller.svg)](https://github.com/Klocman/Bulk-Crap-Uninstaller/blob/master/Licence.txt)
+[![GitHub release](https://img.shields.io/github/release/BCUninstaller/Bulk-Crap-Uninstaller.svg)](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/releases)
+[![license](https://img.shields.io/github/license/BCUninstaller/Bulk-Crap-Uninstaller.svg)](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/blob/master/Licence.txt)
 
 ### [:warning: Looking for maintainers :warning:](https://github.com/Klocman/Bulk-Crap-Uninstaller/discussions/289)
 
@@ -13,10 +13,10 @@ Bulk Crap Uninstaller is licensed under Apache 2.0 open source license, and can 
 
 [Visit the official homepage](https://www.bcuninstaller.com/) to see the full list of quirks and features!
 
-[Read the online documentation](https://htmlpreview.github.io/?https://github.com/Klocman/Bulk-Crap-Uninstaller/blob/master/doc/BCU_manual.html) if you have any questions or issues (the help file included with all releases). If you didn't find an answer to your question, feel free to [open a new issue](https://github.com/Klocman/Bulk-Crap-Uninstaller/issues/new).
+[Read the online documentation](https://htmlpreview.github.io/?https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/blob/master/doc/BCU_manual.html) if you have any questions or issues (the help file included with all releases). If you didn't find an answer to your question, feel free to [open a new issue](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/issues/new).
 
 ## Download
-You can get the latest version from the releases page. Alternatively you can download it from one of these hosts:
+You can get the latest version from our [releases page](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/releases). Alternatively you can download it from one of these hosts:
 - [Download from dAppCDN](https://dappcdn.com/download/utilities/bulk-crap-uninstaller)
 - [Download from SourceForge](https://sourceforge.net/projects/bulk-crap-uninstaller/)
 - [Download from FossHub](https://www.fosshub.com/Bulk-Crap-Uninstaller.html)
@@ -27,7 +27,7 @@ You can get the latest version from the releases page. Alternatively you can dow
 - net - Stand-alone portable version that requires the .NET runtime to be installed. Much smaller file size than the full Portable version.
 
 #### Nightly builds
-If you want to get the latest features and fixes as soon as they are available, you can download a nightly build from the [actions page](https://github.com/Klocman/Bulk-Crap-Uninstaller/actions/workflows/ci.yaml).
+If you want to get the latest features and fixes as soon as they are available, you can download a nightly build from the [actions page](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/actions/workflows/ci.yaml).
 
 ## System requirements
 #### BCUninstaller v6
@@ -44,7 +44,7 @@ _*Note: Since none of the supported systems have x86 versions, v6 releases no lo
 
 If you get a DLL error on startup then try running Windows Update. If you get a framework error, install .NET6 either manually or through Windows Update.
 
-To get this version download the [latest available 5.x release](https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/tag/v5.9).
+To get this version download the [latest available 5.x release](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/releases/tag/v5.9).
 
 _*Note: The Portable version does not require the .NET6 runtime to be installed, since it is included (that's why the portable version is so large)._
 
@@ -54,7 +54,7 @@ _*Note: The Portable version does not require the .NET6 runtime to be installed,
 
 Make sure you have .Net Framework 4.5 installed with all available updates for your system (it is not installed on XP by default).
 
-To get this version compile the [legacy 4.x branch](https://github.com/Klocman/Bulk-Crap-Uninstaller/tree/legacy-4.x) or download the [latest available 4.x release](https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/tag/v4.16).
+To get this version compile the [legacy 4.x branch](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/tree/legacy-4.x) or download the [latest available 4.x release](https://github.com/BCUninstaller/Bulk-Crap-Uninstaller/releases/tag/v4.16).
 
 ## How can I help?
 Please check the [contribution](CONTRIBUTING.md) notes!
