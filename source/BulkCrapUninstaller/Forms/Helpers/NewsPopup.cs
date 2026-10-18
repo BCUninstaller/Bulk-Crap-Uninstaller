@@ -7,6 +7,7 @@ using System;
 using System.Windows.Forms;
 using BulkCrapUninstaller.Functions;
 using BulkCrapUninstaller.Properties;
+using Klocman.Forms.Tools;
 
 namespace BulkCrapUninstaller.Forms
 {
@@ -15,6 +16,7 @@ namespace BulkCrapUninstaller.Forms
         private NewsPopup()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             if (DesignMode) return;
 

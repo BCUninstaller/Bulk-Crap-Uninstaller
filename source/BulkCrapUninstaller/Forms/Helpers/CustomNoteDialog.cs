@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using Klocman.Forms.Tools;
 
 namespace BulkCrapUninstaller.Forms
 {
@@ -21,6 +22,7 @@ namespace BulkCrapUninstaller.Forms
         private CustomNoteDialog()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
         }
     }
 }

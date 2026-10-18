@@ -29,6 +29,7 @@ namespace UninstallTools.Dialogs
         private StartupManagerWindow()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             comboBoxFilter.SelectedIndex = 0;
 

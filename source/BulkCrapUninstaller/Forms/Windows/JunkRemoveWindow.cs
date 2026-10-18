@@ -37,6 +37,7 @@ namespace BulkCrapUninstaller.Forms
         public JunkRemoveWindow(IEnumerable<IJunkResult> junk)
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             Icon = Resources.Icon_Logo;
 

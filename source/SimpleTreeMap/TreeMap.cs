@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -59,6 +60,12 @@ namespace SimpleTreeMap
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [ReadOnly(true)]
         public Func<object, Color> ObjectColorGetter { get; set; }
+
+        [DefaultValue(typeof(Color), "Black")]
+        public Color BorderColor { get; set; } = Color.Black;
+
+        [DefaultValue(0)]
+        public int CornerRadius { get; set; }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [ReadOnly(true)]
@@ -169,7 +176,7 @@ namespace SimpleTreeMap
             //var font = new Font("Arial", 8);
             var gfx = e.Graphics;
 
-            gfx.FillRectangle(new SolidBrush(Color.Black), ClientRectangle);
+            gfx.FillRectangle(new SolidBrush(BorderColor), ClientRectangle);
 
             if (_rectangles == null)
             {
@@ -183,14 +190,37 @@ namespace SimpleTreeMap
                 if (r.PaintRect.IsEmpty)
                     continue;
 
-                if (_selectedObjects != null && r.Slice.Elements.Any(x => _selectedObjects.Contains(x.Object)))
-                    gfx.FillRectangle(SelectedRectBrush, r.PaintRect);
+                var brush = _selectedObjects != null && r.Slice.Elements.Any(x => _selectedObjects.Contains(x.Object))
+                    ? SelectedRectBrush
+                    : _brushCache[r.Slice.Elements.First().Color];
+
+                if (CornerRadius > 0 && r.PaintRect.Width > CornerRadius * 2 && r.PaintRect.Height > CornerRadius * 2)
+                {
+                    gfx.SmoothingMode = SmoothingMode.AntiAlias;
+                    using var path = CreateRoundedRectangle(r.PaintRect, CornerRadius);
+                    gfx.FillPath(brush, path);
+                }
                 else
-                    gfx.FillRectangle(_brushCache[r.Slice.Elements.First().Color], r.PaintRect);
+                {
+                    gfx.SmoothingMode = SmoothingMode.Default;
+                    gfx.FillRectangle(brush, r.PaintRect);
+                }
 
                 //gfx.DrawString(r.Slice.Elements.First().Object.ToString(), font,
                 //    new SolidBrush(Control.DefaultForeColor), r.X, r.Y);
             }
+        }
+
+        private static GraphicsPath CreateRoundedRectangle(Rectangle bounds, int radius)
+        {
+            var diameter = radius * 2;
+            var path = new GraphicsPath();
+            path.AddArc(bounds.Left, bounds.Top, diameter, diameter, 180, 90);
+            path.AddArc(bounds.Right - diameter, bounds.Top, diameter, diameter, 270, 90);
+            path.AddArc(bounds.Right - diameter, bounds.Bottom - diameter, diameter, diameter, 0, 90);
+            path.AddArc(bounds.Left, bounds.Bottom - diameter, diameter, diameter, 90, 90);
+            path.CloseFigure();
+            return path;
         }
 
         protected override void OnResize(EventArgs e)

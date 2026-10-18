@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using Klocman.Forms.Tools;
 using Klocman.Tools;
 
 namespace Klocman.Forms
@@ -23,6 +24,7 @@ namespace Klocman.Forms
         internal LoadingDialog(string title, Action<LoadingDialogInterface> action)
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             Text = title;
             label1.Text = title;

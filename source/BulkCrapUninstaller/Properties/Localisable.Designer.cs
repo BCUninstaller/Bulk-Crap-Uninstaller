@@ -445,6 +445,15 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to More actions.
+        /// </summary>
+        internal static string MainWindow_MoreActions {
+            get {
+                return ResourceManager.GetString("MainWindow_MoreActions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Renaming &quot;{0}&quot;.
         /// </summary>
         internal static string MainWindow_Rename_Description {

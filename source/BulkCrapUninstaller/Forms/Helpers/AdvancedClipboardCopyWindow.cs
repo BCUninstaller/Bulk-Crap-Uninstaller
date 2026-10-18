@@ -17,6 +17,7 @@ namespace BulkCrapUninstaller.Forms
         private AdvancedClipboardCopyWindow()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
         }
 
         public static void ShowDialog(Form parent, IEnumerable<ApplicationUninstallerEntry> targets)

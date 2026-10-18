@@ -1,10 +1,11 @@
-/*
+﻿/*
     Copyright (c) 2017 Marcin Szeniak (https://github.com/Klocman/)
     Apache License Version 2.0
 */
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
 using BulkCrapUninstaller.Forms;
@@ -249,13 +250,31 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             _listView.ListView.AfterSorting += (x, y) => { AfterFiltering?.Invoke(x, y); };
         }
 
+        /// <summary>
+        ///     How strongly the highlight colors are applied to row backgrounds, from 0 (not at all) to 1 (full color).
+        ///     Below 1 a faint tint of the stronger stripe color is used instead, see <see cref="ColorStripeRenderer"/>.
+        /// </summary>
+        public float RowBackColorStrength { get; set; } = 1f;
+
         private void UninstallerObjectListView_FormatRow(object sender, FormatRowEventArgs e)
         {
-            if (e.Model is not ApplicationUninstallerEntry entry) return;
+            if (RowBackColorStrength <= 0 || e.Model is not ApplicationUninstallerEntry entry) return;
 
             var color = ApplicationListConstants.GetApplicationBackColor(entry);
-            if (!color.IsEmpty)
-                e.Item.BackColor = color;
+            if (color.IsEmpty) return;
+
+            if (RowBackColorStrength < 1)
+            {
+                color = ColorStripeRenderer.GetStripeColor(color);
+                var background = e.ListView.BackColor;
+                var strength = RowBackColorStrength;
+                color = Color.FromArgb(
+                    (int)(color.R * strength + background.R * (1 - strength)),
+                    (int)(color.G * strength + background.G * (1 - strength)),
+                    (int)(color.B * strength + background.B * (1 - strength)));
+            }
+
+            e.Item.BackColor = color;
         }
 
         public void UpdateColumnFiltering(bool anyUninstallers)

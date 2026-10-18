@@ -5,6 +5,7 @@
 
 using System;
 using System.Windows.Forms;
+using Klocman.Forms.Tools;
 using Klocman.Tools;
 
 namespace Klocman.Forms
@@ -14,6 +15,7 @@ namespace Klocman.Forms
         public StringEditBox()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
         }
 
         public static bool ShowDialog(string description, string title, string defaultText,

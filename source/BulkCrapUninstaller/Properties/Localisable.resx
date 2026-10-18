@@ -456,6 +456,10 @@ Do you want to use "loud" uninstallers for those items, or should they be remove
   <data name="MessageBoxes_SysRestoreContinueAfterError_Details" xml:space="preserve">
     <value>The restore point WAS NOT CREATED, you will not be able to restore changes! Do you want to continue with the uninstallation anyway?</value>
   </data>
+  <data name="MainWindow_MoreActions" xml:space="preserve">
+    <value>More actions</value>
+    <comment>Tooltip of the toolbar button that opens a menu with less common actions</comment>
+  </data>
   <data name="MainWindow_Rename_Description" xml:space="preserve">
     <value>Renaming "{0}"</value>
   </data>

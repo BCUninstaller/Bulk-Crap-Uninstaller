@@ -25,6 +25,7 @@ namespace BulkCrapUninstaller.Forms
         public FirstStartBox(bool canExit)
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             if (DesignMode) return;
 

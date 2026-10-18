@@ -28,6 +28,7 @@ namespace BulkCrapUninstaller.Forms
         public SettingsWindow()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
         }
 
         protected override void OnLoad(EventArgs e)

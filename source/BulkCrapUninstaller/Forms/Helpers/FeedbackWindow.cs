@@ -5,6 +5,7 @@
 
 using System;
 using System.Windows.Forms;
+using Klocman.Forms.Tools;
 
 namespace BulkCrapUninstaller.Forms
 {
@@ -13,6 +14,7 @@ namespace BulkCrapUninstaller.Forms
         public FeedbackWindow()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
             webBrowser.DocumentCompleted += webBrowser_DocumentCompleted;
             webBrowser.ScrollBarsEnabled = false;
             //webBrowser.Visible = false;

@@ -25,6 +25,7 @@ namespace BulkCrapUninstaller.Forms
         public PropertiesWindow()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             Icon = Resources.Icon_Logo;
 

@@ -5,6 +5,7 @@
 
 using System.Drawing;
 using System.Windows.Forms;
+using Klocman.Forms.Tools;
 using Klocman.Subsystems;
 
 namespace Klocman.Forms
@@ -16,6 +17,7 @@ namespace Klocman.Forms
         private WindowTargeterDialog()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             windowTargeter1.WindowSelected += OnWindowSelected;
         }

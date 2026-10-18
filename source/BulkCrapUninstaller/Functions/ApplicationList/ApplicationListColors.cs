@@ -10,9 +10,9 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
     internal class ApplicationListColors
     {
         public static ApplicationListColors Normal = new(
-            Color.FromArgb(unchecked((int)0xffccffcc)), Color.FromArgb(unchecked((int)0xffbbddff)),
-            Color.FromArgb(unchecked((int)0xffE0E0E0)), Color.FromArgb(unchecked((int) 0xffffdbcd)),
-            Color.FromArgb(unchecked((int) 0xffe7cfff)), Color.FromArgb(unchecked((int)0xffa3ffff)));
+            Color.FromArgb(unchecked((int)0xffd9f5d9)), Color.FromArgb(unchecked((int)0xffd3e7fb)),
+            Color.FromArgb(unchecked((int)0xffe6e6e6)), Color.FromArgb(unchecked((int)0xfffde3d9)),
+            Color.FromArgb(unchecked((int)0xffecdcfc)), Color.FromArgb(unchecked((int)0xffc8f3f5)));
 
         public static ApplicationListColors ColorBlind = new(
             Color.FromArgb(unchecked((int) 0xfff6382d)), Color.FromArgb(unchecked((int)0xfffc8d59)),

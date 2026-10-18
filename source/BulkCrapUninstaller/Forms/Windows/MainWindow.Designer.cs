@@ -328,7 +328,6 @@ namespace BulkCrapUninstaller.Forms
             uninstallerObjectListView.Columns.AddRange(new ColumnHeader[] { olvColumnDisplayName, olvColumnCustomNote, olvColumnPublisher, olvColumnCertificate, olvColumnRating, olvColumnDisplayVersion, olvColumnInstallDate, olvColumnSize, olvColumnStartup, olvColumnIs64, olvColumnUninstallString, olvColumnAbout, olvColumnInstallSource, olvColumnInstallLocation, olvColumnUninstallerKind, olvColumnSystemComponent, olvColumnProtected, olvColumnIntegrity, olvColumnRegistryKeyName, olvColumnGuid, olvColumnQuietUninstallString });
             resources.ApplyResources(uninstallerObjectListView, "uninstallerObjectListView");
             uninstallerObjectListView.FullRowSelect = true;
-            uninstallerObjectListView.GridLines = true;
             uninstallerObjectListView.Name = "uninstallerObjectListView";
             uninstallerObjectListView.ShowGroups = false;
             uninstallerObjectListView.ShowImagesOnSubItems = true;
@@ -574,8 +573,6 @@ namespace BulkCrapUninstaller.Forms
             // 
             // toolStripLabelStatus
             // 
-            toolStripLabelStatus.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
-            toolStripLabelStatus.BorderStyle = Border3DStyle.Sunken;
             toolStripLabelStatus.Name = "toolStripLabelStatus";
             resources.ApplyResources(toolStripLabelStatus, "toolStripLabelStatus");
             toolStripLabelStatus.Spring = true;
@@ -584,15 +581,11 @@ namespace BulkCrapUninstaller.Forms
             // toolStripLabelSize
             // 
             resources.ApplyResources(toolStripLabelSize, "toolStripLabelSize");
-            toolStripLabelSize.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
-            toolStripLabelSize.BorderStyle = Border3DStyle.Sunken;
             toolStripLabelSize.Name = "toolStripLabelSize";
             // 
             // toolStripLabelTotal
             // 
             resources.ApplyResources(toolStripLabelTotal, "toolStripLabelTotal");
-            toolStripLabelTotal.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
-            toolStripLabelTotal.BorderStyle = Border3DStyle.Sunken;
             toolStripLabelTotal.Name = "toolStripLabelTotal";
             // 
             // settingsSidebarPanel

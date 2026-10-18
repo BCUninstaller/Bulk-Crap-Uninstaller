@@ -63,6 +63,7 @@ namespace BulkCrapUninstaller.Forms
         private UninstallProgressWindow()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             Text += " - Bulk Crap Uninstaller";
 
@@ -70,7 +71,7 @@ namespace BulkCrapUninstaller.Forms
 
             Icon = Resources.Icon_Logo;
 
-            toolStrip1.Renderer = new ToolStripProfessionalRenderer(new StandardSystemColorTable());
+            toolStrip1.Renderer = new ModernToolStripRenderer();
 
             var windowHandle = Handle;
             // Shutdown blocking not available below Windows Vista

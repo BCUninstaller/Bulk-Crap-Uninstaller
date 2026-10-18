@@ -48,6 +48,10 @@ namespace BulkCrapUninstaller.Forms
         private readonly UninstallerListViewUpdater _listView;
         private readonly SettingTools _setMan;
         private readonly WindowStyleController _styleController;
+        private readonly ModernStyleController _modernStyleController;
+        private Dictionary<ToolStripItem, Image> _originalToolbarImages;
+        private ToolStripItem[] _originalToolbarItems;
+        private ToolStripDropDownButton _toolbarMoreButton;
         private readonly AppUninstaller _appUninstaller;
         private readonly UninstallerListConfigurator _uninstallerListConfigurator;
 
@@ -86,10 +90,7 @@ namespace BulkCrapUninstaller.Forms
 
             // Finish up setting controls and window, suspend after settings have loaded
             SuspendLayout();
-            ToolStripManager.Renderer = new ToolStripProfessionalRenderer(new StandardSystemColorTable())
-            {
-                RoundedEdges = true
-            };
+            ToolStripManager.Renderer = new ModernToolStripRenderer();
 
             // Disable until the first list refresh finishes
             LockApplication(true);
@@ -169,6 +170,8 @@ namespace BulkCrapUninstaller.Forms
             Console.WriteLine(MainTitleBarText);
 
             _styleController = new WindowStyleController(this);
+            _modernStyleController = new ModernStyleController(this);
+            _modernStyleController.AddCard(splitContainerListAndMap.Panel2, new Padding(0, 4, 8, 4));
 
             // Initialize the status bar
             toolStripLabelStatus_TextChanged(this, EventArgs.Empty);
@@ -576,6 +579,133 @@ namespace BulkCrapUninstaller.Forms
                 !string.IsNullOrEmpty(_listView.SelectedUninstallers.FirstOrDefault()?.ModifyPath);
         }
 
+        private void SetModernStyle(bool enabled)
+        {
+            enabled &= !SystemInformation.HighContrast;
+
+            SetModernToolbarIcons(enabled);
+            SetModernToolbarLayout(enabled);
+
+            treeMap1.BorderColor = enabled ? ModernColorTable.Surface : Color.Black;
+            treeMap1.CornerRadius = enabled ? 3 : 0;
+            treeMap1.Invalidate();
+
+            if (enabled)
+            {
+                buttonAdvFiltering.FlatAppearance.BorderSize = 0;
+                buttonAdvFiltering.BackColor = ModernColorTable.Background;
+                buttonAdvFiltering.ForeColor = ModernColorTable.Accent;
+                buttonAdvFiltering.FlatAppearance.MouseOverBackColor = ModernColorTable.Hover;
+            }
+            else
+            {
+                buttonAdvFiltering.FlatAppearance.BorderSize = 1;
+            }
+
+            // Highlight colors are shown as a stripe and a faint row tint instead of coloring whole rows
+            _uninstallerListConfigurator.RowBackColorStrength = enabled ? 0.12f : 1f;
+            olvColumnDisplayName.Renderer = enabled ? new ColorStripeRenderer() : null;
+            olvColumnCertificate.Renderer = enabled ? new CertificateBadgeRenderer() : null;
+
+            var headerStyle = new HeaderFormatStyle();
+            headerStyle.Normal.BackColor = ModernColorTable.Surface;
+            headerStyle.Normal.ForeColor = ModernColorTable.SecondaryText;
+            headerStyle.Hot.BackColor = ModernColorTable.SurfaceHover;
+            headerStyle.Hot.ForeColor = ModernColorTable.Text;
+            headerStyle.Pressed.BackColor = ModernColorTable.Hover;
+            headerStyle.Pressed.ForeColor = ModernColorTable.Text;
+
+            uninstallerObjectListView.HeaderFormatStyle = enabled ? headerStyle : null;
+            uninstallerObjectListView.HeaderMinimumHeight = enabled ? uninstallerObjectListView.Font.Height + 12 : -1;
+            uninstallerObjectListView.RowHeight = enabled ? uninstallerObjectListView.Font.Height + 10 : -1;
+            uninstallerObjectListView.SelectedBackColor = enabled ? ModernColorTable.AccentLight : Color.Empty;
+            uninstallerObjectListView.SelectedForeColor = enabled ? ModernColorTable.Text : Color.Empty;
+            uninstallerObjectListView.UnfocusedSelectedBackColor = enabled ? ModernColorTable.Border : Color.Empty;
+            uninstallerObjectListView.UnfocusedSelectedForeColor = enabled ? ModernColorTable.Text : Color.Empty;
+            uninstallerObjectListView.Invalidate();
+        }
+
+        private void SetModernToolbarIcons(bool enabled)
+        {
+            _originalToolbarImages ??= toolStrip.Items.Cast<ToolStripItem>().ToDictionary(x => x, x => x.Image);
+
+            var symbols = new Dictionary<ToolStripItem, char>
+            {
+                { toolStripButton1, SymbolIcons.Refresh },
+                { toolStripButtonSelAll, SymbolIcons.SelectAll },
+                { toolStripButtonSelNone, SymbolIcons.Checkbox },
+                { toolStripButtonSelInv, SymbolIcons.Switch },
+                { toolStripButtonTarget, SymbolIcons.Location },
+                { toolStripButtonUninstall, SymbolIcons.Delete },
+                { toolStripButton2, SymbolIcons.Mute },
+                { toolStripButtonModify, SymbolIcons.Edit },
+                { toolStripButtonProperties, SymbolIcons.Document },
+                { toolStripButton7, SymbolIcons.Settings },
+                { toolStripButton8, SymbolIcons.Help }
+            };
+
+            foreach (var original in _originalToolbarImages)
+            {
+                Image symbolImage = null;
+                if (enabled && symbols.TryGetValue(original.Key, out var symbol))
+                {
+                    var color = original.Key == toolStripButtonUninstall ? Color.White : ModernColorTable.Text;
+                    symbolImage = SymbolIcons.CreateImage(symbol, toolStrip.ImageScalingSize, color);
+                }
+                original.Key.Image = symbolImage ?? original.Value;
+            }
+        }
+
+        private void SetModernToolbarLayout(bool enabled)
+        {
+            _originalToolbarItems ??= toolStrip.Items.Cast<ToolStripItem>().ToArray();
+
+            var selectionButtons = new ToolStripItem[] { toolStripButtonSelAll, toolStripButtonSelNone, toolStripButtonSelInv };
+            var displayStyle = enabled ? ToolStripItemDisplayStyle.ImageAndText : ToolStripItemDisplayStyle.Image;
+            foreach (var button in selectionButtons)
+                button.DisplayStyle = displayStyle;
+
+            var alignment = enabled ? ToolStripItemAlignment.Right : ToolStripItemAlignment.Left;
+            toolStripButton7.Alignment = alignment;
+            toolStripButton8.Alignment = alignment;
+
+            toolStrip.SuspendLayout();
+            toolStrip.Items.Clear();
+            if (enabled)
+            {
+                // Primary actions go first, rarely used selection actions are moved to an overflow menu
+                _toolbarMoreButton ??= new ToolStripDropDownButton
+                {
+                    Alignment = ToolStripItemAlignment.Right,
+                    DisplayStyle = ToolStripItemDisplayStyle.Image,
+                    ShowDropDownArrow = false,
+                    Text = Localisable.MainWindow_MoreActions,
+                    Image = SymbolIcons.CreateImage(SymbolIcons.More, toolStrip.ImageScalingSize, ModernColorTable.Text)
+                };
+                _toolbarMoreButton.DropDownItems.AddRange(selectionButtons);
+
+                toolStrip.Items.AddRange(new ToolStripItem[]
+                {
+                    toolStripButtonUninstall, toolStripButton2, toolStripSeparator21, toolStripButton1,
+                    toolStripButtonTarget, toolStripButtonModify, toolStripButtonProperties,
+                    _toolbarMoreButton, toolStripButton8, toolStripButton7
+                });
+            }
+            else
+            {
+                toolStrip.Items.AddRange(_originalToolbarItems);
+            }
+            toolStrip.ResumeLayout();
+
+            ModernToolStripRenderer.SetButtonStyle(toolStripButtonUninstall,
+                enabled ? ModernToolStripRenderer.ButtonStyle.Accent : ModernToolStripRenderer.ButtonStyle.Default);
+            ModernToolStripRenderer.SetButtonStyle(toolStripButton2,
+                enabled ? ModernToolStripRenderer.ButtonStyle.Outlined : ModernToolStripRenderer.ButtonStyle.Default);
+            var buttonPadding = enabled ? new Padding(6, 2, 6, 2) : Padding.Empty;
+            toolStripButtonUninstall.Padding = buttonPadding;
+            toolStripButton2.Padding = buttonPadding;
+        }
+
         private void BindControlsToSettings()
         {
             var settings = _setMan.Selected;
@@ -592,8 +722,13 @@ namespace BulkCrapUninstaller.Forms
                 x => x.ToolbarsShowSettings, this);
             settings.Subscribe((x, y) => toolStrip.Visible = y.NewValue,
                 x => x.ToolbarsShowToolbar, this);
-            settings.Subscribe((x, y) => _styleController.SetStyles(y.NewValue),
-                x => x.WindowUseSystemTheme, this);
+            settings.Subscribe((x, y) =>
+            {
+                _styleController.SetStyles(y.NewValue);
+                ModernStyleController.EnabledByDefault = !y.NewValue;
+                _modernStyleController.SetStyles(!y.NewValue);
+                SetModernStyle(!y.NewValue);
+            }, x => x.WindowUseSystemTheme, this);
             settings.Subscribe((x, y) => statusStrip1.Visible = y.NewValue,
                 x => x.ToolbarsShowStatusbar, this);
 

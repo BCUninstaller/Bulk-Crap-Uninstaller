@@ -5,6 +5,7 @@
 
 using System;
 using System.Windows.Forms;
+using Klocman.Forms.Tools;
 
 namespace Klocman.Forms
 {
@@ -13,6 +14,7 @@ namespace Klocman.Forms
         private ProcessWaiter()
         {
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             processWaiterControl1.AllProcessesClosed += ProcessWaiterControl1_AllProcessesClosed;
             processWaiterControl1.CancelClicked += ProcessWaiterControl1_CancelClicked;

@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Klocman.Extensions;
+using Klocman.Forms.Tools;
 using Klocman.Tools;
 
 namespace Klocman.Forms
@@ -31,6 +32,7 @@ namespace Klocman.Forms
             ForeColor = SystemColors.WindowText;
 
             InitializeComponent();
+            ModernStyleController.ApplyOnLoad(this);
 
             StartPosition = settings.StartPosition;
 
