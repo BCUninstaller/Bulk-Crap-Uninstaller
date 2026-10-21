@@ -78,6 +78,7 @@ namespace BulkCrapUninstaller.Forms
             Application.DoEvents();
 
             InitializeComponent();
+            ConfigureMainToolbarAccessibility(toolStrip, displayToolbarToolStripMenuItem.Text.Replace("&", string.Empty));
 
             // Setup settings
             _setMan = new SettingTools(Settings.Default.SettingBinder, this);
@@ -212,6 +213,21 @@ namespace BulkCrapUninstaller.Forms
             _setMan.Selected.Subscribe((x, y) => splitContainerListAndMap.Panel2Collapsed = !y.NewValue, settings => settings.ShowTreeMap, this);
 
             uninstallerObjectListView.ContextMenuStrip = uninstallListContextMenuStrip;
+        }
+
+        private static void ConfigureMainToolbarAccessibility(ToolStrip toolbar, string accessibleName)
+        {
+            toolbar.AccessibleName = accessibleName;
+            toolbar.AccessibleRole = AccessibleRole.ToolBar;
+            toolbar.Enter += (_, _) =>
+            {
+                if (toolbar.Items.Cast<ToolStripItem>().Any(item => item.Selected))
+                    return;
+
+                var firstEnabledItem = toolbar.Items.Cast<ToolStripItem>()
+                    .FirstOrDefault(item => item.Enabled && item.Available && item.CanSelect);
+                firstEnabledItem?.Select();
+            };
         }
 
         protected override void OnDpiChanged(DpiChangedEventArgs e)
