@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UI_Dialog_Full_Quit_Button" xml:space="preserve">
-    <value>&amp;終了</value>
+    <value>終了(&amp;Q)</value>
     <comment>&amp;Quit</comment>
   </data>
   <data name="UI_Dialog_Full_Send_and_Quit_Button" xml:space="preserve">
-    <value>&amp;送信して終了</value>
+    <value>送信して終了(&amp;S)</value>
     <comment>&amp;Send and Quit</comment>
   </data>
   <data name="UI_Dialog_Normal_Quit_Button" xml:space="preserve">
-    <value>&amp;終了</value>
+    <value>終了(&amp;Q)</value>
     <comment>&amp;Quit</comment>
   </data>
   <data name="UI_Console_Full_Message" xml:space="preserve">
@@ -183,7 +183,7 @@ A bug report has been sent to the developers. We apologize for the inconvenience
     <comment>Error</comment>
   </data>
   <data name="UI_Dialog_Normal_Continue_Button" xml:space="preserve">
-    <value>&amp;続行</value>
+    <value>続行(&amp;C)</value>
     <comment>&amp;Continue</comment>
   </data>
   <data name="UI_Dialog_Normal_Message" xml:space="preserve">

@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="toolStripButtonToBasicFilters.Text" xml:space="preserve">
-    <value>基本フィルタ</value>
+    <value>基本フィルター</value>
   </data>
   <data name="toolStripButtonAddSelectedAsFilters.Text" xml:space="preserve">
-    <value>選択したアプリケーションをフィルタとして追加</value>
+    <value>選択したアプリケーションをフィルターとして追加</value>
   </data>
   <data name="toolStripButtonOpenUl.Text" xml:space="preserve">
     <value>開く...</value>
@@ -130,10 +130,10 @@
     <value>名前を付けて保存...</value>
   </data>
   <data name="toolStripButtonSaveUlDef.Text" xml:space="preserve">
-    <value>デフォルトとして保存</value>
+    <value>既定として保存</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
-    <value>デフォルトを削除</value>
+    <value>既定を削除</value>
   </data>
   <data name="saveUlDialog.Filter" xml:space="preserve">
     <value>アンインストールリスト|*.bcul</value>

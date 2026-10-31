@@ -162,22 +162,22 @@
     <value>作成時、確認しない</value>
   </data>
   <data name="radioButtonBackupAuto.Text" xml:space="preserve">
-    <value>自動的にディレクトリに作成:</value>
+    <value>自動的にフォルダーに作成:</value>
   </data>
   <data name="groupBoxBackup.Text" xml:space="preserve">
-    <value>残留物を削除する前にバックアップ</value>
+    <value>残留項目を削除する前にバックアップ</value>
   </data>
   <data name="checkBoxShowAllBadJunk.Text" xml:space="preserve">
-    <value>信頼度の低いジャンクを常に表示</value>
+    <value>信頼度の低い残留項目を常に表示</value>
   </data>
   <data name="checkBoxLoud.Text" xml:space="preserve">
-    <value>サイレント処理に、画面が出るアンインストーラーが混ざっていたら確認する</value>
+    <value>サイレント処理に混ざった画面付きアンインストーラーを外すか確認する</value>
   </data>
   <data name="checkBoxNeverFeedback.Text" xml:space="preserve">
     <value>フィードバックやヘルプを求めない</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>アンインストール後にジャンクを検索</value>
+    <value>アンインストール後に残留項目を検索</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>アンインストール前に復元ポイントを作成</value>
@@ -197,7 +197,7 @@
     <value>外部アプリケーション</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>&amp;閉じる</value>
+    <value>閉じる(&amp;C)</value>
   </data>
   <data name="tabPageGeneral.Text" xml:space="preserve">
     <value>一般</value>
@@ -267,11 +267,11 @@
     <value>カスタムインストールフォルダーを自動的に検出しようとします。</value>
   </data>
   <data name="labelProgramFolders.Text" xml:space="preserve">
-    <value>アプリケーションをインストールするカスタムフォルダー（例：D:\Applications）を指定できます。これらのフォルダーは、BCUがアンインストールの残骸や未登録アプリケーション、その他のいくつかの項目を検索する際に使用されます。必須ではありませんが、これらのフォルダーのリストを提供することで、BCUの機能が向上します。
+    <value>アプリケーションをインストールするカスタムフォルダー（例：D:\Applications）を指定できます。これらのフォルダーは、BCU が残留項目、未登録のアプリケーション、その他の項目を探すときに使います。必須ではありませんが、一覧があると検出の精度が上がります。
 
-デフォルトのWindowsフォルダーは常にスキャンされるため、このリストに含める必要はありません。
+既定の Windows フォルダーは常にスキャンされるため、このリストに含める必要はありません。
 
-完全なディレクトリパスを使用し、1行につき1つのパスを指定してください。無効なパスや存在しないディレクトリは無視されます。</value>
+完全なフォルダーパスを使用し、1行につき1つのパスを指定してください。無効なパスや存在しないフォルダーは無視されます。</value>
   </data>
   <data name="groupBoxProgramFolders.Text" xml:space="preserve">
     <value>プログラムインストールフォルダー</value>

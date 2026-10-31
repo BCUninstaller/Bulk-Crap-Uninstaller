@@ -148,7 +148,7 @@
     <value>手動アンインストール</value>
   </data>
   <data name="openInstallDirectoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>インストールディレクトリを開く</value>
+    <value>インストールフォルダーを開く</value>
   </data>
   <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
     <value>プロパティ</value>

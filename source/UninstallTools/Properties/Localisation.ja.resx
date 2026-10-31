@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -127,7 +127,7 @@
     <value>表示名</value>
   </data>
   <data name="DisplayNameTrimmed" xml:space="preserve">
-    <value>整形した表示名</value>
+    <value>表示名（バージョンなし）</value>
   </data>
   <data name="DisplayVersion" xml:space="preserve">
     <value>バージョン</value>
@@ -145,7 +145,7 @@
     <value>インストール元</value>
   </data>
   <data name="Is64Bit" xml:space="preserve">
-    <value>64ビット</value>
+    <value>64ビットアプリケーション</value>
   </data>
   <data name="IsProtected" xml:space="preserve">
     <value>保護</value>
@@ -163,13 +163,13 @@
     <value>発行元</value>
   </data>
   <data name="PublisherTrimmed" xml:space="preserve">
-    <value>整形した発行元</value>
+    <value>発行元（Inc. 等を除く）</value>
   </data>
   <data name="QuietUninstallPossible" xml:space="preserve">
-    <value>サイレント アンインストールが可能</value>
+    <value>サイレントアンインストールが可能</value>
   </data>
   <data name="QuietUninstallString" xml:space="preserve">
-    <value>サイレント アンインストール文字列</value>
+    <value>サイレントアンインストール文字列</value>
   </data>
   <data name="RegistryKeyName" xml:space="preserve">
     <value>レジストリキー名</value>
@@ -178,7 +178,7 @@
     <value>レジストリパス</value>
   </data>
   <data name="SystemComponent" xml:space="preserve">
-    <value>システム コンポーネント</value>
+    <value>システムコンポーネント</value>
   </data>
   <data name="UninstallerFullFilename" xml:space="preserve">
     <value>アンインストーラーのファイル名</value>
@@ -220,7 +220,7 @@
     <value>アンインストーラーはエラーコードを返しました:</value>
   </data>
   <data name="Confidence_Bad" xml:space="preserve">
-    <value>低い</value>
+    <value>不良</value>
   </data>
   <data name="Confidence_Good" xml:space="preserve">
     <value>良好</value>
@@ -245,7 +245,7 @@
     <value>会社名が一致しました</value>
   </data>
   <data name="ConfidencePart_DirectoryStillUsed" xml:space="preserve">
-    <value>ディレクトリは他のインストールされたアプリケーションによって使用されています</value>
+    <value>フォルダーは他のインストールされたアプリケーションによって使用されています</value>
   </data>
   <data name="ConfidencePart_ExplicitConnection" xml:space="preserve">
     <value>アンインストーラーがこの項目を明示しています</value>
@@ -263,7 +263,7 @@
     <value>製品名が完全に一致</value>
   </data>
   <data name="ConfidencePart_QuestionableDirectoryName" xml:space="preserve">
-    <value>ディレクトリ名は疑わしいです</value>
+    <value>フォルダー名は疑わしいです</value>
   </data>
   <data name="UninstallerType_Unknown" xml:space="preserve">
     <value>不明</value>
@@ -346,7 +346,7 @@
     <value>スタートアップコマンド</value>
   </data>
   <data name="StartupManager_Message_Delete_Details" xml:space="preserve">
-    <value>起動時にこれらは開かれなくなります。削除する前に、選択したアイテムが必要ないことを確認してください。</value>
+    <value>起動時にこれらは開かれなくなります。削除する前に、選択した項目が必要ないことを確認してください。</value>
   </data>
   <data name="StartupManager_Message_Delete_Header" xml:space="preserve">
     <value>選択したプログラムをスタートアップから削除しますか？</value>
@@ -373,7 +373,7 @@
     <value>プログラム名が認識されています</value>
   </data>
   <data name="Confidence_PF_NoSubdirs" xml:space="preserve">
-    <value>サブディレクトリはありません</value>
+    <value>サブフォルダーはありません</value>
   </data>
   <data name="Confidence_PF_PublisherIsUsed" xml:space="preserve">
     <value>発行元が認識されています</value>
@@ -385,7 +385,7 @@
     <value>アプリケーションと一致するスタートアップ項目です</value>
   </data>
   <data name="Junk_Drive_GroupName" xml:space="preserve">
-    <value>ファイルとディレクトリ</value>
+    <value>ファイルとフォルダー</value>
   </data>
   <data name="Junk_ProgramFilesOrphans_GroupName" xml:space="preserve">
     <value>Program Files の孤立フォルダー</value>
@@ -435,7 +435,7 @@
     <value>単純な削除</value>
   </data>
   <data name="ConfidencePart_AllSubdirsMatched" xml:space="preserve">
-    <value>残留ファイルを消すと、このフォルダーは空になります。</value>
+    <value>残留項目を消すと、このフォルダーは空になります。</value>
   </data>
   <data name="Startup_ShortName_Service" xml:space="preserve">
     <value>サービス</value>
@@ -466,7 +466,7 @@
     <value>アプリケーションのためにドライブをスキャン中...</value>
   </data>
   <data name="Progress_DriveScan_Gathering" xml:space="preserve">
-    <value>ディレクトリを収集中</value>
+    <value>フォルダーを収集中</value>
   </data>
   <data name="Progress_AppStores" xml:space="preserve">
     <value>アプリケーションストアをスキャン中...</value>
@@ -511,7 +511,7 @@
     <value>Windows エラー報告レポート</value>
   </data>
   <data name="Junk_Progress_Startup" xml:space="preserve">
-    <value>ジャンクスキャナーを設定中...</value>
+    <value>残留項目の検索を準備しています...</value>
   </data>
   <data name="Junk_Progress_Finishing" xml:space="preserve">
     <value>終了中...</value>
@@ -560,7 +560,7 @@
     <value>自動的に起動できる</value>
   </data>
   <data name="Progress_Startup" xml:space="preserve">
-    <value>スタートアップエントリを検索中</value>
+    <value>スタートアップ項目を検索しています...</value>
   </data>
   <data name="Progress_AppStores_Oculus" xml:space="preserve">
     <value>Oculus アプリを検索中</value>

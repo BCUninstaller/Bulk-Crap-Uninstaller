@@ -173,7 +173,7 @@
   </data>
   <data name="p4netErrors.Text" xml:space="preserve">
     <value>エラーが発生するたびに送信するかどうか尋ねられます。
-BCUninstallerのディレクトリ内のそれぞれのXMLファイルを調べることで、エラーと使用報告に送信されるデータを確認できます。
+BCUninstallerのフォルダー内のそれぞれのXMLファイルを調べることで、エラーと使用報告に送信されるデータを確認できます。
 
 送信されたデータは第三者と共有されることはありません。</value>
   </data>
@@ -244,8 +244,7 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>保護されたアンインストーラー</value>
   </data>
   <data name="p3advProtect.Text" xml:space="preserve">
-    <value>保護されたアイテムは「NoRemove」タグでマークされており、発行者がそれらを削除させたくないことを意味します。
-このタグは、大規模なソフトウェアパッケージによって、個々の部分をアンインストールさせないように使用されることがよくあります。</value>
+    <value>「NoRemove」が付いた項目は保護されています。発行元が削除しないよう指定しています。大きなソフトの構成部品を、単体で削除できないようにするためにも使われます。</value>
   </data>
   <data name="checkBoxListProtected.Text" xml:space="preserve">
     <value>「保護された」とマークされたアンインストーラーを表示</value>
@@ -254,19 +253,19 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>「保護された」とマークされたアンインストーラーの保護を無効にする</value>
   </data>
   <data name="p3advProtectAdd.Text" xml:space="preserve">
-    <value>これにより、保護されたアイテムをアンインストールできるようになります。</value>
+    <value>保護された項目もアンインストールできます。</value>
   </data>
   <data name="p2viewTitle.Text" xml:space="preserve">
     <value>アンインストーラーリストビュー</value>
   </data>
   <data name="p2viewDetail.Text" xml:space="preserve">
-    <value>システム内で見つかったすべてのアンインストーラーは、メインリストビューにあります。以下はこのデータをブラウズする方法です：</value>
+    <value>見つかったアンインストーラーは、メインの一覧に表示されます。見方は次のとおりです。</value>
   </data>
   <data name="p2viewDetail1.Text" xml:space="preserve">
     <value>● フィルターを使用し、キーワードを検索（すべての列で）</value>
   </data>
   <data name="p2viewDetail2.Text" xml:space="preserve">
-    <value>● 任意の列でアンインストーラーをソートします。列を自由に並べ替えます。</value>
+    <value>● 任意の列で並べ替えられます。列の順番も変えられます。</value>
   </data>
   <data name="p2viewDetail3.Text" xml:space="preserve">
     <value>● 類似のアンインストーラーをグループ化</value>

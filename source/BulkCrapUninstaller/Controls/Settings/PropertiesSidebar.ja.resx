@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -121,7 +121,7 @@
     <value>未登録のアプリを表示</value>
   </data>
   <data name="checkBoxOrphans.ToolTip" xml:space="preserve">
-    <value>登録されたアンインストーラーがないアプリケーションを表示します。これらは多くのアンインストールマネージャーで表示されませんが、依然としてディスク容量を使用しています。未登録のアイテムはレッドで表示されます。
+    <value>登録されたアンインストーラーがないアプリケーションを表示します。これらは多くのアンインストールマネージャーで表示されませんが、依然としてディスク容量を使用しています。未登録の項目は赤で表示されます。
 
 警告： これらのアプリケーションを削除する前に、必ず再確認してください。まだ必要である可能性があります。</value>
   </data>
@@ -142,10 +142,10 @@
 </value>
   </data>
   <data name="checkBoxListHideMicrosoft.Text" xml:space="preserve">
-    <value>Microsoft社製のものを非表示</value>
+    <value>Microsoft が公開したものを非表示</value>
   </data>
   <data name="checkBoxListHideMicrosoft.ToolTip" xml:space="preserve">
-    <value>Microsoft社が公開したすべてのアイテムをフィルタリングして非表示にします。非常にシンプルです。</value>
+    <value>Microsoft が公開したものをすべて一覧から隠します。それだけです。</value>
   </data>
   <data name="checkBoxListSysComp.Text" xml:space="preserve">
     <value>システムコンポーネントを表示</value>
@@ -181,15 +181,15 @@
     <value>チェックボックスで選択</value>
   </data>
   <data name="checkBoxViewCheckboxes.ToolTip" xml:space="preserve">
-    <value>リストの選択スタイルをチェックボックスに変更します。これにより、1回のクリックで全ての選択を解除できなくなるため、安全性が向上します。
+    <value>リストの選択スタイルをチェックボックスに変更します。これにより、1回のクリックですべての選択を解除できなくなるため、安全性が向上します。
 
-複数のアイテムをハイライトして、スペースキーを押すことで選択が可能です。</value>
+複数の項目をハイライトして、スペースキーを押すことで選択が可能です。</value>
   </data>
   <data name="checkBoxViewGroups.Text" xml:space="preserve">
-    <value>アイテムをグループで表示</value>
+    <value>項目をグループで表示</value>
   </data>
   <data name="checkBoxViewGroups.ToolTip" xml:space="preserve">
-    <value>リストの並べ替え基準に基づいてアイテムをグループ化します。多くの列でのグループ化はスマートフィルタリングを使用します。</value>
+    <value>リストの並べ替え基準に基づいて項目をグループ化します。多くの列でのグループ化はスマートフィルタリングを使用します。</value>
   </data>
   <data name="checkBoxHighlightSpecial.Text" xml:space="preserve">
     <value>特別なアンインストーラーを強調表示</value>

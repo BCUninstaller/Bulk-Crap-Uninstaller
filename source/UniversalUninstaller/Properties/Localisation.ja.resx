@@ -119,7 +119,7 @@
   </resheader>
   <data name="Program_ShowInvalidArgsBox_Message" xml:space="preserve">
     <value>引数の数が正しくありません。
-削除するフォルダーのフルパスを渡してください。/q を付けるとサイレント モードになります。</value>
+削除するフォルダーのフルパスを渡してください。/q を付けるとサイレントモードになります。</value>
   </data>
   <data name="Program_ShowInvalidArgsBox_Title" xml:space="preserve">
     <value>Universal Uninstaller</value>
@@ -128,7 +128,7 @@
     <value>項目を削除しています</value>
   </data>
   <data name="UninstallSelection_DeleteProgress_FailedTitle" xml:space="preserve">
-    <value>一部のアイテムの削除に失敗しました</value>
+    <value>一部の項目の削除に失敗しました</value>
   </data>
   <data name="UninstallSelection_Title" xml:space="preserve">
     <value>"{0}"を削除</value>

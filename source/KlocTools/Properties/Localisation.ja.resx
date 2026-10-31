@@ -220,7 +220,7 @@
     <value>パスはルートキーを指すことはできません</value>
   </data>
   <data name="RegistryTools_RemoveRegistryKey_RemoveDefault" xml:space="preserve">
-    <value>デフォルト値を削除できません</value>
+    <value>既定値は削除できません</value>
   </data>
   <data name="PremadeDialogs_GenericErrorExtendedSafe_Heading" xml:space="preserve">
     <value>エラーの詳細:</value>
@@ -261,7 +261,7 @@
     <value>サイズ</value>
   </data>
   <data name="FileInfo_Directory" xml:space="preserve">
-    <value>ディレクトリ</value>
+    <value>フォルダー</value>
   </data>
   <data name="FileInfo_Exists" xml:space="preserve">
     <value>ドライブに存在</value>
