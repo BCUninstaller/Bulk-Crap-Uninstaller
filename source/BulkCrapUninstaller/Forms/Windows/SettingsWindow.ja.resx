@@ -171,7 +171,7 @@
     <value>信頼度の低いジャンクを常に表示</value>
   </data>
   <data name="checkBoxLoud.Text" xml:space="preserve">
-    <value>静かなタスクから騒音アンインストーラーを削除するか確認</value>
+    <value>サイレント処理に、画面が出るアンインストーラーが混ざっていたら確認する</value>
   </data>
   <data name="checkBoxNeverFeedback.Text" xml:space="preserve">
     <value>フィードバックやヘルプを求めない</value>

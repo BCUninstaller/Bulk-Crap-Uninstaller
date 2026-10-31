@@ -121,7 +121,7 @@
     <value>手動でアンインストーラーを実行する際の衝突防止を無効化</value>
   </data>
   <data name="checkBoxConcurrentOneLoud.Text" xml:space="preserve">
-    <value>騒音アンインストーラーは1度に1つだけ</value>
+    <value>画面が出るアンインストーラーは同時に1つだけ</value>
   </data>
   <data name="checkBoxConcurrent.Text" xml:space="preserve">
     <value>可能であればアンインストーラーを自動的に並行実行</value>

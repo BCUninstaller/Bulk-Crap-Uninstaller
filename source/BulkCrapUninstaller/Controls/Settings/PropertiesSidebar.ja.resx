@@ -154,13 +154,13 @@
     <value>一部のアンインストーラーは「システムコンポーネント」としてマークされ、ソフトウェアの追加/削除リストから隠されます。ドライバーにはこのタグが付けられることが多いです。</value>
   </data>
   <data name="checkBoxListProtected.Text" xml:space="preserve">
-    <value>保護されたアイテムを表示</value>
+    <value>保護された項目を表示</value>
   </data>
   <data name="checkBoxListProtected.ToolTip" xml:space="preserve">
-    <value>「NoRemove」タグが付けられた保護されたアイテムは、パブリッシャーが削除を推奨していないことを示しています。</value>
+    <value>「NoRemove」が付いた保護項目です。発行元が削除しないよう指定しています。</value>
   </data>
   <data name="checkBoxTweaks.Text" xml:space="preserve">
-    <value>tweaksを表示する</value>
+    <value>調整項目を表示</value>
   </data>
   <data name="checkBoxShowUpdates.Text" xml:space="preserve">
     <value>アップデートを表示</value>

@@ -198,18 +198,18 @@
     <value>{0} は無効な数値です。</value>
   </data>
   <data name="Auto_BadButtons" xml:space="preserve">
-    <value>拒否</value>
+    <value>いいえ | 拒否</value>
     <comment>Used to select buttons to automatically press when silently uninstallng some programs.
 These are texts displayed on buttons that you most likely do not you want to press. Separated by |</comment>
   </data>
   <data name="Auto_CancelButtons" xml:space="preserve">
-    <value>キャンセル</value>
+    <value>キャンセル | 中止 | 戻る</value>
     <comment>Used to select buttons to automatically press when silently uninstallng some programs.
 These are texts displayed on buttons that you never want to press.
 Separated by |</comment>
   </data>
   <data name="Auto_GoodButtons" xml:space="preserve">
-    <value>アンインストール</value>
+    <value>アンインストール | OK | 同意する | 適用 | 閉じる | はい | 削除 | 除去 | クリーン</value>
     <comment>Used to select buttons to automatically press when silently uninstallng some programs.
 These are texts displayed on buttons that you most likely  want to press to progress the uninstallation.
 Separated by |</comment>

@@ -139,7 +139,7 @@
     <value>BCUに関して問題があった場合や、新しい機能を提案したい場合は、これらのリンクをご確認ください：</value>
   </data>
   <data name="buttonSubmitGithub.Text" xml:space="preserve">
-    <value>GitHubで提出する（アカウントが必要です）</value>
+    <value>GitHub で送る（アカウントが必要）</value>
   </data>
   <data name="buttonSendFeedback.Text" xml:space="preserve">
     <value>フィードバックを送信</value>
@@ -154,7 +154,7 @@
     <value>BCUを翻訳</value>
   </data>
   <data name="buttonIssues.Text" xml:space="preserve">
-    <value>GitHubの問題</value>
+    <value>GitHub の Issues</value>
   </data>
   <data name="checkBoxNeverShow.Text" xml:space="preserve">
     <value>このウィンドウを二度と表示しない</value>

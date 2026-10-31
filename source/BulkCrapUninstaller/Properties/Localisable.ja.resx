@@ -121,19 +121,19 @@
     <value>適切にインストールされていないアプリケーションを評価することはできません。</value>
   </data>
   <data name="MessageBoxes_Title_Quiet_uninstall" xml:space="preserve">
-    <value>静かにアンインストール</value>
+    <value>サイレント アンインストール</value>
   </data>
   <data name="MessageBoxes_Title_Restore_default_settings" xml:space="preserve">
     <value>デフォルト設定を復元</value>
   </data>
   <data name="MessageBoxes_ResetSettingsConfirmation_Details" xml:space="preserve">
-    <value>すべての設定は永久に失われます。BCUninstallerはこのアクションを完了するために再起動する必要があります。</value>
+    <value>設定はすべて消え、元に戻せません。反映するために BCUninstaller を再起動します。</value>
   </data>
   <data name="MessageBoxes_Title_Open_Uninstall_List" xml:space="preserve">
     <value>アンインストールリストを開く</value>
   </data>
   <data name="MessageBoxes_SysRestoreContinueAfterError_Details" xml:space="preserve">
-    <value>リストアポイントが作成されませんでした。変更を元に戻すことはできません！それでもアンインストールを続行しますか？</value>
+    <value>復元ポイントは作成されていません。変更を元に戻せません。このままアンインストールを続けますか？</value>
   </data>
   <data name="MainWindow_Rename_Description" xml:space="preserve">
     <value>"{0}"の名前を変更</value>
@@ -159,7 +159,7 @@
     <value>ファイルが存在しません。</value>
   </data>
   <data name="PropertiesWindow_Table_ErrorMsi" xml:space="preserve">
-    <value>表示するものはありません。このアプリケーションはWindows Installer（MsiExec）を使用してアンインストールされています。</value>
+    <value>表示するファイルはありません。このアプリケーションは Windows Installer (MsiExec) で削除されます。</value>
   </data>
   <data name="PropertiesWindow_Table_Name" xml:space="preserve">
     <value>名前</value>
@@ -183,21 +183,21 @@
     <value>ファイルが見つかりません。</value>
   </data>
   <data name="LoadingDialogTitlePostUninstallCommands" xml:space="preserve">
-    <value>アンインストール後のコマンドを実行中...</value>
+    <value>アンインストール後のコマンドを実行しています...</value>
   </data>
   <data name="LoadingDialogTitlePreUninstallCommands" xml:space="preserve">
-    <value>アンインストール前のコマンドを実行中...</value>
+    <value>アンインストール前のコマンドを実行しています...</value>
   </data>
   <data name="MainWindow_Statusbar_StatusReady" xml:space="preserve">
     <value>準備完了</value>
     <comment>Shows up when nothing else is displayed on the status bar.</comment>
   </data>
   <data name="MainWindow_Statusbar_StatusSelection" xml:space="preserve">
-    <value>{0}のアンインストーラーが選択されました</value>
+    <value>選択中: {0} 件</value>
     <comment>{0} is a number of selected uninstallers</comment>
   </data>
   <data name="MainWindow_Statusbar_Total" xml:space="preserve">
-    <value>合計{0}のアンインストーラー、{1}</value>
+    <value>合計: {0} 件、{1}</value>
     <comment>{0} is a number of all uninstallers, {1} is a long file size (123 Megabytes)</comment>
   </data>
   <data name="MessageBoxes_ExternalCommandFailed_Message" xml:space="preserve">
@@ -206,7 +206,7 @@
     <comment>{0} is a command line (c:\example.exe /help)</comment>
   </data>
   <data name="MessageBoxes_ExternalCommandFailed_Title" xml:space="preserve">
-    <value>外部実行に失敗しました</value>
+    <value>外部コマンドを実行できませんでした</value>
   </data>
   <data name="DefaultLanguage" xml:space="preserve">
     <value>デフォルト</value>
@@ -225,7 +225,7 @@
     <value>証明書がありません</value>
   </data>
   <data name="MainWindow_Statusbar_ProcessingUninstallers" xml:space="preserve">
-    <value>検出されたアプリケーションを処理中、残り{0}...</value>
+    <value>検出したアプリケーションを処理しています。残り {0}...</value>
     <comment>{1} = how many application uninstallers still need to be processed</comment>
   </data>
   <data name="MessageBoxes_TaskSkip_Details" xml:space="preserve">
@@ -255,7 +255,7 @@
     <value>開くディレクトリはありません。</value>
   </data>
   <data name="NotAvailable" xml:space="preserve">
-    <value>利用できません。</value>
+    <value>利用不可</value>
     <comment>Used on application list when value is not available</comment>
   </data>
   <data name="MessageBoxes_RatingErrorTitle" xml:space="preserve">
@@ -265,23 +265,23 @@
     <value>設定から評価を有効にする必要があります。</value>
   </data>
   <data name="RateTitle_Counted" xml:space="preserve">
-    <value>{0} アプリケーション</value>
+    <value>{0} 件</value>
     <comment>{0} is number of apps to rate, "Rate " will be automatically put in front of this string</comment>
   </data>
   <data name="RatingEntry_ToString" xml:space="preserve">
     <value>平均評価: {0}; 私の評価: {1}</value>
   </data>
   <data name="MessageBoxes_ForceRunUninstallFailedError_Message" xml:space="preserve">
-    <value>次のアンインストーラーの実行に失敗しました。おそらく衝突が原因です。他のアンインストーラーが完了するのを待ってから再試行してください。
+    <value>次のアンインストーラーを実行できませんでした。ほかのアンインストーラーと同時に動いている可能性があります。終わるまで待ってから、もう一度実行してください。
 {0}
 
-設定で衝突検出を無効にすることもできますが、お勧めしません。</value>
+設定で競合の検出を切ることもできますが、勧めません。</value>
   </data>
   <data name="MessageBoxes_ForceRunUninstallFailedError_Title" xml:space="preserve">
     <value>強制アンインストール</value>
   </data>
   <data name="MessageBoxes_ForceRunUninstallFailedError_Header" xml:space="preserve">
-    <value>いくつかのアンインストーラーを実行できませんでした。</value>
+    <value>一部のアンインストーラーを実行できませんでした。</value>
   </data>
   <data name="MessageBoxes_Net4Missing_Title" xml:space="preserve">
     <value>.NET Framework v4.0が見つかりませんでした。</value>
@@ -293,13 +293,13 @@
     <value>v4.0フレームワークはオプションですが、推奨されます。このフレームワークに依存する機能は、インストールするまで無効のままとなります。</value>
   </data>
   <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Title" xml:space="preserve">
-    <value>いくつかのアンインストーラーが失敗しました。</value>
+    <value>失敗したアンインストーラーがあります</value>
   </data>
   <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Header" xml:space="preserve">
-    <value>失敗した静かなアンインストーラーを騒音アンインストーラーで再実行しますか？</value>
+    <value>失敗したサイレント アンインストールを、画面を出してやり直しますか？</value>
   </data>
   <data name="MessageBoxes_AskToRetryFailedQuietAsLoud_Details" xml:space="preserve">
-    <value>次のアンインストーラーは、騒音アンインストーラーで再実行されます:</value>
+    <value>次のアンインストーラーを、画面付きで再実行します:</value>
   </data>
   <data name="UninstallFromDirectory_ScanningTitle" xml:space="preserve">
     <value>指定されたディレクトリをスキャンしています...</value>
@@ -329,10 +329,10 @@
     <value>件名</value>
   </data>
   <data name="LocalizedX509Certificate2_Archived" xml:space="preserve">
-    <value>アーカイブされた</value>
+    <value>アーカイブ済み</value>
   </data>
   <data name="LocalizedX509Certificate2_Extensions" xml:space="preserve">
-    <value>拡張子</value>
+    <value>拡張</value>
   </data>
   <data name="LocalizedX509Certificate2_FriendlyName" xml:space="preserve">
     <value>表示名</value>
@@ -344,7 +344,7 @@
     <value>有効期限</value>
   </data>
   <data name="LocalizedX509Certificate2_NotBefore" xml:space="preserve">
-    <value>発行日</value>
+    <value>有効期間の開始</value>
   </data>
   <data name="LocalizedX509Certificate2_PrivateKey" xml:space="preserve">
     <value>秘密鍵</value>
@@ -371,7 +371,7 @@
     <value>バージョン</value>
   </data>
   <data name="LocalizedX509Certificate2_Thumbprint" xml:space="preserve">
-    <value>サムプリント</value>
+    <value>拇印</value>
   </data>
   <data name="Error_SaveSettingsFailed" xml:space="preserve">
     <value>設定の保存に失敗しました。</value>
@@ -441,26 +441,26 @@
     <comment>Option for "Double clicking in application list..."</comment>
   </data>
   <data name="LoadingDialogTitleCreatingRestorePoint" xml:space="preserve">
-    <value>復元ポイントを作成する...</value>
+    <value>復元ポイントを作成しています...</value>
   </data>
   <data name="LoadingDialogTitleLookingForJunk" xml:space="preserve">
-    <value>残留物の検索...</value>
+    <value>残留ファイルを検索しています...</value>
   </data>
   <data name="LoadingDialogTitlePopulatingList" xml:space="preserve">
-    <value>アンインストーラリストを作成する</value>
+    <value>アンインストーラーの一覧を作成しています...</value>
   </data>
   <data name="LoadingDialogTitleRemovingJunk" xml:space="preserve">
-    <value>残存物を削除しています...</value>
+    <value>残留ファイルを削除しています...</value>
   </data>
   <data name="LoadingDialogTitleSearchingForUpdates" xml:space="preserve">
-    <value>アップデートを検索する...</value>
+    <value>更新を検索しています...</value>
   </data>
   <data name="SearchNothingFoundMessage" xml:space="preserve">
-    <value>検索条件に一致するエントリはありません。</value>
+    <value>検索条件に一致する項目はありません。</value>
   </data>
   <data name="StrExportHeader" xml:space="preserve">
     <value>BCUninstaller のエクスポート
-発行者｜バージョン｜日付｜サイズ｜レジストリ｜アンインストーラの種類｜アンインストール文字列｜静かなアンインストール文字列｜コメント</value>
+発行元 | バージョン | 日付 | サイズ | レジストリ | アンインストーラーの種類 | アンインストール文字列 | サイレント アンインストール文字列 | コメント</value>
   </data>
   <data name="StrIsPortable" xml:space="preserve">
     <value>ポータブル</value>
@@ -477,12 +477,12 @@
 </value>
   </data>
   <data name="MessageBoxes_Title_Leftover_removal" xml:space="preserve">
-    <value>残存物の削除</value>
+    <value>残留ファイルの削除</value>
   </data>
   <data name="MessageBoxes_Error_details" xml:space="preserve">
-    <value> 
- 
-エラーの詳細です：
+    <value>
+
+エラーの詳細:
 </value>
     <comment>Add space or newline afterwards and two newlines before</comment>
   </data>
@@ -495,26 +495,25 @@
 ファイルとディレクトリはゴミ箱に移動され、そこから復元できます。</value>
   </data>
   <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Title" xml:space="preserve">
-    <value>アクションの失敗</value>
+    <value>操作できません</value>
   </data>
   <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Message" xml:space="preserve">
-    <value>このアクションには1つのエントリのみを選択する必要があります。</value>
+    <value>この操作では、項目を1件だけ選択してください。</value>
   </data>
   <data name="MessageBoxes_CanSelectOnlyOneItemInfo_Details" xml:space="preserve">
-    <value>リストから正確に1つのアンインストーラーを選択してください。チェックボックスを使用している場合は、必ずチェックしてください。</value>
+    <value>一覧からアンインストーラーを1件だけ選んでください。チェックボックスを使っている場合は、その1件にチェックを入れてください。</value>
   </data>
   <data name="MessageBoxes_Title_Search_for_updates" xml:space="preserve">
-    <value>アップデートを検索する</value>
+    <value>更新の確認</value>
   </data>
   <data name="MessageBoxes_NoNetworkConnected_Open_online_content" xml:space="preserve">
     <value>オンラインコンテンツを開く</value>
   </data>
   <data name="MessageBoxes_NoNetworkConnected_Message" xml:space="preserve">
-    <value>インターネットに接続できない、利用可能なネットワークがない。</value>
+    <value>インターネットに接続できません。使えるネットワークがありません。</value>
   </data>
   <data name="MessageBoxes_NoNetworkConnected_Details" xml:space="preserve">
-    <value>インターネットに接続できません。利用可能なネットワークがありません。
-ネットワークケーブルが接続されていることを確認してください。Wi-Fiを使用している場合は、信号強度が良好であることを確認してください。
+    <value>LANケーブルが接続されているか確認してください。Wi-Fi の場合は、電波が届いているか確認してください。
 </value>
   </data>
   <data name="MessageBoxes_Title_Submit_feedback" xml:space="preserve">
@@ -571,19 +570,19 @@
     <comment>0 name of protected uninstaller</comment>
   </data>
   <data name="MessageBoxes_QuietUninstallersNotAvailableQuestion_Details" xml:space="preserve">
-    <value>次のアイテムにはサイレントアンインストーラーがありません: {0}
-これらのアイテムに「騒音」アンインストーラーを使用しますか、それともタスクから削除しますか？
+    <value>次の項目にはサイレント アンインストーラーがありません: {0}
+画面付きアンインストーラーを使いますか？ それともタスクから外しますか？
 </value>
     <comment>0 is names of non-quiet uninstallers</comment>
   </data>
   <data name="MessageBoxes_UninstallMsiGuidMissing_Title" xml:space="preserve">
-    <value>Msiを使用してアンインストールする</value>
+    <value>MsiExec でアンインストール</value>
   </data>
   <data name="MessageBoxes_UninstallMsiGuidMissing_Message" xml:space="preserve">
-    <value>選択したエントリはMsiExecインストーラーを使用してアンインストールできません</value>
+    <value>選択した項目は MsiExec ではアンインストールできません</value>
   </data>
   <data name="MessageBoxes_UninstallMsiGuidMissing_Details" xml:space="preserve">
-    <value>選択したアンインストーラーには、MsiExecで使用するための有効なGuidがありません。</value>
+    <value>選択したアンインストーラーには、MsiExec で使う GUID がありません。</value>
   </data>
   <data name="MessageBoxes_TaskStopConfirmation_Title" xml:space="preserve">
     <value>現在のアンインストールタスクを停止</value>
@@ -595,10 +594,10 @@
     <value>タスクを早期に停止すると、変更は元に戻りません。現在実行中のアンインストーラーは停止せず、タスクは完了するまで待機します。</value>
   </data>
   <data name="MessageBoxes_Title_Create_restore_point" xml:space="preserve">
-    <value>リストアポイントを作成</value>
+    <value>復元ポイントの作成</value>
   </data>
   <data name="MessageBoxes_SysRestoreContinueAfterError_Message" xml:space="preserve">
-    <value>新しいリストアポイントの作成に失敗しました</value>
+    <value>復元ポイントを作成できませんでした</value>
   </data>
   <data name="Str64Bit" xml:space="preserve">
     <value>x64</value>
@@ -618,13 +617,13 @@
     <value>残りのアンインストーラーは、ユーザーの介入なしに完了できるはずです。アンインストーラーの1つがクラッシュした場合に備えて、時々確認してください。</value>
   </data>
   <data name="MessageBoxes_Title_Junk_Leftover_removal" xml:space="preserve">
-    <value>ジャンク/残存物の削除</value>
+    <value>残留ファイルの削除</value>
   </data>
   <data name="MessageBoxes_ConfirmLowConfidenceQuestion_Message" xml:space="preserve">
-    <value>本当に信頼度の低いアイテムを変更しますか？</value>
+    <value>信頼度の低い項目を変更しますか？</value>
   </data>
   <data name="MessageBoxes_ConfirmLowConfidenceQuestion_Details" xml:space="preserve">
-    <value>良い以下の信頼度でマークされたアイテムを削除することは非常に危険です！すべてのアイテムが削除しても安全であることを確認することをお勧めします。</value>
+    <value>信頼度が「良好」より低い項目を削除するのは危険です。1件ずつ、削除して問題ないか確認してください。</value>
   </data>
   <data name="MessageBoxes_DeleteRegKeysConfirmation_Title" xml:space="preserve">
     <value>レジストリからキーを削除</value>
@@ -647,14 +646,14 @@
     <value>エラーが続く場合は、別のディレクトリに保存してみてください。たとえば、デスクトップに保存します。</value>
   </data>
   <data name="MessageBoxes_GetSystemRestoreDescription" xml:space="preserve">
-    <value>BCUninstallerは{0}アプリケーションをアンインストールしています</value>
+    <value>BCUninstaller が {0} 件のアプリケーションをアンインストールしています</value>
     <comment>0 is the uninstaller count</comment>
   </data>
   <data name="MessageBoxes_Title_Rename_uninstaller" xml:space="preserve">
     <value>アンインストーラーの名前を変更</value>
   </data>
   <data name="MessageBoxes_InvalidNewEntryName_Message" xml:space="preserve">
-    <value>提供された名前が空であるか、無効な文字</value>
+    <value>名前が空か、使えない文字が含まれています</value>
   </data>
   <data name="MessageBoxes_InvalidNewEntryName_Details" xml:space="preserve">
     <value>次の文字が含まれていないことを確認してください:
@@ -662,16 +661,16 @@
     <comment>0 is list of characters separated by spaces</comment>
   </data>
   <data name="MessageBoxes_LookForJunkQuestion_Message" xml:space="preserve">
-    <value>実行されたアンインストールの残留物を探しますか？</value>
+    <value>アンインストール後の残留ファイルを検索しますか？</value>
   </data>
   <data name="MessageBoxes_LookForJunkQuestion_Details" xml:space="preserve">
-    <value>この機能は、その動作を理解しているパワーユーザー向けのものです。このファイルを削除する必要はなく、システムのパフォーマンスに有意な影響を与えることはありません。</value>
+    <value>この機能は、仕組みを理解している人向けです。残留ファイルを消さなくても、動作が目に見えて遅くなることはありません。</value>
   </data>
   <data name="MessageBoxes_NoJunkFoundInfo_Message" xml:space="preserve">
-    <value>残留物は見つかりませんでした</value>
+    <value>残留ファイルは見つかりませんでした</value>
   </data>
   <data name="MessageBoxes_NoJunkFoundInfo_Details" xml:space="preserve">
-    <value>残留物は見つかりませんでした。まだいくらかの残留物が残っている可能性があるため、BleachBitのような一時ファイルクリーナーを実行できます。</value>
+    <value>残留ファイルは見つかりませんでした。一時ファイルが残っている場合は、BleachBit などのクリーナーを実行できます。</value>
   </data>
   <data name="MessageBoxes_NothingToCopy_Message" xml:space="preserve">
     <value>クリップボードにコピーするものはありませんでした。選択したアンインストーラーにはこの情報が含まれていないか、何も選択されていません。</value>
@@ -683,7 +682,7 @@
     <value>ディレクトリを開く</value>
   </data>
   <data name="MessageBoxes_OpenDirectoriesMessageBox_OpenMultiple" xml:space="preserve">
-    <value>この操作は{0}のディレクトリを一度に開きます。続行してもよろしいですか？</value>
+    <value>フォルダーを {0} 件まとめて開きます。続けますか？</value>
     <comment>0 is number of directories to open
 </comment>
   </data>
@@ -705,11 +704,11 @@
 正当な問題を修正できるよう最善を尽くします。</value>
   </data>
   <data name="MessageBoxes_SysRestoreBeginQuestion_Message" xml:space="preserve">
-    <value>続行する前にリストアポイントを作成しますか？</value>
+    <value>続行する前に復元ポイントを作成しますか？</value>
   </data>
   <data name="MessageBoxes_SysRestoreBeginQuestion_Details" xml:space="preserve">
-    <value>アンインストールするアプリケーションが重要であるか、システムの安定性に必要かどうか不明な場合は、リストアポイントを作成することをお勧めします。
-手順後に何か問題が発生した場合は、システムの復元を使用して変更を元に戻すことができます。</value>
+    <value>消すアプリケーションがシステムの動作に必要か分からない場合は、復元ポイントを作ってください。
+問題が出たら、システムの復元で元に戻せます。</value>
   </data>
   <data name="MessageBoxes_SearchOnlineError_Message" xml:space="preserve">
     <value>検索ページを開いているときにエラーが発生しました</value>
@@ -724,7 +723,7 @@
     <value>すべてのアプリケーション設定をリセットしてもよろしいですか？</value>
   </data>
   <data name="MessageBoxes_QuietUninstallersNotAvailableQuestion_Message" xml:space="preserve">
-    <value>一部のアプリケーションは静かにアンインストールできません</value>
+    <value>サイレント アンインストールできない項目があります</value>
   </data>
   <data name="MessageBoxes_ProtectedItemsWarningQuestion_Message" xml:space="preserve">
     <value>一部のエントリは保護されており、変更できません</value>
@@ -757,7 +756,7 @@
     <value>現在の選択を保持する場合、それは開いているリストと統合されます</value>
   </data>
   <data name="MessageBoxes_OpenUrlsMessageBox_OpenMultiple_Message" xml:space="preserve">
-    <value>このアクションは{0}のURLを一度に開きますが、続行してもよろしいですか？</value>
+    <value>URL を {0} 件まとめて開きます。続けますか？</value>
   </data>
   <data name="MessageBoxes_Title_Open_urls" xml:space="preserve">
     <value>URLを開く</value>
@@ -787,5 +786,32 @@
 {1} - List of strings of positive parts of the rating
 {2} - List of strings of negative parts of the rating
 The lists are separated by a single newline.</comment>
+  </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>作業が完了しました。このウィンドウを閉じると続行します。残留ファイルの検索を確認する場合があります。</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Title" xml:space="preserve">
+    <value>{0} の名前は変更できません</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
+    <value>この種類のアンインストーラーは名前の変更に対応していません ({0})。</value>
+  </data>
+  <data name="CertificateColumn_NotFound" xml:space="preserve">
+    <value>見つかりません</value>
+  </data>
+  <data name="CertificateColumn_Verified" xml:space="preserve">
+    <value>検証済み</value>
+  </data>
+  <data name="CertificateColumn_Unverified" xml:space="preserve">
+    <value>未検証</value>
+  </data>
+  <data name="IntegrityColumn_Invalid" xml:space="preserve">
+    <value>アンインストーラーなし</value>
+  </data>
+  <data name="IntegrityColumn_Unregistered" xml:space="preserve">
+    <value>レジストリなし</value>
+  </data>
+  <data name="IntegrityColumn_Good" xml:space="preserve">
+    <value>正常</value>
   </data>
 </root>

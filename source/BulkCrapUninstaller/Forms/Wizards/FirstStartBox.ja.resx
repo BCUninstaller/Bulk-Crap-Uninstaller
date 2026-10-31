@@ -278,14 +278,14 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>チェックボックスを使用して選択</value>
   </data>
   <data name="p2viewCertsTitle.Text" xml:space="preserve">
-    <value>認定アンインストーラー</value>
+    <value>証明書付きのアンインストーラー</value>
   </data>
   <data name="p2viewCerts.Text" xml:space="preserve">
-    <value>アンインストーラーは、関連当局から発行された証明書で署名されることがあります。
-証明書が検証に合格した場合、そのソフトウェアパッケージは変更されておらず、信頼性があります。</value>
+    <value>アンインストーラーは、認証局の証明書で署名されていることがあります。
+検証に通れば、パッケージは改変されておらず、発行元を確認できます。</value>
   </data>
   <data name="checkBoxCertTest.Text" xml:space="preserve">
-    <value>認定アンインストーラーを強調表示</value>
+    <value>証明書付きのアンインストーラーを強調表示</value>
   </data>
   <data name="p2viewAdd.Text" xml:space="preserve">
     <value>検証済みのアンインストーラーはグリーンで、未検証のものはブルーで表示されます。
@@ -298,10 +298,10 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>このウィザードでは、簡単なツアーを行い、アプリケーションの設定を手伝います。</value>
   </data>
   <data name="p1languageHeading.Text" xml:space="preserve">
-    <value>選択された言語</value>
+    <value>表示言語</value>
   </data>
   <data name="p1languageDesc.Text" xml:space="preserve">
-    <value>デフォルトの言語が正しくない場合、BCUninstallerに特定のローカリゼーションを強制することができます。新しい言語を適用するために再起動が行われます。</value>
+    <value>システムの言語と違う場合は、BCUninstaller の表示言語を指定できます。反映するには再起動します。</value>
   </data>
   <data name="buttonLanguageApply.Text" xml:space="preserve">
     <value>適用</value>
@@ -314,7 +314,8 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>お問い合わせフォームを開く</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>バルク･クラップ･アンインストーラー</value>
+    <value>ulk crap
+uninstaller</value>
     <comment>The missing B is in an image next to the text</comment>
   </data>
   <data name="$this.Text" xml:space="preserve">

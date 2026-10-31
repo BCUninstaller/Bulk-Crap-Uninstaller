@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="labelInfo2.Text" xml:space="preserve">
-    <value>初期の順序はアンインストール設定に依存しますが、項目をドラッグすることで変更できます。注意：同時アンインストールが有効な場合、BCUが順序を変更することがあります。</value>
+    <value>最初の順序はアンインストール設定で決まります。項目をドラッグすると並べ替えできます。同時アンインストールが有効なときは、BCU が順序を変えることがあります。</value>
   </data>
   <data name="labelInfo.Text" xml:space="preserve">
-    <value>これは、上から下に向かってアンインストールされるアプリケーションのリストです。「アンインストール」フィールドの選択を外すと、そのアプリケーションはアンインストールされません。アイテムに対して静かなアンインストールが利用できない場合、そのチェックは入れられません。</value>
-    <comment>jp translator: I don't know the difference between Quiet Uninstall and Silent Uninstall. Can I translate them to mean the same meaning? At this stage, we are trying to separate the two, but Quiet Uninstall is not very familiar to Japanese people.</comment>
+    <value>上から順にアンインストールします。「アンインストール」のチェックを外すと、そのアプリケーションは対象外です。サイレント アンインストールができない項目は、サイレントにチェックできません。</value>
+    <comment>Quiet uninstall is shown as サイレント. Loud uninstallers are 画面付き.</comment>
   </data>
   <data name="buttonSmartSort.Text" xml:space="preserve">
-    <value>インテリジェント選択</value>
+    <value>賢く並べ替え</value>
   </data>
   <data name="olvColumnInstallLocation.Text" xml:space="preserve">
     <value>インストール場所</value>
   </data>
   <data name="olvColumnQuiet.Text" xml:space="preserve">
-    <value>静かなアンインストール</value>
+    <value>サイレント</value>
   </data>
   <data name="olvColumnEnabled.Text" xml:space="preserve">
     <value>アンインストール</value>
