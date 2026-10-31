@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="button2.Text" xml:space="preserve">
-    <value>インストールディレクトリ</value>
+    <value>インストールフォルダー</value>
   </data>
   <data name="openFileDialog1.Title" xml:space="preserve">
     <value>アプリケーションに属するファイルを選択する</value>
   </data>
   <data name="openFileDialog1.Filter" xml:space="preserve">
-    <value>全てのファイル|*.*</value>
+    <value>すべてのファイル|*.*</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>リンクまたはアプリケーションのファイル</value>

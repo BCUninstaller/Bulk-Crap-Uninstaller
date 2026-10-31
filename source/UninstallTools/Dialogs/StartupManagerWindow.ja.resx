@@ -121,7 +121,7 @@
     <value>すべてを表示</value>
   </data>
   <data name="comboBoxFilter.Items1" xml:space="preserve">
-    <value>スタートアップエントリーを表示</value>
+    <value>スタートアップ項目を表示</value>
   </data>
   <data name="comboBoxFilter.Items2" xml:space="preserve">
     <value>タスクの表示</value>
@@ -154,19 +154,19 @@
     <value>コマンド</value>
   </data>
   <data name="openFileLocationToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;実行可能ファイルの場所を開く</value>
+    <value>実行可能ファイルの場所を開く(&amp;O)</value>
   </data>
   <data name="openLinkLocationToolStripMenuItem.Text" xml:space="preserve">
     <value>リンクの場所を開く</value>
   </data>
   <data name="runCommandToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;コマンドを実行</value>
+    <value>コマンドを実行(&amp;R)</value>
   </data>
   <data name="copyToClipboardToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;クリップボードにコピー</value>
+    <value>クリップボードにコピー(&amp;C)</value>
   </data>
   <data name="createBackupToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;バックアップを作成...</value>
+    <value>バックアップを作成(&amp;B)...</value>
   </data>
   <data name="moveToRegistryToolStripMenuItem.Text" xml:space="preserve">
     <value>レジストリに移動</value>
@@ -175,10 +175,10 @@
     <value>すべてのユーザーのために実行</value>
   </data>
   <data name="enableToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;有効</value>
+    <value>有効(&amp;E)</value>
   </data>
   <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;削除</value>
+    <value>削除(&amp;D)</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>ユーザーの介入なしに自動的に実行できるコマンドのリスト</value>
@@ -187,10 +187,10 @@
     <value>テキストファイル|*.txt</value>
   </data>
   <data name="exportDialog.Title" xml:space="preserve">
-    <value>スタートアップエントリをエクスポート...</value>
+    <value>スタートアップ項目をエクスポート...</value>
   </data>
   <data name="folderBrowserDialog.Description" xml:space="preserve">
-    <value>バックアップ用の空のディレクトリを選択してください。</value>
+    <value>バックアップ用の空のフォルダーを選択してください。</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>スタートアップマネージャー</value>

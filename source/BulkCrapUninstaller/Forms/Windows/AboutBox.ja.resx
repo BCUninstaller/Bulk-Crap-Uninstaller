@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="labelName.Text" xml:space="preserve">
-    <value>BCUninstaller（バルク クラップ アンインストーラー）</value>
+    <value>BCUninstaller (Bulk Crap Uninstaller)</value>
   </data>
   <data name="labelVersion.Text" xml:space="preserve">
     <value>バージョン:</value>
@@ -178,7 +178,7 @@
     <value>閉じる</value>
   </data>
   <data name="linkLabel4.Text" xml:space="preserve">
-    <value>公式ウェブページ</value>
+    <value>公式 Web ページ</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>開発者情報</value>
@@ -187,6 +187,6 @@
     <value>翻訳者</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>BCUninstaller（バルク クラップ アンインストーラー）について</value>
+    <value>BCUninstaller (Bulk Crap Uninstaller) のバージョン情報</value>
   </data>
 </root>

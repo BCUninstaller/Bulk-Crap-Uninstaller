@@ -133,9 +133,9 @@
     <value>中止</value>
   </data>
   <data name="checkBoxUninstallerVisible.Text" xml:space="preserve">
-    <value>アンインストーラの表示</value>
+    <value>アンインストーラーの表示</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>アンインストーラの自動化</value>
+    <value>アンインストーラーの自動化</value>
   </data>
 </root>

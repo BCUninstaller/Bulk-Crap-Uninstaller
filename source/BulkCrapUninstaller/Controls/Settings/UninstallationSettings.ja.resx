@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="checkBoxManualNoCollisionProtection.Text" xml:space="preserve">
-    <value>手動でアンインストーラーを実行する際の衝突防止を無効化</value>
+    <value>手動でアンインストーラーを実行するときの競合防止を無効にする</value>
   </data>
   <data name="checkBoxConcurrentOneLoud.Text" xml:space="preserve">
-    <value>騒音アンインストーラーは1度に1つだけ</value>
+    <value>画面付きアンインストーラーは同時に1つだけ</value>
   </data>
   <data name="checkBoxConcurrent.Text" xml:space="preserve">
     <value>可能であればアンインストーラーを自動的に並行実行</value>
@@ -139,7 +139,7 @@
     <value>アンインストール前に復元ポイントを作成</value>
   </data>
   <data name="checkBoxRestorePoint.ToolTip" xml:space="preserve">
-    <value>レジストリ、一部の設定やファイルをバックアップするためにシステム復元ポイントを作成できます。ドライバや重要なシステムアプリケーションを削除する前に、復元ポイントを作成することを推奨します。</value>
+    <value>レジストリ、一部の設定やファイルをバックアップするためにシステム復元ポイントを作成できます。ドライバーや重要なシステムアプリケーションを削除する前に、復元ポイントを作成することを推奨します。</value>
   </data>
   <data name="checkBoxBatchSortQuiet.Text" xml:space="preserve">
     <value>アンインストーラーを賢く並べ替え</value>
@@ -148,19 +148,19 @@
     <value>保護を無効化</value>
   </data>
   <data name="checkBoxSimulate.Text" xml:space="preserve">
-    <value>アンインストールをシミュレーション</value>
+    <value>アンインストールをシミュレート</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>一般設定</value>
   </data>
   <data name="checkBoxAutoKillQuiet.Text" xml:space="preserve">
-    <value>フリーズした無音アンインストーラーを自動的に強制終了</value>
+    <value>応答しないサイレントアンインストーラーを自動的に強制終了</value>
   </data>
   <data name="checkBoxRetryQuiet.Text" xml:space="preserve">
-    <value>失敗した無音アンインストーラーを1度再試行</value>
+    <value>失敗したサイレントアンインストーラーを1回再試行</value>
   </data>
   <data name="checkBoxGenerate.Text" xml:space="preserve">
-    <value>可能であれば不足している無音アンインストーラーを生成</value>
+    <value>可能であれば、不足しているサイレントアンインストーラーを生成</value>
   </data>
   <data name="checkBoxGenerateStuck.Text" xml:space="preserve">
     <value>ユーザー入力待機でフリーズした場合、自動的に強制終了</value>
@@ -169,6 +169,6 @@
     <value>ポップアップやその他の停止状態を監視し、それらを自動化する（自動化デーモンを実行）</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>無音アンインストール</value>
+    <value>サイレントアンインストール</value>
   </data>
 </root>

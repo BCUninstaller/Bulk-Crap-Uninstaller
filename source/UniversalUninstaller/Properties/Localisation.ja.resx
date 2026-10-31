@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Program_ShowInvalidArgsBox_Message" xml:space="preserve">
-    <value>引数の数が無効です。
-削除するディレクトリのフルパスを引数として渡してください。また、オプションで/qを指定して静かアンインストールモードにできます。</value>
+    <value>引数の数が正しくありません。
+削除するフォルダーのフルパスを渡してください。/q を付けるとサイレントモードになります。</value>
   </data>
   <data name="Program_ShowInvalidArgsBox_Title" xml:space="preserve">
-    <value>ユニバーサルアンインストーラー</value>
+    <value>Universal Uninstaller</value>
   </data>
   <data name="UninstallSelection_DeleteProgress_Title" xml:space="preserve">
-    <value>アイテムを削除中</value>
+    <value>項目を削除しています</value>
   </data>
   <data name="UninstallSelection_DeleteProgress_FailedTitle" xml:space="preserve">
-    <value>一部のアイテムの削除に失敗しました</value>
+    <value>一部の項目の削除に失敗しました</value>
   </data>
   <data name="UninstallSelection_Title" xml:space="preserve">
     <value>"{0}"を削除</value>

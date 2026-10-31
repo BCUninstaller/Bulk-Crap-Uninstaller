@@ -173,7 +173,7 @@
   </data>
   <data name="p4netErrors.Text" xml:space="preserve">
     <value>エラーが発生するたびに送信するかどうか尋ねられます。
-BCUninstallerのディレクトリ内のそれぞれのXMLファイルを調べることで、エラーと使用報告に送信されるデータを確認できます。
+BCUninstallerのフォルダー内のそれぞれのXMLファイルを調べることで、エラーと使用報告に送信されるデータを確認できます。
 
 送信されたデータは第三者と共有されることはありません。</value>
   </data>
@@ -244,8 +244,7 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>保護されたアンインストーラー</value>
   </data>
   <data name="p3advProtect.Text" xml:space="preserve">
-    <value>保護されたアイテムは「NoRemove」タグでマークされており、発行者がそれらを削除させたくないことを意味します。
-このタグは、大規模なソフトウェアパッケージによって、個々の部分をアンインストールさせないように使用されることがよくあります。</value>
+    <value>「NoRemove」が付いた項目は保護されています。発行元が削除しないよう指定しています。大きなソフトの構成部品を、単体で削除できないようにするためにも使われます。</value>
   </data>
   <data name="checkBoxListProtected.Text" xml:space="preserve">
     <value>「保護された」とマークされたアンインストーラーを表示</value>
@@ -254,19 +253,19 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>「保護された」とマークされたアンインストーラーの保護を無効にする</value>
   </data>
   <data name="p3advProtectAdd.Text" xml:space="preserve">
-    <value>これにより、保護されたアイテムをアンインストールできるようになります。</value>
+    <value>保護された項目もアンインストールできます。</value>
   </data>
   <data name="p2viewTitle.Text" xml:space="preserve">
     <value>アンインストーラーリストビュー</value>
   </data>
   <data name="p2viewDetail.Text" xml:space="preserve">
-    <value>システム内で見つかったすべてのアンインストーラーは、メインリストビューにあります。以下はこのデータをブラウズする方法です：</value>
+    <value>見つかったアンインストーラーは、メインの一覧に表示されます。見方は次のとおりです。</value>
   </data>
   <data name="p2viewDetail1.Text" xml:space="preserve">
     <value>● フィルターを使用し、キーワードを検索（すべての列で）</value>
   </data>
   <data name="p2viewDetail2.Text" xml:space="preserve">
-    <value>● 任意の列でアンインストーラーをソートします。列を自由に並べ替えます。</value>
+    <value>● 任意の列で並べ替えられます。列の順番も変えられます。</value>
   </data>
   <data name="p2viewDetail3.Text" xml:space="preserve">
     <value>● 類似のアンインストーラーをグループ化</value>
@@ -278,14 +277,14 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>チェックボックスを使用して選択</value>
   </data>
   <data name="p2viewCertsTitle.Text" xml:space="preserve">
-    <value>認定アンインストーラー</value>
+    <value>証明書付きのアンインストーラー</value>
   </data>
   <data name="p2viewCerts.Text" xml:space="preserve">
-    <value>アンインストーラーは、関連当局から発行された証明書で署名されることがあります。
-証明書が検証に合格した場合、そのソフトウェアパッケージは変更されておらず、信頼性があります。</value>
+    <value>アンインストーラーは、認証局の証明書で署名されていることがあります。
+検証に通れば、パッケージは改変されておらず、発行元を確認できます。</value>
   </data>
   <data name="checkBoxCertTest.Text" xml:space="preserve">
-    <value>認定アンインストーラーを強調表示</value>
+    <value>証明書付きのアンインストーラーを強調表示</value>
   </data>
   <data name="p2viewAdd.Text" xml:space="preserve">
     <value>検証済みのアンインストーラーはグリーンで、未検証のものはブルーで表示されます。
@@ -298,10 +297,10 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>このウィザードでは、簡単なツアーを行い、アプリケーションの設定を手伝います。</value>
   </data>
   <data name="p1languageHeading.Text" xml:space="preserve">
-    <value>選択された言語</value>
+    <value>表示言語</value>
   </data>
   <data name="p1languageDesc.Text" xml:space="preserve">
-    <value>デフォルトの言語が正しくない場合、BCUninstallerに特定のローカリゼーションを強制することができます。新しい言語を適用するために再起動が行われます。</value>
+    <value>システムの言語と違う場合は、BCUninstaller の表示言語を指定できます。反映するには再起動します。</value>
   </data>
   <data name="buttonLanguageApply.Text" xml:space="preserve">
     <value>適用</value>
@@ -314,7 +313,8 @@ BCUninstallerは「手動でアンインストール」オプションを使用�
     <value>お問い合わせフォームを開く</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>バルク･クラップ･アンインストーラー</value>
+    <value>ulk crap
+uninstaller</value>
     <comment>The missing B is in an image next to the text</comment>
   </data>
   <data name="$this.Text" xml:space="preserve">

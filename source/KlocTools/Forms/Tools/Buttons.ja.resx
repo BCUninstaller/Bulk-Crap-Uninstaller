@@ -180,7 +180,7 @@
     <value>アンインストール</value>
   </data>
   <data name="ButtonUseLoud" xml:space="preserve">
-    <value>騒音アンインストーラーを使う</value>
+    <value>画面付きで実行</value>
   </data>
   <data name="ButtonYes" xml:space="preserve">
     <value>はい</value>

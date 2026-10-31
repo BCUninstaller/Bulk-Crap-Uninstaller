@@ -169,7 +169,7 @@
     <value>製品コード</value>
   </data>
   <data name="olvColumnQuietUninstallString.Text" xml:space="preserve">
-    <value>静かなアンインストールコマンド</value>
+    <value>サイレントアンインストール コマンド</value>
   </data>
   <data name="toolStripButton1.Text" xml:space="preserve">
     <value>アンインストーラーを再読み込み</value>
@@ -184,13 +184,13 @@
     <value>選択を反転</value>
   </data>
   <data name="toolStripButtonTarget.Text" xml:space="preserve">
-    <value>ウィンドウ、ディレクトリ、またはファイルによるアンインストール...</value>
+    <value>ウィンドウ、フォルダー、またはファイルによるアンインストール...</value>
   </data>
   <data name="toolStripButtonUninstall.Text" xml:space="preserve">
     <value>アンインストール</value>
   </data>
   <data name="toolStripButton2.Text" xml:space="preserve">
-    <value>静かにアンインストール</value>
+    <value>サイレントアンインストール</value>
   </data>
   <data name="toolStripButtonModify.Text" xml:space="preserve">
     <value>変更</value>
@@ -214,25 +214,25 @@
     <value>検索</value>
   </data>
   <data name="uninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;アンインストール</value>
+    <value>アンインストール(&amp;U)</value>
   </data>
   <data name="quietUninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>静かにアンインストール</value>
+    <value>サイレントアンインストール(&amp;Q)</value>
   </data>
   <data name="manualUninstallToolStripMenuItem1.Text" xml:space="preserve">
-    <value>手動でアンインストールする</value>
+    <value>手動でアンインストール(&amp;M)</value>
   </data>
   <data name="msiInstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;インストールまたは設定する (/I)</value>
+    <value>インストールまたは設定する (/I)(&amp;I)</value>
   </data>
   <data name="msiUninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;アンインストールする (/X)</value>
+    <value>アンインストールする (/X)(&amp;U)</value>
   </data>
   <data name="msiQuietUninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;静かなアンインストール (/X /qb)</value>
+    <value>サイレントアンインストール (/X /qb)(&amp;Q)</value>
   </data>
   <data name="uninstallUsingMsiExecContextMenuStripItem.Text" xml:space="preserve">
-    <value>MsiExecを使ってアンインストール...</value>
+    <value>MsiExec でアンインストール(&amp;M)...</value>
   </data>
   <data name="excludeToolStripMenuItem.Text" xml:space="preserve">
     <value>除外</value>
@@ -247,7 +247,7 @@
     <value>詳細...</value>
   </data>
   <data name="fullInformationCopyContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;すべての情報</value>
+    <value>すべての情報(&amp;F)</value>
   </data>
   <data name="programNameCopyContextMenuStripItem.Text" xml:space="preserve">
     <value>プログラム名</value>
@@ -262,28 +262,28 @@
     <value>アンインストール文字列</value>
   </data>
   <data name="copyToClipboardContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;クリップボードにコピー...</value>
+    <value>クリップボードにコピー(&amp;C)...</value>
   </data>
   <data name="deleteRegistryEntryContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;レジストリエントリを削除</value>
+    <value>レジストリエントリを削除(&amp;D)</value>
   </data>
   <data name="renameContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;名前を変更...</value>
+    <value>名前を変更(&amp;R)...</value>
   </data>
   <data name="installLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;インストール場所</value>
+    <value>インストール場所(&amp;I)</value>
   </data>
   <data name="uninstallerLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;アンインストーラーの場所</value>
+    <value>アンインストーラーの場所(&amp;U)</value>
   </data>
   <data name="sourceLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;ソースの場所</value>
+    <value>ソースの場所(&amp;S)</value>
   </data>
   <data name="openInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>エクスプローラーで開く...</value>
+    <value>エクスプローラーで開く(&amp;E)...</value>
   </data>
   <data name="openWebPageContextMenuStripItem.Text" xml:space="preserve">
-    <value>ウェブページを開く</value>
+    <value>Web ページを開く(&amp;W)</value>
   </data>
   <data name="toolStripMenuItem15.Text" xml:space="preserve">
     <value>Google</value>
@@ -307,13 +307,13 @@
     <value>FileHippo.com</value>
   </data>
   <data name="lookUpOnlineToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;オンラインで検索</value>
+    <value>オンラインで検索(&amp;S)</value>
   </data>
   <data name="rateToolStripMenuItem.Text" xml:space="preserve">
     <value>評価する</value>
   </data>
   <data name="propertiesContextMenuStripItem.Text" xml:space="preserve">
-    <value>&amp;プロパティ</value>
+    <value>プロパティ(&amp;P)</value>
   </data>
   <data name="exportDialog.Filter" xml:space="preserve">
     <value>XMLファイル|*.xml</value>
@@ -322,13 +322,13 @@
     <value>選択したアンインストーラーのプロパティをエクスポート</value>
   </data>
   <data name="reloadUninstallersToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;アンインストーラーを再読み込み</value>
+    <value>アンインストーラーを再読み込み(&amp;R)</value>
   </data>
   <data name="loadUninstallerListToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;アンインストールリストを開く...</value>
+    <value>アンインストールリストを開く(&amp;O)...</value>
   </data>
   <data name="exportSelectedToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;選択したアンインストーラーのデータをエクスポート...</value>
+    <value>選択したアンインストーラーのデータをエクスポート(&amp;E)...</value>
   </data>
   <data name="exportToABatchUninstallScriptToolStripMenuItem.Text" xml:space="preserve">
     <value>バッチアンインストールスクリプトにエクスポート...</value>
@@ -337,52 +337,52 @@
     <value>ストアアプリ用のPowerShell削除スクリプトを作成...</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;終了</value>
+    <value>終了(&amp;X)</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;ファイル</value>
+    <value>ファイル(&amp;F)</value>
   </data>
   <data name="showColorLegendToolStripMenuItem.Text" xml:space="preserve">
     <value>色の説明を表示</value>
   </data>
   <data name="displayToolbarToolStripMenuItem.Text" xml:space="preserve">
-    <value>ツールバーを表示</value>
+    <value>ツールバーを表示(&amp;T)</value>
   </data>
   <data name="showTreemapToolStripMenuItem.Text" xml:space="preserve">
-    <value>ツリーマップを表示</value>
+    <value>ツリーマップを表示(&amp;M)</value>
   </data>
   <data name="displaySettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定サイドバーを表示</value>
+    <value>設定サイドバーを表示(&amp;S)</value>
   </data>
   <data name="displayStatusbarToolStripMenuItem.Text" xml:space="preserve">
-    <value>ステータスバーを表示</value>
+    <value>ステータスバーを表示(&amp;B)</value>
   </data>
   <data name="useSystemThemeToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;システムテーマを使用</value>
+    <value>システムテーマを使用(&amp;U)</value>
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;表示</value>
+    <value>表示(&amp;V)</value>
   </data>
   <data name="advancedApplicationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;デフォルトフィルター</value>
+    <value>既定のフィルター(&amp;D)</value>
   </data>
   <data name="basicApplicationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>基本的なアプリケーションのみ</value>
+    <value>基本的なアプリケーションのみ(&amp;B)</value>
   </data>
   <data name="systemComponentsToolStripMenuItem.Text" xml:space="preserve">
     <value>システムコンポーネントのみ</value>
   </data>
   <data name="everythingToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;すべて</value>
+    <value>すべて(&amp;E)</value>
   </data>
   <data name="automaticallyStartedToolStripMenuItem.Text" xml:space="preserve">
     <value>自動的に開始されたもののみ</value>
   </data>
   <data name="onlyWebBrowsersToolStripMenuItem.Text" xml:space="preserve">
-    <value>自動的に開始されたもののみ</value>
+    <value>Web ブラウザーのみ</value>
   </data>
   <data name="viewTweaksToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tweaksを表示</value>
+    <value>調整項目を表示</value>
   </data>
   <data name="viewUnregisteredToolStripMenuItem.Text" xml:space="preserve">
     <value>未登録のものを表示</value>
@@ -400,13 +400,13 @@
     <value>検索...</value>
   </data>
   <data name="filteringToolStripMenuItem.Text" xml:space="preserve">
-    <value>クイックフィルター</value>
+    <value>クイックフィルター(&amp;Q)</value>
   </data>
   <data name="uninstallToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;アンインストール</value>
+    <value>アンインストール(&amp;U)</value>
   </data>
   <data name="quietUninstallToolStripMenuItem.Text" xml:space="preserve">
-    <value>静かにアンインストール</value>
+    <value>サイレントアンインストール(&amp;Q)</value>
   </data>
   <data name="modifyToolStripMenuItem.Text" xml:space="preserve">
     <value>変更</value>
@@ -415,7 +415,7 @@
     <value>詳細...</value>
   </data>
   <data name="copyFullInformationToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;すべての情報</value>
+    <value>すべての情報(&amp;F)</value>
   </data>
   <data name="toolStripMenuItem10.Text" xml:space="preserve">
     <value>プログラム名</value>
@@ -430,22 +430,22 @@
     <value>アンインストール文字列</value>
   </data>
   <data name="toolStripMenuItem8.Text" xml:space="preserve">
-    <value>&amp;クリップボードにコピー</value>
+    <value>クリップボードにコピー(&amp;C)</value>
   </data>
   <data name="toolStripMenuItem5.Text" xml:space="preserve">
-    <value>&amp;インストール場所</value>
+    <value>インストール場所(&amp;I)</value>
   </data>
   <data name="toolStripMenuItem6.Text" xml:space="preserve">
-    <value>&amp;アンインストーラーの場所</value>
+    <value>アンインストーラーの場所(&amp;U)</value>
   </data>
   <data name="toolStripMenuItem7.Text" xml:space="preserve">
-    <value>&amp;ソースの場所</value>
+    <value>ソースの場所(&amp;S)</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;エクスプローラーで開く...</value>
+    <value>エクスプローラーで開く(&amp;E)...</value>
   </data>
   <data name="toolStripMenuItem14.Text" xml:space="preserve">
-    <value>&amp;ウェブページを開く</value>
+    <value>Web ページを開く(&amp;W)</value>
   </data>
   <data name="googleToolStripMenuItem.Text" xml:space="preserve">
     <value>Google</value>
@@ -469,64 +469,64 @@
     <value>FileHippo.com</value>
   </data>
   <data name="onlineSearchToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;オンラインで検索</value>
+    <value>オンラインで検索(&amp;S)</value>
   </data>
   <data name="rateToolStripMenuItem1.Text" xml:space="preserve">
     <value>評価する</value>
   </data>
   <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;プロパティを表示</value>
+    <value>プロパティを表示(&amp;P)</value>
   </data>
   <data name="basicOperationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;基本操作</value>
+    <value>基本操作(&amp;B)</value>
   </data>
   <data name="manualUninstallToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;手動でアンインストール</value>
+    <value>手動でアンインストール(&amp;M)</value>
   </data>
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
-    <value>&amp;インストールまたは設定 (/I)</value>
+    <value>インストールまたは設定 (/I)(&amp;I)</value>
   </data>
   <data name="toolStripMenuItem3.Text" xml:space="preserve">
-    <value>&amp;アンインストール (/X)</value>
+    <value>アンインストール (/X)(&amp;U)</value>
   </data>
   <data name="toolStripMenuItem4.Text" xml:space="preserve">
-    <value>&amp;静かにアンインストール (/X /qb)</value>
+    <value>サイレントアンインストール (/X /qb)(&amp;Q)</value>
   </data>
   <data name="msiUninstalltoolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;MsiExecを使ってアンインストール</value>
+    <value>MsiExec を使ってアンインストール(&amp;U)</value>
   </data>
   <data name="renameToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;名前を変更...</value>
+    <value>名前を変更(&amp;R)...</value>
   </data>
   <data name="disableAutostartToolStripMenuItem.Text" xml:space="preserve">
     <value>自動起動を無効にする</value>
   </data>
   <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;レジストリキーを削除</value>
+    <value>レジストリキーを削除(&amp;D)</value>
   </data>
   <data name="createBackupToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;バックアップを作成...</value>
+    <value>バックアップを作成(&amp;B)...</value>
   </data>
   <data name="openKeyInRegeditToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Regeditでキーを開く</value>
+    <value>Regedit でキーを開く(&amp;O)</value>
   </data>
   <data name="takeOwnershipToolStripMenuItem.Text" xml:space="preserve">
     <value>所有権を得る</value>
   </data>
   <data name="advancedOperationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;高度な操作</value>
+    <value>高度な操作(&amp;A)</value>
   </data>
   <data name="openStartupManagerToolStripMenuItem.Text" xml:space="preserve">
     <value>スタートアップマネージャを開く</value>
   </data>
   <data name="cleanUpProgramFilesToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;「プログラムフォルダ」をクリーンアップ...</value>
+    <value>「Program Files」フォルダーをクリーンアップ(&amp;C)...</value>
   </data>
   <data name="targetMenuItem.Text" xml:space="preserve">
-    <value>ウィンドウ、ディレクトリ、またはファイルからアンインストール...</value>
+    <value>ウィンドウ、フォルダー、またはファイルからアンインストール...</value>
   </data>
   <data name="uninstallFromDirectoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>ディレクトリからアンインストール...</value>
+    <value>フォルダーからアンインストール...</value>
   </data>
   <data name="troubleshootUninstallProblemsToolStripMenuItem.Text" xml:space="preserve">
     <value>アンインストールの問題をトラブルシューティング</value>
@@ -538,19 +538,19 @@
     <value>.NET v3.5をインストール（機能を追加）</value>
   </data>
   <data name="openProgramsAndFeaturesToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;「プログラムと機能」を開く</value>
+    <value>「プログラムと機能」を開く(&amp;P)</value>
   </data>
   <data name="openSystemRestoreToolStripMenuItem.Text" xml:space="preserve">
     <value>「システム回復」を開く</value>
   </data>
   <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;設定</value>
+    <value>設定(&amp;S)</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;ツール</value>
+    <value>ツール(&amp;T)</value>
   </data>
   <data name="openHelpToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;ヘルプを開く</value>
+    <value>ヘルプを開く(&amp;H)</value>
   </data>
   <data name="startSetupWizardToolStripMenuItem.Text" xml:space="preserve">
     <value>セットアップウィザードを開始</value>
@@ -568,13 +568,13 @@
     <value>BCUninstallerをアンインストール</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;詳細</value>
+    <value>バージョン情報(&amp;A)</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;ヘルプ</value>
+    <value>ヘルプ(&amp;H)</value>
   </data>
   <data name="debugToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;デバッグウィンドウを開く</value>
+    <value>デバッグウィンドウを開く(&amp;D)</value>
   </data>
   <data name="createBackupFileDialog.Filter" xml:space="preserve">
     <value>レジストリファイル|*.reg</value>
@@ -587,5 +587,17 @@
   </data>
   <data name="createRestorePointToolStripMenuItem.Text" xml:space="preserve">
     <value>新しい復元ポイントを作成</value>
+  </data>
+  <data name="olvColumnCertificate.Text" xml:space="preserve">
+    <value>証明書</value>
+  </data>
+  <data name="olvColumnIntegrity.Text" xml:space="preserve">
+    <value>整合性</value>
+  </data>
+  <data name="autosizeAllColumnsToolStripMenuItem.Text" xml:space="preserve">
+    <value>すべての列幅を自動調整</value>
+  </data>
+  <data name="viewInvalidToolStripMenuItem.Text" xml:space="preserve">
+    <value>無効な項目を表示</value>
   </data>
 </root>
