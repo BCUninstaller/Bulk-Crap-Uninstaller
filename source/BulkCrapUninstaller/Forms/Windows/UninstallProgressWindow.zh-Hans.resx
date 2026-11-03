@@ -154,8 +154,8 @@
     <value>属性</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>选中的卸载程序现在将一次执行一个。
-如果进程似乎被卡住了，你可以点击“跳过”按钮，以避免等待它完成。如果卸载程序崩溃或启动新进程但未关闭它，则可能发生这种情况。</value>
+    <value>所选的卸载程序将依次执行。
+如果某个卸载过程看似卡住，您可以点击“跳过”按钮，无需等待其完成。当卸载程序崩溃，或者启动了新进程却未将其关闭时，可能会出现这种情况。</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
     <value>运行卸载程序</value>

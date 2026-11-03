@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="detailsToolStripMenuItem.Text" xml:space="preserve">
-    <value>详细信息</value>
+    <value>详细信息(&amp;D)</value>
   </data>
   <data name="copyToClipboardToolStripMenuItem.Text" xml:space="preserve">
-    <value>复制到剪贴板</value>
+    <value>复制到剪贴板(&amp;C)</value>
   </data>
   <data name="openToolStripMenuItem.Text" xml:space="preserve">
-    <value>打开</value>
+    <value>打开(&amp;O)</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>残余卸载</value>
+    <value>残留移除</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>卸载后留下的文件及注册表项列表</value>
+    <value>卸载后残留的文件和/或注册表项列表</value>
   </data>
   <data name="headerConfInfo.Text" xml:space="preserve">
-    <value>检测这些残余是一个复杂的过程，可能会出错。因此，所有项目都会被给予一个置信度等级，最终决定权留给用户。有好和非常好置信度的项目通常可以安全删除，但你仍应仔细检查。</value>
+    <value>检测这些残留项是一个复杂的过程，可能会出现误判。因此，系统会为每个项目分配一个置信度评分，最终决定权则交由用户。置信度为“良好”或“非常好”的项目通常可以安全删除，但建议您在操作前仍进行二次确认。</value>
   </data>
   <data name="headerConfTitle.Text" xml:space="preserve">
     <value>置信度等级</value>
   </data>
   <data name="headerIntro.Text" xml:space="preserve">
-    <value>以下项目似乎是由其卸载程序留下的。某些卸载程序可能无法删除应用程序某些部分，从而导致驱动器容量占用增加。也就是说，这些项目大多是应用程序设置，占用空间小，无害。</value>
+    <value>以下项目似乎是卸载程序遗留下来的。有些卸载程序可能无法完全清除应用程序的所有组件，从而占用磁盘空间。不过，这些遗留项大多属于应用程序设置，所占空间极小，且不会造成任何危害。</value>
   </data>
   <data name="olvColumnUninstallerName.Text" xml:space="preserve">
     <value>卸载程序名称</value>
@@ -151,13 +151,13 @@
     <value>项目路径</value>
   </data>
   <data name="checkBoxHideLowConfidence.Text" xml:space="preserve">
-    <value>隐藏低置信度项目</value>
+    <value>隐藏置信度较低的项目</value>
   </data>
   <data name="buttonExport.Text" xml:space="preserve">
     <value>导出...</value>
   </data>
   <data name="buttonAccept.Text" xml:space="preserve">
-    <value>删除选中项</value>
+    <value>删除所选</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>取消</value>

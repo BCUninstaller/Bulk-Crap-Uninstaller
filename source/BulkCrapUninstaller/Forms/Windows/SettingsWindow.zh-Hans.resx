@@ -131,7 +131,7 @@
     <comment>Switches colors to be better for color-blind people</comment>
   </data>
   <data name="checkBoxDpiaware.Text" xml:space="preserve">
-    <value>启用DPI感知界面缩放</value>
+    <value>启用 DPI 感知界面缩放</value>
   </data>
   <data name="groupBoxMisc.Text" xml:space="preserve">
     <value>杂项</value>
@@ -185,9 +185,9 @@
     <value>启用外部应用程序的执行</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>你可以指定将在卸载前后运行的命令。一行一个命令，执行时就像使用"运行..."对话框一样。
+    <value>您可以指定在卸载前后运行的命令。每行代表一条命令，其执行方式与通过“运行...”对话框执行命令相同。
 
-BCU将等待当前运行的命令完成后再执行下一个命令。</value>
+BCU 会等待当前命令执行完毕后，再执行下一条命令。</value>
   </data>
   <data name="groupBoxExternal.Text" xml:space="preserve">
     <value>外部应用程序</value>
@@ -208,19 +208,19 @@ BCU将等待当前运行的命令完成后再执行下一个命令。</value>
     <value>卸载</value>
   </data>
   <data name="labelWinUpdateInfo.Text" xml:space="preserve">
-    <value>使用WUA检测Windows更新，速度很慢。可能需要几分钟才能完成。</value>
+    <value>Windows 更新的检测过程使用 WUA，该过程速度较慢，可能需要几分钟才能完成。</value>
   </data>
   <data name="checkBoxScanWinUpdates.Text" xml:space="preserve">
     <value>Windows更新</value>
   </data>
   <data name="labelWinFeatureInfo.Text" xml:space="preserve">
-    <value>使用WMI检测Windows功能，在某些系统上可能会缓慢甚至失败（通常表示系统损坏）。</value>
+    <value>“检测 Windows 功能”功能使用 WMI；在某些系统上，该过程可能会很缓慢，甚至会失败（这通常表明系统已损坏）。</value>
   </data>
   <data name="checkBoxScanWinFeatures.Text" xml:space="preserve">
-    <value>Windows功能</value>
+    <value>Windows 功能</value>
   </data>
   <data name="checkBoxScanStoreApps.Text" xml:space="preserve">
-    <value>Windows商店应用</value>
+    <value>Windows 商店应用</value>
   </data>
   <data name="checkBoxScanSteam.Text" xml:space="preserve">
     <value>Steam</value>
@@ -263,11 +263,11 @@ BCU将等待当前运行的命令完成后再执行下一个命令。</value>
     <value>尝试自动检测自定义安装文件夹</value>
   </data>
   <data name="labelProgramFolders.Text" xml:space="preserve">
-    <value>你可以指定安装应用程序的自定义文件夹（例如D:\applications）。BCU将使用这些文件夹来搜索卸载遗留问题、未注册的应用程序和其他一些内容。虽然没有必要，但列出这些文件夹可以让BCU更好地工作。
+    <value>您可以指定安装应用程序的自定义文件夹（例如 D:\Applications）。BCU 将会扫描这些文件夹，以查找卸载后的残留文件、未注册的应用程序以及其他相关内容。虽然并非强制要求，但提供这些文件夹列表有助于 BCU 更高效地工作。
 
-默认的Windows文件夹总是被扫描的，不需要将它们包含在此列表中。
+Windows 默认的文件夹会自动包含在扫描范围内，无需将其添加到此列表中。
 
-使用完整的目录路径，每行一个路径。无效路径和不存在的目录将被忽略。</value>
+请使用完整的目录路径，每行填写一个路径。无效路径或不存在的目录将被忽略。</value>
   </data>
   <data name="groupBoxProgramFolders.Text" xml:space="preserve">
     <value>程序安装文件夹</value>
@@ -282,10 +282,10 @@ BCU将等待当前运行的命令完成后再执行下一个命令。</value>
     <value>其他</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Bulk Crap Uninstaller设置</value>
+    <value>Bulk Crap Uninstaller 设置</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>在应用程序列表双击</value>
+    <value>在应用程序列表中双击</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>启动</value>

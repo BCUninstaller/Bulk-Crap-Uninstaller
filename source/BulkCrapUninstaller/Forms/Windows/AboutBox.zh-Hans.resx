@@ -121,22 +121,22 @@
     <value>BCUninstaller (Bulk Crap Uninstaller)</value>
   </data>
   <data name="labelVersion.Text" xml:space="preserve">
-    <value>版本:</value>
+    <value>版本：</value>
   </data>
   <data name="labelCopyright.Text" xml:space="preserve">
-    <value>版权</value>
+    <value>版权所有</value>
   </data>
   <data name="labelCompanyName.Text" xml:space="preserve">
     <value>创作者</value>
   </data>
   <data name="labelis64.Text" xml:space="preserve">
-    <value>64位:</value>
+    <value>64 位：</value>
   </data>
   <data name="labelPortable.Text" xml:space="preserve">
-    <value>安装版:</value>
+    <value>安装版：</value>
   </data>
   <data name="labelArchitecture.Text" xml:space="preserve">
-    <value>架构:</value>
+    <value>架构：</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>程序版本</value>
@@ -145,10 +145,10 @@
     <value>DotNetZip</value>
   </data>
   <data name="linkLabel9.Text" xml:space="preserve">
-    <value>es.exe (CLI for Everything)</value>
+    <value>es.exe (Everything 命令行界面)</value>
   </data>
   <data name="linkLabel3.Text" xml:space="preserve">
-    <value>Modern UI Icons</value>
+    <value>现代 UI 图标</value>
     <comment>Si "Modern UI Icons" significa "Iconos de Interfaz de Usuario Moderno" la traducción será "Iconos Modernos de Interface de Usuario"</comment>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
@@ -162,8 +162,7 @@
     <comment>1</comment>
   </data>
   <data name="linkLabel7.Text" xml:space="preserve">
-    <value>Task Scheduler Managed Wrapper</value>
-    <comment>?? If translation wanted: "Pacote de Gestão de Tarefas Agendadas"</comment>
+    <value>任务计划程序托管包装器</value>
   </data>
   <data name="linkLabel8.Text" xml:space="preserve">
     <value>TestStack.White</value>
@@ -181,9 +180,9 @@
     <value>开发者信息</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>翻译者</value>
+    <value>翻译人员</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>关于BCUninstaller (Bulk Crap Uninstaller)</value>
+    <value>关于 BCUninstaller (Bulk Crap Uninstaller)</value>
   </data>
 </root>
