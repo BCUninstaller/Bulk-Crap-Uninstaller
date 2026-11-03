@@ -127,9 +127,9 @@
     <value>关联到:</value>
   </data>
   <data name="labelInfo.Text" xml:space="preserve">
-    <value>这是可能与所选应用程序相关的应用程序列表。你可以通过选中它们将这些应用程序添加到卸载队列。</value>
+    <value>以下列表中的应用程序可能与您选择卸载的应用程序相关。您可以勾选这些应用程序，将它们加入卸载队列。</value>
   </data>
   <data name="labelInfo2.Text" xml:space="preserve">
-    <value>确保不要卸载其他应用程序工作需要的重要软件。</value>
+    <value>请确保不要卸载那些其他应用程序可能仍需依赖才能正常运行的重要软件。</value>
   </data>
 </root>

@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="labelInfo2.Text" xml:space="preserve">
-    <value>初始顺序取决于你的卸载设置，但可以通过拖动项目来更改。注意：如果启用同时卸载，BCU可能更改顺序。</value>
+    <value>初始顺序取决于您的卸载设置，但您可以通过拖拽项目来更改顺序。注意：如果启用了并发卸载功能，BCU 可能会改变卸载顺序。</value>
   </data>
   <data name="labelInfo.Text" xml:space="preserve">
-    <value>这是将卸载的应用程序列表，从上到下。如果取消选择“卸载”字段，则不会卸载应用程序。如果某个项目不能静默卸载，则不能选择</value>
+    <value>以下是将被卸载的应用程序列表，从上到下排列。如果取消勾选“卸载”项，则该应用程序将不会被卸载。如果某项不支持静默卸载，则无法对其进行勾选。</value>
   </data>
   <data name="buttonSmartSort.Text" xml:space="preserve">
     <value>智能排序</value>
