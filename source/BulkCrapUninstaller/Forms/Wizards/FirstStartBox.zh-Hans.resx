@@ -139,7 +139,7 @@
     <value>完成设置</value>
   </data>
   <data name="p5finishContact.Text" xml:space="preserve">
-    <value>现在可以开始使用BCUninstaller。如果你有任何问题或想建议一个新功能，请访问下面的链接。</value>
+    <value>现在您可以开始使用 BCUninstaller 了。如果您有任何疑问，或想提出新功能建议，请访问下方链接。</value>
   </data>
   <data name="p5LinkContact.Text" xml:space="preserve">
     <value>打开联系窗体</value>
@@ -157,22 +157,22 @@
     <value>网络访问</value>
   </data>
   <data name="p4netDesc.Text" xml:space="preserve">
-    <value>BCUninstaller会尝试连接到互联网，原因如下:</value>
+    <value>BCUninstaller 可能会出于以下原因尝试连接互联网：</value>
   </data>
   <data name="p4netDesc1.Text" xml:space="preserve">
-    <value>● 搜索应用程序更新。</value>
+    <value>● 搜索应用程序更新</value>
   </data>
   <data name="p4netDesc2.Text" xml:space="preserve">
-    <value>● 上传错误报告。</value>
+    <value>● 上传错误报告</value>
   </data>
   <data name="p4netDesc3.Text" xml:space="preserve">
-    <value>● 发送匿名使用情况统计信息。</value>
+    <value>● 发送匿名使用情况统计信息</value>
   </data>
   <data name="p4netDesc4.Text" xml:space="preserve">
-    <value>● 获取和上传应用程序评分</value>
+    <value>● 获取并上传应用评分</value>
   </data>
   <data name="p4netErrors.Text" xml:space="preserve">
-    <value>每次发生错误时，系统都会询问你是否要发送错误。通过检查BCUninstaller目录中相应的XML文件，可以检查错误和使用情况报告中发送的数据。发送的数据不与任何第三方共享。</value>
+    <value>每当发生错误时，系统都会询问您是否要发送错误报告。您可以通过查看 BCUninstaller 目录中相应的 XML 文件，来确认错误报告和使用情况报告中具体包含了哪些数据。所发送的数据不会与任何第三方共享。</value>
   </data>
   <data name="checkBoxUpdateSearch.Text" xml:space="preserve">
     <value>在应用程序启动时自动查找更新</value>
@@ -184,7 +184,7 @@
     <value>自动发送匿名使用情况统计信息</value>
   </data>
   <data name="p4netUsageAdd.Text" xml:space="preserve">
-    <value>发送这些统计信息将有助于改进BCUninstaller</value>
+    <value>发送这些统计数据将有助于改进 BCUninstaller。</value>
   </data>
   <data name="checkBoxRatings.Text" xml:space="preserve">
     <value>启用应用程序的用户评分</value>
@@ -193,13 +193,13 @@
     <value>已损坏的卸载程序</value>
   </data>
   <data name="pCorDesc.Text" xml:space="preserve">
-    <value>随着时间推移，你可能会发现一些应用程序会拒绝卸载，或者只是从大多数卸载管理器中消失。</value>
+    <value>随着时间推移，你可能会发现某些应用程序无法卸载，或者直接从大多数卸载管理工具中消失了。</value>
   </data>
   <data name="pCorViewInvalidTitle.Text" xml:space="preserve">
     <value>已损坏或丢失的卸载程序</value>
   </data>
   <data name="pCorViewInvalid.Text" xml:space="preserve">
-    <value>在某些情况下，卸载程序可能会损坏，导致无法卸载。BCUninstaller可以使用"手动卸载"选项轻松删除这些条目。</value>
+    <value>在某些情况下，卸载程序可能会损坏，导致无法执行卸载操作。BCUninstaller 可通过“手动卸载”选项轻松移除这些条目。</value>
   </data>
   <data name="checkBoxInvalidTest.Text" xml:space="preserve">
     <value>突出显示无效的卸载程序</value>
@@ -211,26 +211,26 @@
     <value>未注册的应用程序</value>
   </data>
   <data name="pCorOrphansMessage.Text" xml:space="preserve">
-    <value>有时，即使卸载后，整个应用程序也可能留在驱动器上。如果只删除卸载程序，也可能发生这种情况。</value>
+    <value>有时，即便应用程序已被卸载，其完整程序仍可能残留在硬盘上。如果仅删除了卸载程序，也可能会出现这种情况。</value>
   </data>
   <data name="checkBoxOrphans.Text" xml:space="preserve">
     <value>在列表中显示未注册的应用程序</value>
   </data>
   <data name="pCorOrphansComment.Text" xml:space="preserve">
-    <value>未注册的应用程序以红色标记。
-如果找不到原始的卸载程序，则必须使用“手动卸载”选项来删除它们。</value>
+    <value>未注册的应用程序以红色标示。
+如果找不到原有的卸载程序，则需使用“手动卸载”选项将其移除。</value>
   </data>
   <data name="p3advTitle.Text" xml:space="preserve">
     <value>高级用户</value>
   </data>
   <data name="p3advDesc.Text" xml:space="preserve">
-    <value>虽然BCUninstaller可以用作基本的卸载程序，但它的大部分功能都是针对高级用户的。小心行事！</value>
+    <value>虽然 BCUninstaller 可作为一款基础卸载工具使用，但其大部分功能是面向高级用户的。请谨慎操作！</value>
   </data>
   <data name="p3advSyscompTitle.Text" xml:space="preserve">
     <value>系统组件</value>
   </data>
   <data name="p3advSyscomp.Text" xml:space="preserve">
-    <value>标记为"系统组件"的应用程序对大多数基本卸载管理器都是隐藏的。此标记并不意味着应用程序是操作系统的一部分。</value>
+    <value>被标记为“系统组件”的应用程序在大多数常规卸载管理工具中是不可见的。此标记并不意味着该应用程序属于操作系统的一部分。</value>
   </data>
   <data name="checkBoxListSysComp.Text" xml:space="preserve">
     <value>显示标记为“系统组件”的卸载程序</value>
@@ -239,7 +239,7 @@
     <value>受保护的卸载程序</value>
   </data>
   <data name="p3advProtect.Text" xml:space="preserve">
-    <value>受保护的项目用"不要删除"标记，这意味着发布者不希望你删除它们。大型软件包经常使用此标记来阻止你卸载其各个部分。</value>
+    <value>受保护的项目会带有“不要移除”标记，这意味着发布者不希望你将其移除。大型软件包经常使用此标记，以防止你卸载其中的各个组成部分。</value>
   </data>
   <data name="checkBoxListProtected.Text" xml:space="preserve">
     <value>显示标记为"受保护"的卸载程序</value>
@@ -254,29 +254,29 @@
     <value>卸载程序列表视图</value>
   </data>
   <data name="p2viewDetail.Text" xml:space="preserve">
-    <value>在系统中找到的所有卸载程序都在主列表视图中。以下是浏览这些数据的一些方法:</value>
+    <value>您系统中找到的所有卸载程序均显示在主列表视图中。以下是浏览这些数据的一些方式：</value>
   </data>
   <data name="p1languageExtradetails.Text" xml:space="preserve">
-    <value>如果你愿意帮助将BCUninstaller翻译成你的语言，请单击下面的链接与我联系。非常感谢你的帮助！</value>
+    <value>如果您愿意协助将 BCUninstaller 翻译成您的语言，请点击下方链接与我联系。非常感谢您的帮助！</value>
   </data>
   <data name="p1linkLabelContact.Text" xml:space="preserve">
-    <value>打开联系窗体</value>
+    <value>打开联系表单</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>ulk crap</value>
     <comment>The missing B is in an image next to the text</comment>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>欢迎使用BCUninstaller</value>
+    <value>欢迎使用 BCUninstaller</value>
   </data>
   <data name="p2viewDetail1.Text" xml:space="preserve">
-    <value>●使用筛选器并搜索关键字（在所有列中）</value>
+    <value>● 使用筛选器并搜索关键字（在所有列中）</value>
   </data>
   <data name="p2viewDetail2.Text" xml:space="preserve">
-    <value>●按任意列对卸载程序排序。自由地重新安排列。</value>
+    <value>● 可按任意列对卸载程序进行排序并支持自由调整各列的排列顺序</value>
   </data>
   <data name="p2viewDetail3.Text" xml:space="preserve">
-    <value>●将相似卸载程序分组</value>
+    <value>● 将相似卸载程序分组</value>
   </data>
   <data name="checkBoxGroups.Text" xml:space="preserve">
     <value>分组显示卸载程序</value>
@@ -288,17 +288,17 @@
     <value>已验证卸载程序</value>
   </data>
   <data name="p2viewCerts.Text" xml:space="preserve">
-    <value>卸载程序可以使用相关机构颁发的证书进行签名。如果证书通过验证，则软件包未被更改，且信誉良好。</value>
+    <value>卸载程序可以使用由相关权威机构签发的证书进行签名。如果证书通过验证，则说明该软件包未被篡改，且具有可信度。</value>
   </data>
   <data name="checkBoxCertTest.Text" xml:space="preserve">
-    <value>突出显示已验证卸载程序</value>
+    <value>高亮显示已验证卸载程序</value>
   </data>
   <data name="p2viewAdd.Text" xml:space="preserve">
-    <value>已验证的卸载程序以绿色标记，未验证的卸载程序以蓝色标记。
-警告：验证可能需要很长时间。</value>
+    <value>已验证的卸载程序以绿色标记，未验证的则以蓝色标记。
+警告：验证过程可能需要较长时间。</value>
   </data>
   <data name="p1welcomeHeading.Text" xml:space="preserve">
-    <value>欢迎使用BCUninstaller!</value>
+    <value>欢迎使用 BCUninstaller!</value>
   </data>
   <data name="p1welcomeSubheading.Text" xml:space="preserve">
     <value>此向导将为你提供快速教程并帮助你配置应用程序。</value>
@@ -307,7 +307,7 @@
     <value>选择语言</value>
   </data>
   <data name="p1languageDesc.Text" xml:space="preserve">
-    <value>如果默认语言不正确，可以强制BCUninstaller使用特定的本地化。将重新启动以应用新语言。</value>
+    <value>如果默认语言不正确，您可以强制 BCUninstaller 使用特定的语言设置。程序将重启以应用新语言。</value>
   </data>
   <data name="buttonLanguageApply.Text" xml:space="preserve">
     <value>应用</value>
