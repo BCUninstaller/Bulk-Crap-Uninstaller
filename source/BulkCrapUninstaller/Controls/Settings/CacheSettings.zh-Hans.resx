@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>缓存可以大大减少搜索时间，但如果修改了应用程序，BCU可能不会注意到更改。 （例如大小）
-注意：要使设置生效，可能需要重启BCU。</value>
+    <value>缓存可以大幅缩短搜索时间；但如果应用程序发生了变更（例如大小改变），BCU 可能无法察觉到这些变化。
+注意：若要使这些设置生效，可能需要重启 BCU。</value>
   </data>
   <data name="checkBoxCerts.Text" xml:space="preserve">
     <value>缓存应用程序证书扫描结果</value>

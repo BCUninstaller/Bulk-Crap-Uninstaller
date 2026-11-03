@@ -139,7 +139,10 @@
     <value>卸载前创建还原点</value>
   </data>
   <data name="checkBoxRestorePoint.ToolTip" xml:space="preserve">
-    <value>你可以创建一个系统还原点来备份注册表、一些设置和文件。建议在删除驱动程序和重要的系统应用程序之前创建一个还原点。</value>
+    <value>您可以创建一个系统还原点，以备份注册表、部分设置及文件。
+建议在卸载驱动程序或重要的系统应用程序之前，先创建一个还原点。
+
+如果此选项呈灰色显示，则说明“还原点”功能已被禁用或不可用。在此情况下，系统将无法创建任何还原点！</value>
   </data>
   <data name="checkBoxBatchSortQuiet.Text" xml:space="preserve">
     <value>智能卸载程序排序</value>
@@ -166,7 +169,7 @@
     <value>如果在等待用户输入时卡住自动终止</value>
   </data>
   <data name="checkBoxAutoDaemon.Text" xml:space="preserve">
-    <value>监视“静默”卸载程序的弹出窗口或其他停滞并使其自动化（运行自动化程序守护进程）</value>
+    <value>监测“静默”卸载程序是否出现弹窗或其他卡顿情况并对其进行自动化处理（运行自动化守护进程）</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>静默卸载</value>

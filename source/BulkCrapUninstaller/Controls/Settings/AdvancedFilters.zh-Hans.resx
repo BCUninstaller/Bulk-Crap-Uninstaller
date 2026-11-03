@@ -130,10 +130,10 @@
     <value>另存为...</value>
   </data>
   <data name="toolStripButtonSaveUlDef.Text" xml:space="preserve">
-    <value>另存为预设</value>
+    <value>另存为默认</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
-    <value>删除预设</value>
+    <value>删除默认</value>
   </data>
   <data name="saveUlDialog.Filter" xml:space="preserve">
     <value>卸载列表|*.bcul</value>
