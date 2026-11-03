@@ -121,7 +121,7 @@
     <value>安装目录...</value>
   </data>
   <data name="openFileDialog1.Title" xml:space="preserve">
-    <value>选择属于应用程序的所有文件</value>
+    <value>选择属于该应用程序的任何文件</value>
   </data>
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>所有文件|*.*</value>

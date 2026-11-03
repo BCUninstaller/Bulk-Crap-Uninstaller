@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="olvColumnDisplayName.Text" xml:space="preserve">
-    <value>程序名</value>
+    <value>名称</value>
   </data>
   <data name="advancedApplicationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>默认筛选器</value>
+    <value>默认筛选器(&amp;D)</value>
   </data>
   <data name="advancedClipCopyToolStripMenuItem.Text" xml:space="preserve">
     <value>高级选项...</value>
   </data>
   <data name="advancedOperationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>高级操作</value>
+    <value>高级操作(&amp;A)</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>关于</value>
+    <value>关于(&amp;A)</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Bulk Crap Uninstaller</value>
@@ -151,19 +151,19 @@
     <value>大小</value>
   </data>
   <data name="olvColumnStartup.Text" xml:space="preserve">
-    <value>开机启动项</value>
+    <value>开机启动</value>
   </data>
   <data name="olvColumnIs64.Text" xml:space="preserve">
-    <value>64位</value>
+    <value>64 位</value>
   </data>
   <data name="olvColumnUninstallString.Text" xml:space="preserve">
     <value>卸载命令</value>
   </data>
   <data name="olvColumnAbout.Text" xml:space="preserve">
-    <value>关于URL</value>
+    <value>关于 URL</value>
   </data>
   <data name="olvColumnInstallSource.Text" xml:space="preserve">
-    <value>安装源</value>
+    <value>安装来源</value>
   </data>
   <data name="olvColumnInstallLocation.Text" xml:space="preserve">
     <value>安装位置</value>
@@ -199,7 +199,7 @@
     <value>反向选择</value>
   </data>
   <data name="toolStripButtonTarget.Text" xml:space="preserve">
-    <value>通过窗口,目录,或文件卸载...</value>
+    <value>按窗口、目录或文件进行卸载…</value>
   </data>
   <data name="toolStripButtonUninstall.Text" xml:space="preserve">
     <value>卸载</value>
@@ -229,25 +229,25 @@
     <value>搜索</value>
   </data>
   <data name="uninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>卸载</value>
+    <value>卸载(&amp;U)</value>
   </data>
   <data name="quietUninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>静默卸载</value>
+    <value>静默卸载(&amp;Q)</value>
   </data>
   <data name="manualUninstallToolStripMenuItem1.Text" xml:space="preserve">
-    <value>手动卸载</value>
+    <value>手动卸载(&amp;M)</value>
   </data>
   <data name="msiInstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>安装或配置(/i)</value>
+    <value>安装或配置(/I)(&amp;I)</value>
   </data>
   <data name="msiUninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>卸载(/X)</value>
+    <value>卸载(/X)(&amp;U)</value>
   </data>
   <data name="msiQuietUninstallContextMenuStripItem.Text" xml:space="preserve">
-    <value>静默卸载(/X /qb)</value>
+    <value>静默卸载(/X /qb)(&amp;Q)</value>
   </data>
   <data name="uninstallUsingMsiExecContextMenuStripItem.Text" xml:space="preserve">
-    <value>使用&amp;MsiExec卸载...</value>
+    <value>使用 MsiExec 卸载(&amp;M)...</value>
   </data>
   <data name="excludeToolStripMenuItem.Text" xml:space="preserve">
     <value>排除</value>
@@ -262,7 +262,7 @@
     <value>高级...</value>
   </data>
   <data name="fullInformationCopyContextMenuStripItem.Text" xml:space="preserve">
-    <value>完整信息</value>
+    <value>完整信息(&amp;F)</value>
   </data>
   <data name="programNameCopyContextMenuStripItem.Text" xml:space="preserve">
     <value>程序名称</value>
@@ -277,28 +277,28 @@
     <value>卸载字符串</value>
   </data>
   <data name="copyToClipboardContextMenuStripItem.Text" xml:space="preserve">
-    <value>复制到剪贴板</value>
+    <value>复制到剪贴板(&amp;C)</value>
   </data>
   <data name="deleteRegistryEntryContextMenuStripItem.Text" xml:space="preserve">
-    <value>删除注册表项</value>
+    <value>删除注册表项(&amp;D)</value>
   </data>
   <data name="renameContextMenuStripItem.Text" xml:space="preserve">
-    <value>重命名</value>
+    <value>重命名(&amp;R)</value>
   </data>
   <data name="installLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>安装位置</value>
+    <value>安装位置(&amp;I)</value>
   </data>
   <data name="uninstallerLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>卸载程序位置</value>
+    <value>卸载程序位置(&amp;U)</value>
   </data>
   <data name="sourceLocationOpenInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>源位置</value>
+    <value>来源位置(&amp;S)</value>
   </data>
   <data name="openInExplorerContextMenuStripItem.Text" xml:space="preserve">
-    <value>在&amp;资源管理器中打开...</value>
+    <value>在资源管理器中打开(&amp;E)...</value>
   </data>
   <data name="openWebPageContextMenuStripItem.Text" xml:space="preserve">
-    <value>打开&amp;网页</value>
+    <value>打开网页(&amp;W)</value>
   </data>
   <data name="toolStripMenuItem15.Text" xml:space="preserve">
     <value>Google</value>
@@ -322,40 +322,40 @@
     <value>FileHippo.com</value>
   </data>
   <data name="lookUpOnlineToolStripMenuItem.Text" xml:space="preserve">
-    <value>联机搜索</value>
+    <value>在线搜索(&amp;S)</value>
   </data>
   <data name="rateToolStripMenuItem.Text" xml:space="preserve">
     <value>评分...</value>
   </data>
   <data name="propertiesContextMenuStripItem.Text" xml:space="preserve">
-    <value>属性</value>
+    <value>属性(&amp;P)</value>
   </data>
   <data name="exportDialog.Filter" xml:space="preserve">
-    <value>XML文件|*.xml</value>
+    <value>XML 文件|*.xml</value>
   </data>
   <data name="exportDialog.Title" xml:space="preserve">
     <value>导出选中的卸载程序属性</value>
   </data>
   <data name="reloadUninstallersToolStripMenuItem.Text" xml:space="preserve">
-    <value>重新加载卸载程序</value>
+    <value>重新加载卸载程序(&amp;R)</value>
   </data>
   <data name="loadUninstallerListToolStripMenuItem.Text" xml:space="preserve">
-    <value>打开卸载程序列表...</value>
+    <value>打开卸载程序列表(&amp;O)...</value>
   </data>
   <data name="exportSelectedToolStripMenuItem.Text" xml:space="preserve">
-    <value>导出选中卸载程序数据...</value>
+    <value>导出选中卸载程序数据(&amp;E)...</value>
   </data>
   <data name="exportToABatchUninstallScriptToolStripMenuItem.Text" xml:space="preserve">
     <value>导出到批量卸载脚本...</value>
   </data>
   <data name="exportStoreAppsToPowerShellRemoveScriptToolStripMenuItem.Text" xml:space="preserve">
-    <value>为商店应用创建PowerShell删除脚本...</value>
+    <value>为商店应用创建 PowerShell 删除脚本...</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>退出</value>
+    <value>退出(&amp;X)</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>文件</value>
+    <value>文件(&amp;F)</value>
   </data>
   <data name="showColorLegendToolStripMenuItem.Text" xml:space="preserve">
     <value>显示颜色图例</value>
@@ -364,28 +364,31 @@
     <value>显示工具栏</value>
   </data>
   <data name="showTreemapToolStripMenuItem.Text" xml:space="preserve">
-    <value>显示树状矩形图</value>
+    <value>显示树状矩形图(&amp;M)</value>
   </data>
   <data name="displaySettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>显示设置侧边栏</value>
+    <value>显示设置侧边栏(&amp;S)</value>
   </data>
   <data name="displayStatusbarToolStripMenuItem.Text" xml:space="preserve">
-    <value>显示状态栏</value>
+    <value>显示状态栏(&amp;B)</value>
   </data>
   <data name="useSystemThemeToolStripMenuItem.Text" xml:space="preserve">
-    <value>使用系统主题</value>
+    <value>使用系统主题(&amp;U)</value>
+  </data>
+  <data name="autosizeAllColumnsToolStripMenuItem.Text" xml:space="preserve">
+    <value>自动调整所有列的大小</value>
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
-    <value>视图</value>
+    <value>视图(&amp;V)</value>
   </data>
   <data name="basicApplicationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>仅基本应用</value>
+    <value>仅基本应用(&amp;B)</value>
   </data>
   <data name="systemComponentsToolStripMenuItem.Text" xml:space="preserve">
     <value>仅系统组件</value>
   </data>
   <data name="everythingToolStripMenuItem.Text" xml:space="preserve">
-    <value>所有</value>
+    <value>所有(&amp;E)</value>
   </data>
   <data name="automaticallyStartedToolStripMenuItem.Text" xml:space="preserve">
     <value>仅自动启动</value>
@@ -403,31 +406,31 @@
     <value>查看更新</value>
   </data>
   <data name="viewWindowsFeaturesToolStripMenuItem.Text" xml:space="preserve">
-    <value>查看Windows功能</value>
+    <value>查看 Windows 功能</value>
   </data>
   <data name="viewWindowsStoreAppsToolStripMenuItem.Text" xml:space="preserve">
-    <value>查看Windows商店应用</value>
+    <value>查看 Windows 商店应用</value>
   </data>
   <data name="searchToolStripMenuItem.Text" xml:space="preserve">
     <value>搜索...</value>
   </data>
   <data name="filteringToolStripMenuItem.Text" xml:space="preserve">
-    <value>快速筛选</value>
+    <value>快速筛选(&amp;Q)</value>
   </data>
   <data name="uninstallToolStripMenuItem.Text" xml:space="preserve">
-    <value>卸载</value>
+    <value>卸载(&amp;U)</value>
   </data>
   <data name="quietUninstallToolStripMenuItem.Text" xml:space="preserve">
-    <value>静默卸载</value>
+    <value>静默卸载(&amp;Q)</value>
   </data>
   <data name="modifyToolStripMenuItem.Text" xml:space="preserve">
     <value>修改</value>
   </data>
   <data name="copyFullInformationToolStripMenuItem.Text" xml:space="preserve">
-    <value>完整信息</value>
+    <value>完整信息(&amp;F)</value>
   </data>
   <data name="toolStripMenuItem10.Text" xml:space="preserve">
-    <value>程序名</value>
+    <value>程序名名称</value>
   </data>
   <data name="toolStripMenuItem11.Text" xml:space="preserve">
     <value>产品代码/GUID</value>
@@ -439,22 +442,22 @@
     <value>卸载字符串</value>
   </data>
   <data name="toolStripMenuItem8.Text" xml:space="preserve">
-    <value>复制到剪贴板</value>
+    <value>复制到剪贴板(&amp;C)</value>
   </data>
   <data name="toolStripMenuItem5.Text" xml:space="preserve">
-    <value>安装位置</value>
+    <value>安装位置(&amp;I)</value>
   </data>
   <data name="toolStripMenuItem6.Text" xml:space="preserve">
-    <value>卸载位置</value>
+    <value>卸载位置(&amp;U)</value>
   </data>
   <data name="toolStripMenuItem7.Text" xml:space="preserve">
-    <value>源位置</value>
+    <value>来源位置(&amp;S)</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>在资源管理器中打开</value>
+    <value>在资源管理器中打开(&amp;E)</value>
   </data>
   <data name="toolStripMenuItem14.Text" xml:space="preserve">
-    <value>打开网页</value>
+    <value>打开网页(&amp;W)</value>
   </data>
   <data name="googleToolStripMenuItem.Text" xml:space="preserve">
     <value>Google</value>
@@ -478,46 +481,46 @@
     <value>FileHippo.com</value>
   </data>
   <data name="onlineSearchToolStripMenuItem.Text" xml:space="preserve">
-    <value>联机搜索</value>
+    <value>在线搜索(&amp;S)</value>
   </data>
   <data name="rateToolStripMenuItem1.Text" xml:space="preserve">
     <value>评分...</value>
   </data>
   <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
-    <value>显示属性</value>
+    <value>显示属性(&amp;P)</value>
   </data>
   <data name="basicOperationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>基本操作</value>
+    <value>基本操作(&amp;B)</value>
   </data>
   <data name="manualUninstallToolStripMenuItem.Text" xml:space="preserve">
-    <value>手动卸载</value>
+    <value>手动卸载(&amp;M)</value>
   </data>
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
-    <value>安装或配置(/I)</value>
+    <value>安装或配置(/I)(&amp;I)</value>
   </data>
   <data name="toolStripMenuItem3.Text" xml:space="preserve">
-    <value>卸载(/X)</value>
+    <value>卸载(/X)(&amp;I)</value>
   </data>
   <data name="toolStripMenuItem4.Text" xml:space="preserve">
-    <value>静默卸载(/X /qb)</value>
+    <value>静默卸载(/X /qb)(&amp;Q)</value>
   </data>
   <data name="msiUninstalltoolStripMenuItem.Text" xml:space="preserve">
-    <value>使用MsiExec卸载</value>
+    <value>使用 MsiExec 卸载(&amp;U)</value>
   </data>
   <data name="renameToolStripMenuItem.Text" xml:space="preserve">
-    <value>重命名...</value>
+    <value>重命名(&amp;R)...</value>
   </data>
   <data name="disableAutostartToolStripMenuItem.Text" xml:space="preserve">
     <value>禁用自动启动</value>
   </data>
   <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>删除注册表键</value>
+    <value>删除注册表键(&amp;D)</value>
   </data>
   <data name="createBackupToolStripMenuItem.Text" xml:space="preserve">
-    <value>创建备份...</value>
+    <value>创建备份(&amp;B)...</value>
   </data>
   <data name="openKeyInRegeditToolStripMenuItem.Text" xml:space="preserve">
-    <value>在Regedit中打开键</value>
+    <value>在注册表中打开键(&amp;O)</value>
   </data>
   <data name="takeOwnershipToolStripMenuItem.Text" xml:space="preserve">
     <value>取得所有权</value>
@@ -526,10 +529,10 @@
     <value>打开开机启动项管理器</value>
   </data>
   <data name="cleanUpProgramFilesToolStripMenuItem.Text" xml:space="preserve">
-    <value>清理"Program Files"文件夹</value>
+    <value>清理"Program Files"文件夹(&amp;C)</value>
   </data>
   <data name="targetMenuItem.Text" xml:space="preserve">
-    <value>通过窗口,目录,或文件卸载...</value>
+    <value>按窗口、目录或文件进行卸载...</value>
   </data>
   <data name="uninstallFromDirectoryToolStripMenuItem.Text" xml:space="preserve">
     <value>从目录卸载...</value>
@@ -541,25 +544,25 @@
     <value>启动硬盘清理</value>
   </data>
   <data name="tryToInstallNETV35ToolStripMenuItem.Text" xml:space="preserve">
-    <value>安装.Net v3.5(添加功能)</value>
+    <value>安装 .Net v3.5(添加功能)</value>
   </data>
   <data name="createRestorePointToolStripMenuItem.Text" xml:space="preserve">
     <value>创建新还原点</value>
   </data>
   <data name="openProgramsAndFeaturesToolStripMenuItem.Text" xml:space="preserve">
-    <value>打开"应用和功能"</value>
+    <value>打开"应用和功能"(&amp;P)</value>
   </data>
   <data name="openSystemRestoreToolStripMenuItem.Text" xml:space="preserve">
     <value>打开"系统还原"</value>
   </data>
   <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>设置</value>
+    <value>设置(&amp;S)</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>工具</value>
+    <value>工具(&amp;T)</value>
   </data>
   <data name="openHelpToolStripMenuItem.Text" xml:space="preserve">
-    <value>打开帮助</value>
+    <value>打开帮助(&amp;H)</value>
   </data>
   <data name="startSetupWizardToolStripMenuItem.Text" xml:space="preserve">
     <value>启动设置向导</value>
@@ -574,13 +577,13 @@
     <value>重置设置</value>
   </data>
   <data name="uninstallBCUninstallToolstripMenuItem.Text" xml:space="preserve">
-    <value>卸载BCUninstaller</value>
+    <value>卸载 BCUninstaller</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>帮助</value>
+    <value>帮助(&amp;H)</value>
   </data>
   <data name="debugToolStripMenuItem.Text" xml:space="preserve">
-    <value>打开调试窗口</value>
+    <value>打开调试窗口(&amp;D)</value>
   </data>
   <data name="createBackupFileDialog.Filter" xml:space="preserve">
     <value>注册表文件|*.reg</value>

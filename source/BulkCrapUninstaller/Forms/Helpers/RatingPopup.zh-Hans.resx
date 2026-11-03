@@ -121,16 +121,16 @@
     <value>取消</value>
   </data>
   <data name="buttonGood.Text" xml:space="preserve">
-    <value>实用 | 好品质</value>
+    <value>有用 | 质量良好</value>
   </data>
   <data name="buttonNormal.Text" xml:space="preserve">
-    <value>有问题 | 坏品质</value>
+    <value>存疑 | 质量不佳</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>评分</value>
   </data>
   <data name="buttonBad.Text" xml:space="preserve">
-    <value>垃圾 | 潜在危险</value>
+    <value>垃圾 | 具有潜在危险</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>与其他用户分享评分</value>

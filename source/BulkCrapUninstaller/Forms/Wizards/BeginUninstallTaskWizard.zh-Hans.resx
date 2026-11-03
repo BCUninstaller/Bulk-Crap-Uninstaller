@@ -202,7 +202,7 @@
     <value>开始卸载</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>开始卸载前，请确保以下信息正确无误。这是最后的机会了！</value>
+    <value>在开始卸载之前，请确保以下信息准确无误。这是最后的机会！</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>开始新的卸载任务</value>

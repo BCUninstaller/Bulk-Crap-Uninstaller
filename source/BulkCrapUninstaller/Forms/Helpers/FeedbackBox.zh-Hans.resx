@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="p1welcomeHeading.Text" xml:space="preserve">
-    <value>感谢你使用BCUninstaller!</value>
+    <value>感谢你使用 BCUninstaller!</value>
   </data>
   <data name="p1welcomeSubheading.Text" xml:space="preserve">
-    <value>如果你觉得这个免费的开源工具有用，请考虑花一分钟帮忙！告诉你的朋友，在社交媒体上分享，给予反馈——一切都很重要！</value>
+    <value>如果您觉得这款免费开源工具对您有所帮助，不妨花点时间支持一下！您可以向朋友推荐它，在社交媒体上分享，或者提供反馈 —— 每一份支持都非常有意义！</value>
   </data>
   <data name="buttonSendFeedback2.Text" xml:space="preserve">
     <value>发送反馈</value>
   </data>
   <data name="buttonRate.Text" xml:space="preserve">
-    <value>评分(在页面底部)</value>
+    <value>评分（在页面底部）</value>
   </data>
   <data name="buttonTwitter.Text" xml:space="preserve">
-    <value>在Twitter上分享</value>
+    <value>在 X 上分享</value>
   </data>
   <data name="p1FeedbackHeading.Text" xml:space="preserve">
     <value>有什么问题或功能缺失吗？</value>
   </data>
   <data name="p1FeedbackDesc.Text" xml:space="preserve">
-    <value>如果你对BCU有任何问题，或者你想建议新功能，请查看以下链接:</value>
+    <value>如果您在使用 BCU 时遇到任何问题，或者想提出新功能建议，请查看以下链接：</value>
   </data>
   <data name="buttonSubmitGithub.Text" xml:space="preserve">
-    <value>在GitHub上提交（需要帐户）</value>
+    <value>在 GitHub 上提交（需要帐户）</value>
   </data>
   <data name="buttonSendFeedback.Text" xml:space="preserve">
     <value>发送反馈</value>
@@ -148,16 +148,16 @@
     <value>你想帮忙吗?</value>
   </data>
   <data name="p1HelpDesc.Text" xml:space="preserve">
-    <value>不是程序员也可以帮忙！你可以捐款来加速更新，或者把BCU翻译成你的母语。非常感谢所有的帮助，不管有多小！</value>
+    <value>即使不是程序员，也能提供帮助！您可以捐赠以加快更新进度，或者将 BCU 翻译成您的母语。无论贡献大小，我们都非常感激！</value>
   </data>
   <data name="buttonTranslate.Text" xml:space="preserve">
-    <value>翻译BCU</value>
+    <value>翻译 BCU</value>
   </data>
   <data name="buttonIssues.Text" xml:space="preserve">
-    <value>Github上的Issue</value>
+    <value>GitHub 上的问题</value>
   </data>
   <data name="checkBoxNeverShow.Text" xml:space="preserve">
-    <value>不再显示这个窗口</value>
+    <value>不再显示该窗口</value>
   </data>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>关闭</value>

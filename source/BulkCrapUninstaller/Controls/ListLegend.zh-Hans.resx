@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="labelWinFeature.Text" xml:space="preserve">
-    <value>Windows功能</value>
+    <value>Windows 功能</value>
   </data>
   <data name="labelOrphaned.Text" xml:space="preserve">
     <value>未注册的应用程序</value>
   </data>
   <data name="labelInvalid.Text" xml:space="preserve">
-    <value>卸载程序丢失</value>
+    <value>缺少卸载程序</value>
   </data>
   <data name="labelUnverified.Text" xml:space="preserve">
     <value>未验证的证书</value>
@@ -136,6 +136,6 @@
     <value>颜色图例</value>
   </data>
   <data name="labelStoreApp.Text" xml:space="preserve">
-    <value>Windows商店应用</value>
+    <value>Windows 商店应用</value>
   </data>
 </root>

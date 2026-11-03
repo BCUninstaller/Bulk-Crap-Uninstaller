@@ -121,7 +121,7 @@
     <value>插入...</value>
   </data>
   <data name="checkBoxUnescape.Text" xml:space="preserve">
-    <value>反转义</value>
+    <value>反转转义</value>
   </data>
   <data name="buttonHelp.Text" xml:space="preserve">
     <value>帮助</value>
