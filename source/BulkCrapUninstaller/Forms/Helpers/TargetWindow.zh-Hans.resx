@@ -124,14 +124,14 @@
     <value>使用安装文件夹或程序文件选择</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>根据某个应用程序的窗口、快捷方式、安装位置或.exe文件查找并卸载该应用程序。</value>
+    <value>根据应用程序的某个窗口、快捷方式、安装位置或 .exe 文件，找到并卸载该应用程序。</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>注意:确保你选择的所有文件都在应用程序的安装目录中。
+    <value>注意：请确保所选文件位于应用程序的安装目录内。
 
-你可以选择一个包含多个应用程序的目录来卸载它们。</value>
+您可以选择一个包含多个应用程序的目录，以便将它们全部卸载。</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>强制删除应用程序</value>
+    <value>锁定应用程序</value>
   </data>
 </root>

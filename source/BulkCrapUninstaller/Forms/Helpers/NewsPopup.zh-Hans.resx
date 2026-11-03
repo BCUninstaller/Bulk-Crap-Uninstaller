@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label3.Text" xml:space="preserve">
-    <value>捐款帮助我保持对这个项目的兴趣，以及支付代码签名证书,托管和其他必需的费用。</value>
+    <value>捐赠有助于让我保持对该项目的兴趣，同时也能用于支付代码签名证书、托管服务及其他必要开支。</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
-    <value>查看发行说明和更新日志</value>
+    <value>查看发布说明和更新日志</value>
   </data>
   <data name="linkLabel2.Text" xml:space="preserve">
     <value>查看源代码或贡献</value>
@@ -139,7 +139,7 @@
     <value>发送反馈/联系开发者</value>
   </data>
   <data name="linkLabel7.Text" xml:space="preserve">
-    <value>捐款(PayPal,Bitcoin,Steam礼物)</value>
+    <value>捐赠（PayPal、比特币、Steam 礼物）</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>(单击任意位置关闭此对话框)</value>
