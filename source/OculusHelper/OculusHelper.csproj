@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 
@@ -13,6 +13,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-		<PackageReference Include="System.ServiceProcess.ServiceController" Version="[8.*,9)" />
+		<PackageReference Include="System.ServiceProcess.ServiceController" Version="[10.*,11)" />
 	</ItemGroup>
 </Project>

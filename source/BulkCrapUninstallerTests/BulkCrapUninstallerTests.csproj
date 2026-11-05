@@ -10,8 +10,8 @@
 	<ProjectReference Include="..\UninstallTools\UninstallTools.csproj" />
   </ItemGroup>
   <ItemGroup>
-	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
-	<PackageReference Include="MSTest.TestAdapter" Version="4.4.0" />
-	<PackageReference Include="MSTest.TestFramework" Version="4.4.0" />
+	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+	<PackageReference Include="MSTest.TestAdapter" Version="4.5.2" />
+	<PackageReference Include="MSTest.TestFramework" Version="4.5.2" />
   </ItemGroup>
 </Project>
