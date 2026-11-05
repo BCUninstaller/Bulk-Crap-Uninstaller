@@ -4,6 +4,7 @@ namespace BulkCrapUninstaller.Forms
 {
     public partial class CustomNoteDialog : Form
     {
+        [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public string NoteText
         {
             get => txtNote.Text;

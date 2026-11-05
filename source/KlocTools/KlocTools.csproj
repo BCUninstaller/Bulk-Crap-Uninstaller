@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
 		<RootNamespace>Klocman</RootNamespace>
@@ -11,7 +11,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="System.Management" Version="[8.*,9)" />
+		<PackageReference Include="System.Management" Version="[10.*,11)" />
 	</ItemGroup>
 
 	<ItemGroup>

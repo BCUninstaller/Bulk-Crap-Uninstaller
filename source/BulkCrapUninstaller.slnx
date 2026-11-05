@@ -1,0 +1,135 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="../publish.bat" />
+    <File Path="../README.md" />
+    <File Path="app.manifest" />
+    <File Path="Directory.Build.props" />
+    <File Path="GlobalAssemblyInfo.cs" />
+    <File Path="Licence.licenseheader" />
+  </Folder>
+  <Project Path="BCU-console/BCU-console.csproj">
+    <BuildDependency Project="KlocTools/KlocTools.csproj" />
+    <BuildDependency Project="NBug_custom/NBug.csproj" />
+    <BuildDependency Project="NetSettingBinder/NetSettingBinder.csproj" />
+    <BuildDependency Project="ObjectListView/ObjectListView.csproj" />
+    <BuildDependency Project="OculusHelper/OculusHelper.csproj" />
+    <BuildDependency Project="PortableSettingsProvider/PortableSettingsProvider.csproj" />
+    <BuildDependency Project="ScriptHelper/ScriptHelper.csproj" />
+    <BuildDependency Project="SimpleTreeMap/SimpleTreeMap.csproj" />
+    <BuildDependency Project="SteamHelper/SteamHelper.csproj" />
+    <BuildDependency Project="StoreAppHelper/StoreAppHelper.csproj" />
+    <BuildDependency Project="UninstallerAutomatizer/UninstallerAutomatizer.csproj" />
+    <BuildDependency Project="UniversalUninstaller/UniversalUninstaller.csproj" />
+    <BuildDependency Project="WinUpdateHelper/WinUpdateHelper.csproj" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="BCU-launcher/BCU-launcher.vcxproj">
+    <Platform Project="Win32" />
+    <Build Solution="*|Any CPU" Project="false" />
+  </Project>
+  <Project Path="BulkCrapUninstaller/BulkCrapUninstaller.csproj">
+    <BuildDependency Project="BCU-console/BCU-console.csproj" />
+    <BuildDependency Project="OculusHelper/OculusHelper.csproj" />
+    <BuildDependency Project="ScriptHelper/ScriptHelper.csproj" />
+    <BuildDependency Project="SimpleTreeMap/SimpleTreeMap.csproj" />
+    <BuildDependency Project="SteamHelper/SteamHelper.csproj" />
+    <BuildDependency Project="StoreAppHelper/StoreAppHelper.csproj" />
+    <BuildDependency Project="UninstallerAutomatizer/UninstallerAutomatizer.csproj" />
+    <BuildDependency Project="UniversalUninstaller/UniversalUninstaller.csproj" />
+    <BuildDependency Project="WinUpdateHelper/WinUpdateHelper.csproj" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="BulkCrapUninstallerTests/BulkCrapUninstallerTests.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Build Solution="Release|*" Project="false" />
+  </Project>
+  <Project Path="HelperTools/HelperTools.shproj" />
+  <Project Path="KlocTools/KlocTools.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="NBug_custom/NBug.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="NetSettingBinder/NetSettingBinder.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="ObjectListView/ObjectListView.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OculusHelper/OculusHelper.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="PortableSettingsProvider/PortableSettingsProvider.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="ScriptHelper/ScriptHelper.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="SimpleTreeMap/SimpleTreeMap.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="SimpleTreeMapTests/SimpleTreeMapTestApp.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="SteamHelper/SteamHelper.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="StoreAppHelper/StoreAppHelper.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="UninstallerAutomatizer/UninstallerAutomatizer.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="UninstallTools/UninstallTools.csproj">
+    <BuildDependency Project="StoreAppHelper/StoreAppHelper.csproj" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="UniversalUninstaller/UniversalUninstaller.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="WinUpdateHelper/WinUpdateHelper.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>

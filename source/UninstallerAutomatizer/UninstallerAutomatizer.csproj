@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 
@@ -17,7 +17,7 @@
 	<ItemGroup>
 		<PackageReference Include="FlaUI.Adapter.White" Version="0.2.1" />
 		<PackageReference Include="FlaUI.UIA3" Version="5.0.0" />
-		<PackageReference Include="System.Drawing.Common" Version="[8.*,9)" />
+
 	</ItemGroup>
 
 

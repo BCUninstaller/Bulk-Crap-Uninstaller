@@ -12,19 +12,24 @@ permissions:
 jobs:
 
   build:
-    runs-on: windows-2022
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
     
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+    
     - uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce # v2
 
     - name: Restore
-      run: msbuild source\BulkCrapUninstaller.sln /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+      run: msbuild source\BulkCrapUninstaller.slnx /t:Restore /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
     
     - name: Build
       run: >
-           msbuild source\BulkCrapUninstaller.sln /t:Publish /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+           msbuild source\BulkCrapUninstaller.slnx /t:Publish /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
            /p:filealignment=512 /p:DeployOnBuild=true /p:PublishSingleFile=False /p:SelfContained=False /p:PublishReadyToRun=false /p:PublishTrimmed=False
            /p:PublishProtocol=FileSystem /p:PublishDir="${{ github.workspace }}\bin\publish"
 
@@ -37,11 +42,14 @@ jobs:
         name: ${{ github.event.repository.name }}_${{ github.sha }}
         path: bin\publish
 
+    - name: Build tests
+      run: msbuild source\BulkCrapUninstallerTests\BulkCrapUninstallerTests.csproj /p:Configuration=Release /verbosity:minimal
+
     - name: Test
       run: >
            dotnet test source\BulkCrapUninstallerTests\BulkCrapUninstallerTests.csproj
            --configuration Release
-           --no-restore
+           --no-build
            --logger "trx;LogFileName=BulkCrapUninstallerTests.trx"
            --results-directory "${{ github.workspace }}\TestResults"
 
