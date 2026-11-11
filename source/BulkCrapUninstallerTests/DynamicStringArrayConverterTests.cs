@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Text.Json;
 using UninstallTools.Factory.Json;
 
@@ -24,7 +23,7 @@ namespace BulkCrapUninstallerTests
         public void BareString_ReturnsSingleElementArray()
         {
             var result = Deserialize("\"foo\"");
-            CollectionAssert.AreEqual(new[] { "foo" }, result);
+            Assert.AreSequenceEqual(new[] { "foo" }, result);
         }
 
         // --- Flat arrays ---
@@ -33,21 +32,21 @@ namespace BulkCrapUninstallerTests
         public void FlatArray_ReturnsAllStrings()
         {
             var result = Deserialize("[\"a\", \"b\", \"c\"]");
-            CollectionAssert.AreEqual(new[] { "a", "b", "c" }, result);
+            Assert.AreSequenceEqual(new[] { "a", "b", "c" }, result);
         }
 
         [TestMethod]
         public void EmptyArray_ReturnsEmpty()
         {
             var result = Deserialize("[]");
-            CollectionAssert.AreEqual(Array.Empty<string>(), result);
+            Assert.IsEmpty(result);
         }
 
         [TestMethod]
         public void SingleElementArray_ReturnsSingleElement()
         {
             var result = Deserialize("[\"a\"]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         // --- One-level nested arrays ---
@@ -56,28 +55,28 @@ namespace BulkCrapUninstallerTests
         public void NestedArray_TakesFirstStringOnly()
         {
             var result = Deserialize("[[\"a\", \"b\"], \"c\"]");
-            CollectionAssert.AreEqual(new[] { "a", "c" }, result);
+            Assert.AreSequenceEqual(new[] { "a", "c" }, result);
         }
 
         [TestMethod]
         public void MultipleNestedArrays_TakesFirstFromEach()
         {
             var result = Deserialize("[[\"a\", \"b\"], [\"c\", \"d\"]]");
-            CollectionAssert.AreEqual(new[] { "a", "c" }, result);
+            Assert.AreSequenceEqual(new[] { "a", "c" }, result);
         }
 
         [TestMethod]
         public void EmptyNestedArray_IsSkipped()
         {
             var result = Deserialize("[[], \"c\"]");
-            CollectionAssert.AreEqual(new[] { "c" }, result);
+            Assert.AreSequenceEqual(new[] { "c" }, result);
         }
 
         [TestMethod]
         public void AllEmptyNestedArrays_ReturnsEmpty()
         {
             var result = Deserialize("[[], []]");
-            CollectionAssert.AreEqual(Array.Empty<string>(), result);
+            Assert.IsEmpty(result);
         }
 
         // --- Non-string tokens ---
@@ -86,28 +85,28 @@ namespace BulkCrapUninstallerTests
         public void NonStringFirstInNested_SkipsToFirstString()
         {
             var result = Deserialize("[[42, \"a\"], \"c\"]");
-            CollectionAssert.AreEqual(new[] { "a", "c" }, result);
+            Assert.AreSequenceEqual(new[] { "a", "c" }, result);
         }
 
         [TestMethod]
         public void NestedWithOnlyNonStrings_IsSkipped()
         {
             var result = Deserialize("[[42, true, null]]");
-            CollectionAssert.AreEqual(Array.Empty<string>(), result);
+            Assert.IsEmpty(result);
         }
 
         [TestMethod]
         public void NullAtTopLevel_IsSkipped()
         {
             var result = Deserialize("[null, \"a\"]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         [TestMethod]
         public void NullInNestedArray_SkipsToFirstString()
         {
             var result = Deserialize("[[null, \"a\"]]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         // --- Deep nesting ---
@@ -116,28 +115,28 @@ namespace BulkCrapUninstallerTests
         public void TwoDeepNesting_RecursivelyUnwraps()
         {
             var result = Deserialize("[[[\"a\"]]]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         [TestMethod]
         public void ThreeDeepNesting_RecursivelyUnwraps()
         {
             var result = Deserialize("[[[[\"a\"]]]]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         [TestMethod]
         public void DeeplyNestedEmpty_ReturnsEmpty()
         {
             var result = Deserialize("[[[[]]]]");
-            CollectionAssert.AreEqual(Array.Empty<string>(), result);
+            Assert.IsEmpty(result);
         }
 
         [TestMethod]
         public void EmptyThenNonEmptyInNested_FindsString()
         {
             var result = Deserialize("[[[], [\"x\"]], \"y\"]");
-            CollectionAssert.AreEqual(new[] { "x", "y" }, result);
+            Assert.AreSequenceEqual(new[] { "x", "y" }, result);
         }
 
         // --- Mixed flat and nested ---
@@ -146,7 +145,7 @@ namespace BulkCrapUninstallerTests
         public void MixedFlatAndNested_CollectsAll()
         {
             var result = Deserialize("[\"a\", [\"b\"], [[\"c\"]], \"d\"]");
-            CollectionAssert.AreEqual(new[] { "a", "b", "c", "d" }, result);
+            Assert.AreSequenceEqual(new[] { "a", "b", "c", "d" }, result);
         }
 
         // --- Objects ---
@@ -155,14 +154,14 @@ namespace BulkCrapUninstallerTests
         public void ObjectAtTopLevel_IsSkipped()
         {
             var result = Deserialize("[{\"k\":\"v\"}, \"a\"]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         [TestMethod]
         public void ObjectInNestedArray_IsSkipped()
         {
             var result = Deserialize("[[{\"k\":\"v\"}, \"a\"]]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         // --- Invalid root token ---
@@ -192,28 +191,28 @@ namespace BulkCrapUninstallerTests
         public void EmptyStringPreserved_TopLevel()
         {
             var result = Deserialize("[\"\"]");
-            CollectionAssert.AreEqual(new[] { "" }, result);
+            Assert.AreSequenceEqual(new[] { "" }, result);
         }
 
         [TestMethod]
         public void EmptyStringPreserved_InNested()
         {
             var result = Deserialize("[[\"\", \"b\"]]");
-            CollectionAssert.AreEqual(new[] { "" }, result);
+            Assert.AreSequenceEqual(new[] { "" }, result);
         }
 
         [TestMethod]
         public void BooleanAtTopLevel_IsSkipped()
         {
             var result = Deserialize("[true, false, \"a\"]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         [TestMethod]
         public void NumberAtTopLevel_IsSkipped()
         {
             var result = Deserialize("[42, \"a\"]");
-            CollectionAssert.AreEqual(new[] { "a" }, result);
+            Assert.AreSequenceEqual(new[] { "a" }, result);
         }
 
         [TestMethod]
@@ -221,14 +220,14 @@ namespace BulkCrapUninstallerTests
         {
             // Scoop manifests: ["app.exe", ["tool.exe", "alias", "--args"]]
             var result = Deserialize("[\"app.exe\", [\"tool.exe\", \"alias\", \"--args\"]]");
-            CollectionAssert.AreEqual(new[] { "app.exe", "tool.exe" }, result);
+            Assert.AreSequenceEqual(new[] { "app.exe", "tool.exe" }, result);
         }
 
         [TestMethod]
         public void NestedObjectFollowedByString()
         {
             var result = Deserialize("[[{\"x\":1}, \"after\"]]");
-            CollectionAssert.AreEqual(new[] { "after" }, result);
+            Assert.AreSequenceEqual(new[] { "after" }, result);
         }
 
         [TestMethod]
@@ -236,14 +235,14 @@ namespace BulkCrapUninstallerTests
         {
             // ReadFirstString must continue past null recursive result
             var result = Deserialize("[[[],  [\"x\"]], \"y\"]");
-            CollectionAssert.AreEqual(new[] { "x", "y" }, result);
+            Assert.AreSequenceEqual(new[] { "x", "y" }, result);
         }
 
         [TestMethod]
         public void AdjacentNestedWithEmptyBetween()
         {
             var result = Deserialize("[[\"a\"], [], [\"b\"]]");
-            CollectionAssert.AreEqual(new[] { "a", "b" }, result);
+            Assert.AreSequenceEqual(new[] { "a", "b" }, result);
         }
 
         [TestMethod]
@@ -251,7 +250,7 @@ namespace BulkCrapUninstallerTests
         {
             // ReadFirstString must skip 42, skip empty inner, then find "x" in deeper array
             var result = Deserialize("[[42, [], [\"x\"]], \"y\"]");
-            CollectionAssert.AreEqual(new[] { "x", "y" }, result);
+            Assert.AreSequenceEqual(new[] { "x", "y" }, result);
         }
     }
 }

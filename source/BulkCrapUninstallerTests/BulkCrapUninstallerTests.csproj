@@ -1,17 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
 	<OutputType>Library</OutputType>
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 	<OutputPath>bin</OutputPath>
+	<MSTestAnalysisMode>All</MSTestAnalysisMode>
+	<MSTestParallelizeScope>None</MSTestParallelizeScope>
 	  <NoWarn>CA1707;CA1861</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+	<!-- Preserve existing assembly metadata while generating the MSTest parallelization attribute. -->
+	<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+	<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+	<GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+	<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+	<GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+	<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+	<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+	<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+	<GenerateTargetPlatformAttribute>false</GenerateTargetPlatformAttribute>
+	<GenerateSupportedOSPlatformAttribute>false</GenerateSupportedOSPlatformAttribute>
   </PropertyGroup>
   <ItemGroup>
 	<ProjectReference Include="..\BulkCrapUninstaller\BulkCrapUninstaller.csproj" />
 	<ProjectReference Include="..\UninstallTools\UninstallTools.csproj" />
   </ItemGroup>
   <ItemGroup>
-	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
-	<PackageReference Include="MSTest.TestAdapter" Version="4.4.0" />
-	<PackageReference Include="MSTest.TestFramework" Version="4.4.0" />
+	<PackageReference Include="MSTest" Version="4.5.2" />
   </ItemGroup>
 </Project>
