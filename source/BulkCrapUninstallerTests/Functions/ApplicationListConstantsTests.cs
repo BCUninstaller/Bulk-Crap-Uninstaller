@@ -147,7 +147,7 @@ namespace BulkCrapUninstallerTests.Functions
 
             var result = ApplicationListConstants.GetApplicationIntegrityText(entry);
 
-            CollectionAssert.AreEqual(new[] { Localisable.IntegrityColumn_Invalid, Localisable.IntegrityColumn_Unregistered }, (object[])result);
+            Assert.AreSequenceEqual(new[] { Localisable.IntegrityColumn_Invalid, Localisable.IntegrityColumn_Unregistered }, (object[])result);
         }
     }
 }
