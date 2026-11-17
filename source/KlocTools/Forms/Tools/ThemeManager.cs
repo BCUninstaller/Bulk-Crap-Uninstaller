@@ -431,11 +431,23 @@ namespace Klocman.Forms.Tools
                     scope.Remember("BorderStyle", () => textBox.BorderStyle, x => textBox.BorderStyle = x);
                     textBox.BorderStyle = BorderStyle.FixedSingle;
                     break;
-                case ComboBox combo when combo.DropDownStyle == ComboBoxStyle.DropDownList:
-                    // Visual styles draw the closed drop down list in light colors no matter the BackColor
+                case ComboBox combo when combo.FlatStyle is FlatStyle.Flat or FlatStyle.Popup:
+                    // Flat combo boxes draw their border and drop down button in fixed light system colors,
+                    // the standard style is drawn dark by the native dark theme
                     scope.Remember("FlatStyle", () => combo.FlatStyle, x => combo.FlatStyle = x);
-                    combo.FlatStyle = FlatStyle.Flat;
+                    combo.FlatStyle = FlatStyle.Standard;
                     break;
+            }
+
+            if (c is ProgressBar progressBar)
+            {
+                // The themed progress bar always has a light track. Visual styles get turned off for it in dark mode
+                // (see ApplyNativeTheme), the classic bar uses these colors
+                RememberColor(progressBar, scope, "BackColor", out _, true);
+                RememberColor(progressBar, scope, "ForeColor", out _, true);
+                progressBar.BackColor = DarkPalette.Button;
+                progressBar.ForeColor = DarkPalette.ProgressBar;
+                return;
             }
 
             if (c is LinkLabel link)
@@ -826,6 +838,9 @@ namespace Klocman.Forms.Tools
             {
                 case ComboBox:
                     return "DarkMode_CFD";
+                case ProgressBar:
+                    // Empty name turns visual styles off, see ApplyNativeTheme
+                    return string.Empty;
                 case TextBoxBase tb:
                     return tb.Multiline ? "DarkMode_Explorer" : "DarkMode_CFD";
                 case ListView:
@@ -851,6 +866,13 @@ namespace Klocman.Forms.Tools
             if (themeName == null) return;
 
             scope.NativeThemeApplied = dark;
+
+            if (themeName.Length == 0)
+            {
+                // No dark theme exists for this control, turn visual styles off so it uses its own colors
+                Native.SetVisualStylesEnabled(c.Handle, !dark);
+                return;
+            }
 
             Native.AllowDarkModeForWindow(c.Handle, dark);
             Native.SetWindowTheme(c.Handle, dark ? themeName : null);
@@ -947,6 +969,20 @@ namespace Klocman.Forms.Tools
                 try
                 {
                     SetWindowThemeNative(handle, themeName, null);
+                }
+                catch (Exception ex) when (ex is EntryPointNotFoundException or DllNotFoundException)
+                {
+                    // Themes not available
+                }
+            }
+
+            public static void SetVisualStylesEnabled(IntPtr handle, bool enabled)
+            {
+                try
+                {
+                    // Empty strings turn visual styles off for the window, nulls restore the default theme
+                    if (enabled) SetWindowThemeNative(handle, null, null);
+                    else SetWindowThemeNative(handle, string.Empty, string.Empty);
                 }
                 catch (Exception ex) when (ex is EntryPointNotFoundException or DllNotFoundException)
                 {

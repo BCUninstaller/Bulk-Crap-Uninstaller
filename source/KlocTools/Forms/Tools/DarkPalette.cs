@@ -29,6 +29,8 @@ namespace Klocman.Forms.Tools
         public static readonly Color Link = Color.FromArgb(0x5C, 0xAE, 0xFF);
         public static readonly Color LinkActive = Color.FromArgb(0x99, 0xCC, 0xFF);
         public static readonly Color LinkVisited = Color.FromArgb(0xB9, 0x9C, 0xF5);
+        /// <summary> Progress bar fill, same green as the system progress bar </summary>
+        public static readonly Color ProgressBar = Color.FromArgb(0x06, 0xB0, 0x25);
 
         /// <summary>
         ///     Mix two colors. Ratio of 0 returns <paramref name="from" />, ratio of 1 returns <paramref name="to" />.
