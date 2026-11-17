@@ -431,6 +431,33 @@ namespace Klocman.Forms.Tools
                     scope.Remember("BorderStyle", () => textBox.BorderStyle, x => textBox.BorderStyle = x);
                     textBox.BorderStyle = BorderStyle.FixedSingle;
                     break;
+                case ListBox listBox:
+                    if (listBox.BorderStyle == BorderStyle.Fixed3D)
+                    {
+                        scope.Remember("BorderStyle", () => listBox.BorderStyle, x => listBox.BorderStyle = x);
+                        listBox.BorderStyle = BorderStyle.FixedSingle;
+                    }
+                    // Windows draws the selected item in light colors (white bar with invisible text), draw items here.
+                    // CheckedListBox draws its own check boxes and doesn't support owner drawing.
+                    if (listBox is not CheckedListBox && listBox.DrawMode == DrawMode.Normal && !scope.HasRemembered("DrawMode"))
+                    {
+                        scope.Remember("DrawMode", () => listBox.DrawMode, () =>
+                        {
+                            listBox.DrawItem -= OnListBoxDrawItem;
+                            listBox.DrawMode = DrawMode.Normal;
+                        });
+                        listBox.DrawItem += OnListBoxDrawItem;
+                        listBox.DrawMode = DrawMode.OwnerDrawFixed;
+                    }
+                    break;
+                case ListView listView when listView.BorderStyle == BorderStyle.Fixed3D:
+                    scope.Remember("BorderStyle", () => listView.BorderStyle, x => listView.BorderStyle = x);
+                    listView.BorderStyle = BorderStyle.FixedSingle;
+                    break;
+                case TreeView treeView when treeView.BorderStyle == BorderStyle.Fixed3D:
+                    scope.Remember("BorderStyle", () => treeView.BorderStyle, x => treeView.BorderStyle = x);
+                    treeView.BorderStyle = BorderStyle.FixedSingle;
+                    break;
                 case ComboBox combo when combo.FlatStyle is FlatStyle.Flat or FlatStyle.Popup:
                     // Flat combo boxes draw their border and drop down button in fixed light system colors,
                     // the standard style is drawn dark by the native dark theme
@@ -729,6 +756,25 @@ namespace Klocman.Forms.Tools
                     };
                 }
             }
+        }
+
+        private static void OnListBoxDrawItem(object sender, DrawItemEventArgs e)
+        {
+            var listBox = (ListBox)sender;
+            if (e.Index < 0 || e.Index >= listBox.Items.Count) return;
+
+            var selected = (e.State & DrawItemState.Selected) != 0;
+            var back = selected ? (listBox.Focused ? DarkPalette.Selection : DarkPalette.SelectionUnfocused) : listBox.BackColor;
+            var fore = !listBox.Enabled ? DarkPalette.GrayText : selected ? Color.White : listBox.ForeColor;
+
+            using (var brush = new SolidBrush(back))
+                e.Graphics.FillRectangle(brush, e.Bounds);
+
+            var flags = TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine | TextFormatFlags.NoPrefix |
+                        TextFormatFlags.EndEllipsis |
+                        (listBox.RightToLeft == RightToLeft.Yes ? TextFormatFlags.Right | TextFormatFlags.RightToLeft : TextFormatFlags.Left);
+            var textBounds = new Rectangle(e.Bounds.X + 2, e.Bounds.Y, e.Bounds.Width - 4, e.Bounds.Height);
+            TextRenderer.DrawText(e.Graphics, listBox.GetItemText(listBox.Items[e.Index]), e.Font ?? listBox.Font, textBounds, fore, flags);
         }
 
         /// <summary>
