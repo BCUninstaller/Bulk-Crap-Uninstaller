@@ -12,6 +12,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Klocman.Controls;
 using Microsoft.Win32;
 
 namespace Klocman.Forms.Tools
@@ -332,8 +333,22 @@ namespace Klocman.Forms.Tools
 
         private static void ApplyDarkToControl(Control c, ThemeScope scope)
         {
+            // SearchBox sets the colors of its text box itself (from its BackColor and search colors), changing them
+            // here as well would get out of sync and leave the text box dark after switching back to light
+            if (c.Parent is SearchBox) return;
+
             switch (c)
             {
+                case SearchBox searchBox:
+                    scope.Remember("NormalSearchColor", () => searchBox.NormalSearchColor, x => searchBox.NormalSearchColor = x);
+                    scope.Remember("InactiveSearchColor", () => searchBox.InactiveSearchColor, x => searchBox.InactiveSearchColor = x);
+                    searchBox.NormalSearchColor = DarkPalette.MapForeColor(searchBox.NormalSearchColor);
+                    searchBox.InactiveSearchColor = DarkPalette.MapForeColor(searchBox.InactiveSearchColor);
+                    // The BackColor setter passes the color on to the text box
+                    RememberColor(searchBox, scope, "BackColor", out var searchBack, true);
+                    searchBox.BackColor = DarkPalette.MapBackColor(searchBack);
+                    return;
+
                 case TabPage page:
                     scope.Remember("UseVisualStyleBackColor", () => page.UseVisualStyleBackColor, x => page.UseVisualStyleBackColor = x);
                     page.UseVisualStyleBackColor = false;
