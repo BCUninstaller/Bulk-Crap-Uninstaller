@@ -3593,6 +3593,115 @@ namespace BrightIdeasSoftware
         }
 
         /// <summary>
+        /// What color should be used for the text of group headers? Empty uses the color of the current theme.
+        /// </summary>
+        /// <remarks>
+        /// The themed group header text is redrawn after the system has drawn the header.
+        /// This allows readable group headers on dark backgrounds.
+        /// </remarks>
+        [Category("ObjectListView"),
+         Description("The text color of group headers. Empty uses the color of the current theme"),
+         DefaultValue(typeof(Color), "")]
+        public virtual Color GroupHeaderForeColor
+        {
+            get { return groupHeaderForeColor; }
+            set
+            {
+                groupHeaderForeColor = value;
+                if (IsHandleCreated) Invalidate();
+            }
+        }
+        private Color groupHeaderForeColor = Color.Empty;
+
+        private void DrawGroupHeaderText(NativeMethods.NMLVCUSTOMDRAW nmcustomdraw)
+        {
+            var groupId = nmcustomdraw.nmcd.dwItemSpec.ToInt32();
+            var group = OLVGroups?.FirstOrDefault(x => x.GroupId == groupId);
+            if (group == null || string.IsNullOrEmpty(group.Header)) return;
+
+            // The custom draw rectangle covers the whole header row, ask for the exact position of the label
+            const int LVM_GETGROUPRECT = 0x1000 + 98;
+            const int LVGGR_LABEL = 2;
+            var labelRect = new NativeMethods.RECT { top = LVGGR_LABEL };
+            if (NativeMethods.SendMessageRECT(Handle, LVM_GETGROUPRECT, groupId, ref labelRect) == IntPtr.Zero) return;
+
+            var textRect = Rectangle.FromLTRB(labelRect.left, labelRect.top, labelRect.right, labelRect.bottom);
+            if (textRect.Width <= 0 || textRect.Height <= 0) return;
+
+            using (var g = Graphics.FromHdc(nmcustomdraw.nmcd.hdc))
+            {
+                // Cover the text drawn by the theme (a bit wider, to not leave anti-aliased edges behind),
+                // then draw it again in the requested color. The label rect is sized for the theme font,
+                // so don't clip the text to it.
+                var flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine |
+                            TextFormatFlags.NoPrefix | TextFormatFlags.NoPadding | TextFormatFlags.NoClipping;
+                var textSize = TextRenderer.MeasureText(g, group.Header, Font, Size.Empty, flags);
+                var cover = Rectangle.FromLTRB(textRect.Left - 2, textRect.Top,
+                    Math.Max(textRect.Right, textRect.Left + textSize.Width) + 4, textRect.Bottom);
+                // Group headers are drawn by the system on the normal background, also while disabled (see IsInputBlocked)
+                using (var brush = new SolidBrush(BackColor))
+                    g.FillRectangle(brush, cover);
+                TextRenderer.DrawText(g, group.Header, Font, textRect, GroupHeaderForeColor, flags);
+            }
+        }
+
+        /// <summary>
+        /// What color should be used for the background of rows while the control is disabled?
+        /// Empty uses the system control color.
+        /// </summary>
+        [Category("ObjectListView"),
+         Description("The background color of rows while the control is disabled, when the control is owner drawn"),
+         DefaultValue(typeof(Color), "")]
+        public virtual Color DisabledBackColor
+        {
+            get { return disabledBackColor; }
+            set
+            {
+                disabledBackColor = value;
+                UpdateNativeEnabledState();
+                if (!Enabled) Invalidate();
+            }
+        }
+        private Color disabledBackColor = Color.Empty;
+
+        /// <summary>
+        /// Windows paints the background of a disabled list view (empty area, group headers, grid lines) in the
+        /// system button color, ignoring BackColor. When DisabledBackColor is set, the native window is kept enabled
+        /// while the control is disabled, so it paints normally, and user input is ignored here instead.
+        /// </summary>
+        private bool IsInputBlocked => !Enabled && !DisabledBackColor.IsEmpty;
+
+        private void UpdateNativeEnabledState()
+        {
+            if (!IsHandleCreated || IsDisposed) return;
+
+            var blocked = IsInputBlocked;
+            NativeMethods.EnableWindow(Handle, Enabled || blocked);
+
+            // The header is a separate window that would still accept clicks
+            var header = headerControl?.Handle ?? IntPtr.Zero;
+            if (header != IntPtr.Zero)
+                NativeMethods.EnableWindow(header, !blocked);
+        }
+
+        /// <summary>
+        /// Keep the native window state in sync, see IsInputBlocked
+        /// </summary>
+        protected override void OnEnabledChanged(EventArgs e)
+        {
+            base.OnEnabledChanged(e);
+            UpdateNativeEnabledState();
+        }
+
+        private static bool IsUserInputMessage(int msg)
+        {
+            return (msg >= 0x0100 && msg <= 0x0109) // WM_KEYDOWN .. WM_UNICHAR
+                   || (msg >= 0x0200 && msg <= 0x020E) // WM_MOUSEMOVE .. WM_MOUSEHWHEEL
+                   || (msg >= 0x00A0 && msg <= 0x00AD) // WM_NCMOUSEMOVE .. WM_NCXBUTTONDBLCLK (scroll bars)
+                   || msg == 0x007B; // WM_CONTEXTMENU
+        }
+
+        /// <summary>
         /// What color should be used for the foreground of selected rows when the control doesn't have the focus?
         /// </summary>
         [Category("ObjectListView"),
@@ -6144,6 +6253,13 @@ namespace BrightIdeasSoftware
         /// <param name="m"></param>
         protected override void WndProc(ref Message m)
         {
+            // The control is disabled but its native window is kept enabled for painting, see IsInputBlocked
+            if (IsInputBlocked && IsUserInputMessage(m.Msg))
+            {
+                m.Result = IntPtr.Zero;
+                return;
+            }
+
             try
             {
                 // System.Diagnostics.Debug.WriteLine(m.Msg);
@@ -6444,7 +6560,20 @@ namespace BrightIdeasSoftware
             NativeMethods.NMLVCUSTOMDRAW nmcustomdraw = (NativeMethods.NMLVCUSTOMDRAW)m.GetLParam(typeof(NativeMethods.NMLVCUSTOMDRAW));
             //System.Diagnostics.Debug.WriteLine(String.Format("cd: {0:x}, {1}, {2}", nmcustomdraw.nmcd.dwDrawStage, nmcustomdraw.dwItemType, nmcustomdraw.nmcd.dwItemSpec));
 
-            // Ignore drawing of group items
+            // Ignore drawing of group items, unless a custom group header text color is set
+            if (nmcustomdraw.dwItemType == 1 && !GroupHeaderForeColor.IsEmpty)
+            {
+                switch (nmcustomdraw.nmcd.dwDrawStage)
+                {
+                    case CDDS_PREPAINT:
+                        m.Result = (IntPtr)CDRF_NOTIFYPOSTPAINT;
+                        return true;
+                    case CDDS_POSTPAINT:
+                        DrawGroupHeaderText(nmcustomdraw);
+                        return true;
+                }
+                return true;
+            }
             if (nmcustomdraw.dwItemType == 1)
             {
                 // This is the basis of an idea about how to owner draw group headers
@@ -10274,6 +10403,9 @@ namespace BrightIdeasSoftware
             base.OnHandleCreated(e);
 
             Invoke((MethodInvoker)OnControlCreated);
+
+            // A disabled control gets a disabled window, see IsInputBlocked
+            UpdateNativeEnabledState();
         }
 
         /// <summary>

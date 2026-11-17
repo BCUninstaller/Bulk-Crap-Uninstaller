@@ -116,6 +116,13 @@ namespace BulkCrapUninstaller.Functions.Tools
             olv.UnfocusedSelectedBackColor = DarkPalette.SelectionUnfocused;
             olv.UnfocusedSelectedForeColor = DarkPalette.Text;
 
+            // The dark list theme draws group headers in dark blue, and a disabled list (e.g. while BCU is busy)
+            // would get a light background with invisible text
+            scope.Remember("OlvGroupHeaderForeColor", () => olv.GroupHeaderForeColor, x => olv.GroupHeaderForeColor = x);
+            scope.Remember("OlvDisabledBackColor", () => olv.DisabledBackColor, x => olv.DisabledBackColor = x);
+            olv.GroupHeaderForeColor = DarkPalette.Text;
+            olv.DisabledBackColor = DarkPalette.Surface;
+
             if (olv.EmptyListMsgOverlay is TextOverlay overlay)
             {
                 scope.Remember("OlvEmptyTextColor", () => overlay.TextColor, x => overlay.TextColor = x);

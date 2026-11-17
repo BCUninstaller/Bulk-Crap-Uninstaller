@@ -921,7 +921,7 @@ namespace BrightIdeasSoftware {
         /// <returns>The background color of the subitem</returns>
         public virtual Color GetBackgroundColor() {
             if (!ListView.Enabled)
-                return SystemColors.Control;
+                return ListView.DisabledBackColor.IsEmpty ? SystemColors.Control : ListView.DisabledBackColor;
 
             if (IsItemSelected && !ListView.UseTranslucentSelection && ListView.FullRowSelect)
                 return GetSelectedBackgroundColor();

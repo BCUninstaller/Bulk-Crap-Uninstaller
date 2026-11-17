@@ -466,6 +466,14 @@ namespace Klocman.Forms.Tools
                     break;
             }
 
+            // Lists that handle their disabled look themselves (ObjectListView.DisabledBackColor) are skipped
+            if (c is ListView disabledListView && !scope.HasRemembered("DisabledListKeeper") &&
+                c.GetType().GetProperty("DisabledBackColor") == null)
+            {
+                var keeper = new DisabledListViewKeeper(disabledListView);
+                scope.Remember("DisabledListKeeper", () => keeper, () => keeper.Detach());
+            }
+
             if (c is ProgressBar progressBar)
             {
                 // The themed progress bar always has a light track. Visual styles get turned off for it in dark mode
@@ -585,6 +593,83 @@ namespace Klocman.Forms.Tools
         ///     Paints the whole tab strip of a TabControl. Owner drawing only covers the tab buttons, while the strip
         ///     behind them and the frame would stay light. Tab pages are separate windows and paint themselves.
         /// </summary>
+        /// <summary>
+        ///     Windows paints a disabled list view in light system colors no matter its colors, so the light text of
+        ///     the dark theme becomes invisible. While the list is disabled, its native window is kept enabled so it
+        ///     paints normally, and user input is dropped here instead. WinForms still sees the control as disabled.
+        /// </summary>
+        private sealed class DisabledListViewKeeper : NativeWindow
+        {
+            private const int LVM_GETHEADER = 0x1000 + 31;
+            private readonly ListView _list;
+
+            public DisabledListViewKeeper(ListView list)
+            {
+                _list = list;
+                _list.HandleCreated += OnHandleCreated;
+                _list.EnabledChanged += OnEnabledChanged;
+                if (_list.IsHandleCreated) Attach();
+            }
+
+            public void Detach()
+            {
+                _list.HandleCreated -= OnHandleCreated;
+                _list.EnabledChanged -= OnEnabledChanged;
+                if (Handle != IntPtr.Zero) ReleaseHandle();
+                // Put the real state back
+                if (_list.IsHandleCreated && !_list.IsDisposed)
+                {
+                    Native.EnableWindow(_list.Handle, _list.Enabled);
+                    SetHeaderEnabled(true);
+                    _list.Invalidate();
+                }
+            }
+
+            private void OnHandleCreated(object sender, EventArgs e) => Attach();
+            private void OnEnabledChanged(object sender, EventArgs e) => UpdateState();
+
+            private void Attach()
+            {
+                if (Handle != IntPtr.Zero) ReleaseHandle();
+                AssignHandle(_list.Handle);
+                UpdateState();
+            }
+
+            private void UpdateState()
+            {
+                if (!_list.IsHandleCreated || _list.IsDisposed) return;
+                // WinForms disables the native window, enable it again so it paints with the list colors
+                if (!_list.Enabled) Native.EnableWindow(_list.Handle, true);
+                // The header is a separate window that would still accept clicks
+                SetHeaderEnabled(_list.Enabled);
+                _list.Invalidate();
+            }
+
+            private void SetHeaderEnabled(bool enabled)
+            {
+                var header = Native.SendMessage(_list.Handle, LVM_GETHEADER, IntPtr.Zero, IntPtr.Zero);
+                if (header != IntPtr.Zero) Native.EnableWindow(header, enabled);
+            }
+
+            protected override void WndProc(ref Message m)
+            {
+                if (!_list.Enabled && IsUserInputMessage(m.Msg))
+                {
+                    m.Result = IntPtr.Zero;
+                    return;
+                }
+                base.WndProc(ref m);
+            }
+
+            private static bool IsUserInputMessage(int msg)
+            {
+                return (msg >= 0x0100 && msg <= 0x0109) // keyboard
+                       || (msg >= 0x0200 && msg <= 0x020E) // mouse, including wheel
+                       || (msg >= 0x00A0 && msg <= 0x00AD) // non-client mouse (scroll bars)
+                       || msg == 0x007B; // WM_CONTEXTMENU
+            }
+        }
+
         private sealed class TabControlPainter : NativeWindow
         {
             private const int WM_PAINT = 0x000F;
@@ -890,8 +975,9 @@ namespace Klocman.Forms.Tools
                 case TextBoxBase tb:
                     return tb.Multiline ? "DarkMode_Explorer" : "DarkMode_CFD";
                 case ListView:
-                    // Same as Explorer's file list. Unlike DarkMode_Explorer it draws group headers in a light color
-                    return "DarkMode_ItemsView";
+                    // DarkMode_ItemsView would draw readable group headers, but its scroll bars stay light.
+                    // Group headers of ObjectListView are redrawn in a light color (GroupHeaderForeColor).
+                    return "DarkMode_Explorer";
                 case TreeView:
                 case ListBox:
                 case ScrollBar:
@@ -1021,6 +1107,9 @@ namespace Klocman.Forms.Tools
                     // Themes not available
                 }
             }
+
+            [DllImport("user32.dll")]
+            public static extern bool EnableWindow(IntPtr hWnd, bool enable);
 
             public static void SetVisualStylesEnabled(IntPtr handle, bool enabled)
             {
