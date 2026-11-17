@@ -466,6 +466,9 @@
     <value>Завдання завершено</value>
     <comment>Shown on the status bar</comment>
   </data>
+  <data name="UninstallProgressWindow_TaskDoneNextStep" xml:space="preserve">
+    <value>Завдання завершено. Закрийте це вікно, щоб продовжити; BCU може запропонувати пошук залишків.</value>
+  </data>
   <data name="UninstallProgressWindow_Uninstalling" xml:space="preserve">
     <value>Видалення</value>
     <comment>Shown on the status bar</comment>
@@ -769,7 +772,7 @@ The lists are separated by a single newline.</comment>
     <value>Ласкаво просимо до BCU версії {0}!</value>
   </data>
   <data name="UninstallProgressWindow_StatusPuttingToSleepInSeconds" xml:space="preserve">
-    <value>Перехід комп'ютера в режим сну через {0}с. Зніміть прапорець сну, щоб скасувати. </value>
+    <value>Перехід комп'ютера в режим сну через {0}с. Зніміть прапорець сну, щоб скасувати.</value>
   </data>
   <data name="UninstallerListDoubleClickAction_DoNothing" xml:space="preserve">
     <value>Нічого не робити</value>
@@ -779,6 +782,12 @@ The lists are separated by a single newline.</comment>
   </data>
   <data name="UninstallerListDoubleClickAction_Uninstall" xml:space="preserve">
     <value>Видаляє</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Title" xml:space="preserve">
+    <value>Не вдалося перейменувати {0}</value>
+  </data>
+  <data name="MessageBoxes_CantRenameUninstallerKind_Details" xml:space="preserve">
+    <value>Цей тип деінсталятора не підтримує перейменування ({0}).</value>
   </data>
   <data name="CertificateColumn_NotFound" xml:space="preserve">
     <value>Не знайдено</value>

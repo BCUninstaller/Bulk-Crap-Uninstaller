@@ -175,7 +175,7 @@
     <value>Налаштування вигляду списку</value>
   </data>
   <data name="checkBoxViewCheckboxes.Text" xml:space="preserve">
-    <value>Вибирати за допомогою прапорців </value>
+    <value>Вибирати за допомогою прапорців</value>
   </data>
   <data name="checkBoxViewCheckboxes.ToolTip" xml:space="preserve">
     <value>Змінює спосіб вибору елементів списку на прапорці. Це безпечніше, оскільки

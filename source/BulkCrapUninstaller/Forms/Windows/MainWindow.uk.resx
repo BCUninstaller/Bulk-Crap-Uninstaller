@@ -556,7 +556,7 @@
     <value>Експортувати у скрипт пакетного видалення</value>
   </data>
   <data name="exportStoreAppsToPowerShellRemoveScriptToolStripMenuItem.Text" xml:space="preserve">
-    <value>Створити сценарій видалення PowerShell для програм Магазину...  </value>
+    <value>Створити сценарій видалення PowerShell для програм Магазину...</value>
   </data>
   <data name="advancedApplicationsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Типові фільтри</value>

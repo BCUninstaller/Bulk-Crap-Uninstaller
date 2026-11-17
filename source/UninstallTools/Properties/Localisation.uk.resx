@@ -574,11 +574,20 @@
   <data name="UninstallerType_PowerShell" xml:space="preserve">
     <value>Скрипт PowerShell</value>
   </data>
+  <data name="Junk_DebugTracing_GroupName" xml:space="preserve">
+    <value>Налаштування налагоджувального трасування/журналювання</value>
+  </data>
   <data name="Progress_AppStores_Scoop" xml:space="preserve">
     <value>Пошук пакетів Scoop</value>
   </data>
   <data name="Confidence_UsedBySimilarNamedApp" xml:space="preserve">
     <value>Може належати іншій програмі зі схожою назвою</value>
     <comment>For example `AppX Extended` matching `AppX` when it belongs to the AppX application</comment>
+  </data>
+  <data name="Confidence_DirectlyInsideKnownFolder" xml:space="preserve">
+    <value>Розташовано безпосередньо у відомій системній теці</value>
+  </data>
+  <data name="CustomNote" xml:space="preserve">
+    <value>Власна примітка</value>
   </data>
 </root>

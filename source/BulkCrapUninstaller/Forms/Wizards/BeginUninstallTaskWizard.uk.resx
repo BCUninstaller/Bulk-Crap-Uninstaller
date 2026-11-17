@@ -144,15 +144,6 @@
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Запущені програми</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Створення точки відновлення перед видаленням</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Ви можете створити точку відновлення системи. Рекомендується створювати точку відновлення перед видаленням драйверів та важливих системних програм.</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Попередження: для цього має бути увімкнено відновлення системи!</value>
-  </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Змінити параметри видалення</value>
   </data>
