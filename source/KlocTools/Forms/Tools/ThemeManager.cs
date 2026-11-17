@@ -426,6 +426,11 @@ namespace Klocman.Forms.Tools
                     scope.Remember("FlatStyle", () => lb.FlatStyle, x => lb.FlatStyle = x);
                     lb.FlatStyle = FlatStyle.Standard;
                     break;
+                case TextBoxBase textBox when textBox.Multiline && textBox.BorderStyle == BorderStyle.Fixed3D:
+                    // The dark theme with dark scrollbars doesn't cover the 3D border, it would be drawn bright white
+                    scope.Remember("BorderStyle", () => textBox.BorderStyle, x => textBox.BorderStyle = x);
+                    textBox.BorderStyle = BorderStyle.FixedSingle;
+                    break;
                 case ComboBox combo when combo.DropDownStyle == ComboBoxStyle.DropDownList:
                     // Visual styles draw the closed drop down list in light colors no matter the BackColor
                     scope.Remember("FlatStyle", () => combo.FlatStyle, x => combo.FlatStyle = x);
