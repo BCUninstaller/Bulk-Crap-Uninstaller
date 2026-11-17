@@ -798,4 +798,16 @@ The lists are separated by a single newline.</comment>
   <data name="IntegrityColumn_Good" xml:space="preserve">
     <value>Добре</value>
   </data>
+  <data name="MainWindow_Theme_Menu" xml:space="preserve">
+    <value>Колірна тема</value>
+  </data>
+  <data name="MainWindow_Theme_Light" xml:space="preserve">
+    <value>Світла</value>
+  </data>
+  <data name="MainWindow_Theme_Dark" xml:space="preserve">
+    <value>Темна</value>
+  </data>
+  <data name="MainWindow_Theme_System" xml:space="preserve">
+    <value>Як у Windows</value>
+  </data>
 </root>

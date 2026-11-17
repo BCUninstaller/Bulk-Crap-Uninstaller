@@ -25,8 +25,12 @@ namespace BulkCrapUninstaller.Controls
             base.OnLoad(e);
 
             Properties.Settings.Default.SettingBinder.Subscribe((x, y) => UpdateColors(), settings => settings.MiscColorblind, this);
+            ThemeManager.ThemeChanged += OnThemeChanged;
+            Disposed += (sender, args) => ThemeManager.ThemeChanged -= OnThemeChanged;
             UpdateColors();
         }
+
+        private void OnThemeChanged(object sender, EventArgs e) => UpdateColors();
 
         private void UpdateColors()
         {

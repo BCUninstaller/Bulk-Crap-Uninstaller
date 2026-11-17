@@ -85,6 +85,8 @@ namespace BulkCrapUninstaller.Forms
             }
             _settings.Subscribe(DoubleClickSettingChanged, x => x.UninstallerListDoubleClickAction, this);
 
+            SetupThemeSelector();
+
             comboBoxLanguage.Items.Add(Localisable.DefaultLanguage);
             foreach (var languageCode in CultureConfigurator.SupportedLanguages.OrderBy(x => x.DisplayName))
             {
@@ -235,6 +237,71 @@ namespace BulkCrapUninstaller.Forms
             {
                 _settings.Settings.UninstallerListDoubleClickAction = (UninstallerListDoubleClickAction)wrapper.TargetEnum;
             }
+        }
+
+        /// <summary>
+        ///     Add a "Color theme" row below the double click setting, laid out the same way as that row.
+        /// </summary>
+        private void SetupThemeSelector()
+        {
+            var comboBoxTheme = new ComboBox
+            {
+                Name = "comboBoxTheme",
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Dock = DockStyle.Right,
+                Margin = comboBoxDoubleClick.Margin,
+                Width = comboBoxDoubleClick.Width,
+                TabIndex = 1
+            };
+            comboBoxTheme.Items.AddRange(new object[]
+            {
+                new ComboBoxWrapper<AppTheme>(AppTheme.Light, _ => Localisable.MainWindow_Theme_Light),
+                new ComboBoxWrapper<AppTheme>(AppTheme.Dark, _ => Localisable.MainWindow_Theme_Dark),
+                new ComboBoxWrapper<AppTheme>(AppTheme.System, _ => Localisable.MainWindow_Theme_System)
+            });
+
+            var labelTheme = new Label
+            {
+                Name = "labelTheme",
+                Text = Localisable.MainWindow_Theme_Menu,
+                AutoSize = true,
+                Dock = DockStyle.Left,
+                Margin = label3.Margin,
+                Padding = label3.Padding,
+                TabIndex = 0
+            };
+
+            var panelTheme = new Panel
+            {
+                Name = "panelTheme",
+                AutoSize = panel5.AutoSize,
+                Dock = DockStyle.Top,
+                Margin = panel5.Margin,
+                MinimumSize = panel5.MinimumSize,
+                Padding = panel5.Padding,
+                Height = panel5.Height
+            };
+            panelTheme.Controls.Add(comboBoxTheme);
+            panelTheme.Controls.Add(labelTheme);
+
+            // Same child index as panel5 pushes panel5 ahead in docking order, so the new row ends up right below it
+            groupBoxMisc.Controls.Add(panelTheme);
+            groupBoxMisc.Controls.SetChildIndex(panelTheme, groupBoxMisc.Controls.GetChildIndex(panel5));
+
+            comboBoxTheme.SelectedIndexChanged += (sender, args) =>
+            {
+                if (comboBoxTheme.SelectedItem is ComboBoxWrapper<AppTheme> wrapper &&
+                    _settings.Settings.WindowTheme != wrapper.WrappedObject)
+                    _settings.Settings.WindowTheme = wrapper.WrappedObject;
+            };
+
+            _settings.Subscribe((sender, args) =>
+            {
+                var newSelection = comboBoxTheme.Items.Cast<ComboBoxWrapper<AppTheme>>()
+                    .FirstOrDefault(x => x.WrappedObject == args.NewValue);
+                if (newSelection != null && !ReferenceEquals(newSelection, comboBoxTheme.SelectedItem))
+                    comboBoxTheme.SelectedItem = newSelection;
+            }, x => x.WindowTheme, this);
         }
 
         private void DoubleClickSettingChanged(object sender, SettingChangedEventArgs<UninstallerListDoubleClickAction> args)

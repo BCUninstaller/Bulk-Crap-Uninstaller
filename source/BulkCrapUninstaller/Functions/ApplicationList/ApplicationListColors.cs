@@ -4,6 +4,7 @@
 */
 
 using System.Drawing;
+using Klocman.Forms.Tools;
 
 namespace BulkCrapUninstaller.Functions.ApplicationList
 {
@@ -29,6 +30,16 @@ namespace BulkCrapUninstaller.Functions.ApplicationList
             WindowsFeatureColor = windowsFeatureColor;
             WindowsStoreAppColor = windowsStoreAppColor;
         }
+
+        private ApplicationListColors _darkVariant;
+
+        /// <summary>
+        ///     Muted variant of these colors that is readable with light text on the dark theme.
+        /// </summary>
+        public ApplicationListColors DarkVariant => _darkVariant ??= new ApplicationListColors(
+            DarkPalette.DarkenAccent(VerifiedColor), DarkPalette.DarkenAccent(UnverifiedColor),
+            DarkPalette.DarkenAccent(InvalidColor), DarkPalette.DarkenAccent(UnregisteredColor),
+            DarkPalette.DarkenAccent(WindowsFeatureColor), DarkPalette.DarkenAccent(WindowsStoreAppColor));
 
         public Color VerifiedColor { get; }
         public Color UnverifiedColor { get; }

@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 using BulkCrapUninstaller.Forms;
+using BulkCrapUninstaller.Functions.Tools;
 using Klocman;
 using Klocman.Extensions;
 using Klocman.Forms;
@@ -62,6 +63,9 @@ namespace BulkCrapUninstaller
 
                     if(Properties.Settings.Default.WindowDpiAware)
                         Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+
+                    ObjectListViewThemer.Register();
+                    ThemeManager.SetTheme(Properties.Settings.Default.WindowTheme);
 
                     var startupMgr = args.Contains("/startupmanager", StringComparison.OrdinalIgnoreCase) || 
                                      args.Contains("/sm", StringComparison.OrdinalIgnoreCase);

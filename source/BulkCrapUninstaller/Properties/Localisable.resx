@@ -811,4 +811,16 @@ You can try disabling collision detection in the settings, but it is not recomme
   <data name="IntegrityColumn_Good" xml:space="preserve">
     <value>Good</value>
   </data>
+  <data name="MainWindow_Theme_Menu" xml:space="preserve">
+    <value>Color theme</value>
+  </data>
+  <data name="MainWindow_Theme_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="MainWindow_Theme_Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="MainWindow_Theme_System" xml:space="preserve">
+    <value>Same as Windows</value>
+  </data>
 </root>
