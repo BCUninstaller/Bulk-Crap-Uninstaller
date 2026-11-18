@@ -466,12 +466,12 @@ namespace Klocman.Forms.Tools
                     break;
             }
 
-            // Lists that handle their disabled look themselves (ObjectListView.DisabledBackColor) are skipped
-            if (c is ListView disabledListView && !scope.HasRemembered("DisabledListKeeper") &&
+            // Lists that handle their disabled look and header themselves (ObjectListView.DisabledBackColor) are skipped
+            if (c is ListView plainListView && !scope.HasRemembered("PlainListViewHook") &&
                 c.GetType().GetProperty("DisabledBackColor") == null)
             {
-                var keeper = new DisabledListViewKeeper(disabledListView);
-                scope.Remember("DisabledListKeeper", () => keeper, () => keeper.Detach());
+                var hook = new PlainListViewHook(plainListView);
+                scope.Remember("PlainListViewHook", () => hook, () => hook.Detach());
             }
 
             if (c is ProgressBar progressBar)
@@ -594,16 +594,26 @@ namespace Klocman.Forms.Tools
         ///     behind them and the frame would stay light. Tab pages are separate windows and paint themselves.
         /// </summary>
         /// <summary>
-        ///     Windows paints a disabled list view in light system colors no matter its colors, so the light text of
-        ///     the dark theme becomes invisible. While the list is disabled, its native window is kept enabled so it
-        ///     paints normally, and user input is dropped here instead. WinForms still sees the control as disabled.
+        ///     Dark theme fixes for plain list views, applied by hooking the list's window:
+        ///     <para>Windows paints a disabled list view in light system colors no matter its colors, so the light text
+        ///     of the dark theme becomes invisible. While the list is disabled, its native window is kept enabled so it
+        ///     paints normally, and user input is dropped here instead. WinForms still sees the control as disabled.</para>
+        ///     <para>The dark header theme draws the column names in a dark color, the header's custom draw
+        ///     notifications are used to give them a light one.</para>
         /// </summary>
-        private sealed class DisabledListViewKeeper : NativeWindow
+        private sealed class PlainListViewHook : NativeWindow
         {
             private const int LVM_GETHEADER = 0x1000 + 31;
+            private const int WM_NOTIFY = 0x004E;
+            private const int NM_CUSTOMDRAW = -12;
+            private const int CDDS_PREPAINT = 0x00000001;
+            private const int CDDS_ITEMPREPAINT = 0x00010001;
+            private const int CDRF_DODEFAULT = 0x00000000;
+            private const int CDRF_NOTIFYITEMDRAW = 0x00000020;
+
             private readonly ListView _list;
 
-            public DisabledListViewKeeper(ListView list)
+            public PlainListViewHook(ListView list)
             {
                 _list = list;
                 _list.HandleCreated += OnHandleCreated;
@@ -658,7 +668,54 @@ namespace Klocman.Forms.Tools
                     m.Result = IntPtr.Zero;
                     return;
                 }
+
+                if (m.Msg == WM_NOTIFY && !_list.OwnerDraw && TryDrawHeaderItem(ref m))
+                    return;
+
                 base.WndProc(ref m);
+            }
+
+            private bool TryDrawHeaderItem(ref Message m)
+            {
+                var hdr = Marshal.PtrToStructure<NMHDR>(m.LParam);
+                if (hdr.code != NM_CUSTOMDRAW) return false;
+                var header = Native.SendMessage(_list.Handle, LVM_GETHEADER, IntPtr.Zero, IntPtr.Zero);
+                if (header == IntPtr.Zero || hdr.hwndFrom != header) return false;
+
+                var draw = Marshal.PtrToStructure<NMCUSTOMDRAW>(m.LParam);
+                switch (draw.dwDrawStage)
+                {
+                    case CDDS_PREPAINT:
+                        m.Result = (IntPtr)CDRF_NOTIFYITEMDRAW;
+                        return true;
+                    case CDDS_ITEMPREPAINT:
+                        var color = _list.Enabled ? DarkPalette.Text : DarkPalette.GrayText;
+                        Native.SetTextColor(draw.hdc, ColorTranslator.ToWin32(color));
+                        m.Result = (IntPtr)CDRF_DODEFAULT;
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            private struct NMHDR
+            {
+                public IntPtr hwndFrom;
+                public UIntPtr idFrom;
+                public int code;
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            private struct NMCUSTOMDRAW
+            {
+                public NMHDR hdr;
+                public int dwDrawStage;
+                public IntPtr hdc;
+                public int left, top, right, bottom;
+                public UIntPtr dwItemSpec;
+                public int uItemState;
+                public IntPtr lItemlParam;
             }
 
             private static bool IsUserInputMessage(int msg)
@@ -1110,6 +1167,9 @@ namespace Klocman.Forms.Tools
 
             [DllImport("user32.dll")]
             public static extern bool EnableWindow(IntPtr hWnd, bool enable);
+
+            [DllImport("gdi32.dll")]
+            public static extern int SetTextColor(IntPtr hdc, int color);
 
             public static void SetVisualStylesEnabled(IntPtr handle, bool enabled)
             {
