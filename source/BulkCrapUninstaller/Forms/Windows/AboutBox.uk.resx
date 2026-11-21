@@ -183,7 +183,7 @@
     <value>TestStack.White</value>
   </data>
   <data name="linkLabel9.Text" xml:space="preserve">
-    <value>es.exe (командний рядок для Everything) </value>
+    <value>es.exe (командний рядок для Everything)</value>
   </data>
   <metadata name="usageTracker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>116, 17</value>

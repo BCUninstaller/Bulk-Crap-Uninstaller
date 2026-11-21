@@ -463,6 +463,42 @@ namespace BulkCrapUninstaller.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Color theme.
+        /// </summary>
+        internal static string MainWindow_Theme_Menu {
+            get {
+                return ResourceManager.GetString("MainWindow_Theme_Menu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light.
+        /// </summary>
+        internal static string MainWindow_Theme_Light {
+            get {
+                return ResourceManager.GetString("MainWindow_Theme_Light", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dark.
+        /// </summary>
+        internal static string MainWindow_Theme_Dark {
+            get {
+                return ResourceManager.GetString("MainWindow_Theme_Dark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Same as Windows.
+        /// </summary>
+        internal static string MainWindow_Theme_System {
+            get {
+                return ResourceManager.GetString("MainWindow_Theme_System", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Processing detected applications, {0} left....
         /// </summary>
         internal static string MainWindow_Statusbar_ProcessingUninstallers {

@@ -547,6 +547,9 @@ namespace BrightIdeasSoftware
 
         #region Entry points
 
+        [DllImport("user32.dll")]
+        public static extern bool EnableWindow(IntPtr hWnd, bool enable);
+
         // Various flavours of SendMessage: plain vanilla, and passing references to various structures
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);

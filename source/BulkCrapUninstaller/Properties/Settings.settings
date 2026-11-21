@@ -236,5 +236,8 @@
     <Setting Name="UninstallerListDoubleClickAction" Provider="PortableSettingsProvider.PortableSettingsProvider" Roaming="true" Type="BulkCrapUninstaller.Forms.UninstallerListDoubleClickAction" Scope="User">
       <Value Profile="(Default)">OpenProperties</Value>
     </Setting>
+    <Setting Name="WindowTheme" Provider="PortableSettingsProvider.PortableSettingsProvider" Roaming="true" Type="Klocman.Forms.Tools.AppTheme" Scope="User">
+      <Value Profile="(Default)">Light</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

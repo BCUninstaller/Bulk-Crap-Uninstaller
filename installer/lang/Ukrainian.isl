@@ -1,4 +1,4 @@
-; *** Inno Setup version 6.5.0+ Ukrainian messages ***
+﻿; *** Inno Setup version 6.5.0+ Ukrainian messages ***
 ; Author: Dmytro Onyshchuk
 ; E-Mail: mrlols3@gmail.com
 ; Please report all spelling/grammar errors, and observations.

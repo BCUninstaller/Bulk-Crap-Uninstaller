@@ -192,6 +192,9 @@ BCU чекатиме завершення поточної команди, пе�
   <data name="tabPageFolders.Text" xml:space="preserve">
     <value>Теки</value>
   </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Запуск</value>
+  </data>
   <data name="tabPageMisc.Text" xml:space="preserve">
     <value>Різне</value>
   </data>

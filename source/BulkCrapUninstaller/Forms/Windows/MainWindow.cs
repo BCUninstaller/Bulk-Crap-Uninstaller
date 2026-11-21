@@ -86,10 +86,10 @@ namespace BulkCrapUninstaller.Forms
 
             // Finish up setting controls and window, suspend after settings have loaded
             SuspendLayout();
-            ToolStripManager.Renderer = new ToolStripProfessionalRenderer(new StandardSystemColorTable())
+            ThemeManager.SetLightRenderer(new ToolStripProfessionalRenderer(new StandardSystemColorTable())
             {
                 RoundedEdges = true
-            };
+            });
 
             // Disable until the first list refresh finishes
             LockApplication(true);
@@ -212,6 +212,53 @@ namespace BulkCrapUninstaller.Forms
             _setMan.Selected.Subscribe((x, y) => splitContainerListAndMap.Panel2Collapsed = !y.NewValue, settings => settings.ShowTreeMap, this);
 
             uninstallerObjectListView.ContextMenuStrip = uninstallListContextMenuStrip;
+
+            // Theme
+            SetupThemeMenu();
+            ThemeManager.ThemeChanged += OnThemeChanged;
+            if (ThemeManager.IsDark)
+                ThemeManager.ApplyTo(this);
+        }
+
+        private void SetupThemeMenu()
+        {
+            var themeMenu = new ToolStripMenuItem(Localisable.MainWindow_Theme_Menu);
+            var options = new[]
+            {
+                (Theme: AppTheme.Light, Text: Localisable.MainWindow_Theme_Light),
+                (Theme: AppTheme.Dark, Text: Localisable.MainWindow_Theme_Dark),
+                (Theme: AppTheme.System, Text: Localisable.MainWindow_Theme_System)
+            };
+
+            foreach (var option in options)
+            {
+                var item = new ToolStripMenuItem(option.Text) { Tag = option.Theme };
+                item.Click += (sender, args) => _setMan.Selected.Settings.WindowTheme = option.Theme;
+                themeMenu.DropDownItems.Add(item);
+            }
+
+            themeMenu.DropDownOpening += (sender, args) =>
+            {
+                foreach (ToolStripMenuItem item in themeMenu.DropDownItems)
+                    item.Checked = (AppTheme)item.Tag == _setMan.Selected.Settings.WindowTheme;
+            };
+
+            var index = viewToolStripMenuItem.DropDownItems.IndexOf(useSystemThemeToolStripMenuItem);
+            viewToolStripMenuItem.DropDownItems.Insert(index + 1, themeMenu);
+        }
+
+        private void OnThemeChanged(object sender, EventArgs e)
+        {
+            // Dark theme overrides control styles, put the user's choice back
+            if (!ThemeManager.IsDark)
+                _styleController.SetStyles(_setMan.Selected.Settings.WindowUseSystemTheme);
+
+            // Row and treemap colors depend on the theme
+            if (_listView != null && !_listView.CheckIsAppDisposed())
+            {
+                uninstallerObjectListView.Invalidate();
+                _listView.RefreshList();
+            }
         }
 
         protected override void OnDpiChanged(DpiChangedEventArgs e)
@@ -235,6 +282,8 @@ namespace BulkCrapUninstaller.Forms
 
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
+            ThemeManager.ThemeChanged -= OnThemeChanged;
+
             try
             {
                 new Thread(UsageTrackerSendData).Start();
@@ -592,8 +641,13 @@ namespace BulkCrapUninstaller.Forms
                 x => x.ToolbarsShowSettings, this);
             settings.Subscribe((x, y) => toolStrip.Visible = y.NewValue,
                 x => x.ToolbarsShowToolbar, this);
-            settings.Subscribe((x, y) => _styleController.SetStyles(y.NewValue),
-                x => x.WindowUseSystemTheme, this);
+            settings.Subscribe((x, y) =>
+            {
+                _styleController.SetStyles(y.NewValue);
+                // Styles set above don't support custom colors, re-apply the dark theme on top of them
+                if (ThemeManager.IsDark) ThemeManager.ApplyTo(this);
+            }, x => x.WindowUseSystemTheme, this);
+            settings.Subscribe((x, y) => ThemeManager.SetTheme(y.NewValue), x => x.WindowTheme, this);
             settings.Subscribe((x, y) => statusStrip1.Visible = y.NewValue,
                 x => x.ToolbarsShowStatusbar, this);
 

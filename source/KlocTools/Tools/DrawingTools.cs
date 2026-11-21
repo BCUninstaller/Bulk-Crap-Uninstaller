@@ -28,6 +28,12 @@ namespace Klocman.Tools
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
 
+            // Uri reads the "?" of extended-length paths (\\?\C:\..., \\?\UNC\server\...) as a host name and throws
+            if (filePath.StartsWith(@"\\?\UNC\", StringComparison.OrdinalIgnoreCase))
+                filePath = @"\\" + filePath.Substring(8);
+            else if (filePath.StartsWith(@"\\?\", StringComparison.Ordinal))
+                filePath = filePath.Substring(4);
+
             Uri uri;
 
             try
