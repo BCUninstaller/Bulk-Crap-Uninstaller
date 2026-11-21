@@ -599,7 +599,8 @@ namespace Klocman.Forms.Tools
         ///     of the dark theme becomes invisible. While the list is disabled, its native window is kept enabled so it
         ///     paints normally, and user input is dropped here instead. WinForms still sees the control as disabled.</para>
         ///     <para>The dark header theme draws the column names in a dark color, the header's custom draw
-        ///     notifications are used to give them a light one.</para>
+        ///     notifications are used to give them a light one. Where there is no dark header theme (Windows 7),
+        ///     the header is drawn here completely.</para>
         /// </summary>
         private sealed class PlainListViewHook : NativeWindow
         {
@@ -607,9 +608,16 @@ namespace Klocman.Forms.Tools
             private const int WM_NOTIFY = 0x004E;
             private const int NM_CUSTOMDRAW = -12;
             private const int CDDS_PREPAINT = 0x00000001;
+            private const int CDDS_POSTPAINT = 0x00000002;
             private const int CDDS_ITEMPREPAINT = 0x00010001;
             private const int CDRF_DODEFAULT = 0x00000000;
+            private const int CDRF_SKIPDEFAULT = 0x00000004;
+            private const int CDRF_NOTIFYPOSTPAINT = 0x00000010;
             private const int CDRF_NOTIFYITEMDRAW = 0x00000020;
+            private const int CDIS_SELECTED = 0x0001;
+            private const int CDIS_HOT = 0x0040;
+            private const int HDM_GETITEMCOUNT = 0x1200;
+            private const int HDM_GETITEMRECT = 0x1200 + 7;
 
             private readonly ListView _list;
 
@@ -631,7 +639,7 @@ namespace Klocman.Forms.Tools
                 {
                     Native.EnableWindow(_list.Handle, _list.Enabled);
                     SetHeaderEnabled(true);
-                    _list.Invalidate();
+                    _list.Invalidate(true); // Including the header
                 }
             }
 
@@ -652,7 +660,7 @@ namespace Klocman.Forms.Tools
                 if (!_list.Enabled) Native.EnableWindow(_list.Handle, true);
                 // The header is a separate window that would still accept clicks
                 SetHeaderEnabled(_list.Enabled);
-                _list.Invalidate();
+                _list.Invalidate(true); // Including the header
             }
 
             private void SetHeaderEnabled(bool enabled)
@@ -683,20 +691,112 @@ namespace Klocman.Forms.Tools
                 if (header == IntPtr.Zero || hdr.hwndFrom != header) return false;
 
                 var draw = Marshal.PtrToStructure<NMCUSTOMDRAW>(m.LParam);
+                var textColor = _list.Enabled ? DarkPalette.Text : DarkPalette.GrayText;
+
+                // The dark header theme only needs a light text color
+                if (Native.HasDarkThemes)
+                {
+                    switch (draw.dwDrawStage)
+                    {
+                        case CDDS_PREPAINT:
+                            m.Result = (IntPtr)CDRF_NOTIFYITEMDRAW;
+                            return true;
+                        case CDDS_ITEMPREPAINT:
+                            Native.SetTextColor(draw.hdc, ColorTranslator.ToWin32(textColor));
+                            m.Result = (IntPtr)CDRF_DODEFAULT;
+                            return true;
+                        default:
+                            return false;
+                    }
+                }
+
+                // Without the dark header theme (e.g. Windows 7) the header would stay light, draw it ourselves
                 switch (draw.dwDrawStage)
                 {
                     case CDDS_PREPAINT:
-                        m.Result = (IntPtr)CDRF_NOTIFYITEMDRAW;
+                        m.Result = (IntPtr)(CDRF_NOTIFYITEMDRAW | CDRF_NOTIFYPOSTPAINT);
                         return true;
                     case CDDS_ITEMPREPAINT:
-                        var color = _list.Enabled ? DarkPalette.Text : DarkPalette.GrayText;
-                        Native.SetTextColor(draw.hdc, ColorTranslator.ToWin32(color));
+                        DrawHeaderItem(draw, textColor);
+                        m.Result = (IntPtr)CDRF_SKIPDEFAULT;
+                        return true;
+                    case CDDS_POSTPAINT:
+                        DrawHeaderFiller(header, draw);
                         m.Result = (IntPtr)CDRF_DODEFAULT;
                         return true;
                     default:
                         return false;
                 }
             }
+
+            private void DrawHeaderItem(NMCUSTOMDRAW draw, Color textColor)
+            {
+                var bounds = Rectangle.FromLTRB(draw.left, draw.top, draw.right, draw.bottom);
+                if (bounds.Width <= 0 || bounds.Height <= 0) return;
+
+                var back = !_list.Enabled ? DarkPalette.Surface
+                    : (draw.uItemState & CDIS_SELECTED) != 0 ? DarkPalette.ButtonPressed
+                    : (draw.uItemState & CDIS_HOT) != 0 ? DarkPalette.ButtonHover
+                    : DarkPalette.Surface;
+
+                using var g = Graphics.FromHdc(draw.hdc);
+                using (var brush = new SolidBrush(back))
+                    g.FillRectangle(brush, bounds);
+                using (var pen = new Pen(DarkPalette.Border))
+                {
+                    // Column separator and the line under the header
+                    g.DrawLine(pen, bounds.Right - 1, bounds.Top, bounds.Right - 1, bounds.Bottom - 1);
+                    g.DrawLine(pen, bounds.Left, bounds.Bottom - 1, bounds.Right - 1, bounds.Bottom - 1);
+                }
+
+                var index = (int)draw.dwItemSpec.ToUInt32();
+                if (index < 0 || index >= _list.Columns.Count) return;
+                var column = _list.Columns[index];
+
+                var flags = TextFormatFlags.SingleLine | TextFormatFlags.VerticalCenter |
+                            TextFormatFlags.EndEllipsis | TextFormatFlags.NoPrefix;
+                flags |= column.TextAlign switch
+                {
+                    HorizontalAlignment.Center => TextFormatFlags.HorizontalCenter,
+                    HorizontalAlignment.Right => TextFormatFlags.Right,
+                    _ => TextFormatFlags.Left
+                };
+                if (_list.RightToLeft == RightToLeft.Yes) flags |= TextFormatFlags.RightToLeft;
+
+                var textBounds = Rectangle.FromLTRB(bounds.Left + 6, bounds.Top, bounds.Right - 6, bounds.Bottom - 1);
+                TextRenderer.DrawText(g, column.Text, _list.Font, textBounds, textColor, flags);
+            }
+
+            /// <summary> Paint the empty part of the header right of the last column </summary>
+            private static void DrawHeaderFiller(IntPtr header, NMCUSTOMDRAW draw)
+            {
+                var count = (int)Native.SendMessage(header, HDM_GETITEMCOUNT, IntPtr.Zero, IntPtr.Zero);
+                var right = draw.left;
+                var rect = new RECT();
+                for (var i = 0; i < count; i++)
+                {
+                    if (SendMessage(header, HDM_GETITEMRECT, (IntPtr)i, ref rect) != IntPtr.Zero)
+                        right = Math.Max(right, rect.right);
+                }
+
+                var filler = Rectangle.FromLTRB(right, draw.top, draw.right, draw.bottom);
+                if (filler.Width <= 0 || filler.Height <= 0) return;
+
+                using var g = Graphics.FromHdc(draw.hdc);
+                using (var brush = new SolidBrush(DarkPalette.Surface))
+                    g.FillRectangle(brush, filler);
+                using (var pen = new Pen(DarkPalette.Border))
+                    g.DrawLine(pen, filler.Left, filler.Bottom - 1, filler.Right - 1, filler.Bottom - 1);
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            private struct RECT
+            {
+                public int left, top, right, bottom;
+            }
+
+            [DllImport("user32.dll")]
+            private static extern IntPtr SendMessage(IntPtr hWnd, int msg, IntPtr wParam, ref RECT lParam);
 
             [StructLayout(LayoutKind.Sequential)]
             private struct NMHDR
@@ -1124,6 +1224,12 @@ namespace Klocman.Forms.Tools
                                                              Environment.OSVersion.Version.Build >= 18362;
 
             private static bool _darkApisBroken;
+
+            /// <summary>
+            ///     True if dark native themes (e.g. DarkMode_ItemsView for list headers) can be used. On older
+            ///     systems native parts like list view headers stay light.
+            /// </summary>
+            public static bool HasDarkThemes => SupportsDarkApis && !_darkApisBroken;
 
             public static void SetAppDarkMode(bool dark)
             {
